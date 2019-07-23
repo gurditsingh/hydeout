@@ -61,3 +61,5 @@ google_analytics: UA-100461102-1
 hydeout:
   version:          4.0.2
   repo:             https://github.com/fongandrew/hydeout
+
+theme: jekyll-theme-cayman
