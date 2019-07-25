@@ -1,7 +1,11 @@
 <div id="sidebar">
   <header>
     <{% if page.layout == "index" %}h1{% else %}div{% endif %} class="site-title">
-      <img src="GS.jpg" class="rounded-circle" alt="Cinque Terre">
+       <a id="profile-dp"
+       class="icon" title="Gurdit Singh" aria-label="Gurdit Singh"
+       href="">
+      {% include svg/GS.svg %}
+    </a>
       <a href="{{ "/" | relative_url }}">
         {% unless page.url == "/" %}
           <span class="back-arrow icon">{% include svg/back-arrow.svg %}</span>
