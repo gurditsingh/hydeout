@@ -1,7 +1,7 @@
 <div id="sidebar">
   <header>
     <{% if page.layout == "index" %}h1{% else %}div{% endif %} class="site-title">
-	<div><img src="{{ "GS.jpg" | relative_url }}" class="img-fluid" alt="Avatar" ></div>
+	<div><img src="{{ "GS.jpg" | relative_url }}" class="img-fluid" alt="Avatar" max-width="100%" height="auto" ></div>
       <a href="{{ "/" | relative_url }}">
         {% unless page.url == "/" %}
           <span class="back-arrow icon">{% include svg/back-arrow.svg %}</span>
