@@ -4,9 +4,9 @@ highlighter:      rouge
 
 # Setup
 title:            Gurdit Singh
-tagline:          'A Jekyll theme'
-description:      'The <a href="http://hyde.getpoole.com" target="_blank">Hyde</a> theme for <a href="http://jekyllrb.com" target="_blank">Jekyll</a>, refreshed.'
-url:              https://fongandrew.github.io
+tagline:          'Blog'
+description:      'Technical Blog'
+url:              https://gurditsingh.github.io/hydeout
 baseurl:          '/hydeout'
                   # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
@@ -15,8 +15,8 @@ baseurl:          '/hydeout'
                   # sidebar_blog_link below.
 
 author:
-  name:           'Andrew Fong'
-  url:            https://twitter.com/fongandrewc
+  name:           'Gurdit Singh'
+  url:            https://github.com/gurditsingh
 
 paginate:         5
 # paginate_path:    '/page:num'
@@ -58,8 +58,3 @@ google_analytics: UA-100461102-1
 
 # Used for Hydeout's own Github page. Feel free to remove for your
 # own fork.
-hydeout:
-  version:          4.0.2
-  repo:             https://github.com/fongandrew/hydeout
-
-theme: jekyll-theme-cayman
