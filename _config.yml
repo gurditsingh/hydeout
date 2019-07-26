@@ -6,7 +6,7 @@ highlighter:      rouge
 title:            Gurdit Singh
 tagline:          'Blog'
 description:      'Technical Blog'
-url:              https://gurditsingh.github.io/blog
+url:              http://gurditsingh.site/blog
 baseurl:          '/blog'
                   # the optional subpath of your site, e.g. "/blog"
                   # NB: This applies to all pages in your Jekyll site.
