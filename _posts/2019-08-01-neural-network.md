@@ -1,5 +1,5 @@
 ---
-title: " what is Neural Network in Deep Learning"
+title: "What is Neural Network in Deep Learning"
 layout: post
 excerpt: "Here’s something that might surprise you neural networks aren’t that complicated! The term “neural network” gets used as a buzzword a lot, but in reality they’re often much simpler than people imagine. This post is intended for complete beginners. We’ll understand how neural networks work while implementing one from scratch in Python."
 last_modified_at: 2019-08-01T12:20:01-05:00
