@@ -102,7 +102,7 @@ print(z3)
  [1.04558893]]
 """
 ```
-#Step 4:
+# Step 4:
 In final we'll apply activation function as 'y' output variable using 'z3' as a input form in hidden layer (Node's are activation function in the Hidden layer)
 ```python
 y = sigmoid(z3) # final activation function
@@ -113,10 +113,25 @@ print(y)
  [0.73992695]]
 """
 ```
+# Complete feedforward function
+```python
+def forward(X):
+    z2 = np.dot(X,W1) #z2 = X*W1
+    a2 = sigmoid(z2) #a2 = f(z2)
+    z3 = np.dot(a2,W2) #z3 = a2 * W2
+    y = sigmoid(z3) #y = f(z3)
+    return y
+```
+
 **And, There You Go! Build A Neural Network !!!**
+
+
 
 # The "learning" of our network
 Theoretically, with those weights, our neural network calculated unexpected results. Because we used random weights to build a network. Next we need to tune those random weights, so that we'll get the expected results.
+
+
+------------
 
 
 
