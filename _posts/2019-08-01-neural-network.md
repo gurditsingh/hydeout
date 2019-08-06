@@ -131,7 +131,7 @@ def forward(X):
 Theoretically, with those weights, our neural network calculated unexpected results. Because we used random weights to build a network. Next we need to tune those random weights, so that we'll get the expected results.
 
 
+
+# Backpropagation Continue ...
 ------------
-
-
 
