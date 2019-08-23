@@ -11,14 +11,17 @@ tags:
 ## Why Math?
 Linear algebra, probability and calculus are the ‘languages’ in which machine learning is formulated. Learning these topics will contribute a deeper understanding of the underlying algorithmic mechanics and allow development of new algorithms.
 When confined to smaller levels, everything is math behind deep learning. So it is essential to understand basic linear algebra before getting started with deep learning and programming it.
+
 ## How Linear Algebra is used in Data Science?
 Scalars, Vectors, Matrices and Tensors
 - A scalar is a single number
 - A vector is an array of numbers.
 - A matrix is a 2-D array
 - A tensor is a n-dimensional array with n>2
+
 ## Scalars
 Scalars are single numbers and are an example of a 0th-order tensor.Few built-in scalar types are int, float, complex, bytes, Unicode in Python.
+
 ```python
 a = 7
 b = 9.6
