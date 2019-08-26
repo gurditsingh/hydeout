@@ -81,6 +81,9 @@ print(type(y))
 <class 'numpy.matrix'>
 """
 ```
+
+# Few Matrices Operations:
+
 ## Matrix Addition
 > C = A + B (Shape of A and B should be equal)
 
