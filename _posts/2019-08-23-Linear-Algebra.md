@@ -1,5 +1,5 @@
 ---
-title: "Basic Linear Algebra for Deep Learning?"
+title: "Basic Linear Algebra for Machine Learning: (Learn Day:0)"
 layout: post
 excerpt: "A good understanding of linear algebra is essential for understanding and working with many machine learning algorithms, especially deep learning algorithms."
 last_modified_at: 2019-08-23T11:06:01-05:00
@@ -8,11 +8,12 @@ tags:
   - Python
   - Math
 ---
-## Why Math?
-Linear algebra, probability and calculus are the ‘languages’ in which machine learning is formulated. Learning these topics will contribute a deeper understanding of the underlying algorithmic mechanics and allow development of new algorithms.
-When confined to smaller levels, everything is math behind deep learning. So it is essential to understand basic linear algebra before getting started with deep learning and programming it.
+## Why Linear Algebra?
+The concepts of Linear Algebra are crucial for understanding the theory behind Machine Learning and Deep Learning. They give you better intuition for how algorithms really work under the hood, which enables you to make better decisions. This post will give you an introduction to the most important concepts of Linear Algebra that are used in Machine Learning.
 
-## How Linear Algebra is used in Data Science?
+## Topics covered?
+The core data structures behind Machine Learning and Deep Learning are Scalars, Vectors, Matrices and Tensors. Programmatically, let’s solve all the basic linear algebra problems using these.
+
 Scalars, Vectors, Matrices and Tensors
 - A scalar is a single number
 - A vector is an array of numbers.
