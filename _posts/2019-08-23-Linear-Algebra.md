@@ -1,5 +1,5 @@
 ---
-title: "Basic Linear Algebra for Machine Learning: (Learn Day:0)"
+title: "Basic Linear Algebra for Machine Learning: (Learn Day:1)"
 layout: post
 excerpt: "A good understanding of linear algebra is essential for understanding and working with many machine learning algorithms, especially deep learning algorithms."
 last_modified_at: 2019-08-23T11:06:01-05:00
