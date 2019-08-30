@@ -14,11 +14,10 @@ The concepts of Linear Algebra are crucial for understanding the theory behind M
 ## Topics covered?
 The core data structures behind Machine Learning and Deep Learning are Scalars, Vectors, Matrices and Tensors. Programmatically, let’s solve all the basic linear algebra problems using these.
 
-Scalars, Vectors, Matrices and Tensors
-- A scalar is a single number
-- A vector is an array of numbers.
-- A matrix is a 2-D array
-- A tensor is a n-dimensional array with n>2
+- Scalar
+- Vector
+- Matrix
+- Tensor
 
 ## Scalars
 Scalars are single numbers and are an example of a 0th-order tensor.Few built-in scalar types are int, float, complex, bytes, Unicode in Python.
