@@ -2,7 +2,7 @@
 title: "Apache Spark on Amazon EMR "
 layout: post
 excerpt: "Similar to Apache Hadoop, Spark is an open-source, distributed processing system commonly used for big data workloads. ... You can install Spark on an EMR cluster along with other Hadoop applications, and it can also leverage the EMR file system (EMRFS) to directly access data in Amazon S3."
-last_modified_at: 2019-07-24T10:27:01-05:00
+last_modified_at: 2020-03-29T11:27:01-05:00
 tags:
   - Spark
   - Amazon
