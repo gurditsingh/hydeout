@@ -35,7 +35,8 @@ Amazon EMR does not currently support use of the Apache Hadoop S3A file system.
 
 **S3 (URI scheme: s3) -** Apache Hadoop implementation of a block-based filesystem backed by S3. Apache Hadoop has deprecated use of this filesystem as of May 2016.
 
-**Which one to use:**
+**WHICH ONE TO USE:**
+
 For Amazon EMR, both the s3:// and s3n:// URIs are associated with the EMR filesystem and are functionally interchangeable in the context of Amazon EMR. For consistency sake, however, it is recommended to use the s3:// URI in the context of Amazon EMR.
 
 # HDFS and EMRFS
