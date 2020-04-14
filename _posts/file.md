@@ -14,7 +14,10 @@ Many of the projects are actually falling and whats happening is basically you c
 **Mistakes and failure:** Even with validation jobs there is always room for error. You need to make sure that it is possible to reprocess part of the data if any error is found then we just simply delete corrupt data and start loading it again.
 
 **File size inconsistency:** Either too small or too big files. Having too many files causes workers spending more time accessing, opening and closing files when reading which affects performance.
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNzU3MTgzMSwtNTkyNDU0Mzc2LDE0Mz
-g0MzAxMTcsOTQzMDgwMjczXX0=
+eyJoaXN0b3J5IjpbMjA1MDY0MzE1NSwtNzA3NTcxODMxLC01OT
+I0NTQzNzYsMTQzODQzMDExNyw5NDMwODAyNzNdfQ==
 -->
