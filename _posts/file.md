@@ -44,11 +44,11 @@ We have put the validation in our pipelines to clear the messy data but it turns
 > Problem ?
 some messy data leaked out in data lake. so now I need to figure out and it's hard when all you have is a distributed file system.
 
-**Recompute save our life** 
+**Recompute save our life** we have to partition it by date and build a framework around spark that will allow me to recompute from any if anything goes wrong I'll just blow that whole folder away and recompute it from scratch and so now I've got reprocessing so now I can fix mistakes that happen and happened to leak 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE0OTI1MDA5LC0yMDIxODEwMDA0LDEyNz
-AyNTQ3NjQsLTMxOTA4NjcwMCwtNjk5ODIyMDgsLTczOTM5MDgz
-MSwtNzA3NTcxODMxLC01OTI0NTQzNzYsMTQzODQzMDExNyw5ND
-MwODAyNzNdfQ==
+eyJoaXN0b3J5IjpbMTAxODQ4MTc4NSwtMjAyMTgxMDAwNCwxMj
+cwMjU0NzY0LC0zMTkwODY3MDAsLTY5OTgyMjA4LC03MzkzOTA4
+MzEsLTcwNzU3MTgzMSwtNTkyNDU0Mzc2LDE0Mzg0MzAxMTcsOT
+QzMDgwMjczXX0=
 -->
