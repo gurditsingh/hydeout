@@ -20,9 +20,9 @@ Set of events that are coming in to Kafka or Kinesis and you want to do a bunch 
 ![Flow](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/datalake.jpg?raw=true)
 
 # Challenges with Design
-**Challenge No 1:** 
+**Challenge No 1:** Historical Reporting
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxODQ4Mzk2NCwtMzE5MDg2NzAwLC02OT
+eyJoaXN0b3J5IjpbMTI3MDI1NDc2NCwtMzE5MDg2NzAwLC02OT
 k4MjIwOCwtNzM5MzkwODMxLC03MDc1NzE4MzEsLTU5MjQ1NDM3
 NiwxNDM4NDMwMTE3LDk0MzA4MDI3M119
 -->
