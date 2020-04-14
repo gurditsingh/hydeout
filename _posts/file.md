@@ -1,7 +1,7 @@
 
 # The Situation: Data on Data Lakes
 
-Enterprises started collecting their data into the data lakes and they were collecting clickstream data images videos and oftentimes they were actually doing this with Apache spark and the promise was that once they have all this data in their data lakes they can get to all kinds of use cases on top of those they can do data science they can do machine learning they can even do maybe real-time streaming with it so they're kept collecting this data into data lakes.
+Enterprises started collecting their data into the data lakes and they were collecting clickstream data images videos and oftentimes they were actually doing this with Apache spark and the promise was that once they have all this data in their data lakes they can get to do all kinds of use cases on top of those they can do data science they can do machine learning they can even do real-time streaming with it so they're kept collecting this data into data lakes.
 
 # The problem with Data Lakes:
 
