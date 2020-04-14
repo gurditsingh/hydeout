@@ -1,7 +1,20 @@
-# what is the problem
-problm dfd dd 
-gfhjjjj
+
+# The Situation: Data on Data Lakes
+
+Enterprises started collecting their data into the data lakes and they were collecting clickstream data images videos and oftentimes they were actually doing this with Apache spark and the promise was that once they have all this data in their data lakes they can get to all kinds of use cases on top of those they can do data science they can do machine learning they can even do maybe real-time streaming with it so they're kept collecting this data into data lakes.
+
+# The problem with Data Lakes:
+
+Many of the projects are actually falling and whats happening is basically you could say garbage in garbage out.
+
+**Messy data:** what happens if messy data enters the system? “Garbage” data is stored and it is impossible to extract needed or wanted value. How to fix this problem? You can create new Spark jobs to validate the data.
+
+**Failed jobs:** Failed jobs leave data in corrupt state. This requires tedious data cleanup after failed jobs.
+
+**Mistakes and failure:** Even with validation jobs there is always room for error. You need to make sure that it is possible to reprocess part of the data if any error is found then we just simply delete corrupt data and start loading it again.
+
+**File size inconsistency:** Either too small or too big files. Having too many files causes workers spending more time accessing, opening and closing files when reading which affects performance.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MjQ1NDM3NiwxNDM4NDMwMTE3LDk0Mz
-A4MDI3M119
+eyJoaXN0b3J5IjpbLTcwNzU3MTgzMSwtNTkyNDU0Mzc2LDE0Mz
+g0MzAxMTcsOTQzMDgwMjczXX0=
 -->
