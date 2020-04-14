@@ -56,11 +56,4 @@ Now we have clear data in the data lake. The next request is we have to go throu
 **Update framework save our life** So I'll build another spark job and it will read that data in update/remove it and write it back out. it doesn't crash in the middle because of huge data. you don't want to run this thing at the wrong time because if somebody is querying the data lake while I'm modifying it they'll see inconsistent results.
 
 
-
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA4OTcwNDcwLDIwMzYwOTYwNTgsMTA2OT
-cxMTI1OSwxNzA3NjExMTg2LDE3NTIzMTk3MzAsLTEwODkyNzE0
-NjIsLTIwMjE4MTAwMDQsMTI3MDI1NDc2NCwtMzE5MDg2NzAwLC
-02OTk4MjIwOCwtNzM5MzkwODMxLC03MDc1NzE4MzEsLTU5MjQ1
-NDM3NiwxNDM4NDMwMTE3LDk0MzA4MDI3M119
--->
+**Great! So now we understand the main problems that delta lake is there to address. And by solving these problems, they also provide some additional capabilities out of the box. We will learn more about delta lake in the next blog and try to understand how delta lake address all these problems. See you in the blog.**
