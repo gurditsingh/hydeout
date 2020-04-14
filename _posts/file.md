@@ -19,9 +19,10 @@ Many of the projects are actually falling and whats happening is basically you c
 Set of events that are coming in to Kafka or Kinesis and you want to do a bunch of different things with it you want to do some streaming analytics you also want to do some kind of more intense AI and reporting on the historical data. we can use apache spark it's going to read from Kafka and do streaming analytics. Next pipeline archive the data into data lake for reporting with apache spark batch job, great that's pretty easy apache spark works. 
 ![Flow](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/datalake.jpg?raw=true)
 
-Many Cha
+# Challenges with Design
+**Challenge No 1:** 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNjEwMjY0NSwtMzE5MDg2NzAwLC02OT
+eyJoaXN0b3J5IjpbLTgxODQ4Mzk2NCwtMzE5MDg2NzAwLC02OT
 k4MjIwOCwtNzM5MzkwODMxLC03MDc1NzE4MzEsLTU5MjQ1NDM3
 NiwxNDM4NDMwMTE3LDk0MzA4MDI3M119
 -->
