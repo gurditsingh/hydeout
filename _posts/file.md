@@ -22,9 +22,12 @@ Set of events that are coming in to Kafka or Kinesis and you want to do a bunch 
 # Challenges with Design
 **Challenge No 1:** Historical Reporting
 
-we can use apache spark it's going to read from Kafka and do streaming analytics. On historical reporting streaming is great it tells you what's happening right now
+we can use apache spark it's going to read from Kafka and do streaming analytics. On historical reporting streaming is great it tells you what's happening right now but it doesn't let me look back in time and do more complicated things like machine learning.
+
+> Problem ?
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDUxODA5MDYsMTI3MDI1NDc2NCwtMz
-E5MDg2NzAwLC02OTk4MjIwOCwtNzM5MzkwODMxLC03MDc1NzE4
-MzEsLTU5MjQ1NDM3NiwxNDM4NDMwMTE3LDk0MzA4MDI3M119
+eyJoaXN0b3J5IjpbMTYwMjY2NDcyLDEyNzAyNTQ3NjQsLTMxOT
+A4NjcwMCwtNjk5ODIyMDgsLTczOTM5MDgzMSwtNzA3NTcxODMx
+LC01OTI0NTQzNzYsMTQzODQzMDExNyw5NDMwODAyNzNdfQ==
 -->
