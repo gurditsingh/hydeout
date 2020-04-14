@@ -25,14 +25,14 @@ Many of the projects are falling and what's happening is you could say garbage i
 
 **Mistakes and failure:** Even with validation jobs there is always room for error. You need to make sure that it is possible to reprocess part of the data if any error is found then we just simply delete corrupt data and start loading it again.
 
-**File size inconsistency:** Either too small or too big files. Having too many files causes workers to spend more time accessing, opening and closing files when reading which affects performance.
-
 # Basic project architecture
+
 Set of events that are coming into Kafka or Kinesis and you want to do a bunch of different things with it you want to do some streaming analytics you also want to do some kind of more intense AI and reporting on the historical data with a data lake.
 
 ![Flow](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/datalake.jpg?raw=true)
 
 # Challenges while Designing
+
 **Challenge No 1:** Historical Reporting
 
 we can use apache spark it's going to read from Kafka and do streaming analytics. On historical reporting streaming is great it tells you what's happening right now.
@@ -41,6 +41,7 @@ we can use apache spark it's going to read from Kafka and do streaming analytics
 
 
 **lambda architecture saves our life** what it means in addition to running the streaming pipeline that I use for kind of the immediate results I'm also going to run this spark batch pipeline to archive all this data into the data lake and do reporting and machine learning on it.
+
 
 **Challenge No 2:** Messy Data
 
@@ -51,6 +52,7 @@ We have all the data in data lake which can be used by data scientists for machi
 
 **Data validation save our life**  to fix this problem we just put validations into all spots in the pipeline now it's really important that we do it in both places because we're running two different pipelines here but again spark has unified API so it's not too hard so we'll add validations to both parts and remove the messy data.
 
+
 **Challenge No 3:** Fixing Mistakes
 
 We have put the validation in our pipelines to clear the messy data but it turns out before I put those validations in place some messy data leaked out.
@@ -59,7 +61,8 @@ some messy data leaked out in data lake. so now I need to figure out and it's ha
 
 **Recompute save our life** we have to partition it by date and build a framework around spark that will allow me to recompute from any if anything goes wrong I'll just blow that whole folder away and recompute it from scratch and by reprocessing fix the mistakes that happened through the leak 
 
-**Challenge No 3:** Updates in Data
+
+**Challenge No 4:** Updates in Data
 Now we have clear data in the data lake. The next request is we have to go through this data Lake and remove/update all of these customer addresses but keep everything else.
 
 > Problem?
