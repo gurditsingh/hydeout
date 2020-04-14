@@ -20,11 +20,11 @@ Set of events that are coming in to Kafka or Kinesis and you want to do a bunch 
 ![Flow](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/datalake.jpg?raw=true)
 
 ## Big Question ?
-how do you architect this thing to achive 
+how do you architect this thing to achieve analytics and reporting
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY2MTgxOTQwLC02OTk4MjIwOCwtNzM5Mz
-kwODMxLC03MDc1NzE4MzEsLTU5MjQ1NDM3NiwxNDM4NDMwMTE3
-LDk0MzA4MDI3M119
+eyJoaXN0b3J5IjpbLTEzNjEzMDAwOTAsLTY5OTgyMjA4LC03Mz
+kzOTA4MzEsLTcwNzU3MTgzMSwtNTkyNDU0Mzc2LDE0Mzg0MzAx
+MTcsOTQzMDgwMjczXX0=
 -->
