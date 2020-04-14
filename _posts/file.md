@@ -16,14 +16,16 @@ Many of the projects are actually falling and whats happening is basically you c
 **File size inconsistency:** Either too small or too big files. Having too many files causes workers to spend more time accessing, opening and closing files when reading which affects performance.
 
 # Basic project architecture
-Set of events that are coming in to
-
-Kafka or Kinesis or s3 or adls and you want to do a bunch of different things with it you want to do some streaming analytics you also want to do some kind of more intense AI and reporting on the historical data how do you architect this thing so let's go ahead and get started
+Set of events that are coming in to Kafka or Kinesis and you want to do a bunch of different things with it you want to do some streaming analytics you also want to do some kind of more intense AI and reporting on the historical data.
 ![Flow](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/datalake.jpg?raw=true)
 
+So the question is 
 
+> Blockquote
+
+how do you architect this thing so let's go ahead and get started
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMDEzMTM0NCwtNzM5MzkwODMxLC03MD
-c1NzE4MzEsLTU5MjQ1NDM3NiwxNDM4NDMwMTE3LDk0MzA4MDI3
-M119
+eyJoaXN0b3J5IjpbNjc4ODU2NDY0LC03MzkzOTA4MzEsLTcwNz
+U3MTgzMSwtNTkyNDU0Mzc2LDE0Mzg0MzAxMTcsOTQzMDgwMjcz
+XX0=
 -->
