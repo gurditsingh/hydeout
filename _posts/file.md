@@ -17,9 +17,10 @@ Many of the projects are actually falling and whats happening is basically you c
 
 # Basic project architecture
 Set of events that are coming in to Kafka or Kinesis and you want to do a bunch of different things with it you want to do some streaming analytics you also want to do some kind of more intense AI and reporting on the historical data with data lake.
+
 ![Flow](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/datalake.jpg?raw=true)
 
-# Challenges with Design
+# Challenges while Designing
 **Challenge No 1:** Historical Reporting
 
 we can use apache spark it's going to read from Kafka and do streaming analytics. On historical reporting streaming is great it tells you what's happening right now.
@@ -53,10 +54,13 @@ Now we have clear data in data lake. Next request is we have to go through this 
  so now I have to worry about updates, can you even do that in the data Lake.
 
 **Update framework  save our life** So I'll build another spark job and it will read that data in update/remove it and write it back out. I really hope it doesn't crash in the middle because of huge data. you don't want to run this thing at the wrong time because if somebody is querying the data lake while I'm modifying it they'll see inconsistent results.
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2OTcxMTI1OSwxNzA3NjExMTg2LDE3NT
-IzMTk3MzAsLTEwODkyNzE0NjIsLTIwMjE4MTAwMDQsMTI3MDI1
-NDc2NCwtMzE5MDg2NzAwLC02OTk4MjIwOCwtNzM5MzkwODMxLC
-03MDc1NzE4MzEsLTU5MjQ1NDM3NiwxNDM4NDMwMTE3LDk0MzA4
-MDI3M119
+eyJoaXN0b3J5IjpbMjAzNjA5NjA1OCwxMDY5NzExMjU5LDE3MD
+c2MTExODYsMTc1MjMxOTczMCwtMTA4OTI3MTQ2MiwtMjAyMTgx
+MDAwNCwxMjcwMjU0NzY0LC0zMTkwODY3MDAsLTY5OTgyMjA4LC
+03MzkzOTA4MzEsLTcwNzU3MTgzMSwtNTkyNDU0Mzc2LDE0Mzg0
+MzAxMTcsOTQzMDgwMjczXX0=
 -->
