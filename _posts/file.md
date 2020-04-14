@@ -47,9 +47,9 @@ some messy data leaked out in data lake. so now I need to figure out and it's ha
 **Recompute save our life** we have to partition it by date and build a framework around spark that will allow me to recompute from any if anything goes wrong I'll just blow that whole folder away and recompute it from scratch and by reprocessing fix the mistakes that happened through leak 
 
 **Challenge No 3:** Updates in Data
-Now we have clear data in data lake. have to go through this data Lake and remove all of these email addresses but keep everything else so now I have to worry about updates can you even do that in the data Lake okay 
+Now we have clear data in data lake. Next request is we have to go through this data Lake and remove all of these email addresses but keep everything else so now I have to worry about updates can you even do that in the data Lake okay 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1NzU1MDA4MiwxNzUyMzE5NzMwLC0xMD
+eyJoaXN0b3J5IjpbMTUzMjczNjE0MiwxNzUyMzE5NzMwLC0xMD
 g5MjcxNDYyLC0yMDIxODEwMDA0LDEyNzAyNTQ3NjQsLTMxOTA4
 NjcwMCwtNjk5ODIyMDgsLTczOTM5MDgzMSwtNzA3NTcxODMxLC
 01OTI0NTQzNzYsMTQzODQzMDExNyw5NDMwODAyNzNdfQ==
