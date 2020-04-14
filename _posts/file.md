@@ -40,9 +40,9 @@ We have all the data in data lake which can be used by data scientists for machi
 
 **Challenge No 3:** Fixing Mistakes
 
-
+We have put the validation in our pipelines to clear the messy data but it turns out before I put those validations in place some messy data leaked
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY5MjAwMjY5LDEyNzAyNTQ3NjQsLTMxOT
-A4NjcwMCwtNjk5ODIyMDgsLTczOTM5MDgzMSwtNzA3NTcxODMx
-LC01OTI0NTQzNzYsMTQzODQzMDExNyw5NDMwODAyNzNdfQ==
+eyJoaXN0b3J5IjpbLTE1NTU1OTczMDksMTI3MDI1NDc2NCwtMz
+E5MDg2NzAwLC02OTk4MjIwOCwtNzM5MzkwODMxLC03MDc1NzE4
+MzEsLTU5MjQ1NDM3NiwxNDM4NDMwMTE3LDk0MzA4MDI3M119
 -->
