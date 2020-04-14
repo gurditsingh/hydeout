@@ -1,3 +1,15 @@
+---
+title: "Delta Lake: (Learn Part:1)"
+layout: post
+excerpt: "In this first part, I will explain you about What kind of problem it causes for a typical data lake implementation"
+last_modified_at: 2020-04-12T11:02:01-05:00
+tags:
+  - Data Lakes
+  - Spark
+  - Cloud
+  - Lambda
+---
+
 
 # The Situation: Data on Data Lakes
 
