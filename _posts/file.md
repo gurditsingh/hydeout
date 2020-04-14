@@ -36,9 +36,11 @@ We have all the data in data lake which can be used by data scientists for machi
 > Problem ?
 > data scientists are looking at my data Lake and telling me this data doesn't make any sense it's too messy usually problem with big data.
 
-**Data validation save our life**  to fix this problem we just put validations into all spots in the pipeline now it's really important that we do it in both places because we're running two different pipelines here but again spark has unified API so it's not too hard so we'll add validations to both part and remove the messy data then 
+**Data validation save our life**  to fix this problem we just put validations into all spots in the pipeline now it's really important that we do it in both places because we're running two different pipelines here but again spark has unified API so it's not too hard so we'll add validations to both part and remove the messy data.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUzNTM4NTczLDEyNzAyNTQ3NjQsLTMxOT
-A4NjcwMCwtNjk5ODIyMDgsLTczOTM5MDgzMSwtNzA3NTcxODMx
-LC01OTI0NTQzNzYsMTQzODQzMDExNyw5NDMwODAyNzNdfQ==
+eyJoaXN0b3J5IjpbMTUwMDg3NjE3OCwxMjcwMjU0NzY0LC0zMT
+kwODY3MDAsLTY5OTgyMjA4LC03MzkzOTA4MzEsLTcwNzU3MTgz
+MSwtNTkyNDU0Mzc2LDE0Mzg0MzAxMTcsOTQzMDgwMjczXX0=
 -->
