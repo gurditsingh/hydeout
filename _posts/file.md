@@ -15,10 +15,13 @@ Many of the projects are actually falling and whats happening is basically you c
 
 **File size inconsistency:** Either too small or too big files. Having too many files causes workers spending more time accessing, opening and closing files when reading which affects performance.
 
+Basic project ariche
+
 ![Flow](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/datalake.jpg?raw=true)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczOTM5MDgzMSwtNzA3NTcxODMxLC01OT
-I0NTQzNzYsMTQzODQzMDExNyw5NDMwODAyNzNdfQ==
+eyJoaXN0b3J5IjpbLTI5MTMzNTA1MCwtNzM5MzkwODMxLC03MD
+c1NzE4MzEsLTU5MjQ1NDM3NiwxNDM4NDMwMTE3LDk0MzA4MDI3
+M119
 -->
