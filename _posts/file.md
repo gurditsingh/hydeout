@@ -22,11 +22,11 @@ Set of events that are coming in to Kafka or Kinesis and you want to do a bunch 
 ## Big Question ?
 how do you architect this thing to achieve analytics and reporting.
 
-## let's go ahead and start.
+# let's go ahead and start.
 
-
+**Start with basic streaming pipeline** 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzODA0NTQ1LC02OTk4MjIwOCwtNzM5Mz
-kwODMxLC03MDc1NzE4MzEsLTU5MjQ1NDM3NiwxNDM4NDMwMTE3
-LDk0MzA4MDI3M119
+eyJoaXN0b3J5IjpbMTg1ODczNTA4OCwtNjk5ODIyMDgsLTczOT
+M5MDgzMSwtNzA3NTcxODMxLC01OTI0NTQzNzYsMTQzODQzMDEx
+Nyw5NDMwODAyNzNdfQ==
 -->
