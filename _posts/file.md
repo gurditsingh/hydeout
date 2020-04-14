@@ -19,12 +19,12 @@ Many of the projects are actually falling and whats happening is basically you c
 Set of events that are coming in to Kafka or Kinesis and you want to do a bunch of different things with it you want to do some streaming analytics you also want to do some kind of more intense AI and reporting on the historical data.
 ![Flow](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/datalake.jpg?raw=true)
 
-Big Question is ?
-So the question is how do you architect this thing so let's go ahead and get started
+## Big Question ?
+how do you architect this thing to achive 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5OTgyMjA4LC03MzkzOTA4MzEsLTcwNz
-U3MTgzMSwtNTkyNDU0Mzc2LDE0Mzg0MzAxMTcsOTQzMDgwMjcz
-XX0=
+eyJoaXN0b3J5IjpbMjY2MTgxOTQwLC02OTk4MjIwOCwtNzM5Mz
+kwODMxLC03MDc1NzE4MzEsLTU5MjQ1NDM3NiwxNDM4NDMwMTE3
+LDk0MzA4MDI3M119
 -->
