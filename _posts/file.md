@@ -47,10 +47,10 @@ some messy data leaked out in data lake. so now I need to figure out and it's ha
 **Recompute save our life** we have to partition it by date and build a framework around spark that will allow me to recompute from any if anything goes wrong I'll just blow that whole folder away and recompute it from scratch and by reprocessing fix the mistakes that happened through leak 
 
 **Challenge No 3:** Updates in Data
-
+Now w
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjM2MjE2MzAsLTEwODkyNzE0NjIsLT
-IwMjE4MTAwMDQsMTI3MDI1NDc2NCwtMzE5MDg2NzAwLC02OTk4
-MjIwOCwtNzM5MzkwODMxLC03MDc1NzE4MzEsLTU5MjQ1NDM3Ni
-wxNDM4NDMwMTE3LDk0MzA4MDI3M119
+eyJoaXN0b3J5IjpbLTU4MjY3MTMyMywtMTA4OTI3MTQ2MiwtMj
+AyMTgxMDAwNCwxMjcwMjU0NzY0LC0zMTkwODY3MDAsLTY5OTgy
+MjA4LC03MzkzOTA4MzEsLTcwNzU3MTgzMSwtNTkyNDU0Mzc2LD
+E0Mzg0MzAxMTcsOTQzMDgwMjczXX0=
 -->
