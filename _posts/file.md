@@ -42,9 +42,10 @@ We have all the data in data lake which can be used by data scientists for machi
 
 We have put the validation in our pipelines to clear the messy data but it turns out before I put those validations in place some messy data leaked out.
 > Problem ?
-some messy data leaked out in data lake. 
+some messy data leaked out in data lake. so now I need to figure out and
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjE4MTAwMDQsMTI3MDI1NDc2NCwtMz
-E5MDg2NzAwLC02OTk4MjIwOCwtNzM5MzkwODMxLC03MDc1NzE4
-MzEsLTU5MjQ1NDM3NiwxNDM4NDMwMTE3LDk0MzA4MDI3M119
+eyJoaXN0b3J5IjpbNTk5MDA3MzUsLTIwMjE4MTAwMDQsMTI3MD
+I1NDc2NCwtMzE5MDg2NzAwLC02OTk4MjIwOCwtNzM5MzkwODMx
+LC03MDc1NzE4MzEsLTU5MjQ1NDM3NiwxNDM4NDMwMTE3LDk0Mz
+A4MDI3M119
 -->
