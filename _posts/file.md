@@ -13,7 +13,7 @@ Many of the projects are actually falling and whats happening is basically you c
 
 **Mistakes and failure:** Even with validation jobs there is always room for error. You need to make sure that it is possible to reprocess part of the data if any error is found then we just simply delete corrupt data and start loading it again.
 
-**File size inconsistency:** Either too small or too big files. Having too many files causes workers spending more time accessing, opening and closing files when reading which affects performance.
+**File size inconsistency:** Either too small or too big files. Having too many files causes workers to spend more time accessing, opening and closing files when reading which affects performance.
 
 Basic project ariche
 
@@ -21,7 +21,7 @@ Basic project ariche
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5MTMzNTA1MCwtNzM5MzkwODMxLC03MD
+eyJoaXN0b3J5IjpbLTMwMTcwNjY1NSwtNzM5MzkwODMxLC03MD
 c1NzE4MzEsLTU5MjQ1NDM3NiwxNDM4NDMwMTE3LDk0MzA4MDI3
 M119
 -->
