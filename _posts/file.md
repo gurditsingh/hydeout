@@ -16,7 +16,7 @@ Many of the projects are actually falling and whats happening is basically you c
 **File size inconsistency:** Either too small or too big files. Having too many files causes workers to spend more time accessing, opening and closing files when reading which affects performance.
 
 # Basic project architecture
-Set of events that are coming in to Kafka or Kinesis and you want to do a bunch of different things with it you want to do some streaming analytics you also want to do some kind of more intense AI and reporting on the historical data.
+Set of events that are coming in to Kafka or Kinesis and you want to do a bunch of different things with it you want to do some streaming analytics you also want to do some kind of more intense AI and reporting on the historical data. what we're gonna use apache spark it's gonna read from Kafka and do streaming analytics great that's pretty easy structured streaming works
 ![Flow](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/datalake.jpg?raw=true)
 
 ## Big Question ?
@@ -28,7 +28,7 @@ how do you architect this thing to achieve analytics and reporting.
 
 **Start with basic streaming pipeline** 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxOTA4NjcwMCwtNjk5ODIyMDgsLTczOT
-M5MDgzMSwtNzA3NTcxODMxLC01OTI0NTQzNzYsMTQzODQzMDEx
-Nyw5NDMwODAyNzNdfQ==
+eyJoaXN0b3J5IjpbMjAwOTA4Njk0OCwtMzE5MDg2NzAwLC02OT
+k4MjIwOCwtNzM5MzkwODMxLC03MDc1NzE4MzEsLTU5MjQ1NDM3
+NiwxNDM4NDMwMTE3LDk0MzA4MDI3M119
 -->
