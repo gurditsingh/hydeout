@@ -52,11 +52,11 @@ Now we have clear data in data lake. Next request is we have to go through this 
 > Problem ?
  so now I have to worry about updates, can you even do that in the data Lake.
 
-Spark job save our life
+**Update framework  save our life** 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY3NzkwOTUsMTcwNzYxMTE4NiwxNzUyMz
-E5NzMwLC0xMDg5MjcxNDYyLC0yMDIxODEwMDA0LDEyNzAyNTQ3
-NjQsLTMxOTA4NjcwMCwtNjk5ODIyMDgsLTczOTM5MDgzMSwtNz
-A3NTcxODMxLC01OTI0NTQzNzYsMTQzODQzMDExNyw5NDMwODAy
-NzNdfQ==
+eyJoaXN0b3J5IjpbNzMzMTg2MjY4LDE3MDc2MTExODYsMTc1Mj
+MxOTczMCwtMTA4OTI3MTQ2MiwtMjAyMTgxMDAwNCwxMjcwMjU0
+NzY0LC0zMTkwODY3MDAsLTY5OTgyMjA4LC03MzkzOTA4MzEsLT
+cwNzU3MTgzMSwtNTkyNDU0Mzc2LDE0Mzg0MzAxMTcsOTQzMDgw
+MjczXX0=
 -->
