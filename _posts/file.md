@@ -52,11 +52,11 @@ Now we have clear data in data lake. Next request is we have to go through this 
 > Problem ?
  so now I have to worry about updates, can you even do that in the data Lake.
 
-**Update framework  save our life** So I'll build another spark job and it will read that data in update it and write it back out I really hope it doesn't crash in the middle because we might lose some data then but it'll probably work so okay oh and then you know I don't want to run this thing at the wrong time because if somebody is querying the data lake while I'm modifying it they'll see inconsistent results and then they'll yell at me again so okay we're gonna build this update framework
+**Update framework  save our life** So I'll build another spark job and it will read that data in update/remove it and write it back out. I really hope it doesn't crash in the middle because of huge data. you don't want to run this thing at the wrong time because if somebody is querying the data lake while I'm modifying it they'll see inconsistent results and then they'll yell at me again so okay we're gonna build this update framework
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ4Njc4MzE3LDE3MDc2MTExODYsMTc1Mj
-MxOTczMCwtMTA4OTI3MTQ2MiwtMjAyMTgxMDAwNCwxMjcwMjU0
-NzY0LC0zMTkwODY3MDAsLTY5OTgyMjA4LC03MzkzOTA4MzEsLT
-cwNzU3MTgzMSwtNTkyNDU0Mzc2LDE0Mzg0MzAxMTcsOTQzMDgw
-MjczXX0=
+eyJoaXN0b3J5IjpbLTE3NTA3MDc3MDEsMTcwNzYxMTE4NiwxNz
+UyMzE5NzMwLC0xMDg5MjcxNDYyLC0yMDIxODEwMDA0LDEyNzAy
+NTQ3NjQsLTMxOTA4NjcwMCwtNjk5ODIyMDgsLTczOTM5MDgzMS
+wtNzA3NTcxODMxLC01OTI0NTQzNzYsMTQzODQzMDExNyw5NDMw
+ODAyNzNdfQ==
 -->
