@@ -27,11 +27,12 @@ we can use apache spark it's going to read from Kafka and do streaming analytics
  But it doesn't let me look back in time and do more complicated things like machine learning. 
 
 
-**lambda architecture save our life** what it's means in addition to running my streaming pipeline that I use for kind of the immediate results I'm also going to run this spark batch pipeline to archive all this data into the data lake and do reporting on it.
+**lambda architecture save our life** what it's means in addition to running my streaming pipeline that I use for kind of the immediate results I'm also going to run this spark batch pipeline to archive all this data into the data lake and do reporting and machine learning on it.
 
-**Challenge No 2:** Historical Reporting
+**Challenge No 2:** Messy Data
+data scientists are looking at my data Lake and telling me this data doesn't make any sense it's too messy and so okay you know this is the problem with big data I know how to fix this we'll just put validations into all spots in the pipeline now it's really important that we do it in both places because we're running two different pipelines here but again spark has unified API so it's not too hard so we'll add validations to both part and okay so that will help us with our messy data then 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQyOTcwNDA3LDEyNzAyNTQ3NjQsLTMxOT
-A4NjcwMCwtNjk5ODIyMDgsLTczOTM5MDgzMSwtNzA3NTcxODMx
-LC01OTI0NTQzNzYsMTQzODQzMDExNyw5NDMwODAyNzNdfQ==
+eyJoaXN0b3J5IjpbMjA1MzExMTcwOCwxMjcwMjU0NzY0LC0zMT
+kwODY3MDAsLTY5OTgyMjA4LC03MzkzOTA4MzEsLTcwNzU3MTgz
+MSwtNTkyNDU0Mzc2LDE0Mzg0MzAxMTcsOTQzMDgwMjczXX0=
 -->
