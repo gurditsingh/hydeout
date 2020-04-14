@@ -34,11 +34,11 @@ we can use apache spark it's going to read from Kafka and do streaming analytics
 We have all the data in data lake which can be used by data scientists for machine learning, reporting and data modeling.
 
 > Problem ?
-> data scientists are looking at my data Lake and telling me this data doesn't make any sense it's too messy usab
+> data scientists are looking at my data Lake and telling me this data doesn't make any sense it's too messy usually problem with big data.
 
- are looking at my data Lake and telling me this data doesn't make any sense it's too messy and so okay you know this is the problem with big data I know how to fix this we'll just put validations into all spots in the pipeline now it's really important that we do it in both places because we're running two different pipelines here but again spark has unified API so it's not too hard so we'll add validations to both part and okay so that will help us with our messy data then 
+**Data validation **  how to fix this we'll just put validations into all spots in the pipeline now it's really important that we do it in both places because we're running two different pipelines here but again spark has unified API so it's not too hard so we'll add validations to both part and okay so that will help us with our messy data then 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTcxNDQ1ODIxLDEyNzAyNTQ3NjQsLTMxOT
+eyJoaXN0b3J5IjpbNDIyMDg1NTAxLDEyNzAyNTQ3NjQsLTMxOT
 A4NjcwMCwtNjk5ODIyMDgsLTczOTM5MDgzMSwtNzA3NTcxODMx
 LC01OTI0NTQzNzYsMTQzODQzMDExNyw5NDMwODAyNzNdfQ==
 -->
