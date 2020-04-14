@@ -22,12 +22,12 @@ Set of events that are coming in to Kafka or Kinesis and you want to do a bunch 
 # Challenges with Design
 **Challenge No 1:** Historical Reporting
 
-we can use apache spark it's going to read from Kafka and do streaming analytics. On historical reporting streaming is great it tells you what's happening right now but it doesn't let me look back in time and do more complicated things like machine learning.
-
+we can use apache spark it's going to read from Kafka and do streaming analytics. On historical reporting streaming is great it tells you what's happening right now.
 > Problem ?
-
+ But it doesn't let me look back in time and do more complicated things like machine learning. 
+lambda architecture mean it means in addition to running my streaming pipeline that I use for kind of the immediate results I'm also going to run this batch pipeline that is you know maybe more correct although in a spark it's actually the same and I'm gonna archive all this data into the data lake and then now that I have this data Lake I can do reporting on it right so okay trick number one lambda architecture this brings us on to 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMjY2NDcyLDEyNzAyNTQ3NjQsLTMxOT
-A4NjcwMCwtNjk5ODIyMDgsLTczOTM5MDgzMSwtNzA3NTcxODMx
-LC01OTI0NTQzNzYsMTQzODQzMDExNyw5NDMwODAyNzNdfQ==
+eyJoaXN0b3J5IjpbLTg5NTc2ODk5MCwxMjcwMjU0NzY0LC0zMT
+kwODY3MDAsLTY5OTgyMjA4LC03MzkzOTA4MzEsLTcwNzU3MTgz
+MSwtNTkyNDU0Mzc2LDE0Mzg0MzAxMTcsOTQzMDgwMjczXX0=
 -->
