@@ -50,10 +50,13 @@ some messy data leaked out in data lake. so now I need to figure out and it's ha
 Now we have clear data in data lake. Next request is we have to go through this data Lake and remove/update all of these customer addresses but keep everything else.
 
 > Problem ?
- so now I have to worry about updates, can you even do that in the data Lake
+ so now I have to worry about updates, can you even do that in the data Lake.
+
+Spark job save our life
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwNzYxMTE4NiwxNzUyMzE5NzMwLC0xMD
-g5MjcxNDYyLC0yMDIxODEwMDA0LDEyNzAyNTQ3NjQsLTMxOTA4
-NjcwMCwtNjk5ODIyMDgsLTczOTM5MDgzMSwtNzA3NTcxODMxLC
-01OTI0NTQzNzYsMTQzODQzMDExNyw5NDMwODAyNzNdfQ==
+eyJoaXN0b3J5IjpbNzY3NzkwOTUsMTcwNzYxMTE4NiwxNzUyMz
+E5NzMwLC0xMDg5MjcxNDYyLC0yMDIxODEwMDA0LDEyNzAyNTQ3
+NjQsLTMxOTA4NjcwMCwtNjk5ODIyMDgsLTczOTM5MDgzMSwtNz
+A3NTcxODMxLC01OTI0NTQzNzYsMTQzODQzMDExNyw5NDMwODAy
+NzNdfQ==
 -->
