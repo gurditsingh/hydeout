@@ -27,9 +27,11 @@ we can use apache spark it's going to read from Kafka and do streaming analytics
  But it doesn't let me look back in time and do more complicated things like machine learning. 
 
 
-**lambda architecture save our life** what it's means in addition to running my streaming pipeline that I use for kind of the immediate results I'm also going to run this batch pipeline in a spark it's actually the same and it's going to archive all this data into the data lake and then now that I have this data Lake I can do reporting on it.
+**lambda architecture save our life** what it's means in addition to running my streaming pipeline that I use for kind of the immediate results I'm also going to run this spark batch pipeline to archive all this data into the data lake and do reporting on it.
+
+**Challenge No 2:** Historical Reporting
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDMzODkwMTE1LDEyNzAyNTQ3NjQsLTMxOT
+eyJoaXN0b3J5IjpbNzQyOTcwNDA3LDEyNzAyNTQ3NjQsLTMxOT
 A4NjcwMCwtNjk5ODIyMDgsLTczOTM5MDgzMSwtNzA3NTcxODMx
 LC01OTI0NTQzNzYsMTQzODQzMDExNyw5NDMwODAyNzNdfQ==
 -->
