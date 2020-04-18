@@ -1,4 +1,6 @@
-When processing large amounts of semi-structured data, there is usually a delay between the point when data is collected and its availability in reports and dashboards. Often the delay results from the need to validate or at least identify granular data. In some cases, however, being able to react immediately to new data is more important than being 100 percent certain of the data’s validity.
+
+Big data is used by organisations for the sole purpose of analytics. However, before companies can set out to extract insights and valuable information from big data, they must have the knowledge of data sources. Data, as we know, is massive and exists in various forms. Therefore we can say that dealing with big data in the best possible manner is becoming the main area of interest for businesses, scientists and individuals. When processing large amounts of data, there is usually a delay between the point when data is collected and its availability in reports and dashboards. In this article we’ll try to explore data processing architectures that serve as the backbone of various enterprise applications known as Lambda Architecture.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQzMDQ0NTY1LC0yNTI1OTcwMTZdfQ==
+eyJoaXN0b3J5IjpbLTQ3MDg0Mzk0Miw0NDMwNDQ1NjUsLTI1Mj
+U5NzAxNl19
 -->
