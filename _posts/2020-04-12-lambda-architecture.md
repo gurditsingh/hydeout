@@ -41,10 +41,12 @@ While we mention data processing we basically use this term to represent high th
 	 The batch layer is mainly responsible for two tasks. The first is to store the constantly growing master data in a data lake, which is in this case a Hadoop distributed file system or databases such as in memory databases or NoSQL based storages. The second task is to precompute batch views for this distributed data by using the Spark or MapReduce processing paradigm. Those batch views can be used to answer incoming queries with low read latency.
 
  2. **Speed Layer**
-The speed layer, we are processing the streaming data using Kafka/Kinesis with Spark streaming and two main tasks are done in this layer: first, the stream data is appended into data lake for later batch processing; Second, Speed layer provides the outputs on the basis enrichment process and supports the serving layer to reduce the latency in responding the queries. As obvious from its name the speed layer has low latency because it deals with the real time data.
+ 
+	The speed layer, we are processing the streaming data using Kafka/Kinesis with Spark streaming and two main tasks are done in this layer: first, the stream data is appended into data lake for later batch processing; Second, Speed layer provides the outputs on the basis enrichment process and supports the serving layer to reduce the latency in responding the queries. As obvious from its name the speed layer has low latency because it deals with the real time data.
 
  3. **Serving Layer**
-The serving layer, merged query is aimed at joining and analyzing the data from both the batch view from the batch layer and the incremental stream view from the speed layer. This way the serving layer can provide the real-time computation results over all data.
+
+	The serving layer, merged query is aimed at joining and analyzing the data from both the batch view from the batch layer and the incremental stream view from the speed layer. This way the serving layer can provide the real-time computation results over all data.
 
 # Conclusion
 The Lambda architecture described in this provides the building blocks of a unified architectural pattern that unifies stream (real-time) and batch processing within a single code base. Through the use of Spark Streaming and Spark SQL APIs, you implement your business logic function once, and then reuse the code in a batch ETL process as well as for real-time streaming processes. In this way, you can quickly implement a real-time layer to complement the batch-processing one. In the long term, this architecture will reduce your maintenance overhead. It will also reduce the risk for errors resulting from duplicate code bases.
