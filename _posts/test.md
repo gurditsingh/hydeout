@@ -15,21 +15,24 @@ While we mention data processing we basically use this term to represent high th
  - Speed Layer
  - Serving Layer
 
+ **Basic diagram of Lambda Architecture Model**
  
 ![Lambda Architecture](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/lambda.png?raw=true) 
  
 
- 1. Batch Layer
+ 1. **Batch Layer**
  
 	 The batch layer is mainly responsible for two tasks. The first is to store the constantly growing master data in a data lake, which is in this case a Hadoop distributed file system or databases such as in memory databases or NoSQL based storages. The second task is to precompute batch views for this distributed data by using the Spark or MapReduce processing paradigm. Those batch views can be used to answer incoming queries with low read latency.
 
- 2. Batch Layer
+ 2. **Speed Layer**
 The speed layer, we are processing the streaming data using Kafka/Kinesis with Spark streaming and two main tasks are done in this layer: first, the stream data is appended into data lake for later batch processing; Second, Speed layer provides the outputs on the basis enrichment process and supports the serving layer to reduce the latency in responding the queries. As obvious from its name the speed layer has low latency because it deals with the real time data.
 
- 3. Serving Layer
+ 3. **Serving Layer**
+ 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE0NjAxNTg4LDE2OTU0NzU5MzEsLTE2Nj
-I2NDk4NzgsNDU4ODk0Mjc2LC0xODE2MDU3Njk3LC01MzIwMjM0
-MzgsLTMwOTEyMzA1Niw0NDMwNDQ1NjUsLTI1MjU5NzAxNl19
+eyJoaXN0b3J5IjpbODQxNzE4NjIyLDYxNDYwMTU4OCwxNjk1ND
+c1OTMxLC0xNjYyNjQ5ODc4LDQ1ODg5NDI3NiwtMTgxNjA1NzY5
+NywtNTMyMDIzNDM4LC0zMDkxMjMwNTYsNDQzMDQ0NTY1LC0yNT
+I1OTcwMTZdfQ==
 -->
