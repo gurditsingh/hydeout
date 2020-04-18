@@ -16,10 +16,11 @@ While we mention data processing we basically use this term to represent high th
  - Serving Layer
  
  
- 
+![Lambda Architecture](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/lambda.png?raw=true) 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU4ODk0Mjc2LC0xODE2MDU3Njk3LC01Mz
-IwMjM0MzgsNDQzMDQ0NTY1LC0yNTI1OTcwMTZdfQ==
+eyJoaXN0b3J5IjpbLTE2NjI2NDk4NzgsNDU4ODk0Mjc2LC0xOD
+E2MDU3Njk3LC01MzIwMjM0MzgsNDQzMDQ0NTY1LC0yNTI1OTcw
+MTZdfQ==
 -->
