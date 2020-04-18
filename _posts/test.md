@@ -4,8 +4,8 @@ Big data is used by organisations for the sole purpose of analytics. However, be
 
 # Lambda Architecture
 
-
+The basis of the Lambda architecture is to compute arbitrary functions on distributed datasets in real-time and to combine batch and real-time processing capabilities to balance data latency throughput, and fault tolerance.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5ODM2NzM0OCw0NDMwNDQ1NjUsLTI1Mj
+eyJoaXN0b3J5IjpbLTMwOTEyMzA1Niw0NDMwNDQ1NjUsLTI1Mj
 U5NzAxNl19
 -->
