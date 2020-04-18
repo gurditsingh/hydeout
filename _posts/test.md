@@ -21,9 +21,12 @@ While we mention data processing we basically use this term to represent high th
 
  1. Batch Layer
  
+	 The batch layer is mainly responsible for two tasks. The first is to store the constantly growing master data in a data lake, which is in this case a Hadoop distributed file system or databases such as in memory databases or NoSQL based storages. The second task is to precompute batch views for this distributed data by using the Spark or MapReduce processing paradigm. Those batch views can be used to answer incoming queries with low read latency.
+
+ 2. Batch Layer
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc4MDEzMDQsLTE2NjI2NDk4NzgsNDU4OD
-k0Mjc2LC0xODE2MDU3Njk3LC01MzIwMjM0MzgsNDQzMDQ0NTY1
-LC0yNTI1OTcwMTZdfQ==
+eyJoaXN0b3J5IjpbMTY5NTQ3NTkzMSwtMTY2MjY0OTg3OCw0NT
+g4OTQyNzYsLTE4MTYwNTc2OTcsLTUzMjAyMzQzOCw0NDMwNDQ1
+NjUsLTI1MjU5NzAxNl19
 -->
