@@ -30,11 +30,11 @@ The speed layer, we are processing the streaming data using Kafka/Kinesis with S
  3. **Serving Layer**
 The serving layer, merged query is aimed at joining and analyzing the data from both the batch view from the batch layer and the incremental stream view from the speed layer. This way the serving layer can provide the real-time computation results over all data.
 
-
-
+# Conclusion
+The Lambda architecture described in this provides the building blocks of a unified architectural pattern that unifies stream (real-time) and batch processing within a single code base. Through the use of Spark Streaming and Spark SQL APIs, you implement your business logic function once, and then reuse the code in a batch ETL process as well as for real-time streaming processes. In this way, you can quickly implement a real-time layer to complement the batch-processing one. In the long term, this architecture will reduce your maintenance overhead. It will also reduce the risk for errors resulting from duplicate code bases.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODU5NDQ1MTIsODQxNzE4NjIyLDYxND
-YwMTU4OCwxNjk1NDc1OTMxLC0xNjYyNjQ5ODc4LDQ1ODg5NDI3
-NiwtMTgxNjA1NzY5NywtNTMyMDIzNDM4LDQ0MzA0NDU2NSwtMj
-UyNTk3MDE2XX0=
+eyJoaXN0b3J5IjpbODE5MTU1MTgwLC0xNjg1OTQ0NTEyLDg0MT
+cxODYyMiw2MTQ2MDE1ODgsMTY5NTQ3NTkzMSwtMTY2MjY0OTg3
+OCw0NTg4OTQyNzYsLTE4MTYwNTc2OTcsLTUzMjAyMzQzOCw0ND
+MwNDQ1NjUsLTI1MjU5NzAxNl19
 -->
