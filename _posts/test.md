@@ -24,9 +24,12 @@ While we mention data processing we basically use this term to represent high th
 	 The batch layer is mainly responsible for two tasks. The first is to store the constantly growing master data in a data lake, which is in this case a Hadoop distributed file system or databases such as in memory databases or NoSQL based storages. The second task is to precompute batch views for this distributed data by using the Spark or MapReduce processing paradigm. Those batch views can be used to answer incoming queries with low read latency.
 
  2. Batch Layer
+The speed layer, we are processing the streaming data using Kafka/Kinesis with Spark streaming and two main tasks are done in this layer: first, the stream data is appended into data lake for later batch processing; Second, Speed layer provides the outputs on the basis enrichment process and supports the serving layer to reduce the latency in responding the queries. As obvious from its name the speed layer has low latency because it deals with the real time data.
+
+ 3. Serving Layer
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NTQ3NTkzMSwtMTY2MjY0OTg3OCw0NT
-g4OTQyNzYsLTE4MTYwNTc2OTcsLTUzMjAyMzQzOCwtMzA5MTIz
-MDU2LDQ0MzA0NDU2NSwtMjUyNTk3MDE2XX0=
+eyJoaXN0b3J5IjpbNjE0NjAxNTg4LDE2OTU0NzU5MzEsLTE2Nj
+I2NDk4NzgsNDU4ODk0Mjc2LC0xODE2MDU3Njk3LC01MzIwMjM0
+MzgsLTMwOTEyMzA1Niw0NDMwNDQ1NjUsLTI1MjU5NzAxNl19
 -->
