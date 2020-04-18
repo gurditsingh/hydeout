@@ -28,11 +28,13 @@ While we mention data processing we basically use this term to represent high th
 The speed layer, we are processing the streaming data using Kafka/Kinesis with Spark streaming and two main tasks are done in this layer: first, the stream data is appended into data lake for later batch processing; Second, Speed layer provides the outputs on the basis enrichment process and supports the serving layer to reduce the latency in responding the queries. As obvious from its name the speed layer has low latency because it deals with the real time data.
 
  3. **Serving Layer**
- 
+The serving layer, merged query is aimed at joining and analyzing the data from both the batch view from the batch layer and the incremental stream view from the speed layer. This way the serving layer can provide the real-time computation results over all data.
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQxNzE4NjIyLDYxNDYwMTU4OCwxNjk1ND
-c1OTMxLC0xNjYyNjQ5ODc4LDQ1ODg5NDI3NiwtMTgxNjA1NzY5
-NywtNTMyMDIzNDM4LC0zMDkxMjMwNTYsNDQzMDQ0NTY1LC0yNT
-I1OTcwMTZdfQ==
+eyJoaXN0b3J5IjpbLTE2ODU5NDQ1MTIsODQxNzE4NjIyLDYxND
+YwMTU4OCwxNjk1NDc1OTMxLC0xNjYyNjQ5ODc4LDQ1ODg5NDI3
+NiwtMTgxNjA1NzY5NywtNTMyMDIzNDM4LC0zMDkxMjMwNTYsND
+QzMDQ0NTY1LC0yNTI1OTcwMTZdfQ==
 -->
