@@ -9,15 +9,17 @@ The basis of the Lambda architecture is to compute arbitrary functions on distri
 
 While we mention data processing we basically use this term to represent high throughput, low latency and aiming for near-real-time applications. Which also would allow the developers to define delta rules in the form of code logic or NLP in event-based data processing models to achieve robustness, automation and improve the data quality.
 
-> In this architecture
-
-, one can query both fresh and historical data. To gain insight into the historical data movements. The architecture has also solved the problem of computation of arbitrary functions. In general, a problem can be segregated into three layers:
+**In this architecture**, one can query both fresh and historical data. To gain insight into the historical data movements. The architecture has also solved the problem of computation of arbitrary functions. In general, a problem can be segregated into three layers:
 
  - Batch Layer 
- - Serving Layer
  - Speed Layer
+ - Serving Layer
+ 
+ 
+ 
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY0NTAxNzE0LC0xODE2MDU3Njk3LC01Mz
+eyJoaXN0b3J5IjpbNDU4ODk0Mjc2LC0xODE2MDU3Njk3LC01Mz
 IwMjM0MzgsNDQzMDQ0NTY1LC0yNTI1OTcwMTZdfQ==
 -->
