@@ -14,11 +14,12 @@ The REST API has been a pillar of web API's for a long time. But recently gRPC h
 
 where a long time ago we used **RPC** but that not worked so we replace it with **REST** and then that not worked so we replaced it with **graph QL** and that's like the best thing  looking at API design. but I think it misses the point that the graph QL is the best thing for every situation or rest is the best thing for every situation the point is that these are actually different tools for different jobs.
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1OTU0NDQxOSw5NjU2Mzc0NzMsLTEzOD
-IxMTUzNDEsMzA4NzMwNTM5LC0xMzQyMjMyMTgsODE5MTU1MTgw
-LC0xNjg1OTQ0NTEyLDg0MTcxODYyMiw2MTQ2MDE1ODgsMTY5NT
-Q3NTkzMSwtMTY2MjY0OTg3OCw0NTg4OTQyNzYsLTE4MTYwNTc2
-OTcsLTUzMjAyMzQzOCwtMzA5MTIzMDU2LDQ0MzA0NDU2NSwtMj
-UyNTk3MDE2XX0=
+eyJoaXN0b3J5IjpbNjQ1MTE5ODgzLC04NTk1NDQ0MTksOTY1Nj
+M3NDczLC0xMzgyMTE1MzQxLDMwODczMDUzOSwtMTM0MjIzMjE4
+LDgxOTE1NTE4MCwtMTY4NTk0NDUxMiw4NDE3MTg2MjIsNjE0Nj
+AxNTg4LDE2OTU0NzU5MzEsLTE2NjI2NDk4NzgsNDU4ODk0Mjc2
+LC0xODE2MDU3Njk3LC01MzIwMjM0MzgsLTMwOTEyMzA1Niw0ND
+MwNDQ1NjUsLTI1MjU5NzAxNl19
 -->
