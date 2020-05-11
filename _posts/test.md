@@ -5,7 +5,9 @@ The REST API has been a pillar of web API's for a long time. But recently gRPC h
 First Question in Mind
 How should I design my API ? or Which API sytle is best ?
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODIxMTUzNDEsMzA4NzMwNTM5LC0xMz
-QyMjMyMTgsLTIxMDY5ODQ2MjUsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbOTY1NjM3NDczLC0xMzgyMTE1MzQxLDMwOD
+czMDUzOSwtMTM0MjIzMjE4LC0yMTA2OTg0NjI1LC0zMzI0NTUz
+NjNdfQ==
 -->
