@@ -1,6 +1,7 @@
-### The return of RPC -  because rest is not only the solution for APIs
+### The return of RPC -  because REST is not only the solution for APIs
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMTkxNDEyMiwtMTM0MjIzMjE4LDgxOT
+eyJoaXN0b3J5IjpbMTM2ODg3MTQ2MCwtMTM0MjIzMjE4LDgxOT
 E1NTE4MCwtMTY4NTk0NDUxMiw4NDE3MTg2MjIsNjE0NjAxNTg4
 LDE2OTU0NzU5MzEsLTE2NjI2NDk4NzgsNDU4ODk0Mjc2LC0xOD
 E2MDU3Njk3LC01MzIwMjM0MzgsLTMwOTEyMzA1Niw0NDMwNDQ1
