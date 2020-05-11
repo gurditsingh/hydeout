@@ -5,11 +5,13 @@ The REST API has been a pillar of web API's for a long time. But recently gRPC h
 First Question in Mind
 How should I design my API ? or Which API sytle is best ?
 
+where a long time ago we used RPC but that sucked so we replace it with rest and then that sucked so we replaced it with graph QL and that's like the best thing that you could ever imagine right now the problem with this very tempting way of looking at API design is that I think it misses the point the point is not that graph QL is the best thing for every situation or rest is the best thing for every situation the point is that these are actually different tools for different jobs
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY1NjM3NDczLC0xMzgyMTE1MzQxLDMwOD
-czMDUzOSwtMTM0MjIzMjE4LDgxOTE1NTE4MCwtMTY4NTk0NDUx
-Miw4NDE3MTg2MjIsNjE0NjAxNTg4LDE2OTU0NzU5MzEsLTE2Nj
-I2NDk4NzgsNDU4ODk0Mjc2LC0xODE2MDU3Njk3LC01MzIwMjM0
-MzgsLTMwOTEyMzA1Niw0NDMwNDQ1NjUsLTI1MjU5NzAxNl19
+eyJoaXN0b3J5IjpbMTcxODkzMDUwOSw5NjU2Mzc0NzMsLTEzOD
+IxMTUzNDEsMzA4NzMwNTM5LC0xMzQyMjMyMTgsODE5MTU1MTgw
+LC0xNjg1OTQ0NTEyLDg0MTcxODYyMiw2MTQ2MDE1ODgsMTY5NT
+Q3NTkzMSwtMTY2MjY0OTg3OCw0NTg4OTQyNzYsLTE4MTYwNTc2
+OTcsLTUzMjAyMzQzOCwtMzA5MTIzMDU2LDQ0MzA0NDU2NSwtMj
+UyNTk3MDE2XX0=
 -->
