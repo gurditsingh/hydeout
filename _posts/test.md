@@ -10,15 +10,15 @@ The REST API has been a pillar of web API's for a long time. But recently gRPC h
 
 **So this is a hard question to answer**
 
-if you pay attention to Twitter and conference talks a huge debate going on between RPC and Rest.
+## if you pay attention to Twitter and conference talks a huge debate going on between RPC and Rest.
 
-where a long time ago we used RPC but that sucked so we replace it with rest and then that sucked so we replaced it with graph QL and that's like the best thing that you could ever imagine right now the problem with this very tempting way of looking at API design is that I think it misses the point the point is not that graph QL is the best thing for every situation or rest is the best thing for every situation the point is that these are actually different tools for different jobs
+where a long time ago we used **RPC** but that sucked so we replace it with **REST** and then that sucked so we replaced it with **graph QL** and that's like the best thing that you could ever imagine right now the problem with this very tempting way of looking at API design is that I think it misses the point the point is not that graph QL is the best thing for every situation or rest is the best thing for every situation the point is that these are actually different tools for different jobs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNDYxNzg3LDk2NTYzNzQ3MywtMTM4Mj
-ExNTM0MSwzMDg3MzA1MzksLTEzNDIyMzIxOCw4MTkxNTUxODAs
-LTE2ODU5NDQ1MTIsODQxNzE4NjIyLDYxNDYwMTU4OCwxNjk1ND
-c1OTMxLC0xNjYyNjQ5ODc4LDQ1ODg5NDI3NiwtMTgxNjA1NzY5
-NywtNTMyMDIzNDM4LC0zMDkxMjMwNTYsNDQzMDQ0NTY1LC0yNT
-I1OTcwMTZdfQ==
+eyJoaXN0b3J5IjpbMjAyOTcyMjEwNyw5NjU2Mzc0NzMsLTEzOD
+IxMTUzNDEsMzA4NzMwNTM5LC0xMzQyMjMyMTgsODE5MTU1MTgw
+LC0xNjg1OTQ0NTEyLDg0MTcxODYyMiw2MTQ2MDE1ODgsMTY5NT
+Q3NTkzMSwtMTY2MjY0OTg3OCw0NTg4OTQyNzYsLTE4MTYwNTc2
+OTcsLTUzMjAyMzQzOCwtMzA5MTIzMDU2LDQ0MzA0NDU2NSwtMj
+UyNTk3MDE2XX0=
 -->
