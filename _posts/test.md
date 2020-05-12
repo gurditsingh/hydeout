@@ -16,20 +16,20 @@ where a long time ago we used **RPC** but that not worked so we replace it with 
 
 ## What is important ?
 
-when you're designing an API instead of thinking about it like this what you're really doing is making a ton of different decisions all the time all these different design considerations about.
+when you're designing an API instead of thinking about ton of different decisions all the time all these different design considerations.
 
-what you want to make important or 
-what is important to you and
- what isn't as important things like do you care about whether your API is tightly coupled to the system underneath sometimes that's fine
- but other times you don't want tight coupling you want some strong abstraction there sometimes you want ApS that are very high-performance as they communicate and send messages to each other 
+what you want to make important
+what is important to you
+what isn't as important things like do you care about whether your API is tightly coupled.
+but other times you don't want tight coupling you want some strong abstraction there sometimes you want ApS that are very high-performance as they communicate and send messages to each other 
 
 and it's totally fine for them to be very chatty on the wire on the network but other times you don't want that Chad miss you want very low network latency or very low network overhead
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5ODg3NjM5MSwtNjU0MjExNjEwLDY0NT
-ExOTg4MywtODU5NTQ0NDE5LDk2NTYzNzQ3MywtMTM4MjExNTM0
-MSwzMDg3MzA1MzksLTEzNDIyMzIxOCw4MTkxNTUxODAsLTE2OD
-U5NDQ1MTIsODQxNzE4NjIyLDYxNDYwMTU4OCwxNjk1NDc1OTMx
-LC0xNjYyNjQ5ODc4LDQ1ODg5NDI3NiwtMTgxNjA1NzY5NywtNT
-MyMDIzNDM4LC0zMDkxMjMwNTYsNDQzMDQ0NTY1LC0yNTI1OTcw
-MTZdfQ==
+eyJoaXN0b3J5IjpbLTIwMTk4OTExODcsLTY1NDIxMTYxMCw2ND
+UxMTk4ODMsLTg1OTU0NDQxOSw5NjU2Mzc0NzMsLTEzODIxMTUz
+NDEsMzA4NzMwNTM5LC0xMzQyMjMyMTgsODE5MTU1MTgwLC0xNj
+g1OTQ0NTEyLDg0MTcxODYyMiw2MTQ2MDE1ODgsMTY5NTQ3NTkz
+MSwtMTY2MjY0OTg3OCw0NTg4OTQyNzYsLTE4MTYwNTc2OTcsLT
+UzMjAyMzQzOCwtMzA5MTIzMDU2LDQ0MzA0NDU2NSwtMjUyNTk3
+MDE2XX0=
 -->
