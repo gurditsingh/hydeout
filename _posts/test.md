@@ -17,9 +17,12 @@ where a long time ago we used **RPC** but that not worked so we replace it with 
 ## What is important ?
 
 when you're designing an API instead of thinking about ton of different decisions all the time all these different design considerations about what you want to make important or what is important to you and what isn't as important things like do you care about whether your API is tightly coupled or not.
+
+
+there's a lot of design considerations what we really should do and strive to do as API designers or API builders is understand all of the trade-offs that go into various styles of API design that way we can pick the style that's going to fit best for a project that we might build so that's
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Nzg0NjMwMzksLTY1NDIxMTYxMCw2ND
-UxMTk4ODMsLTg1OTU0NDQxOSw5NjU2Mzc0NzMsLTEzODIxMTUz
-NDEsMzA4NzMwNTM5LC0xMzQyMjMyMTgsLTIxMDY5ODQ2MjUsLT
-MzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbMTQyODk5NzcyOCwtNjU0MjExNjEwLDY0NT
+ExOTg4MywtODU5NTQ0NDE5LDk2NTYzNzQ3MywtMTM4MjExNTM0
+MSwzMDg3MzA1MzksLTEzNDIyMzIxOCwtMjEwNjk4NDYyNSwtMz
+MyNDU1MzYzXX0=
 -->
