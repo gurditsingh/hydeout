@@ -18,15 +18,13 @@ where a long time ago we used **RPC** but that not worked so we replace it with 
 
 when you're designing an API instead of thinking about ton of different decisions all the time all these different design considerations. what you want to make important or what is important to you.
 
-
-what isn't as important things like do you care about whether your API is tightly coupled.
-
-what you want to make want tight coupling you want some strong abstraction there sometimes you want ApS that are very high-performance as they communicate and send messages to each other 
+ - what isn't as important things like do you care about whether your API is tightly coupled.
+ - what you want to make tight coupling you want some strong abstraction and very high-performance as they communicate and send messages to each other.
 
 and it's totally fine for them to be very chatty on the wire on the network but other times you don't want that Chad miss you want very low network latency or very low network overhead
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjIxMzgwNzYsLTY1NDIxMTYxMCw2ND
-UxMTk4ODMsLTg1OTU0NDQxOSw5NjU2Mzc0NzMsLTEzODIxMTUz
-NDEsMzA4NzMwNTM5LC0xMzQyMjMyMTgsLTIxMDY5ODQ2MjUsLT
-MzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbMzI2ODc4MTIzLC02NTQyMTE2MTAsNjQ1MT
+E5ODgzLC04NTk1NDQ0MTksOTY1NjM3NDczLC0xMzgyMTE1MzQx
+LDMwODczMDUzOSwtMTM0MjIzMjE4LC0yMTA2OTg0NjI1LC0zMz
+I0NTUzNjNdfQ==
 -->
