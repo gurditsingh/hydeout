@@ -12,11 +12,11 @@ The REST API has been a pillar of web API's for a long time. But recently gRPC h
 
 ## if you pay attention to Twitter and conference talks a huge debate going on between RPC and Rest.
 
-where a long time ago we used **RPC** but that not worked so we replace it with **REST** and then that not worked so we replaced it with **graph QL** and that's like the best thing  looking at API design. but I think it misses the point that the graph QL is the best thing for every situation or rest is the best thing for every situation the point is that these are actually different tools for different jobs.
+where a long time ago we used **RPC** but that not worked so we replace it with **REST** and then that not worked so we replaced it with **graph QL** and that's like the best thing  looking at API design. but I think it misses the point is not that the graph QL is the best thing for every situation or rest is the best thing for every situation the point is that these are actually different tools for different jobs.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ1MTE5ODgzLC04NTk1NDQ0MTksOTY1Nj
-M3NDczLC0xMzgyMTE1MzQxLDMwODczMDUzOSwtMTM0MjIzMjE4
-LC0yMTA2OTg0NjI1LC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbLTY1NDIxMTYxMCw2NDUxMTk4ODMsLTg1OT
+U0NDQxOSw5NjU2Mzc0NzMsLTEzODIxMTUzNDEsMzA4NzMwNTM5
+LC0xMzQyMjMyMTgsLTIxMDY5ODQ2MjUsLTMzMjQ1NTM2M119
 -->
