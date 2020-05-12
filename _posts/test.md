@@ -14,12 +14,15 @@ The REST API has been a pillar of web API's for a long time. But recently gRPC h
 
 where a long time ago we used **RPC** but that not worked so we replace it with **REST** and then that not worked so we replaced it with **graph QL** and that's like the best thing  looking at API design. but I think it misses the point is not that the graph QL is the best thing for every situation or rest is the best thing for every situation the point is that these are actually different tools for different jobs.
 
+## What is important ?
 
+when you're designing an API instead of thinking about it like this what you're really doing is making a ton of different decisions all the time all these different design considerations about what you want to make important or what is important to you and what isn't as important things like do you care about whether your API is tightly coupled to the system underneath sometimes that's fine but other times you don't want tight coupling you want some strong abstraction there sometimes you want ApS that are very high-performance as they communicate and send messages to each other and it's totally fine for them to be very chatty on the wire on the network but other times you don't want that Chad miss you want very low network latency or very low network overhead
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY1NDIxMTYxMCw2NDUxMTk4ODMsLTg1OT
-U0NDQxOSw5NjU2Mzc0NzMsLTEzODIxMTUzNDEsMzA4NzMwNTM5
-LC0xMzQyMjMyMTgsODE5MTU1MTgwLC0xNjg1OTQ0NTEyLDg0MT
-cxODYyMiw2MTQ2MDE1ODgsMTY5NTQ3NTkzMSwtMTY2MjY0OTg3
-OCw0NTg4OTQyNzYsLTE4MTYwNTc2OTcsLTUzMjAyMzQzOCwtMz
-A5MTIzMDU2LDQ0MzA0NDU2NSwtMjUyNTk3MDE2XX0=
+eyJoaXN0b3J5IjpbMTA1NjkwMjE5LC02NTQyMTE2MTAsNjQ1MT
+E5ODgzLC04NTk1NDQ0MTksOTY1NjM3NDczLC0xMzgyMTE1MzQx
+LDMwODczMDUzOSwtMTM0MjIzMjE4LDgxOTE1NTE4MCwtMTY4NT
+k0NDUxMiw4NDE3MTg2MjIsNjE0NjAxNTg4LDE2OTU0NzU5MzEs
+LTE2NjI2NDk4NzgsNDU4ODk0Mjc2LC0xODE2MDU3Njk3LC01Mz
+IwMjM0MzgsLTMwOTEyMzA1Niw0NDMwNDQ1NjUsLTI1MjU5NzAx
+Nl19
 -->
