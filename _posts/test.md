@@ -5,7 +5,7 @@ The REST API has been a pillar of web API's for a long time. But recently gRPC h
 **First Question come to our mind**
 
 > How should I design my API ?  
-> Which API sytle is best ? 
+> Which API sytle is best ?
 > What are the best patterns my particular API ?
 
 **So this is a hard question to answer**
@@ -27,11 +27,11 @@ When you're designing an API you have to think about ton of different decisions 
  - Versioning
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzQzNTY1MTcsMTQyODk5NzcyOCwtNj
-U0MjExNjEwLDY0NTExOTg4MywtODU5NTQ0NDE5LDk2NTYzNzQ3
-MywtMTM4MjExNTM0MSwzMDg3MzA1MzksLTEzNDIyMzIxOCw4MT
-kxNTUxODAsLTE2ODU5NDQ1MTIsODQxNzE4NjIyLDYxNDYwMTU4
-OCwxNjk1NDc1OTMxLC0xNjYyNjQ5ODc4LDQ1ODg5NDI3NiwtMT
-gxNjA1NzY5NywtNTMyMDIzNDM4LC0zMDkxMjMwNTYsNDQzMDQ0
-NTY1XX0=
+eyJoaXN0b3J5IjpbLTE3NDYyNTgzMTMsLTEwMzQzNTY1MTcsMT
+QyODk5NzcyOCwtNjU0MjExNjEwLDY0NTExOTg4MywtODU5NTQ0
+NDE5LDk2NTYzNzQ3MywtMTM4MjExNTM0MSwzMDg3MzA1MzksLT
+EzNDIyMzIxOCw4MTkxNTUxODAsLTE2ODU5NDQ1MTIsODQxNzE4
+NjIyLDYxNDYwMTU4OCwxNjk1NDc1OTMxLC0xNjYyNjQ5ODc4LD
+Q1ODg5NDI3NiwtMTgxNjA1NzY5NywtNTMyMDIzNDM4LC0zMDkx
+MjMwNTZdfQ==
 -->
