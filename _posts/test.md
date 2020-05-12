@@ -26,12 +26,15 @@ When you're designing an API you have to think about ton of different decisions 
  - Discoverability
  - Versioning
 
+> API designers or API builders is understand all of the trade-offs that go into various styles of API design that way we can pick the style that's going to fit best for a project.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDYyNTgzMTMsLTEwMzQzNTY1MTcsMT
-QyODk5NzcyOCwtNjU0MjExNjEwLDY0NTExOTg4MywtODU5NTQ0
-NDE5LDk2NTYzNzQ3MywtMTM4MjExNTM0MSwzMDg3MzA1MzksLT
-EzNDIyMzIxOCw4MTkxNTUxODAsLTE2ODU5NDQ1MTIsODQxNzE4
-NjIyLDYxNDYwMTU4OCwxNjk1NDc1OTMxLC0xNjYyNjQ5ODc4LD
-Q1ODg5NDI3NiwtMTgxNjA1NzY5NywtNTMyMDIzNDM4LC0zMDkx
-MjMwNTZdfQ==
+eyJoaXN0b3J5IjpbLTcxMDUyODcwLC0xNzQ2MjU4MzEzLC0xMD
+M0MzU2NTE3LDE0Mjg5OTc3MjgsLTY1NDIxMTYxMCw2NDUxMTk4
+ODMsLTg1OTU0NDQxOSw5NjU2Mzc0NzMsLTEzODIxMTUzNDEsMz
+A4NzMwNTM5LC0xMzQyMjMyMTgsODE5MTU1MTgwLC0xNjg1OTQ0
+NTEyLDg0MTcxODYyMiw2MTQ2MDE1ODgsMTY5NTQ3NTkzMSwtMT
+Y2MjY0OTg3OCw0NTg4OTQyNzYsLTE4MTYwNTc2OTcsLTUzMjAy
+MzQzOF19
 -->
