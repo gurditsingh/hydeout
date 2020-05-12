@@ -17,19 +17,21 @@ where a long time ago we used **RPC** but that not worked so we replace it with 
 ## Design Considerations ?
 
 When you're designing an API you have to think about ton of different decisions all the time all these different design considerations about what you want to make important or what is important to you and what isn't as important.
-Coupling
-Chattiness
-Client Complexity
-Cognitive Complexity
-Caching
-Discoverability
-Versioning
+
+ - Coupling
+ - Chattiness
+ - Client Complexity
+ - Cognitive Complexity
+ - Caching
+ - Discoverability
+ - Versioning
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNTU4MzQ2MCwxNDI4OTk3NzI4LC02NT
-QyMTE2MTAsNjQ1MTE5ODgzLC04NTk1NDQ0MTksOTY1NjM3NDcz
-LC0xMzgyMTE1MzQxLDMwODczMDUzOSwtMTM0MjIzMjE4LDgxOT
-E1NTE4MCwtMTY4NTk0NDUxMiw4NDE3MTg2MjIsNjE0NjAxNTg4
-LDE2OTU0NzU5MzEsLTE2NjI2NDk4NzgsNDU4ODk0Mjc2LC0xOD
-E2MDU3Njk3LC01MzIwMjM0MzgsLTMwOTEyMzA1Niw0NDMwNDQ1
-NjVdfQ==
+eyJoaXN0b3J5IjpbLTEwMzQzNTY1MTcsMTQyODk5NzcyOCwtNj
+U0MjExNjEwLDY0NTExOTg4MywtODU5NTQ0NDE5LDk2NTYzNzQ3
+MywtMTM4MjExNTM0MSwzMDg3MzA1MzksLTEzNDIyMzIxOCw4MT
+kxNTUxODAsLTE2ODU5NDQ1MTIsODQxNzE4NjIyLDYxNDYwMTU4
+OCwxNjk1NDc1OTMxLC0xNjYyNjQ5ODc4LDQ1ODg5NDI3NiwtMT
+gxNjA1NzY5NywtNTMyMDIzNDM4LC0zMDkxMjMwNTYsNDQzMDQ0
+NTY1XX0=
 -->
