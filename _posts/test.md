@@ -17,12 +17,15 @@ where a long time ago we used **RPC** but that not worked so we replace it with 
 ## What is important ?
 
 when you're designing an API instead of thinking about ton of different decisions all the time all these different design considerations about what you want to make important or what is important to you and what isn't as important things like do you care about whether your API is tightly coupled or not.
+
+
+there's a lot of design considerations what we really should do and strive to do as API designers or API builders is understand all of the trade-offs that go into various styles of API design that way we can pick the style that's going to fit best for a project that we might build so that's
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Nzg0NjMwMzksLTY1NDIxMTYxMCw2ND
-UxMTk4ODMsLTg1OTU0NDQxOSw5NjU2Mzc0NzMsLTEzODIxMTUz
-NDEsMzA4NzMwNTM5LC0xMzQyMjMyMTgsODE5MTU1MTgwLC0xNj
-g1OTQ0NTEyLDg0MTcxODYyMiw2MTQ2MDE1ODgsMTY5NTQ3NTkz
-MSwtMTY2MjY0OTg3OCw0NTg4OTQyNzYsLTE4MTYwNTc2OTcsLT
-UzMjAyMzQzOCwtMzA5MTIzMDU2LDQ0MzA0NDU2NSwtMjUyNTk3
-MDE2XX0=
+eyJoaXN0b3J5IjpbMTQyODk5NzcyOCwtNjU0MjExNjEwLDY0NT
+ExOTg4MywtODU5NTQ0NDE5LDk2NTYzNzQ3MywtMTM4MjExNTM0
+MSwzMDg3MzA1MzksLTEzNDIyMzIxOCw4MTkxNTUxODAsLTE2OD
+U5NDQ1MTIsODQxNzE4NjIyLDYxNDYwMTU4OCwxNjk1NDc1OTMx
+LC0xNjYyNjQ5ODc4LDQ1ODg5NDI3NiwtMTgxNjA1NzY5NywtNT
+MyMDIzNDM4LC0zMDkxMjMwNTYsNDQzMDQ0NTY1LC0yNTI1OTcw
+MTZdfQ==
 -->
