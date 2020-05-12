@@ -16,10 +16,10 @@ where a long time ago we used **RPC** but that not worked so we replace it with 
 
 ## What is important ?
 
-when you're designing an API instead of thinking about ton of different decisions all the time all these different design considerations. what you want to make important or what is important to you.
+when you're designing an API instead of thinking about ton of different decisions all the time all these different design considerations about what you want to make important or what is important to you and what isn't as important things like do you care about whether your API is tightly coupled or not.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NDUwNTA4MywtNjU0MjExNjEwLDY0NT
-ExOTg4MywtODU5NTQ0NDE5LDk2NTYzNzQ3MywtMTM4MjExNTM0
-MSwzMDg3MzA1MzksLTEzNDIyMzIxOCwtMjEwNjk4NDYyNSwtMz
-MyNDU1MzYzXX0=
+eyJoaXN0b3J5IjpbLTE5Nzg0NjMwMzksLTY1NDIxMTYxMCw2ND
+UxMTk4ODMsLTg1OTU0NDQxOSw5NjU2Mzc0NzMsLTEzODIxMTUz
+NDEsMzA4NzMwNTM5LC0xMzQyMjMyMTgsLTIxMDY5ODQ2MjUsLT
+MzMjQ1NTM2M119
 -->
