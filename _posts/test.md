@@ -16,12 +16,16 @@ where a long time ago we used **RPC** but that not worked so we replace it with 
 
 ## Design Considerations ?
 
-When you're designing an API you have to think about ton of different decisions all the time all these different design considerations about what you want to make important or what is important to you and what isn't as important things like do you care about whether your API is tightly coupled or not.
-
-
-there's a lot of design considerations what we really should do and strive to do as API designers or API builders is understand all of the trade-offs that go into various styles of API design that way we can pick the style that's going to fit best for a project that we might build so that's
+When you're designing an API you have to think about ton of different decisions all the time all these different design considerations about what you want to make important or what is important to you and what isn't as important.
+Coupling
+Chattiness
+Client Complexity
+Cognitive Complexity
+Caching
+Discoverability
+Versioning
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2NTAzOTIwNiwxNDI4OTk3NzI4LC02NT
+eyJoaXN0b3J5IjpbMjAwNTU4MzQ2MCwxNDI4OTk3NzI4LC02NT
 QyMTE2MTAsNjQ1MTE5ODgzLC04NTk1NDQ0MTksOTY1NjM3NDcz
 LC0xMzgyMTE1MzQxLDMwODczMDUzOSwtMTM0MjIzMjE4LC0yMT
 A2OTg0NjI1LC0zMzI0NTUzNjNdfQ==
