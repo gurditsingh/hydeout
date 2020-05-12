@@ -14,18 +14,18 @@ The REST API has been a pillar of web API's for a long time. But recently gRPC h
 
 where a long time ago we used **RPC** but that not worked so we replace it with **REST** and then that not worked so we replaced it with **graph QL** and that's like the best thing  looking at API design. but I think it misses the point is not that the graph QL is the best thing for every situation or rest is the best thing for every situation the point is that these are actually different tools for different jobs.
 
-## What is important ?
+## Design Considerations ?
 
-when you're designing an API instead of thinking about ton of different decisions all the time all these different design considerations about what you want to make important or what is important to you and what isn't as important things like do you care about whether your API is tightly coupled or not.
+When you're designing an API you have to think about ton of different decisions all the time all these different design considerations about what you want to make important or what is important to you and what isn't as important things like do you care about whether your API is tightly coupled or not.
 
 
 there's a lot of design considerations what we really should do and strive to do as API designers or API builders is understand all of the trade-offs that go into various styles of API design that way we can pick the style that's going to fit best for a project that we might build so that's
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyODk5NzcyOCwtNjU0MjExNjEwLDY0NT
-ExOTg4MywtODU5NTQ0NDE5LDk2NTYzNzQ3MywtMTM4MjExNTM0
-MSwzMDg3MzA1MzksLTEzNDIyMzIxOCw4MTkxNTUxODAsLTE2OD
-U5NDQ1MTIsODQxNzE4NjIyLDYxNDYwMTU4OCwxNjk1NDc1OTMx
-LC0xNjYyNjQ5ODc4LDQ1ODg5NDI3NiwtMTgxNjA1NzY5NywtNT
-MyMDIzNDM4LC0zMDkxMjMwNTYsNDQzMDQ0NTY1LC0yNTI1OTcw
-MTZdfQ==
+eyJoaXN0b3J5IjpbLTg2NTAzOTIwNiwxNDI4OTk3NzI4LC02NT
+QyMTE2MTAsNjQ1MTE5ODgzLC04NTk1NDQ0MTksOTY1NjM3NDcz
+LC0xMzgyMTE1MzQxLDMwODczMDUzOSwtMTM0MjIzMjE4LDgxOT
+E1NTE4MCwtMTY4NTk0NDUxMiw4NDE3MTg2MjIsNjE0NjAxNTg4
+LDE2OTU0NzU5MzEsLTE2NjI2NDk4NzgsNDU4ODk0Mjc2LC0xOD
+E2MDU3Njk3LC01MzIwMjM0MzgsLTMwOTEyMzA1Niw0NDMwNDQ1
+NjVdfQ==
 -->
