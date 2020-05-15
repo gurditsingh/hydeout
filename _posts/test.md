@@ -48,10 +48,11 @@ The technology used to provide an API for your app is an important choice, and g
  - gRPC is designed for HTTP/2, a major revision of HTTP that provides significant performance benefits over HTTP 1.x. HTTP/2 protocol provides Binary framing and compression and Multiplexing of multiple HTTP/2 calls over a single TCP connection.
 
 ### Code generation
-All gRPC frameworks provide first-class support for code generation. A core file to gRPC development is the [.proto file](https://developers.google.com/protocol-buffers/docs/proto3), which defines the contract of gRPC services and messages. From this file gRPC frameworks will code generate a service base class, messages, and a complete client.
+All gRPC frameworks provide first-class support for code generation. A core file to gRPC development is the [.proto file](https://developers.google.com/protocol-buffers/docs/proto3), which defines the contract of gRPC services and messages. From this file gRPC frameworks will code generate a service base class, messages, and a complete client. 
+By using the _.proto_ file between the server and client, messages and client code can be generated from end to end.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYzNjc2MTQwLC00NTk5NDY3MzgsMTMxNj
+eyJoaXN0b3J5IjpbOTkxNDc3MDEwLC00NTk5NDY3MzgsMTMxNj
 M1NDE1NiwyMDkyNjYxNTU5LC03MTA1Mjg3MCwtNzEwNTI4NzAs
 LTE3NDYyNTgzMTMsLTEwMzQzNTY1MTcsMTQyODk5NzcyOCwtNj
 U0MjExNjEwLDY0NTExOTg4MywtODU5NTQ0NDE5LDk2NTYzNzQ3
