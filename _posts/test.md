@@ -28,11 +28,11 @@ When you're designing an API you have to think about ton of different decisions 
 
 > API designers or API builders is understand all of the trade-offs that go into various styles of API design that way we can pick the style that's going to fit best for a project.
 
-ghjgfhh
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MTU2OTgxMCwtNzEwNTI4NzAsLTE3ND
-YyNTgzMTMsLTEwMzQzNTY1MTcsMTQyODk5NzcyOCwtNjU0MjEx
-NjEwLDY0NTExOTg4MywtODU5NTQ0NDE5LDk2NTYzNzQ3MywtMT
-M4MjExNTM0MSwzMDg3MzA1MzksLTEzNDIyMzIxOCwtMjEwNjk4
-NDYyNSwtMzMyNDU1MzYzXX0=
+eyJoaXN0b3J5IjpbLTcxMDUyODcwLC03MTA1Mjg3MCwtMTc0Nj
+I1ODMxMywtMTAzNDM1NjUxNywxNDI4OTk3NzI4LC02NTQyMTE2
+MTAsNjQ1MTE5ODgzLC04NTk1NDQ0MTksOTY1NjM3NDczLC0xMz
+gyMTE1MzQxLDMwODczMDUzOSwtMTM0MjIzMjE4LC0yMTA2OTg0
+NjI1LC0zMzI0NTUzNjNdfQ==
 -->
