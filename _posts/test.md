@@ -58,19 +58,19 @@ REST supports only the request-response model available in HTTP 1.x. But gRPC ta
 The server sends back a stream of responses after getting a client request message. After sending back all its responses, the server’s status details and optional trailing metadata are sent back to complete on the server side. The client completes once it has all the server’s responses.
 
 **Client-Side Streaming**
-
 The client sends a stream of multiple requests to the server. The server sends back a single response, typically but not necessarily after it has received all the client’s requests, along with its status details and optional trailing metadata.
 
-### Bidirectional Streaming
-
+**Bidirectional Streaming**
 In this scenario, the client and the server send information to each other in pretty much free form (except the client initiates the sequence). Eventually, the client closes the connection.
+
+
 ### Messages vs. Resources
 
 The conceptual model used by gRPC is to have services with clear interfaces and structured messages for requests and responses. This model translates directly from programming language concepts like interfaces, functions, methods, and data structures. It also allows gRPC to automatically generate client libraries for you.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3NTk3MjQ1MiwtNDU5OTQ2NzM4LDEzMT
+eyJoaXN0b3J5IjpbLTU2MDk3NTU2OSwtNDU5OTQ2NzM4LDEzMT
 YzNTQxNTYsMjA5MjY2MTU1OSwtNzEwNTI4NzAsLTcxMDUyODcw
 LC0xNzQ2MjU4MzEzLC0xMDM0MzU2NTE3LDE0Mjg5OTc3MjgsLT
 Y1NDIxMTYxMCw2NDUxMTk4ODMsLTg1OTU0NDQxOSw5NjU2Mzc0
