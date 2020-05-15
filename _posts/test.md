@@ -10,7 +10,7 @@ The REST API has been a pillar of API's design for a long time. Recently gRPC ha
 
 **So this is a hard question to answer**
 
-## if you pay attention to Twitter and conference talks a huge debate going on between RPC and Rest.
+## if you pay attention to Twitter and conference talks a huge debate going on between RPC and Rest and graph QL.
 
 where a long time ago we used **RPC** but that not worked so we replace it with **REST** and then that not worked so we replaced it with **graph QL** and that's like the best thing  looking at API design. but I think it misses the point is not that the graph QL is the best thing for every situation or rest is the best thing for every situation the point is that these are actually different tools for different jobs.
 
@@ -79,10 +79,11 @@ gRPC has fully integrated pluggable authentication. It has two built-in auth str
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyODc0MTQ3OCwtNTY1MDE0OTk5LC00NT
-k5NDY3MzgsMTMxNjM1NDE1NiwyMDkyNjYxNTU5LC03MTA1Mjg3
-MCwtNzEwNTI4NzAsLTE3NDYyNTgzMTMsLTEwMzQzNTY1MTcsMT
-QyODk5NzcyOCwtNjU0MjExNjEwLDY0NTExOTg4MywtODU5NTQ0
-NDE5LDk2NTYzNzQ3MywtMTM4MjExNTM0MSwzMDg3MzA1MzksLT
-EzNDIyMzIxOCwtMjEwNjk4NDYyNSwtMzMyNDU1MzYzXX0=
+eyJoaXN0b3J5IjpbLTIwOTM5MDQzNjQsMTUyODc0MTQ3OCwtNT
+Y1MDE0OTk5LC00NTk5NDY3MzgsMTMxNjM1NDE1NiwyMDkyNjYx
+NTU5LC03MTA1Mjg3MCwtNzEwNTI4NzAsLTE3NDYyNTgzMTMsLT
+EwMzQzNTY1MTcsMTQyODk5NzcyOCwtNjU0MjExNjEwLDY0NTEx
+OTg4MywtODU5NTQ0NDE5LDk2NTYzNzQ3MywtMTM4MjExNTM0MS
+wzMDg3MzA1MzksLTEzNDIyMzIxOCwtMjEwNjk4NDYyNSwtMzMy
+NDU1MzYzXX0=
 -->
