@@ -1,4 +1,4 @@
-### The return of RPC -  because REST is not only the solution for APIs
+### The return of RPC -  because REST is not only the solution for API Design
 
 The REST API has been a pillar of API's design for a long time. Recently gRPC has started gaining popularity. It turns out there are some very good reasons for that. To help API developers make sense of which API design style to use and for what situation, let’s look at **REST** and **gRPC**.
 
@@ -79,11 +79,11 @@ gRPC has fully integrated pluggable authentication. It has two built-in auth str
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTM5MDQzNjQsMTUyODc0MTQ3OCwtNT
-Y1MDE0OTk5LC00NTk5NDY3MzgsMTMxNjM1NDE1NiwyMDkyNjYx
-NTU5LC03MTA1Mjg3MCwtNzEwNTI4NzAsLTE3NDYyNTgzMTMsLT
-EwMzQzNTY1MTcsMTQyODk5NzcyOCwtNjU0MjExNjEwLDY0NTEx
-OTg4MywtODU5NTQ0NDE5LDk2NTYzNzQ3MywtMTM4MjExNTM0MS
-wzMDg3MzA1MzksLTEzNDIyMzIxOCwtMjEwNjk4NDYyNSwtMzMy
-NDU1MzYzXX0=
+eyJoaXN0b3J5IjpbNzE1NTg5OTE5LC0yMDkzOTA0MzY0LDE1Mj
+g3NDE0NzgsLTU2NTAxNDk5OSwtNDU5OTQ2NzM4LDEzMTYzNTQx
+NTYsMjA5MjY2MTU1OSwtNzEwNTI4NzAsLTcxMDUyODcwLC0xNz
+Q2MjU4MzEzLC0xMDM0MzU2NTE3LDE0Mjg5OTc3MjgsLTY1NDIx
+MTYxMCw2NDUxMTk4ODMsLTg1OTU0NDQxOSw5NjU2Mzc0NzMsLT
+EzODIxMTUzNDEsMzA4NzMwNTM5LC0xMzQyMjMyMTgsLTIxMDY5
+ODQ2MjVdfQ==
 -->
