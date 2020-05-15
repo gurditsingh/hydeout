@@ -42,9 +42,9 @@ It is an adaptation of traditional RPC frameworks. gRPC is built on the core pri
 The technology used to provide an API for your app is an important choice, and gRPC offers unique benefits compared to HTTP APIs.
 
 ### Performance:
-
+gRPC is a binary protocol rather than using text-based messaging protocol, we can leverage a binary protocol that is optimized for inter-service communication. it uses protocol buffers as the binary data interchange format for inter-service communication.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0MjQxMDMzMSwxMzE2MzU0MTU2LDIwOT
+eyJoaXN0b3J5IjpbMTY1MzczODkyNSwxMzE2MzU0MTU2LDIwOT
 I2NjE1NTksLTcxMDUyODcwLC03MTA1Mjg3MCwtMTc0NjI1ODMx
 MywtMTAzNDM1NjUxNywxNDI4OTk3NzI4LC02NTQyMTE2MTAsNj
 Q1MTE5ODgzLC04NTk1NDQ0MTksOTY1NjM3NDczLC0xMzgyMTE1
