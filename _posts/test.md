@@ -39,14 +39,15 @@ RPC is a much older protocol than REST. It has been used since  1970s to perform
 It is an adaptation of traditional RPC frameworks. gRPC is built on the core principle that we must use Services not Objects, and Messages not References. In other words, in gRPC we start the process by defining our services and their message types. We use clear interfaces that maps directly to our business functions and programming concept like interfaces or methods. No need for translations. gRPC is all about APIs, not resources.
 
 ## gRPC Strengths
+The technology used to provide an API for your app is an important choice, and gRPC offers unique benefits compared to HTTP APIs.
 
 ### Performance:
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mzk0MzA1NzcsMTMxNjM1NDE1NiwyMD
-kyNjYxNTU5LC03MTA1Mjg3MCwtNzEwNTI4NzAsLTE3NDYyNTgz
-MTMsLTEwMzQzNTY1MTcsMTQyODk5NzcyOCwtNjU0MjExNjEwLD
-Y0NTExOTg4MywtODU5NTQ0NDE5LDk2NTYzNzQ3MywtMTM4MjEx
-NTM0MSwzMDg3MzA1MzksLTEzNDIyMzIxOCwtMjEwNjk4NDYyNS
-wtMzMyNDU1MzYzXX0=
+eyJoaXN0b3J5IjpbLTk0MjQxMDMzMSwxMzE2MzU0MTU2LDIwOT
+I2NjE1NTksLTcxMDUyODcwLC03MTA1Mjg3MCwtMTc0NjI1ODMx
+MywtMTAzNDM1NjUxNywxNDI4OTk3NzI4LC02NTQyMTE2MTAsNj
+Q1MTE5ODgzLC04NTk1NDQ0MTksOTY1NjM3NDczLC0xMzgyMTE1
+MzQxLDMwODczMDUzOSwtMTM0MjIzMjE4LC0yMTA2OTg0NjI1LC
+0zMzI0NTUzNjNdfQ==
 -->
