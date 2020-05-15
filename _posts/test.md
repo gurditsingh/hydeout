@@ -50,16 +50,30 @@ The technology used to provide an API for your app is an important choice, and g
 ### Code generation
 All gRPC frameworks provide first-class support for code generation. A core file to gRPC development is the [.proto file](https://developers.google.com/protocol-buffers/docs/proto3), which defines the contract of gRPC services and messages. From this file gRPC frameworks will code generate a service base class, messages, and a complete client. By using the .proto file between the server and client, messages and client code can be generated from end to end.
 
+### Streaming
+
+REST supports only the request-response model available in HTTP 1.x. But gRPC takes full advantage of the capabilities of HTTP/2 and lets you stream information constantly. There are several types of streaming.
+
+**Server-Side Streaming**
+The server sends back a stream of responses after getting a client request message. After sending back all its responses, the server’s status details and optional trailing metadata are sent back to complete on the server side. The client completes once it has all the server’s responses.
+
+**Client-Side Streaming**
+
+The client sends a stream of multiple requests to the server. The server sends back a single response, typically but not necessarily after it has received all the client’s requests, along with its status details and optional trailing metadata.
+
+### Bidirectional Streaming
+
+In this scenario, the client and the server send information to each other in pretty much free form (except the client initiates the sequence). Eventually, the client closes the connection.
 ### Messages vs. Resources
 
 The conceptual model used by gRPC is to have services with clear interfaces and structured messages for requests and responses. This model translates directly from programming language concepts like interfaces, functions, methods, and data structures. It also allows gRPC to automatically generate client libraries for you.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjY2MDAwMjE3LC00NTk5NDY3MzgsMTMxNj
-M1NDE1NiwyMDkyNjYxNTU5LC03MTA1Mjg3MCwtNzEwNTI4NzAs
-LTE3NDYyNTgzMTMsLTEwMzQzNTY1MTcsMTQyODk5NzcyOCwtNj
-U0MjExNjEwLDY0NTExOTg4MywtODU5NTQ0NDE5LDk2NTYzNzQ3
-MywtMTM4MjExNTM0MSwzMDg3MzA1MzksLTEzNDIyMzIxOCwtMj
-EwNjk4NDYyNSwtMzMyNDU1MzYzXX0=
+eyJoaXN0b3J5IjpbMTk3NTk3MjQ1MiwtNDU5OTQ2NzM4LDEzMT
+YzNTQxNTYsMjA5MjY2MTU1OSwtNzEwNTI4NzAsLTcxMDUyODcw
+LC0xNzQ2MjU4MzEzLC0xMDM0MzU2NTE3LDE0Mjg5OTc3MjgsLT
+Y1NDIxMTYxMCw2NDUxMTk4ODMsLTg1OTU0NDQxOSw5NjU2Mzc0
+NzMsLTEzODIxMTUzNDEsMzA4NzMwNTM5LC0xMzQyMjMyMTgsLT
+IxMDY5ODQ2MjUsLTMzMjQ1NTM2M119
 -->
