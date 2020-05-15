@@ -77,13 +77,16 @@ gRPC has fully integrated pluggable authentication. It has two built-in auth str
 -   **Network constrained environments**  – gRPC messages are serialized with Protobuf, a lightweight message format. A gRPC message is always smaller than an equivalent JSON message.
 
 
+## Sample source code available:
 
+[https://github.com/gurditsingh/Learn-gRPC-Service](https://github.com/gurditsingh/Learn-gRPC-Service)
+[https://github.com/gurditsingh/Learn-gRPC-Client](https://github.com/gurditsingh/Learn-gRPC-Client)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE1NTg5OTE5LC0yMDkzOTA0MzY0LDE1Mj
-g3NDE0NzgsLTU2NTAxNDk5OSwtNDU5OTQ2NzM4LDEzMTYzNTQx
-NTYsMjA5MjY2MTU1OSwtNzEwNTI4NzAsLTcxMDUyODcwLC0xNz
-Q2MjU4MzEzLC0xMDM0MzU2NTE3LDE0Mjg5OTc3MjgsLTY1NDIx
-MTYxMCw2NDUxMTk4ODMsLTg1OTU0NDQxOSw5NjU2Mzc0NzMsLT
-EzODIxMTUzNDEsMzA4NzMwNTM5LC0xMzQyMjMyMTgsLTIxMDY5
-ODQ2MjVdfQ==
+eyJoaXN0b3J5IjpbMTM2NjYxNzMyLDcxNTU4OTkxOSwtMjA5Mz
+kwNDM2NCwxNTI4NzQxNDc4LC01NjUwMTQ5OTksLTQ1OTk0Njcz
+OCwxMzE2MzU0MTU2LDIwOTI2NjE1NTksLTcxMDUyODcwLC03MT
+A1Mjg3MCwtMTc0NjI1ODMxMywtMTAzNDM1NjUxNywxNDI4OTk3
+NzI4LC02NTQyMTE2MTAsNjQ1MTE5ODgzLC04NTk1NDQ0MTksOT
+Y1NjM3NDczLC0xMzgyMTE1MzQxLDMwODczMDUzOSwtMTM0MjIz
+MjE4XX0=
 -->
