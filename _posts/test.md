@@ -76,11 +76,13 @@ gRPC has fully integrated pluggable authentication. It has two built-in auth str
 -   **Polyglot environments**  – gRPC tooling supports all popular development languages, making gRPC a good choice for multi-language environments.
 -   **Network constrained environments**  – gRPC messages are serialized with Protobuf, a lightweight message format. A gRPC message is always smaller than an equivalent JSON message.
 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDExMzk3NjMsLTQ1OTk0NjczOCwxMz
-E2MzU0MTU2LDIwOTI2NjE1NTksLTcxMDUyODcwLC03MTA1Mjg3
-MCwtMTc0NjI1ODMxMywtMTAzNDM1NjUxNywxNDI4OTk3NzI4LC
-02NTQyMTE2MTAsNjQ1MTE5ODgzLC04NTk1NDQ0MTksOTY1NjM3
-NDczLC0xMzgyMTE1MzQxLDMwODczMDUzOSwtMTM0MjIzMjE4LC
-0yMTA2OTg0NjI1LC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbLTU2NTAxNDk5OSwtNDU5OTQ2NzM4LDEzMT
+YzNTQxNTYsMjA5MjY2MTU1OSwtNzEwNTI4NzAsLTcxMDUyODcw
+LC0xNzQ2MjU4MzEzLC0xMDM0MzU2NTE3LDE0Mjg5OTc3MjgsLT
+Y1NDIxMTYxMCw2NDUxMTk4ODMsLTg1OTU0NDQxOSw5NjU2Mzc0
+NzMsLTEzODIxMTUzNDEsMzA4NzMwNTM5LC0xMzQyMjMyMTgsLT
+IxMDY5ODQ2MjUsLTMzMjQ1NTM2M119
 -->
