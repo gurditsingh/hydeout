@@ -35,12 +35,13 @@ RPC is a much older protocol than REST. It has been used since  1970s to perform
 
 > **gRPC** is the latest framework to be created on the RPC protocol. It makes use of its advantages and tries to correct the issues of traditional RPC.
 
-
+# What Is gRPC ?
+It is an adaptation of traditional RPC frameworks.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODc4NDk2MjIsMjA5MjY2MTU1OSwtNz
-EwNTI4NzAsLTcxMDUyODcwLC0xNzQ2MjU4MzEzLC0xMDM0MzU2
-NTE3LDE0Mjg5OTc3MjgsLTY1NDIxMTYxMCw2NDUxMTk4ODMsLT
-g1OTU0NDQxOSw5NjU2Mzc0NzMsLTEzODIxMTUzNDEsMzA4NzMw
-NTM5LC0xMzQyMjMyMTgsLTIxMDY5ODQ2MjUsLTMzMjQ1NTM2M1
-19
+eyJoaXN0b3J5IjpbLTU5NzU4MjcwNywyMDkyNjYxNTU5LC03MT
+A1Mjg3MCwtNzEwNTI4NzAsLTE3NDYyNTgzMTMsLTEwMzQzNTY1
+MTcsMTQyODk5NzcyOCwtNjU0MjExNjEwLDY0NTExOTg4MywtOD
+U5NTQ0NDE5LDk2NTYzNzQ3MywtMTM4MjExNTM0MSwzMDg3MzA1
+MzksLTEzNDIyMzIxOCwtMjEwNjk4NDYyNSwtMzMyNDU1MzYzXX
+0=
 -->
