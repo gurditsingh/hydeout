@@ -50,10 +50,13 @@ The technology used to provide an API for your app is an important choice, and g
 ### Code generation
 All gRPC frameworks provide first-class support for code generation. A core file to gRPC development is the [.proto file](https://developers.google.com/protocol-buffers/docs/proto3), which defines the contract of gRPC services and messages. From this file gRPC frameworks will code generate a service base class, messages, and a complete client. By using the .proto file between the server and client, messages and client code can be generated from end to end.
 
+### Messages vs. Resources
+
+The conceptual model used by gRPC is to have services with clear interfaces and structured messages for requests and responses. This model translates directly from programming language concepts like interfaces, functions, methods, and data structures. It also allows gRPC to automatically generate client libraries for you.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc5ODkzMDc2LC00NTk5NDY3MzgsMTMxNj
+eyJoaXN0b3J5IjpbMjY2MDAwMjE3LC00NTk5NDY3MzgsMTMxNj
 M1NDE1NiwyMDkyNjYxNTU5LC03MTA1Mjg3MCwtNzEwNTI4NzAs
 LTE3NDYyNTgzMTMsLTEwMzQzNTY1MTcsMTQyODk5NzcyOCwtNj
 U0MjExNjEwLDY0NTExOTg4MywtODU5NTQ0NDE5LDk2NTYzNzQ3
