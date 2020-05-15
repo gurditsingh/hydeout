@@ -44,11 +44,11 @@ The technology used to provide an API for your app is an important choice, and g
 ### Performance:
 
  - gRPC is a binary protocol rather than text-based messaging protocol, it uses protocol buffers **(Protobuf serializes very quickly on the server and client)** as the binary data interchange format for inter-service communication.
-
-gRPC is designed for HTTP/2, a major revision of HTTP that provides significant performance benefits over HTTP 1.x
+ 
+ - gRPC is designed for HTTP/2, a major revision of HTTP that provides significant performance benefits over HTTP 1.x. HTTP/2 protocol provides Binary framing and compression and Multiplexing of multiple HTTP/2 calls over a single TCPconnection
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODkwNDY2MDYsMTMxNjM1NDE1NiwyMD
+eyJoaXN0b3J5IjpbLTEyNTkyMTg0MjYsMTMxNjM1NDE1NiwyMD
 kyNjYxNTU5LC03MTA1Mjg3MCwtNzEwNTI4NzAsLTE3NDYyNTgz
 MTMsLTEwMzQzNTY1MTcsMTQyODk5NzcyOCwtNjU0MjExNjEwLD
 Y0NTExOTg4MywtODU5NTQ0NDE5LDk2NTYzNzQ3MywtMTM4MjEx
