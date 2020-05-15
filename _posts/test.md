@@ -54,14 +54,11 @@ All gRPC frameworks provide first-class support for code generation. A core file
 
 REST supports only the request-response model available in HTTP 1.x. But gRPC takes full advantage of the capabilities of HTTP/2 and lets you stream information constantly. There are several types of streaming.
 
-**Server-Side Streaming**
-The server sends back a stream of responses after getting a client request message. After sending back all its responses, the server’s status details and optional trailing metadata are sent back to complete on the server side. The client completes once it has all the server’s responses.
+**Server-Side Streaming:** The server sends back a stream of responses after getting a client request message. After sending back all its responses, the server’s status details and optional trailing metadata are sent back to complete on the server side. The client completes once it has all the server’s responses.
 
-**Client-Side Streaming**
-The client sends a stream of multiple requests to the server. The server sends back a single response, typically but not necessarily after it has received all the client’s requests, along with its status details and optional trailing metadata.
+**Client-Side Streaming:** The client sends a stream of multiple requests to the server. The server sends back a single response, typically but not necessarily after it has received all the client’s requests, along with its status details and optional trailing metadata.
 
-**Bidirectional Streaming**
-In this scenario, the client and the server send information to each other in pretty much free form (except the client initiates the sequence). Eventually, the client closes the connection.
+**Bidirectional Streaming:** In this scenario, the client and the server send information to each other in pretty much free form (except the client initiates the sequence). Eventually, the client closes the connection.
 
 
 ### Messages vs. Resources
@@ -70,10 +67,10 @@ The conceptual model used by gRPC is to have services with clear interfaces and 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MDk3NTU2OSwtNDU5OTQ2NzM4LDEzMT
-YzNTQxNTYsMjA5MjY2MTU1OSwtNzEwNTI4NzAsLTcxMDUyODcw
-LC0xNzQ2MjU4MzEzLC0xMDM0MzU2NTE3LDE0Mjg5OTc3MjgsLT
-Y1NDIxMTYxMCw2NDUxMTk4ODMsLTg1OTU0NDQxOSw5NjU2Mzc0
-NzMsLTEzODIxMTUzNDEsMzA4NzMwNTM5LC0xMzQyMjMyMTgsLT
-IxMDY5ODQ2MjUsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbLTE2NDY0Nzg2MDUsLTQ1OTk0NjczOCwxMz
+E2MzU0MTU2LDIwOTI2NjE1NTksLTcxMDUyODcwLC03MTA1Mjg3
+MCwtMTc0NjI1ODMxMywtMTAzNDM1NjUxNywxNDI4OTk3NzI4LC
+02NTQyMTE2MTAsNjQ1MTE5ODgzLC04NTk1NDQ0MTksOTY1NjM3
+NDczLC0xMzgyMTE1MzQxLDMwODczMDUzOSwtMTM0MjIzMjE4LC
+0yMTA2OTg0NjI1LC0zMzI0NTUzNjNdfQ==
 -->
