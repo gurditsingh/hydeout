@@ -28,11 +28,12 @@ When you're designing an API you have to think about ton of different decisions 
 
 > API designers or API builders is understand all of the trade-offs that go into various styles of API design that way we can pick the style that's going to fit best for a project.
 
-
+# RPC Architecture
+RPC stands for Remote Procedure Call. As the name suggests, the idea is that we can invoke a function/method on a remote server. RPC protocol allows one to get the result for a problem in the same format regardless of where it is executed. It can be local or in a remote server using better resources.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMDUyODcwLC03MTA1Mjg3MCwtMTc0Nj
-I1ODMxMywtMTAzNDM1NjUxNywxNDI4OTk3NzI4LC02NTQyMTE2
-MTAsNjQ1MTE5ODgzLC04NTk1NDQ0MTksOTY1NjM3NDczLC0xMz
-gyMTE1MzQxLDMwODczMDUzOSwtMTM0MjIzMjE4LC0yMTA2OTg0
-NjI1LC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbMjA5MjY2MTU1OSwtNzEwNTI4NzAsLTcxMD
+UyODcwLC0xNzQ2MjU4MzEzLC0xMDM0MzU2NTE3LDE0Mjg5OTc3
+MjgsLTY1NDIxMTYxMCw2NDUxMTk4ODMsLTg1OTU0NDQxOSw5Nj
+U2Mzc0NzMsLTEzODIxMTUzNDEsMzA4NzMwNTM5LC0xMzQyMjMy
+MTgsLTIxMDY5ODQ2MjUsLTMzMjQ1NTM2M119
 -->
