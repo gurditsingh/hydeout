@@ -66,11 +66,12 @@ REST supports only the request-response model available in HTTP 1.x. But gRPC ta
 The conceptual model used by gRPC is to have services with clear interfaces and structured messages for requests and responses. This model translates directly from programming language concepts like interfaces, functions, methods, and data structures. It also allows gRPC to automatically generate client libraries for you.
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDY0Nzg2MDUsLTQ1OTk0NjczOCwxMz
-E2MzU0MTU2LDIwOTI2NjE1NTksLTcxMDUyODcwLC03MTA1Mjg3
-MCwtMTc0NjI1ODMxMywtMTAzNDM1NjUxNywxNDI4OTk3NzI4LC
-02NTQyMTE2MTAsNjQ1MTE5ODgzLC04NTk1NDQ0MTksOTY1NjM3
-NDczLC0xMzgyMTE1MzQxLDMwODczMDUzOSwtMTM0MjIzMjE4LC
-0yMTA2OTg0NjI1LC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbMzE1NjExMjMzLC00NTk5NDY3MzgsMTMxNj
+M1NDE1NiwyMDkyNjYxNTU5LC03MTA1Mjg3MCwtNzEwNTI4NzAs
+LTE3NDYyNTgzMTMsLTEwMzQzNTY1MTcsMTQyODk5NzcyOCwtNj
+U0MjExNjEwLDY0NTExOTg4MywtODU5NTQ0NDE5LDk2NTYzNzQ3
+MywtMTM4MjExNTM0MSwzMDg3MzA1MzksLTEzNDIyMzIxOCwtMj
+EwNjk4NDYyNSwtMzMyNDU1MzYzXX0=
 -->
