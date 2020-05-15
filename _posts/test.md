@@ -6,7 +6,7 @@ The REST API has been a pillar of API's design for a long time. Recently gRPC ha
 
 > How should I design my API ?  
 > Which API sytle is best ?
-> What are the best patterns my particular API ?
+> What are the best patterns for  API ?
 
 **So this is a hard question to answer**
 
@@ -79,10 +79,10 @@ gRPC has fully integrated pluggable authentication. It has two built-in auth str
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQzNDI5MjY2LC01NjUwMTQ5OTksLTQ1OT
-k0NjczOCwxMzE2MzU0MTU2LDIwOTI2NjE1NTksLTcxMDUyODcw
-LC03MTA1Mjg3MCwtMTc0NjI1ODMxMywtMTAzNDM1NjUxNywxND
-I4OTk3NzI4LC02NTQyMTE2MTAsNjQ1MTE5ODgzLC04NTk1NDQ0
-MTksOTY1NjM3NDczLC0xMzgyMTE1MzQxLDMwODczMDUzOSwtMT
-M0MjIzMjE4LC0yMTA2OTg0NjI1LC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbMTUyODc0MTQ3OCwtNTY1MDE0OTk5LC00NT
+k5NDY3MzgsMTMxNjM1NDE1NiwyMDkyNjYxNTU5LC03MTA1Mjg3
+MCwtNzEwNTI4NzAsLTE3NDYyNTgzMTMsLTEwMzQzNTY1MTcsMT
+QyODk5NzcyOCwtNjU0MjExNjEwLDY0NTExOTg4MywtODU5NTQ0
+NDE5LDk2NTYzNzQ3MywtMTM4MjExNTM0MSwzMDg3MzA1MzksLT
+EzNDIyMzIxOCwtMjEwNjk4NDYyNSwtMzMyNDU1MzYzXX0=
 -->
