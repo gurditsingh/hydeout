@@ -30,10 +30,13 @@ When you're designing an API you have to think about ton of different decisions 
 
 # RPC Architecture
 RPC stands for Remote Procedure Call. As the name suggests, the idea is that we can invoke a function/method on a remote server. RPC protocol allows one to get the result for a problem in the same format regardless of where it is executed. It can be local or in a remote server using better resources.
+
+RPC is a much older protocol than REST. It has been used since the time of ARPANET in the 1970s to perform network operations. The term RPC was first coined by Bruce Jay Nelson in 1981. But as we are going to see, RPC is still relevant and implemented in API-based modern applications in different ways.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MjY2MTU1OSwtNzEwNTI4NzAsLTcxMD
-UyODcwLC0xNzQ2MjU4MzEzLC0xMDM0MzU2NTE3LDE0Mjg5OTc3
-MjgsLTY1NDIxMTYxMCw2NDUxMTk4ODMsLTg1OTU0NDQxOSw5Nj
-U2Mzc0NzMsLTEzODIxMTUzNDEsMzA4NzMwNTM5LC0xMzQyMjMy
-MTgsLTIxMDY5ODQ2MjUsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbLTE3MDYxNjA5NjIsMjA5MjY2MTU1OSwtNz
+EwNTI4NzAsLTcxMDUyODcwLC0xNzQ2MjU4MzEzLC0xMDM0MzU2
+NTE3LDE0Mjg5OTc3MjgsLTY1NDIxMTYxMCw2NDUxMTk4ODMsLT
+g1OTU0NDQxOSw5NjU2Mzc0NzMsLTEzODIxMTUzNDEsMzA4NzMw
+NTM5LC0xMzQyMjMyMTgsLTIxMDY5ODQ2MjUsLTMzMjQ1NTM2M1
+19
 -->
