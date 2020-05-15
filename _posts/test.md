@@ -36,14 +36,14 @@ RPC is a much older protocol than REST. It has been used since  1970s to perform
 > **gRPC** is the latest framework to be created on the RPC protocol. It makes use of its advantages and tries to correct the issues of traditional RPC.
 
 # What Is gRPC ?
-It is an adaptation of traditional RPC frameworks. 
+It is an adaptation of traditional RPC frameworks. gRPC is built on the core principle that we must use Services not Objects, and Messages not References. In other words, in gRPC we start the process by defining our services and their message types. We use clear interfaces that maps directly to our business functions and programming concept like interfaces or methods. No need for translations. gRPC is all about APIs, not resources.
 
 Rather, using a text-based messaging protocol, we can leverage a binary protocol that is optimized for inter-service communication. The Cloud Native Computing Foundation’s [gRPC](https://grpc.io/) (gRPC Remote Procedure Call) is an ideal choice for inter-service communication since it uses protocol buffers as the binary data interchange format for inter-service communication.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxNjM1NDE1NiwyMDkyNjYxNTU5LC03MT
-A1Mjg3MCwtNzEwNTI4NzAsLTE3NDYyNTgzMTMsLTEwMzQzNTY1
-MTcsMTQyODk5NzcyOCwtNjU0MjExNjEwLDY0NTExOTg4MywtOD
-U5NTQ0NDE5LDk2NTYzNzQ3MywtMTM4MjExNTM0MSwzMDg3MzA1
-MzksLTEzNDIyMzIxOCwtMjEwNjk4NDYyNSwtMzMyNDU1MzYzXX
-0=
+eyJoaXN0b3J5IjpbLTEzNjA4MzA3MTksMTMxNjM1NDE1NiwyMD
+kyNjYxNTU5LC03MTA1Mjg3MCwtNzEwNTI4NzAsLTE3NDYyNTgz
+MTMsLTEwMzQzNTY1MTcsMTQyODk5NzcyOCwtNjU0MjExNjEwLD
+Y0NTExOTg4MywtODU5NTQ0NDE5LDk2NTYzNzQ3MywtMTM4MjEx
+NTM0MSwzMDg3MzA1MzksLTEzNDIyMzIxOCwtMjEwNjk4NDYyNS
+wtMzMyNDU1MzYzXX0=
 -->
