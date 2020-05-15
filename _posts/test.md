@@ -45,13 +45,16 @@ The technology used to provide an API for your app is an important choice, and g
 
  - gRPC is a binary protocol rather than text-based messaging protocol, it uses protocol buffers **(Protobuf serializes very quickly on the server and client)** as the binary data interchange format for inter-service communication.
  
- - gRPC is designed for HTTP/2, a major revision of HTTP that provides significant performance benefits over HTTP 1.x. HTTP/2 protocol provides Binary framing and compression and Multiplexing of multiple HTTP/2 calls over a single TCP connection
+ - gRPC is designed for HTTP/2, a major revision of HTTP that provides significant performance benefits over HTTP 1.x. HTTP/2 protocol provides Binary framing and compression and Multiplexing of multiple HTTP/2 calls over a single TCP connection.
+
+### Code generation
+All gRPC frameworks provide first-class support for code generation. A core file to gRPC development is the [.proto file](https://developers.google.com/protocol-buffers/docs/proto3), which defines the contract of gRPC services and messages. From this file gRPC frameworks will code generate a service base class, messages, and a complete client.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1OTk0NjczOCwxMzE2MzU0MTU2LDIwOT
-I2NjE1NTksLTcxMDUyODcwLC03MTA1Mjg3MCwtMTc0NjI1ODMx
-MywtMTAzNDM1NjUxNywxNDI4OTk3NzI4LC02NTQyMTE2MTAsNj
-Q1MTE5ODgzLC04NTk1NDQ0MTksOTY1NjM3NDczLC0xMzgyMTE1
-MzQxLDMwODczMDUzOSwtMTM0MjIzMjE4LC0yMTA2OTg0NjI1LC
-0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbOTYzNjc2MTQwLC00NTk5NDY3MzgsMTMxNj
+M1NDE1NiwyMDkyNjYxNTU5LC03MTA1Mjg3MCwtNzEwNTI4NzAs
+LTE3NDYyNTgzMTMsLTEwMzQzNTY1MTcsMTQyODk5NzcyOCwtNj
+U0MjExNjEwLDY0NTExOTg4MywtODU5NTQ0NDE5LDk2NTYzNzQ3
+MywtMTM4MjExNTM0MSwzMDg3MzA1MzksLTEzNDIyMzIxOCwtMj
+EwNjk4NDYyNSwtMzMyNDU1MzYzXX0=
 -->
