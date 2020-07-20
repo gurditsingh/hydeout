@@ -20,13 +20,13 @@ With an imperative approach, a developer writes code that describes in exacting 
 •	Control Structure Loops, continue, break etc
 
 ## What is Functional Programming ?
-
+Expressions, Types, and Values
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM4MDkwNjMwLC0xMTUwNDEyMTE2LDkwNz
-EyNzY3MywtMjA4ODc0NjYxMiwyMDM5NjM1NjIsLTcxMDUyODcw
-LC0xNzQ2MjU4MzEzLC0xMDM0MzU2NTE3LDE0Mjg5OTc3MjgsLT
-Y1NDIxMTYxMCw2NDUxMTk4ODMsLTg1OTU0NDQxOSw5NjU2Mzc0
-NzMsLTEzODIxMTUzNDEsMzA4NzMwNTM5LC0xMzQyMjMyMTgsOD
-E5MTU1MTgwLC0xNjg1OTQ0NTEyLDg0MTcxODYyMiw2MTQ2MDE1
-ODhdfQ==
+eyJoaXN0b3J5IjpbMTI5OTE5NDMwMSw3MzgwOTA2MzAsLTExNT
+A0MTIxMTYsOTA3MTI3NjczLC0yMDg4NzQ2NjEyLDIwMzk2MzU2
+MiwtNzEwNTI4NzAsLTE3NDYyNTgzMTMsLTEwMzQzNTY1MTcsMT
+QyODk5NzcyOCwtNjU0MjExNjEwLDY0NTExOTg4MywtODU5NTQ0
+NDE5LDk2NTYzNzQ3MywtMTM4MjExNTM0MSwzMDg3MzA1MzksLT
+EzNDIyMzIxOCw4MTkxNTUxODAsLTE2ODU5NDQ1MTIsODQxNzE4
+NjIyXX0=
 -->
