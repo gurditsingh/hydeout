@@ -10,14 +10,16 @@
 
 
 What is Imperative Programming ?
-Imperative means the statements which tell the step by step task you want to do.
+With an imperative approach, a developer writes code that describes in exacting detail the steps that the computer must take to accomplish the goal.
+
+**For example** if you wanted to multiply all elements in a list by some factor, in Java the idiomatic solution would be a `for` loop that increments a counter variable until it is less than the list length - so you'd be telling the computer how to transform a list explicitly.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTA0MTIxMTYsOTA3MTI3NjczLC0yMD
-g4NzQ2NjEyLDIwMzk2MzU2MiwtNzEwNTI4NzAsLTE3NDYyNTgz
-MTMsLTEwMzQzNTY1MTcsMTQyODk5NzcyOCwtNjU0MjExNjEwLD
-Y0NTExOTg4MywtODU5NTQ0NDE5LDk2NTYzNzQ3MywtMTM4MjEx
-NTM0MSwzMDg3MzA1MzksLTEzNDIyMzIxOCw4MTkxNTUxODAsLT
-E2ODU5NDQ1MTIsODQxNzE4NjIyLDYxNDYwMTU4OCwxNjk1NDc1
-OTMxXX0=
+eyJoaXN0b3J5IjpbLTM2ODM5MzUzOCwtMTE1MDQxMjExNiw5MD
+cxMjc2NzMsLTIwODg3NDY2MTIsMjAzOTYzNTYyLC03MTA1Mjg3
+MCwtMTc0NjI1ODMxMywtMTAzNDM1NjUxNywxNDI4OTk3NzI4LC
+02NTQyMTE2MTAsNjQ1MTE5ODgzLC04NTk1NDQ0MTksOTY1NjM3
+NDczLC0xMzgyMTE1MzQxLDMwODczMDUzOSwtMTM0MjIzMjE4LD
+gxOTE1NTE4MCwtMTY4NTk0NDUxMiw4NDE3MTg2MjIsNjE0NjAx
+NTg4XX0=
 -->
