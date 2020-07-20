@@ -23,13 +23,15 @@ With an imperative approach, a developer writes code that describes in exacting 
 Functional programming language is one which does not have an immutable variables assignments or imperative control structure and in the wider sense the functional programming language is one with that enables the construction of elegant programs that focus on the functions.
 
 In particular functions in a functional programming language or first class citizens. 
-What does it mean? It means that essentially you can do with a function that you could do with any other piece of data so. You can define a string anywhere you should be able to define a function anywhere including inside other functions. Like any other value, you should be able to pass a function as a parameter to another function and return it f-, as a result from a function
+It means that essentially you can do with a function that you could do with any other piece of data. You can define a string anywhere you should be able to define a function anywhere including inside other functions. Like any other value, you should be able to pass a function as a parameter to another function and return it as a result from a function.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDQ5NDkzNiw3MzgwOTA2MzAsLTExNT
-A0MTIxMTYsOTA3MTI3NjczLC0yMDg4NzQ2NjEyLDIwMzk2MzU2
-MiwxMzY2NjE3MzIsNzE1NTg5OTE5LC0yMDkzOTA0MzY0LDE1Mj
-g3NDE0NzgsLTU2NTAxNDk5OSwtNDU5OTQ2NzM4LDEzMTYzNTQx
-NTYsMjA5MjY2MTU1OSwtNzEwNTI4NzAsLTcxMDUyODcwLC0xNz
-Q2MjU4MzEzLC0xMDM0MzU2NTE3LDE0Mjg5OTc3MjgsLTY1NDIx
-MTYxMF19
+eyJoaXN0b3J5IjpbLTE0ODI2NTE5MzcsNzM4MDkwNjMwLC0xMT
+UwNDEyMTE2LDkwNzEyNzY3MywtMjA4ODc0NjYxMiwyMDM5NjM1
+NjIsMTM2NjYxNzMyLDcxNTU4OTkxOSwtMjA5MzkwNDM2NCwxNT
+I4NzQxNDc4LC01NjUwMTQ5OTksLTQ1OTk0NjczOCwxMzE2MzU0
+MTU2LDIwOTI2NjE1NTksLTcxMDUyODcwLC03MTA1Mjg3MCwtMT
+c0NjI1ODMxMywtMTAzNDM1NjUxNywxNDI4OTk3NzI4LC02NTQy
+MTE2MTBdfQ==
 -->
