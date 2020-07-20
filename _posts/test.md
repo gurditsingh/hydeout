@@ -28,19 +28,16 @@ It means that essentially you can do with a function that you could do with any 
 ## FP Rules:
 1. There will be no null values.
 2. Only pure functions will be used and will define pure functions.
-3. Only use immutable values (val) for all fields. There are no var
-fields in pure FP code, so I won’t use any variables (var) in this book, unless
-I’m trying to explain a point.
+3. Only use immutable values (val) for all fields. There are no var fields in pure FP code.
 4. Whenever you use an if, you must always also use an else. Functional programming uses only expressions, not statements.
-5. We won’t create “classes” that encapsulate data and behavior. Instead we’ll
-create data structures and write pure functions that operate on those data structures.
+5. We won’t create “classes” that encapsulate data and behavior. Instead we’ll create data structures and write pure functions that operate on those data structures.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTk1ODc2MDcsNzM4MDkwNjMwLC0xMT
-UwNDEyMTE2LDkwNzEyNzY3MywtMjA4ODc0NjYxMiwyMDM5NjM1
-NjIsLTcxMDUyODcwLC0xNzQ2MjU4MzEzLC0xMDM0MzU2NTE3LD
-E0Mjg5OTc3MjgsLTY1NDIxMTYxMCw2NDUxMTk4ODMsLTg1OTU0
-NDQxOSw5NjU2Mzc0NzMsLTEzODIxMTUzNDEsMzA4NzMwNTM5LC
-0xMzQyMjMyMTgsODE5MTU1MTgwLC0xNjg1OTQ0NTEyLDg0MTcx
-ODYyMl19
+eyJoaXN0b3J5IjpbLTE4NzYwNzQ2NjAsLTE1NTk1ODc2MDcsNz
+M4MDkwNjMwLC0xMTUwNDEyMTE2LDkwNzEyNzY3MywtMjA4ODc0
+NjYxMiwyMDM5NjM1NjIsLTcxMDUyODcwLC0xNzQ2MjU4MzEzLC
+0xMDM0MzU2NTE3LDE0Mjg5OTc3MjgsLTY1NDIxMTYxMCw2NDUx
+MTk4ODMsLTg1OTU0NDQxOSw5NjU2Mzc0NzMsLTEzODIxMTUzND
+EsMzA4NzMwNTM5LC0xMzQyMjMyMTgsODE5MTU1MTgwLC0xNjg1
+OTQ0NTEyXX0=
 -->
