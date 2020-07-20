@@ -5,16 +5,18 @@
  - Defines exactly how to step through the code. Order of execution matters
 
  2. Functional programming
+-   Avoids keeping track of and changing state and mutable data.
+-   Divides the problem into functions
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDI0NTA2NDUsLTIwODg3NDY2MTIsMj
-AzOTYzNTYyLC03MTA1Mjg3MCwtMTc0NjI1ODMxMywtMTAzNDM1
-NjUxNywxNDI4OTk3NzI4LC02NTQyMTE2MTAsNjQ1MTE5ODgzLC
-04NTk1NDQ0MTksOTY1NjM3NDczLC0xMzgyMTE1MzQxLDMwODcz
-MDUzOSwtMTM0MjIzMjE4LDgxOTE1NTE4MCwtMTY4NTk0NDUxMi
-w4NDE3MTg2MjIsNjE0NjAxNTg4LDE2OTU0NzU5MzEsLTE2NjI2
-NDk4NzhdfQ==
+eyJoaXN0b3J5IjpbOTA3MTI3NjczLC0yMDg4NzQ2NjEyLDIwMz
+k2MzU2MiwtNzEwNTI4NzAsLTE3NDYyNTgzMTMsLTEwMzQzNTY1
+MTcsMTQyODk5NzcyOCwtNjU0MjExNjEwLDY0NTExOTg4MywtOD
+U5NTQ0NDE5LDk2NTYzNzQ3MywtMTM4MjExNTM0MSwzMDg3MzA1
+MzksLTEzNDIyMzIxOCw4MTkxNTUxODAsLTE2ODU5NDQ1MTIsOD
+QxNzE4NjIyLDYxNDYwMTU4OCwxNjk1NDc1OTMxLC0xNjYyNjQ5
+ODc4XX0=
 -->
