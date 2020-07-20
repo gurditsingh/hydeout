@@ -15,13 +15,18 @@ With an imperative approach, a developer writes code that describes in exacting 
 
 **For example:** if you wanted to multiply all elements in a list by some factor, in Java the solution would be a `for` loop that increments a counter variable until it is less than the list length - so you are telling the computer how to transform a list explicitly.
 
+•	Modifying Mutable Variables
+•	Using Assignments 
+•	Control Structure Loops, continue, break etc
+
+## What is Functional Programming ?
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyNTY1NTIwNSwtMTE1MDQxMjExNiw5MD
-cxMjc2NzMsLTIwODg3NDY2MTIsMjAzOTYzNTYyLC03MTA1Mjg3
-MCwtMTc0NjI1ODMxMywtMTAzNDM1NjUxNywxNDI4OTk3NzI4LC
-02NTQyMTE2MTAsNjQ1MTE5ODgzLC04NTk1NDQ0MTksOTY1NjM3
-NDczLC0xMzgyMTE1MzQxLDMwODczMDUzOSwtMTM0MjIzMjE4LD
-gxOTE1NTE4MCwtMTY4NTk0NDUxMiw4NDE3MTg2MjIsNjE0NjAx
-NTg4XX0=
+eyJoaXN0b3J5IjpbNzM4MDkwNjMwLC0xMTUwNDEyMTE2LDkwNz
+EyNzY3MywtMjA4ODc0NjYxMiwyMDM5NjM1NjIsLTcxMDUyODcw
+LC0xNzQ2MjU4MzEzLC0xMDM0MzU2NTE3LDE0Mjg5OTc3MjgsLT
+Y1NDIxMTYxMCw2NDUxMTk4ODMsLTg1OTU0NDQxOSw5NjU2Mzc0
+NzMsLTEzODIxMTUzNDEsMzA4NzMwNTM5LC0xMzQyMjMyMTgsOD
+E5MTU1MTgwLC0xNjg1OTQ0NTEyLDg0MTcxODYyMiw2MTQ2MDE1
+ODhdfQ==
 -->
