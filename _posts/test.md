@@ -1,31 +1,10 @@
-
-
-## usage: utility-name
-
- - -m,--method <arg>   which method to call for operation "create,read,update,delete,readAll"
-
-  
-
- - -a,--api <arg>      api id value for validation
-
-  
-
- - -i,--id <arg>       id value to store into Catalogue
-
-  
-
- - -d,--desc <arg>     description value to store into Catalogue
-
-  
-
- - -t,--title <arg>    title value to store into Catalogue
-
+d
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzOTYzNTYyLDEzNjY2MTczMiw3MTU1OD
-k5MTksLTIwOTM5MDQzNjQsMTUyODc0MTQ3OCwtNTY1MDE0OTk5
-LC00NTk5NDY3MzgsMTMxNjM1NDE1NiwyMDkyNjYxNTU5LC03MT
-A1Mjg3MCwtNzEwNTI4NzAsLTE3NDYyNTgzMTMsLTEwMzQzNTY1
-MTcsMTQyODk5NzcyOCwtNjU0MjExNjEwLDY0NTExOTg4MywtOD
-U5NTQ0NDE5LDk2NTYzNzQ3MywtMTM4MjExNTM0MSwzMDg3MzA1
-MzldfQ==
+eyJoaXN0b3J5IjpbOTUzNDMzMTg4LDIwMzk2MzU2MiwxMzY2Nj
+E3MzIsNzE1NTg5OTE5LC0yMDkzOTA0MzY0LDE1Mjg3NDE0Nzgs
+LTU2NTAxNDk5OSwtNDU5OTQ2NzM4LDEzMTYzNTQxNTYsMjA5Mj
+Y2MTU1OSwtNzEwNTI4NzAsLTcxMDUyODcwLC0xNzQ2MjU4MzEz
+LC0xMDM0MzU2NTE3LDE0Mjg5OTc3MjgsLTY1NDIxMTYxMCw2ND
+UxMTk4ODMsLTg1OTU0NDQxOSw5NjU2Mzc0NzMsLTEzODIxMTUz
+NDFdfQ==
 -->
