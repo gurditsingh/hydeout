@@ -20,13 +20,13 @@ With an imperative approach, a developer writes code that describes in exacting 
 •	Control Structure Loops, continue, break etc
 
 ## What is Functional Programming ?
-Expressions, Types, and Values
+Functional programming means focusing on the functions in the program. So, in a sense, it gives you new capabilities to work with these functions. In particular, functions can be values that are produced, consumed and composed
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5OTE5NDMwMSw3MzgwOTA2MzAsLTExNT
-A0MTIxMTYsOTA3MTI3NjczLC0yMDg4NzQ2NjEyLDIwMzk2MzU2
-MiwtNzEwNTI4NzAsLTE3NDYyNTgzMTMsLTEwMzQzNTY1MTcsMT
-QyODk5NzcyOCwtNjU0MjExNjEwLDY0NTExOTg4MywtODU5NTQ0
-NDE5LDk2NTYzNzQ3MywtMTM4MjExNTM0MSwzMDg3MzA1MzksLT
-EzNDIyMzIxOCw4MTkxNTUxODAsLTE2ODU5NDQ1MTIsODQxNzE4
-NjIyXX0=
+eyJoaXN0b3J5IjpbODE3ODc5MTQxLDczODA5MDYzMCwtMTE1MD
+QxMjExNiw5MDcxMjc2NzMsLTIwODg3NDY2MTIsMjAzOTYzNTYy
+LC03MTA1Mjg3MCwtMTc0NjI1ODMxMywtMTAzNDM1NjUxNywxND
+I4OTk3NzI4LC02NTQyMTE2MTAsNjQ1MTE5ODgzLC04NTk1NDQ0
+MTksOTY1NjM3NDczLC0xMzgyMTE1MzQxLDMwODczMDUzOSwtMT
+M0MjIzMjE4LDgxOTE1NTE4MCwtMTY4NTk0NDUxMiw4NDE3MTg2
+MjJdfQ==
 -->
