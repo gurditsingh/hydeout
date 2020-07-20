@@ -10,14 +10,14 @@
 
 
 What is Imperative Programming ?
-Imperative means the statements which tell it step by step how to do the task you want it to do.
+Imperative means the statements which tell the step by step task you want to do.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3NDg4MzI0MCw5MDcxMjc2NzMsLTIwOD
-g3NDY2MTIsMjAzOTYzNTYyLC03MTA1Mjg3MCwtMTc0NjI1ODMx
-MywtMTAzNDM1NjUxNywxNDI4OTk3NzI4LC02NTQyMTE2MTAsNj
-Q1MTE5ODgzLC04NTk1NDQ0MTksOTY1NjM3NDczLC0xMzgyMTE1
-MzQxLDMwODczMDUzOSwtMTM0MjIzMjE4LDgxOTE1NTE4MCwtMT
-Y4NTk0NDUxMiw4NDE3MTg2MjIsNjE0NjAxNTg4LDE2OTU0NzU5
-MzFdfQ==
+eyJoaXN0b3J5IjpbLTExNTA0MTIxMTYsOTA3MTI3NjczLC0yMD
+g4NzQ2NjEyLDIwMzk2MzU2MiwtNzEwNTI4NzAsLTE3NDYyNTgz
+MTMsLTEwMzQzNTY1MTcsMTQyODk5NzcyOCwtNjU0MjExNjEwLD
+Y0NTExOTg4MywtODU5NTQ0NDE5LDk2NTYzNzQ3MywtMTM4MjEx
+NTM0MSwzMDg3MzA1MzksLTEzNDIyMzIxOCw4MTkxNTUxODAsLT
+E2ODU5NDQ1MTIsODQxNzE4NjIyLDYxNDYwMTU4OCwxNjk1NDc1
+OTMxXX0=
 -->
