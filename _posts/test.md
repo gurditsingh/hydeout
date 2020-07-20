@@ -1,8 +1,8 @@
-In programming we can distinguish three
+## In programming we can distinguish two main paradigms.
+imperative programming
 
-main paradigms.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0NTk4MDE1NCwtMjA4ODc0NjYxMiwyMD
+eyJoaXN0b3J5IjpbLTYzMjkyMjkzOSwtMjA4ODc0NjYxMiwyMD
 M5NjM1NjIsMTM2NjYxNzMyLDcxNTU4OTkxOSwtMjA5MzkwNDM2
 NCwxNTI4NzQxNDc4LC01NjUwMTQ5OTksLTQ1OTk0NjczOCwxMz
 E2MzU0MTU2LDIwOTI2NjE1NTksLTcxMDUyODcwLC03MTA1Mjg3
