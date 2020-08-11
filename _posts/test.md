@@ -1,10 +1,12 @@
-what the **trait** word means. The traits is characteristic so if you have a trade with a few attributes that character is something you can mix this trait into your object and this object will does have access to those attributes in this way different aspects of classes can be encapsulated in different traits which allows for very modular design 
+what the **trait** word means. The traits is characteristic, so if you have a trait with a few attributes that you can mix into your object and this object will does have access to those attributes.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5NjUyMDA4NiwtMjA4ODc0NjYxMiwtMT
-g3NjA3NDY2MCwtMTU1OTU4NzYwNyw3MzgwOTA2MzAsLTExNTA0
-MTIxMTYsOTA3MTI3NjczLC0yMDg4NzQ2NjEyLDIwMzk2MzU2Mi
-wtNzEwNTI4NzAsLTE3NDYyNTgzMTMsLTEwMzQzNTY1MTcsMTQy
-ODk5NzcyOCwtNjU0MjExNjEwLDY0NTExOTg4MywtODU5NTQ0ND
-E5LDk2NTYzNzQ3MywtMTM4MjExNTM0MSwzMDg3MzA1MzksLTEz
-NDIyMzIxOF19
+eyJoaXN0b3J5IjpbLTU1NDgwNDg1MSwxMjk2NTIwMDg2LC0yMD
+g4NzQ2NjEyLC0xODc2MDc0NjYwLC0xNTU5NTg3NjA3LDczODA5
+MDYzMCwtMTE1MDQxMjExNiw5MDcxMjc2NzMsLTIwODg3NDY2MT
+IsMjAzOTYzNTYyLC03MTA1Mjg3MCwtMTc0NjI1ODMxMywtMTAz
+NDM1NjUxNywxNDI4OTk3NzI4LC02NTQyMTE2MTAsNjQ1MTE5OD
+gzLC04NTk1NDQ0MTksOTY1NjM3NDczLC0xMzgyMTE1MzQxLDMw
+ODczMDUzOV19
 -->
