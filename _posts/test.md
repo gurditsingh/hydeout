@@ -12,11 +12,10 @@ Traits are a fundamental unit of code reuse in Scala. Trait encapsulates method 
  2. Rich Trait
  
  **Thin Traits :** The thin traits is very similar to Java interfaces like the most of the methods abstract not all.
- **Rich Traits:** 
+ **Rich Traits:** Rich Traits are sort of the opposite most methods in a Rich Traits are implemented usually in terms of the abstract methods.
 
-irst thing that we need to talk about is the difference between sane and rich traits
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwNDgzMjk1MiwxMzQyMjcyNTgxLDE0ND
+eyJoaXN0b3J5IjpbLTE0NTM2ODA2OSwxMzQyMjcyNTgxLDE0ND
 Y0MzI2NTUsMTI5NjUyMDA4NiwtMjA4ODc0NjYxMiwtMTg3NjA3
 NDY2MCwtMTU1OTU4NzYwNyw3MzgwOTA2MzAsLTExNTA0MTIxMT
 YsOTA3MTI3NjczLC0yMDg4NzQ2NjEyLDIwMzk2MzU2MiwtNzEw
