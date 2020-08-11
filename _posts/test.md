@@ -6,14 +6,20 @@ Traits are a fundamental unit of code reuse in Scala. Trait encapsulates method 
 > you have a trait with a few attributes that you can mix into your
 > object and this object will does have access to those attributes.
 
-First Thing
+## Kind of Traits:
+
+ 1. Thin Trait
+ 2. Rich Trait
+ 
+ 
+
 irst thing that we need to talk about is the difference between sane and rich traits
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0MjI3MjU4MSwxNDQ2NDMyNjU1LDEyOT
-Y1MjAwODYsLTIwODg3NDY2MTIsLTE4NzYwNzQ2NjAsLTE1NTk1
-ODc2MDcsNzM4MDkwNjMwLC0xMTUwNDEyMTE2LDkwNzEyNzY3My
-wtMjA4ODc0NjYxMiwyMDM5NjM1NjIsLTcxMDUyODcwLC0xNzQ2
-MjU4MzEzLC0xMDM0MzU2NTE3LDE0Mjg5OTc3MjgsLTY1NDIxMT
-YxMCw2NDUxMTk4ODMsLTg1OTU0NDQxOSw5NjU2Mzc0NzMsLTEz
-ODIxMTUzNDFdfQ==
+eyJoaXN0b3J5IjpbMTQ5MTc3MTY4OSwxMzQyMjcyNTgxLDE0ND
+Y0MzI2NTUsMTI5NjUyMDA4NiwtMjA4ODc0NjYxMiwtMTg3NjA3
+NDY2MCwtMTU1OTU4NzYwNyw3MzgwOTA2MzAsLTExNTA0MTIxMT
+YsOTA3MTI3NjczLC0yMDg4NzQ2NjEyLDIwMzk2MzU2MiwtNzEw
+NTI4NzAsLTE3NDYyNTgzMTMsLTEwMzQzNTY1MTcsMTQyODk5Nz
+cyOCwtNjU0MjExNjEwLDY0NTExOTg4MywtODU5NTQ0NDE5LDk2
+NTYzNzQ3M119
 -->
