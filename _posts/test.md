@@ -11,15 +11,19 @@ Traits are a fundamental unit of code reuse in Scala. Trait encapsulates method 
  1. Thin Trait
  2. Rich Trait
  
- **Thin Traits :** The thin traits is very similar to Java interfaces like the most of the methods abstract not all.
- **Rich Traits:** Rich Traits are sort of the opposite most methods in a Rich Traits are implemented usually in terms of the abstract methods.
+ **Thin Trait :** The thin trait is very similar to Java interfaces like the most of the methods abstract not all.
+ **Rich Trait:** Rich Trait are sort of the opposite most methods in a Rich Trait are implemented usually in terms of the abstract methods.
+
+## Divide Trait into three separate categories
+
+ - Add Functionality
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTM2ODA2OSwxMzQyMjcyNTgxLDE0ND
-Y0MzI2NTUsMTI5NjUyMDA4NiwtMjA4ODc0NjYxMiwtMTg3NjA3
-NDY2MCwtMTU1OTU4NzYwNyw3MzgwOTA2MzAsLTExNTA0MTIxMT
-YsOTA3MTI3NjczLC0yMDg4NzQ2NjEyLDIwMzk2MzU2MiwtNzEw
-NTI4NzAsLTE3NDYyNTgzMTMsLTEwMzQzNTY1MTcsMTQyODk5Nz
-cyOCwtNjU0MjExNjEwLDY0NTExOTg4MywtODU5NTQ0NDE5LDk2
-NTYzNzQ3M119
+eyJoaXN0b3J5IjpbMTQxMzE3Nzk2NSwtMTQ1MzY4MDY5LDEzND
+IyNzI1ODEsMTQ0NjQzMjY1NSwxMjk2NTIwMDg2LC0yMDg4NzQ2
+NjEyLC0xODc2MDc0NjYwLC0xNTU5NTg3NjA3LDczODA5MDYzMC
+wtMTE1MDQxMjExNiw5MDcxMjc2NzMsLTIwODg3NDY2MTIsMjAz
+OTYzNTYyLC03MTA1Mjg3MCwtMTc0NjI1ODMxMywtMTAzNDM1Nj
+UxNywxNDI4OTk3NzI4LC02NTQyMTE2MTAsNjQ1MTE5ODgzLC04
+NTk1NDQ0MTldfQ==
 -->
