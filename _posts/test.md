@@ -38,10 +38,13 @@ Scala allows stackable modifications to any methods using classes and/or traits,
 [Check Source Code for Intercept Functionality](https://github.com/gurditsingh/Scala-FP/blob/master/src/main/scala/scala/trait_lesson/InterceptFunctionality.scala)
 
 ## But if two traits have the same method and signature, how would we resolve this multiple inheritance?
-Trait linearization is the process in Scala that kicks in when you mixin traits in your class
+Trait linearization is the process in Scala that kicks in when you mixin traits in your class. In scala multiple inheritance is not possible, but it is possible to mixin multiple traits which feels a bit like multiple inheritance. Multiple inheritance can lead to the diamond problem.
+
+# Trait Linearization
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0MjI1OTA4MSwtNTY1MTEzNjM3LC0xNT
+eyJoaXN0b3J5IjpbLTY4NDA5NDk5MCwtNTY1MTEzNjM3LC0xNT
 Y5OTA0MTQyLDE4MTQ4MzQ0MjcsMjAyNzA1NjY3MywtMTI1OTg5
 MDA2MSwtMTQ1MzY4MDY5LDEzNDIyNzI1ODEsMTQ0NjQzMjY1NS
 wxMjk2NTIwMDg2LC0yMDg4NzQ2NjEyLC0xODc2MDc0NjYwLC0x
