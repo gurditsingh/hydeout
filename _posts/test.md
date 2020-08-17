@@ -33,15 +33,18 @@ Scala allows stackable modifications to any methods using classes and/or traits,
 
 [Check Source Code for Modify Functionality](https://github.com/gurditsingh/Scala-FP/blob/master/src/main/scala/scala/trait_lesson/ModifyFunctionality.scala)
 
-**Intercept functionality :** Intercept functionality which is very similar to modifying the functionality. In Intercept we will you existing base and intercept the functinality. 
+**Intercept functionality :** Intercept functionality which is very similar to modifying the functionality. In Intercept we will you existing base and intercept the functionality.
+
+[Check Source Code for Intercept Functionality](https://github.com/gurditsingh/Scala-FP/blob/master/src/main/scala/scala/trait_lesson/InterceptFunctionality.scala)
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3OTM1MDc4NSwtNTY1MTEzNjM3LC0xNT
-Y5OTA0MTQyLDE4MTQ4MzQ0MjcsMjAyNzA1NjY3MywtMTI1OTg5
-MDA2MSwtMTQ1MzY4MDY5LDEzNDIyNzI1ODEsMTQ0NjQzMjY1NS
-wxMjk2NTIwMDg2LC0yMDg4NzQ2NjEyLC0xODc2MDc0NjYwLC0x
-NTU5NTg3NjA3LDczODA5MDYzMCwtMTE1MDQxMjExNiw5MDcxMj
-c2NzMsLTIwODg3NDY2MTIsMjAzOTYzNTYyLC03MTA1Mjg3MCwt
-MTc0NjI1ODMxM119
+eyJoaXN0b3J5IjpbLTE2MDYzMTg0MTcsLTU2NTExMzYzNywtMT
+U2OTkwNDE0MiwxODE0ODM0NDI3LDIwMjcwNTY2NzMsLTEyNTk4
+OTAwNjEsLTE0NTM2ODA2OSwxMzQyMjcyNTgxLDE0NDY0MzI2NT
+UsMTI5NjUyMDA4NiwtMjA4ODc0NjYxMiwtMTg3NjA3NDY2MCwt
+MTU1OTU4NzYwNyw3MzgwOTA2MzAsLTExNTA0MTIxMTYsOTA3MT
+I3NjczLC0yMDg4NzQ2NjEyLDIwMzk2MzU2MiwtNzEwNTI4NzAs
+LTE3NDYyNTgzMTNdfQ==
 -->
