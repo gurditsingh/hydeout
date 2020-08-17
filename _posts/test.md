@@ -21,15 +21,17 @@ Traits are a fundamental unit of code reuse in Scala. Trait encapsulates method 
  - Intercept functionality
 
 
-**Add Functionality : ** A great thing about Scala traits is that you can mix multiple traits that have behaviour into classes and add real working methods to them. A very interesting thing you can do with traits that have concrete methods is mix them into classes on the fly.
+**Add Functionality :**  A great thing about Scala traits is that you can mix multiple traits that have behaviour into classes and add real working methods to them. A very interesting thing you can do with traits that have concrete methods is mix them into classes on the fly.
 
 [Check Source Code for Add Functionality ](https://github.com/gurditsingh/Scala-FP/blob/master/src/main/scala/scala/trait_lesson/AddFunctionality.scala)
+
+**Modify Functionality (Stackable Modification﻿**):** 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1MjU2NTExMiwyMDI3MDU2NjczLC0xMj
-U5ODkwMDYxLC0xNDUzNjgwNjksMTM0MjI3MjU4MSwxNDQ2NDMy
-NjU1LDEyOTY1MjAwODYsLTIwODg3NDY2MTIsLTE4NzYwNzQ2Nj
-AsLTE1NTk1ODc2MDcsNzM4MDkwNjMwLC0xMTUwNDEyMTE2LDkw
-NzEyNzY3MywtMjA4ODc0NjYxMiwyMDM5NjM1NjIsMTM2NjYxNz
-MyLDcxNTU4OTkxOSwtMjA5MzkwNDM2NCwxNTI4NzQxNDc4LC01
-NjUwMTQ5OTldfQ==
+eyJoaXN0b3J5IjpbLTE2MTY4NjQ5NjMsMjAyNzA1NjY3MywtMT
+I1OTg5MDA2MSwtMTQ1MzY4MDY5LDEzNDIyNzI1ODEsMTQ0NjQz
+MjY1NSwxMjk2NTIwMDg2LC0yMDg4NzQ2NjEyLC0xODc2MDc0Nj
+YwLC0xNTU5NTg3NjA3LDczODA5MDYzMCwtMTE1MDQxMjExNiw5
+MDcxMjc2NzMsLTIwODg3NDY2MTIsMjAzOTYzNTYyLDEzNjY2MT
+czMiw3MTU1ODk5MTksLTIwOTM5MDQzNjQsMTUyODc0MTQ3OCwt
+NTY1MDE0OTk5XX0=
 -->
