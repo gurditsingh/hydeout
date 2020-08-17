@@ -31,13 +31,15 @@ Stackable modifications can be combined with each other in any way you desire. G
 
 Scala allows stackable modifications to any methods using classes and/or traits, which means you can choose very specific behavior by stacking classes and traits by mixing them together. When you stack new trait by overriding the same method over and over, you will get different or add-on behavior to your method.
 
-[Check Source Code for Add Functionality](https://github.com/gurditsingh/Scala-FP/blob/master/src/main/scala/scala/trait_lesson/ModifyFunctionality.scala)
+[Check Source Code for Modify Functionality](https://github.com/gurditsingh/Scala-FP/blob/master/src/main/scala/scala/trait_lesson/ModifyFunctionality.scala)
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3Mjk3NTQ3OSwxODE0ODM0NDI3LDIwMj
-cwNTY2NzMsLTEyNTk4OTAwNjEsLTE0NTM2ODA2OSwxMzQyMjcy
-NTgxLDE0NDY0MzI2NTUsMTI5NjUyMDA4NiwtMjA4ODc0NjYxMi
-wtMTg3NjA3NDY2MCwtMTU1OTU4NzYwNyw3MzgwOTA2MzAsLTEx
-NTA0MTIxMTYsOTA3MTI3NjczLC0yMDg4NzQ2NjEyLDIwMzk2Mz
-U2MiwxMzY2NjE3MzIsNzE1NTg5OTE5LC0yMDkzOTA0MzY0LDE1
-Mjg3NDE0NzhdfQ==
+eyJoaXN0b3J5IjpbLTE1Njk5MDQxNDIsMTgxNDgzNDQyNywyMD
+I3MDU2NjczLC0xMjU5ODkwMDYxLC0xNDUzNjgwNjksMTM0MjI3
+MjU4MSwxNDQ2NDMyNjU1LDEyOTY1MjAwODYsLTIwODg3NDY2MT
+IsLTE4NzYwNzQ2NjAsLTE1NTk1ODc2MDcsNzM4MDkwNjMwLC0x
+MTUwNDEyMTE2LDkwNzEyNzY3MywtMjA4ODc0NjYxMiwyMDM5Nj
+M1NjIsMTM2NjYxNzMyLDcxNTU4OTkxOSwtMjA5MzkwNDM2NCwx
+NTI4NzQxNDc4XX0=
 -->
