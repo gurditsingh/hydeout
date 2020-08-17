@@ -41,14 +41,22 @@ Scala allows stackable modifications to any methods using classes and/or traits,
 Trait linearization is the process in Scala that kicks in when you mixin traits in your class. In scala multiple inheritance is not possible, but it is possible to mixin multiple traits which feels a bit like multiple inheritance. Multiple inheritance can lead to the diamond problem.
 
 # Trait Linearization
+Scala linearization is a deterministic process that puts all traits in a linear inheritance hierarchy. By doing that we can solve the diamond problem.
 
+**The rules for this process are as follows:**
+1.  Start at the first extended class or trait and write that complete hierarchy down. We will call this the  **linearized hierarchy**
+2.  Take the next trait and write this hierarchy down
+    -   now remove all classes/traits from this hierarchy which are already in the  **linearized hierarchy**
+    -   add the remaining traits to the bottom of the  **linearized hierarchy**  to create the new  **linearized hierarchy**
+3.  repeat step 2 for every trait.
+4.  Place the class itself as the last type extending the  **linearized hierarchy**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NDA5NDk5MCwtNTY1MTEzNjM3LC0xNT
-Y5OTA0MTQyLDE4MTQ4MzQ0MjcsMjAyNzA1NjY3MywtMTI1OTg5
-MDA2MSwtMTQ1MzY4MDY5LDEzNDIyNzI1ODEsMTQ0NjQzMjY1NS
-wxMjk2NTIwMDg2LC0yMDg4NzQ2NjEyLC0xODc2MDc0NjYwLC0x
-NTU5NTg3NjA3LDczODA5MDYzMCwtMTE1MDQxMjExNiw5MDcxMj
-c2NzMsLTIwODg3NDY2MTIsMjAzOTYzNTYyLC03MTA1Mjg3MCwt
-MTc0NjI1ODMxM119
+eyJoaXN0b3J5IjpbLTEwNzk0MzQxMzcsLTU2NTExMzYzNywtMT
+U2OTkwNDE0MiwxODE0ODM0NDI3LDIwMjcwNTY2NzMsLTEyNTk4
+OTAwNjEsLTE0NTM2ODA2OSwxMzQyMjcyNTgxLDE0NDY0MzI2NT
+UsMTI5NjUyMDA4NiwtMjA4ODc0NjYxMiwtMTg3NjA3NDY2MCwt
+MTU1OTU4NzYwNyw3MzgwOTA2MzAsLTExNTA0MTIxMTYsOTA3MT
+I3NjczLC0yMDg4NzQ2NjEyLDIwMzk2MzU2MiwtNzEwNTI4NzAs
+LTE3NDYyNTgzMTNdfQ==
 -->
