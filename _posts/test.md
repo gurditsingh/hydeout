@@ -25,13 +25,13 @@ Traits are a fundamental unit of code reuse in Scala. Trait encapsulates method 
 
 [Check Source Code for Add Functionality ](https://github.com/gurditsingh/Scala-FP/blob/master/src/main/scala/scala/trait_lesson/AddFunctionality.scala)
 
-**Modify Functionality (Stackable Modification﻿**):** 
+**Modify Functionality (Stackable Modification﻿):** This is where traits play an important role. The stackable modifications state that “super” is accessed dynamically based on how the trait is mixed in, whereas in general super is statically determined.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTY4NjQ5NjMsMjAyNzA1NjY3MywtMT
-I1OTg5MDA2MSwtMTQ1MzY4MDY5LDEzNDIyNzI1ODEsMTQ0NjQz
-MjY1NSwxMjk2NTIwMDg2LC0yMDg4NzQ2NjEyLC0xODc2MDc0Nj
-YwLC0xNTU5NTg3NjA3LDczODA5MDYzMCwtMTE1MDQxMjExNiw5
-MDcxMjc2NzMsLTIwODg3NDY2MTIsMjAzOTYzNTYyLC03MTA1Mj
-g3MCwtMTc0NjI1ODMxMywtMTAzNDM1NjUxNywxNDI4OTk3NzI4
-LC02NTQyMTE2MTBdfQ==
+eyJoaXN0b3J5IjpbMTgxNDgzNDQyNywyMDI3MDU2NjczLC0xMj
+U5ODkwMDYxLC0xNDUzNjgwNjksMTM0MjI3MjU4MSwxNDQ2NDMy
+NjU1LDEyOTY1MjAwODYsLTIwODg3NDY2MTIsLTE4NzYwNzQ2Nj
+AsLTE1NTk1ODc2MDcsNzM4MDkwNjMwLC0xMTUwNDEyMTE2LDkw
+NzEyNzY3MywtMjA4ODc0NjYxMiwyMDM5NjM1NjIsLTcxMDUyOD
+cwLC0xNzQ2MjU4MzEzLC0xMDM0MzU2NTE3LDE0Mjg5OTc3Mjgs
+LTY1NDIxMTYxMF19
 -->
