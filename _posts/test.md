@@ -25,15 +25,18 @@ The first implementation uses widely known as lambda or single abstract method. 
 
 Now, with those functions you can primarily do two things: call them or give as a parameter to another function.
 
+## Using Higher Order Functions (HOF)
 
-
-
+```scala
+def isEven(i: Int) = i % 2 == 0
+def sum(a: Int, b: Int) = a + b
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2NjM3MzAxMywtMTE5Mjc3NDc1NSw5Nz
-YxNDc0NzMsLTg5Mzc2ODg0LC0xMDc5NDM0MTM3LC01NjUxMTM2
-MzcsLTE1Njk5MDQxNDIsMTgxNDgzNDQyNywyMDI3MDU2NjczLC
-0xMjU5ODkwMDYxLC0xNDUzNjgwNjksMTM0MjI3MjU4MSwxNDQ2
-NDMyNjU1LDEyOTY1MjAwODYsLTIwODg3NDY2MTIsLTE4NzYwNz
-Q2NjAsLTE1NTk1ODc2MDcsNzM4MDkwNjMwLC0xMTUwNDEyMTE2
-LDkwNzEyNzY3M119
+eyJoaXN0b3J5IjpbLTEzNDMxODYwNDcsMTg2NjM3MzAxMywtMT
+E5Mjc3NDc1NSw5NzYxNDc0NzMsLTg5Mzc2ODg0LC0xMDc5NDM0
+MTM3LC01NjUxMTM2MzcsLTE1Njk5MDQxNDIsMTgxNDgzNDQyNy
+wyMDI3MDU2NjczLC0xMjU5ODkwMDYxLC0xNDUzNjgwNjksMTM0
+MjI3MjU4MSwxNDQ2NDMyNjU1LDEyOTY1MjAwODYsLTIwODg3ND
+Y2MTIsLTE4NzYwNzQ2NjAsLTE1NTk1ODc2MDcsNzM4MDkwNjMw
+LC0xMTUwNDEyMTE2XX0=
 -->
