@@ -1,5 +1,5 @@
 ---
-title: "Scala Traits — Let’s mix it up"
+title: "Scala Days: Traits — Let’s mix it up"
 layout: post
 excerpt: "A trait provides code reusability in Scala by offering the possibility of mixing it into classes thus allowing code reusability."
 last_modified_at: 2020-07-15T10:20:01-02:00
