@@ -5,7 +5,9 @@ Higher order functions take other functions as parameters or return a function a
 
 ## Functions as a Data Type
 
-The functions in Scala are treated equally to typical data types like integers or strings. Moreover, a function can be assigned to a variable or value, and then passed around like a typical parameter. 
+The functions in Scala are treated equally to typical data types like integers or strings. Moreover, a function can be assigned to a variable or value, and then passed around like a typical parameter.
+
+Let’s assume that we want a functions that calculates the power of an arbitrary number.
 ```scala
     // Bring a value to the power of two using lambdas function
     val powOfTwoFun1 = (x:Int) => x * x
@@ -18,8 +20,10 @@ The functions in Scala are treated equally to typical data types like integers o
 ```
 
 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMzA4MDYxOCwtMTE5Mjc3NDc1NSw5Nz
+eyJoaXN0b3J5IjpbLTYyNjI3MTIwNywtMTE5Mjc3NDc1NSw5Nz
 YxNDc0NzMsLTg5Mzc2ODg0LC0xMDc5NDM0MTM3LC01NjUxMTM2
 MzcsLTE1Njk5MDQxNDIsMTgxNDgzNDQyNywyMDI3MDU2NjczLC
 0xMjU5ODkwMDYxLC0xNDUzNjgwNjksMTM0MjI3MjU4MSwxNDQ2
