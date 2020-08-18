@@ -83,16 +83,19 @@ greet(hello)
 ## Function Input Parameter
 
 For example, all of these FIP signatures follow the same pattern:
+
 f: () => Unit 
 f: String => Int 
 f: (String) => Int 
 f: (Int, Int) => Int 
 f: (Employee) => String 
-f: (Person) => (String, String) 
-f: (String, Int, Double) => Seq[String]
-f: List[Person] => Person
+f: (Employee) => (String, String) 
+f: (String, Int, Float) => Seq[String]
+f: List[Employee] => Employee
+
+## The power of the technique is you can easily swap in interchangeable algorithms.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3MDMyNjUxOCw1MjEyNzQyOTMsLTMwNz
+eyJoaXN0b3J5IjpbMTQzODAwMTQwNiw1MjEyNzQyOTMsLTMwNz
 I5MjQ3LDEyMTUxMzI1MzIsLTEzNDMxODYwNDcsMTg2NjM3MzAx
 MywtMTE5Mjc3NDc1NSw5NzYxNDc0NzMsLTg5Mzc2ODg0LC0xMD
 c5NDM0MTM3LC01NjUxMTM2MzcsLTE1Njk5MDQxNDIsMTgxNDgz
