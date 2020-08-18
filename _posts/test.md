@@ -58,17 +58,18 @@ callme()
 callme is the input parameter. In this case callme is a function to accept.
 The callme signature specifies the type of function to accept.
 The () portion of callme signature takes no input parameters.
-The Unit portion of the signature (on the right side of the => symbol) indicates that the callback function should return nothing.
+The Unit portion of the signature callme function should return nothing.
+When greet is called, its function body is executed, and the callme() line inside the body invokes the function that is passed in.
 
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyNzY2ODA2MiwtMzA3MjkyNDcsMTIxNT
-EzMjUzMiwtMTM0MzE4NjA0NywxODY2MzczMDEzLC0xMTkyNzc0
-NzU1LDk3NjE0NzQ3MywtODkzNzY4ODQsLTEwNzk0MzQxMzcsLT
-U2NTExMzYzNywtMTU2OTkwNDE0MiwxODE0ODM0NDI3LDIwMjcw
-NTY2NzMsLTEyNTk4OTAwNjEsLTE0NTM2ODA2OSwxMzQyMjcyNT
-gxLDE0NDY0MzI2NTUsMTI5NjUyMDA4NiwtMjA4ODc0NjYxMiwt
-MTg3NjA3NDY2MF19
+eyJoaXN0b3J5IjpbNTIxMjc0MjkzLC0zMDcyOTI0NywxMjE1MT
+MyNTMyLC0xMzQzMTg2MDQ3LDE4NjYzNzMwMTMsLTExOTI3NzQ3
+NTUsOTc2MTQ3NDczLC04OTM3Njg4NCwtMTA3OTQzNDEzNywtNT
+Y1MTEzNjM3LC0xNTY5OTA0MTQyLDE4MTQ4MzQ0MjcsMjAyNzA1
+NjY3MywtMTI1OTg5MDA2MSwtMTQ1MzY4MDY5LDEzNDIyNzI1OD
+EsMTQ0NjQzMjY1NSwxMjk2NTIwMDg2LC0yMDg4NzQ2NjEyLC0x
+ODc2MDc0NjYwXX0=
 -->
