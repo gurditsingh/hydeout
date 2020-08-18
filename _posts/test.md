@@ -33,12 +33,21 @@ def sum(a: Int, b: Int) = a + b
 ```
 
 I also showed that isEven works great when you pass it into the List class filter method:
+```scala
+scala> val list = List(1,2,3,4,5,6)
+list: List[Int] = List(1, 2, 3, 4, 5, 6)
+
+scala> list.filter(isEven)
+res0: List[Int] = List(2, 4, 6)
+```
+**The key points :**
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxNTEzMjUzMiwtMTM0MzE4NjA0NywxOD
-Y2MzczMDEzLC0xMTkyNzc0NzU1LDk3NjE0NzQ3MywtODkzNzY4
-ODQsLTEwNzk0MzQxMzcsLTU2NTExMzYzNywtMTU2OTkwNDE0Mi
-wxODE0ODM0NDI3LDIwMjcwNTY2NzMsLTEyNTk4OTAwNjEsLTE0
-NTM2ODA2OSwxMzQyMjcyNTgxLDE0NDY0MzI2NTUsMTI5NjUyMD
-A4NiwtMjA4ODc0NjYxMiwtMTg3NjA3NDY2MCwtMTU1OTU4NzYw
-Nyw3MzgwOTA2MzBdfQ==
+eyJoaXN0b3J5IjpbMTc0MDYzOTQ3MSwxMjE1MTMyNTMyLC0xMz
+QzMTg2MDQ3LDE4NjYzNzMwMTMsLTExOTI3NzQ3NTUsOTc2MTQ3
+NDczLC04OTM3Njg4NCwtMTA3OTQzNDEzNywtNTY1MTEzNjM3LC
+0xNTY5OTA0MTQyLDE4MTQ4MzQ0MjcsMjAyNzA1NjY3MywtMTI1
+OTg5MDA2MSwtMTQ1MzY4MDY5LDEzNDIyNzI1ODEsMTQ0NjQzMj
+Y1NSwxMjk2NTIwMDg2LC0yMDg4NzQ2NjEyLC0xODc2MDc0NjYw
+LC0xNTU5NTg3NjA3XX0=
 -->
