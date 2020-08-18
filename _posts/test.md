@@ -55,21 +55,27 @@ callme()
 ```
 
 **Let see how this function works**
-callme is the input parameter. In this case callme is a function to accept.
-The callme signature specifies the type of function to accept.
-The () portion of callme signature takes no input parameters.
-The Unit portion of the signature callme function should return nothing.
-When greet is called, its function body is executed, and the callme() line inside the body invokes the function that is passed in.
+
+ - callme is the input parameter. In this case callme is a function to
+   accept.
+ - The callme signature specifies the type of function to accept.
+ - The () portion of callme signature takes no input parameters.
+ - The Unit portion of the signature callme function should return
+   nothing.
+ - When greet is called, its function body is executed, and the callme()
+   line inside the body invokes the function that is passed in.
+
+Lets create a function to match callback’s signature so I can test it.
 
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIxMjc0MjkzLC0zMDcyOTI0NywxMjE1MT
-MyNTMyLC0xMzQzMTg2MDQ3LDE4NjYzNzMwMTMsLTExOTI3NzQ3
-NTUsOTc2MTQ3NDczLC04OTM3Njg4NCwtMTA3OTQzNDEzNywtNT
-Y1MTEzNjM3LC0xNTY5OTA0MTQyLDE4MTQ4MzQ0MjcsMjAyNzA1
-NjY3MywtMTI1OTg5MDA2MSwtMTQ1MzY4MDY5LDEzNDIyNzI1OD
-EsMTQ0NjQzMjY1NSwxMjk2NTIwMDg2LC0yMDg4NzQ2NjEyLC0x
-ODc2MDc0NjYwXX0=
+eyJoaXN0b3J5IjpbLTE4MTE0MDEzODYsNTIxMjc0MjkzLC0zMD
+cyOTI0NywxMjE1MTMyNTMyLC0xMzQzMTg2MDQ3LDE4NjYzNzMw
+MTMsLTExOTI3NzQ3NTUsOTc2MTQ3NDczLC04OTM3Njg4NCwtMT
+A3OTQzNDEzNywtNTY1MTEzNjM3LC0xNTY5OTA0MTQyLDE4MTQ4
+MzQ0MjcsMjAyNzA1NjY3MywtMTI1OTg5MDA2MSwtMTQ1MzY4MD
+Y5LDEzNDIyNzI1ODEsMTQ0NjQzMjY1NSwxMjk2NTIwMDg2LC0y
+MDg4NzQ2NjEyXX0=
 -->
