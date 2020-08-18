@@ -62,3 +62,5 @@ Scala linearization is a deterministic process that puts all traits in a linear 
     -   add the remaining traits to the bottom of the  **linearized hierarchy**  to create the new  **linearized hierarchy**
 3.  repeat step 2 for every trait.
 4.  Place the class itself as the last type extending the  **linearized hierarchy**
+
+[Check Source Code for Linearization Process](https://github.com/gurditsingh/Scala-FP/blob/master/src/main/scala/scala/trait_lesson/Linearization.scala)
