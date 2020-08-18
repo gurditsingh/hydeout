@@ -46,6 +46,9 @@ res0: List[Int] = List(2, 4, 6)
  - The functions you pass into filter must match the type signature (takes an Int returns a Boolean).
 
 ## Defining HOF
+The general syntax for defining function input parameter type signatures is.
+
+
 To define a function that takes another function as an input parameter, all you have to do is define the signature of the function you want to accept. The function greet takes function as input parameter callback have no input parameters and must return nothing.
 
 ```scala
@@ -72,14 +75,16 @@ println("Hello HOF")
 }
 ```
 Because the signatures match, I can pass hello into greet, like this:
-
+```scala
+greet(hello)
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMTg1NzEwMCw1MjEyNzQyOTMsLTMwNz
-I5MjQ3LDEyMTUxMzI1MzIsLTEzNDMxODYwNDcsMTg2NjM3MzAx
-MywtMTE5Mjc3NDc1NSw5NzYxNDc0NzMsLTg5Mzc2ODg0LC0xMD
-c5NDM0MTM3LC01NjUxMTM2MzcsLTE1Njk5MDQxNDIsMTgxNDgz
-NDQyNywyMDI3MDU2NjczLC0xMjU5ODkwMDYxLC0xNDUzNjgwNj
-ksMTM0MjI3MjU4MSwxNDQ2NDMyNjU1LDEyOTY1MjAwODYsLTIw
-ODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbODUxMjM5OTA3LDUyMTI3NDI5MywtMzA3Mj
+kyNDcsMTIxNTEzMjUzMiwtMTM0MzE4NjA0NywxODY2MzczMDEz
+LC0xMTkyNzc0NzU1LDk3NjE0NzQ3MywtODkzNzY4ODQsLTEwNz
+k0MzQxMzcsLTU2NTExMzYzNywtMTU2OTkwNDE0MiwxODE0ODM0
+NDI3LDIwMjcwNTY2NzMsLTEyNTk4OTAwNjEsLTE0NTM2ODA2OS
+wxMzQyMjcyNTgxLDE0NDY0MzI2NTUsMTI5NjUyMDA4NiwtMjA4
+ODc0NjYxMl19
 -->
