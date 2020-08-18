@@ -1,10 +1,12 @@
 Higher order functions take other functions as parameters or return a function as a result. This is possible because functions are first-class values in Scala.
+
+Therefore, the primary goal of this lesson is to show how to write functions that take other functions as input parameters.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5Mzc2ODg0LC0xMDc5NDM0MTM3LC01Nj
-UxMTM2MzcsLTE1Njk5MDQxNDIsMTgxNDgzNDQyNywyMDI3MDU2
-NjczLC0xMjU5ODkwMDYxLC0xNDUzNjgwNjksMTM0MjI3MjU4MS
-wxNDQ2NDMyNjU1LDEyOTY1MjAwODYsLTIwODg3NDY2MTIsLTE4
-NzYwNzQ2NjAsLTE1NTk1ODc2MDcsNzM4MDkwNjMwLC0xMTUwND
-EyMTE2LDkwNzEyNzY3MywtMjA4ODc0NjYxMiwyMDM5NjM1NjIs
-MTM2NjYxNzMyXX0=
+eyJoaXN0b3J5IjpbLTEwMzc4MzE1MzksLTg5Mzc2ODg0LC0xMD
+c5NDM0MTM3LC01NjUxMTM2MzcsLTE1Njk5MDQxNDIsMTgxNDgz
+NDQyNywyMDI3MDU2NjczLC0xMjU5ODkwMDYxLC0xNDUzNjgwNj
+ksMTM0MjI3MjU4MSwxNDQ2NDMyNjU1LDEyOTY1MjAwODYsLTIw
+ODg3NDY2MTIsLTE4NzYwNzQ2NjAsLTE1NTk1ODc2MDcsNzM4MD
+kwNjMwLC0xMTUwNDEyMTE2LDkwNzEyNzY3MywtMjA4ODc0NjYx
+MiwyMDM5NjM1NjJdfQ==
 -->
