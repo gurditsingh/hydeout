@@ -55,13 +55,16 @@ callme()
 ```
 
 **Let see how this function works**
-callme is the input parameter. In this case callme is a function we want to accept.
+callme is the input parameter. In this case callme is a function to accept.
+The callme signature specifies the type of function to accept.
+The () portion of callme signature takes no input parameters.
+The Unit portion of the signature (on the right side of the => symbol) indicates that the callback function should return nothing.
 
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNjkwNjU5OCwtMzA3MjkyNDcsMTIxNT
+eyJoaXN0b3J5IjpbMTMyNzY2ODA2MiwtMzA3MjkyNDcsMTIxNT
 EzMjUzMiwtMTM0MzE4NjA0NywxODY2MzczMDEzLC0xMTkyNzc0
 NzU1LDk3NjE0NzQ3MywtODkzNzY4ODQsLTEwNzk0MzQxMzcsLT
 U2NTExMzYzNywtMTU2OTkwNDE0MiwxODE0ODM0NDI3LDIwMjcw
