@@ -45,15 +45,17 @@ res0: List[Int] = List(2, 4, 6)
  - The filter method accepts a function as an input parameter.
  - The functions you pass into filter must match the type signature (takes an Int returns a Boolean).
 
+## Defining HOF
+
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNzI5MjQ3LDEyMTUxMzI1MzIsLTEzND
-MxODYwNDcsMTg2NjM3MzAxMywtMTE5Mjc3NDc1NSw5NzYxNDc0
-NzMsLTg5Mzc2ODg0LC0xMDc5NDM0MTM3LC01NjUxMTM2MzcsLT
-E1Njk5MDQxNDIsMTgxNDgzNDQyNywyMDI3MDU2NjczLC0xMjU5
-ODkwMDYxLC0xNDUzNjgwNjksMTM0MjI3MjU4MSwxNDQ2NDMyNj
-U1LDEyOTY1MjAwODYsLTIwODg3NDY2MTIsLTE4NzYwNzQ2NjAs
-LTE1NTk1ODc2MDddfQ==
+eyJoaXN0b3J5IjpbMTAwNTMwOTgzOCwtMzA3MjkyNDcsMTIxNT
+EzMjUzMiwtMTM0MzE4NjA0NywxODY2MzczMDEzLC0xMTkyNzc0
+NzU1LDk3NjE0NzQ3MywtODkzNzY4ODQsLTEwNzk0MzQxMzcsLT
+U2NTExMzYzNywtMTU2OTkwNDE0MiwxODE0ODM0NDI3LDIwMjcw
+NTY2NzMsLTEyNTk4OTAwNjEsLTE0NTM2ODA2OSwxMzQyMjcyNT
+gxLDE0NDY0MzI2NTUsMTI5NjUyMDA4NiwtMjA4ODc0NjYxMiwt
+MTg3NjA3NDY2MF19
 -->
