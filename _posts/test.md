@@ -54,11 +54,14 @@ callme()
 }
 ```
 
+**Let see how this function works**
+callme is the input parameter. In this case callba is a function we want to accept.
+
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4ODQ5OTk1MSwtMzA3MjkyNDcsMTIxNT
+eyJoaXN0b3J5IjpbLTM0NzczNjczNywtMzA3MjkyNDcsMTIxNT
 EzMjUzMiwtMTM0MzE4NjA0NywxODY2MzczMDEzLC0xMTkyNzc0
 NzU1LDk3NjE0NzQ3MywtODkzNzY4ODQsLTEwNzk0MzQxMzcsLT
 U2NTExMzYzNywtMTU2OTkwNDE0MiwxODE0ODM0NDI3LDIwMjcw
