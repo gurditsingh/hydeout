@@ -19,15 +19,19 @@ Let’s assume that we want a functions that calculates the power of an arbitrar
     assert(powOfTwoFun1(2) == powOfTwoFun2(2))
 ```
 
+The two approaches shown above construct the same type of a function. Our desired function should take one parameter of int and return a result of an int.
 
+The first implementation uses widely known as lambda or single abstract method. The second implementation uses the trait  Function1, on which an  `apply`  method is overridden. Scala provides more variants of this Function trait, like  `Function2`, or  `Function3`, taking 2 or 3 parameters respectively.
+
+Now, with those functions you can primarily do two things: call them or give as a parameter to another function.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNjI3MTIwNywtMTE5Mjc3NDc1NSw5Nz
-YxNDc0NzMsLTg5Mzc2ODg0LC0xMDc5NDM0MTM3LC01NjUxMTM2
-MzcsLTE1Njk5MDQxNDIsMTgxNDgzNDQyNywyMDI3MDU2NjczLC
-0xMjU5ODkwMDYxLC0xNDUzNjgwNjksMTM0MjI3MjU4MSwxNDQ2
-NDMyNjU1LDEyOTY1MjAwODYsLTIwODg3NDY2MTIsLTE4NzYwNz
-Q2NjAsLTE1NTk1ODc2MDcsNzM4MDkwNjMwLC0xMTUwNDEyMTE2
-LDkwNzEyNzY3M119
+eyJoaXN0b3J5IjpbLTIwMDg1NzEwNzMsLTExOTI3NzQ3NTUsOT
+c2MTQ3NDczLC04OTM3Njg4NCwtMTA3OTQzNDEzNywtNTY1MTEz
+NjM3LC0xNTY5OTA0MTQyLDE4MTQ4MzQ0MjcsMjAyNzA1NjY3My
+wtMTI1OTg5MDA2MSwtMTQ1MzY4MDY5LDEzNDIyNzI1ODEsMTQ0
+NjQzMjY1NSwxMjk2NTIwMDg2LC0yMDg4NzQ2NjEyLC0xODc2MD
+c0NjYwLC0xNTU5NTg3NjA3LDczODA5MDYzMCwtMTE1MDQxMjEx
+Niw5MDcxMjc2NzNdfQ==
 -->
