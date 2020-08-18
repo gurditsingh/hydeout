@@ -3,18 +3,27 @@ Higher order functions take other functions as parameters or return a function a
 > The primary goal of this blog is to show how to write functions that
 > take other functions as input parameters.
 
-## what we see:
+## Functions as a Data Type
 
- - The syntax you use to define function input parameters.
- - Many examples of that syntax.
- - How to execute a function once you have a reference to it.
+The functions in Scala are treated equally to typical data types like integers or strings. Moreover, a function can be assigned to a variable or value, and then passed around like a typical parameter. 
+```scala
+    // Bring a value to the power of two using lambdas function
+    val powOfTwoFun1 = (x:Int) => x * x
+    // Bring a value to the power of two using Scala Function1
+    val powOfTwoFun2 = new Function[Int,Int] {
+      override def apply(x: Int): Int = x * x
+    }
+
+    assert(powOfTwoFun1(2) == powOfTwoFun2(2))
+```
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTI3NzQ3NTUsOTc2MTQ3NDczLC04OT
-M3Njg4NCwtMTA3OTQzNDEzNywtNTY1MTEzNjM3LC0xNTY5OTA0
-MTQyLDE4MTQ4MzQ0MjcsMjAyNzA1NjY3MywtMTI1OTg5MDA2MS
-wtMTQ1MzY4MDY5LDEzNDIyNzI1ODEsMTQ0NjQzMjY1NSwxMjk2
-NTIwMDg2LC0yMDg4NzQ2NjEyLC0xODc2MDc0NjYwLC0xNTU5NT
-g3NjA3LDczODA5MDYzMCwtMTE1MDQxMjExNiw5MDcxMjc2NzMs
-LTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbMTQyMzA4MDYxOCwtMTE5Mjc3NDc1NSw5Nz
+YxNDc0NzMsLTg5Mzc2ODg0LC0xMDc5NDM0MTM3LC01NjUxMTM2
+MzcsLTE1Njk5MDQxNDIsMTgxNDgzNDQyNywyMDI3MDU2NjczLC
+0xMjU5ODkwMDYxLC0xNDUzNjgwNjksMTM0MjI3MjU4MSwxNDQ2
+NDMyNjU1LDEyOTY1MjAwODYsLTIwODg3NDY2MTIsLTE4NzYwNz
+Q2NjAsLTE1NTk1ODc2MDcsNzM4MDkwNjMwLC0xMTUwNDEyMTE2
+LDkwNzEyNzY3M119
 -->
