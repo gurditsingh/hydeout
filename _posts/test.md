@@ -46,16 +46,21 @@ res0: List[Int] = List(2, 4, 6)
  - The functions you pass into filter must match the type signature (takes an Int returns a Boolean).
 
 ## Defining HOF
-
+To define a function that takes another function as an input parameter, all you have to do is define the signature of the function you want to accept.
+```scala
+def greet(callback: () => Unit) {
+callback()
+}
+```
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNTMwOTgzOCwtMzA3MjkyNDcsMTIxNT
-EzMjUzMiwtMTM0MzE4NjA0NywxODY2MzczMDEzLC0xMTkyNzc0
-NzU1LDk3NjE0NzQ3MywtODkzNzY4ODQsLTEwNzk0MzQxMzcsLT
-U2NTExMzYzNywtMTU2OTkwNDE0MiwxODE0ODM0NDI3LDIwMjcw
-NTY2NzMsLTEyNTk4OTAwNjEsLTE0NTM2ODA2OSwxMzQyMjcyNT
-gxLDE0NDY0MzI2NTUsMTI5NjUyMDA4NiwtMjA4ODc0NjYxMiwt
-MTg3NjA3NDY2MF19
+eyJoaXN0b3J5IjpbLTE1MzE5NTcxMTEsLTMwNzI5MjQ3LDEyMT
+UxMzI1MzIsLTEzNDMxODYwNDcsMTg2NjM3MzAxMywtMTE5Mjc3
+NDc1NSw5NzYxNDc0NzMsLTg5Mzc2ODg0LC0xMDc5NDM0MTM3LC
+01NjUxMTM2MzcsLTE1Njk5MDQxNDIsMTgxNDgzNDQyNywyMDI3
+MDU2NjczLC0xMjU5ODkwMDYxLC0xNDUzNjgwNjksMTM0MjI3Mj
+U4MSwxNDQ2NDMyNjU1LDEyOTY1MjAwODYsLTIwODg3NDY2MTIs
+LTE4NzYwNzQ2NjBdfQ==
 -->
