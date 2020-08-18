@@ -94,12 +94,14 @@ f: (String, Int, Float) => Seq[String]
 f: List[Employee] => Employee
 
 ## The power of the technique is you can easily swap in interchangeable algorithms.
+
+As long as the signature of the function you pass in matches the signature that’s expected, your algorithms can do anything you want. This is comparable to swapping out algorithms in the OOP Strategy design pattern.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzODAwMTQwNiw1MjEyNzQyOTMsLTMwNz
-I5MjQ3LDEyMTUxMzI1MzIsLTEzNDMxODYwNDcsMTg2NjM3MzAx
-MywtMTE5Mjc3NDc1NSw5NzYxNDc0NzMsLTg5Mzc2ODg0LC0xMD
-c5NDM0MTM3LC01NjUxMTM2MzcsLTE1Njk5MDQxNDIsMTgxNDgz
-NDQyNywyMDI3MDU2NjczLC0xMjU5ODkwMDYxLC0xNDUzNjgwNj
-ksMTM0MjI3MjU4MSwxNDQ2NDMyNjU1LDEyOTY1MjAwODYsLTIw
-ODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbODE3ODYxODEzLDUyMTI3NDI5MywtMzA3Mj
+kyNDcsMTIxNTEzMjUzMiwtMTM0MzE4NjA0NywxODY2MzczMDEz
+LC0xMTkyNzc0NzU1LDk3NjE0NzQ3MywtODkzNzY4ODQsLTEwNz
+k0MzQxMzcsLTU2NTExMzYzNywtMTU2OTkwNDE0MiwxODE0ODM0
+NDI3LDIwMjcwNTY2NzMsLTEyNTk4OTAwNjEsLTE0NTM2ODA2OS
+wxMzQyMjcyNTgxLDE0NDY0MzI2NTUsMTI5NjUyMDA4NiwtMjA4
+ODc0NjYxMl19
 -->
