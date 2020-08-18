@@ -3,18 +3,16 @@ Higher order functions take other functions as parameters or return a function a
 > The primary goal of this blog is to show how to write functions that
 > take other functions as input parameters.
 
-
-
  - The syntax you use to define function input parameters.
  - Many examples of that syntax.
  - How to execute a function once you have a reference to it.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUxMDgxOTk4LDk3NjE0NzQ3MywtODkzNz
-Y4ODQsLTEwNzk0MzQxMzcsLTU2NTExMzYzNywtMTU2OTkwNDE0
-MiwxODE0ODM0NDI3LDIwMjcwNTY2NzMsLTEyNTk4OTAwNjEsLT
-E0NTM2ODA2OSwxMzQyMjcyNTgxLDE0NDY0MzI2NTUsMTI5NjUy
-MDA4NiwtMjA4ODc0NjYxMiwtMTg3NjA3NDY2MCwtMTU1OTU4Nz
-YwNyw3MzgwOTA2MzAsLTExNTA0MTIxMTYsOTA3MTI3NjczLC0y
-MDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbMTM3MjQ3MzgzNCw5NzYxNDc0NzMsLTg5Mz
+c2ODg0LC0xMDc5NDM0MTM3LC01NjUxMTM2MzcsLTE1Njk5MDQx
+NDIsMTgxNDgzNDQyNywyMDI3MDU2NjczLC0xMjU5ODkwMDYxLC
+0xNDUzNjgwNjksMTM0MjI3MjU4MSwxNDQ2NDMyNjU1LDEyOTY1
+MjAwODYsLTIwODg3NDY2MTIsLTE4NzYwNzQ2NjAsLTE1NTk1OD
+c2MDcsNzM4MDkwNjMwLC0xMTUwNDEyMTE2LDkwNzEyNzY3Mywt
+MjA4ODc0NjYxMl19
 -->
