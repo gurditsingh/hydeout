@@ -79,14 +79,24 @@ Because the signatures match, I can pass hello into greet, like this:
 ```scala
 greet(hello)
 ```
-Function 
+
+## Function Input Parameter
+
 For example, all of these FIP signatures follow the same pattern:
+f: () => Unit 
+f: String => Int 
+f: (String) => Int 
+f: (Int, Int) => Int 
+f: (Employee) => String 
+f: (Person) => (String, String) 
+f: (String, Int, Double) => Seq[String]
+f: List[Person] => Person
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk2NzE1NjQyLDUyMTI3NDI5MywtMzA3Mj
-kyNDcsMTIxNTEzMjUzMiwtMTM0MzE4NjA0NywxODY2MzczMDEz
-LC0xMTkyNzc0NzU1LDk3NjE0NzQ3MywtODkzNzY4ODQsLTEwNz
-k0MzQxMzcsLTU2NTExMzYzNywtMTU2OTkwNDE0MiwxODE0ODM0
-NDI3LDIwMjcwNTY2NzMsLTEyNTk4OTAwNjEsLTE0NTM2ODA2OS
-wxMzQyMjcyNTgxLDE0NDY0MzI2NTUsMTI5NjUyMDA4NiwtMjA4
-ODc0NjYxMl19
+eyJoaXN0b3J5IjpbMTU3MDMyNjUxOCw1MjEyNzQyOTMsLTMwNz
+I5MjQ3LDEyMTUxMzI1MzIsLTEzNDMxODYwNDcsMTg2NjM3MzAx
+MywtMTE5Mjc3NDc1NSw5NzYxNDc0NzMsLTg5Mzc2ODg0LC0xMD
+c5NDM0MTM3LC01NjUxMTM2MzcsLTE1Njk5MDQxNDIsMTgxNDgz
+NDQyNywyMDI3MDU2NjczLC0xMjU5ODkwMDYxLC0xNDUzNjgwNj
+ksMTM0MjI3MjU4MSwxNDQ2NDMyNjU1LDEyOTY1MjAwODYsLTIw
+ODg3NDY2MTJdfQ==
 -->
