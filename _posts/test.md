@@ -31,12 +31,14 @@ Now, with those functions you can primarily do two things: call them or give as 
 def isEven(i: Int) = i % 2 == 0
 def sum(a: Int, b: Int) = a + b
 ```
+
+I also showed that isEven works great when you pass it into the List class filter method:
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDMxODYwNDcsMTg2NjM3MzAxMywtMT
-E5Mjc3NDc1NSw5NzYxNDc0NzMsLTg5Mzc2ODg0LC0xMDc5NDM0
-MTM3LC01NjUxMTM2MzcsLTE1Njk5MDQxNDIsMTgxNDgzNDQyNy
-wyMDI3MDU2NjczLC0xMjU5ODkwMDYxLC0xNDUzNjgwNjksMTM0
-MjI3MjU4MSwxNDQ2NDMyNjU1LDEyOTY1MjAwODYsLTIwODg3ND
-Y2MTIsLTE4NzYwNzQ2NjAsLTE1NTk1ODc2MDcsNzM4MDkwNjMw
-LC0xMTUwNDEyMTE2XX0=
+eyJoaXN0b3J5IjpbMTIxNTEzMjUzMiwtMTM0MzE4NjA0NywxOD
+Y2MzczMDEzLC0xMTkyNzc0NzU1LDk3NjE0NzQ3MywtODkzNzY4
+ODQsLTEwNzk0MzQxMzcsLTU2NTExMzYzNywtMTU2OTkwNDE0Mi
+wxODE0ODM0NDI3LDIwMjcwNTY2NzMsLTEyNTk4OTAwNjEsLTE0
+NTM2ODA2OSwxMzQyMjcyNTgxLDE0NDY0MzI2NTUsMTI5NjUyMD
+A4NiwtMjA4ODc0NjYxMiwtMTg3NjA3NDY2MCwtMTU1OTU4NzYw
+Nyw3MzgwOTA2MzBdfQ==
 -->
