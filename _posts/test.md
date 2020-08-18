@@ -5,12 +5,16 @@ Higher order functions take other functions as parameters or return a function a
 
 
 
+ - The syntax you use to define function input parameters.
+ - Many examples of that syntax.
+ - How to execute a function once you have a reference to it.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc2MTQ3NDczLC04OTM3Njg4NCwtMTA3OT
-QzNDEzNywtNTY1MTEzNjM3LC0xNTY5OTA0MTQyLDE4MTQ4MzQ0
-MjcsMjAyNzA1NjY3MywtMTI1OTg5MDA2MSwtMTQ1MzY4MDY5LD
-EzNDIyNzI1ODEsMTQ0NjQzMjY1NSwxMjk2NTIwMDg2LC0yMDg4
-NzQ2NjEyLC0xODc2MDc0NjYwLC0xNTU5NTg3NjA3LDczODA5MD
-YzMCwtMTE1MDQxMjExNiw5MDcxMjc2NzMsLTIwODg3NDY2MTIs
-MjAzOTYzNTYyXX0=
+eyJoaXN0b3J5IjpbNTUxMDgxOTk4LDk3NjE0NzQ3MywtODkzNz
+Y4ODQsLTEwNzk0MzQxMzcsLTU2NTExMzYzNywtMTU2OTkwNDE0
+MiwxODE0ODM0NDI3LDIwMjcwNTY2NzMsLTEyNTk4OTAwNjEsLT
+E0NTM2ODA2OSwxMzQyMjcyNTgxLDE0NDY0MzI2NTUsMTI5NjUy
+MDA4NiwtMjA4ODc0NjYxMiwtMTg3NjA3NDY2MCwtMTU1OTU4Nz
+YwNyw3MzgwOTA2MzAsLTExNTA0MTIxMTYsOTA3MTI3NjczLC0y
+MDg4NzQ2NjEyXX0=
 -->
