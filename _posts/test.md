@@ -42,12 +42,18 @@ res0: List[Int] = List(2, 4, 6)
 ```
 **The key points :**
 
+ - The filter method accepts a function as an input parameter.
+ - The functions you pass into filter must match the type signature (takes an Int returns a Boolean).
+
+
+ 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0MDYzOTQ3MSwxMjE1MTMyNTMyLC0xMz
-QzMTg2MDQ3LDE4NjYzNzMwMTMsLTExOTI3NzQ3NTUsOTc2MTQ3
-NDczLC04OTM3Njg4NCwtMTA3OTQzNDEzNywtNTY1MTEzNjM3LC
-0xNTY5OTA0MTQyLDE4MTQ4MzQ0MjcsMjAyNzA1NjY3MywtMTI1
-OTg5MDA2MSwtMTQ1MzY4MDY5LDEzNDIyNzI1ODEsMTQ0NjQzMj
-Y1NSwxMjk2NTIwMDg2LC0yMDg4NzQ2NjEyLC0xODc2MDc0NjYw
-LC0xNTU5NTg3NjA3XX0=
+eyJoaXN0b3J5IjpbLTMwNzI5MjQ3LDEyMTUxMzI1MzIsLTEzND
+MxODYwNDcsMTg2NjM3MzAxMywtMTE5Mjc3NDc1NSw5NzYxNDc0
+NzMsLTg5Mzc2ODg0LC0xMDc5NDM0MTM3LC01NjUxMTM2MzcsLT
+E1Njk5MDQxNDIsMTgxNDgzNDQyNywyMDI3MDU2NjczLC0xMjU5
+ODkwMDYxLC0xNDUzNjgwNjksMTM0MjI3MjU4MSwxNDQ2NDMyNj
+U1LDEyOTY1MjAwODYsLTIwODg3NDY2MTIsLTE4NzYwNzQ2NjAs
+LTE1NTk1ODc2MDddfQ==
 -->
