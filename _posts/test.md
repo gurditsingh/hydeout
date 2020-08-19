@@ -23,7 +23,7 @@ You must apply the input parameters in the separate input groups.
 
 ## Declare multiple parameter groups gives you these additional benefits:
 
- - **write your own control structures:**
+ - **Benefit: write your own control structures.**
 
 	**Lets create are own while loop name wheely:**  By using multiple parameter groups you can build are own control structures. wheely must be defined to have two parameter groups.
 	
@@ -72,11 +72,11 @@ You must apply the input parameters in the separate input groups.
 		
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDM1ODAwNzYsLTE4NzI3NTk2NTksNj
-c5MzMyMzY1LC00MDM5Nzc0NjEsLTE3MzIyMzg3OTgsMjAzNjY4
-NjYxMiw0Njg5OTAyOTYsMTI3NDk2NTg1Miw4MTc4NjE4MTMsNT
-IxMjc0MjkzLC0zMDcyOTI0NywxMjE1MTMyNTMyLC0xMzQzMTg2
-MDQ3LDE4NjYzNzMwMTMsLTExOTI3NzQ3NTUsOTc2MTQ3NDczLC
-04OTM3Njg4NCwtMTA3OTQzNDEzNywtNTY1MTEzNjM3LC0xNTY5
-OTA0MTQyXX0=
+eyJoaXN0b3J5IjpbLTIwOTIxOTg0MDMsLTEzNDM1ODAwNzYsLT
+E4NzI3NTk2NTksNjc5MzMyMzY1LC00MDM5Nzc0NjEsLTE3MzIy
+Mzg3OTgsMjAzNjY4NjYxMiw0Njg5OTAyOTYsMTI3NDk2NTg1Mi
+w4MTc4NjE4MTMsNTIxMjc0MjkzLC0zMDcyOTI0NywxMjE1MTMy
+NTMyLC0xMzQzMTg2MDQ3LDE4NjYzNzMwMTMsLTExOTI3NzQ3NT
+UsOTc2MTQ3NDczLC04OTM3Njg4NCwtMTA3OTQzNDEzNywtNTY1
+MTEzNjM3XX0=
 -->
