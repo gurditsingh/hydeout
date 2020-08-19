@@ -86,9 +86,11 @@ You must apply the input parameters in the separate input groups.
 	```
 	**How this works:**
 
-	 - showIfTrue() function have two parameter groups and the second parameter group declares an implicit.
-	 - showIfTrue(10) is called with one parameter group.
-	 - Scala knows that one of the implicit Boolean value present in the current scope otherwise throw a compiler error
+	 - **showIfTrue()** function have two parameter groups and the second parameter group declares an implicit.
+	 - **showIfTrue(10)** is called with one parameter group.
+	 - Scala knows that one of the implicit Boolean value present in the current scope (like we defined **implicit val b:Boolean = true**) otherwise throw error
+	 
+	 
    
 
 	
@@ -97,11 +99,11 @@ You must apply the input parameters in the separate input groups.
 		
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NTk2MzMyLDkwNzg5NzcyMiwtMTM0Mz
-U4MDA3NiwtMTg3Mjc1OTY1OSw2NzkzMzIzNjUsLTQwMzk3NzQ2
-MSwtMTczMjIzODc5OCwyMDM2Njg2NjEyLDQ2ODk5MDI5NiwxMj
-c0OTY1ODUyLDgxNzg2MTgxMyw1MjEyNzQyOTMsLTMwNzI5MjQ3
-LDEyMTUxMzI1MzIsLTEzNDMxODYwNDcsMTg2NjM3MzAxMywtMT
-E5Mjc3NDc1NSw5NzYxNDc0NzMsLTg5Mzc2ODg0LC0xMDc5NDM0
-MTM3XX0=
+eyJoaXN0b3J5IjpbLTE3MDY3MzE5OTIsOTA3ODk3NzIyLC0xMz
+QzNTgwMDc2LC0xODcyNzU5NjU5LDY3OTMzMjM2NSwtNDAzOTc3
+NDYxLC0xNzMyMjM4Nzk4LDIwMzY2ODY2MTIsNDY4OTkwMjk2LD
+EyNzQ5NjU4NTIsODE3ODYxODEzLDUyMTI3NDI5MywtMzA3Mjky
+NDcsMTIxNTEzMjUzMiwtMTM0MzE4NjA0NywxODY2MzczMDEzLC
+0xMTkyNzc0NzU1LDk3NjE0NzQ3MywtODkzNzY4ODQsLTEwNzk0
+MzQxMzddfQ==
 -->
