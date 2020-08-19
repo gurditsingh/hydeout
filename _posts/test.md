@@ -59,12 +59,14 @@ You must apply the input parameters in the separate input groups.
 	    }
 		```
 
-		**Notice :** both parameter groups use by-name parameters. 
+		**Notice :** both parameter groups use by-name parameters.
+		
+		**Parameters Kind:**
 		
 		
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNjczMTA2MCwtMTg3Mjc1OTY1OSw2Nz
+eyJoaXN0b3J5IjpbMjAxNjExNDgyNCwtMTg3Mjc1OTY1OSw2Nz
 kzMzIzNjUsLTQwMzk3NzQ2MSwtMTczMjIzODc5OCwyMDM2Njg2
 NjEyLDQ2ODk5MDI5NiwxMjc0OTY1ODUyLDgxNzg2MTgxMyw1Mj
 EyNzQyOTMsLTMwNzI5MjQ3LDEyMTUxMzI1MzIsLTEzNDMxODYw
