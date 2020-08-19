@@ -25,11 +25,11 @@ You must apply the input parameters in the separate input groups.
 
  - **write your own control structures:**
 
-**Lets create are own while loop:**  By using multiple parameter groups you can build are own control structures.
+	**Lets create are own while loop name wheel:**  By using multiple parameter groups you can build are own control structures.  whilst must be defined to have two parameter groups. The first parameter group is i
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjcxNDYwMzAsMjAzNjY4NjYxMiw0Nj
+eyJoaXN0b3J5IjpbLTE3MzIyMzg3OTgsMjAzNjY4NjYxMiw0Nj
 g5OTAyOTYsMTI3NDk2NTg1Miw4MTc4NjE4MTMsNTIxMjc0Mjkz
 LC0zMDcyOTI0NywxMjE1MTMyNTMyLC0xMzQzMTg2MDQ3LDE4Nj
 YzNzMwMTMsLTExOTI3NzQ3NTUsOTc2MTQ3NDczLC04OTM3Njg4
