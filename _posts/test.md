@@ -84,17 +84,22 @@ You must apply the input parameters in the separate input groups.
 		scala> showIfTrue(10)
 		10
 	```
+	**How this works:**
 
+	 - It also knows that the second parameter group declares an implicit
+   Boolean parameter
+
+	
 
 
 		
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDQ5MjQwMTYsOTA3ODk3NzIyLC0xMz
-QzNTgwMDc2LC0xODcyNzU5NjU5LDY3OTMzMjM2NSwtNDAzOTc3
-NDYxLC0xNzMyMjM4Nzk4LDIwMzY2ODY2MTIsNDY4OTkwMjk2LD
-EyNzQ5NjU4NTIsODE3ODYxODEzLDUyMTI3NDI5MywtMzA3Mjky
-NDcsMTIxNTEzMjUzMiwtMTM0MzE4NjA0NywxODY2MzczMDEzLC
-0xMTkyNzc0NzU1LDk3NjE0NzQ3MywtODkzNzY4ODQsLTEwNzk0
-MzQxMzddfQ==
+eyJoaXN0b3J5IjpbMjAyNTcyNjU5LDkwNzg5NzcyMiwtMTM0Mz
+U4MDA3NiwtMTg3Mjc1OTY1OSw2NzkzMzIzNjUsLTQwMzk3NzQ2
+MSwtMTczMjIzODc5OCwyMDM2Njg2NjEyLDQ2ODk5MDI5NiwxMj
+c0OTY1ODUyLDgxNzg2MTgxMyw1MjEyNzQyOTMsLTMwNzI5MjQ3
+LDEyMTUxMzI1MzIsLTEzNDMxODYwNDcsMTg2NjM3MzAxMywtMT
+E5Mjc3NDc1NSw5NzYxNDc0NzMsLTg5Mzc2ODg0LC0xMDc5NDM0
+MTM3XX0=
 -->
