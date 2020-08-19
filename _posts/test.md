@@ -84,14 +84,14 @@ greet(hello)
 
 For example, all of these FIP signatures follow the same pattern:
 
-f: () => Unit 
-f: String => Int 
-f: (String) => Int 
-f: (Int, Int) => Int 
-f: (Employee) => String 
-f: (Employee) => (String, String) 
-f: (String, Int, Float) => Seq[String]
-f: List[Employee] => Employee
+ - f: () => Unit
+ - f: String => Int
+ - f: (String) => Int
+ - f: (Int, Int) => Int
+ - f: (Employee) => String
+ - f: (Employee) => (String, String)
+ - f: (String, Int, Float) => Seq[String]
+ - f: List[Employee] => Employee
 
 ## The power of the technique is you can easily swap in interchangeable algorithms.
 
@@ -100,11 +100,11 @@ As long as the signature of the function you pass matches the signature that is 
 **Let's write custom Map and Filter Higher order functions**
 [source code for map and filter](https://github.com/gurditsingh/Scala-FP/tree/master/src/main/scala/scala/HOF_lesson)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3NDk2NTg1Miw4MTc4NjE4MTMsNTIxMj
-c0MjkzLC0zMDcyOTI0NywxMjE1MTMyNTMyLC0xMzQzMTg2MDQ3
-LDE4NjYzNzMwMTMsLTExOTI3NzQ3NTUsOTc2MTQ3NDczLC04OT
-M3Njg4NCwtMTA3OTQzNDEzNywtNTY1MTEzNjM3LC0xNTY5OTA0
-MTQyLDE4MTQ4MzQ0MjcsMjAyNzA1NjY3MywtMTI1OTg5MDA2MS
-wtMTQ1MzY4MDY5LDEzNDIyNzI1ODEsMTQ0NjQzMjY1NSwxMjk2
-NTIwMDg2XX0=
+eyJoaXN0b3J5IjpbNDY4OTkwMjk2LDEyNzQ5NjU4NTIsODE3OD
+YxODEzLDUyMTI3NDI5MywtMzA3MjkyNDcsMTIxNTEzMjUzMiwt
+MTM0MzE4NjA0NywxODY2MzczMDEzLC0xMTkyNzc0NzU1LDk3Nj
+E0NzQ3MywtODkzNzY4ODQsLTEwNzk0MzQxMzcsLTU2NTExMzYz
+NywtMTU2OTkwNDE0MiwxODE0ODM0NDI3LDIwMjcwNTY2NzMsLT
+EyNTk4OTAwNjEsLTE0NTM2ODA2OSwxMzQyMjcyNTgxLDE0NDY0
+MzI2NTVdfQ==
 -->
