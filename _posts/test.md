@@ -11,10 +11,12 @@ sum: (a: Int)(b: Int)Int
 scala> sum(1)(2)
 res1: Int = 3
 ```
-**That’s all this is a basic technique.**
-if trying to call it with three parameters in one group won’t work:
+That’s all this is a basic technique.
+
+**If you trying to call it with two parameters in one group won’t work:**
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MzEzMjQ1MSw0Njg5OTAyOTYsMTI3ND
+eyJoaXN0b3J5IjpbMjAzNjY4NjYxMiw0Njg5OTAyOTYsMTI3ND
 k2NTg1Miw4MTc4NjE4MTMsNTIxMjc0MjkzLC0zMDcyOTI0Nywx
 MjE1MTMyNTMyLC0xMzQzMTg2MDQ3LDE4NjYzNzMwMTMsLTExOT
 I3NzQ3NTUsOTc2MTQ3NDczLC04OTM3Njg4NCwtMTA3OTQzNDEz
