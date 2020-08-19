@@ -39,17 +39,18 @@ You must apply the input parameters in the separate input groups.
 	      i += 1
 	    }
 		```
-		you should think:
-		• I see a function named whilst that has two parameter groups
-		• The first parameter group must evaluate to a Boolean value
-		• The second parameter group appears to return nothing (Unit), because the last expression in the code block (i += 1) returns nothing
+		you should think how wheely works:
+		• wheely has two parameter groups.
+		• The first parameter group evaluate to a Boolean value.
+		• The second parameter group return nothing (Unit), because the last expression in the code block (i += 1) returns nothing.
+		
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1NDM3NDc0Miw2NzkzMzIzNjUsLTQwMz
-k3NzQ2MSwtMTczMjIzODc5OCwyMDM2Njg2NjEyLDQ2ODk5MDI5
-NiwxMjc0OTY1ODUyLDgxNzg2MTgxMyw1MjEyNzQyOTMsLTMwNz
-I5MjQ3LDEyMTUxMzI1MzIsLTEzNDMxODYwNDcsMTg2NjM3MzAx
-MywtMTE5Mjc3NDc1NSw5NzYxNDc0NzMsLTg5Mzc2ODg0LC0xMD
-c5NDM0MTM3LC01NjUxMTM2MzcsLTE1Njk5MDQxNDIsMTgxNDgz
-NDQyN119
+eyJoaXN0b3J5IjpbLTE2MzM2ODA0NTYsNjc5MzMyMzY1LC00MD
+M5Nzc0NjEsLTE3MzIyMzg3OTgsMjAzNjY4NjYxMiw0Njg5OTAy
+OTYsMTI3NDk2NTg1Miw4MTc4NjE4MTMsNTIxMjc0MjkzLC0zMD
+cyOTI0NywxMjE1MTMyNTMyLC0xMzQzMTg2MDQ3LDE4NjYzNzMw
+MTMsLTExOTI3NzQ3NTUsOTc2MTQ3NDczLC04OTM3Njg4NCwtMT
+A3OTQzNDEzNywtNTY1MTEzNjM3LC0xNTY5OTA0MTQyLDE4MTQ4
+MzQ0MjddfQ==
 -->
