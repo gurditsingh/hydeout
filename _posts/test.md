@@ -14,13 +14,18 @@ res1: Int = 3
 That’s all this is a basic technique.
 
 **If you trying to call it with two parameters in one group won’t work:**
-
+```scala
+scala> sum(1,2)
+<console>:13: error: too many arguments for method sum: (a: Int)(b: Int)Int
+       sum(1,2)
+```
+You must apply the input parameters in the separate input groups.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNjY4NjYxMiw0Njg5OTAyOTYsMTI3ND
-k2NTg1Miw4MTc4NjE4MTMsNTIxMjc0MjkzLC0zMDcyOTI0Nywx
-MjE1MTMyNTMyLC0xMzQzMTg2MDQ3LDE4NjYzNzMwMTMsLTExOT
-I3NzQ3NTUsOTc2MTQ3NDczLC04OTM3Njg4NCwtMTA3OTQzNDEz
-NywtNTY1MTEzNjM3LC0xNTY5OTA0MTQyLDE4MTQ4MzQ0MjcsMj
-AyNzA1NjY3MywtMTI1OTg5MDA2MSwtMTQ1MzY4MDY5LDEzNDIy
-NzI1ODFdfQ==
+eyJoaXN0b3J5IjpbMTU5NzYyNDg3NywyMDM2Njg2NjEyLDQ2OD
+k5MDI5NiwxMjc0OTY1ODUyLDgxNzg2MTgxMyw1MjEyNzQyOTMs
+LTMwNzI5MjQ3LDEyMTUxMzI1MzIsLTEzNDMxODYwNDcsMTg2Nj
+M3MzAxMywtMTE5Mjc3NDc1NSw5NzYxNDc0NzMsLTg5Mzc2ODg0
+LC0xMDc5NDM0MTM3LC01NjUxMTM2MzcsLTE1Njk5MDQxNDIsMT
+gxNDgzNDQyNywyMDI3MDU2NjczLC0xMjU5ODkwMDYxLC0xNDUz
+NjgwNjldfQ==
 -->
