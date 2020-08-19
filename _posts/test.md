@@ -32,14 +32,21 @@ You must apply the input parameters in the separate input groups.
 	 - **The second parameter group** is the block of code enclosed in curly braces after first parameter.
 
 		**Scala while loop example:**
+		```scala
+		var i = 0
+	    while (i < 3){
+	      println("i : "+ i)
+	      i += 1
+	    }
+		```
 		
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc5MzMyMzY1LC00MDM5Nzc0NjEsLTE3Mz
-IyMzg3OTgsMjAzNjY4NjYxMiw0Njg5OTAyOTYsMTI3NDk2NTg1
-Miw4MTc4NjE4MTMsNTIxMjc0MjkzLC0zMDcyOTI0NywxMjE1MT
-MyNTMyLC0xMzQzMTg2MDQ3LDE4NjYzNzMwMTMsLTExOTI3NzQ3
-NTUsOTc2MTQ3NDczLC04OTM3Njg4NCwtMTA3OTQzNDEzNywtNT
-Y1MTEzNjM3LC0xNTY5OTA0MTQyLDE4MTQ4MzQ0MjcsMjAyNzA1
-NjY3M119
+eyJoaXN0b3J5IjpbMTAyNTcxMDI3Myw2NzkzMzIzNjUsLTQwMz
+k3NzQ2MSwtMTczMjIzODc5OCwyMDM2Njg2NjEyLDQ2ODk5MDI5
+NiwxMjc0OTY1ODUyLDgxNzg2MTgxMyw1MjEyNzQyOTMsLTMwNz
+I5MjQ3LDEyMTUxMzI1MzIsLTEzNDMxODYwNDcsMTg2NjM3MzAx
+MywtMTE5Mjc3NDc1NSw5NzYxNDc0NzMsLTg5Mzc2ODg0LC0xMD
+c5NDM0MTM3LC01NjUxMTM2MzcsLTE1Njk5MDQxNDIsMTgxNDgz
+NDQyN119
 -->
