@@ -62,13 +62,17 @@ You must apply the input parameters in the separate input groups.
 		**Notice :** both parameter groups use by-name parameters.
 		
 		**Parameters Kind:**
-			**by-value** parameter is like receiving a val field; its evaluated once, when the parameter is define to the function.
-			by-name parameter is like receiving a def method; its body is evaluated whenever it is used inside the function.
+		
+		 - **by-value** parameter is like receiving a val field; its evaluated once, when the parameter is define to the function.
+		 - **by-name** parameter is like receiving a def method; its is evaluated whenever it is used in the function.
+		 
+		
+
 		
 		
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Njk4NTI2OTIsLTE4NzI3NTk2NTksNj
+eyJoaXN0b3J5IjpbLTExNzA0MjU1MjksLTE4NzI3NTk2NTksNj
 c5MzMyMzY1LC00MDM5Nzc0NjEsLTE3MzIyMzg3OTgsLTQ3MTY4
 Mjg5MSwyMDM2Njg2NjEyLDQ2ODk5MDI5NiwxMjc0OTY1ODUyLD
 gxNzg2MTgxMyw1MjEyNzQyOTMsLTMwNzI5MjQ3LDEyMTUxMzI1
