@@ -68,15 +68,19 @@ You must apply the input parameters in the separate input groups.
 		 
 		In wheely both parameter groups use by-name parameters because we need to evaluate both the parameters when they required. If wheely function not receive by-name parameters its evaluate the expr (true) for the first time and the loop will run forever same is the case with second parameter(code) as well.
 
-		
+------------
+
+ - **Benefit: Using implicit values**
+ - 
+
 		
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTIxOTg0MDMsLTEzNDM1ODAwNzYsLT
-E4NzI3NTk2NTksNjc5MzMyMzY1LC00MDM5Nzc0NjEsLTE3MzIy
-Mzg3OTgsLTQ3MTY4Mjg5MSwyMDM2Njg2NjEyLDQ2ODk5MDI5Ni
-wxMjc0OTY1ODUyLDgxNzg2MTgxMyw1MjEyNzQyOTMsLTMwNzI5
-MjQ3LDEyMTUxMzI1MzIsLTEzNDMxODYwNDcsMTg2NjM3MzAxMy
-wtMTE5Mjc3NDc1NSw5NzYxNDc0NzMsLTg5Mzc2ODg0LC0xMDc5
-NDM0MTM3XX0=
+eyJoaXN0b3J5IjpbMTA5NTk3MDM0OSwtMTM0MzU4MDA3NiwtMT
+g3Mjc1OTY1OSw2NzkzMzIzNjUsLTQwMzk3NzQ2MSwtMTczMjIz
+ODc5OCwtNDcxNjgyODkxLDIwMzY2ODY2MTIsNDY4OTkwMjk2LD
+EyNzQ5NjU4NTIsODE3ODYxODEzLDUyMTI3NDI5MywtMzA3Mjky
+NDcsMTIxNTEzMjUzMiwtMTM0MzE4NjA0NywxODY2MzczMDEzLC
+0xMTkyNzc0NzU1LDk3NjE0NzQ3MywtODkzNzY4ODQsLTEwNzk0
+MzQxMzddfQ==
 -->
