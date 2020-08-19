@@ -28,14 +28,14 @@ You must apply the input parameters in the separate input groups.
 	**Lets create are own while loop name wheely:**  By using multiple parameter groups you can build are own control structures. wheely must be defined to have two parameter groups.
 	
 
-	 - **first parameter group** which is the expression between the two parentheses. Note that this expression yields a Boolean value. Therefore, by looking at this code you know whilst must be defined so that it’s first parameter group is expecting a Boolean parameter of some sort.
+	 - **first parameter group** is the expression between the two parentheses. Note that this expression should return a Boolean value.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwMzk3NzQ2MSwtMTczMjIzODc5OCwyMD
-M2Njg2NjEyLDQ2ODk5MDI5NiwxMjc0OTY1ODUyLDgxNzg2MTgx
-Myw1MjEyNzQyOTMsLTMwNzI5MjQ3LDEyMTUxMzI1MzIsLTEzND
-MxODYwNDcsMTg2NjM3MzAxMywtMTE5Mjc3NDc1NSw5NzYxNDc0
-NzMsLTg5Mzc2ODg0LC0xMDc5NDM0MTM3LC01NjUxMTM2MzcsLT
-E1Njk5MDQxNDIsMTgxNDgzNDQyNywyMDI3MDU2NjczLC0xMjU5
-ODkwMDYxXX0=
+eyJoaXN0b3J5IjpbLTYxMTQ1MjAyOSwtNDAzOTc3NDYxLC0xNz
+MyMjM4Nzk4LDIwMzY2ODY2MTIsNDY4OTkwMjk2LDEyNzQ5NjU4
+NTIsODE3ODYxODEzLDUyMTI3NDI5MywtMzA3MjkyNDcsMTIxNT
+EzMjUzMiwtMTM0MzE4NjA0NywxODY2MzczMDEzLC0xMTkyNzc0
+NzU1LDk3NjE0NzQ3MywtODkzNzY4ODQsLTEwNzk0MzQxMzcsLT
+U2NTExMzYzNywtMTU2OTkwNDE0MiwxODE0ODM0NDI3LDIwMjcw
+NTY2NzNdfQ==
 -->
