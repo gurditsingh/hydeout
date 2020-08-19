@@ -54,15 +54,16 @@ You must apply the input parameters in the separate input groups.
 
 	    var i = 0
 	    wheely( i < 3){
-      println("i : "+ i)
-      i+=1
-    }
-	```
+	      println("i : "+ i)
+	      i+=1
+	    }
+		```
+		
 		
 		
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExNTA1ODYzMiwtMTg3Mjc1OTY1OSw2Nz
+eyJoaXN0b3J5IjpbLTg2NzE0MDQ1OCwtMTg3Mjc1OTY1OSw2Nz
 kzMzIzNjUsLTQwMzk3NzQ2MSwtMTczMjIzODc5OCwyMDM2Njg2
 NjEyLDQ2ODk5MDI5NiwxMjc0OTY1ODUyLDgxNzg2MTgxMyw1Mj
 EyNzQyOTMsLTMwNzI5MjQ3LDEyMTUxMzI1MzIsLTEzNDMxODYw
