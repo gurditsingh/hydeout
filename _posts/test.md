@@ -31,13 +31,15 @@ You must apply the input parameters in the separate input groups.
 	 - **The first parameter group** is the expression between the two parentheses. Note that this expression should return a Boolean value.
 	 - **The second parameter group** is the block of code enclosed in curly braces after first parameter.
 
+		**Scala while loop example:**
+		
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0MTUzNDU2MCwtNDAzOTc3NDYxLC0xNz
-MyMjM4Nzk4LDIwMzY2ODY2MTIsNDY4OTkwMjk2LDEyNzQ5NjU4
-NTIsODE3ODYxODEzLDUyMTI3NDI5MywtMzA3MjkyNDcsMTIxNT
-EzMjUzMiwtMTM0MzE4NjA0NywxODY2MzczMDEzLC0xMTkyNzc0
-NzU1LDk3NjE0NzQ3MywtODkzNzY4ODQsLTEwNzk0MzQxMzcsLT
-U2NTExMzYzNywtMTU2OTkwNDE0MiwxODE0ODM0NDI3LDIwMjcw
-NTY2NzNdfQ==
+eyJoaXN0b3J5IjpbNjc5MzMyMzY1LC00MDM5Nzc0NjEsLTE3Mz
+IyMzg3OTgsMjAzNjY4NjYxMiw0Njg5OTAyOTYsMTI3NDk2NTg1
+Miw4MTc4NjE4MTMsNTIxMjc0MjkzLC0zMDcyOTI0NywxMjE1MT
+MyNTMyLC0xMzQzMTg2MDQ3LDE4NjYzNzMwMTMsLTExOTI3NzQ3
+NTUsOTc2MTQ3NDczLC04OTM3Njg4NCwtMTA3OTQzNDEzNywtNT
+Y1MTEzNjM3LC0xNTY5OTA0MTQyLDE4MTQ4MzQ0MjcsMjAyNzA1
+NjY3M119
 -->
