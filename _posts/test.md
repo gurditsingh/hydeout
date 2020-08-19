@@ -20,8 +20,13 @@ scala> sum(1,2)
        sum(1,2)
 ```
 You must apply the input parameters in the separate input groups.
+
+## Declare multiple parameter groups gives you these additional benefits:
+
+ - **write your own control structures:**
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NzYyNDg3NywyMDM2Njg2NjEyLDQ2OD
+eyJoaXN0b3J5IjpbLTgyOTQwODMwMSwyMDM2Njg2NjEyLDQ2OD
 k5MDI5NiwxMjc0OTY1ODUyLDgxNzg2MTgxMyw1MjEyNzQyOTMs
 LTMwNzI5MjQ3LDEyMTUxMzI1MzIsLTEzNDMxODYwNDcsMTg2Nj
 M3MzAxMywtMTE5Mjc3NDc1NSw5NzYxNDc0NzMsLTg5Mzc2ODg0
