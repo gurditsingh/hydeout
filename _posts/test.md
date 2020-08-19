@@ -23,15 +23,15 @@ You must apply the input parameters in the separate input groups.
 
 ## Declare multiple parameter groups gives you these additional benefits:
 
- 1. **write your own control structures:**
+ - **write your own control structures:**
 
 	**Lets create are own while loop name wheely:**  By using multiple parameter groups you can build are own control structures. wheely must be defined to have two parameter groups.
 	
 
- 2. List item
+	 - **first parameter group** which is the expression between the two parentheses. Note that this expression yields a Boolean value. Therefore, by looking at this code you know whilst must be defined so that it’s first parameter group is expecting a Boolean parameter of some sort.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzNDIxMzUyNywtMTczMjIzODc5OCwtND
+eyJoaXN0b3J5IjpbLTQwMzk3NzQ2MSwtMTczMjIzODc5OCwtND
 cxNjgyODkxLDIwMzY2ODY2MTIsNDY4OTkwMjk2LDEyNzQ5NjU4
 NTIsODE3ODYxODEzLDUyMTI3NDI5MywtMzA3MjkyNDcsMTIxNT
 EzMjUzMiwtMTM0MzE4NjA0NywxODY2MzczMDEzLC0xMTkyNzc0
