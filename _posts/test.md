@@ -45,15 +45,28 @@ You must apply the input parameters in the separate input groups.
 		• The second parameter group return nothing (Unit), because the last expression in the code block (i += 1) returns nothing.
 		
 		**Lets create code for wheely**
+		```scala
+		def wheely(expr: => Boolean)(block: => Unit): Unit = {
+	      while (expr) {
+	        block
+	      }
+	    }
+
+	    var i = 0
+	    wheely( i < 3){
+	      println("i : "+ i)
+      i+=1
+    }
+	```
 		
 		
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTc2NDQyMTMsLTE4NzI3NTk2NTksNj
-c5MzMyMzY1LC00MDM5Nzc0NjEsLTE3MzIyMzg3OTgsLTQ3MTY4
-Mjg5MSwyMDM2Njg2NjEyLDQ2ODk5MDI5NiwxMjc0OTY1ODUyLD
-gxNzg2MTgxMyw1MjEyNzQyOTMsLTMwNzI5MjQ3LDEyMTUxMzI1
-MzIsLTEzNDMxODYwNDcsMTg2NjM3MzAxMywtMTE5Mjc3NDc1NS
-w5NzYxNDc0NzMsLTg5Mzc2ODg0LC0xMDc5NDM0MTM3LC01NjUx
-MTM2MzddfQ==
+eyJoaXN0b3J5IjpbMTAyOTg4MDc1MiwtMTg3Mjc1OTY1OSw2Nz
+kzMzIzNjUsLTQwMzk3NzQ2MSwtMTczMjIzODc5OCwtNDcxNjgy
+ODkxLDIwMzY2ODY2MTIsNDY4OTkwMjk2LDEyNzQ5NjU4NTIsOD
+E3ODYxODEzLDUyMTI3NDI5MywtMzA3MjkyNDcsMTIxNTEzMjUz
+MiwtMTM0MzE4NjA0NywxODY2MzczMDEzLC0xMTkyNzc0NzU1LD
+k3NjE0NzQ3MywtODkzNzY4ODQsLTEwNzk0MzQxMzcsLTU2NTEx
+MzYzN119
 -->
