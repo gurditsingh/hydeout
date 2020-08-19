@@ -71,12 +71,12 @@ You must apply the input parameters in the separate input groups.
 ------------
 
  - **Benefit: Using implicit values**
-	 A nice benefit of multiple input parameter groups comes when you use them with implicit parameters.
+	 A benefit of multiple input parameter groups comes when you use them with implicit parameters. This can help to simplify code to pass implicit parameters when needed.
 
 		
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyMTg0NzQwNSwtMTM0MzU4MDA3NiwtMT
+eyJoaXN0b3J5IjpbMTk0NTMyNDIzOCwtMTM0MzU4MDA3NiwtMT
 g3Mjc1OTY1OSw2NzkzMzIzNjUsLTQwMzk3NzQ2MSwtMTczMjIz
 ODc5OCwyMDM2Njg2NjEyLDQ2ODk5MDI5NiwxMjc0OTY1ODUyLD
 gxNzg2MTgxMyw1MjEyNzQyOTMsLTMwNzI5MjQ3LDEyMTUxMzI1
