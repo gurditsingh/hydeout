@@ -1,7 +1,9 @@
 ## Functions with Multiple Parameter Groups called Currying
+Currying splits method with multiple parameters into a chain of functions each with one parameter.
 
+lets create functions that have multiple input parameter groups
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3ODczODM1NCw0Njg5OTAyOTYsMTI3ND
+eyJoaXN0b3J5IjpbLTI2OTk0NzAzOCw0Njg5OTAyOTYsMTI3ND
 k2NTg1Miw4MTc4NjE4MTMsNTIxMjc0MjkzLC0zMDcyOTI0Nywx
 MjE1MTMyNTMyLC0xMzQzMTg2MDQ3LDE4NjYzNzMwMTMsLTExOT
 I3NzQ3NTUsOTc2MTQ3NDczLC04OTM3Njg4NCwtMTA3OTQzNDEz
