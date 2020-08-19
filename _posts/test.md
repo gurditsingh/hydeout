@@ -39,14 +39,15 @@ You must apply the input parameters in the separate input groups.
 	      i += 1
 	    }
 		```
-		you should think how wheely works:
+		**Lets describe how wheely works:**
 		• wheely has two parameter groups.
 		• The first parameter group evaluate to a Boolean value.
 		• The second parameter group return nothing (Unit), because the last expression in the code block (i += 1) returns nothing.
 		
+		
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzM2ODA0NTYsNjc5MzMyMzY1LC00MD
+eyJoaXN0b3J5IjpbLTE4NzI3NTk2NTksNjc5MzMyMzY1LC00MD
 M5Nzc0NjEsLTE3MzIyMzg3OTgsLTQ3MTY4Mjg5MSwyMDM2Njg2
 NjEyLDQ2ODk5MDI5NiwxMjc0OTY1ODUyLDgxNzg2MTgxMyw1Mj
 EyNzQyOTMsLTMwNzI5MjQ3LDEyMTUxMzI1MzIsLTEzNDMxODYw
