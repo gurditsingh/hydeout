@@ -74,16 +74,27 @@ You must apply the input parameters in the separate input groups.
 	 A benefit of multiple input parameter groups comes when you use them with implicit parameters. This can help to simplify code to pass implicit parameters when needed.
 	 
 	 **Lets create simple example:**
-	 
+	```scala
+		scala> def showIfTrue(x: Int)(implicit y: Boolean) = if (y) println(x)
+		showIfTrue: (x: Int)(implicit y: Boolean)Unit
+
+		scala> implicit val b:Boolean = true
+		b: Boolean = true
+
+		scala> showIfTrue(10)
+		10
+	```
+
+
 
 		
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA3ODk3NzIyLC0xMzQzNTgwMDc2LC0xOD
-cyNzU5NjU5LDY3OTMzMjM2NSwtNDAzOTc3NDYxLC0xNzMyMjM4
-Nzk4LDIwMzY2ODY2MTIsNDY4OTkwMjk2LDEyNzQ5NjU4NTIsOD
-E3ODYxODEzLDUyMTI3NDI5MywtMzA3MjkyNDcsMTIxNTEzMjUz
-MiwtMTM0MzE4NjA0NywxODY2MzczMDEzLC0xMTkyNzc0NzU1LD
-k3NjE0NzQ3MywtODkzNzY4ODQsLTEwNzk0MzQxMzcsLTU2NTEx
-MzYzN119
+eyJoaXN0b3J5IjpbLTIwNDQ5MjQwMTYsOTA3ODk3NzIyLC0xMz
+QzNTgwMDc2LC0xODcyNzU5NjU5LDY3OTMzMjM2NSwtNDAzOTc3
+NDYxLC0xNzMyMjM4Nzk4LDIwMzY2ODY2MTIsNDY4OTkwMjk2LD
+EyNzQ5NjU4NTIsODE3ODYxODEzLDUyMTI3NDI5MywtMzA3Mjky
+NDcsMTIxNTEzMjUzMiwtMTM0MzE4NjA0NywxODY2MzczMDEzLC
+0xMTkyNzc0NzU1LDk3NjE0NzQ3MywtODkzNzY4ODQsLTEwNzk0
+MzQxMzddfQ==
 -->
