@@ -23,16 +23,17 @@ You must apply the input parameters in the separate input groups.
 
 ## Declare multiple parameter groups gives you these additional benefits:
 
- - **write your own control structures:** By using multiple parameter groups you can build are own control structures.
+ - **write your own control structures:**
 
-**Lets so you want to create your own whilst loop**
+	**Lets create are own while loop name wheel:**  By using multiple parameter groups you can build are own control structures.  whilst must be defined to have two parameter groups. The first parameter group is i
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MTY4Mjg5MSwyMDM2Njg2NjEyLDQ2OD
-k5MDI5NiwxMjc0OTY1ODUyLDgxNzg2MTgxMyw1MjEyNzQyOTMs
-LTMwNzI5MjQ3LDEyMTUxMzI1MzIsLTEzNDMxODYwNDcsMTg2Nj
-M3MzAxMywtMTE5Mjc3NDc1NSw5NzYxNDc0NzMsLTg5Mzc2ODg0
-LC0xMDc5NDM0MTM3LC01NjUxMTM2MzcsLTE1Njk5MDQxNDIsMT
-gxNDgzNDQyNywyMDI3MDU2NjczLC0xMjU5ODkwMDYxLC0xNDUz
-NjgwNjldfQ==
+eyJoaXN0b3J5IjpbLTE3MzIyMzg3OTgsLTQ3MTY4Mjg5MSwyMD
+M2Njg2NjEyLDQ2ODk5MDI5NiwxMjc0OTY1ODUyLDgxNzg2MTgx
+Myw1MjEyNzQyOTMsLTMwNzI5MjQ3LDEyMTUxMzI1MzIsLTEzND
+MxODYwNDcsMTg2NjM3MzAxMywtMTE5Mjc3NDc1NSw5NzYxNDc0
+NzMsLTg5Mzc2ODg0LC0xMDc5NDM0MTM3LC01NjUxMTM2MzcsLT
+E1Njk5MDQxNDIsMTgxNDgzNDQyNywyMDI3MDU2NjczLC0xMjU5
+ODkwMDYxXX0=
 -->
