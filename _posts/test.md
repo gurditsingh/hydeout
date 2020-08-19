@@ -95,13 +95,13 @@ f: List[Employee] => Employee
 
 ## The power of the technique is you can easily swap in interchangeable algorithms.
 
-As long as the signature of the function you pass in matches the signature that’s expected, your algorithms can do anything you want. This is comparable to swapping out algorithms in the OOP Strategy design pattern.
+As long as the signature of the function you pass matches the signature that is expected, your algorithms can do anything you want. This is comparable to swapping out algorithms in the OOP Strategy design pattern.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE3ODYxODEzLDUyMTI3NDI5MywtMzA3Mj
-kyNDcsMTIxNTEzMjUzMiwtMTM0MzE4NjA0NywxODY2MzczMDEz
-LC0xMTkyNzc0NzU1LDk3NjE0NzQ3MywtODkzNzY4ODQsLTEwNz
-k0MzQxMzcsLTU2NTExMzYzNywtMTU2OTkwNDE0MiwxODE0ODM0
-NDI3LDIwMjcwNTY2NzMsLTEyNTk4OTAwNjEsLTE0NTM2ODA2OS
-wxMzQyMjcyNTgxLDE0NDY0MzI2NTUsMTI5NjUyMDA4NiwtMjA4
-ODc0NjYxMl19
+eyJoaXN0b3J5IjpbMTM1ODgzNDkwMiw4MTc4NjE4MTMsNTIxMj
+c0MjkzLC0zMDcyOTI0NywxMjE1MTMyNTMyLC0xMzQzMTg2MDQ3
+LDE4NjYzNzMwMTMsLTExOTI3NzQ3NTUsOTc2MTQ3NDczLC04OT
+M3Njg4NCwtMTA3OTQzNDEzNywtNTY1MTEzNjM3LC0xNTY5OTA0
+MTQyLDE4MTQ4MzQ0MjcsMjAyNzA1NjY3MywtMTI1OTg5MDA2MS
+wtMTQ1MzY4MDY5LDEzNDIyNzI1ODEsMTQ0NjQzMjY1NSwxMjk2
+NTIwMDg2XX0=
 -->
