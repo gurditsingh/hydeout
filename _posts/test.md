@@ -2,9 +2,16 @@
 Currying splits method with multiple parameters into a chain of functions each with one parameter.
 
 lets create simple function that have multiple input parameter groups.
+```scala
+scala> def sum(a: Int)(b: Int) = a + b
+sum: (a: Int)(b: Int)Int
 
+scala> sum(1)(2)
+res1: Int = 3
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgzNTczMjEzLDQ2ODk5MDI5NiwxMjc0OT
+eyJoaXN0b3J5IjpbMjI4NjcwNDg2LDQ2ODk5MDI5NiwxMjc0OT
 Y1ODUyLDgxNzg2MTgxMyw1MjEyNzQyOTMsLTMwNzI5MjQ3LDEy
 MTUxMzI1MzIsLTEzNDMxODYwNDcsMTg2NjM3MzAxMywtMTE5Mj
 c3NDc1NSw5NzYxNDc0NzMsLTg5Mzc2ODg0LC0xMDc5NDM0MTM3
