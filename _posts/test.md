@@ -72,15 +72,18 @@ You must apply the input parameters in the separate input groups.
 
  - **Benefit: Using implicit values**
 	 A benefit of multiple input parameter groups comes when you use them with implicit parameters. This can help to simplify code to pass implicit parameters when needed.
+	 
+	 **Lets create simple example:**
+	 
 
 		
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NTMyNDIzOCwtMTM0MzU4MDA3NiwtMT
-g3Mjc1OTY1OSw2NzkzMzIzNjUsLTQwMzk3NzQ2MSwtMTczMjIz
-ODc5OCwtNDcxNjgyODkxLDIwMzY2ODY2MTIsNDY4OTkwMjk2LD
-EyNzQ5NjU4NTIsODE3ODYxODEzLDUyMTI3NDI5MywtMzA3Mjky
-NDcsMTIxNTEzMjUzMiwtMTM0MzE4NjA0NywxODY2MzczMDEzLC
-0xMTkyNzc0NzU1LDk3NjE0NzQ3MywtODkzNzY4ODQsLTEwNzk0
-MzQxMzddfQ==
+eyJoaXN0b3J5IjpbOTA3ODk3NzIyLC0xMzQzNTgwMDc2LC0xOD
+cyNzU5NjU5LDY3OTMzMjM2NSwtNDAzOTc3NDYxLC0xNzMyMjM4
+Nzk4LC00NzE2ODI4OTEsMjAzNjY4NjYxMiw0Njg5OTAyOTYsMT
+I3NDk2NTg1Miw4MTc4NjE4MTMsNTIxMjc0MjkzLC0zMDcyOTI0
+NywxMjE1MTMyNTMyLC0xMzQzMTg2MDQ3LDE4NjYzNzMwMTMsLT
+ExOTI3NzQ3NTUsOTc2MTQ3NDczLC04OTM3Njg4NCwtMTA3OTQz
+NDEzN119
 -->
