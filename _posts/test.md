@@ -66,17 +66,17 @@ You must apply the input parameters in the separate input groups.
 		 - **by-value** parameter is like receiving a val field; its evaluated once, when the parameter is define to the function.
 		 - **by-name** parameter is like receiving a def method; its is evaluated whenever it is used in the function.
 		 
-		In wheely both parameter groups use by-name parameters because we need to evaluate both the parameters when they required. If wheely function not receive by-name parameters its evalute the expr for true for its first parameter, and the loop will run forever. This would be bad.
+		In wheely both parameter groups use by-name parameters because we need to evaluate both the parameters when they required. If wheely function not receive by-name parameters its evaluate the expr for the first time and the loop will run forever same is the case with second parameter(code) as well.
 
 		
 		
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTc1MDM4MTcsLTE4NzI3NTk2NTksNj
-c5MzMyMzY1LC00MDM5Nzc0NjEsLTE3MzIyMzg3OTgsLTQ3MTY4
-Mjg5MSwyMDM2Njg2NjEyLDQ2ODk5MDI5NiwxMjc0OTY1ODUyLD
-gxNzg2MTgxMyw1MjEyNzQyOTMsLTMwNzI5MjQ3LDEyMTUxMzI1
-MzIsLTEzNDMxODYwNDcsMTg2NjM3MzAxMywtMTE5Mjc3NDc1NS
-w5NzYxNDc0NzMsLTg5Mzc2ODg0LC0xMDc5NDM0MTM3LC01NjUx
-MTM2MzddfQ==
+eyJoaXN0b3J5IjpbMTkwMjEyOTk0MSwtMTg3Mjc1OTY1OSw2Nz
+kzMzIzNjUsLTQwMzk3NzQ2MSwtMTczMjIzODc5OCwtNDcxNjgy
+ODkxLDIwMzY2ODY2MTIsNDY4OTkwMjk2LDEyNzQ5NjU4NTIsOD
+E3ODYxODEzLDUyMTI3NDI5MywtMzA3MjkyNDcsMTIxNTEzMjUz
+MiwtMTM0MzE4NjA0NywxODY2MzczMDEzLC0xMTkyNzc0NzU1LD
+k3NjE0NzQ3MywtODkzNzY4ODQsLTEwNzk0MzQxMzcsLTU2NTEx
+MzYzN119
 -->
