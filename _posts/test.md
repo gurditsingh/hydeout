@@ -97,13 +97,14 @@ f: List[Employee] => Employee
 
 As long as the signature of the function you pass matches the signature that is expected, your algorithms can do anything as specified. This is comparable  with the OOP Strategy design pattern (Strategy pattern is used when we have multiple algorithm for a specific task and client decides the actual implementation to be used at runtime).
 
-Let's write custom Map and Filter Higher ob
+**Let's write custom Map and Filter Higher order functions**
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyODQ4MzM1OSw4MTc4NjE4MTMsNTIxMj
-c0MjkzLC0zMDcyOTI0NywxMjE1MTMyNTMyLC0xMzQzMTg2MDQ3
-LDE4NjYzNzMwMTMsLTExOTI3NzQ3NTUsOTc2MTQ3NDczLC04OT
-M3Njg4NCwtMTA3OTQzNDEzNywtNTY1MTEzNjM3LC0xNTY5OTA0
-MTQyLDE4MTQ4MzQ0MjcsMjAyNzA1NjY3MywtMTI1OTg5MDA2MS
-wtMTQ1MzY4MDY5LDEzNDIyNzI1ODEsMTQ0NjQzMjY1NSwxMjk2
-NTIwMDg2XX0=
+eyJoaXN0b3J5IjpbLTIwMzM5OTc0OTksODE3ODYxODEzLDUyMT
+I3NDI5MywtMzA3MjkyNDcsMTIxNTEzMjUzMiwtMTM0MzE4NjA0
+NywxODY2MzczMDEzLC0xMTkyNzc0NzU1LDk3NjE0NzQ3MywtOD
+kzNzY4ODQsLTEwNzk0MzQxMzcsLTU2NTExMzYzNywtMTU2OTkw
+NDE0MiwxODE0ODM0NDI3LDIwMjcwNTY2NzMsLTEyNTk4OTAwNj
+EsLTE0NTM2ODA2OSwxMzQyMjcyNTgxLDE0NDY0MzI2NTUsMTI5
+NjUyMDA4Nl19
 -->
