@@ -39,10 +39,13 @@ You must apply the input parameters in the separate input groups.
 	      i += 1
 	    }
 		```
-		
+		you should think:
+		• I see a function named whilst that has two parameter groups
+		• The first parameter group must evaluate to a Boolean value
+		• The second parameter group appears to return nothing (Unit), because the last expression in the code block (i += 1) returns nothing
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNTcxMDI3Myw2NzkzMzIzNjUsLTQwMz
+eyJoaXN0b3J5IjpbMTg1NDM3NDc0Miw2NzkzMzIzNjUsLTQwMz
 k3NzQ2MSwtMTczMjIzODc5OCwtNDcxNjgyODkxLDIwMzY2ODY2
 MTIsNDY4OTkwMjk2LDEyNzQ5NjU4NTIsODE3ODYxODEzLDUyMT
 I3NDI5MywtMzA3MjkyNDcsMTIxNTEzMjUzMiwtMTM0MzE4NjA0
