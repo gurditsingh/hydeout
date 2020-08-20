@@ -69,7 +69,7 @@ You must apply the input parameters in the separate input groups.
 		In wheely both parameter groups use by-name parameters because we need to evaluate both the parameters when they required. If wheely function not receive by-name parameters its evaluate the expr (true) for the first time and the loop will run forever same is the case with second parameter(code) as well.
 		
 		**Lets write complex control structure where the database/file connection is automatically close after call:**
-		
+		[source code](https://github.com/gurditsingh/Scala-FP/blob/master/src/main/scala/scala/Curring_lesson/AutoCloseCurring.scala)
 		
 
 ------------
@@ -103,11 +103,11 @@ You must apply the input parameters in the separate input groups.
 		
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5OTAzMDMyMiwtMTcwNjczMTk5Miw5MD
-c4OTc3MjIsLTEzNDM1ODAwNzYsLTE4NzI3NTk2NTksNjc5MzMy
-MzY1LC00MDM5Nzc0NjEsLTE3MzIyMzg3OTgsMjAzNjY4NjYxMi
-w0Njg5OTAyOTYsMTI3NDk2NTg1Miw4MTc4NjE4MTMsNTIxMjc0
-MjkzLC0zMDcyOTI0NywxMjE1MTMyNTMyLC0xMzQzMTg2MDQ3LD
-E4NjYzNzMwMTMsLTExOTI3NzQ3NTUsOTc2MTQ3NDczLC04OTM3
-Njg4NF19
+eyJoaXN0b3J5IjpbLTEyNzg0NjY3NywtOTk5MDMwMzIyLC0xNz
+A2NzMxOTkyLDkwNzg5NzcyMiwtMTM0MzU4MDA3NiwtMTg3Mjc1
+OTY1OSw2NzkzMzIzNjUsLTQwMzk3NzQ2MSwtMTczMjIzODc5OC
+wyMDM2Njg2NjEyLDQ2ODk5MDI5NiwxMjc0OTY1ODUyLDgxNzg2
+MTgxMyw1MjEyNzQyOTMsLTMwNzI5MjQ3LDEyMTUxMzI1MzIsLT
+EzNDMxODYwNDcsMTg2NjM3MzAxMywtMTE5Mjc3NDc1NSw5NzYx
+NDc0NzNdfQ==
 -->
