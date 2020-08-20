@@ -68,7 +68,9 @@ You must apply the input parameters in the separate input groups.
 		 
 		In wheely both parameter groups use by-name parameters because we need to evaluate both the parameters when they required. If wheely function not receive by-name parameters its evaluate the expr (true) for the first time and the loop will run forever same is the case with second parameter(code) as well.
 		
-		LetsThe using control structure lets you write clean database code like the following example, where the database connection conn is automatically close after the save call:
+		**Lets write complex control structure where the database/file connection is automatically close after call:**
+		
+		
 
 ------------
 
@@ -101,11 +103,11 @@ You must apply the input parameters in the separate input groups.
 		
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjQ0NDc2NzUsLTE3MDY3MzE5OTIsOT
-A3ODk3NzIyLC0xMzQzNTgwMDc2LC0xODcyNzU5NjU5LDY3OTMz
-MjM2NSwtNDAzOTc3NDYxLC0xNzMyMjM4Nzk4LDIwMzY2ODY2MT
-IsNDY4OTkwMjk2LDEyNzQ5NjU4NTIsODE3ODYxODEzLDUyMTI3
-NDI5MywtMzA3MjkyNDcsMTIxNTEzMjUzMiwtMTM0MzE4NjA0Ny
-wxODY2MzczMDEzLC0xMTkyNzc0NzU1LDk3NjE0NzQ3MywtODkz
-NzY4ODRdfQ==
+eyJoaXN0b3J5IjpbLTk5OTAzMDMyMiwtMTcwNjczMTk5Miw5MD
+c4OTc3MjIsLTEzNDM1ODAwNzYsLTE4NzI3NTk2NTksNjc5MzMy
+MzY1LC00MDM5Nzc0NjEsLTE3MzIyMzg3OTgsMjAzNjY4NjYxMi
+w0Njg5OTAyOTYsMTI3NDk2NTg1Miw4MTc4NjE4MTMsNTIxMjc0
+MjkzLC0zMDcyOTI0NywxMjE1MTMyNTMyLC0xMzQzMTg2MDQ3LD
+E4NjYzNzMwMTMsLTExOTI3NzQ3NTUsOTc2MTQ3NDczLC04OTM3
+Njg4NF19
 -->
