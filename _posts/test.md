@@ -67,6 +67,8 @@ You must apply the input parameters in the separate input groups.
 		 - **by-name** parameter is like receiving a def method; its is evaluated whenever it is used in the function.
 		 
 		In wheely both parameter groups use by-name parameters because we need to evaluate both the parameters when they required. If wheely function not receive by-name parameters its evaluate the expr (true) for the first time and the loop will run forever same is the case with second parameter(code) as well.
+		
+		LetsThe using control structure lets you write clean database code like the following example, where the database connection conn is automatically close after the save call:
 
 ------------
 
@@ -99,11 +101,11 @@ You must apply the input parameters in the separate input groups.
 		
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDY3MzE5OTIsOTA3ODk3NzIyLC0xMz
-QzNTgwMDc2LC0xODcyNzU5NjU5LDY3OTMzMjM2NSwtNDAzOTc3
-NDYxLC0xNzMyMjM4Nzk4LDIwMzY2ODY2MTIsNDY4OTkwMjk2LD
-EyNzQ5NjU4NTIsODE3ODYxODEzLDUyMTI3NDI5MywtMzA3Mjky
-NDcsMTIxNTEzMjUzMiwtMTM0MzE4NjA0NywxODY2MzczMDEzLC
-0xMTkyNzc0NzU1LDk3NjE0NzQ3MywtODkzNzY4ODQsLTEwNzk0
-MzQxMzddfQ==
+eyJoaXN0b3J5IjpbLTEwMjQ0NDc2NzUsLTE3MDY3MzE5OTIsOT
+A3ODk3NzIyLC0xMzQzNTgwMDc2LC0xODcyNzU5NjU5LDY3OTMz
+MjM2NSwtNDAzOTc3NDYxLC0xNzMyMjM4Nzk4LDIwMzY2ODY2MT
+IsNDY4OTkwMjk2LDEyNzQ5NjU4NTIsODE3ODYxODEzLDUyMTI3
+NDI5MywtMzA3MjkyNDcsMTIxNTEzMjUzMiwtMTM0MzE4NjA0Ny
+wxODY2MzczMDEzLC0xMTkyNzc0NzU1LDk3NjE0NzQ3MywtODkz
+NzY4ODRdfQ==
 -->
