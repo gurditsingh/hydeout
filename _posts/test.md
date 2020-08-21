@@ -69,7 +69,7 @@ You must apply the input parameters in the separate input groups.
 		In wheely both parameter groups use by-name parameters because we need to evaluate both the parameters when they required. If wheely function not receive by-name parameters its evaluate the expr (true) for the first time and the loop will run forever same is the case with second parameter(code) as well.
 		
 		**Lets write complex control structure where the database/file connection is automatically close after call:**
-		[source code](https://github.com/gurditsingh/Scala-FP/blob/master/src/main/scala/scala/Curring_lesson/AutoCloseCurring.scala)
+		[source code for more example](https://github.com/gurditsingh/Scala-FP/blob/master/src/main/scala/scala/Curring_lesson/AutoCloseCurring.scala)
 		
 
 ------------
@@ -93,7 +93,7 @@ You must apply the input parameters in the separate input groups.
 	 - **showIfTrue()** function have two parameter groups and the second parameter group declares an implicit.
 	 - **showIfTrue(10)** is called with one parameter group.
 	 - Scala knows that one of the implicit Boolean value present in the current scope (like we defined **implicit val b:Boolean = true**) otherwise throw error.
-
+[source code for more example](https://github.com/gurditsingh/Scala-FP/blob/master/src/main/scala/scala/Curring_lesson/ImplicitCurring.scala)
 ------------
 
  - **Benefit: Using default values**
@@ -119,11 +119,11 @@ You must apply the input parameters in the separate input groups.
 		
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4ODM0NTgyMCwtNDkzMzIzNjI1LC0xMj
-c4NDY2NzcsLTk5OTAzMDMyMiwtMTcwNjczMTk5Miw5MDc4OTc3
-MjIsLTEzNDM1ODAwNzYsLTE4NzI3NTk2NTksNjc5MzMyMzY1LC
-00MDM5Nzc0NjEsLTE3MzIyMzg3OTgsLTQ3MTY4Mjg5MSwyMDM2
-Njg2NjEyLDQ2ODk5MDI5NiwxMjc0OTY1ODUyLDgxNzg2MTgxMy
-w1MjEyNzQyOTMsLTMwNzI5MjQ3LDEyMTUxMzI1MzIsLTEzNDMx
-ODYwNDddfQ==
+eyJoaXN0b3J5IjpbMTEwMDQ2NDAzNSwxNDg4MzQ1ODIwLC00OT
+MzMjM2MjUsLTEyNzg0NjY3NywtOTk5MDMwMzIyLC0xNzA2NzMx
+OTkyLDkwNzg5NzcyMiwtMTM0MzU4MDA3NiwtMTg3Mjc1OTY1OS
+w2NzkzMzIzNjUsLTQwMzk3NzQ2MSwtMTczMjIzODc5OCwtNDcx
+NjgyODkxLDIwMzY2ODY2MTIsNDY4OTkwMjk2LDEyNzQ5NjU4NT
+IsODE3ODYxODEzLDUyMTI3NDI5MywtMzA3MjkyNDcsMTIxNTEz
+MjUzMl19
 -->
