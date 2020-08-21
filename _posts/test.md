@@ -98,7 +98,18 @@ You must apply the input parameters in the separate input groups.
 
  - **Benefit: Using default values**
 	you can use default values for input parameters when using multiple parameter groups.
+	```scala
+	scala> def fun(x: Int = 1)(y: Int = x) = { x + y }
+	fun: (x: Int)(y: Int)Int
+
+	scala> fun()()
+	res0: Int = 2
+	```
 	
+
+> In fun function parameter in the second parameter group can use a
+> parameter from the first parameter group as a default value.
+
 	 
    
 
@@ -108,11 +119,11 @@ You must apply the input parameters in the separate input groups.
 		
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5MzMyMzYyNSwtMTI3ODQ2Njc3LC05OT
-kwMzAzMjIsLTE3MDY3MzE5OTIsOTA3ODk3NzIyLC0xMzQzNTgw
-MDc2LC0xODcyNzU5NjU5LDY3OTMzMjM2NSwtNDAzOTc3NDYxLC
-0xNzMyMjM4Nzk4LDIwMzY2ODY2MTIsNDY4OTkwMjk2LDEyNzQ5
-NjU4NTIsODE3ODYxODEzLDUyMTI3NDI5MywtMzA3MjkyNDcsMT
-IxNTEzMjUzMiwtMTM0MzE4NjA0NywxODY2MzczMDEzLC0xMTky
-Nzc0NzU1XX0=
+eyJoaXN0b3J5IjpbMTQ4ODM0NTgyMCwtNDkzMzIzNjI1LC0xMj
+c4NDY2NzcsLTk5OTAzMDMyMiwtMTcwNjczMTk5Miw5MDc4OTc3
+MjIsLTEzNDM1ODAwNzYsLTE4NzI3NTk2NTksNjc5MzMyMzY1LC
+00MDM5Nzc0NjEsLTE3MzIyMzg3OTgsMjAzNjY4NjYxMiw0Njg5
+OTAyOTYsMTI3NDk2NTg1Miw4MTc4NjE4MTMsNTIxMjc0MjkzLC
+0zMDcyOTI0NywxMjE1MTMyNTMyLC0xMzQzMTg2MDQ3LDE4NjYz
+NzMwMTNdfQ==
 -->
