@@ -96,8 +96,9 @@ You must apply the input parameters in the separate input groups.
 
 ------------
 
- - **Benefit: Using implicit values**
-	 
+ - **Benefit: Using default values**
+	you can use default values for input parameters when using multiple parameter groups.
+	
 	 
    
 
@@ -107,11 +108,11 @@ You must apply the input parameters in the separate input groups.
 		
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQxNjU5MDUyLC0xMjc4NDY2NzcsLTk5OT
-AzMDMyMiwtMTcwNjczMTk5Miw5MDc4OTc3MjIsLTEzNDM1ODAw
-NzYsLTE4NzI3NTk2NTksNjc5MzMyMzY1LC00MDM5Nzc0NjEsLT
-E3MzIyMzg3OTgsLTQ3MTY4Mjg5MSwyMDM2Njg2NjEyLDQ2ODk5
-MDI5NiwxMjc0OTY1ODUyLDgxNzg2MTgxMyw1MjEyNzQyOTMsLT
-MwNzI5MjQ3LDEyMTUxMzI1MzIsLTEzNDMxODYwNDcsMTg2NjM3
-MzAxM119
+eyJoaXN0b3J5IjpbLTQ5MzMyMzYyNSwtMTI3ODQ2Njc3LC05OT
+kwMzAzMjIsLTE3MDY3MzE5OTIsOTA3ODk3NzIyLC0xMzQzNTgw
+MDc2LC0xODcyNzU5NjU5LDY3OTMzMjM2NSwtNDAzOTc3NDYxLC
+0xNzMyMjM4Nzk4LC00NzE2ODI4OTEsMjAzNjY4NjYxMiw0Njg5
+OTAyOTYsMTI3NDk2NTg1Miw4MTc4NjE4MTMsNTIxMjc0MjkzLC
+0zMDcyOTI0NywxMjE1MTMyNTMyLC0xMzQzMTg2MDQ3LDE4NjYz
+NzMwMTNdfQ==
 -->
