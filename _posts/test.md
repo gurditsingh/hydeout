@@ -107,8 +107,7 @@ You must apply the input parameters in the separate input groups.
 	```
 	
 
-> In fun function parameter in the second parameter group can use a
-> parameter from the first parameter group as a default value.
+> In fun function parameter in the second parameter group can use a parameter from the first parameter group as a default value.
 
 	 
    
@@ -119,11 +118,11 @@ You must apply the input parameters in the separate input groups.
 		
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwMDQ2NDAzNSwxNDg4MzQ1ODIwLC00OT
-MzMjM2MjUsLTEyNzg0NjY3NywtOTk5MDMwMzIyLC0xNzA2NzMx
-OTkyLDkwNzg5NzcyMiwtMTM0MzU4MDA3NiwtMTg3Mjc1OTY1OS
-w2NzkzMzIzNjUsLTQwMzk3NzQ2MSwtMTczMjIzODc5OCwyMDM2
-Njg2NjEyLDQ2ODk5MDI5NiwxMjc0OTY1ODUyLDgxNzg2MTgxMy
-w1MjEyNzQyOTMsLTMwNzI5MjQ3LDEyMTUxMzI1MzIsLTEzNDMx
-ODYwNDddfQ==
+eyJoaXN0b3J5IjpbMzYyOTE1NzcxLDE0ODgzNDU4MjAsLTQ5Mz
+MyMzYyNSwtMTI3ODQ2Njc3LC05OTkwMzAzMjIsLTE3MDY3MzE5
+OTIsOTA3ODk3NzIyLC0xMzQzNTgwMDc2LC0xODcyNzU5NjU5LD
+Y3OTMzMjM2NSwtNDAzOTc3NDYxLC0xNzMyMjM4Nzk4LDIwMzY2
+ODY2MTIsNDY4OTkwMjk2LDEyNzQ5NjU4NTIsODE3ODYxODEzLD
+UyMTI3NDI5MywtMzA3MjkyNDcsMTIxNTEzMjUzMiwtMTM0MzE4
+NjA0N119
 -->
