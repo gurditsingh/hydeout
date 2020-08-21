@@ -92,7 +92,11 @@ You must apply the input parameters in the separate input groups.
 
 	 - **showIfTrue()** function have two parameter groups and the second parameter group declares an implicit.
 	 - **showIfTrue(10)** is called with one parameter group.
-	 - Scala knows that one of the implicit Boolean value present in the current scope (like we defined **implicit val b:Boolean = true**) otherwise throw error
+	 - Scala knows that one of the implicit Boolean value present in the current scope (like we defined **implicit val b:Boolean = true**) otherwise throw error.
+
+------------
+
+ - **Benefit: Using implicit values**
 	 
 	 
    
@@ -103,11 +107,11 @@ You must apply the input parameters in the separate input groups.
 		
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzg0NjY3NywtOTk5MDMwMzIyLC0xNz
-A2NzMxOTkyLDkwNzg5NzcyMiwtMTM0MzU4MDA3NiwtMTg3Mjc1
-OTY1OSw2NzkzMzIzNjUsLTQwMzk3NzQ2MSwtMTczMjIzODc5OC
-wtNDcxNjgyODkxLDIwMzY2ODY2MTIsNDY4OTkwMjk2LDEyNzQ5
-NjU4NTIsODE3ODYxODEzLDUyMTI3NDI5MywtMzA3MjkyNDcsMT
-IxNTEzMjUzMiwtMTM0MzE4NjA0NywxODY2MzczMDEzLC0xMTky
-Nzc0NzU1XX0=
+eyJoaXN0b3J5IjpbNjQxNjU5MDUyLC0xMjc4NDY2NzcsLTk5OT
+AzMDMyMiwtMTcwNjczMTk5Miw5MDc4OTc3MjIsLTEzNDM1ODAw
+NzYsLTE4NzI3NTk2NTksNjc5MzMyMzY1LC00MDM5Nzc0NjEsLT
+E3MzIyMzg3OTgsLTQ3MTY4Mjg5MSwyMDM2Njg2NjEyLDQ2ODk5
+MDI5NiwxMjc0OTY1ODUyLDgxNzg2MTgxMyw1MjEyNzQyOTMsLT
+MwNzI5MjQ3LDEyMTUxMzI1MzIsLTEzNDMxODYwNDcsMTg2NjM3
+MzAxM119
 -->
