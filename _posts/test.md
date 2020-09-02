@@ -1,4 +1,4 @@
-## Functions with Multiple Parameter Groups called Currying
+## Functions with Multiple Parameter Groups
 Currying splits method with multiple parameters into a chain of functions each with one parameter.
 
 ## Let's create simple example:
@@ -118,11 +118,11 @@ You must apply the input parameters in the separate input groups.
 		
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYyOTE1NzcxLDE0ODgzNDU4MjAsLTQ5Mz
-MyMzYyNSwtMTI3ODQ2Njc3LC05OTkwMzAzMjIsLTE3MDY3MzE5
-OTIsOTA3ODk3NzIyLC0xMzQzNTgwMDc2LC0xODcyNzU5NjU5LD
-Y3OTMzMjM2NSwtNDAzOTc3NDYxLC0xNzMyMjM4Nzk4LDIwMzY2
-ODY2MTIsNDY4OTkwMjk2LDEyNzQ5NjU4NTIsODE3ODYxODEzLD
-UyMTI3NDI5MywtMzA3MjkyNDcsMTIxNTEzMjUzMiwtMTM0MzE4
-NjA0N119
+eyJoaXN0b3J5IjpbNTg3NjE2NTcsMzYyOTE1NzcxLDE0ODgzND
+U4MjAsLTQ5MzMyMzYyNSwtMTI3ODQ2Njc3LC05OTkwMzAzMjIs
+LTE3MDY3MzE5OTIsOTA3ODk3NzIyLC0xMzQzNTgwMDc2LC0xOD
+cyNzU5NjU5LDY3OTMzMjM2NSwtNDAzOTc3NDYxLC0xNzMyMjM4
+Nzk4LDIwMzY2ODY2MTIsNDY4OTkwMjk2LDEyNzQ5NjU4NTIsOD
+E3ODYxODEzLDUyMTI3NDI5MywtMzA3MjkyNDcsMTIxNTEzMjUz
+Ml19
 -->
