@@ -1,5 +1,5 @@
 ## Functions with Multiple Parameter Groups
-Currying splits method with multiple parameters into a chain of functions each with one parameter.
+Scala allows defining multiple parameter lists on methods and classes.
 
 ## Let's create simple example:
 
@@ -118,11 +118,11 @@ You must apply the input parameters in the separate input groups.
 		
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUwNjc5MzMxLDU4NzYxNjU3LDM2MjkxNT
-c3MSwxNDg4MzQ1ODIwLC00OTMzMjM2MjUsLTEyNzg0NjY3Nywt
-OTk5MDMwMzIyLC0xNzA2NzMxOTkyLDkwNzg5NzcyMiwtMTM0Mz
-U4MDA3NiwtMTg3Mjc1OTY1OSw2NzkzMzIzNjUsLTQwMzk3NzQ2
-MSwtMTczMjIzODc5OCwtNDcxNjgyODkxLDIwMzY2ODY2MTIsND
-Y4OTkwMjk2LDEyNzQ5NjU4NTIsODE3ODYxODEzLDUyMTI3NDI5
+eyJoaXN0b3J5IjpbOTUzNzcxOTU4LDM1MDY3OTMzMSw1ODc2MT
+Y1NywzNjI5MTU3NzEsMTQ4ODM0NTgyMCwtNDkzMzIzNjI1LC0x
+Mjc4NDY2NzcsLTk5OTAzMDMyMiwtMTcwNjczMTk5Miw5MDc4OT
+c3MjIsLTEzNDM1ODAwNzYsLTE4NzI3NTk2NTksNjc5MzMyMzY1
+LC00MDM5Nzc0NjEsLTE3MzIyMzg3OTgsLTQ3MTY4Mjg5MSwyMD
+M2Njg2NjEyLDQ2ODk5MDI5NiwxMjc0OTY1ODUyLDgxNzg2MTgx
 M119
 -->
