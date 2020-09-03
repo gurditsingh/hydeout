@@ -69,7 +69,7 @@ You must apply the input parameters in the separate input groups.
 		In wheely both parameter groups use by-name parameters because we need to evaluate both the parameters when they required. If wheely function not receive by-name parameters its evaluate the expr (true) for the first time and the loop will run forever same is the case with second parameter(code) as well.
 		
 		**Lets write complex control structure where the database/file connection is automatically close after call:**
-		[source code for more example](https://github.com/gurditsingh/Scala-FP/blob/master/src/main/scala/scala/Curring_lesson/AutoCloseCurring.scala)
+		[source code for more example](https://github.com/gurditsingh/Scala-FP/blob/master/src/main/scala/scala/MultipleParamGroup/AutoClose.scala)
 		
 
 ------------
@@ -93,7 +93,7 @@ You must apply the input parameters in the separate input groups.
 	 - **showIfTrue()** function have two parameter groups and the second parameter group declares an implicit.
 	 - **showIfTrue(10)** is called with one parameter group.
 	 - Scala knows that one of the implicit Boolean value present in the current scope (like we defined **implicit val b:Boolean = true**) otherwise throw error.
-[source code for more example](https://github.com/gurditsingh/Scala-FP/blob/master/src/main/scala/scala/Curring_lesson/ImplicitCurring.scala)
+[source code for more example](https://github.com/gurditsingh/Scala-FP/blob/master/src/main/scala/scala/MultipleParamGroup/Implicit.scala)
 ------------
 
  - **Benefit: Using default values**
@@ -118,11 +118,11 @@ You must apply the input parameters in the separate input groups.
 		
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg3NjE2NTcsMzYyOTE1NzcxLDE0ODgzND
-U4MjAsLTQ5MzMyMzYyNSwtMTI3ODQ2Njc3LC05OTkwMzAzMjIs
-LTE3MDY3MzE5OTIsOTA3ODk3NzIyLC0xMzQzNTgwMDc2LC0xOD
-cyNzU5NjU5LDY3OTMzMjM2NSwtNDAzOTc3NDYxLC0xNzMyMjM4
-Nzk4LC00NzE2ODI4OTEsMjAzNjY4NjYxMiw0Njg5OTAyOTYsMT
-I3NDk2NTg1Miw4MTc4NjE4MTMsNTIxMjc0MjkzLC0zMDcyOTI0
-N119
+eyJoaXN0b3J5IjpbMzUwNjc5MzMxLDU4NzYxNjU3LDM2MjkxNT
+c3MSwxNDg4MzQ1ODIwLC00OTMzMjM2MjUsLTEyNzg0NjY3Nywt
+OTk5MDMwMzIyLC0xNzA2NzMxOTkyLDkwNzg5NzcyMiwtMTM0Mz
+U4MDA3NiwtMTg3Mjc1OTY1OSw2NzkzMzIzNjUsLTQwMzk3NzQ2
+MSwtMTczMjIzODc5OCwtNDcxNjgyODkxLDIwMzY2ODY2MTIsND
+Y4OTkwMjk2LDEyNzQ5NjU4NTIsODE3ODYxODEzLDUyMTI3NDI5
+M119
 -->
