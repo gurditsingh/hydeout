@@ -34,7 +34,9 @@ When a spark action is invoked, a spark job comes into existence which consists 
 
 ## What happens in the spark when we kick off the exploration ?
 
- - Spark Creates separate two 
+ - Spark creates separate two jobs. One job for Joining the data and another for grouping the data. 
+ - Spark runs the jobs serially.
+ - 
 
 **It does not mean spark cannot run concurrent jobs**
 By running concurrent jobs with a single spark session, will not only maximise the resource utilisation but also reduce application time and cost drastically. Furthermore, if we have adequate resources and these jobs do not have any interlink between them then it does not make sense to execute them in a loop or as a different spark applications.
@@ -51,11 +53,11 @@ By running concurrent jobs with a single spark session, will not only maximise t
 > that action.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4MTE0NDA0LDIwMTY5MTExNzAsMTYxMD
-E4Nzc1NSwtNjE4NTc2NzM1LC0xODA1NjA5MDQ3LC03NDczMDQ0
-MDUsLTE5NjUyMDY2MywtMjA4ODc0NjYxMiwtMTAzMzU3NzE3MC
-w5NTM3NzE5NTgsMzUwNjc5MzMxLDU4NzYxNjU3LDM2MjkxNTc3
-MSwxNDg4MzQ1ODIwLC00OTMzMjM2MjUsLTEyNzg0NjY3NywtOT
-k5MDMwMzIyLC0xNzA2NzMxOTkyLDkwNzg5NzcyMiwtMTM0MzU4
-MDA3Nl19
+eyJoaXN0b3J5IjpbLTI1MDQxNTY2MSwyMDE2OTExMTcwLDE2MT
+AxODc3NTUsLTYxODU3NjczNSwtMTgwNTYwOTA0NywtNzQ3MzA0
+NDA1LC0xOTY1MjA2NjMsLTIwODg3NDY2MTIsLTEwMzM1NzcxNz
+AsOTUzNzcxOTU4LDM1MDY3OTMzMSw1ODc2MTY1NywzNjI5MTU3
+NzEsMTQ4ODM0NTgyMCwtNDkzMzIzNjI1LC0xMjc4NDY2NzcsLT
+k5OTAzMDMyMiwtMTcwNjczMTk5Miw5MDc4OTc3MjIsLTEzNDM1
+ODAwNzZdfQ==
 -->
