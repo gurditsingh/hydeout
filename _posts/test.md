@@ -123,7 +123,7 @@ The fair scheduler also supports grouping jobs into _pools_, and setting differe
 ```scala
     val spark=SparkSession
       .builder()
-      .config("spark.scheduler.mode","")
+      .config("spark.scheduler.mode","FAIR")
       .config("spark.scheduler.allocation.file","scheduler.xml")
       .master("local")
       .getOrCreate()
@@ -132,11 +132,11 @@ The fair scheduler also supports grouping jobs into _pools_, and setting differe
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODcyMzUwMjMsMTM3MDcwMzI0NSwxMD
-c3MjYyMjU5LDI1NjYyMDg0NCwxMDk2MTUyNjksLTM5NzczNzkz
-NSwyMDE2OTExMTcwLC0xMzEwNDAxOTAwLDE2MTAxODc3NTUsLT
-YxODU3NjczNSwtMTgwNTYwOTA0NywtNzQ3MzA0NDA1LC0xOTY1
-MjA2NjMsLTIwODg3NDY2MTIsLTEwMzM1NzcxNzAsOTUzNzcxOT
-U4LDM1MDY3OTMzMSw1ODc2MTY1NywzNjI5MTU3NzEsMTQ4ODM0
-NTgyMF19
+eyJoaXN0b3J5IjpbMTYxMjIzMzU1NywxMzcwNzAzMjQ1LDEwNz
+cyNjIyNTksMjU2NjIwODQ0LDEwOTYxNTI2OSwtMzk3NzM3OTM1
+LDIwMTY5MTExNzAsLTEzMTA0MDE5MDAsMTYxMDE4Nzc1NSwtNj
+E4NTc2NzM1LC0xODA1NjA5MDQ3LC03NDczMDQ0MDUsLTE5NjUy
+MDY2MywtMjA4ODc0NjYxMiwtMTAzMzU3NzE3MCw5NTM3NzE5NT
+gsMzUwNjc5MzMxLDU4NzYxNjU3LDM2MjkxNTc3MSwxNDg4MzQ1
+ODIwXX0=
 -->
