@@ -48,13 +48,45 @@ Spark can run multiple parallel jobs simultaneously. By running concurrent jobs 
 ## Parallel job submission:
 
 To achieve concurrency at job level, we can leverage Scala concurrency features called [_Scala Futures_](https://docs.scala-lang.org/overviews/core/futures.html). Lets rework our above code using Scala futures to parallelize the job submission.
+```scala
+def run(args: Array[String]): Unit = {
+
+    val spark=SparkSession
+      .builder()
+      .master(args(0))
+      .getOrCreate()
+
+    val NFShow=loadNetflixTVShowData(spark)
+
+    val NFActor=loadNetflixActorData(spark)
+
+    println("Joining up the Actors and TV shows")
+    val joinFuture=Future {
+      NFShow.join(NFActor, NFActor.col("actor_id") === NFShow.col("actor_id"), "inner")
+        .take(10)
+        .foreach(println)
+    }
+    println("Grouping TV shows genre and calculating the count")
+    val groupFuture=Future {
+      NFShow.groupBy(NFShow.col("genre"))
+        .count()
+        .take(10)
+        .foreach(println)
+    }
+
+    Await.ready(joinFuture,Duration.Inf)
+    Await.ready(groupFuture,Duration.Inf)
+
+  }
+```
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5NzczNzkzNSwyMDE2OTExMTcwLDE2MT
-AxODc3NTUsLTYxODU3NjczNSwtMTgwNTYwOTA0NywtNzQ3MzA0
-NDA1LC0xOTY1MjA2NjMsLTIwODg3NDY2MTIsLTEwMzM1NzcxNz
-AsOTUzNzcxOTU4LDM1MDY3OTMzMSw1ODc2MTY1NywzNjI5MTU3
-NzEsMTQ4ODM0NTgyMCwtNDkzMzIzNjI1LC0xMjc4NDY2NzcsLT
-k5OTAzMDMyMiwtMTcwNjczMTk5Miw5MDc4OTc3MjIsLTEzNDM1
-ODAwNzZdfQ==
+eyJoaXN0b3J5IjpbMTA5NjE1MjY5LC0zOTc3Mzc5MzUsMjAxNj
+kxMTE3MCwxNjEwMTg3NzU1LC02MTg1NzY3MzUsLTE4MDU2MDkw
+NDcsLTc0NzMwNDQwNSwtMTk2NTIwNjYzLC0yMDg4NzQ2NjEyLC
+0xMDMzNTc3MTcwLDk1Mzc3MTk1OCwzNTA2NzkzMzEsNTg3NjE2
+NTcsMzYyOTE1NzcxLDE0ODgzNDU4MjAsLTQ5MzMyMzYyNSwtMT
+I3ODQ2Njc3LC05OTkwMzAzMjIsLTE3MDY3MzE5OTIsOTA3ODk3
+NzIyXX0=
 -->
