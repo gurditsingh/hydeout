@@ -1,5 +1,5 @@
 Apache Spark already performs data processing in parallel, what’s new in it. If this is the case, please allow me to give an idea about spark job — It is a parallel computation which gets created once a spark action is invoked in an application. Apart from this, it is a known fact that by default, Apache Spark runs multiple tasks among each executor to achieve parallelism, however, it is not true at job level. In other words, once a spark action is invoked, a spark job comes into existence which consists of one or more stages and further these stages are broken down into numerous tasks which are worked upon by the executors in parallel. **Hence, at a time, Spark runs multiple tasks in parallel but not multiple jobs.**
-
+  
 
 **Spark runs multiple tasks in parallel but not multiple jobs:**
 When a spark action is invoked, a spark job comes into existence which consists of one or more stages and further these stages are broken down into numerous tasks which are worked upon by the executors in parallel but spark not run multiple jobs in parallel when multiple action are called.**
@@ -133,11 +133,11 @@ The fair scheduler also supports grouping jobs into _pools_, and setting differe
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM3MjE4Mzg3LDEzNzA3MDMyNDUsMTA3Nz
-I2MjI1OSwyNTY2MjA4NDQsMTA5NjE1MjY5LC0zOTc3Mzc5MzUs
-MjAxNjkxMTE3MCwtMTMxMDQwMTkwMCwxNjEwMTg3NzU1LC02MT
-g1NzY3MzUsLTE4MDU2MDkwNDcsLTc0NzMwNDQwNSwtMTk2NTIw
-NjYzLC0yMDg4NzQ2NjEyLC0xMDMzNTc3MTcwLDk1Mzc3MTk1OC
-wzNTA2NzkzMzEsNTg3NjE2NTcsMzYyOTE1NzcxLDE0ODgzNDU4
-MjBdfQ==
+eyJoaXN0b3J5IjpbNTI1MTYzMDkxLDYzNzIxODM4NywxMzcwNz
+AzMjQ1LDEwNzcyNjIyNTksMjU2NjIwODQ0LDEwOTYxNTI2OSwt
+Mzk3NzM3OTM1LDIwMTY5MTExNzAsLTEzMTA0MDE5MDAsMTYxMD
+E4Nzc1NSwtNjE4NTc2NzM1LC0xODA1NjA5MDQ3LC03NDczMDQ0
+MDUsLTE5NjUyMDY2MywtMjA4ODc0NjYxMiwtMTAzMzU3NzE3MC
+w5NTM3NzE5NTgsMzUwNjc5MzMxLDU4NzYxNjU3LDM2MjkxNTc3
+MV19
 -->
