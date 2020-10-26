@@ -118,9 +118,11 @@ Running concurrent jobs in spark application bring positive results and boost pe
   </pool>
 </allocations>
 ```
-The fair scheduler also supports grouping jobs into _pools_, and setting different scheduling options (e.g. weight) for each pool. This can be useful to create a “high-priority” pool for more important jobs,
+**Creates pools in Fair Scheduler:**
+The fair scheduler also supports grouping jobs into _pools_, and setting different scheduling options (e.g. weight) for each pool. This can be useful to create a “high-priority” pool for more important jobs.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2NTc4NjM2NSwyNTY2MjA4NDQsMTA5Nj
+eyJoaXN0b3J5IjpbMTA3NzI2MjI1OSwyNTY2MjA4NDQsMTA5Nj
 E1MjY5LC0zOTc3Mzc5MzUsMjAxNjkxMTE3MCwtMTMxMDQwMTkw
 MCwxNjEwMTg3NzU1LC02MTg1NzY3MzUsLTE4MDU2MDkwNDcsLT
 c0NzMwNDQwNSwtMTk2NTIwNjYzLC0yMDg4NzQ2NjEyLC0xMDMz
