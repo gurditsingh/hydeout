@@ -94,7 +94,7 @@ Running concurrent jobs in spark application bring positive results and boost pe
 ```scala
  val spark=SparkSession
       .builder()
-      .config("spark.scheduler.mode","")
+      .config("spark.scheduler.mode","FAIR")
       .config("spark.scheduler.allocation.file","scheduler.xml")
       .master("local")
       .getOrCreate()
@@ -132,11 +132,11 @@ The fair scheduler also supports grouping jobs into _pools_, and setting differe
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MDcwMzI0NSwxMDc3MjYyMjU5LDI1Nj
-YyMDg0NCwxMDk2MTUyNjksLTM5NzczNzkzNSwyMDE2OTExMTcw
-LC0xMzEwNDAxOTAwLDE2MTAxODc3NTUsLTYxODU3NjczNSwtMT
-gwNTYwOTA0NywtNzQ3MzA0NDA1LC0xOTY1MjA2NjMsLTIwODg3
-NDY2MTIsLTEwMzM1NzcxNzAsOTUzNzcxOTU4LDM1MDY3OTMzMS
-w1ODc2MTY1NywzNjI5MTU3NzEsMTQ4ODM0NTgyMCwtNDkzMzIz
-NjI1XX0=
+eyJoaXN0b3J5IjpbLTEwODcyMzUwMjMsMTM3MDcwMzI0NSwxMD
+c3MjYyMjU5LDI1NjYyMDg0NCwxMDk2MTUyNjksLTM5NzczNzkz
+NSwyMDE2OTExMTcwLC0xMzEwNDAxOTAwLDE2MTAxODc3NTUsLT
+YxODU3NjczNSwtMTgwNTYwOTA0NywtNzQ3MzA0NDA1LC0xOTY1
+MjA2NjMsLTIwODg3NDY2MTIsLTEwMzM1NzcxNzAsOTUzNzcxOT
+U4LDM1MDY3OTMzMSw1ODc2MTY1NywzNjI5MTU3NzEsMTQ4ODM0
+NTgyMF19
 -->
