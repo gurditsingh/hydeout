@@ -5,7 +5,9 @@ When a spark action is invoked, a spark job comes into existence which consists 
 
 **NOTE: We used the word ‘job’ for ‘spark action’.**
 
-**Let's do some Data Exploration (EDA) :** Let's create simple spark batch job to do some data exploration. We have Netflix sample data with Actors and TV Shows.
+## **Let's do some Data Exploration (EDA) :**
+
+ Let's create simple spark batch job to do some data exploration. We have Netflix sample data with Actors and TV Shows.
 ```scala
  def run(args: Array[String]): Unit = {
 
@@ -82,11 +84,11 @@ def run(args: Array[String]): Unit = {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NjE1MjY5LC0zOTc3Mzc5MzUsMjAxNj
-kxMTE3MCwxNjEwMTg3NzU1LC02MTg1NzY3MzUsLTE4MDU2MDkw
-NDcsLTc0NzMwNDQwNSwtMTk2NTIwNjYzLC0yMDg4NzQ2NjEyLC
-0xMDMzNTc3MTcwLDk1Mzc3MTk1OCwzNTA2NzkzMzEsNTg3NjE2
-NTcsMzYyOTE1NzcxLDE0ODgzNDU4MjAsLTQ5MzMyMzYyNSwtMT
-I3ODQ2Njc3LC05OTkwMzAzMjIsLTE3MDY3MzE5OTIsOTA3ODk3
-NzIyXX0=
+eyJoaXN0b3J5IjpbMTg2Mjc5MzM4NywxMDk2MTUyNjksLTM5Nz
+czNzkzNSwyMDE2OTExMTcwLDE2MTAxODc3NTUsLTYxODU3Njcz
+NSwtMTgwNTYwOTA0NywtNzQ3MzA0NDA1LC0xOTY1MjA2NjMsLT
+IwODg3NDY2MTIsLTEwMzM1NzcxNzAsOTUzNzcxOTU4LDM1MDY3
+OTMzMSw1ODc2MTY1NywzNjI5MTU3NzEsMTQ4ODM0NTgyMCwtND
+kzMzIzNjI1LC0xMjc4NDY2NzcsLTk5OTAzMDMyMiwtMTcwNjcz
+MTk5Ml19
 -->
