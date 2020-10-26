@@ -102,13 +102,29 @@ Running concurrent jobs in spark application bring positive results and boost pe
 
  **Create a new Spark FAIR Scheduler pool :**
  There is more than one way to create FAIR pools. In this example, we will create a new file with the following content and save this file to the file system so we can reference it later.
- 
+```xml
+<?xml version="1.0"?>
+
+<allocations>
+  <pool name="fair_pool">
+    <schedulingMode>FAIR</schedulingMode>
+    <weight>2</weight>
+    <minShare>4</minShare>
+  </pool>
+  <pool name="a_different_pool">
+    <schedulingMode>FIFO</schedulingMode>
+    <weight>1</weight>
+    <minShare>2</minShare>
+  </pool>
+</allocations>
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMjE2NzY3OSwyNTY2MjA4NDQsMTA5Nj
-E1MjY5LC0zOTc3Mzc5MzUsMjAxNjkxMTE3MCwxNjEwMTg3NzU1
-LC02MTg1NzY3MzUsLTE4MDU2MDkwNDcsLTc0NzMwNDQwNSwtMT
-k2NTIwNjYzLC0yMDg4NzQ2NjEyLC0xMDMzNTc3MTcwLDk1Mzc3
-MTk1OCwzNTA2NzkzMzEsNTg3NjE2NTcsMzYyOTE1NzcxLDE0OD
-gzNDU4MjAsLTQ5MzMyMzYyNSwtMTI3ODQ2Njc3LC05OTkwMzAz
-MjJdfQ==
+eyJoaXN0b3J5IjpbLTE5MDY2Njg4NTAsMjU2NjIwODQ0LDEwOT
+YxNTI2OSwtMzk3NzM3OTM1LDIwMTY5MTExNzAsMTYxMDE4Nzc1
+NSwtNjE4NTc2NzM1LC0xODA1NjA5MDQ3LC03NDczMDQ0MDUsLT
+E5NjUyMDY2MywtMjA4ODc0NjYxMiwtMTAzMzU3NzE3MCw5NTM3
+NzE5NTgsMzUwNjc5MzMxLDU4NzYxNjU3LDM2MjkxNTc3MSwxND
+g4MzQ1ODIwLC00OTMzMjM2MjUsLTEyNzg0NjY3NywtOTk5MDMw
+MzIyXX0=
 -->
