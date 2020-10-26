@@ -81,14 +81,18 @@ def run(args: Array[String]): Unit = {
 
   }
 ```
-
+ **What happens in the spark when we kick off the reworked exploration ?**
+  
+- Spark creates separate two jobs. One job for Joining the data and another for grouping the data. 
+-   Spark runs the jobs parallel.
+  - Jobs are independent from each but spark runs in serially.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc1OTYxMzIzLDEwOTYxNTI2OSwtMzk3Nz
-M3OTM1LDIwMTY5MTExNzAsLTEzMTA0MDE5MDAsMTYxMDE4Nzc1
-NSwtNjE4NTc2NzM1LC0xODA1NjA5MDQ3LC03NDczMDQ0MDUsLT
-E5NjUyMDY2MywtMjA4ODc0NjYxMiwtMTAzMzU3NzE3MCw5NTM3
-NzE5NTgsMzUwNjc5MzMxLDU4NzYxNjU3LDM2MjkxNTc3MSwxND
-g4MzQ1ODIwLC00OTMzMjM2MjUsLTEyNzg0NjY3NywtOTk5MDMw
-MzIyXX0=
+eyJoaXN0b3J5IjpbLTE0OTczNjE3NDgsMTA5NjE1MjY5LC0zOT
+c3Mzc5MzUsMjAxNjkxMTE3MCwtMTMxMDQwMTkwMCwxNjEwMTg3
+NzU1LC02MTg1NzY3MzUsLTE4MDU2MDkwNDcsLTc0NzMwNDQwNS
+wtMTk2NTIwNjYzLC0yMDg4NzQ2NjEyLC0xMDMzNTc3MTcwLDk1
+Mzc3MTk1OCwzNTA2NzkzMzEsNTg3NjE2NTcsMzYyOTE1NzcxLD
+E0ODgzNDU4MjAsLTQ5MzMyMzYyNSwtMTI3ODQ2Njc3LC05OTkw
+MzAzMjJdfQ==
 -->
