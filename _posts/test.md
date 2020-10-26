@@ -1,8 +1,7 @@
 **Spark runs multiple tasks in parallel but not multiple jobs**
 
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTI5MDk1NSwtMjA4ODc0NjYxMiwtMT
+eyJoaXN0b3J5IjpbMTIyMjMzOTM5OSwtMjA4ODc0NjYxMiwtMT
 AzMzU3NzE3MCw5NTM3NzE5NTgsMzUwNjc5MzMxLDU4NzYxNjU3
 LDM2MjkxNTc3MSwxNDg4MzQ1ODIwLC00OTMzMjM2MjUsLTEyNz
 g0NjY3NywtOTk5MDMwMzIyLC0xNzA2NzMxOTkyLDkwNzg5Nzcy
