@@ -85,14 +85,16 @@ def run(args: Array[String]): Unit = {
   
 - Spark creates separate two jobs. One job for Joining the data and another for grouping the data. 
 -   Spark runs the jobs parallel.
-  - Jobs are independent from each but spark runs in serially.
+  - Jobs are independent from each other and spark runs in concurrently .
+  
+  Some Scala Futures would not help
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTczNjE3NDgsMTA5NjE1MjY5LC0zOT
-c3Mzc5MzUsMjAxNjkxMTE3MCwxNjEwMTg3NzU1LC02MTg1NzY3
-MzUsLTE4MDU2MDkwNDcsLTc0NzMwNDQwNSwtMTk2NTIwNjYzLC
-0yMDg4NzQ2NjEyLC0xMDMzNTc3MTcwLDk1Mzc3MTk1OCwzNTA2
-NzkzMzEsNTg3NjE2NTcsMzYyOTE1NzcxLDE0ODgzNDU4MjAsLT
-Q5MzMyMzYyNSwtMTI3ODQ2Njc3LC05OTkwMzAzMjIsLTE3MDY3
-MzE5OTJdfQ==
+eyJoaXN0b3J5IjpbNDc3NzIxNjkwLDEwOTYxNTI2OSwtMzk3Nz
+M3OTM1LDIwMTY5MTExNzAsMTYxMDE4Nzc1NSwtNjE4NTc2NzM1
+LC0xODA1NjA5MDQ3LC03NDczMDQ0MDUsLTE5NjUyMDY2MywtMj
+A4ODc0NjYxMiwtMTAzMzU3NzE3MCw5NTM3NzE5NTgsMzUwNjc5
+MzMxLDU4NzYxNjU3LDM2MjkxNTc3MSwxNDg4MzQ1ODIwLC00OT
+MzMjM2MjUsLTEyNzg0NjY3NywtOTk5MDMwMzIyLC0xNzA2NzMx
+OTkyXX0=
 -->
