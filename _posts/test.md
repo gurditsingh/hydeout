@@ -38,22 +38,16 @@ When a spark action is invoked, a spark job comes into existence which consists 
  - Spark runs the jobs serially.
  - Jobs are independent from each but spark runs in serially.
 
-## Can spark runs the above jobs at the same time ?
-Spark can run multiple parallel jobs can run simultaneously By running concurrent jobs with a single spark session, will not only maximise the resource utilisation but also reduce application time and cost drastically. Furthermore, if we have adequate resources and these jobs do not have any interlink between them then it does not make sense to execute them in a loop or as a different spark applications.
-
-
-
-
-
-
-
+## Can spark run the above jobs at the same time ?
+Spark can run multiple parallel jobs simultaneously. By running concurrent jobs with a single spark session, will not only maximise the resource utilisation but also reduce application time and cost drastically. Furthermore, if we have adequate resources and these jobs do not have any interlink between them then it does not make sense to execute them in a loop or as a different spark applications.
 > Multiple parallel jobs can run simultaneously if they were submitted from
 > separate threads. By “job”, in this section, we mean a Spark action
 > (e.g. `save`, `collect`) and any tasks that need to run to evaluate
 > that action.
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0ODk1ODgzLDIwMTY5MTExNzAsLTEzMT
+eyJoaXN0b3J5IjpbNDQ0NDM4MTQxLDIwMTY5MTExNzAsLTEzMT
 A0MDE5MDAsMTYxMDE4Nzc1NSwtNjE4NTc2NzM1LC0xODA1NjA5
 MDQ3LC03NDczMDQ0MDUsLTE5NjUyMDY2MywtMjA4ODc0NjYxMi
 wtMTAzMzU3NzE3MCw5NTM3NzE5NTgsMzUwNjc5MzMxLDU4NzYx
