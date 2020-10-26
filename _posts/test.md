@@ -39,10 +39,6 @@ When a spark action is invoked, a spark job comes into existence which consists 
  - Jobs are independent from each but spark runs in serially.
 
 ## Can spark runs the above jobs at the same time ?
-
-
-
-**It does not mean spark cannot run concurrent jobs**
 By running concurrent jobs with a single spark session, will not only maximise the resource utilisation but also reduce application time and cost drastically. Furthermore, if we have adequate resources and these jobs do not have any interlink between them then it does not make sense to execute them in a loop or as a different spark applications.
 
 
@@ -57,11 +53,11 @@ By running concurrent jobs with a single spark session, will not only maximise t
 > that action.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NjM2NTIzLDIwMTY5MTExNzAsLTEzMT
-A0MDE5MDAsMTYxMDE4Nzc1NSwtNjE4NTc2NzM1LC0xODA1NjA5
-MDQ3LC03NDczMDQ0MDUsLTE5NjUyMDY2MywtMjA4ODc0NjYxMi
-wtMTAzMzU3NzE3MCw5NTM3NzE5NTgsMzUwNjc5MzMxLDU4NzYx
-NjU3LDM2MjkxNTc3MSwxNDg4MzQ1ODIwLC00OTMzMjM2MjUsLT
-EyNzg0NjY3NywtOTk5MDMwMzIyLC0xNzA2NzMxOTkyLDkwNzg5
-NzcyMl19
+eyJoaXN0b3J5IjpbMTI5MzM4OTk4OSwyMDE2OTExMTcwLC0xMz
+EwNDAxOTAwLDE2MTAxODc3NTUsLTYxODU3NjczNSwtMTgwNTYw
+OTA0NywtNzQ3MzA0NDA1LC0xOTY1MjA2NjMsLTIwODg3NDY2MT
+IsLTEwMzM1NzcxNzAsOTUzNzcxOTU4LDM1MDY3OTMzMSw1ODc2
+MTY1NywzNjI5MTU3NzEsMTQ4ODM0NTgyMCwtNDkzMzIzNjI1LC
+0xMjc4NDY2NzcsLTk5OTAzMDMyMiwtMTcwNjczMTk5Miw5MDc4
+OTc3MjJdfQ==
 -->
