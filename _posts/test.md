@@ -32,6 +32,7 @@ When a spark action is invoked, a spark job comes into existence which consists 
   }
 ``` 
 
+## What happens in the spark when we kick off the exploration ?
 
 
 
@@ -56,7 +57,7 @@ By running concurrent jobs with a single spark session, will not only maximise t
 > that action.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3Mzk3ODQ4NiwyMDE2OTExMTcwLC0xMz
+eyJoaXN0b3J5IjpbMTY0ODM5MjkyNiwyMDE2OTExMTcwLC0xMz
 EwNDAxOTAwLDE2MTAxODc3NTUsLTYxODU3NjczNSwtMTgwNTYw
 OTA0NywtNzQ3MzA0NDA1LC0xOTY1MjA2NjMsLTIwODg3NDY2MT
 IsLTEwMzM1NzcxNzAsOTUzNzcxOTU4LDM1MDY3OTMzMSw1ODc2
