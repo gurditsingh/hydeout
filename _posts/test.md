@@ -5,7 +5,8 @@ When a spark action is invoked, a spark job comes into existence which consists 
 
 **NOTE: We used the word ‘job’ for ‘spark action’.**
 
-**Let's do some Data Exploration (EDA) :** Let's create simple spark batch job to do some data exploration. We have Netflix sample data with Actors and TV Shows. 
+**Let's do some Data Exploration (EDA) :** Let's create simple spark batch job to do some data exploration. We have Netflix sample data with Actors and TV Shows.
+ 
 
 
 
@@ -31,11 +32,11 @@ By running concurrent jobs with a single spark session, will not only maximise t
 > that action.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTA0MDE5MDAsMTYxMDE4Nzc1NSwtNj
-E4NTc2NzM1LC0xODA1NjA5MDQ3LC03NDczMDQ0MDUsLTE5NjUy
-MDY2MywtMjA4ODc0NjYxMiwtMTAzMzU3NzE3MCw5NTM3NzE5NT
-gsMzUwNjc5MzMxLDU4NzYxNjU3LDM2MjkxNTc3MSwxNDg4MzQ1
-ODIwLC00OTMzMjM2MjUsLTEyNzg0NjY3NywtOTk5MDMwMzIyLC
-0xNzA2NzMxOTkyLDkwNzg5NzcyMiwtMTM0MzU4MDA3NiwtMTg3
-Mjc1OTY1OV19
+eyJoaXN0b3J5IjpbMjAxNjkxMTE3MCwtMTMxMDQwMTkwMCwxNj
+EwMTg3NzU1LC02MTg1NzY3MzUsLTE4MDU2MDkwNDcsLTc0NzMw
+NDQwNSwtMTk2NTIwNjYzLC0yMDg4NzQ2NjEyLC0xMDMzNTc3MT
+cwLDk1Mzc3MTk1OCwzNTA2NzkzMzEsNTg3NjE2NTcsMzYyOTE1
+NzcxLDE0ODgzNDU4MjAsLTQ5MzMyMzYyNSwtMTI3ODQ2Njc3LC
+05OTkwMzAzMjIsLTE3MDY3MzE5OTIsOTA3ODk3NzIyLC0xMzQz
+NTgwMDc2XX0=
 -->
