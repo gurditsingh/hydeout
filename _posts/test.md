@@ -100,15 +100,16 @@ Running concurrent jobs in spark application bring positive results and boost pe
       .getOrCreate()
 ```
 
- **Create a new Spark FAIR Scheduler pool**
+ **Create a new Spark FAIR Scheduler pool :**
+ There is more than one way to create FAIR pools. In this example, we will create a new file with the following content and save this file to the file system so we can reference it later.
  
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTY5NzAzODgsMjU2NjIwODQ0LDEwOT
-YxNTI2OSwtMzk3NzM3OTM1LDIwMTY5MTExNzAsLTEzMTA0MDE5
-MDAsMTYxMDE4Nzc1NSwtNjE4NTc2NzM1LC0xODA1NjA5MDQ3LC
-03NDczMDQ0MDUsLTE5NjUyMDY2MywtMjA4ODc0NjYxMiwtMTAz
-MzU3NzE3MCw5NTM3NzE5NTgsMzUwNjc5MzMxLDU4NzYxNjU3LD
-M2MjkxNTc3MSwxNDg4MzQ1ODIwLC00OTMzMjM2MjUsLTEyNzg0
-NjY3N119
+eyJoaXN0b3J5IjpbMjEyMzI3NTgxMywyNTY2MjA4NDQsMTA5Nj
+E1MjY5LC0zOTc3Mzc5MzUsMjAxNjkxMTE3MCwtMTMxMDQwMTkw
+MCwxNjEwMTg3NzU1LC02MTg1NzY3MzUsLTE4MDU2MDkwNDcsLT
+c0NzMwNDQwNSwtMTk2NTIwNjYzLC0yMDg4NzQ2NjEyLC0xMDMz
+NTc3MTcwLDk1Mzc3MTk1OCwzNTA2NzkzMzEsNTg3NjE2NTcsMz
+YyOTE1NzcxLDE0ODgzNDU4MjAsLTQ5MzMyMzYyNSwtMTI3ODQ2
+Njc3XX0=
 -->
