@@ -120,13 +120,23 @@ Running concurrent jobs in spark application bring positive results and boost pe
 ```
 **Creates pools in Fair Scheduler:**
 The fair scheduler also supports grouping jobs into _pools_, and setting different scheduling options (e.g. weight) for each pool. This can be useful to create a “high-priority” pool for more important jobs.
+```scala
+    val spark=SparkSession
+      .builder()
+      .config("spark.scheduler.mode","")
+      .config("spark.scheduler.allocation.file","scheduler.xml")
+      .master("local")
+      .getOrCreate()
 
+    spark.sparkContext.setLocalProperty("spark.scheduler.pool","poolA")
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NzI2MjI1OSwyNTY2MjA4NDQsMTA5Nj
-E1MjY5LC0zOTc3Mzc5MzUsMjAxNjkxMTE3MCwtMTMxMDQwMTkw
-MCwxNjEwMTg3NzU1LC02MTg1NzY3MzUsLTE4MDU2MDkwNDcsLT
-c0NzMwNDQwNSwtMTk2NTIwNjYzLC0yMDg4NzQ2NjEyLC0xMDMz
-NTc3MTcwLDk1Mzc3MTk1OCwzNTA2NzkzMzEsNTg3NjE2NTcsMz
-YyOTE1NzcxLDE0ODgzNDU4MjAsLTQ5MzMyMzYyNSwtMTI3ODQ2
-Njc3XX0=
+eyJoaXN0b3J5IjpbLTQ3OTgxNzYyOSwxMDc3MjYyMjU5LDI1Nj
+YyMDg0NCwxMDk2MTUyNjksLTM5NzczNzkzNSwyMDE2OTExMTcw
+LC0xMzEwNDAxOTAwLDE2MTAxODc3NTUsLTYxODU3NjczNSwtMT
+gwNTYwOTA0NywtNzQ3MzA0NDA1LC0xOTY1MjA2NjMsLTIwODg3
+NDY2MTIsLTEwMzM1NzcxNzAsOTUzNzcxOTU4LDM1MDY3OTMzMS
+w1ODc2MTY1NywzNjI5MTU3NzEsMTQ4ODM0NTgyMCwtNDkzMzIz
+NjI1XX0=
 -->
