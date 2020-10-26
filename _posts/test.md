@@ -47,9 +47,10 @@ Spark can run multiple parallel jobs simultaneously. By running concurrent jobs 
 
 ## Parallel job submission:
 
-To achieve concurrency at job level, we can leverage Scala concurrency features called [_Scala Futures_](https://docs.scala-lang.org/overviews/core/futures.html). Lets 
+To achieve concurrency at job level, we can leverage Scala concurrency features called [_Scala Futures_](https://docs.scala-lang.org/overviews/core/futures.html). Lets rework our above code using Scala futures to parallelize the job submission.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NzU0NzE5OSwyMDE2OTExMTcwLDE2MT
+eyJoaXN0b3J5IjpbLTM5NzczNzkzNSwyMDE2OTExMTcwLDE2MT
 AxODc3NTUsLTYxODU3NjczNSwtMTgwNTYwOTA0NywtNzQ3MzA0
 NDA1LC0xOTY1MjA2NjMsLTIwODg3NDY2MTIsLTEwMzM1NzcxNz
 AsOTUzNzcxOTU4LDM1MDY3OTMzMSw1ODc2MTY1NywzNjI5MTU3
