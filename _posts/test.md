@@ -64,7 +64,7 @@ def run(args: Array[String]): Unit = {
 
     println("Joining up the Actors and TV shows")
     val joinFuture=Future {
-      NFShow.join(NFActor, NFActor.col("actor_id") === NFShow.col("actor_id"), "inner")
+      NFActor.join(NFShow, NFActor.col("actor_id") === NFShow.col("actor_id"), "inner")
         .take(10)
         .foreach(println)
     }
@@ -132,7 +132,7 @@ The fair scheduler also supports grouping jobs into _pools_, and setting differe
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3OTgxNzYyOSwyNTY2MjA4NDQsMTA5Nj
+eyJoaXN0b3J5IjpbMTM3MDcwMzI0NSwyNTY2MjA4NDQsMTA5Nj
 E1MjY5LC0zOTc3Mzc5MzUsMjAxNjkxMTE3MCwxNjEwMTg3NzU1
 LC02MTg1NzY3MzUsLTE4MDU2MDkwNDcsLTc0NzMwNDQwNSwtMT
 k2NTIwNjYzLC0yMDg4NzQ2NjEyLC0xMDMzNTc3MTcwLDk1Mzc3
