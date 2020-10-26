@@ -6,7 +6,31 @@ When a spark action is invoked, a spark job comes into existence which consists 
 **NOTE: We used the word ‘job’ for ‘spark action’.**
 
 **Let's do some Data Exploration (EDA) :** Let's create simple spark batch job to do some data exploration. We have Netflix sample data with Actors and TV Shows.
- 
+```scala
+ def run(args: Array[String]): Unit = {
+
+    val spark=SparkSession
+      .builder()
+      .master(args(0))
+      .getOrCreate()
+
+    val NFShow=loadNetflixTVShowData(spark)
+
+    val NFActor=loadNetflixActorData(spark)
+
+    println("Joining up the Actors and TV shows")
+    NFShow.join(NFActor,NFActor.col("actor_id") === NFShow.col("actor_id"),"inner")
+      .take(10)
+      .foreach(println)
+
+    println("Grouping TV shows genre and calculating the count")
+    NFShow.groupBy(NFShow.col("genre"))
+      .count()
+      .take(10)
+      .foreach(println)
+
+  }
+``` 
 
 
 
@@ -32,11 +56,11 @@ By running concurrent jobs with a single spark session, will not only maximise t
 > that action.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNjkxMTE3MCwxNjEwMTg3NzU1LC02MT
-g1NzY3MzUsLTE4MDU2MDkwNDcsLTc0NzMwNDQwNSwtMTk2NTIw
-NjYzLC0yMDg4NzQ2NjEyLC0xMDMzNTc3MTcwLDk1Mzc3MTk1OC
-wzNTA2NzkzMzEsNTg3NjE2NTcsMzYyOTE1NzcxLDE0ODgzNDU4
-MjAsLTQ5MzMyMzYyNSwtMTI3ODQ2Njc3LC05OTkwMzAzMjIsLT
-E3MDY3MzE5OTIsOTA3ODk3NzIyLC0xMzQzNTgwMDc2LC0xODcy
-NzU5NjU5XX0=
+eyJoaXN0b3J5IjpbLTM3Mzk3ODQ4NiwyMDE2OTExMTcwLDE2MT
+AxODc3NTUsLTYxODU3NjczNSwtMTgwNTYwOTA0NywtNzQ3MzA0
+NDA1LC0xOTY1MjA2NjMsLTIwODg3NDY2MTIsLTEwMzM1NzcxNz
+AsOTUzNzcxOTU4LDM1MDY3OTMzMSw1ODc2MTY1NywzNjI5MTU3
+NzEsMTQ4ODM0NTgyMCwtNDkzMzIzNjI1LC0xMjc4NDY2NzcsLT
+k5OTAzMDMyMiwtMTcwNjczMTk5Miw5MDc4OTc3MjIsLTEzNDM1
+ODAwNzZdfQ==
 -->
