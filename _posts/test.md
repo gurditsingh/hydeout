@@ -5,16 +5,36 @@ When a spark action is invoked, a spark job comes into existence which consists 
 
 **NOTE: We used the word ‘job’ for ‘spark action’.**
 
+
+
+
+
+
+
+
+
+
+
 **It does not mean spark cannot run concurrent jobs**
 By running concurrent jobs with a single spark session, will not only maximise the resource utilisation but also reduce application time and cost drastically. Furthermore, if we have adequate resources and these jobs do not have any interlink between them then it does not make sense to execute them in a loop or as a different spark applications.
 
 
+
+
+
+
+
+> Multiple parallel jobs can run simultaneously if they were submitted from
+> separate threads. By “job”, in this section, we mean a Spark action
+> (e.g. `save`, `collect`) and any tasks that need to run to evaluate
+> that action.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg0MzQzNTU3LC0xODA1NjA5MDQ3LC03ND
-czMDQ0MDUsLTE5NjUyMDY2MywtMjA4ODc0NjYxMiwtMTAzMzU3
-NzE3MCw5NTM3NzE5NTgsMzUwNjc5MzMxLDU4NzYxNjU3LDM2Mj
-kxNTc3MSwxNDg4MzQ1ODIwLC00OTMzMjM2MjUsLTEyNzg0NjY3
-NywtOTk5MDMwMzIyLC0xNzA2NzMxOTkyLDkwNzg5NzcyMiwtMT
-M0MzU4MDA3NiwtMTg3Mjc1OTY1OSw2NzkzMzIzNjUsLTQwMzk3
-NzQ2MV19
+eyJoaXN0b3J5IjpbLTYxODU3NjczNSwtMTgwNTYwOTA0NywtNz
+Q3MzA0NDA1LC0xOTY1MjA2NjMsLTIwODg3NDY2MTIsLTEwMzM1
+NzcxNzAsOTUzNzcxOTU4LDM1MDY3OTMzMSw1ODc2MTY1NywzNj
+I5MTU3NzEsMTQ4ODM0NTgyMCwtNDkzMzIzNjI1LC0xMjc4NDY2
+NzcsLTk5OTAzMDMyMiwtMTcwNjczMTk5Miw5MDc4OTc3MjIsLT
+EzNDM1ODAwNzYsLTE4NzI3NTk2NTksNjc5MzMyMzY1LC00MDM5
+Nzc0NjFdfQ==
 -->
