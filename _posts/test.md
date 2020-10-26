@@ -87,14 +87,16 @@ def run(args: Array[String]): Unit = {
 -   Spark runs the jobs parallel.
   - Jobs are independent from each other and spark runs in concurrently .
   
-  Some Scala Futures would not help
+
+## Some scenario Scala futures would not help
+Running concurrent jobs in spark application bring positive results and boost performance in most of the cases , however, there could be a scenario when alone Scala Futures would not help, it is because sometimes a job consumes all the resources and other jobs have to wait until they get some of it. In this case, we need to configure Spark’s FAIR scheduling which will ensure resources to all the triggered jobs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc3NzIxNjkwLDEwOTYxNTI2OSwtMzk3Nz
-M3OTM1LDIwMTY5MTExNzAsMTYxMDE4Nzc1NSwtNjE4NTc2NzM1
-LC0xODA1NjA5MDQ3LC03NDczMDQ0MDUsLTE5NjUyMDY2MywtMj
-A4ODc0NjYxMiwtMTAzMzU3NzE3MCw5NTM3NzE5NTgsMzUwNjc5
-MzMxLDU4NzYxNjU3LDM2MjkxNTc3MSwxNDg4MzQ1ODIwLC00OT
-MzMjM2MjUsLTEyNzg0NjY3NywtOTk5MDMwMzIyLC0xNzA2NzMx
-OTkyXX0=
+eyJoaXN0b3J5IjpbMTUyNzcxNTkyMCwxMDk2MTUyNjksLTM5Nz
+czNzkzNSwyMDE2OTExMTcwLDE2MTAxODc3NTUsLTYxODU3Njcz
+NSwtMTgwNTYwOTA0NywtNzQ3MzA0NDA1LC0xOTY1MjA2NjMsLT
+IwODg3NDY2MTIsLTEwMzM1NzcxNzAsOTUzNzcxOTU4LDM1MDY3
+OTMzMSw1ODc2MTY1NywzNjI5MTU3NzEsMTQ4ODM0NTgyMCwtND
+kzMzIzNjI1LC0xMjc4NDY2NzcsLTk5OTAzMDMyMiwtMTcwNjcz
+MTk5Ml19
 -->
