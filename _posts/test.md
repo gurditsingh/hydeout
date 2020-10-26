@@ -34,11 +34,11 @@ When a spark action is invoked, a spark job comes into existence which consists 
   }
 ``` 
 
-## What happens in the spark when we kick off the exploration ?
-
- - Spark creates separate two jobs. One job for Joining the data and another for grouping the data. 
- - Spark runs the jobs serially.
- - Jobs are independent from each but spark runs in serially.
+ **What happens in the spark when we kick off the exploration ?**
+  
+- Spark creates separate two jobs. One job for Joining the data and another for grouping the data. 
+-   Spark runs the jobs serially.
+  - Jobs are independent from each but spark runs in serially.
 
 ## Can spark run the above jobs at the same time ?
 Spark can run multiple parallel jobs simultaneously. By running concurrent jobs with a single spark session, will not only maximise the resource utilisation but also reduce application time and cost drastically. Furthermore, if we have adequate resources and these jobs do not have any interlink between them then it does not make sense to execute them in a loop or as a different spark applications.
@@ -84,11 +84,11 @@ def run(args: Array[String]): Unit = {
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2Mjc5MzM4NywxMDk2MTUyNjksLTM5Nz
-czNzkzNSwyMDE2OTExMTcwLC0xMzEwNDAxOTAwLDE2MTAxODc3
-NTUsLTYxODU3NjczNSwtMTgwNTYwOTA0NywtNzQ3MzA0NDA1LC
-0xOTY1MjA2NjMsLTIwODg3NDY2MTIsLTEwMzM1NzcxNzAsOTUz
-NzcxOTU4LDM1MDY3OTMzMSw1ODc2MTY1NywzNjI5MTU3NzEsMT
-Q4ODM0NTgyMCwtNDkzMzIzNjI1LC0xMjc4NDY2NzcsLTk5OTAz
-MDMyMl19
+eyJoaXN0b3J5IjpbMzc1OTYxMzIzLDEwOTYxNTI2OSwtMzk3Nz
+M3OTM1LDIwMTY5MTExNzAsLTEzMTA0MDE5MDAsMTYxMDE4Nzc1
+NSwtNjE4NTc2NzM1LC0xODA1NjA5MDQ3LC03NDczMDQ0MDUsLT
+E5NjUyMDY2MywtMjA4ODc0NjYxMiwtMTAzMzU3NzE3MCw5NTM3
+NzE5NTgsMzUwNjc5MzMxLDU4NzYxNjU3LDM2MjkxNTc3MSwxND
+g4MzQ1ODIwLC00OTMzMjM2MjUsLTEyNzg0NjY3NywtOTk5MDMw
+MzIyXX0=
 -->
