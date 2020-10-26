@@ -91,14 +91,21 @@ def run(args: Array[String]): Unit = {
 ## Some scenario Scala futures would not help
 Running concurrent jobs in spark application bring positive results and boost performance in most of the cases , however, there could be a scenario when alone Scala Futures would not help, it is because sometimes a job consumes all the resources and other jobs have to wait until they get some of it. In this case, we need to configure Spark’s FAIR scheduling which will ensure resources to all the triggered jobs.
 
-
+```scala
+ val spark=SparkSession
+      .builder()
+      .config("spark.scheduler.mode","")
+      .config("spark.scheduler.allocation.file","scheduler.xml")
+      .master("local")
+      .getOrCreate()
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU2NjIwODQ0LDEwOTYxNTI2OSwtMzk3Nz
-M3OTM1LDIwMTY5MTExNzAsLTEzMTA0MDE5MDAsMTYxMDE4Nzc1
-NSwtNjE4NTc2NzM1LC0xODA1NjA5MDQ3LC03NDczMDQ0MDUsLT
-E5NjUyMDY2MywtMjA4ODc0NjYxMiwtMTAzMzU3NzE3MCw5NTM3
-NzE5NTgsMzUwNjc5MzMxLDU4NzYxNjU3LDM2MjkxNTc3MSwxND
-g4MzQ1ODIwLC00OTMzMjM2MjUsLTEyNzg0NjY3NywtOTk5MDMw
-MzIyXX0=
+eyJoaXN0b3J5IjpbNTk4MjAwODM1LDI1NjYyMDg0NCwxMDk2MT
+UyNjksLTM5NzczNzkzNSwyMDE2OTExMTcwLC0xMzEwNDAxOTAw
+LDE2MTAxODc3NTUsLTYxODU3NjczNSwtMTgwNTYwOTA0NywtNz
+Q3MzA0NDA1LC0xOTY1MjA2NjMsLTIwODg3NDY2MTIsLTEwMzM1
+NzcxNzAsOTUzNzcxOTU4LDM1MDY3OTMzMSw1ODc2MTY1NywzNj
+I5MTU3NzEsMTQ4ODM0NTgyMCwtNDkzMzIzNjI1LC0xMjc4NDY2
+NzddfQ==
 -->
