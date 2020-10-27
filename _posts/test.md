@@ -1,6 +1,5 @@
-Apache Spark already performs data processing in parallel, what’s new in it. If this is the case, please allow me to give an idea about spark job — It is a parallel computation which gets created once a spark action is invoked in an application. Apart from this, it is a known fact that by default, Apache Spark runs multiple tasks among each executor to achieve parallelism, however, it is not true at job level. In other words, once a spark action is invoked, a spark job comes into existence which consists of one or more stages and further these stages are broken down into numerous tasks which are worked upon by the executors in parallel. **Hence, at a time, Spark runs multiple tasks in parallel but not multiple jobs.**
+Apache Spark already performs data processing in parallel. Spark runs multiple tasks among each executor to achieve parallelism, however, it is not true at job level.
   
-
 **Spark runs multiple tasks in parallel but not multiple jobs:**
 When a spark action is invoked, a spark job comes into existence which consists of one or more stages and further these stages are broken down into numerous tasks which are worked upon by the executors in parallel but spark not run multiple jobs in parallel when multiple action are called.**
 
@@ -133,11 +132,11 @@ The fair scheduler also supports grouping jobs into _pools_, and setting differe
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI1MTYzMDkxLDYzNzIxODM4NywxMzcwNz
-AzMjQ1LDEwNzcyNjIyNTksMjU2NjIwODQ0LDEwOTYxNTI2OSwt
-Mzk3NzM3OTM1LDIwMTY5MTExNzAsLTEzMTA0MDE5MDAsMTYxMD
-E4Nzc1NSwtNjE4NTc2NzM1LC0xODA1NjA5MDQ3LC03NDczMDQ0
-MDUsLTE5NjUyMDY2MywtMjA4ODc0NjYxMiwtMTAzMzU3NzE3MC
-w5NTM3NzE5NTgsMzUwNjc5MzMxLDU4NzYxNjU3LDM2MjkxNTc3
-MV19
+eyJoaXN0b3J5IjpbLTQ1MjgwMjA0NCw2MzcyMTgzODcsMTM3MD
+cwMzI0NSwxMDc3MjYyMjU5LDI1NjYyMDg0NCwxMDk2MTUyNjks
+LTM5NzczNzkzNSwyMDE2OTExMTcwLC0xMzEwNDAxOTAwLDE2MT
+AxODc3NTUsLTYxODU3NjczNSwtMTgwNTYwOTA0NywtNzQ3MzA0
+NDA1LC0xOTY1MjA2NjMsLTIwODg3NDY2MTIsLTEwMzM1NzcxNz
+AsOTUzNzcxOTU4LDM1MDY3OTMzMSw1ODc2MTY1NywzNjI5MTU3
+NzFdfQ==
 -->
