@@ -50,7 +50,7 @@ When a spark action is invoked, a spark job comes into existence which consists 
   
 - Spark creates separate two jobs. One job for Joining the data and another for grouping the data. 
 -   Spark runs the jobs serially.
-  - Jobs are independent from each but spark runs in serially.
+  - Jobs are independent from each other but spark runs serially.
 
 ## Can spark run the above jobs at the same time ?
 Spark can run multiple parallel jobs simultaneously. By running concurrent jobs with a single spark session, will not only maximise the resource utilisation but also reduce application time and cost drastically. Furthermore, if we have adequate resources and these jobs do not have any interlink between them then it does not make sense to execute them in a loop or as a different spark applications.
@@ -97,7 +97,7 @@ def run(args: Array[String]): Unit = {
   
 - Spark creates separate two jobs. One job for Joining the data and another for grouping the data. 
 -   Spark runs the jobs parallel.
-  - Jobs are independent from each other and spark runs in concurrently .
+  - Jobs are independent from each other and spark runs concurrently .
   
 
 ## Some scenario Scala futures would not help
