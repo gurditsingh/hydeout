@@ -1,7 +1,9 @@
 # How to create a surrogate key with Apache Spark
 
+ **What does  Surrogate Key  mean?**
+ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyOTQ1MDE3MSwtMTA0ODQ3NTk0NSwtMj
+eyJoaXN0b3J5IjpbMTIwMDg0MDY4MywtMTA0ODQ3NTk0NSwtMj
 A4ODc0NjYxMiwtNDUyODAyMDQ0LDEzNzA3MDMyNDUsMjU2NjIw
 ODQ0LDEwOTYxNTI2OSwtMzk3NzM3OTM1LDIwMTY5MTExNzAsMT
 YxMDE4Nzc1NSwtNjE4NTc2NzM1LC0xODA1NjA5MDQ3LC03NDcz
