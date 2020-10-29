@@ -1,9 +1,9 @@
 # How to create a surrogate key with Apache Spark
 
  **What does  Surrogate Key  mean?**
- 
+ A surrogate key (or synthetic key, pseudokey, entity identifier, system-generated key, database sequence number, factless key, technical key, or arbitrary unique identifier) in a database is a unique identifier for either an entity in the modeled world or an object in the database. The surrogate key is not derived from application data, unlike a natural (or business) key which is derived from application data.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMDg0MDY4MywtMTA0ODQ3NTk0NSwtMj
+eyJoaXN0b3J5IjpbLTU1ODkwODA3NywtMTA0ODQ3NTk0NSwtMj
 A4ODc0NjYxMiwtNDUyODAyMDQ0LDYzNzIxODM4NywxMzcwNzAz
 MjQ1LDEwNzcyNjIyNTksMjU2NjIwODQ0LDEwOTYxNTI2OSwtMz
 k3NzM3OTM1LDIwMTY5MTExNzAsLTEzMTA0MDE5MDAsMTYxMDE4
