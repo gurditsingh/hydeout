@@ -47,16 +47,16 @@
  - In Second run we insert 1 million records with append mode it generates duplicates surrogates keys.
  
 	**What is the reason for this massive amount of surrogates keys collisions/duplication ?**
-	The thing is with monotonically increasing ID is it, it returns, you know, for a given spark job, it returns a number between zero and some upper bound. And it only guarantees that the numbers are increased monotonically. You know, over the data frame there are no other guarantees that there's like no guarantees in terms of the spacing between the numbers, and so on. So we're basically generating the same range of integers or bi gens again, twice. So that's why we have 100. And in fact, it again, there's no guarantee you'll generate the same numbers. But there's no guarantee either that won't generate the same, if that makes any sense. But anyways, so that was kind of a failure.
+	The thing is with monotonically increasing ID is, it returns a number between zero and some upper bound. And it only guarantees that the numbers are increased monotonically. You know, over the data frame there are no other guarantees that there's like no guarantees in terms of the spacing between the numbers, and so on. So we're basically generating the same range of integers or bi gens again, twice. So that's why we have 100. And in fact, it again, there's no guarantee you'll generate the same numbers. But there's no guarantee either that won't generate the same, if that makes any sense. But anyways, so that was kind of a failure.
  
  
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjgwNzY5NjksMjY3MTM2MzksMTkzNz
-A1NTg5NiwzNTEyMzY0NDQsLTEyNzkwMzAwNjksMzYzMDQ5Mjk1
-LC0yMTIyNDU4MTAyLC05MDk3NzQzMTAsMTE0NzY1NDgzLC01NT
-g5MDgwNzcsLTEwNDg0NzU5NDUsLTIwODg3NDY2MTIsLTQ1Mjgw
-MjA0NCw2MzcyMTgzODcsMTM3MDcwMzI0NSwxMDc3MjYyMjU5LD
-I1NjYyMDg0NCwxMDk2MTUyNjksLTM5NzczNzkzNSwyMDE2OTEx
-MTcwXX0=
+eyJoaXN0b3J5IjpbMjExMTczOTg2MywyNjcxMzYzOSwxOTM3MD
+U1ODk2LDM1MTIzNjQ0NCwtMTI3OTAzMDA2OSwzNjMwNDkyOTUs
+LTIxMjI0NTgxMDIsLTkwOTc3NDMxMCwxMTQ3NjU0ODMsLTU1OD
+kwODA3NywtMTA0ODQ3NTk0NSwtMjA4ODc0NjYxMiwtNDUyODAy
+MDQ0LDYzNzIxODM4NywxMzcwNzAzMjQ1LDEwNzcyNjIyNTksMj
+U2NjIwODQ0LDEwOTYxNTI2OSwtMzk3NzM3OTM1LDIwMTY5MTEx
+NzBdfQ==
 -->
