@@ -88,9 +88,9 @@
 
 	 - Uniqueness : By using second job (job-2) we have achieved uniqueness.
 	 - Evenly Distributed : Both the jobs are evenly distributed.
-	 - DBA Perspective : I think that the DBA is going to probably complain about the maximum surrogate key value here is way larger than total number of records. e.g. if your table contains millions records but the max value of surrogate key can be trillion because of internal logic of generating monotonically_increasing_id() and in subsequent runs a  
+	 - DBA Perspective : I think that the DBA is going to probably complain about the maximum surrogate key value here is way larger than total number of records in the table. e.g. if your table contains millions records but the max value of surrogate key can be in trillions because of internal logic of generating monotonically_increasing_id() and in subsequent runs add max value of monotonically_increasing_id().   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTAzMjgzOTEsNjU5MjU2OTk2LDExOT
+eyJoaXN0b3J5IjpbLTE4MDgzMzExOTQsNjU5MjU2OTk2LDExOT
 YxMjIyMCwtMTM0MTg3MzIyMSwyMTE0OTgxMjI5LDE3Nzc1MDc5
 MjQsMjY3MTM2MzksMTkzNzA1NTg5NiwzNTEyMzY0NDQsLTEyNz
 kwMzAwNjksMzYzMDQ5Mjk1LC0yMTIyNDU4MTAyLC05MDk3NzQz
