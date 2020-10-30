@@ -15,32 +15,33 @@
 	jhgh
 	ghjkghjk
 	gjkh
+	
 	```scala
- def run(args: Array[String]): Unit = {
+	 def run(args: Array[String]): Unit = {
 
-    val spark = SparkSession
-      .builder()
-      .master(args(0))
-      .config("spark.sql.warehouse.dir", System.getProperty("user.dir") + "/spark-warehouse")
-      .enableHiveSupport()
-      .getOrCreate()
+	    val spark = SparkSession
+	      .builder()
+	      .master(args(0))
+	      .config("spark.sql.warehouse.dir", System.getProperty("user.dir") + "/spark-warehouse")
+	      .enableHiveSupport()
+	      .getOrCreate()
 
 
-    val articles = loadDataFromSource(spark)
+	    val articles = loadDataFromSource(spark)
 
-    val attachSurrogateKey = articles.withColumn("sk", functions.monotonically_increasing_id())
+	    val attachSurrogateKey = articles.withColumn("sk", functions.monotonically_increasing_id())
 
-    attachSurrogateKey.write.mode(SaveMode.Overwrite).saveAsTable("articles_tbl")
+	    attachSurrogateKey.write.mode(SaveMode.Overwrite).saveAsTable("articles_tbl")
 
-  }
+	  }
 
-```
+	```
 
  
  
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY4NjQwNzU0LC0xMjc5MDMwMDY5LDM2Mz
+eyJoaXN0b3J5IjpbMzUxMjM2NDQ0LC0xMjc5MDMwMDY5LDM2Mz
 A0OTI5NSwtMjEyMjQ1ODEwMiwtOTA5Nzc0MzEwLDExNDc2NTQ4
 MywtNTU4OTA4MDc3LC0xMDQ4NDc1OTQ1LC0yMDg4NzQ2NjEyLC
 00NTI4MDIwNDQsNjM3MjE4Mzg3LDEzNzA3MDMyNDUsMTA3NzI2
