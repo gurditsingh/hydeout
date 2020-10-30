@@ -6,7 +6,7 @@
 
 # Let's examine what are the options available in Spark
 
- 1. **monotonically_increasing_id :** Spark dataframe add unique number is very common requirement especially if you are working on ELT in Spark. You can use monotonically_increasing_id method to generate long number which is monotonically increasing and unique, but not consecutive.
+ - **monotonically_increasing_id :** Spark dataframe add unique number is very common requirement especially if you are working on ELT in Spark. You can use monotonically_increasing_id method to generate long number which is monotonically increasing and unique, but not consecutive.
  
  
 
@@ -40,12 +40,18 @@
 
 	> Run the same job one more time and see how surrogate keys are generated : so when we run the same job again it generates the duplicate surrogate keys.
 
-	Lets understand with Ex: suppose First run we insert 1million records with unique 1million surrogate keys
+	**Lets understand with Example**: 
+	
+
+ - In First run we insert 1million records and spark generates unique 1million surrogate keys.
+ - In Second run we insert 1 million recordwith append mode 
+
+	suppose First run we insert 1million records with unique 1million surrogate keys
  
  
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU3MzQ0MDUzLDE5MzcwNTU4OTYsMzUxMj
+eyJoaXN0b3J5IjpbNTUzMTM4NjIyLDE5MzcwNTU4OTYsMzUxMj
 M2NDQ0LC0xMjc5MDMwMDY5LDM2MzA0OTI5NSwtMjEyMjQ1ODEw
 MiwtOTA5Nzc0MzEwLDExNDc2NTQ4MywtNTU4OTA4MDc3LC0xMD
 Q4NDc1OTQ1LC0yMDg4NzQ2NjEyLC00NTI4MDIwNDQsMTM3MDcw
