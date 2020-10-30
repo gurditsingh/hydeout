@@ -49,12 +49,12 @@
 	**What is the reason for this massive amount of surrogates keys collisions/duplication ?**
 	The thing is with monotonically increasing ID is, it returns a number between zero and some upper bound. And it only guarantees that the numbers are increased monotonically. So there's no guarantee you'll generate the same numbers or won't generate the same for next batches.
 
-	**Possible Solution :** Since monotonically increasing ID starts with zero, we're going to add one to it. And so we're gonna do this all over again. So whatever the max value Plus a range of IDs, you know, is what we're gonna generate for SK for the second and subsequent attempts here. So we do that and we see that it succeeds. - Alright, yeah. - we've achieved uniqueness, which is a very important criteria in surrogate keys. You want your rows to be uniquely identified.
+	**Possible Solution :** Since monotonically increasing ID starts with zero, we're going to add max value to it. And so we're gonna do this all over again. So we will the max value Plus a range of IDs, you know, is what we're gonna generate for SK for the second and subsequent attempts here. So we do that and we see that it succeeds. - Alright, yeah. - we've achieved uniqueness, which is a very important criteria in surrogate keys. You want your rows to be uniquely identified.
  
  
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzOTE3MDY1MywxNzc3NTA3OTI0LDI2Nz
+eyJoaXN0b3J5IjpbLTE3NjYzNTQ4NiwxNzc3NTA3OTI0LDI2Nz
 EzNjM5LDE5MzcwNTU4OTYsMzUxMjM2NDQ0LC0xMjc5MDMwMDY5
 LDM2MzA0OTI5NSwtMjEyMjQ1ODEwMiwtOTA5Nzc0MzEwLDExND
 c2NTQ4MywtNTU4OTA4MDc3LC0xMDQ4NDc1OTQ1LC0yMDg4NzQ2
