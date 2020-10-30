@@ -88,13 +88,13 @@
 
 	 - Uniqueness : By using second job (job-2) we have achieved uniqueness.
 	 - Evenly Distributed : Both the jobs are evenly distributed.
-	 - DBA Perspective : I think that the DBA is going to probably complain about 
+	 - DBA Perspective : I think that the DBA is going to probably complain about the maximum surrogate key value here is way larger than total number of records. e.g. if your table contains 1 million records but the max value of surrog
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTg4Nzg0OTgsNjU5MjU2OTk2LDExOT
-YxMjIyMCwtMTM0MTg3MzIyMSwyMTE0OTgxMjI5LDE3Nzc1MDc5
-MjQsMjY3MTM2MzksMTkzNzA1NTg5NiwzNTEyMzY0NDQsLTEyNz
-kwMzAwNjksMzYzMDQ5Mjk1LC0yMTIyNDU4MTAyLC05MDk3NzQz
-MTAsMTE0NzY1NDgzLC01NTg5MDgwNzcsLTEwNDg0NzU5NDUsLT
-IwODg3NDY2MTIsLTQ1MjgwMjA0NCwxMzcwNzAzMjQ1LDI1NjYy
-MDg0NF19
+eyJoaXN0b3J5IjpbLTkyNDg3NDcyNCw2NTkyNTY5OTYsMTE5Nj
+EyMjIwLC0xMzQxODczMjIxLDIxMTQ5ODEyMjksMTc3NzUwNzky
+NCwyNjcxMzYzOSwxOTM3MDU1ODk2LDM1MTIzNjQ0NCwtMTI3OT
+AzMDA2OSwzNjMwNDkyOTUsLTIxMjI0NTgxMDIsLTkwOTc3NDMx
+MCwxMTQ3NjU0ODMsLTU1ODkwODA3NywtMTA0ODQ3NTk0NSwtMj
+A4ODc0NjYxMiwtNDUyODAyMDQ0LDEzNzA3MDMyNDUsMjU2NjIw
+ODQ0XX0=
 -->
