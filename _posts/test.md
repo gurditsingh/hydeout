@@ -86,14 +86,14 @@
 	**Evaluation of monotonically_increasing_id()**
 	
 
-	 - Uniqueness : By using second job (job-2) we have achieved Uniqueness.
-	 - Evenly Distributed : Both the jobs are Evenly Distributed
+	 - Uniqueness : By using second job (job-2) we have achieved uniqueness.
+	 - Evenly Distributed : Both the jobs are evenly distributed.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTE0OTUwMDYsMTE5NjEyMjIwLC0xMz
-QxODczMjIxLDIxMTQ5ODEyMjksMTc3NzUwNzkyNCwyNjcxMzYz
-OSwxOTM3MDU1ODk2LDM1MTIzNjQ0NCwtMTI3OTAzMDA2OSwzNj
-MwNDkyOTUsLTIxMjI0NTgxMDIsLTkwOTc3NDMxMCwxMTQ3NjU0
-ODMsLTU1ODkwODA3NywtMTA0ODQ3NTk0NSwtMjA4ODc0NjYxMi
-wtNDUyODAyMDQ0LDYzNzIxODM4NywxMzcwNzAzMjQ1LDEwNzcy
-NjIyNTldfQ==
+eyJoaXN0b3J5IjpbNjU5MjU2OTk2LDExOTYxMjIyMCwtMTM0MT
+g3MzIyMSwyMTE0OTgxMjI5LDE3Nzc1MDc5MjQsMjY3MTM2Mzks
+MTkzNzA1NTg5NiwzNTEyMzY0NDQsLTEyNzkwMzAwNjksMzYzMD
+Q5Mjk1LC0yMTIyNDU4MTAyLC05MDk3NzQzMTAsMTE0NzY1NDgz
+LC01NTg5MDgwNzcsLTEwNDg0NzU5NDUsLTIwODg3NDY2MTIsLT
+Q1MjgwMjA0NCw2MzcyMTgzODcsMTM3MDcwMzI0NSwxMDc3MjYy
+MjU5XX0=
 -->
