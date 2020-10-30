@@ -81,13 +81,14 @@
 
 	  }
 	```
- So basically plenty good news is that we have distribution. The bad news is we have massive sparsity.
+ So the good news is that we have distribution and uniqueness. 
+ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTEwMjAwMzEsMjExNDk4MTIyOSwxNzc3NT
-A3OTI0LDI2NzEzNjM5LDE5MzcwNTU4OTYsMzUxMjM2NDQ0LC0x
-Mjc5MDMwMDY5LDM2MzA0OTI5NSwtMjEyMjQ1ODEwMiwtOTA5Nz
-c0MzEwLDExNDc2NTQ4MywtNTU4OTA4MDc3LC0xMDQ4NDc1OTQ1
-LC0yMDg4NzQ2NjEyLC00NTI4MDIwNDQsMTM3MDcwMzI0NSwyNT
-Y2MjA4NDQsMTA5NjE1MjY5LC0zOTc3Mzc5MzUsMjAxNjkxMTE3
-MF19
+eyJoaXN0b3J5IjpbMTI3MTc0MDUzNywyMTE0OTgxMjI5LDE3Nz
+c1MDc5MjQsMjY3MTM2MzksMTkzNzA1NTg5NiwzNTEyMzY0NDQs
+LTEyNzkwMzAwNjksMzYzMDQ5Mjk1LC0yMTIyNDU4MTAyLC05MD
+k3NzQzMTAsMTE0NzY1NDgzLC01NTg5MDgwNzcsLTEwNDg0NzU5
+NDUsLTIwODg3NDY2MTIsLTQ1MjgwMjA0NCwxMzcwNzAzMjQ1LD
+I1NjYyMDg0NCwxMDk2MTUyNjksLTM5NzczNzkzNSwyMDE2OTEx
+MTcwXX0=
 -->
