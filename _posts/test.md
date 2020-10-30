@@ -49,15 +49,16 @@
 	**What is the reason for this massive amount of surrogates keys collisions/duplication ?**
 	The thing is with monotonically increasing ID is, it returns a number between zero and some upper bound. And it only guarantees that the numbers are increased monotonically. So there's no guarantee you'll generate the same numbers or won't generate the same for next batches.
 
+
  
  
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3NzUwNzkyNCwyNjcxMzYzOSwxOTM3MD
-U1ODk2LDM1MTIzNjQ0NCwtMTI3OTAzMDA2OSwzNjMwNDkyOTUs
-LTIxMjI0NTgxMDIsLTkwOTc3NDMxMCwxMTQ3NjU0ODMsLTU1OD
-kwODA3NywtMTA0ODQ3NTk0NSwtMjA4ODc0NjYxMiwtNDUyODAy
-MDQ0LDEzNzA3MDMyNDUsMjU2NjIwODQ0LDEwOTYxNTI2OSwtMz
-k3NzM3OTM1LDIwMTY5MTExNzAsMTYxMDE4Nzc1NSwtNjE4NTc2
-NzM1XX0=
+eyJoaXN0b3J5IjpbMTk4MDUwODI2MiwxNzc3NTA3OTI0LDI2Nz
+EzNjM5LDE5MzcwNTU4OTYsMzUxMjM2NDQ0LC0xMjc5MDMwMDY5
+LDM2MzA0OTI5NSwtMjEyMjQ1ODEwMiwtOTA5Nzc0MzEwLDExND
+c2NTQ4MywtNTU4OTA4MDc3LC0xMDQ4NDc1OTQ1LC0yMDg4NzQ2
+NjEyLC00NTI4MDIwNDQsMTM3MDcwMzI0NSwyNTY2MjA4NDQsMT
+A5NjE1MjY5LC0zOTc3Mzc5MzUsMjAxNjkxMTE3MCwxNjEwMTg3
+NzU1XX0=
 -->
