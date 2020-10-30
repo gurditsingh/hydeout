@@ -52,10 +52,10 @@
 	**Possible Solution :** Since monotonically increasing ID starts with zero, we're going to add max value to it. And so we're gonna do this all over again. So we will take the max value Plus a range of IDs to generate SK for the second and subsequent attempts and by this we've achieved uniqueness, which is a very important criteria in surrogate keys.
 	
  
- 
+	 **Let’s create one job and generate surrogate keys**
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MDg0MTY2MSwxNzc3NTA3OTI0LDI2Nz
+eyJoaXN0b3J5IjpbMjExNDk4MTIyOSwxNzc3NTA3OTI0LDI2Nz
 EzNjM5LDE5MzcwNTU4OTYsMzUxMjM2NDQ0LC0xMjc5MDMwMDY5
 LDM2MzA0OTI5NSwtMjEyMjQ1ODEwMiwtOTA5Nzc0MzEwLDExND
 c2NTQ4MywtNTU4OTA4MDc3LC0xMDQ4NDc1OTQ1LC0yMDg4NzQ2
