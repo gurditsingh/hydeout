@@ -19,7 +19,7 @@ tags:
  
  **Surrogate key in a Data Warehouse**: Surrogate keys are typically meaningless integers used to connect the fact to the dimension tables of a data warehouse. There are various reasons why we cannot simply reuse our existing natural or business keys.
 
-## Let's examine the monotonically_increasing_id
+## Let's examine the monotonically_increasing_id provided by Spark
 
  - **monotonically_increasing_id :** Spark dataframe add unique number is very common requirement especially if you are working on ELT in Spark. You can use monotonically_increasing_id method to generate long number which is monotonically increasing and unique, but not consecutive.
  
