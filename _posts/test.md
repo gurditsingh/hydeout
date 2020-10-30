@@ -47,12 +47,13 @@
  - In Second run we insert 1 million records with append mode it generates duplicates surrogates keys.
  
 	**What is the reason for this massive amount of surrogates keys collisions/duplication ?**
-	The thing is with monotonically increasing ID is, it returns a number between zero and some upper bound. And it only guarantees that the numbers are increased monotonically. You know, over the data frame there are no other guarantees in terms of the spacing between the numbers. So we're basically generating the same range of Numbers again, So there's no guarantee you'll generate the same numbers or won't generate the same for next batches
+	The thing is with monotonically increasing ID is, it returns a number between zero and some upper bound. And it only guarantees that the numbers are increased monotonically. So there's no guarantee you'll generate the same numbers or won't generate the same for next batches.
+
  
  
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0MzgyMDQzNSwyNjcxMzYzOSwxOTM3MD
+eyJoaXN0b3J5IjpbMTc3NzUwNzkyNCwyNjcxMzYzOSwxOTM3MD
 U1ODk2LDM1MTIzNjQ0NCwtMTI3OTAzMDA2OSwzNjMwNDkyOTUs
 LTIxMjI0NTgxMDIsLTkwOTc3NDMxMCwxMTQ3NjU0ODMsLTU1OD
 kwODA3NywtMTA0ODQ3NTk0NSwtMjA4ODc0NjYxMiwtNDUyODAy
