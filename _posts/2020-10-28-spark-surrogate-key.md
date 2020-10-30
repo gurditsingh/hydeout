@@ -1,5 +1,5 @@
 ---
-title: "Surrogate key with Apache Spark -- Part-1"
+title: "Surrogate key with Apache Spark - Part-1"
 layout: post
 excerpt: "You can generate SURROGATE_KEY by apache spark to automatically generate numerical Ids for rows as you enter data into a table."
 last_modified_at: 2020-10-28T11:21:01-05:00
