@@ -31,7 +31,7 @@
 
 	    val attachSurrogateKey = articles.withColumn("sk", functions.monotonically_increasing_id())
 
-	    attachSurrogateKey.write.mode(SaveMode.Overwrite).saveAsTable("articles_tbl")
+	    attachSurrogateKey.write.mode(SaveMode.Append).saveAsTable("articles_tbl")
 
 	  }
 
@@ -53,10 +53,37 @@
 	
  
 	 **Let’s create a sample job to generate surrogate keys with max value**
-	 
+	```scala
+	def run(args: Array[String]): Unit = {
+
+	    val spark = SparkSession
+	      .builder()
+	      .master(args(0))
+	      .config("spark.sql.warehouse.dir", System.getProperty("user.dir") + "/spark-warehouse")
+	      .enableHiveSupport()
+	      .getOrCreate()
+
+	    val articles = loadDataFromSource(spark)
+
+	    val maxValueOfSK = if (spark.catalog.tableExists("articles_tbl"))
+	      spark.read.table("articles_tbl").groupBy().max("sk").collect() match {
+	        case Array() => 0L
+	        case a => a.head.get(0).asInstanceOf[Long]
+	      }
+	    else 0L
+
+
+	    val attachSurrogateKey = articles.withColumn("sk", functions.monotonically_increasing_id().+(maxValueOfSK))
+
+	    attachSurrogateKey.write.mode(SaveMode.Append).saveAsTable("articles_tbl")
+
+	    spark.read.table("articles_tbl").show()
+
+	  }
+	```
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNTA3MzExMiwyMTE0OTgxMjI5LDE3Nz
+eyJoaXN0b3J5IjpbLTQ4NTA4MDM0NiwyMTE0OTgxMjI5LDE3Nz
 c1MDc5MjQsMjY3MTM2MzksMTkzNzA1NTg5NiwzNTEyMzY0NDQs
 LTEyNzkwMzAwNjksMzYzMDQ5Mjk1LC0yMTIyNDU4MTAyLC05MD
 k3NzQzMTAsMTE0NzY1NDgzLC01NTg5MDgwNzcsLTEwNDg0NzU5
