@@ -12,8 +12,7 @@ tags:
   - monotonically_increasing_id
 ---
 
-
- ## What does Surrogate Key mean?
+## What does Surrogate Key mean?
  
  A surrogate key (or synthetic key, pseudokey, entity identifier, system-generated key, database sequence number, factless key, technical key, or arbitrary unique identifier) in a database is a unique identifier for either an entity in the modeled world or an object in the database. The surrogate key is not derived from application data, unlike a natural (or business) key which is derived from application data.
  
