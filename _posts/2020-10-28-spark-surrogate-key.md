@@ -57,8 +57,8 @@ tags:
 	**Lets understand with Example**: 
 	
 
- - In First run we insert 1million records and spark generates unique 1million surrogate keys.
- - In Second run we insert 1 million records with append mode it generates duplicates surrogates keys.
+ - In First run we insert 1 million records and spark generates unique 1million surrogate keys.
+ - In Second run we again insert 1 million records but it generates duplicates surrogates keys because second run doesn't know about first run keys.
  
 	**What is the reason for this massive amount of surrogates keys collisions/duplication ?**
 	The thing is with monotonically increasing ID is, it returns a number between zero and some upper bound. And it only guarantees that the numbers are increased monotonically. So there's no guarantee you'll generate the same numbers or won't generate the same for next batches.
