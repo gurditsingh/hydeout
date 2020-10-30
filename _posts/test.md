@@ -16,16 +16,36 @@
 	ghjkghjk
 	gjkh
 	
+	```scala
+	 def run(args: Array[String]): Unit = {
+
+	    val spark = SparkSession
+	      .builder()
+	      .master(args(0))
+	      .config("spark.sql.warehouse.dir", System.getProperty("user.dir") + "/spark-warehouse")
+	      .enableHiveSupport()
+	      .getOrCreate()
+
+
+	    val articles = loadDataFromSource(spark)
+
+	    val attachSurrogateKey = articles.withColumn("sk", functions.monotonically_increasing_id())
+
+	    attachSurrogateKey.write.mode(SaveMode.Overwrite).saveAsTable("articles_tbl")
+
+	  }
+
+	```
 
  
  
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzkwMzAwNjksMzYzMDQ5Mjk1LC0yMT
-IyNDU4MTAyLC05MDk3NzQzMTAsMTE0NzY1NDgzLC01NTg5MDgw
-NzcsLTEwNDg0NzU5NDUsLTIwODg3NDY2MTIsLTQ1MjgwMjA0NC
-wxMzcwNzAzMjQ1LDI1NjYyMDg0NCwxMDk2MTUyNjksLTM5Nzcz
-NzkzNSwyMDE2OTExMTcwLDE2MTAxODc3NTUsLTYxODU3NjczNS
-wtMTgwNTYwOTA0NywtNzQ3MzA0NDA1LC0xOTY1MjA2NjMsLTEw
-MzM1NzcxNzBdfQ==
+eyJoaXN0b3J5IjpbMzUxMjM2NDQ0LC0xMjc5MDMwMDY5LDM2Mz
+A0OTI5NSwtMjEyMjQ1ODEwMiwtOTA5Nzc0MzEwLDExNDc2NTQ4
+MywtNTU4OTA4MDc3LC0xMDQ4NDc1OTQ1LC0yMDg4NzQ2NjEyLC
+00NTI4MDIwNDQsMTM3MDcwMzI0NSwyNTY2MjA4NDQsMTA5NjE1
+MjY5LC0zOTc3Mzc5MzUsMjAxNjkxMTE3MCwxNjEwMTg3NzU1LC
+02MTg1NzY3MzUsLTE4MDU2MDkwNDcsLTc0NzMwNDQwNSwtMTk2
+NTIwNjYzXX0=
 -->
