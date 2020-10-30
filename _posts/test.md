@@ -12,8 +12,8 @@
 
 	>  **Spark Doc :** The generated ID is guaranteed to be monotonically increasing and unique, but not consecutive. The current implementation puts the partition ID in the upper 31 bits, and the record number within each partition in the lower 33 bits. The assumption is that the data frame has less than 1 billion partitions, and each partition has less than 8 billion records.
 	
-	jhgh
-	ghjkghjk
+	
+	
 	**Let’s create one job and generate surrogate keys**
 	
 	```scala
@@ -36,16 +36,16 @@
 	  }
 
 	```
-
+but we looked through the data, we can see the surrogate keys in here, just random sampling. But this is kind of what the data looks like. We're gonna do another insert, because the whole idea is this thing is that you know, you're gonna be updating your data in batches, maybe a million at a time, maybe 1000 at a time, and you're gonna be doing this repeatedly. So we want to see how this surrogate key generation performs over multiple inserts.
  
  
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjQzNjQ4MjgsMzUxMjM2NDQ0LC0xMj
-c5MDMwMDY5LDM2MzA0OTI5NSwtMjEyMjQ1ODEwMiwtOTA5Nzc0
-MzEwLDExNDc2NTQ4MywtNTU4OTA4MDc3LC0xMDQ4NDc1OTQ1LC
-0yMDg4NzQ2NjEyLC00NTI4MDIwNDQsMTM3MDcwMzI0NSwyNTY2
-MjA4NDQsMTA5NjE1MjY5LC0zOTc3Mzc5MzUsMjAxNjkxMTE3MC
-wxNjEwMTg3NzU1LC02MTg1NzY3MzUsLTE4MDU2MDkwNDcsLTc0
-NzMwNDQwNV19
+eyJoaXN0b3J5IjpbODIzOTA3Mjk5LDM1MTIzNjQ0NCwtMTI3OT
+AzMDA2OSwzNjMwNDkyOTUsLTIxMjI0NTgxMDIsLTkwOTc3NDMx
+MCwxMTQ3NjU0ODMsLTU1ODkwODA3NywtMTA0ODQ3NTk0NSwtMj
+A4ODc0NjYxMiwtNDUyODAyMDQ0LDEzNzA3MDMyNDUsMjU2NjIw
+ODQ0LDEwOTYxNTI2OSwtMzk3NzM3OTM1LDIwMTY5MTExNzAsMT
+YxMDE4Nzc1NSwtNjE4NTc2NzM1LC0xODA1NjA5MDQ3LC03NDcz
+MDQ0MDVdfQ==
 -->
