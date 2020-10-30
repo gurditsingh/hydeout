@@ -6,17 +6,17 @@
 
 # Let's examine what are the options available in Spark
 
- 1. **monotonically_increasing_id**
+ 1. **monotonically_increasing_id :** Spark dataframe add row number is very common requirement especially if you are working on ELT in Spark. You can use monotonically_increasing_id method to generate incremental numbers. However the numbers won’t be consecutive if the dataframe has more than 1 partition. Let’s see a simple example to understand it
 
  
  
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NTYyMzIsLTIxMjI0NTgxMDIsLTkwOT
-c3NDMxMCwxMTQ3NjU0ODMsLTU1ODkwODA3NywtMTA0ODQ3NTk0
-NSwtMjA4ODc0NjYxMiwtNDUyODAyMDQ0LDEzNzA3MDMyNDUsMj
-U2NjIwODQ0LDEwOTYxNTI2OSwtMzk3NzM3OTM1LDIwMTY5MTEx
-NzAsMTYxMDE4Nzc1NSwtNjE4NTc2NzM1LC0xODA1NjA5MDQ3LC
-03NDczMDQ0MDUsLTE5NjUyMDY2MywtMTAzMzU3NzE3MCw5NTM3
-NzE5NThdfQ==
+eyJoaXN0b3J5IjpbMzYzMDQ5Mjk1LC0yMTIyNDU4MTAyLC05MD
+k3NzQzMTAsMTE0NzY1NDgzLC01NTg5MDgwNzcsLTEwNDg0NzU5
+NDUsLTIwODg3NDY2MTIsLTQ1MjgwMjA0NCwxMzcwNzAzMjQ1LD
+I1NjYyMDg0NCwxMDk2MTUyNjksLTM5NzczNzkzNSwyMDE2OTEx
+MTcwLDE2MTAxODc3NTUsLTYxODU3NjczNSwtMTgwNTYwOTA0Ny
+wtNzQ3MzA0NDA1LC0xOTY1MjA2NjMsLTEwMzM1NzcxNzAsOTUz
+NzcxOTU4XX0=
 -->
