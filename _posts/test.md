@@ -14,7 +14,7 @@
 	
 	
 	
-	**Let’s create a job to generate surrogate keys**
+	**Let’s create a sample job to generate surrogate keys**
 	
 	```scala
 	 def run(args: Array[String]): Unit = {
@@ -52,14 +52,15 @@
 	**Possible Solution :** Since monotonically increasing ID starts with zero, we're going to add max value to it. And so we're gonna do this all over again. So we will take the max value Plus a range of IDs to generate SK for the second and subsequent attempts and by this we've achieved uniqueness, which is a very important criteria in surrogate keys.
 	
  
-	 **Let’s create a job and generate surrogate keys with ma**
+	 **Let’s create a sample job to generate surrogate keys with max value**
+	 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjcwNDg5ODcsMjExNDk4MTIyOSwxNz
-c3NTA3OTI0LDI2NzEzNjM5LDE5MzcwNTU4OTYsMzUxMjM2NDQ0
-LC0xMjc5MDMwMDY5LDM2MzA0OTI5NSwtMjEyMjQ1ODEwMiwtOT
-A5Nzc0MzEwLDExNDc2NTQ4MywtNTU4OTA4MDc3LC0xMDQ4NDc1
-OTQ1LC0yMDg4NzQ2NjEyLC00NTI4MDIwNDQsNjM3MjE4Mzg3LD
-EzNzA3MDMyNDUsMTA3NzI2MjI1OSwyNTY2MjA4NDQsMTA5NjE1
-MjY5XX0=
+eyJoaXN0b3J5IjpbLTMyNTA3MzExMiwyMTE0OTgxMjI5LDE3Nz
+c1MDc5MjQsMjY3MTM2MzksMTkzNzA1NTg5NiwzNTEyMzY0NDQs
+LTEyNzkwMzAwNjksMzYzMDQ5Mjk1LC0yMTIyNDU4MTAyLC05MD
+k3NzQzMTAsMTE0NzY1NDgzLC01NTg5MDgwNzcsLTEwNDg0NzU5
+NDUsLTIwODg3NDY2MTIsLTQ1MjgwMjA0NCw2MzcyMTgzODcsMT
+M3MDcwMzI0NSwxMDc3MjYyMjU5LDI1NjYyMDg0NCwxMDk2MTUy
+NjldfQ==
 -->
