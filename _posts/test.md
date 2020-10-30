@@ -38,17 +38,18 @@
 	```
 	After running this job surrogate keys will generate. But in ETL jobs we going to be updating the data in batches, maybe a million at a time, maybe 1000 at a time. So we want to see how this surrogate key generation performs over multiple inserts.
 
-	**Run the same job one more time and see how surrogate keys are generated :** when we run the same job again it generates the duplicate surrogate keys. 
-	e.g. suppose First run we insert 1million records with unique 1million surrogate keys
+	> Run the same job one more time and see how surrogate keys are generated : so when we run the same job again it generates the duplicate surrogate keys.
+
+	Lets understand with Ex: suppose First run we insert 1million records with unique 1million surrogate keys
  
  
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxMDM5OTI2OCwxOTM3MDU1ODk2LDM1MT
-IzNjQ0NCwtMTI3OTAzMDA2OSwzNjMwNDkyOTUsLTIxMjI0NTgx
-MDIsLTkwOTc3NDMxMCwxMTQ3NjU0ODMsLTU1ODkwODA3NywtMT
-A0ODQ3NTk0NSwtMjA4ODc0NjYxMiwtNDUyODAyMDQ0LDEzNzA3
-MDMyNDUsMjU2NjIwODQ0LDEwOTYxNTI2OSwtMzk3NzM3OTM1LD
-IwMTY5MTExNzAsMTYxMDE4Nzc1NSwtNjE4NTc2NzM1LC0xODA1
-NjA5MDQ3XX0=
+eyJoaXN0b3J5IjpbNTU3MzQ0MDUzLDE5MzcwNTU4OTYsMzUxMj
+M2NDQ0LC0xMjc5MDMwMDY5LDM2MzA0OTI5NSwtMjEyMjQ1ODEw
+MiwtOTA5Nzc0MzEwLDExNDc2NTQ4MywtNTU4OTA4MDc3LC0xMD
+Q4NDc1OTQ1LC0yMDg4NzQ2NjEyLC00NTI4MDIwNDQsMTM3MDcw
+MzI0NSwyNTY2MjA4NDQsMTA5NjE1MjY5LC0zOTc3Mzc5MzUsMj
+AxNjkxMTE3MCwxNjEwMTg3NzU1LC02MTg1NzY3MzUsLTE4MDU2
+MDkwNDddfQ==
 -->
