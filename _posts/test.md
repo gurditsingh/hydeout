@@ -36,16 +36,17 @@
 	  }
 
 	```
-	After running this job surrogate keys will generate. But in ETL jobs we going to be updating the data in batche But this is kind of what the data looks like. We're gonna do another insert, because the whole idea is this thing is that you know, you're gonna be updating your data in batches, maybe a million at a time, maybe 1000 at a time, and you're gonna be doing this repeatedly. So we want to see how this surrogate key generation performs over multiple inserts.
+	After running this job surrogate keys will generate. But in ETL jobs we going to be updating the data in batches, maybe a million at a time, maybe 1000 at a time. So we want to see how this surrogate key generation performs over multiple inserts.
+	
  
  
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4ODQyNjUyLDE5MzcwNTU4OTYsMzUxMj
-M2NDQ0LC0xMjc5MDMwMDY5LDM2MzA0OTI5NSwtMjEyMjQ1ODEw
-MiwtOTA5Nzc0MzEwLDExNDc2NTQ4MywtNTU4OTA4MDc3LC0xMD
-Q4NDc1OTQ1LC0yMDg4NzQ2NjEyLC00NTI4MDIwNDQsMTM3MDcw
-MzI0NSwyNTY2MjA4NDQsMTA5NjE1MjY5LC0zOTc3Mzc5MzUsMj
-AxNjkxMTE3MCwxNjEwMTg3NzU1LC02MTg1NzY3MzUsLTE4MDU2
-MDkwNDddfQ==
+eyJoaXN0b3J5IjpbMTk0MjA5OTMwNiwxOTM3MDU1ODk2LDM1MT
+IzNjQ0NCwtMTI3OTAzMDA2OSwzNjMwNDkyOTUsLTIxMjI0NTgx
+MDIsLTkwOTc3NDMxMCwxMTQ3NjU0ODMsLTU1ODkwODA3NywtMT
+A0ODQ3NTk0NSwtMjA4ODc0NjYxMiwtNDUyODAyMDQ0LDEzNzA3
+MDMyNDUsMjU2NjIwODQ0LDEwOTYxNTI2OSwtMzk3NzM3OTM1LD
+IwMTY5MTExNzAsMTYxMDE4Nzc1NSwtNjE4NTc2NzM1LC0xODA1
+NjA5MDQ3XX0=
 -->
