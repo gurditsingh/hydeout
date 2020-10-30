@@ -88,13 +88,13 @@
 
 	 - Uniqueness : By using second job (job-2) we have achieved uniqueness.
 	 - Evenly Distributed : Both the jobs are evenly distributed.
-	 - DBA Perspective : I think that the DBA is going to probably complain a bout two things personally
+	 - DBA Perspective : I think that the DBA is going to probably complain about 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAwNTQzOTg2LDY1OTI1Njk5NiwxMTk2MT
-IyMjAsLTEzNDE4NzMyMjEsMjExNDk4MTIyOSwxNzc3NTA3OTI0
-LDI2NzEzNjM5LDE5MzcwNTU4OTYsMzUxMjM2NDQ0LC0xMjc5MD
-MwMDY5LDM2MzA0OTI5NSwtMjEyMjQ1ODEwMiwtOTA5Nzc0MzEw
-LDExNDc2NTQ4MywtNTU4OTA4MDc3LC0xMDQ4NDc1OTQ1LC0yMD
-g4NzQ2NjEyLC00NTI4MDIwNDQsMTM3MDcwMzI0NSwyNTY2MjA4
-NDRdfQ==
+eyJoaXN0b3J5IjpbLTExOTg4Nzg0OTgsNjU5MjU2OTk2LDExOT
+YxMjIyMCwtMTM0MTg3MzIyMSwyMTE0OTgxMjI5LDE3Nzc1MDc5
+MjQsMjY3MTM2MzksMTkzNzA1NTg5NiwzNTEyMzY0NDQsLTEyNz
+kwMzAwNjksMzYzMDQ5Mjk1LC0yMTIyNDU4MTAyLC05MDk3NzQz
+MTAsMTE0NzY1NDgzLC01NTg5MDgwNzcsLTEwNDg0NzU5NDUsLT
+IwODg3NDY2MTIsLTQ1MjgwMjA0NCwxMzcwNzAzMjQ1LDI1NjYy
+MDg0NF19
 -->
