@@ -86,15 +86,15 @@
 	**Evaluation of monotonically_increasing_id()**
 	
 
-	 - Uniqueness : By using second job (job-2) we have achieved uniqueness.
-	 - Evenly Distributed : Both the jobs are evenly distributed.
-	 - DBA Perspective : I think that the DBA is going to probably complain about the maximum surrogate key value here is way larger than total number of records in the table. e.g. if your table contains millions records but the max value of surrogate key can be in trillions because of internal logic of generating monotonically_increasing_id() and in subsequent runs add max value of monotonically_increasing_id().   
+	 - **Uniqueness :** By using second job (job-2) we have achieved uniqueness.
+	 - **Evenly Distributed :** Both the jobs are evenly distributed.
+	 - **DBA Perspective :** I think that the DBA is going to probably complain about the maximum value of surrogate key is way larger than total number of records in the table. e.g. if your table contains millions records but the max value of surrogate key can be in trillions because of internal logic of generating monotonically_increasing_id() and in subsequent runs again add max value of monotonically_increasing_id().   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDgzMzExOTQsNjU5MjU2OTk2LDExOT
-YxMjIyMCwtMTM0MTg3MzIyMSwyMTE0OTgxMjI5LDE3Nzc1MDc5
-MjQsMjY3MTM2MzksMTkzNzA1NTg5NiwzNTEyMzY0NDQsLTEyNz
-kwMzAwNjksMzYzMDQ5Mjk1LC0yMTIyNDU4MTAyLC05MDk3NzQz
-MTAsMTE0NzY1NDgzLC01NTg5MDgwNzcsLTEwNDg0NzU5NDUsLT
-IwODg3NDY2MTIsLTQ1MjgwMjA0NCw2MzcyMTgzODcsMTM3MDcw
-MzI0NV19
+eyJoaXN0b3J5IjpbLTE1NTA5MzMxMjUsLTE4MDgzMzExOTQsNj
+U5MjU2OTk2LDExOTYxMjIyMCwtMTM0MTg3MzIyMSwyMTE0OTgx
+MjI5LDE3Nzc1MDc5MjQsMjY3MTM2MzksMTkzNzA1NTg5NiwzNT
+EyMzY0NDQsLTEyNzkwMzAwNjksMzYzMDQ5Mjk1LC0yMTIyNDU4
+MTAyLC05MDk3NzQzMTAsMTE0NzY1NDgzLC01NTg5MDgwNzcsLT
+EwNDg0NzU5NDUsLTIwODg3NDY2MTIsLTQ1MjgwMjA0NCw2Mzcy
+MTgzODddfQ==
 -->
