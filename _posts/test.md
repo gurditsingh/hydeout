@@ -13,12 +13,15 @@
 	>  **Spark Doc :** The generated ID is guaranteed to be monotonically increasing and unique, but not consecutive. The current implementation puts the partition ID in the upper 31 bits, and the record number within each partition in the lower 33 bits. The assumption is that the data frame has less than 1 billion partitions, and each partition has less than 8 billion records.
 	
 	jhgh
+	ghjkghjk
+	gjkh
+	
 
  
  
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTM1NTE0NzksMzYzMDQ5Mjk1LC0yMT
+eyJoaXN0b3J5IjpbLTEyNzkwMzAwNjksMzYzMDQ5Mjk1LC0yMT
 IyNDU4MTAyLC05MDk3NzQzMTAsMTE0NzY1NDgzLC01NTg5MDgw
 NzcsLTEwNDg0NzU5NDUsLTIwODg3NDY2MTIsLTQ1MjgwMjA0NC
 wxMzcwNzAzMjQ1LDI1NjYyMDg0NCwxMDk2MTUyNjksLTM5Nzcz
