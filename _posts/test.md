@@ -44,18 +44,18 @@
 	
 
  - In First run we insert 1million records and spark generates unique 1million surrogate keys.
- - In Second run we insert 1 million recordwith append mode 
+ - In Second run we insert 1 million records with append mode it generates duplicates surrogates keys.
 
 	suppose First run we insert 1million records with unique 1million surrogate keys
  
  
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUzMTM4NjIyLDE5MzcwNTU4OTYsMzUxMj
-M2NDQ0LC0xMjc5MDMwMDY5LDM2MzA0OTI5NSwtMjEyMjQ1ODEw
-MiwtOTA5Nzc0MzEwLDExNDc2NTQ4MywtNTU4OTA4MDc3LC0xMD
-Q4NDc1OTQ1LC0yMDg4NzQ2NjEyLC00NTI4MDIwNDQsMTM3MDcw
-MzI0NSwyNTY2MjA4NDQsMTA5NjE1MjY5LC0zOTc3Mzc5MzUsMj
-AxNjkxMTE3MCwxNjEwMTg3NzU1LC02MTg1NzY3MzUsLTE4MDU2
-MDkwNDddfQ==
+eyJoaXN0b3J5IjpbMjY3MTM2MzksMTkzNzA1NTg5NiwzNTEyMz
+Y0NDQsLTEyNzkwMzAwNjksMzYzMDQ5Mjk1LC0yMTIyNDU4MTAy
+LC05MDk3NzQzMTAsMTE0NzY1NDgzLC01NTg5MDgwNzcsLTEwND
+g0NzU5NDUsLTIwODg3NDY2MTIsLTQ1MjgwMjA0NCwxMzcwNzAz
+MjQ1LDI1NjYyMDg0NCwxMDk2MTUyNjksLTM5NzczNzkzNSwyMD
+E2OTExMTcwLDE2MTAxODc3NTUsLTYxODU3NjczNSwtMTgwNTYw
+OTA0N119
 -->
