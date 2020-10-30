@@ -1,6 +1,7 @@
 # How to create a surrogate key with Apache Spark Part-1
 
- **What does  Surrogate Key  mean?**
+## What does Surrogate Key mean?
+
  A surrogate key (or synthetic key, pseudokey, entity identifier, system-generated key, database sequence number, factless key, technical key, or arbitrary unique identifier) in a database is a unique identifier for either an entity in the modeled world or an object in the database. The surrogate key is not derived from application data, unlike a natural (or business) key which is derived from application data.
  
  **Surrogate key in a Data Warehouse**: Surrogate keys are typically meaningless integers used to connect the fact to the dimension tables of a data warehouse. There are various reasons why we cannot simply reuse our existing natural or business keys.
@@ -91,11 +92,11 @@
 	 - **Evenly Distributed :** Both the jobs are evenly distributed.
 	 - **DBA Perspective :** I think that the DBA is going to probably complain about the maximum value of surrogate key is way larger than total number of records in the table. e.g. if your table contains millions records but the max value of surrogate key can be in trillions because of internal logic of generating monotonically_increasing_id() and in subsequent runs again add max value of monotonically_increasing_id().   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNjM4NDkwMiwtNDUzODQ2MjY0LC0xOD
-A4MzMxMTk0LDY1OTI1Njk5NiwxMTk2MTIyMjAsLTEzNDE4NzMy
-MjEsMjExNDk4MTIyOSwxNzc3NTA3OTI0LDI2NzEzNjM5LDE5Mz
-cwNTU4OTYsMzUxMjM2NDQ0LC0xMjc5MDMwMDY5LDM2MzA0OTI5
-NSwtMjEyMjQ1ODEwMiwtOTA5Nzc0MzEwLDExNDc2NTQ4MywtNT
-U4OTA4MDc3LC0xMDQ4NDc1OTQ1LC0yMDg4NzQ2NjEyLC00NTI4
-MDIwNDRdfQ==
+eyJoaXN0b3J5IjpbLTIwMzU4MjAzNDYsLTQ1Mzg0NjI2NCwtMT
+gwODMzMTE5NCw2NTkyNTY5OTYsMTE5NjEyMjIwLC0xMzQxODcz
+MjIxLDIxMTQ5ODEyMjksMTc3NzUwNzkyNCwyNjcxMzYzOSwxOT
+M3MDU1ODk2LDM1MTIzNjQ0NCwtMTI3OTAzMDA2OSwzNjMwNDky
+OTUsLTIxMjI0NTgxMDIsLTkwOTc3NDMxMCwxMTQ3NjU0ODMsLT
+U1ODkwODA3NywtMTA0ODQ3NTk0NSwtMjA4ODc0NjYxMiwtNDUy
+ODAyMDQ0XX0=
 -->
