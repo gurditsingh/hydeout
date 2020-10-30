@@ -7,18 +7,19 @@
 # Let's examine what are the options available in Spark
 
  1. **monotonically_increasing_id :** Spark dataframe add unique number is very common requirement especially if you are working on ELT in Spark. You can use monotonically_increasing_id method to generate long number which is monotonically increasing and unique, but not consecutive.
-
-g
+ hjhj
+ hkjkjk
+ Spark Doc : 
 
  
  
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTc4MDE2NjAsMzYzMDQ5Mjk1LC0yMT
-IyNDU4MTAyLC05MDk3NzQzMTAsMTE0NzY1NDgzLC01NTg5MDgw
-NzcsLTEwNDg0NzU5NDUsLTIwODg3NDY2MTIsLTQ1MjgwMjA0NC
-wxMzcwNzAzMjQ1LDI1NjYyMDg0NCwxMDk2MTUyNjksLTM5Nzcz
-NzkzNSwyMDE2OTExMTcwLDE2MTAxODc3NTUsLTYxODU3NjczNS
-wtMTgwNTYwOTA0NywtNzQ3MzA0NDA1LC0xOTY1MjA2NjMsLTEw
-MzM1NzcxNzBdfQ==
+eyJoaXN0b3J5IjpbLTMxODMyOTEyMSwzNjMwNDkyOTUsLTIxMj
+I0NTgxMDIsLTkwOTc3NDMxMCwxMTQ3NjU0ODMsLTU1ODkwODA3
+NywtMTA0ODQ3NTk0NSwtMjA4ODc0NjYxMiwtNDUyODAyMDQ0LD
+EzNzA3MDMyNDUsMjU2NjIwODQ0LDEwOTYxNTI2OSwtMzk3NzM3
+OTM1LDIwMTY5MTExNzAsMTYxMDE4Nzc1NSwtNjE4NTc2NzM1LC
+0xODA1NjA5MDQ3LC03NDczMDQ0MDUsLTE5NjUyMDY2MywtMTAz
+MzU3NzE3MF19
 -->
