@@ -4,7 +4,7 @@
  A surrogate key (or synthetic key, pseudokey, entity identifier, system-generated key, database sequence number, factless key, technical key, or arbitrary unique identifier) in a database is a unique identifier for either an entity in the modeled world or an object in the database. The surrogate key is not derived from application data, unlike a natural (or business) key which is derived from application data.
  **Surrogate key in a Data Warehouse**: Surrogate keys are typically meaningless integers used to connect the fact to the dimension tables of a data warehouse. There are various reasons why we cannot simply reuse our existing natural or business keys.
 
-# Let's examine what are the options available in Spark
+## Let's examine the monotonically_increasing_id
 
  - **monotonically_increasing_id :** Spark dataframe add unique number is very common requirement especially if you are working on ELT in Spark. You can use monotonically_increasing_id method to generate long number which is monotonically increasing and unique, but not consecutive.
  
@@ -90,11 +90,11 @@
 	 - **Evenly Distributed :** Both the jobs are evenly distributed.
 	 - **DBA Perspective :** I think that the DBA is going to probably complain about the maximum value of surrogate key is way larger than total number of records in the table. e.g. if your table contains millions records but the max value of surrogate key can be in trillions because of internal logic of generating monotonically_increasing_id() and in subsequent runs again add max value of monotonically_increasing_id().   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjAyMDY1ODAsLTE4MDgzMzExOTQsNj
-U5MjU2OTk2LDExOTYxMjIyMCwtMTM0MTg3MzIyMSwyMTE0OTgx
-MjI5LDE3Nzc1MDc5MjQsMjY3MTM2MzksMTkzNzA1NTg5NiwzNT
-EyMzY0NDQsLTEyNzkwMzAwNjksMzYzMDQ5Mjk1LC0yMTIyNDU4
-MTAyLC05MDk3NzQzMTAsMTE0NzY1NDgzLC01NTg5MDgwNzcsLT
-EwNDg0NzU5NDUsLTIwODg3NDY2MTIsLTQ1MjgwMjA0NCwxMzcw
-NzAzMjQ1XX0=
+eyJoaXN0b3J5IjpbMjAyNDI0OTkyNCwtMTgwODMzMTE5NCw2NT
+kyNTY5OTYsMTE5NjEyMjIwLC0xMzQxODczMjIxLDIxMTQ5ODEy
+MjksMTc3NzUwNzkyNCwyNjcxMzYzOSwxOTM3MDU1ODk2LDM1MT
+IzNjQ0NCwtMTI3OTAzMDA2OSwzNjMwNDkyOTUsLTIxMjI0NTgx
+MDIsLTkwOTc3NDMxMCwxMTQ3NjU0ODMsLTU1ODkwODA3NywtMT
+A0ODQ3NTk0NSwtMjA4ODc0NjYxMiwtNDUyODAyMDQ0LDEzNzA3
+MDMyNDVdfQ==
 -->
