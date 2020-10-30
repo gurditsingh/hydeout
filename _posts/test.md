@@ -86,9 +86,10 @@
 	**Evaluation of monotonically_increasing_id()**
 	
 
-	 - Uniqueness : by using second job (job-2) 
+	 - Uniqueness : By using second job (job-2) we have achieved Uniqueness.
+	 - Evenly Distributed : Both the jobs are Evenly Distributed
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTcwNzU0MTgsMTE5NjEyMjIwLC0xMz
+eyJoaXN0b3J5IjpbLTE3MTE0OTUwMDYsMTE5NjEyMjIwLC0xMz
 QxODczMjIxLDIxMTQ5ODEyMjksMTc3NzUwNzkyNCwyNjcxMzYz
 OSwxOTM3MDU1ODk2LDM1MTIzNjQ0NCwtMTI3OTAzMDA2OSwzNj
 MwNDkyOTUsLTIxMjI0NTgxMDIsLTkwOTc3NDMxMCwxMTQ3NjU0
