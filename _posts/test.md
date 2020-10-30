@@ -12,9 +12,9 @@
 
 	>  **Spark Doc :** The generated ID is guaranteed to be monotonically increasing and unique, but not consecutive. The current implementation puts the partition ID in the upper 31 bits, and the record number within each partition in the lower 33 bits. The assumption is that the data frame has less than 1 billion partitions, and each partition has less than 8 billion records.
 	
-	jhgh
-	ghjkghjk
-	Let’s create one job a simple example to understand
+	
+	
+	**Let’s create one job and generate surrogate keys**
 	
 	```scala
 	 def run(args: Array[String]): Unit = {
@@ -41,11 +41,11 @@
  
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NDE5MTYwNiwzNTEyMzY0NDQsLTEyNz
-kwMzAwNjksMzYzMDQ5Mjk1LC0yMTIyNDU4MTAyLC05MDk3NzQz
-MTAsMTE0NzY1NDgzLC01NTg5MDgwNzcsLTEwNDg0NzU5NDUsLT
-IwODg3NDY2MTIsLTQ1MjgwMjA0NCw2MzcyMTgzODcsMTM3MDcw
-MzI0NSwxMDc3MjYyMjU5LDI1NjYyMDg0NCwxMDk2MTUyNjksLT
-M5NzczNzkzNSwyMDE2OTExMTcwLC0xMzEwNDAxOTAwLDE2MTAx
-ODc3NTVdfQ==
+eyJoaXN0b3J5IjpbNTM5Mzk4NzIxLDM1MTIzNjQ0NCwtMTI3OT
+AzMDA2OSwzNjMwNDkyOTUsLTIxMjI0NTgxMDIsLTkwOTc3NDMx
+MCwxMTQ3NjU0ODMsLTU1ODkwODA3NywtMTA0ODQ3NTk0NSwtMj
+A4ODc0NjYxMiwtNDUyODAyMDQ0LDYzNzIxODM4NywxMzcwNzAz
+MjQ1LDEwNzcyNjIyNTksMjU2NjIwODQ0LDEwOTYxNTI2OSwtMz
+k3NzM3OTM1LDIwMTY5MTExNzAsLTEzMTA0MDE5MDAsMTYxMDE4
+Nzc1NV19
 -->
