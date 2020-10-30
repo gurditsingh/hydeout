@@ -36,12 +36,12 @@
 	  }
 
 	```
-
+but we looked through the data, we can see the surrogate keys in here, just random sampling. But this is kind of what the data looks like. We're gonna do another insert, because the whole idea is this thing is that you know, you're gonna be updating your data in batches, maybe a million at a time, maybe 1000 at a time, and you're gonna be doing this repeatedly. So we want to see how this surrogate key generation performs over multiple inserts.
  
  
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTM5Mzk4NzIxLDM1MTIzNjQ0NCwtMTI3OT
+eyJoaXN0b3J5IjpbODIzOTA3Mjk5LDM1MTIzNjQ0NCwtMTI3OT
 AzMDA2OSwzNjMwNDkyOTUsLTIxMjI0NTgxMDIsLTkwOTc3NDMx
 MCwxMTQ3NjU0ODMsLTU1ODkwODA3NywtMTA0ODQ3NTk0NSwtMj
 A4ODc0NjYxMiwtNDUyODAyMDQ0LDYzNzIxODM4NywxMzcwNzAz
