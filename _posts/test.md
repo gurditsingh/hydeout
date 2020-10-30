@@ -6,13 +6,15 @@
 
 # Let's examine what are the options available in Spark
 
- 1. **monotonically_increasing_id :** Spark dataframe add unique number is very common requirement especially if you are working on ELT in Spark. You can use monotonically_increasing_id method to generate monotonically increasing and unique, but not consecutive. However the numbers won’t be consecutive if the dataframe has more than 1 partition. Let’s see a simple example to understand it
+ 1. **monotonically_increasing_id :** Spark dataframe add unique number is very common requirement especially if you are working on ELT in Spark. You can use monotonically_increasing_id method to generate long number which is monotonically increasing and unique, but not consecutive.
+
+g
 
  
  
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTUxNTQxNDcsMzYzMDQ5Mjk1LC0yMT
+eyJoaXN0b3J5IjpbLTE2MTc4MDE2NjAsMzYzMDQ5Mjk1LC0yMT
 IyNDU4MTAyLC05MDk3NzQzMTAsMTE0NzY1NDgzLC01NTg5MDgw
 NzcsLTEwNDg0NzU5NDUsLTIwODg3NDY2MTIsLTQ1MjgwMjA0NC
 wxMzcwNzAzMjQ1LDI1NjYyMDg0NCwxMDk2MTUyNjksLTM5Nzcz
