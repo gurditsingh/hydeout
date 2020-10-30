@@ -81,14 +81,18 @@
 
 	  }
 	```
- So the good news is that we have distribution and uniqueness. 
- 
+	 So the good news is that we have distribution and uniqueness. 
+
+	**Evaluation of monotonically_increasing_id()**
+	
+
+	 - Uniqueness : So uniqueness
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MTc0MDUzNywyMTE0OTgxMjI5LDE3Nz
-c1MDc5MjQsMjY3MTM2MzksMTkzNzA1NTg5NiwzNTEyMzY0NDQs
-LTEyNzkwMzAwNjksMzYzMDQ5Mjk1LC0yMTIyNDU4MTAyLC05MD
-k3NzQzMTAsMTE0NzY1NDgzLC01NTg5MDgwNzcsLTEwNDg0NzU5
-NDUsLTIwODg3NDY2MTIsLTQ1MjgwMjA0NCw2MzcyMTgzODcsMT
-M3MDcwMzI0NSwxMDc3MjYyMjU5LDI1NjYyMDg0NCwxMDk2MTUy
-NjldfQ==
+eyJoaXN0b3J5IjpbNDY1ODYwODA4LDIxMTQ5ODEyMjksMTc3Nz
+UwNzkyNCwyNjcxMzYzOSwxOTM3MDU1ODk2LDM1MTIzNjQ0NCwt
+MTI3OTAzMDA2OSwzNjMwNDkyOTUsLTIxMjI0NTgxMDIsLTkwOT
+c3NDMxMCwxMTQ3NjU0ODMsLTU1ODkwODA3NywtMTA0ODQ3NTk0
+NSwtMjA4ODc0NjYxMiwtNDUyODAyMDQ0LDYzNzIxODM4NywxMz
+cwNzAzMjQ1LDEwNzcyNjIyNTksMjU2NjIwODQ0LDEwOTYxNTI2
+OV19
 -->
