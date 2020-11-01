@@ -61,7 +61,7 @@ more than one partitions.
 -   In Second run we again insert 1 million records but it generates duplicates surrogates keys because second run doesn’t know about first run keys.
  
 	**What is the reason for this massive amount of surrogates keys collisions/duplication ?**
-	The thing is with zipwithindex is, it returns a number between zero and some upper bound. And it only guarantees that the numbers are unique. So it will generate the same numbers for next batches.
+	The thing is with zipwithindex is, it returns a number between zero and some upper bound [ordering is first based on the partition index and then the ordering of items within each partition. So the first item in the first partition gets index 0, and the last item in the last partition receives the largest index]. And it only guarantees that the numbers are unique. So it will generate the same numbers for next batches.
 
 	**Possible Solution :** We will take the max value Plus a range of IDs to generate SK for the second and subsequent attempts and by this we've achieved uniqueness, which is a very important criteria in surrogate keys.
 	
@@ -106,14 +106,14 @@ more than one partitions.
 
 	 - **Uniqueness :** By using second job (job-2) we have achieved uniqueness.
 	 - **Evenly Distributed :** Keys are evenly distributed.
-	 - **DBA Perspective :** We have equal number of surrogate keys than total number of records (e.g. 2 million surrogate keys and in the range from one to 2 million). So that's a good point and as DBA prospective there is no leakage or gaps in between keys.
+	 - **DBA Perspective :** We have equal number of surrogate keys withtotal number of records (e.g. 2 million surrogate keys and in the range from one to 2 million). So that's a good point and as DBA prospective there is no leakage or gaps in between keys.
 	 - **Performance :** Job performance can hamper because zipwithindex will trigger another job and rdd to dataframe conversion can be quite expensive operation.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTIyMjUyNTUsMTIxODQ3NjUwOSwtMT
-czODQxNDAzLC04ODEwNDI1NjEsLTIwMTQzMjI4MzUsLTM3MzMy
-NzU0NywyMzY5MTg0NDUsLTg1MTA4MDg1NSwtMTk3NTY4MTUzNC
-wtMjAzNTgyMDM0NiwtNDUzODQ2MjY0LC0xODA4MzMxMTk0LDY1
-OTI1Njk5NiwxMTk2MTIyMjAsLTEzNDE4NzMyMjEsMjExNDk4MT
-IyOSwxNzc3NTA3OTI0LDI2NzEzNjM5LDE5MzcwNTU4OTYsMzUx
-MjM2NDQ0XX0=
+eyJoaXN0b3J5IjpbLTc2MjQwMDY5MiwxMjE4NDc2NTA5LC0xNz
+M4NDE0MDMsLTg4MTA0MjU2MSwtMjAxNDMyMjgzNSwtMzczMzI3
+NTQ3LDIzNjkxODQ0NSwtODUxMDgwODU1LC0xOTc1NjgxNTM0LC
+0yMDM1ODIwMzQ2LC00NTM4NDYyNjQsLTE4MDgzMzExOTQsNjU5
+MjU2OTk2LDExOTYxMjIyMCwtMTM0MTg3MzIyMSwyMTE0OTgxMj
+I5LDE3Nzc1MDc5MjQsMjY3MTM2MzksMTkzNzA1NTg5NiwzNTEy
+MzY0NDRdfQ==
 -->
