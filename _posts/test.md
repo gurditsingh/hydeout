@@ -45,6 +45,11 @@
 	sdsd
 	**Noticeable points**
 	
+
+	 -  The indexes will be  starting from 0 and the ordering is done by partition.
+	 -  Falling back to rdds and then to dataframe  [**can be quite expensive**](https://stackoverflow.com/questions/37088484/whats-the-performance-impact-of-converting-between-dataframe-rdd-and-back)**.**
+	 - 
+
 	
 	After running this job surrogate keys will generate. But in ETL jobs we going to be updating the data in batches, maybe a million at a time, maybe 1000 at a time. So we want to see how this surrogate key generation performs over multiple inserts.
 
@@ -99,11 +104,11 @@
 	 - **Evenly Distributed :** Both the jobs are evenly distributed.
 	 - **DBA Perspective :** I think that the DBA is going to probably complain about the maximum value of surrogate key is way larger than total number of records in the table. e.g. if your table contains millions records but the max value of surrogate key can be in trillions because of internal logic of generating monotonically_increasing_id() and in subsequent runs again add max value of monotonically_increasing_id().   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg5NDM0MjgxLC04ODEwNDI1NjEsLTIwMT
-QzMjI4MzUsLTM3MzMyNzU0NywyMzY5MTg0NDUsLTg1MTA4MDg1
-NSwtMTk3NTY4MTUzNCwtMjAzNTgyMDM0NiwtNDUzODQ2MjY0LC
-0xODA4MzMxMTk0LDY1OTI1Njk5NiwxMTk2MTIyMjAsLTEzNDE4
-NzMyMjEsMjExNDk4MTIyOSwxNzc3NTA3OTI0LDI2NzEzNjM5LD
-E5MzcwNTU4OTYsMzUxMjM2NDQ0LC0xMjc5MDMwMDY5LDM2MzA0
-OTI5NV19
+eyJoaXN0b3J5IjpbMTk1NTY3MTY1MSwtODgxMDQyNTYxLC0yMD
+E0MzIyODM1LC0zNzMzMjc1NDcsMjM2OTE4NDQ1LC04NTEwODA4
+NTUsLTE5NzU2ODE1MzQsLTIwMzU4MjAzNDYsLTQ1Mzg0NjI2NC
+wtMTgwODMzMTE5NCw2NTkyNTY5OTYsMTE5NjEyMjIwLC0xMzQx
+ODczMjIxLDIxMTQ5ODEyMjksMTc3NzUwNzkyNCwyNjcxMzYzOS
+wxOTM3MDU1ODk2LDM1MTIzNjQ0NCwtMTI3OTAzMDA2OSwzNjMw
+NDkyOTVdfQ==
 -->
