@@ -72,7 +72,7 @@ more than one partitions.
 
 	    val spark = SparkSession
 	      .builder()
-	      .master(args(0))
+	      .master("local")
 	      .config("spark.sql.warehouse.dir", System.getProperty("user.dir") + "/spark-warehouse")
 	      .enableHiveSupport()
 	      .getOrCreate()
@@ -81,21 +81,25 @@ more than one partitions.
 
 	    val maxValueOfSK = if (spark.catalog.tableExists("articles_tbl"))
 	      spark.read.table("articles_tbl").groupBy().max("sk").collect() match {
-	        case Array() => 0L
+	        case Array() => 1L
 	        case a => a.head.get(0).asInstanceOf[Long]
 	      }
-	    else 0L
+	    else 1L
 
+	    val zippedRDD = articles.rdd.zipWithIndex()
 
-	    val attachSurrogateKey = articles.withColumn("sk", functions.monotonically_increasing_id().+(maxValueOfSK))
+	    val combineRDD = zippedRDD.map { case (row, index) =>
+	      Row.fromSeq(Array(index + maxValueOfSK) ++ row.toSeq)
+	    }
 
-	    attachSurrogateKey.write.mode(SaveMode.Append).saveAsTable("articles_tbl")
+	    val convertedDF = spark.createDataFrame(combineRDD, getSchema())
 
-	    spark.read.table("articles_tbl").show()
+	    convertedDF.write.mode(SaveMode.Append).saveAsTable("articles_tbl")
 
 	  }
 	```
-	 So the good news is that we have distribution and uniqueness. 
+	
+	So the good news is that we have distribution and uniqueness. 
 
 	**Evaluation of monotonically_increasing_id()**
 	
@@ -104,11 +108,11 @@ more than one partitions.
 	 - **Evenly Distributed :** Both the jobs are evenly distributed.
 	 - **DBA Perspective :** I think that the DBA is going to probably complain about the maximum value of surrogate key is way larger than total number of records in the table. e.g. if your table contains millions records but the max value of surrogate key can be in trillions because of internal logic of generating monotonically_increasing_id() and in subsequent runs again add max value of monotonically_increasing_id().   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mzg0MTQwMywtODgxMDQyNTYxLC0yMD
-E0MzIyODM1LC0zNzMzMjc1NDcsMjM2OTE4NDQ1LC04NTEwODA4
-NTUsLTE5NzU2ODE1MzQsLTIwMzU4MjAzNDYsLTQ1Mzg0NjI2NC
-wtMTgwODMzMTE5NCw2NTkyNTY5OTYsMTE5NjEyMjIwLC0xMzQx
-ODczMjIxLDIxMTQ5ODEyMjksMTc3NzUwNzkyNCwyNjcxMzYzOS
-wxOTM3MDU1ODk2LDM1MTIzNjQ0NCwtMTI3OTAzMDA2OSwzNjMw
-NDkyOTVdfQ==
+eyJoaXN0b3J5IjpbMTIxODQ3NjUwOSwtMTczODQxNDAzLC04OD
+EwNDI1NjEsLTIwMTQzMjI4MzUsLTM3MzMyNzU0NywyMzY5MTg0
+NDUsLTg1MTA4MDg1NSwtMTk3NTY4MTUzNCwtMjAzNTgyMDM0Ni
+wtNDUzODQ2MjY0LC0xODA4MzMxMTk0LDY1OTI1Njk5NiwxMTk2
+MTIyMjAsLTEzNDE4NzMyMjEsMjExNDk4MTIyOSwxNzc3NTA3OT
+I0LDI2NzEzNjM5LDE5MzcwNTU4OTYsMzUxMjM2NDQ0LC0xMjc5
+MDMwMDY5XX0=
 -->
