@@ -15,7 +15,31 @@
 
 	**Let’s create a sample job (Job-1) to generate surrogate keys**
 	
-	
+	```scala
+	def run(args: Array[String]): Unit = {
+
+	    val spark = SparkSession
+	      .builder()
+	      .master(args(0))
+	      .config("spark.sql.warehouse.dir", System.getProperty("user.dir") + "/spark-warehouse")
+	      .enableHiveSupport()
+	      .getOrCreate()
+
+	    val articles = loadDataFromSource(spark)
+
+	    val zippedRDD = articles.rdd.zipWithIndex()
+
+	    val combineRDD = zippedRDD.map { case (row, index) =>
+	      Row.fromSeq(Array(index) ++ row.toSeq)
+	    }
+
+	    val convertedDF = spark.createDataFrame(combineRDD, getSchema())
+
+	    convertedDF.write.mode(SaveMode.Append).saveAsTable("articles_tbl12")
+
+	  }
+
+	```
 	After running this job surrogate keys will generate. But in ETL jobs we going to be updating the data in batches, maybe a million at a time, maybe 1000 at a time. So we want to see how this surrogate key generation performs over multiple inserts.
 
 	> Run the same job one more time and see how surrogate keys are generated : so when we run the same job again, it generates the duplicate surrogate keys.
@@ -70,7 +94,7 @@
 	 - **Evenly Distributed :** Both the jobs are evenly distributed.
 	 - **DBA Perspective :** I think that the DBA is going to probably complain about the maximum value of surrogate key is way larger than total number of records in the table. e.g. if your table contains millions records but the max value of surrogate key can be in trillions because of internal logic of generating monotonically_increasing_id() and in subsequent runs again add max value of monotonically_increasing_id().   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzMDk0MjA2NSwtMzczMzI3NTQ3LDIzNj
+eyJoaXN0b3J5IjpbLTUyODQyOTEwNCwtMzczMzI3NTQ3LDIzNj
 kxODQ0NSwtODUxMDgwODU1LC0xOTc1NjgxNTM0LC0yMDM1ODIw
 MzQ2LC00NTM4NDYyNjQsLTE4MDgzMzExOTQsNjU5MjU2OTk2LD
 ExOTYxMjIyMCwtMTM0MTg3MzIyMSwyMTE0OTgxMjI5LDE3Nzc1
