@@ -6,9 +6,9 @@
  
  **Surrogate key in a Data Warehouse**: Surrogate keys are typically meaningless integers used to connect the fact to the dimension tables of a data warehouse. There are various reasons why we cannot simply reuse our existing natural or business keys.
 
-## Let's examine the monotonically_increasing_id
+## Let's examine the zipwithindex 
 
- - **monotonically_increasing_id :** Spark dataframe add unique number is very common requirement especially if you are working on ELT in Spark. You can use monotonically_increasing_id method to generate long number which is monotonically increasing and unique, but not consecutive.
+ - **zipwithindex :** Spark dataframe add unique number is very common requirement especially if you are working on ELT in Spark. You can use monotonically_increasing_id method to generate long number which is monotonically increasing and unique, but not consecutive.
  
  
 
@@ -92,11 +92,11 @@
 	 - **Evenly Distributed :** Both the jobs are evenly distributed.
 	 - **DBA Perspective :** I think that the DBA is going to probably complain about the maximum value of surrogate key is way larger than total number of records in the table. e.g. if your table contains millions records but the max value of surrogate key can be in trillions because of internal logic of generating monotonically_increasing_id() and in subsequent runs again add max value of monotonically_increasing_id().   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzU4MjAzNDYsLTQ1Mzg0NjI2NCwtMT
-gwODMzMTE5NCw2NTkyNTY5OTYsMTE5NjEyMjIwLC0xMzQxODcz
-MjIxLDIxMTQ5ODEyMjksMTc3NzUwNzkyNCwyNjcxMzYzOSwxOT
-M3MDU1ODk2LDM1MTIzNjQ0NCwtMTI3OTAzMDA2OSwzNjMwNDky
-OTUsLTIxMjI0NTgxMDIsLTkwOTc3NDMxMCwxMTQ3NjU0ODMsLT
-U1ODkwODA3NywtMTA0ODQ3NTk0NSwtMjA4ODc0NjYxMiwtNDUy
-ODAyMDQ0XX0=
+eyJoaXN0b3J5IjpbLTE5NzU2ODE1MzQsLTIwMzU4MjAzNDYsLT
+Q1Mzg0NjI2NCwtMTgwODMzMTE5NCw2NTkyNTY5OTYsMTE5NjEy
+MjIwLC0xMzQxODczMjIxLDIxMTQ5ODEyMjksMTc3NzUwNzkyNC
+wyNjcxMzYzOSwxOTM3MDU1ODk2LDM1MTIzNjQ0NCwtMTI3OTAz
+MDA2OSwzNjMwNDkyOTUsLTIxMjI0NTgxMDIsLTkwOTc3NDMxMC
+wxMTQ3NjU0ODMsLTU1ODkwODA3NywtMTA0ODQ3NTk0NSwtMjA4
+ODc0NjYxMl19
 -->
