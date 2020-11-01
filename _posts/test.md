@@ -12,8 +12,7 @@
 
 	>  **Spark Doc :** Zips this RDD with its element indices. The ordering is first based on the partition index and then the ordering of items within each partition. So the first item in the first partition gets index 0, and the last item in the last partition receives the largest index. **This method needs to trigger a spark job when this RDD contains more than one partitions.**
 	
-	
-	
+
 	**Let’s create a sample job (Job-1) to generate surrogate keys**
 	
 	```scala
@@ -90,7 +89,7 @@
 	 - **Evenly Distributed :** Both the jobs are evenly distributed.
 	 - **DBA Perspective :** I think that the DBA is going to probably complain about the maximum value of surrogate key is way larger than total number of records in the table. e.g. if your table contains millions records but the max value of surrogate key can be in trillions because of internal logic of generating monotonically_increasing_id() and in subsequent runs again add max value of monotonically_increasing_id().   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNDgwNDkzMSwyMzY5MTg0NDUsLTg1MT
+eyJoaXN0b3J5IjpbLTM3MzMyNzU0NywyMzY5MTg0NDUsLTg1MT
 A4MDg1NSwtMTk3NTY4MTUzNCwtMjAzNTgyMDM0NiwtNDUzODQ2
 MjY0LC0xODA4MzMxMTk0LDY1OTI1Njk5NiwxMTk2MTIyMjAsLT
 EzNDE4NzMyMjEsMjExNDk4MTIyOSwxNzc3NTA3OTI0LDI2NzEz
