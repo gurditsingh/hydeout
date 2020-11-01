@@ -8,7 +8,7 @@
 
 ## Let's examine the zipwithindex 
 
- - **zipwithindex :** Spark dataframe add unique number is very common requirement especially if you are working on ELT in Spark. You can use monotonically_increasing_id method to generate long number which is monotonically increasing and unique, but not consecutive.
+ - **zipwithindex :** Spark dataframe add unique number is very common requirement especially if you are working on ELT in Spark. You can use zipwithindex method to generate long number.
  
  
 
@@ -92,11 +92,11 @@
 	 - **Evenly Distributed :** Both the jobs are evenly distributed.
 	 - **DBA Perspective :** I think that the DBA is going to probably complain about the maximum value of surrogate key is way larger than total number of records in the table. e.g. if your table contains millions records but the max value of surrogate key can be in trillions because of internal logic of generating monotonically_increasing_id() and in subsequent runs again add max value of monotonically_increasing_id().   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzU2ODE1MzQsLTIwMzU4MjAzNDYsLT
-Q1Mzg0NjI2NCwtMTgwODMzMTE5NCw2NTkyNTY5OTYsMTE5NjEy
-MjIwLC0xMzQxODczMjIxLDIxMTQ5ODEyMjksMTc3NzUwNzkyNC
-wyNjcxMzYzOSwxOTM3MDU1ODk2LDM1MTIzNjQ0NCwtMTI3OTAz
-MDA2OSwzNjMwNDkyOTUsLTIxMjI0NTgxMDIsLTkwOTc3NDMxMC
-wxMTQ3NjU0ODMsLTU1ODkwODA3NywtMTA0ODQ3NTk0NSwtMjA4
-ODc0NjYxMl19
+eyJoaXN0b3J5IjpbLTg1MTA4MDg1NSwtMTk3NTY4MTUzNCwtMj
+AzNTgyMDM0NiwtNDUzODQ2MjY0LC0xODA4MzMxMTk0LDY1OTI1
+Njk5NiwxMTk2MTIyMjAsLTEzNDE4NzMyMjEsMjExNDk4MTIyOS
+wxNzc3NTA3OTI0LDI2NzEzNjM5LDE5MzcwNTU4OTYsMzUxMjM2
+NDQ0LC0xMjc5MDMwMDY5LDM2MzA0OTI5NSwtMjEyMjQ1ODEwMi
+wtOTA5Nzc0MzEwLDExNDc2NTQ4MywtNTU4OTA4MDc3LC0xMDQ4
+NDc1OTQ1XX0=
 -->
