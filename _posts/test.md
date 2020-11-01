@@ -106,13 +106,14 @@ more than one partitions.
 
 	 - **Uniqueness :** By using second job (job-2) we have achieved uniqueness.
 	 - **Evenly Distributed :** Both the jobs are evenly distributed.
-	 - **DBA Perspective :** I think that the DBA is going to probably complain about the maximum value of surrogate key is way larger than total number of records in the table. e.g. if your table contains millions records but the max value of surrogate key can be in trillions because of internal logic of generating monotonically_increasing_id() and in subsequent runs again add max value of monotonically_increasing_id().   
+	 - **DBA Perspective :** I think that the DBA is going to probably complain about the maximum value of surrogate key is way larger than total number of records in the table. e.g. if your table contains millions records but the max value of surrogate key can be in trillions because of internal logic of generating monotonically_increasing_id() and in subsequent runs again add max value of monotonically_increasing_id().  
+	 - performance
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxODQ3NjUwOSwtMTczODQxNDAzLC04OD
-EwNDI1NjEsLTIwMTQzMjI4MzUsLTM3MzMyNzU0NywyMzY5MTg0
-NDUsLTg1MTA4MDg1NSwtMTk3NTY4MTUzNCwtMjAzNTgyMDM0Ni
-wtNDUzODQ2MjY0LC0xODA4MzMxMTk0LDY1OTI1Njk5NiwxMTk2
-MTIyMjAsLTEzNDE4NzMyMjEsMjExNDk4MTIyOSwxNzc3NTA3OT
-I0LDI2NzEzNjM5LDE5MzcwNTU4OTYsMzUxMjM2NDQ0LC0xMjc5
-MDMwMDY5XX0=
+eyJoaXN0b3J5IjpbLTMyMTY3NjY1NiwxMjE4NDc2NTA5LC0xNz
+M4NDE0MDMsLTg4MTA0MjU2MSwtMjAxNDMyMjgzNSwtMzczMzI3
+NTQ3LDIzNjkxODQ0NSwtODUxMDgwODU1LC0xOTc1NjgxNTM0LC
+0yMDM1ODIwMzQ2LC00NTM4NDYyNjQsLTE4MDgzMzExOTQsNjU5
+MjU2OTk2LDExOTYxMjIyMCwtMTM0MTg3MzIyMSwyMTE0OTgxMj
+I5LDE3Nzc1MDc5MjQsMjY3MTM2MzksMTkzNzA1NTg5NiwzNTEy
+MzY0NDRdfQ==
 -->
