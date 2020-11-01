@@ -63,7 +63,7 @@ more than one partitions.
 	**What is the reason for this massive amount of surrogates keys collisions/duplication ?**
 	The thing is with monotonically increasing ID is, it returns a number between zero and some upper bound. And it only guarantees that the numbers are unique. So it will generate the same numbers for next batches.
 
-	**Possible Solution :** Since monotonically increasing ID starts with zero, we're going to add max value to it. And so we're gonna do this all over again. So we will take the max value Plus a range of IDs to generate SK for the second and subsequent attempts and by this we've achieved uniqueness, which is a very important criteria in surrogate keys.
+	**Possible Solution :** we  going to add max value to it. And so we're gonna do this all over again. So we will take the max value Plus a range of IDs to generate SK for the second and subsequent attempts and by this we've achieved uniqueness, which is a very important criteria in surrogate keys.
 	
  
 	 **Let’s create a sample job (Job-2) to generate surrogate keys with max value**
@@ -104,11 +104,11 @@ more than one partitions.
 	 - **Evenly Distributed :** Both the jobs are evenly distributed.
 	 - **DBA Perspective :** I think that the DBA is going to probably complain about the maximum value of surrogate key is way larger than total number of records in the table. e.g. if your table contains millions records but the max value of surrogate key can be in trillions because of internal logic of generating monotonically_increasing_id() and in subsequent runs again add max value of monotonically_increasing_id().   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDIxNjM2ODQsLTg4MTA0MjU2MSwtMj
-AxNDMyMjgzNSwtMzczMzI3NTQ3LDIzNjkxODQ0NSwtODUxMDgw
-ODU1LC0xOTc1NjgxNTM0LC0yMDM1ODIwMzQ2LC00NTM4NDYyNj
-QsLTE4MDgzMzExOTQsNjU5MjU2OTk2LDExOTYxMjIyMCwtMTM0
-MTg3MzIyMSwyMTE0OTgxMjI5LDE3Nzc1MDc5MjQsMjY3MTM2Mz
-ksMTkzNzA1NTg5NiwzNTEyMzY0NDQsLTEyNzkwMzAwNjksMzYz
-MDQ5Mjk1XX0=
+eyJoaXN0b3J5IjpbLTY0MDgwNzk1MSwtODgxMDQyNTYxLC0yMD
+E0MzIyODM1LC0zNzMzMjc1NDcsMjM2OTE4NDQ1LC04NTEwODA4
+NTUsLTE5NzU2ODE1MzQsLTIwMzU4MjAzNDYsLTQ1Mzg0NjI2NC
+wtMTgwODMzMTE5NCw2NTkyNTY5OTYsMTE5NjEyMjIwLC0xMzQx
+ODczMjIxLDIxMTQ5ODEyMjksMTc3NzUwNzkyNCwyNjcxMzYzOS
+wxOTM3MDU1ODk2LDM1MTIzNjQ0NCwtMTI3OTAzMDA2OSwzNjMw
+NDkyOTVdfQ==
 -->
