@@ -108,12 +108,13 @@ more than one partitions.
 	 - **Evenly Distributed :** Keys are evenly distributed.
 	 - **DBA Perspective :** We have equal number of surrogate keys same with the total number of records in the table (e.g. 2 million surrogate keys and in the range from one to 2 million with table having 2 million records). So that's a good point and as DBA prospective there is no leakage or gaps in between keys.
 	 - **Performance :** Job performance can hamper because zipwithindex will trigger another job and rdd to dataframe conversion can be quite expensive operation.
+	 Only one thing which will increase the performance is join right to that table to figure out what the latest value is in order to be able to increase it
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTMzMzA5Nzg3LDEyMTg0NzY1MDksLTE3Mz
-g0MTQwMywtODgxMDQyNTYxLC0yMDE0MzIyODM1LC0zNzMzMjc1
-NDcsMjM2OTE4NDQ1LC04NTEwODA4NTUsLTE5NzU2ODE1MzQsLT
-IwMzU4MjAzNDYsLTQ1Mzg0NjI2NCwtMTgwODMzMTE5NCw2NTky
-NTY5OTYsMTE5NjEyMjIwLC0xMzQxODczMjIxLDIxMTQ5ODEyMj
-ksMTc3NzUwNzkyNCwyNjcxMzYzOSwxOTM3MDU1ODk2LDM1MTIz
-NjQ0NF19
+eyJoaXN0b3J5IjpbMjAwNjk2NjYzNCw5MzMzMDk3ODcsMTIxOD
+Q3NjUwOSwtMTczODQxNDAzLC04ODEwNDI1NjEsLTIwMTQzMjI4
+MzUsLTM3MzMyNzU0NywyMzY5MTg0NDUsLTg1MTA4MDg1NSwtMT
+k3NTY4MTUzNCwtMjAzNTgyMDM0NiwtNDUzODQ2MjY0LC0xODA4
+MzMxMTk0LDY1OTI1Njk5NiwxMTk2MTIyMjAsLTEzNDE4NzMyMj
+EsMjExNDk4MTIyOSwxNzc3NTA3OTI0LDI2NzEzNjM5LDE5Mzcw
+NTU4OTZdfQ==
 -->
