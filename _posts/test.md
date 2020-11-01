@@ -40,6 +40,8 @@
 	  }
 
 	```
+	
+	sd
 	After running this job surrogate keys will generate. But in ETL jobs we going to be updating the data in batches, maybe a million at a time, maybe 1000 at a time. So we want to see how this surrogate key generation performs over multiple inserts.
 
 	> Run the same job one more time and see how surrogate keys are generated : so when we run the same job again, it generates the duplicate surrogate keys.
@@ -93,11 +95,11 @@
 	 - **Evenly Distributed :** Both the jobs are evenly distributed.
 	 - **DBA Perspective :** I think that the DBA is going to probably complain about the maximum value of surrogate key is way larger than total number of records in the table. e.g. if your table contains millions records but the max value of surrogate key can be in trillions because of internal logic of generating monotonically_increasing_id() and in subsequent runs again add max value of monotonically_increasing_id().   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTQzMjI4MzUsLTM3MzMyNzU0NywyMz
-Y5MTg0NDUsLTg1MTA4MDg1NSwtMTk3NTY4MTUzNCwtMjAzNTgy
-MDM0NiwtNDUzODQ2MjY0LC0xODA4MzMxMTk0LDY1OTI1Njk5Ni
-wxMTk2MTIyMjAsLTEzNDE4NzMyMjEsMjExNDk4MTIyOSwxNzc3
-NTA3OTI0LDI2NzEzNjM5LDE5MzcwNTU4OTYsMzUxMjM2NDQ0LC
-0xMjc5MDMwMDY5LDM2MzA0OTI5NSwtMjEyMjQ1ODEwMiwtOTA5
-Nzc0MzEwXX0=
+eyJoaXN0b3J5IjpbLTM3MTQyNTA3MCwtMjAxNDMyMjgzNSwtMz
+czMzI3NTQ3LDIzNjkxODQ0NSwtODUxMDgwODU1LC0xOTc1Njgx
+NTM0LC0yMDM1ODIwMzQ2LC00NTM4NDYyNjQsLTE4MDgzMzExOT
+QsNjU5MjU2OTk2LDExOTYxMjIyMCwtMTM0MTg3MzIyMSwyMTE0
+OTgxMjI5LDE3Nzc1MDc5MjQsMjY3MTM2MzksMTkzNzA1NTg5Ni
+wzNTEyMzY0NDQsLTEyNzkwMzAwNjksMzYzMDQ5Mjk1LC0yMTIy
+NDU4MTAyXX0=
 -->
