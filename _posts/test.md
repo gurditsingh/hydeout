@@ -107,10 +107,10 @@ more than one partitions.
 	 - **Uniqueness :** By using second job (job-2) we have achieved uniqueness.
 	 - **Evenly Distributed :** Keys are evenly distributed.
 	 - **DBA Perspective :** We have equal number of surrogate keys same with the total number of records in the table (e.g. 2 million surrogate keys and in the range from one to 2 million with table having 2 million records). So that's a good point and as DBA prospective there is no leakage or gaps in between keys.
-	 - **Performance :** Job performance can hamper because zipwithindex will trigger another job and rdd to dataframe conversion can be quite expensive operation.
-	 Only one thing which will increase the performance is join right to that table to figure out what the latest value is in order to be able to increase it
+	 - **Performance :** Job performance can hamper because zipwithindex will trigger another job and rdd to dataframe conversion can be quite expensive operation. One more thing which will increase the performance is join right to that table to figure out what the latest value is in order to increase it.
+	 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwNjk2NjYzNCw5MzMzMDk3ODcsMTIxOD
+eyJoaXN0b3J5IjpbLTExNzE5Mjg0NSw5MzMzMDk3ODcsMTIxOD
 Q3NjUwOSwtMTczODQxNDAzLC04ODEwNDI1NjEsLTIwMTQzMjI4
 MzUsLTM3MzMyNzU0NywyMzY5MTg0NDUsLTg1MTA4MDg1NSwtMT
 k3NTY4MTUzNCwtMjAzNTgyMDM0NiwtNDUzODQ2MjY0LC0xODA4
