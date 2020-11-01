@@ -46,12 +46,11 @@
 
 	**Lets understand with Example**: 
 	
-
  - In First run we insert 1million records and spark generates unique 1million surrogate keys.
  - In Second run we insert 1 million records with append mode it generates duplicates surrogates keys.
  
 	**What is the reason for this massive amount of surrogates keys collisions/duplication ?**
-	The thing is with monotonically increasing ID is, it returns a number between zero and some upper bound. And it only guarantees that the numbers are increased monotonically. So there's no guarantee you'll generate the same numbers or won't generate the same for next batches.
+	The thing is with monotonically increasing ID is, it returns a number between zero and some upper bound. And it only guarantees that the numbers are unique. So there's no guarantee you'll generate the same numbers or won't generate the same for next batches.
 
 	**Possible Solution :** Since monotonically increasing ID starts with zero, we're going to add max value to it. And so we're gonna do this all over again. So we will take the max value Plus a range of IDs to generate SK for the second and subsequent attempts and by this we've achieved uniqueness, which is a very important criteria in surrogate keys.
 	
@@ -94,11 +93,11 @@
 	 - **Evenly Distributed :** Both the jobs are evenly distributed.
 	 - **DBA Perspective :** I think that the DBA is going to probably complain about the maximum value of surrogate key is way larger than total number of records in the table. e.g. if your table contains millions records but the max value of surrogate key can be in trillions because of internal logic of generating monotonically_increasing_id() and in subsequent runs again add max value of monotonically_increasing_id().   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyODQyOTEwNCwtMzczMzI3NTQ3LDIzNj
-kxODQ0NSwtODUxMDgwODU1LC0xOTc1NjgxNTM0LC0yMDM1ODIw
-MzQ2LC00NTM4NDYyNjQsLTE4MDgzMzExOTQsNjU5MjU2OTk2LD
-ExOTYxMjIyMCwtMTM0MTg3MzIyMSwyMTE0OTgxMjI5LDE3Nzc1
-MDc5MjQsMjY3MTM2MzksMTkzNzA1NTg5NiwzNTEyMzY0NDQsLT
-EyNzkwMzAwNjksMzYzMDQ5Mjk1LC0yMTIyNDU4MTAyLC05MDk3
-NzQzMTBdfQ==
+eyJoaXN0b3J5IjpbNjI4MjE2MDY3LC0zNzMzMjc1NDcsMjM2OT
+E4NDQ1LC04NTEwODA4NTUsLTE5NzU2ODE1MzQsLTIwMzU4MjAz
+NDYsLTQ1Mzg0NjI2NCwtMTgwODMzMTE5NCw2NTkyNTY5OTYsMT
+E5NjEyMjIwLC0xMzQxODczMjIxLDIxMTQ5ODEyMjksMTc3NzUw
+NzkyNCwyNjcxMzYzOSwxOTM3MDU1ODk2LDM1MTIzNjQ0NCwtMT
+I3OTAzMDA2OSwzNjMwNDkyOTUsLTIxMjI0NTgxMDIsLTkwOTc3
+NDMxMF19
 -->
