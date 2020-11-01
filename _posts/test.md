@@ -1,4 +1,4 @@
-# How to create a surrogate key with Apache Spark Part-1
+# How to create a surrogate key with Apache Spark Part-2
 
 ## What does Surrogate Key mean?
 
@@ -106,14 +106,14 @@ more than one partitions.
 
 	 - **Uniqueness :** By using second job (job-2) we have achieved uniqueness.
 	 - **Evenly Distributed :** Keys are evenly distributed.
-	 - **DBA Perspective :** We have equal number of surrogate keys withtotal number of records (e.g. 2 million surrogate keys and in the range from one to 2 million). So that's a good point and as DBA prospective there is no leakage or gaps in between keys.
+	 - **DBA Perspective :** We have equal number of surrogate keys same with the total number of records in the table (e.g. 2 million surrogate keys and in the range from one to 2 million with table having 2 million records). So that's a good point and as DBA prospective there is no leakage or gaps in between keys.
 	 - **Performance :** Job performance can hamper because zipwithindex will trigger another job and rdd to dataframe conversion can be quite expensive operation.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2MjQwMDY5MiwxMjE4NDc2NTA5LC0xNz
-M4NDE0MDMsLTg4MTA0MjU2MSwtMjAxNDMyMjgzNSwtMzczMzI3
-NTQ3LDIzNjkxODQ0NSwtODUxMDgwODU1LC0xOTc1NjgxNTM0LC
-0yMDM1ODIwMzQ2LC00NTM4NDYyNjQsLTE4MDgzMzExOTQsNjU5
-MjU2OTk2LDExOTYxMjIyMCwtMTM0MTg3MzIyMSwyMTE0OTgxMj
-I5LDE3Nzc1MDc5MjQsMjY3MTM2MzksMTkzNzA1NTg5NiwzNTEy
-MzY0NDRdfQ==
+eyJoaXN0b3J5IjpbOTMzMzA5Nzg3LDEyMTg0NzY1MDksLTE3Mz
+g0MTQwMywtODgxMDQyNTYxLC0yMDE0MzIyODM1LC0zNzMzMjc1
+NDcsMjM2OTE4NDQ1LC04NTEwODA4NTUsLTE5NzU2ODE1MzQsLT
+IwMzU4MjAzNDYsLTQ1Mzg0NjI2NCwtMTgwODMzMTE5NCw2NTky
+NTY5OTYsMTE5NjEyMjIwLC0xMzQxODczMjIxLDIxMTQ5ODEyMj
+ksMTc3NzUwNzkyNCwyNjcxMzYzOSwxOTM3MDU1ODk2LDM1MTIz
+NjQ0NF19
 -->
