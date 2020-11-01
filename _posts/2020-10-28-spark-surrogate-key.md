@@ -101,5 +101,5 @@ tags:
 	
 
 	 - **Uniqueness :** By using second job (job-2) we have achieved uniqueness.
-	 - **Evenly Distributed :** Both the jobs are evenly distributed.
+	 - **Evenly Distributed :** Keys are distributed but have larger values.
 	 - **DBA Perspective :** I think that the DBA will complain about the maximum value of surrogate key is way larger than the total number of records in the table. e.g. if your table contains millions records but the max value of surrogate key can be in trillions because of internal logic of generating monotonically_increasing_id() and the subsequent runs again add max value with monotonically_increasing_id() for uniqueness.  
