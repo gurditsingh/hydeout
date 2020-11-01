@@ -51,19 +51,19 @@ more than one partitions.
 	 
 
 	
-	After running this job surrogate keys will generate. But in ETL jobs we going to be updating the data in batches, maybe a million at a time, maybe 1000 at a time. So we want to see how this surrogate key generation performs over multiple inserts.
-
-	> Run the same job one more time and see how surrogate keys are generated : so when we run the same job again, it generates the duplicate surrogate keys.
-
-	**Lets understand with Example**: 
-	
- - In First run we insert 1million records and spark generates unique 1million surrogate keys.
- - In Second run we insert 1 million records with append mode it generates duplicates surrogates keys.
+	-   After running this job surrogate keys will generate. But in ETL jobs we going to be inserting the data in batches, maybe a million at a time, maybe 1000 at a time. So we want to see how this surrogate key generation performs over multiple inserts.
+    
+    > Run the same job one more time and see how surrogate keys are generated : so when we run the same job again, it generates the duplicate surrogate keys.
+    
+    **Lets understand with Example**:
+    
+-   In First run we insert 1 million records and spark generates unique 1million surrogate keys.
+-   In Second run we again insert 1 million records but it generates duplicates surrogates keys because second run doesn’t know about first run keys.
  
 	**What is the reason for this massive amount of surrogates keys collisions/duplication ?**
 	The thing is with monotonically increasing ID is, it returns a number between zero and some upper bound. And it only guarantees that the numbers are unique. So it will generate the same numbers for next batches.
 
-	**Possible Solution :** we  going to add max value to it. And so we're gonna do this all over again. So we will take the max value Plus a range of IDs to generate SK for the second and subsequent attempts and by this we've achieved uniqueness, which is a very important criteria in surrogate keys.
+	**Possible Solution :** We will take the max value Plus a range of IDs to generate SK for the second and subsequent attempts and by this we've achieved uniqueness, which is a very important criteria in surrogate keys.
 	
  
 	 **Let’s create a sample job (Job-2) to generate surrogate keys with max value**
@@ -104,7 +104,7 @@ more than one partitions.
 	 - **Evenly Distributed :** Both the jobs are evenly distributed.
 	 - **DBA Perspective :** I think that the DBA is going to probably complain about the maximum value of surrogate key is way larger than total number of records in the table. e.g. if your table contains millions records but the max value of surrogate key can be in trillions because of internal logic of generating monotonically_increasing_id() and in subsequent runs again add max value of monotonically_increasing_id().   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0MDgwNzk1MSwtODgxMDQyNTYxLC0yMD
+eyJoaXN0b3J5IjpbMTkyNjMyNjI3NiwtODgxMDQyNTYxLC0yMD
 E0MzIyODM1LC0zNzMzMjc1NDcsMjM2OTE4NDQ1LC04NTEwODA4
 NTUsLTE5NzU2ODE1MzQsLTIwMzU4MjAzNDYsLTQ1Mzg0NjI2NC
 wtMTgwODMzMTE5NCw2NTkyNTY5OTYsMTE5NjEyMjIwLC0xMzQx
