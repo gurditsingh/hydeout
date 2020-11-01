@@ -8,12 +8,9 @@
 
 ## Let's examine the zipwithindex 
 
- - **zipwithindex :** Spark dataframe add unique number is very common requirement especially if you are working on ELT in Spark. You can use zipwithindex method to generate long number. zipwithindex works on rdd and use  `df.rdd.zipWithIndex()` .
+ - **zipwithindex :** Spark dataframe add unique number is very common requirement especially if you are working on ELT in Spark. You can use zipwithindex method to generate long number. zipwithindex works on rdd and use  `df.rdd.zipWithIndex()` . 
 
- 
- 
-
-	>  **Spark Doc :** The generated ID is guaranteed to be monotonically increasing and unique, but not consecutive. The current implementation puts the partition ID in the upper 31 bits, and the record number within each partition in the lower 33 bits. The assumption is that the data frame has less than 1 billion partitions, and each partition has less than 8 billion records.
+	>  **Spark Doc :** Zips this RDD with its element indices. The ordering is first based on the partition index and then the ordering of items within each partition. So the first item in the first partition gets index 0, and the last item in the last partition receives the largest index.
 	
 	
 	
@@ -93,11 +90,11 @@
 	 - **Evenly Distributed :** Both the jobs are evenly distributed.
 	 - **DBA Perspective :** I think that the DBA is going to probably complain about the maximum value of surrogate key is way larger than total number of records in the table. e.g. if your table contains millions records but the max value of surrogate key can be in trillions because of internal logic of generating monotonically_increasing_id() and in subsequent runs again add max value of monotonically_increasing_id().   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM2OTE4NDQ1LC04NTEwODA4NTUsLTE5Nz
-U2ODE1MzQsLTIwMzU4MjAzNDYsLTQ1Mzg0NjI2NCwtMTgwODMz
-MTE5NCw2NTkyNTY5OTYsMTE5NjEyMjIwLC0xMzQxODczMjIxLD
-IxMTQ5ODEyMjksMTc3NzUwNzkyNCwyNjcxMzYzOSwxOTM3MDU1
-ODk2LDM1MTIzNjQ0NCwtMTI3OTAzMDA2OSwzNjMwNDkyOTUsLT
-IxMjI0NTgxMDIsLTkwOTc3NDMxMCwxMTQ3NjU0ODMsLTU1ODkw
-ODA3N119
+eyJoaXN0b3J5IjpbOTEzOTc2Mjc3LDIzNjkxODQ0NSwtODUxMD
+gwODU1LC0xOTc1NjgxNTM0LC0yMDM1ODIwMzQ2LC00NTM4NDYy
+NjQsLTE4MDgzMzExOTQsNjU5MjU2OTk2LDExOTYxMjIyMCwtMT
+M0MTg3MzIyMSwyMTE0OTgxMjI5LDE3Nzc1MDc5MjQsMjY3MTM2
+MzksMTkzNzA1NTg5NiwzNTEyMzY0NDQsLTEyNzkwMzAwNjksMz
+YzMDQ5Mjk1LC0yMTIyNDU4MTAyLC05MDk3NzQzMTAsMTE0NzY1
+NDgzXX0=
 -->
