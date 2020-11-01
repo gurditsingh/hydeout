@@ -35,7 +35,7 @@
 
 	    val convertedDF = spark.createDataFrame(combineRDD, getSchema())
 
-	    convertedDF.write.mode(SaveMode.Append).saveAsTable("articles_tbl12")
+	    convertedDF.write.mode(SaveMode.Append).saveAsTable("articles_tbl")
 
 	  }
 
@@ -104,7 +104,7 @@ more than one partitions.
 	 - **Evenly Distributed :** Both the jobs are evenly distributed.
 	 - **DBA Perspective :** I think that the DBA is going to probably complain about the maximum value of surrogate key is way larger than total number of records in the table. e.g. if your table contains millions records but the max value of surrogate key can be in trillions because of internal logic of generating monotonically_increasing_id() and in subsequent runs again add max value of monotonically_increasing_id().   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyNjMyNjI3NiwtODgxMDQyNTYxLC0yMD
+eyJoaXN0b3J5IjpbLTE3Mzg0MTQwMywtODgxMDQyNTYxLC0yMD
 E0MzIyODM1LC0zNzMzMjc1NDcsMjM2OTE4NDQ1LC04NTEwODA4
 NTUsLTE5NzU2ODE1MzQsLTIwMzU4MjAzNDYsLTQ1Mzg0NjI2NC
 wtMTgwODMzMTE5NCw2NTkyNTY5OTYsMTE5NjEyMjIwLC0xMzQx
