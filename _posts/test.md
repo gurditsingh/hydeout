@@ -8,7 +8,8 @@
 
 ## Let's examine the zipwithindex 
 
- - **zipwithindex :** Spark dataframe add unique number is very common requirement especially if you are working on ELT in Spark. You can use zipwithindex method to generate long number. zipwithindex works on rdd.
+ - **zipwithindex :** Spark dataframe add unique number is very common requirement especially if you are working on ELT in Spark. You can use zipwithindex method to generate long number. zipwithindex works on rdd and use  `df.rdd.zipWithIndex()` .
+
  
  
 
@@ -92,7 +93,7 @@
 	 - **Evenly Distributed :** Both the jobs are evenly distributed.
 	 - **DBA Perspective :** I think that the DBA is going to probably complain about the maximum value of surrogate key is way larger than total number of records in the table. e.g. if your table contains millions records but the max value of surrogate key can be in trillions because of internal logic of generating monotonically_increasing_id() and in subsequent runs again add max value of monotonically_increasing_id().   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg2MDI0NjUzLC04NTEwODA4NTUsLTE5Nz
+eyJoaXN0b3J5IjpbMjM2OTE4NDQ1LC04NTEwODA4NTUsLTE5Nz
 U2ODE1MzQsLTIwMzU4MjAzNDYsLTQ1Mzg0NjI2NCwtMTgwODMz
 MTE5NCw2NTkyNTY5OTYsMTE5NjEyMjIwLC0xMzQxODczMjIxLD
 IxMTQ5ODEyMjksMTc3NzUwNzkyNCwyNjcxMzYzOSwxOTM3MDU1
