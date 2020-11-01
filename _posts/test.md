@@ -15,26 +15,7 @@
 
 	**Let’s create a sample job (Job-1) to generate surrogate keys**
 	
-	```scala
-	 def run(args: Array[String]): Unit = {
-
-	    val spark = SparkSession
-	      .builder()
-	      .master(args(0))
-	      .config("spark.sql.warehouse.dir", System.getProperty("user.dir") + "/spark-warehouse")
-	      .enableHiveSupport()
-	      .getOrCreate()
-
-
-	    val articles = loadDataFromSource(spark)
-
-	    val attachSurrogateKey = articles.withColumn("sk", functions.monotonically_increasing_id())
-
-	    attachSurrogateKey.write.mode(SaveMode.Append).saveAsTable("articles_tbl")
-
-	  }
-
-	```
+	
 	After running this job surrogate keys will generate. But in ETL jobs we going to be updating the data in batches, maybe a million at a time, maybe 1000 at a time. So we want to see how this surrogate key generation performs over multiple inserts.
 
 	> Run the same job one more time and see how surrogate keys are generated : so when we run the same job again, it generates the duplicate surrogate keys.
@@ -89,11 +70,11 @@
 	 - **Evenly Distributed :** Both the jobs are evenly distributed.
 	 - **DBA Perspective :** I think that the DBA is going to probably complain about the maximum value of surrogate key is way larger than total number of records in the table. e.g. if your table contains millions records but the max value of surrogate key can be in trillions because of internal logic of generating monotonically_increasing_id() and in subsequent runs again add max value of monotonically_increasing_id().   
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MzMyNzU0NywyMzY5MTg0NDUsLTg1MT
-A4MDg1NSwtMTk3NTY4MTUzNCwtMjAzNTgyMDM0NiwtNDUzODQ2
-MjY0LC0xODA4MzMxMTk0LDY1OTI1Njk5NiwxMTk2MTIyMjAsLT
-EzNDE4NzMyMjEsMjExNDk4MTIyOSwxNzc3NTA3OTI0LDI2NzEz
-NjM5LDE5MzcwNTU4OTYsMzUxMjM2NDQ0LC0xMjc5MDMwMDY5LD
-M2MzA0OTI5NSwtMjEyMjQ1ODEwMiwtOTA5Nzc0MzEwLDExNDc2
-NTQ4M119
+eyJoaXN0b3J5IjpbLTgzMDk0MjA2NSwtMzczMzI3NTQ3LDIzNj
+kxODQ0NSwtODUxMDgwODU1LC0xOTc1NjgxNTM0LC0yMDM1ODIw
+MzQ2LC00NTM4NDYyNjQsLTE4MDgzMzExOTQsNjU5MjU2OTk2LD
+ExOTYxMjIyMCwtMTM0MTg3MzIyMSwyMTE0OTgxMjI5LDE3Nzc1
+MDc5MjQsMjY3MTM2MzksMTkzNzA1NTg5NiwzNTEyMzY0NDQsLT
+EyNzkwMzAwNjksMzYzMDQ5Mjk1LC0yMTIyNDU4MTAyLC05MDk3
+NzQzMTBdfQ==
 -->
