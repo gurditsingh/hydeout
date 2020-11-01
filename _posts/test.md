@@ -106,14 +106,14 @@ more than one partitions.
 
 	 - **Uniqueness :** By using second job (job-2) we have achieved uniqueness.
 	 - **Evenly Distributed :** Keys are evenly distributed.
-	 - **DBA Perspective :** We have equal num2 million surrogate keys and in the range from one to 2 million. So that's a good point. 
+	 - **DBA Perspective :** We have equal number of surrogate keys than total number of records (e.g. 2 million surrogate keys and in the range from one to 2 million). So that's a good point. As DBA prospective there is not lekage o
 	 - **Performance :** 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNDgyMjI5NywxMjE4NDc2NTA5LC0xNz
-M4NDE0MDMsLTg4MTA0MjU2MSwtMjAxNDMyMjgzNSwtMzczMzI3
-NTQ3LDIzNjkxODQ0NSwtODUxMDgwODU1LC0xOTc1NjgxNTM0LC
-0yMDM1ODIwMzQ2LC00NTM4NDYyNjQsLTE4MDgzMzExOTQsNjU5
-MjU2OTk2LDExOTYxMjIyMCwtMTM0MTg3MzIyMSwyMTE0OTgxMj
-I5LDE3Nzc1MDc5MjQsMjY3MTM2MzksMTkzNzA1NTg5NiwzNTEy
-MzY0NDRdfQ==
+eyJoaXN0b3J5IjpbLTExODI2MDg0OTksMTIxODQ3NjUwOSwtMT
+czODQxNDAzLC04ODEwNDI1NjEsLTIwMTQzMjI4MzUsLTM3MzMy
+NzU0NywyMzY5MTg0NDUsLTg1MTA4MDg1NSwtMTk3NTY4MTUzNC
+wtMjAzNTgyMDM0NiwtNDUzODQ2MjY0LC0xODA4MzMxMTk0LDY1
+OTI1Njk5NiwxMTk2MTIyMjAsLTEzNDE4NzMyMjEsMjExNDk4MT
+IyOSwxNzc3NTA3OTI0LDI2NzEzNjM5LDE5MzcwNTU4OTYsMzUx
+MjM2NDQ0XX0=
 -->
