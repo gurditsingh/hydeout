@@ -147,13 +147,15 @@ If you need to read the message at offset 1, you first search for it in the inde
 
 ## Parallelism with Partitions
 
-Just increasing the number of consumers won’t increase the parallelism. You need to scale your partitions accordingly. To read data from a topic in parallel with two consumers, you create two partitions so that each consumer can read from its own partition. Also since partitions of a topic can be on different brokers, two consumers of a topic can read the data from two different brokers.
+Increasing the number of consumers won’t increase the parallelism (**Kafka** allows only **one consumer** per topic **partition**). You need to scale your partitions accordingly. To read data from a topic in parallel with two consumers, you create two partitions so that each consumer can read from its own partition. Also since partitions of a topic can be on different brokers, two consumers of a topic can read the data from two different brokers.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2OTMwODYzMiwtMjg4NDA2NDg3LDE2MT
-c0OTU3NDQsMzYyNjE5NDgxLDIwMzU4MjE1MzQsLTEyOTgxMTIz
-MTQsLTQ0NTIzMDczMCwtOTY5OTU5MzYsLTE2NjA1NDkzNjksLT
-E2MzQ3NTM3MTUsMTE4NTU3NzA3MCwtMjA1NDQ4NjY4MSwtNDcw
-NDUyNjA4LDY1MDg5ODE4LC0yMDg4NzQ2NjEyLC0yMDg4NzQ2Nj
-EyLC0xMTcxOTI4NDUsOTMzMzA5Nzg3LDEyMTg0NzY1MDksLTE3
-Mzg0MTQwM119
+eyJoaXN0b3J5IjpbNzUyMjQ5NzE1LC0yODg0MDY0ODcsMTYxNz
+Q5NTc0NCwzNjI2MTk0ODEsMjAzNTgyMTUzNCwtMTI5ODExMjMx
+NCwtNDQ1MjMwNzMwLC05Njk5NTkzNiwtMTY2MDU0OTM2OSwtMT
+YzNDc1MzcxNSwxMTg1NTc3MDcwLC0yMDU0NDg2NjgxLC00NzA0
+NTI2MDgsNjUwODk4MTgsLTIwODg3NDY2MTIsLTIwODg3NDY2MT
+IsLTExNzE5Mjg0NSw5MzMzMDk3ODcsMTIxODQ3NjUwOSwtMTcz
+ODQxNDAzXX0=
 -->
