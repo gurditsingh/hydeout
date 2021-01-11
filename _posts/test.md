@@ -56,13 +56,18 @@ Each topic has to have a single partition because that partition, as I mentioned
 
  - ZooKeeper is going to look at the available brokers and
    decide which brokers will be made the responsible leaders for
-   managing a single partition within a topic.
+   managing the partitions within a topic.
+
+ - When that assignment is made, each unique Kafka broker will create a
+   log for the newly assigned partition.
+
+
 
  
 	 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyMDk1NDEyMSwtOTY5OTU5MzYsLTE2Nj
+eyJoaXN0b3J5IjpbMjA5NDcyODQ3MywtOTY5OTU5MzYsLTE2Nj
 A1NDkzNjksLTE2MzQ3NTM3MTUsMTE4NTU3NzA3MCwtMjA1NDQ4
 NjY4MSwtNDcwNDUyNjA4LDY1MDg5ODE4LC0yMDg4NzQ2NjEyLC
 0yMDg4NzQ2NjEyLC0xMTcxOTI4NDUsOTMzMzA5Nzg3LDEyMTg0
