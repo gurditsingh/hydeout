@@ -26,24 +26,17 @@ In Kafka, a topic is a logical entity, something that virtually spans across the
  - Each message represents an event, or fact, that from the perspective of the producer and make available to potential consumers.
  - These events are immutable. Once they are received into a topic, they cannot be changed.
 
-**what happens when we enter wrong data:**
 
-**Producer Side:** if a producer happens to send a message that is incorrect or represent a fact that is no longer valid, its only recourse is to send new message with follow up that previous message.
-**Consuer Side:** It would be the job of the consumer to choose between the messages when it reads them and processes them.
-
-> This style of maintaining data as events is an architectural style
-> known as event sourcing to manage independent caches of data in a
-> reliable, flexible, and distributable manner.
 
  
 	 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzQ3NTM3MTUsMTE4NTU3NzA3MCwtMj
-A1NDQ4NjY4MSwtNDcwNDUyNjA4LDY1MDg5ODE4LC0yMDg4NzQ2
-NjEyLC0yMDg4NzQ2NjEyLC0xMTcxOTI4NDUsOTMzMzA5Nzg3LD
-EyMTg0NzY1MDksLTE3Mzg0MTQwMywtODgxMDQyNTYxLC0yMDE0
-MzIyODM1LC0zNzMzMjc1NDcsMjM2OTE4NDQ1LC04NTEwODA4NT
-UsLTE5NzU2ODE1MzQsLTIwMzU4MjAzNDYsLTQ1Mzg0NjI2NCwt
-MTgwODMzMTE5NF19
+eyJoaXN0b3J5IjpbLTE2NjA1NDkzNjksLTE2MzQ3NTM3MTUsMT
+E4NTU3NzA3MCwtMjA1NDQ4NjY4MSwtNDcwNDUyNjA4LDY1MDg5
+ODE4LC0yMDg4NzQ2NjEyLC0yMDg4NzQ2NjEyLC0xMTcxOTI4ND
+UsOTMzMzA5Nzg3LDEyMTg0NzY1MDksLTE3Mzg0MTQwMywtODgx
+MDQyNTYxLC0yMDE0MzIyODM1LC0zNzMzMjc1NDcsMjM2OTE4ND
+Q1LC04NTEwODA4NTUsLTE5NzU2ODE1MzQsLTIwMzU4MjAzNDYs
+LTQ1Mzg0NjI2NF19
 -->
