@@ -18,7 +18,7 @@ tags:
 Kafka is everywhere these days. With the development of Microservices, Big Data and distributed computing. Kafka has become a regular occurrence in architecture’s of every product. This is all well and great, but stripped down to its core, Kafka is a distributed, horizontally scalable, fault-tolerant commit log.
 
 ## Lets proceed with Kafka storage internals:
-Azuming you have some basic understanding about Kafka. we can start with two terms, Partition and Topic.
+Azuming you have some basic understanding about Kafka. we can start with Partition and Topic first.
 
 ## Kafka Topic
  
