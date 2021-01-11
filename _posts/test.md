@@ -29,19 +29,19 @@ In Kafka, a topic is a logical entity, something that virtually spans across the
  - These events are immutable. Once they are received into a topic, they cannot be changed.
 
 **what happens when we enter wrong data:**
-if a producer happens to send a message that is incorrect or represent a fact that is no longer valid, its only recourse is to follow up that previous message with a newer, more correct one. 
+if a producer happens to send a message that is incorrect or represent a fact that is no longer valid, its only recourse is to send new message with follow up that previous message.
  
- It would be the job of the consumer to reconcile between the messages when it reads them and processes them. This style of maintaining data as events is an architectural style known as event sourcing and is becoming widely used as a means to manage independent caches of data in a reliable, flexible, and distributable manner. 
+ It would be the job of the consumer to restore between the messages when it reads them and processes them. This style of maintaining data as events is an architectural style known as event sourcing and is becoming widely used as a means to manage independent caches of data in a reliable, flexible, and distributable manner. 
 
 	 
 	 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMzk3MjQxNiwxMTg1NTc3MDcwLC0yMD
-U0NDg2NjgxLC00NzA0NTI2MDgsNjUwODk4MTgsLTIwODg3NDY2
-MTIsLTIwODg3NDY2MTIsLTExNzE5Mjg0NSw5MzMzMDk3ODcsMT
-IxODQ3NjUwOSwtMTczODQxNDAzLC04ODEwNDI1NjEsLTIwMTQz
-MjI4MzUsLTM3MzMyNzU0NywyMzY5MTg0NDUsLTg1MTA4MDg1NS
-wtMTk3NTY4MTUzNCwtMjAzNTgyMDM0NiwtNDUzODQ2MjY0LC0x
-ODA4MzMxMTk0XX0=
+eyJoaXN0b3J5IjpbLTEyMjU3MTQ1NjgsMTE4NTU3NzA3MCwtMj
+A1NDQ4NjY4MSwtNDcwNDUyNjA4LDY1MDg5ODE4LC0yMDg4NzQ2
+NjEyLC0yMDg4NzQ2NjEyLC0xMTcxOTI4NDUsOTMzMzA5Nzg3LD
+EyMTg0NzY1MDksLTE3Mzg0MTQwMywtODgxMDQyNTYxLC0yMDE0
+MzIyODM1LC0zNzMzMjc1NDcsMjM2OTE4NDQ1LC04NTEwODA4NT
+UsLTE5NzU2ODE1MzQsLTIwMzU4MjAzNDYsLTQ1Mzg0NjI2NCwt
+MTgwODMzMTE5NF19
 -->
