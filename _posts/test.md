@@ -77,6 +77,7 @@ if you have more partitions,  the more entry ZooKeeper has to make to keep track
 if you have less partitions, you cannot effectively scale out the application to consume the partitions because Kafka allows only **one consumer** per topic **partition**.
 
 
+------------
 **let’s understand these concepts better by working with Kafka.**
 
 lets start by creating a topic in Kafka with three partitions. The command looks like this for a local Kafka setup on windows.
@@ -85,10 +86,11 @@ lets start by creating a topic in Kafka with three partitions. The command looks
 kafka-topics.bat --create --topic my_topic --partitions 3 --replication-factor 1 --zookeeper localhost:2181
 ```
  
-	 
+ Go to the Kafka log directory and you see three directories are created.
+ 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyODkwMjg2MSwyMDM1ODIxNTM0LC0xMj
+eyJoaXN0b3J5IjpbMTYyNDM0MzA0MCwyMDM1ODIxNTM0LC0xMj
 k4MTEyMzE0LC00NDUyMzA3MzAsLTk2OTk1OTM2LC0xNjYwNTQ5
 MzY5LC0xNjM0NzUzNzE1LDExODU1NzcwNzAsLTIwNTQ0ODY2OD
 EsLTQ3MDQ1MjYwOCw2NTA4OTgxOCwtMjA4ODc0NjYxMiwtMjA4
