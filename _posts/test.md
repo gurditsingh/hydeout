@@ -143,9 +143,13 @@ One of the common operations in Kafka is to read the message at a particular off
 
 ![Offset](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/offset.png?raw=true)
 
-If you need to read the message at offset 1, you first search for it in the index file and figure out that the message is in position `79`. Then you directly go to position 79 in the log file and start reading. This makes it quite effective as you can use binary search to quickly get to the correct offset in the already sorted index file.
+If you need to read the message at offset 1, you first search for it in the index file and figure out that the message is in position `79`. Then you directly go to position 79 in the log file and start reading.
+
+## Parallelism with Partitions
+
+Just increasing the number of consumers won’t increase the parallelism. You need to scale your partitions accordingly. To read data from a topic in parallel with two consumers, you create two partitions so that each consumer can read from its own partition. Also since partitions of a topic can be on different brokers, two consumers of a topic can read the data from two different brokers.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzNjYwNzU3OCwtMjg4NDA2NDg3LDE2MT
+eyJoaXN0b3J5IjpbLTI2OTMwODYzMiwtMjg4NDA2NDg3LDE2MT
 c0OTU3NDQsMzYyNjE5NDgxLDIwMzU4MjE1MzQsLTEyOTgxMTIz
 MTQsLTQ0NTIzMDczMCwtOTY5OTU5MzYsLTE2NjA1NDkzNjksLT
 E2MzQ3NTM3MTUsMTE4NTU3NzA3MCwtMjA1NDQ4NjY4MSwtNDcw
