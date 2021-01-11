@@ -87,10 +87,24 @@ kafka-topics.bat --create --topic my_topic --partitions 3 --replication-factor 1
 ```
  
  Go to the Kafka log directory and you see three directories are created.
- 
+     freblogg-0
+    |-- 00000000000000000000.index
+    |-- 00000000000000000000.log
+    |-- 00000000000000000000.timeindex
+    `-- leader-epoch-checkpoint
+    freblogg-1
+    |-- 00000000000000000000.index
+    |-- 00000000000000000000.log
+    |-- 00000000000000000000.timeindex
+    `-- leader-epoch-checkpoint
+    freblogg-2
+    |-- 00000000000000000000.index
+    |-- 00000000000000000000.log
+    |-- 00000000000000000000.timeindex
+    `-- leader-epoch-checkpoint
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyNDM0MzA0MCwyMDM1ODIxNTM0LC0xMj
+eyJoaXN0b3J5IjpbLTM1NjU5NTQzNSwyMDM1ODIxNTM0LC0xMj
 k4MTEyMzE0LC00NDUyMzA3MzAsLTk2OTk1OTM2LC0xNjYwNTQ5
 MzY5LC0xNjM0NzUzNzE1LDExODU1NzcwNzAsLTIwNTQ0ODY2OD
 EsLTQ3MDQ1MjYwOCw2NTA4OTgxOCwtMjA4ODc0NjYxMiwtMjA4
