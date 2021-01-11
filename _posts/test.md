@@ -61,13 +61,19 @@ Each topic has to have a single partition because that partition, as I mentioned
  - When that assignment is made, each unique Kafka broker will create a
    log for the newly assigned partition.
 
-
+ - Additionally, as partition assignments are broadcast, each individual
+   broker maintains a subset of the metadata that ZooKeeper does,
+   particularly the mapping of what partitions are being managed by what
+   brokers in the cluster. This enables any individual broker to direct
+   a producer client to the appropriate broker for producing messages to
+   a specific partition.
+   
 
  
 	 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NDcyODQ3MywtOTY5OTU5MzYsLTE2Nj
+eyJoaXN0b3J5IjpbLTQ0NTIzMDczMCwtOTY5OTU5MzYsLTE2Nj
 A1NDkzNjksLTE2MzQ3NTM3MTUsMTE4NTU3NzA3MCwtMjA1NDQ4
 NjY4MSwtNDcwNDUyNjA4LDY1MDg5ODE4LC0yMDg4NzQ2NjEyLC
 0yMDg4NzQ2NjEyLC0xMTcxOTI4NDUsOTMzMzA5Nzg3LDEyMTg0
