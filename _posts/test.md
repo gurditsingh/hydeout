@@ -121,7 +121,7 @@ Each new message in the partition gets an Id also called as the _Offset_. So, th
 ### Segments:
 Partition might be the standard unit of storage in Kafka, but it is not the lowest level of abstraction provided. Each partition is sub-divided into segments.
 
-A segment is simply a collection of messages of a partition. Instead of storing all the messages of a partition in a single file (think of the log file analogy again), Kafka splits them into chunks called segments.
+A segment is simply a collection of messages of a partition. Instead of storing all the messages of a partition in a single file (think of the log file analogy again), Kafka splits them into chunks called segments. The default value for segment size is a high value (1 GB)
 
 The `00000000000000000000` in front of the log and the index files in each partition folder, is the name of our segment. Each segment file has segment.log ,segment.index and segment.timeindex  files.
 
@@ -130,13 +130,13 @@ Kafka always writes the messages into these segment files under a partition. The
 
 ![Segment](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/segment.png?raw=true)
 
-
+Each segment file is created with the offset of the first message as its file name. So, In the above picture, segment 0 has messages from offset 0 to offset 2, segment 3 has messages from offset 3 to 5 and so on. Segment 6 which is the last segment is the active segment.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU5OTAzNzksMTYxNzQ5NTc0NCwzNjI2MT
-k0ODEsMjAzNTgyMTUzNCwtMTI5ODExMjMxNCwtNDQ1MjMwNzMw
-LC05Njk5NTkzNiwtMTY2MDU0OTM2OSwtMTYzNDc1MzcxNSwxMT
-g1NTc3MDcwLC0yMDU0NDg2NjgxLC00NzA0NTI2MDgsNjUwODk4
-MTgsLTIwODg3NDY2MTIsLTIwODg3NDY2MTIsLTExNzE5Mjg0NS
-w5MzMzMDk3ODcsMTIxODQ3NjUwOSwtMTczODQxNDAzLC04ODEw
-NDI1NjFdfQ==
+eyJoaXN0b3J5IjpbLTI4ODQwNjQ4NywxNjE3NDk1NzQ0LDM2Mj
+YxOTQ4MSwyMDM1ODIxNTM0LC0xMjk4MTEyMzE0LC00NDUyMzA3
+MzAsLTk2OTk1OTM2LC0xNjYwNTQ5MzY5LC0xNjM0NzUzNzE1LD
+ExODU1NzcwNzAsLTIwNTQ0ODY2ODEsLTQ3MDQ1MjYwOCw2NTA4
+OTgxOCwtMjA4ODc0NjYxMiwtMjA4ODc0NjYxMiwtMTE3MTkyOD
+Q1LDkzMzMwOTc4NywxMjE4NDc2NTA5LC0xNzM4NDE0MDMsLTg4
+MTA0MjU2MV19
 -->
