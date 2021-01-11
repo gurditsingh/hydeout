@@ -24,16 +24,20 @@ In Kafka, a topic is a logical entity, something that virtually spans across the
 
 **What's happening within any given topic**
 
+ - When a producer sends a message to a Kafka topic, the messages are appended to a time‑ordered sequential stream.
+ - Each message represents an event, or fact, that from the perspective of the producer and make available to potential consumers.
+ - These events are immutable. Once they are received into a topic, they cannot be changed.
+ - 
 
 	 
 	 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc3Njk3NjI4LC0yMDU0NDg2NjgxLC00Nz
-A0NTI2MDgsNjUwODk4MTgsLTIwODg3NDY2MTIsLTIwODg3NDY2
-MTIsLTExNzE5Mjg0NSw5MzMzMDk3ODcsMTIxODQ3NjUwOSwtMT
-czODQxNDAzLC04ODEwNDI1NjEsLTIwMTQzMjI4MzUsLTM3MzMy
-NzU0NywyMzY5MTg0NDUsLTg1MTA4MDg1NSwtMTk3NTY4MTUzNC
-wtMjAzNTgyMDM0NiwtNDUzODQ2MjY0LC0xODA4MzMxMTk0LDY1
-OTI1Njk5Nl19
+eyJoaXN0b3J5IjpbMTE4NTU3NzA3MCwtMjA1NDQ4NjY4MSwtND
+cwNDUyNjA4LDY1MDg5ODE4LC0yMDg4NzQ2NjEyLC0yMDg4NzQ2
+NjEyLC0xMTcxOTI4NDUsOTMzMzA5Nzg3LDEyMTg0NzY1MDksLT
+E3Mzg0MTQwMywtODgxMDQyNTYxLC0yMDE0MzIyODM1LC0zNzMz
+Mjc1NDcsMjM2OTE4NDQ1LC04NTEwODA4NTUsLTE5NzU2ODE1Mz
+QsLTIwMzU4MjAzNDYsLTQ1Mzg0NjI2NCwtMTgwODMzMTE5NCw2
+NTkyNTY5OTZdfQ==
 -->
