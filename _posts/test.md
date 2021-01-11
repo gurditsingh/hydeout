@@ -151,9 +151,9 @@ Increasing the number of consumers won’t increase the parallelism (**Kafka** a
 
 # Conclusion
 
-Kafka is a scalable, fault-tolerant, publish-subscribe messaging system that enables you to build distributed applications.
+Kafka is a scalable, fault-tolerant, publish-subscribe messaging system that enables you to build distributed applications. We covered how Topic and Partitions work in Kafka.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0ODAzNDY5OSw3NTIyNDk3MTUsLTI4OD
+eyJoaXN0b3J5IjpbMTE2ODQ5ODIwMiw3NTIyNDk3MTUsLTI4OD
 QwNjQ4NywxNjE3NDk1NzQ0LDM2MjYxOTQ4MSwxNjI0MzQzMDQw
 LDIwMzU4MjE1MzQsLTEyOTgxMTIzMTQsLTQ0NTIzMDczMCwtOT
 Y5OTU5MzYsLTE2NjA1NDkzNjksLTE2MzQ3NTM3MTUsMTE4NTU3
