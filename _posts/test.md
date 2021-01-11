@@ -88,13 +88,29 @@ kafka-topics.bat --create --topic my_topic --partitions 3 --replication-factor 1
  
  Go to the Kafka log directory and you see three directories are created.
  
+    my_topic-0
+    |-- 00000000000000000000.index
+    |-- 00000000000000000000.log
+    |-- 00000000000000000000.timeindex
+    `-- leader-epoch-checkpoint
+    my_topic-1
+    |-- 00000000000000000000.index
+    |-- 00000000000000000000.log
+    |-- 00000000000000000000.timeindex
+    `-- leader-epoch-checkpoint
+    my_topic-2
+    |-- 00000000000000000000.index
+    |-- 00000000000000000000.log
+    |-- 00000000000000000000.timeindex
+    `-- leader-epoch-checkpoint
 
+theee directories created because we’ve given three partitions for our topic, which means that each partition gets a directory on the file system.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyNDM0MzA0MCwyMDM1ODIxNTM0LC0xMj
-k4MTEyMzE0LC00NDUyMzA3MzAsLTk2OTk1OTM2LC0xNjYwNTQ5
-MzY5LC0xNjM0NzUzNzE1LDExODU1NzcwNzAsLTIwNTQ0ODY2OD
-EsLTQ3MDQ1MjYwOCw2NTA4OTgxOCwtMjA4ODc0NjYxMiwtMjA4
-ODc0NjYxMiwtMTE3MTkyODQ1LDkzMzMwOTc4NywxMjE4NDc2NT
-A5LC0xNzM4NDE0MDMsLTg4MTA0MjU2MSwtMjAxNDMyMjgzNSwt
-MzczMzI3NTQ3XX0=
+eyJoaXN0b3J5IjpbLTIyNjU5Nzg2MCwxNjI0MzQzMDQwLDIwMz
+U4MjE1MzQsLTEyOTgxMTIzMTQsLTQ0NTIzMDczMCwtOTY5OTU5
+MzYsLTE2NjA1NDkzNjksLTE2MzQ3NTM3MTUsMTE4NTU3NzA3MC
+wtMjA1NDQ4NjY4MSwtNDcwNDUyNjA4LDY1MDg5ODE4LC0yMDg4
+NzQ2NjEyLC0yMDg4NzQ2NjEyLC0xMTcxOTI4NDUsOTMzMzA5Nz
+g3LDEyMTg0NzY1MDksLTE3Mzg0MTQwMywtODgxMDQyNTYxLC0y
+MDE0MzIyODM1XX0=
 -->
