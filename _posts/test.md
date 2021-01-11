@@ -69,17 +69,17 @@ Each topic has to have a single partition because that partition, as I mentioned
    a specific partition.
 
 **Parallelism standpoint**
-
+Number of partition is a architectural decision, the number of Kafka partitions will have its tradeoffs(). 
 
  
 	 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTgxMTIzMTQsLTQ0NTIzMDczMCwtOT
-Y5OTU5MzYsLTE2NjA1NDkzNjksLTE2MzQ3NTM3MTUsMTE4NTU3
-NzA3MCwtMjA1NDQ4NjY4MSwtNDcwNDUyNjA4LDY1MDg5ODE4LC
-0yMDg4NzQ2NjEyLC0yMDg4NzQ2NjEyLC0xMTcxOTI4NDUsOTMz
-MzA5Nzg3LDEyMTg0NzY1MDksLTE3Mzg0MTQwMywtODgxMDQyNT
-YxLC0yMDE0MzIyODM1LC0zNzMzMjc1NDcsMjM2OTE4NDQ1LC04
-NTEwODA4NTVdfQ==
+eyJoaXN0b3J5IjpbLTEyNjA2Mjc4NzksLTEyOTgxMTIzMTQsLT
+Q0NTIzMDczMCwtOTY5OTU5MzYsLTE2NjA1NDkzNjksLTE2MzQ3
+NTM3MTUsMTE4NTU3NzA3MCwtMjA1NDQ4NjY4MSwtNDcwNDUyNj
+A4LDY1MDg5ODE4LC0yMDg4NzQ2NjEyLC0yMDg4NzQ2NjEyLC0x
+MTcxOTI4NDUsOTMzMzA5Nzg3LDEyMTg0NzY1MDksLTE3Mzg0MT
+QwMywtODgxMDQyNTYxLC0yMDE0MzIyODM1LC0zNzMzMjc1NDcs
+MjM2OTE4NDQ1XX0=
 -->
