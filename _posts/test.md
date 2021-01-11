@@ -123,13 +123,13 @@ Partition might be the standard unit of storage in Kafka, but it is not the lowe
 
 A segment is simply a collection of messages of a partition. Instead of storing all the messages of a partition in a single file (think of the log file analogy again), Kafka splits them into chunks called segments.
 
-
+The `00000000000000000000` in front of the log and the index files in each partition folder, is the name of our segment. Each segment file has `segment.log`, `segment.index` and `segment.timeindex` files.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzODk0MjQzMCwzNjI2MTk0ODEsMjAzNT
-gyMTUzNCwtMTI5ODExMjMxNCwtNDQ1MjMwNzMwLC05Njk5NTkz
-NiwtMTY2MDU0OTM2OSwtMTYzNDc1MzcxNSwxMTg1NTc3MDcwLC
-0yMDU0NDg2NjgxLC00NzA0NTI2MDgsNjUwODk4MTgsLTIwODg3
-NDY2MTIsLTIwODg3NDY2MTIsLTExNzE5Mjg0NSw5MzMzMDk3OD
-csMTIxODQ3NjUwOSwtMTczODQxNDAzLC04ODEwNDI1NjEsLTIw
-MTQzMjI4MzVdfQ==
+eyJoaXN0b3J5IjpbLTEyMjk2OTUxNTgsMzYyNjE5NDgxLDIwMz
+U4MjE1MzQsLTEyOTgxMTIzMTQsLTQ0NTIzMDczMCwtOTY5OTU5
+MzYsLTE2NjA1NDkzNjksLTE2MzQ3NTM3MTUsMTE4NTU3NzA3MC
+wtMjA1NDQ4NjY4MSwtNDcwNDUyNjA4LDY1MDg5ODE4LC0yMDg4
+NzQ2NjEyLC0yMDg4NzQ2NjEyLC0xMTcxOTI4NDUsOTMzMzA5Nz
+g3LDEyMTg0NzY1MDksLTE3Mzg0MTQwMywtODgxMDQyNTYxLC0y
+MDE0MzIyODM1XX0=
 -->
