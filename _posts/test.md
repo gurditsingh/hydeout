@@ -131,12 +131,15 @@ Kafka always writes the messages into these segment files under a partition. The
 ![Segment](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/segment.png?raw=true)
 
 Each segment file is created with the offset of the first message as its file name. So, In the above picture, segment 0 has messages from offset 0 to offset 2, segment 3 has messages from offset 3 to 5 and so on. Segment 6 which is the last segment is the active segment.
+
+**Use of Index file:**
+One of the common operations in Kafka is to read the message at a particular offset. For this, if it has to go to the log file to find the offset, it becomes an expensive task especially because the log file can grow to huge sizes (Default — 1G). This is where the `.index` file becomes useful. **Index file stores the offsets and physical position of the message in the log file**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4ODQwNjQ4NywxNjE3NDk1NzQ0LDM2Mj
-YxOTQ4MSwyMDM1ODIxNTM0LC0xMjk4MTEyMzE0LC00NDUyMzA3
-MzAsLTk2OTk1OTM2LC0xNjYwNTQ5MzY5LC0xNjM0NzUzNzE1LD
-ExODU1NzcwNzAsLTIwNTQ0ODY2ODEsLTQ3MDQ1MjYwOCw2NTA4
-OTgxOCwtMjA4ODc0NjYxMiwtMjA4ODc0NjYxMiwtMTE3MTkyOD
-Q1LDkzMzMwOTc4NywxMjE4NDc2NTA5LC0xNzM4NDE0MDMsLTg4
-MTA0MjU2MV19
+eyJoaXN0b3J5IjpbLTEwMzUxNzExNTYsLTI4ODQwNjQ4NywxNj
+E3NDk1NzQ0LDM2MjYxOTQ4MSwyMDM1ODIxNTM0LC0xMjk4MTEy
+MzE0LC00NDUyMzA3MzAsLTk2OTk1OTM2LC0xNjYwNTQ5MzY5LC
+0xNjM0NzUzNzE1LDExODU1NzcwNzAsLTIwNTQ0ODY2ODEsLTQ3
+MDQ1MjYwOCw2NTA4OTgxOCwtMjA4ODc0NjYxMiwtMjA4ODc0Nj
+YxMiwtMTE3MTkyODQ1LDkzMzMwOTc4NywxMjE4NDc2NTA5LC0x
+NzM4NDE0MDNdfQ==
 -->
