@@ -2,13 +2,16 @@
 Kafka is everywhere these days. With the advent of Microservices, Big Data and distributed computing. Kafka has become a regular occurrence in architecture’s of every product. This is all well and great, but stripped down to its core, Kafka is a distributed, horizontally scalable, fault-tolerant commit log.
 
 
-eep dive into Kafka’s internals,
+## Deep Dive into Kafka’s storage internals.
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ3MTM0NDAxLDY1MDg5ODE4LC0yMDg4Nz
-Q2NjEyLC0yMDg4NzQ2NjEyLC0xMTcxOTI4NDUsOTMzMzA5Nzg3
-LDEyMTg0NzY1MDksLTE3Mzg0MTQwMywtODgxMDQyNTYxLC0yMD
-E0MzIyODM1LC0zNzMzMjc1NDcsMjM2OTE4NDQ1LC04NTEwODA4
-NTUsLTE5NzU2ODE1MzQsLTIwMzU4MjAzNDYsLTQ1Mzg0NjI2NC
-wtMTgwODMzMTE5NCw2NTkyNTY5OTYsMTE5NjEyMjIwLC0xMzQx
-ODczMjIxXX0=
+eyJoaXN0b3J5IjpbMTk5NTM5MTU1Miw2NTA4OTgxOCwtMjA4OD
+c0NjYxMiwtMjA4ODc0NjYxMiwtMTE3MTkyODQ1LDkzMzMwOTc4
+NywxMjE4NDc2NTA5LC0xNzM4NDE0MDMsLTg4MTA0MjU2MSwtMj
+AxNDMyMjgzNSwtMzczMzI3NTQ3LDIzNjkxODQ0NSwtODUxMDgw
+ODU1LC0xOTc1NjgxNTM0LC0yMDM1ODIwMzQ2LC00NTM4NDYyNj
+QsLTE4MDgzMzExOTQsNjU5MjU2OTk2LDExOTYxMjIyMCwtMTM0
+MTg3MzIyMV19
 -->
