@@ -104,7 +104,7 @@ kafka-topics.bat --create --topic my_topic --partitions 3 --replication-factor 1
     |-- 00000000000000000000.timeindex
     `-- leader-epoch-checkpoint
 
-Three directories created because we’ve given three partitions for our topic, which means that each partition gets a directory on the file system. 
+Three directories created because we’ve given three partitions for our topic, which means that each partition gets a directory on the file system. You see the index files combined are about 20M in size while the log file is completely empty. This is the same case with `my_topic-1` and `my_topic-2` folders.
 
     - my_topic 197121 10M Jan  5 08:26 00000000000000000000.index
     - my_topic 197121   0 Jan  5 08:26 00000000000000000000.log
@@ -113,7 +113,7 @@ Three directories created because we’ve given three partitions for our topic, 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NjM4MzE0MiwxNjI0MzQzMDQwLDIwMz
+eyJoaXN0b3J5IjpbLTQ0NDE1MTc0OCwxNjI0MzQzMDQwLDIwMz
 U4MjE1MzQsLTEyOTgxMTIzMTQsLTQ0NTIzMDczMCwtOTY5OTU5
 MzYsLTE2NjA1NDkzNjksLTE2MzQ3NTM3MTUsMTE4NTU3NzA3MC
 wtMjA1NDQ4NjY4MSwtNDcwNDUyNjA4LDY1MDg5ODE4LC0yMDg4
