@@ -19,17 +19,21 @@ In Kafka, a topic is a logical entity, something that virtually spans across the
    scalability and fault tolerance.
  - With the abstraction of a topic, a producer simply needs to publish
    messages to that topic.
-   
+ - Similarly, consumers simply want to consume from a topic, regardless
+   of where it is.
+
+**What's happening within any given topic**
+
 
 	 
 	 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTY0NTI4NDksLTIwNTQ0ODY2ODEsLT
-Q3MDQ1MjYwOCw2NTA4OTgxOCwtMjA4ODc0NjYxMiwtMjA4ODc0
-NjYxMiwtMTE3MTkyODQ1LDkzMzMwOTc4NywxMjE4NDc2NTA5LC
-0xNzM4NDE0MDMsLTg4MTA0MjU2MSwtMjAxNDMyMjgzNSwtMzcz
-MzI3NTQ3LDIzNjkxODQ0NSwtODUxMDgwODU1LC0xOTc1NjgxNT
-M0LC0yMDM1ODIwMzQ2LC00NTM4NDYyNjQsLTE4MDgzMzExOTQs
-NjU5MjU2OTk2XX0=
+eyJoaXN0b3J5IjpbODc3Njk3NjI4LC0yMDU0NDg2NjgxLC00Nz
+A0NTI2MDgsNjUwODk4MTgsLTIwODg3NDY2MTIsLTIwODg3NDY2
+MTIsLTExNzE5Mjg0NSw5MzMzMDk3ODcsMTIxODQ3NjUwOSwtMT
+czODQxNDAzLC04ODEwNDI1NjEsLTIwMTQzMjI4MzUsLTM3MzMy
+NzU0NywyMzY5MTg0NDUsLTg1MTA4MDg1NSwtMTk3NTY4MTUzNC
+wtMjAzNTgyMDM0NiwtNDUzODQ2MjY0LC0xODA4MzMxMTk0LDY1
+OTI1Njk5Nl19
 -->
