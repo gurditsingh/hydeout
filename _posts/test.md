@@ -69,17 +69,19 @@ Each topic has to have a single partition because that partition, as I mentioned
    a specific partition.
 
 **Parallelism standpoint**
-Number of partition is a architectural decision, the number of Kafka partitions will have its tradeoffs. 
+Number of partition is a architectural decision, the number of Kafka partitions will have its tradeoffs. therefore, a right balance needs to be found based on use case needs and resource availability.
+
+if you have more partitions,  the more entry ZooKeeper has to make to keep track of them. And since ZooKeeper works on this registry in memory, the resources on ZooKeeper can become constrained 
 
  
 	 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NzY1NDkwNiwtMTI5ODExMjMxNCwtND
-Q1MjMwNzMwLC05Njk5NTkzNiwtMTY2MDU0OTM2OSwtMTYzNDc1
-MzcxNSwxMTg1NTc3MDcwLC0yMDU0NDg2NjgxLC00NzA0NTI2MD
-gsNjUwODk4MTgsLTIwODg3NDY2MTIsLTIwODg3NDY2MTIsLTEx
-NzE5Mjg0NSw5MzMzMDk3ODcsMTIxODQ3NjUwOSwtMTczODQxND
-AzLC04ODEwNDI1NjEsLTIwMTQzMjI4MzUsLTM3MzMyNzU0Nywy
-MzY5MTg0NDVdfQ==
+eyJoaXN0b3J5IjpbLTEzNDg2MDU1NDAsLTEyOTgxMTIzMTQsLT
+Q0NTIzMDczMCwtOTY5OTU5MzYsLTE2NjA1NDkzNjksLTE2MzQ3
+NTM3MTUsMTE4NTU3NzA3MCwtMjA1NDQ4NjY4MSwtNDcwNDUyNj
+A4LDY1MDg5ODE4LC0yMDg4NzQ2NjEyLC0yMDg4NzQ2NjEyLC0x
+MTcxOTI4NDUsOTMzMzA5Nzg3LDEyMTg0NzY1MDksLTE3Mzg0MT
+QwMywtODgxMDQyNTYxLC0yMDE0MzIyODM1LC0zNzMzMjc1NDcs
+MjM2OTE4NDQ1XX0=
 -->
