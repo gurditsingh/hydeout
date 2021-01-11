@@ -111,13 +111,13 @@ Three directories created because we’ve given three partitions for our topic, 
     - my_topic 197121 10M Jan  5 08:26 00000000000000000000.timeindex
     - my_topic 197121   0 Jan  5 08:26 leader-epoch-checkpoint
 
-
+if you send two messages went into two of the partitions where you can see that the log files have a non zero size. This is because **the messages in the partition are stored in the ‘xxxx.log’ file**.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0NDE1MTc0OCwxNjI0MzQzMDQwLDIwMz
-U4MjE1MzQsLTEyOTgxMTIzMTQsLTQ0NTIzMDczMCwtOTY5OTU5
-MzYsLTE2NjA1NDkzNjksLTE2MzQ3NTM3MTUsMTE4NTU3NzA3MC
-wtMjA1NDQ4NjY4MSwtNDcwNDUyNjA4LDY1MDg5ODE4LC0yMDg4
-NzQ2NjEyLC0yMDg4NzQ2NjEyLC0xMTcxOTI4NDUsOTMzMzA5Nz
-g3LDEyMTg0NzY1MDksLTE3Mzg0MTQwMywtODgxMDQyNTYxLC0y
-MDE0MzIyODM1XX0=
+eyJoaXN0b3J5IjpbMzYyNjE5NDgxLDE2MjQzNDMwNDAsMjAzNT
+gyMTUzNCwtMTI5ODExMjMxNCwtNDQ1MjMwNzMwLC05Njk5NTkz
+NiwtMTY2MDU0OTM2OSwtMTYzNDc1MzcxNSwxMTg1NTc3MDcwLC
+0yMDU0NDg2NjgxLC00NzA0NTI2MDgsNjUwODk4MTgsLTIwODg3
+NDY2MTIsLTIwODg3NDY2MTIsLTExNzE5Mjg0NSw5MzMzMDk3OD
+csMTIxODQ3NjUwOSwtMTczODQxNDAzLC04ODEwNDI1NjEsLTIw
+MTQzMjI4MzVdfQ==
 -->
