@@ -26,17 +26,19 @@ In Kafka, a topic is a logical entity, something that virtually spans across the
  - Each message represents an event, or fact, that from the perspective of the producer and make available to potential consumers.
  - These events are immutable. Once they are received into a topic, they cannot be changed.
 
+## Kafka Partitions
 
+The topic, as a logical concept, is represented by one or more physical log files called partitions. **_Partitions_** are the units of storage in Kafka for messages
 
  
 	 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjA1NDkzNjksLTE2MzQ3NTM3MTUsMT
-E4NTU3NzA3MCwtMjA1NDQ4NjY4MSwtNDcwNDUyNjA4LDY1MDg5
-ODE4LC0yMDg4NzQ2NjEyLC0yMDg4NzQ2NjEyLC0xMTcxOTI4ND
-UsOTMzMzA5Nzg3LDEyMTg0NzY1MDksLTE3Mzg0MTQwMywtODgx
-MDQyNTYxLC0yMDE0MzIyODM1LC0zNzMzMjc1NDcsMjM2OTE4ND
-Q1LC04NTEwODA4NTUsLTE5NzU2ODE1MzQsLTIwMzU4MjAzNDYs
-LTQ1Mzg0NjI2NF19
+eyJoaXN0b3J5IjpbMTM1MzI2MzkxNywtMTY2MDU0OTM2OSwtMT
+YzNDc1MzcxNSwxMTg1NTc3MDcwLC0yMDU0NDg2NjgxLC00NzA0
+NTI2MDgsNjUwODk4MTgsLTIwODg3NDY2MTIsLTIwODg3NDY2MT
+IsLTExNzE5Mjg0NSw5MzMzMDk3ODcsMTIxODQ3NjUwOSwtMTcz
+ODQxNDAzLC04ODEwNDI1NjEsLTIwMTQzMjI4MzUsLTM3MzMyNz
+U0NywyMzY5MTg0NDUsLTg1MTA4MDg1NSwtMTk3NTY4MTUzNCwt
+MjAzNTgyMDM0Nl19
 -->
