@@ -50,13 +50,16 @@ Each topic has to have a single partition because that partition, as I mentioned
 
 **Partition as a distribution standpoint**
 
-
+ - For example, when a command to create a topic with three partitions
+   has issued, it is handled by ZooKeeper, who is maintaining metadata
+   regarding the cluster.
+   
 
  
 	 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxMzQ3NDM2LC05Njk5NTkzNiwtMTY2MD
+eyJoaXN0b3J5IjpbODk2MjY3OTAzLC05Njk5NTkzNiwtMTY2MD
 U0OTM2OSwtMTYzNDc1MzcxNSwxMTg1NTc3MDcwLC0yMDU0NDg2
 NjgxLC00NzA0NTI2MDgsNjUwODk4MTgsLTIwODg3NDY2MTIsLT
 IwODg3NDY2MTIsLTExNzE5Mjg0NSw5MzMzMDk3ODcsMTIxODQ3
