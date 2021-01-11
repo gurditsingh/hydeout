@@ -35,13 +35,13 @@ The number of partitions per topic is entirely configurable. The partition itsel
 Each topic has to have a single partition because that partition, as I mentioned, is the physical representation of the topic as a commit log stored on one or more brokers. The log maintained on the broker's file system in the directory tmp/kafka‑logs. For the topic subfolder created called my_topic‑0, which contained the log for that single partition.
 
 **Partition As a memory standpoint**
-
+Partition resides on broker which is limited by a finite amount of computational resources, such as CPU, memory, disk space, and network. While it is possible to keep adding more faster and bigger resources, eventually, under the strain of high use, your only real option is to scale out, especially considering each partition you have must fit on one machine. You cannot split a single partition across multiple machines. Therefore, if you only have one partition for a large and growing topic, you will be limited by the one broker node's ability to capture and retain messages being published to that topic, not to mention the possible I/O constraints it will run into. In Kafka, that means you'll need more brokers in the cluster and topics that can leverage those brokers by partitioning into multiple partitions.
 
  
 	 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTExNjQzMSwtOTY5OTU5MzYsLTE2Nj
+eyJoaXN0b3J5IjpbMTQyNzI2NDI4NCwtOTY5OTU5MzYsLTE2Nj
 A1NDkzNjksLTE2MzQ3NTM3MTUsMTE4NTU3NzA3MCwtMjA1NDQ4
 NjY4MSwtNDcwNDUyNjA4LDY1MDg5ODE4LC0yMDg4NzQ2NjEyLC
 0yMDg4NzQ2NjEyLC0xMTcxOTI4NDUsOTMzMzA5Nzg3LDEyMTg0
