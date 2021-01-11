@@ -115,12 +115,17 @@ if you send messages to Kafka, then Kafka arbitrarily picks the partition for th
 
 Each new message in the partition gets an Id also called as the _Offset_. So, the first message is at ‘offset’ 0, the second message is at offset 1 and so on. These offset Id’s are always incremented from the previous value.
 
+
+------------
+
+### Segments:
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1MDQ0NjkxNCwzNjI2MTk0ODEsMTYyND
-M0MzA0MCwyMDM1ODIxNTM0LC0xMjk4MTEyMzE0LC00NDUyMzA3
-MzAsLTk2OTk1OTM2LC0xNjYwNTQ5MzY5LC0xNjM0NzUzNzE1LD
-ExODU1NzcwNzAsLTIwNTQ0ODY2ODEsLTQ3MDQ1MjYwOCw2NTA4
-OTgxOCwtMjA4ODc0NjYxMiwtMjA4ODc0NjYxMiwtMTE3MTkyOD
-Q1LDkzMzMwOTc4NywxMjE4NDc2NTA5LC0xNzM4NDE0MDMsLTg4
-MTA0MjU2MV19
+eyJoaXN0b3J5IjpbLTEyNTI4NTI0NjUsMzYyNjE5NDgxLDE2Mj
+QzNDMwNDAsMjAzNTgyMTUzNCwtMTI5ODExMjMxNCwtNDQ1MjMw
+NzMwLC05Njk5NTkzNiwtMTY2MDU0OTM2OSwtMTYzNDc1MzcxNS
+wxMTg1NTc3MDcwLC0yMDU0NDg2NjgxLC00NzA0NTI2MDgsNjUw
+ODk4MTgsLTIwODg3NDY2MTIsLTIwODg3NDY2MTIsLTExNzE5Mj
+g0NSw5MzMzMDk3ODcsMTIxODQ3NjUwOSwtMTczODQxNDAzLC04
+ODEwNDI1NjFdfQ==
 -->
