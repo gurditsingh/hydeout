@@ -5,16 +5,16 @@ Kafka is everywhere these days. With the advent of Microservices, Big Data and d
 You have some basic understanding about Kafka. With reference to storage in Kafka, you’ll always hear two terms, Partition and Topic.
 
  ## Kafka Topic
- Kafka Topic it is central to its entire purpose Topic is merely a logical grouping of several partitions. 
+ Kafka Topic is central to its entire purpose Topic is merely a logical grouping of several partitions. 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODk5NzQxOTIsLTIwNTQ0ODY2ODEsLT
-Q3MDQ1MjYwOCw2NTA4OTgxOCwtMjA4ODc0NjYxMiwtMjA4ODc0
-NjYxMiwtMTE3MTkyODQ1LDkzMzMwOTc4NywxMjE4NDc2NTA5LC
-0xNzM4NDE0MDMsLTg4MTA0MjU2MSwtMjAxNDMyMjgzNSwtMzcz
-MzI3NTQ3LDIzNjkxODQ0NSwtODUxMDgwODU1LC0xOTc1NjgxNT
-M0LC0yMDM1ODIwMzQ2LC00NTM4NDYyNjQsLTE4MDgzMzExOTQs
-NjU5MjU2OTk2XX0=
+eyJoaXN0b3J5IjpbMTk3OTYyMTYyNywtMjA1NDQ4NjY4MSwtND
+cwNDUyNjA4LDY1MDg5ODE4LC0yMDg4NzQ2NjEyLC0yMDg4NzQ2
+NjEyLC0xMTcxOTI4NDUsOTMzMzA5Nzg3LDEyMTg0NzY1MDksLT
+E3Mzg0MTQwMywtODgxMDQyNTYxLC0yMDE0MzIyODM1LC0zNzMz
+Mjc1NDcsMjM2OTE4NDQ1LC04NTEwODA4NTUsLTE5NzU2ODE1Mz
+QsLTIwMzU4MjAzNDYsLTQ1Mzg0NjI2NCwtMTgwODMzMTE5NCw2
+NTkyNTY5OTZdfQ==
 -->
