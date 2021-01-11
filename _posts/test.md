@@ -128,13 +128,15 @@ The `00000000000000000000` in front of the log and the index files in each parti
 Kafka always writes the messages into these segment files under a partition. There is always an _active_ segment to which Kafka writes to. Once the segment’s size limit is reached, a new segment file is created and that becomes the newly active segment.
 
 
-![Lambda Architecture](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/lambda.png?raw=true)
+![Segment](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/segment.png?raw=true)
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxNzQ5NTc0NCwzNjI2MTk0ODEsMTYyND
-M0MzA0MCwyMDM1ODIxNTM0LC0xMjk4MTEyMzE0LC00NDUyMzA3
-MzAsLTk2OTk1OTM2LC0xNjYwNTQ5MzY5LC0xNjM0NzUzNzE1LD
-ExODU1NzcwNzAsLTIwNTQ0ODY2ODEsLTQ3MDQ1MjYwOCw2NTA4
-OTgxOCwtMjA4ODc0NjYxMiwtMjA4ODc0NjYxMiwtMTE3MTkyOD
-Q1LDkzMzMwOTc4NywxMjE4NDc2NTA5LC0xNzM4NDE0MDMsLTg4
-MTA0MjU2MV19
+eyJoaXN0b3J5IjpbNjU5OTAzNzksMTYxNzQ5NTc0NCwzNjI2MT
+k0ODEsMTYyNDM0MzA0MCwyMDM1ODIxNTM0LC0xMjk4MTEyMzE0
+LC00NDUyMzA3MzAsLTk2OTk1OTM2LC0xNjYwNTQ5MzY5LC0xNj
+M0NzUzNzE1LDExODU1NzcwNzAsLTIwNTQ0ODY2ODEsLTQ3MDQ1
+MjYwOCw2NTA4OTgxOCwtMjA4ODc0NjYxMiwtMjA4ODc0NjYxMi
+wtMTE3MTkyODQ1LDkzMzMwOTc4NywxMjE4NDc2NTA5LC0xNzM4
+NDE0MDNdfQ==
 -->
