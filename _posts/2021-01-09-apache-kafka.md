@@ -15,12 +15,12 @@ tags:
 
 # Kafka
 
-Kafka is everywhere these days. With the advent of Microservices, Big Data and distributed computing. Kafka has become a regular occurrence in architecture’s of every product. This is all well and great, but stripped down to its core, Kafka is a distributed, horizontally scalable, fault-tolerant commit log.
+Kafka is everywhere these days. With the development of Microservices, Big Data and distributed computing. Kafka has become a regular occurrence in architecture’s of every product. This is all well and great, but stripped down to its core, Kafka is a distributed, horizontally scalable, fault-tolerant commit log.
 
 ## Lets proceed with Kafka storage internals:
 Azuming you have some basic understanding about Kafka. we can start with two terms, Partition and Topic.
 
- ## Kafka Topic
+## Kafka Topic
  
 Kafka Topic caters the entire purpose. Kafka topics are really just a named feed or category of messages. One way to think of it would be to consider a mailbox. It's an addressable, referenceable collection point for messages that producers send messages to and consumers retrieve messages from. 
 
