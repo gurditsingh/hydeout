@@ -119,13 +119,17 @@ Each new message in the partition gets an Id also called as the _Offset_. So, th
 ------------
 
 ### Segments:
+Partition might be the standard unit of storage in Kafka, but it is not the lowest level of abstraction provided. Each partition is sub-divided into segments.
+
+A segment is simply a collection of messages of a partition. Instead of storing all the messages of a partition in a single file (think of the log file analogy again), Kafka splits them into chunks called segments.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTI4NTI0NjUsMzYyNjE5NDgxLDE2Mj
-QzNDMwNDAsMjAzNTgyMTUzNCwtMTI5ODExMjMxNCwtNDQ1MjMw
-NzMwLC05Njk5NTkzNiwtMTY2MDU0OTM2OSwtMTYzNDc1MzcxNS
-wxMTg1NTc3MDcwLC0yMDU0NDg2NjgxLC00NzA0NTI2MDgsNjUw
-ODk4MTgsLTIwODg3NDY2MTIsLTIwODg3NDY2MTIsLTExNzE5Mj
-g0NSw5MzMzMDk3ODcsMTIxODQ3NjUwOSwtMTczODQxNDAzLC04
-ODEwNDI1NjFdfQ==
+eyJoaXN0b3J5IjpbLTkzODk0MjQzMCwzNjI2MTk0ODEsMTYyND
+M0MzA0MCwyMDM1ODIxNTM0LC0xMjk4MTEyMzE0LC00NDUyMzA3
+MzAsLTk2OTk1OTM2LC0xNjYwNTQ5MzY5LC0xNjM0NzUzNzE1LD
+ExODU1NzcwNzAsLTIwNTQ0ODY2ODEsLTQ3MDQ1MjYwOCw2NTA4
+OTgxOCwtMjA4ODc0NjYxMiwtMjA4ODc0NjYxMiwtMTE3MTkyOD
+Q1LDkzMzMwOTc4NywxMjE4NDc2NTA5LC0xNzM4NDE0MDMsLTg4
+MTA0MjU2MV19
 -->
