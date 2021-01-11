@@ -34,7 +34,7 @@ The number of partitions per topic is entirely configurable. The partition itsel
 
 Each topic has to have a single partition because that partition, as I mentioned, is the physical representation of the topic as a commit log stored on one or more brokers. The log maintained on the broker's file system in the directory tmp/kafka‑logs. For the topic subfolder created called my_topic‑0, which contained the log for that single partition.
 
-**Partition as a resources standpoint**
+**Resources standpoint**
 
  - Partition resides on broker. which is limited by a finite amount of
    computational resources, such as CPU, memory, disk space, and
@@ -67,17 +67,18 @@ Each topic has to have a single partition because that partition, as I mentioned
    brokers in the cluster. This enables any individual broker to direct
    a producer client to the appropriate broker for producing messages to
    a specific partition.
-   
+
+
 
  
 	 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0NTIzMDczMCwtOTY5OTU5MzYsLTE2Nj
-A1NDkzNjksLTE2MzQ3NTM3MTUsMTE4NTU3NzA3MCwtMjA1NDQ4
-NjY4MSwtNDcwNDUyNjA4LDY1MDg5ODE4LC0yMDg4NzQ2NjEyLC
-0yMDg4NzQ2NjEyLC0xMTcxOTI4NDUsOTMzMzA5Nzg3LDEyMTg0
-NzY1MDksLTE3Mzg0MTQwMywtODgxMDQyNTYxLC0yMDE0MzIyOD
-M1LC0zNzMzMjc1NDcsMjM2OTE4NDQ1LC04NTEwODA4NTUsLTE5
-NzU2ODE1MzRdfQ==
+eyJoaXN0b3J5IjpbLTEyNTYxMzU3NTEsLTQ0NTIzMDczMCwtOT
+Y5OTU5MzYsLTE2NjA1NDkzNjksLTE2MzQ3NTM3MTUsMTE4NTU3
+NzA3MCwtMjA1NDQ4NjY4MSwtNDcwNDUyNjA4LDY1MDg5ODE4LC
+0yMDg4NzQ2NjEyLC0yMDg4NzQ2NjEyLC0xMTcxOTI4NDUsOTMz
+MzA5Nzg3LDEyMTg0NzY1MDksLTE3Mzg0MTQwMywtODgxMDQyNT
+YxLC0yMDE0MzIyODM1LC0zNzMzMjc1NDcsMjM2OTE4NDQ1LC04
+NTEwODA4NTVdfQ==
 -->
