@@ -73,13 +73,13 @@ Number of partition is a architectural decision, the number of Kafka partitions 
 
 if you have more partitions,  the more entry ZooKeeper has to make to keep track of them. And since ZooKeeper works on this registry in memory, the resources on ZooKeeper can become constrained.
 
-if you have less partitions, you cannot scale you
+if you have less partitions, you cannot effectively scale out the application to consume the partitions.
 
  
 	 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3ODMzODYxMywtMTI5ODExMjMxNCwtND
+eyJoaXN0b3J5IjpbMjAzNTgyMTUzNCwtMTI5ODExMjMxNCwtND
 Q1MjMwNzMwLC05Njk5NTkzNiwtMTY2MDU0OTM2OSwtMTYzNDc1
 MzcxNSwxMTg1NTc3MDcwLC0yMDU0NDg2NjgxLC00NzA0NTI2MD
 gsNjUwODk4MTgsLTIwODg3NDY2MTIsLTIwODg3NDY2MTIsLTEx
