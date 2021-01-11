@@ -111,13 +111,16 @@ Three directories created because we’ve given three partitions for our topic, 
     - my_topic 197121 10M Jan  5 08:26 00000000000000000000.timeindex
     - my_topic 197121   0 Jan  5 08:26 leader-epoch-checkpoint
 
-if you send messages to Kafka, then  arbitrarily picks the partition for the first message and then distributes the messages to partitions in a round robin fashion.
+if you send messages to Kafka, then Kafka arbitrarily picks the partition for the first message and then distributes the messages to partitions in a round robin fashion.
+
+Each new message in the partition gets an Id also called as the _Offset_. So, the first message is at ‘offset’ 0, the second message is at offset 1 and so on. These offset Id’s are always incremented from the previous value.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5MDU2MTA0LDM2MjYxOTQ4MSwyMDM1OD
-IxNTM0LC0xMjk4MTEyMzE0LC00NDUyMzA3MzAsLTk2OTk1OTM2
-LC0xNjYwNTQ5MzY5LC0xNjM0NzUzNzE1LDExODU1NzcwNzAsLT
-IwNTQ0ODY2ODEsLTQ3MDQ1MjYwOCw2NTA4OTgxOCwtMjA4ODc0
-NjYxMiwtMjA4ODc0NjYxMiwtMTE3MTkyODQ1LDkzMzMwOTc4Ny
-wxMjE4NDc2NTA5LC0xNzM4NDE0MDMsLTg4MTA0MjU2MSwtMjAx
-NDMyMjgzNV19
+eyJoaXN0b3J5IjpbLTI1MDQ0NjkxNCwzNjI2MTk0ODEsMjAzNT
+gyMTUzNCwtMTI5ODExMjMxNCwtNDQ1MjMwNzMwLC05Njk5NTkz
+NiwtMTY2MDU0OTM2OSwtMTYzNDc1MzcxNSwxMTg1NTc3MDcwLC
+0yMDU0NDg2NjgxLC00NzA0NTI2MDgsNjUwODk4MTgsLTIwODg3
+NDY2MTIsLTIwODg3NDY2MTIsLTExNzE5Mjg0NSw5MzMzMDk3OD
+csMTIxODQ3NjUwOSwtMTczODQxNDAzLC04ODEwNDI1NjEsLTIw
+MTQzMjI4MzVdfQ==
 -->
