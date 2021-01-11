@@ -28,17 +28,17 @@ In Kafka, a topic is a logical entity, something that virtually spans across the
 
 ## Kafka Partitions
 
-The topic, as a logical concept, is represented by one or more physical log files called partitions. **_Partitions_** are the units of storage in Kafka for messages
+The topic, as a logical concept, is represented by one or more physical log files called partitions. **Partitions** are the units of storage in Kafka for messages. 
 
  
 	 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1MzI2MzkxNywtMTY2MDU0OTM2OSwtMT
-YzNDc1MzcxNSwxMTg1NTc3MDcwLC0yMDU0NDg2NjgxLC00NzA0
-NTI2MDgsNjUwODk4MTgsLTIwODg3NDY2MTIsLTIwODg3NDY2MT
-IsLTExNzE5Mjg0NSw5MzMzMDk3ODcsMTIxODQ3NjUwOSwtMTcz
-ODQxNDAzLC04ODEwNDI1NjEsLTIwMTQzMjI4MzUsLTM3MzMyNz
-U0NywyMzY5MTg0NDUsLTg1MTA4MDg1NSwtMTk3NTY4MTUzNCwt
-MjAzNTgyMDM0Nl19
+eyJoaXN0b3J5IjpbMjQ4MjY5OTY1LC0xNjYwNTQ5MzY5LC0xNj
+M0NzUzNzE1LDExODU1NzcwNzAsLTIwNTQ0ODY2ODEsLTQ3MDQ1
+MjYwOCw2NTA4OTgxOCwtMjA4ODc0NjYxMiwtMjA4ODc0NjYxMi
+wtMTE3MTkyODQ1LDkzMzMwOTc4NywxMjE4NDc2NTA5LC0xNzM4
+NDE0MDMsLTg4MTA0MjU2MSwtMjAxNDMyMjgzNSwtMzczMzI3NT
+Q3LDIzNjkxODQ0NSwtODUxMDgwODU1LC0xOTc1NjgxNTM0LC0y
+MDM1ODIwMzQ2XX0=
 -->
