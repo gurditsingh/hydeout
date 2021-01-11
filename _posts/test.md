@@ -53,17 +53,20 @@ Each topic has to have a single partition because that partition, as I mentioned
  - For example, when a command to create a topic with three partitions
    has issued, it is handled by ZooKeeper, who is maintaining metadata
    regarding the cluster.
-   
+
+ - ZooKeeper is going to look at the available brokers and
+   decide which brokers will be made the responsible leaders for
+   managing a single partition within a topic.
 
  
 	 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODk2MjY3OTAzLC05Njk5NTkzNiwtMTY2MD
-U0OTM2OSwtMTYzNDc1MzcxNSwxMTg1NTc3MDcwLC0yMDU0NDg2
-NjgxLC00NzA0NTI2MDgsNjUwODk4MTgsLTIwODg3NDY2MTIsLT
-IwODg3NDY2MTIsLTExNzE5Mjg0NSw5MzMzMDk3ODcsMTIxODQ3
-NjUwOSwtMTczODQxNDAzLC04ODEwNDI1NjEsLTIwMTQzMjI4Mz
-UsLTM3MzMyNzU0NywyMzY5MTg0NDUsLTg1MTA4MDg1NSwtMTk3
-NTY4MTUzNF19
+eyJoaXN0b3J5IjpbLTcyMDk1NDEyMSwtOTY5OTU5MzYsLTE2Nj
+A1NDkzNjksLTE2MzQ3NTM3MTUsMTE4NTU3NzA3MCwtMjA1NDQ4
+NjY4MSwtNDcwNDUyNjA4LDY1MDg5ODE4LC0yMDg4NzQ2NjEyLC
+0yMDg4NzQ2NjEyLC0xMTcxOTI4NDUsOTMzMzA5Nzg3LDEyMTg0
+NzY1MDksLTE3Mzg0MTQwMywtODgxMDQyNTYxLC0yMDE0MzIyOD
+M1LC0zNzMzMjc1NDcsMjM2OTE4NDQ1LC04NTEwODA4NTUsLTE5
+NzU2ODE1MzRdfQ==
 -->
