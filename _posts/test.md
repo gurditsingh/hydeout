@@ -35,23 +35,31 @@ The number of partitions per topic is entirely configurable. The partition itsel
 Each topic has to have a single partition because that partition, as I mentioned, is the physical representation of the topic as a commit log stored on one or more brokers. The log maintained on the broker's file system in the directory tmp/kafka‑logs. For the topic subfolder created called my_topic‑0, which contained the log for that single partition.
 
 **Partition as a resources standpoint**
-Partition resides on broker. which is limited by a finite amount of computational resources, such as CPU, memory, disk space, and network. 
 
-Considering each partition you have must fit on one machine. You cannot split a single partition across multiple machines. Therefore, if you only have one partition for a large and growing topic, you will be limited by the one broker node's ability to capture and retain messages.
+ - Partition resides on broker. which is limited by a finite amount of
+   computational resources, such as CPU, memory, disk space, and
+   network.
+ - Considering each partition you have must fit on one machine. You
+   cannot split a single partition across multiple machines. Therefore,
+   if you only have one partition for a large and growing topic, you
+   will be limited by the one broker node's ability to capture and
+   retain messages.
+ - In Kafka, that means you'll need more brokers in the cluster and
+   topics that can leverage those brokers by partitioning into multiple
+   partitions.
 
-In Kafka, that means you'll need more brokers in the cluster and topics that can leverage those brokers by partitioning into multiple partitions.
+**Partition as a distribution standpoint**
 
-**Partition as a resources standpoint**
 
  
 	 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MjkxNzA5OCwtOTY5OTU5MzYsLTE2Nj
-A1NDkzNjksLTE2MzQ3NTM3MTUsMTE4NTU3NzA3MCwtMjA1NDQ4
-NjY4MSwtNDcwNDUyNjA4LDY1MDg5ODE4LC0yMDg4NzQ2NjEyLC
-0yMDg4NzQ2NjEyLC0xMTcxOTI4NDUsOTMzMzA5Nzg3LDEyMTg0
-NzY1MDksLTE3Mzg0MTQwMywtODgxMDQyNTYxLC0yMDE0MzIyOD
-M1LC0zNzMzMjc1NDcsMjM2OTE4NDQ1LC04NTEwODA4NTUsLTE5
-NzU2ODE1MzRdfQ==
+eyJoaXN0b3J5IjpbLTE3NjMwODg5NjIsLTk2OTk1OTM2LC0xNj
+YwNTQ5MzY5LC0xNjM0NzUzNzE1LDExODU1NzcwNzAsLTIwNTQ0
+ODY2ODEsLTQ3MDQ1MjYwOCw2NTA4OTgxOCwtMjA4ODc0NjYxMi
+wtMjA4ODc0NjYxMiwtMTE3MTkyODQ1LDkzMzMwOTc4NywxMjE4
+NDc2NTA5LC0xNzM4NDE0MDMsLTg4MTA0MjU2MSwtMjAxNDMyMj
+gzNSwtMzczMzI3NTQ3LDIzNjkxODQ0NSwtODUxMDgwODU1LC0x
+OTc1NjgxNTM0XX0=
 -->
