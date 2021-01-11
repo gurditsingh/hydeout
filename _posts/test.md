@@ -2,7 +2,7 @@
 Kafka is everywhere these days. With the advent of Microservices, Big Data and distributed computing. Kafka has become a regular occurrence in architecture’s of every product. This is all well and great, but stripped down to its core, Kafka is a distributed, horizontally scalable, fault-tolerant commit log.
 
 ## Lets proceed with Kafka storage internals:
-I would expect you to have some understanding about Kafka. Although I’ve tried to keep the entry level for this article pretty low, you might not be able to understand everything if you’re not familiar with the general workings of it
+You have some basic understanding about Kafka. With reference to storage in Kafka, you’ll always hear two terms, Partition and Topic.
 
 
 ## Deep Dive into Kafka’s storage internals.
@@ -10,11 +10,11 @@ I would expect you to have some understanding about Kafka. Although I’ve tried
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2ODI1MDAxMywtMjA1NDQ4NjY4MSwtND
-cwNDUyNjA4LDY1MDg5ODE4LC0yMDg4NzQ2NjEyLC0yMDg4NzQ2
-NjEyLC0xMTcxOTI4NDUsOTMzMzA5Nzg3LDEyMTg0NzY1MDksLT
-E3Mzg0MTQwMywtODgxMDQyNTYxLC0yMDE0MzIyODM1LC0zNzMz
-Mjc1NDcsMjM2OTE4NDQ1LC04NTEwODA4NTUsLTE5NzU2ODE1Mz
-QsLTIwMzU4MjAzNDYsLTQ1Mzg0NjI2NCwtMTgwODMzMTE5NCw2
-NTkyNTY5OTZdfQ==
+eyJoaXN0b3J5IjpbNjc3OTI5NDQxLC0yMDU0NDg2NjgxLC00Nz
+A0NTI2MDgsNjUwODk4MTgsLTIwODg3NDY2MTIsLTIwODg3NDY2
+MTIsLTExNzE5Mjg0NSw5MzMzMDk3ODcsMTIxODQ3NjUwOSwtMT
+czODQxNDAzLC04ODEwNDI1NjEsLTIwMTQzMjI4MzUsLTM3MzMy
+NzU0NywyMzY5MTg0NDUsLTg1MTA4MDg1NSwtMTk3NTY4MTUzNC
+wtMjAzNTgyMDM0NiwtNDUzODQ2MjY0LC0xODA4MzMxMTk0LDY1
+OTI1Njk5Nl19
 -->
