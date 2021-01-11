@@ -104,9 +104,10 @@ kafka-topics.bat --create --topic my_topic --partitions 3 --replication-factor 1
     |-- 00000000000000000000.timeindex
     `-- leader-epoch-checkpoint
 
-theee directories created because we’ve given three partitions for our topic, which means that each partition gets a directory on the file system.
+Three directories created because we’ve given three partitions for our topic, which means that each partition gets a directory on the file system.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNjU5Nzg2MCwxNjI0MzQzMDQwLDIwMz
+eyJoaXN0b3J5IjpbMTMxNTEyNTYyMywxNjI0MzQzMDQwLDIwMz
 U4MjE1MzQsLTEyOTgxMTIzMTQsLTQ0NTIzMDczMCwtOTY5OTU5
 MzYsLTE2NjA1NDkzNjksLTE2MzQ3NTM3MTUsMTE4NTU3NzA3MC
 wtMjA1NDQ4NjY4MSwtNDcwNDUyNjA4LDY1MDg5ODE4LC0yMDg4
