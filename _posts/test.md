@@ -32,17 +32,17 @@ The topic, as a logical concept, is represented by one or more physical log file
 
 The number of partitions per topic is entirely configurable. The partition itself is central to how Apache Kafka achieves **scalability**, greater levels of **fault tolerance** and higher levels of **throughput**.
 
-
+Each topic has to have a single partition because that partition, as I mentioned, is the physical representation of the topic as a commit log stored on one or more brokers. The log maintained on the broker's file system in the directory tmp/kafka‑logs. For the one topic we created, there was a subfolder called my_topic‑0, which contained the log for that single partition.
 
  
 	 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2OTk1OTM2LC0xNjYwNTQ5MzY5LC0xNj
-M0NzUzNzE1LDExODU1NzcwNzAsLTIwNTQ0ODY2ODEsLTQ3MDQ1
-MjYwOCw2NTA4OTgxOCwtMjA4ODc0NjYxMiwtMjA4ODc0NjYxMi
-wtMTE3MTkyODQ1LDkzMzMwOTc4NywxMjE4NDc2NTA5LC0xNzM4
-NDE0MDMsLTg4MTA0MjU2MSwtMjAxNDMyMjgzNSwtMzczMzI3NT
-Q3LDIzNjkxODQ0NSwtODUxMDgwODU1LC0xOTc1NjgxNTM0LC0y
-MDM1ODIwMzQ2XX0=
+eyJoaXN0b3J5IjpbNjU2ODk4NTk5LC05Njk5NTkzNiwtMTY2MD
+U0OTM2OSwtMTYzNDc1MzcxNSwxMTg1NTc3MDcwLC0yMDU0NDg2
+NjgxLC00NzA0NTI2MDgsNjUwODk4MTgsLTIwODg3NDY2MTIsLT
+IwODg3NDY2MTIsLTExNzE5Mjg0NSw5MzMzMDk3ODcsMTIxODQ3
+NjUwOSwtMTczODQxNDAzLC04ODEwNDI1NjEsLTIwMTQzMjI4Mz
+UsLTM3MzMyNzU0NywyMzY5MTg0NDUsLTg1MTA4MDg1NSwtMTk3
+NTY4MTUzNF19
 -->
