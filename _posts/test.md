@@ -9,8 +9,6 @@ You have some basic understanding about Kafka. With reference to storage in Kafk
 
 > Topic is merely a logical grouping of several partitions.
 
- 
-
 In Kafka, a topic is a logical entity, something that virtually spans across the entire cluster of brokers. Producers and consumers alike don't really know or care about where and how the messages are kept. They just care about the topic to work with.
 
  **Topic is from a logical viewpoint**
@@ -30,18 +28,19 @@ In Kafka, a topic is a logical entity, something that virtually spans across the
 
 **what happens when we enter wrong data:**
 
-if a producer happens to send a message that is incorrect or represent a fact that is no longer valid, its only recourse is to send new message with follow up that previous message.
- It would be the job of the consumer to choose between the messages when it reads them and processes them. This style of maintaining data as events is an architectural style known as event sourcing to manage independent caches of data in a reliable, flexible, and distributable manner. 
+**Producer Side:** if a producer happens to send a message that is incorrect or represent a fact that is no longer valid, its only recourse is to send new message with follow up that previous message.
+**Consuer Side:**
+It would be the job of the consumer to choose between the messages when it reads them and processes them. This style of maintaining data as events is an architectural style known as event sourcing to manage independent caches of data in a reliable, flexible, and distributable manner. 
 
 	 
 	 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODExOTYwNjIwLDExODU1NzcwNzAsLTIwNT
-Q0ODY2ODEsLTQ3MDQ1MjYwOCw2NTA4OTgxOCwtMjA4ODc0NjYx
-MiwtMjA4ODc0NjYxMiwtMTE3MTkyODQ1LDkzMzMwOTc4NywxMj
-E4NDc2NTA5LC0xNzM4NDE0MDMsLTg4MTA0MjU2MSwtMjAxNDMy
-MjgzNSwtMzczMzI3NTQ3LDIzNjkxODQ0NSwtODUxMDgwODU1LC
-0xOTc1NjgxNTM0LC0yMDM1ODIwMzQ2LC00NTM4NDYyNjQsLTE4
-MDgzMzExOTRdfQ==
+eyJoaXN0b3J5IjpbMTQ4MDIzNDQyMSwxMTg1NTc3MDcwLC0yMD
+U0NDg2NjgxLC00NzA0NTI2MDgsNjUwODk4MTgsLTIwODg3NDY2
+MTIsLTIwODg3NDY2MTIsLTExNzE5Mjg0NSw5MzMzMDk3ODcsMT
+IxODQ3NjUwOSwtMTczODQxNDAzLC04ODEwNDI1NjEsLTIwMTQz
+MjI4MzUsLTM3MzMyNzU0NywyMzY5MTg0NDUsLTg1MTA4MDg1NS
+wtMTk3NTY4MTUzNCwtMjAzNTgyMDM0NiwtNDUzODQ2MjY0LC0x
+ODA4MzMxMTk0XX0=
 -->
