@@ -127,9 +127,9 @@ The `00000000000000000000` in front of the log and the index files in each parti
 
 Kafka always writes the messages into these segment files under a partition. There is always an _active_ segment to which Kafka writes to. Once the segment’s size limit is reached, a new segment file is created and that becomes the newly active segment.
 
-
+![Segment](https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2F%40durgaswaroop%2Fa-practical-introduction-to-kafka-storage-internals-d5b544f6925f&psig=AOvVaw0uUYZ_H_uIz3ST_p0afygi&ust=1610449345637000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLD8ocvck-4CFQAAAAAdAAAAABAD "Segment")
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzY3MTY4OCwzNjI2MTk0ODEsMjAzNT
+eyJoaXN0b3J5IjpbLTQyNDc1NDMxNiwzNjI2MTk0ODEsMjAzNT
 gyMTUzNCwtMTI5ODExMjMxNCwtNDQ1MjMwNzMwLC05Njk5NTkz
 NiwtMTY2MDU0OTM2OSwtMTYzNDc1MzcxNSwxMTg1NTc3MDcwLC
 0yMDU0NDg2NjgxLC00NzA0NTI2MDgsNjUwODk4MTgsLTIwODg3
