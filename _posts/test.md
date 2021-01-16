@@ -4,14 +4,15 @@ Kafka Producer API allows applications to send streams of data to topics in the 
 # Kafka producer configurations
 Having knowledge of producer configurations becomes critical for us in order to get optimal performance and to leverage the capabilities of Kafka. Let's look at each of them in detail below:
 
-### - Configuration Properties
+### - Configuration Properties : 
+When creating a Kafka producer client application, first need an object to represent the required configuration properties needed to start up a producer. there are three required properties needed, bootstrap.servers and both key and value serializers
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODU1ODI5MDcsNjExMDA5MzYzLDExNj
-g0OTgyMDIsNzUyMjQ5NzE1LC0yODg0MDY0ODcsMTYxNzQ5NTc0
-NCwzNjI2MTk0ODEsMTYyNDM0MzA0MCwyMDM1ODIxNTM0LC0xMj
-k4MTEyMzE0LC00NDUyMzA3MzAsLTk2OTk1OTM2LC0xNjYwNTQ5
-MzY5LC0xNjM0NzUzNzE1LDExODU1NzcwNzAsLTIwNTQ0ODY2OD
-EsLTQ3MDQ1MjYwOCw2NTA4OTgxOCwtMjA4ODc0NjYxMiwtMjA4
-ODc0NjYxMl19
+eyJoaXN0b3J5IjpbMTk1MDA4MzA1MSw2MTEwMDkzNjMsMTE2OD
+Q5ODIwMiw3NTIyNDk3MTUsLTI4ODQwNjQ4NywxNjE3NDk1NzQ0
+LDM2MjYxOTQ4MSwxNjI0MzQzMDQwLDIwMzU4MjE1MzQsLTEyOT
+gxMTIzMTQsLTQ0NTIzMDczMCwtOTY5OTU5MzYsLTE2NjA1NDkz
+NjksLTE2MzQ3NTM3MTUsMTE4NTU3NzA3MCwtMjA1NDQ4NjY4MS
+wtNDcwNDUyNjA4LDY1MDg5ODE4LC0yMDg4NzQ2NjEyLC0yMDg4
+NzQ2NjEyXX0=
 -->
