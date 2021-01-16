@@ -1,7 +1,7 @@
 # kafka producer
 Kafka Producer API allows applications to send streams of data to topics in the Kafka cluster. Basically Its a component of the Kafka ecosystem which is used to publish messages onto a Kafka topic.
 
-# Kafka producer configurations
+# Kafka producer 
 Having knowledge of producer configurations becomes critical for us in order to get optimal performance and to leverage the capabilities of Kafka. Let's look at each of them in detail below:
 
 ### - Configuration Properties : 
@@ -128,11 +128,11 @@ To ensure the best chance of delivery, The `acks` setting is a producer configur
 https://github.com/gurditsingh/LearnKafka
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzMzNTQ2NzgsMTI1NzkxMzc2OCwtNz
-M0MjYzMTkzLDE3MTcyMTk3NzQsLTkzOTczNjE1OCwtMTAwOTY0
-NTAxMywtNzkyMDk4OTAyLC0xNjE2NjI4ODE2LC0xMDI4MDYyOT
-I1LDE4MDMzNTQ1MjYsLTQyNjc1OTY4MywtMTI1NzEwMTAzNSwx
-NjM4OTIzOTAzLC0xNTg5Nzg2NTE4LDYxMTAwOTM2MywxMTY4ND
-k4MjAyLDc1MjI0OTcxNSwtMjg4NDA2NDg3LDE2MTc0OTU3NDQs
-MzYyNjE5NDgxXX0=
+eyJoaXN0b3J5IjpbMTk2Mzc0MjA5MywtMjA3MzM1NDY3OCwxMj
+U3OTEzNzY4LC03MzQyNjMxOTMsMTcxNzIxOTc3NCwtOTM5NzM2
+MTU4LC0xMDA5NjQ1MDEzLC03OTIwOTg5MDIsLTE2MTY2Mjg4MT
+YsLTEwMjgwNjI5MjUsMTgwMzM1NDUyNiwtNDI2NzU5NjgzLC0x
+MjU3MTAxMDM1LDE2Mzg5MjM5MDMsLTE1ODk3ODY1MTgsNjExMD
+A5MzYzLDExNjg0OTgyMDIsNzUyMjQ5NzE1LC0yODg0MDY0ODcs
+MTYxNzQ5NTc0NF19
 -->
