@@ -50,14 +50,15 @@ val KProducer=new KafkaProducer[String,String](props)
 	 
 	 - When creating a producer record, you can set a specific **Partition** value to send a message to a specific **Partition** (the message you want to sent it to specific broker)
 	 - It allows for the explicit setting of a **Timestamp** to the producer record and it's long data type.
-		- The actual timestamp that will be logged for a message will be based on settings defined in the broker server.properties file, specifically the log.message.timestamp.type setting.
+		- The actual timestamp that will be logged for a message will be based on settings defined in the broker server.properties file, specifically the log.message.timestamp.type setting and there are two modes available.
+		- **CreateTime**, which is the default, the timestamp applied to the message is set by the producer and will be what is committed to the log.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTcxMDEwMzUsMTYzODkyMzkwMywtMT
-U4OTc4NjUxOCw2MTEwMDkzNjMsMTE2ODQ5ODIwMiw3NTIyNDk3
-MTUsLTI4ODQwNjQ4NywxNjE3NDk1NzQ0LDM2MjYxOTQ4MSwxNj
-I0MzQzMDQwLDIwMzU4MjE1MzQsLTEyOTgxMTIzMTQsLTQ0NTIz
-MDczMCwtOTY5OTU5MzYsLTE2NjA1NDkzNjksLTE2MzQ3NTM3MT
-UsMTE4NTU3NzA3MCwtMjA1NDQ4NjY4MSwtNDcwNDUyNjA4LDY1
-MDg5ODE4XX0=
+eyJoaXN0b3J5IjpbLTQyNjc1OTY4MywtMTI1NzEwMTAzNSwxNj
+M4OTIzOTAzLC0xNTg5Nzg2NTE4LDYxMTAwOTM2MywxMTY4NDk4
+MjAyLDc1MjI0OTcxNSwtMjg4NDA2NDg3LDE2MTc0OTU3NDQsMz
+YyNjE5NDgxLDE2MjQzNDMwNDAsMjAzNTgyMTUzNCwtMTI5ODEx
+MjMxNCwtNDQ1MjMwNzMwLC05Njk5NTkzNiwtMTY2MDU0OTM2OS
+wtMTYzNDc1MzcxNSwxMTg1NTc3MDcwLC0yMDU0NDg2NjgxLC00
+NzA0NTI2MDhdfQ==
 -->
