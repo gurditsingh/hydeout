@@ -74,10 +74,11 @@ val KProducer=new KafkaProducer[String,String](props)
 	 - **Round Robin Partitioning Strategy :** If producer record doesn't contain partition and key value then it goes in round robin fashion, each partition receive a batch with single record.
 	 - **Hash Partitioning Strategy :** If producer record contains key value then hash strategy calculate the hash value and record goes to calculated partition.
 	 - **Custom Partitioning Strategy :** User can provide custom partition strategy by configuration properties called PARTITIONER_CLASS_CONFIG.
-	 - 
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Njk1NjgyNywtNzkyMDk4OTAyLC0xNj
+eyJoaXN0b3J5IjpbMjA2NzM0ODU0MiwtNzkyMDk4OTAyLC0xNj
 E2NjI4ODE2LC0xMDI4MDYyOTI1LDE4MDMzNTQ1MjYsLTQyNjc1
 OTY4MywtMTI1NzEwMTAzNSwxNjM4OTIzOTAzLC0xNTg5Nzg2NT
 E4LDYxMTAwOTM2MywxMTY4NDk4MjAyLDc1MjI0OTcxNSwtMjg4
