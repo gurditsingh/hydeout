@@ -46,16 +46,17 @@ val KProducer=new KafkaProducer[String,String](props)
 	 - A producer record is also fairly basic and straightforward, it only requires two properties to be set in order for it to be considered a valid record sent by the Kafka Producer (two properties are the topic and the value).
 	 - The topic to which these records directed. The value is really just the contents of the message that are to be serialized using the specific serializer in the configuration settings. 
 	 
-	 The Producer Record provides other properties as well (partition and timestamp). 
+	 The Producer Record provides other properties as well (partition,  timestamp and key). 
 	 
 	 - When creating a producer record, you can set a specific **Partition** value to send a message to a specific **Partition** (the message you want to sent it to specific broker)
 	 - It allows for the explicit setting of a **Timestamp** to the producer record and it's long data type.
 		- The actual timestamp that will be logged for a message will be based on settings defined in the broker server.properties file, specifically the log.message.timestamp.type setting and there are two modes available.
 		- **CreateTime**, which is the default, the timestamp applied to the message is set by the producer and will be what is committed to the log.
 		- **LogAppendTime**, which will overwrite whatever the timestamp is coming from the producer with the timestamp of the broker at the time the message is appended to the log.
+	The key is a value that, if present, will determine how and to which partition within a topic the Kafka producer will be sending the message
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNzAxOTc2NCwtNDI2NzU5NjgzLC0xMj
+eyJoaXN0b3J5IjpbMTAxODYzNzExMywtNDI2NzU5NjgzLC0xMj
 U3MTAxMDM1LDE2Mzg5MjM5MDMsLTE1ODk3ODY1MTgsNjExMDA5
 MzYzLDExNjg0OTgyMDIsNzUyMjQ5NzE1LC0yODg0MDY0ODcsMT
 YxNzQ5NTc0NCwzNjI2MTk0ODEsMjAzNTgyMTUzNCwtMTI5ODEx
