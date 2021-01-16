@@ -9,10 +9,12 @@ When creating a Kafka producer client application, first need an object to repre
 
 Configuration items are generally key‑value pairs, the easiest way to do it is to use the Properties class from the core java.util's library.
 
- - **bootstrap.servers :** The bootstrap.servers configuration setting needed for the producer to start up.
+ - **bootstrap.servers :** 
+	 - The bootstrap.servers configuration setting needed for the producer to start up and supply a list of brokers.
+	 - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0OTQyMzI1Miw2MTEwMDkzNjMsMTE2OD
+eyJoaXN0b3J5IjpbLTM5NDMxMTM0Niw2MTEwMDkzNjMsMTE2OD
 Q5ODIwMiw3NTIyNDk3MTUsLTI4ODQwNjQ4NywxNjE3NDk1NzQ0
 LDM2MjYxOTQ4MSwyMDM1ODIxNTM0LC0xMjk4MTEyMzE0LC00ND
 UyMzA3MzAsLTk2OTk1OTM2LC0xNjYwNTQ5MzY5LC0xNjM0NzUz
