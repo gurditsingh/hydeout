@@ -107,15 +107,15 @@ To ensure the best chance of delivery, The `acks` setting is a producer configur
 ------------
 
 ### -Ordering Guarantees
-
+Depending on your application, message ordering can be important message order is only preserved within a given partition.
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NjA1NzgxMiwtOTM5NzM2MTU4LC0xMD
-A5NjQ1MDEzLC03OTIwOTg5MDIsLTE2MTY2Mjg4MTYsLTEwMjgw
-NjI5MjUsMTgwMzM1NDUyNiwtNDI2NzU5NjgzLC0xMjU3MTAxMD
-M1LDE2Mzg5MjM5MDMsLTE1ODk3ODY1MTgsNjExMDA5MzYzLDEx
-Njg0OTgyMDIsNzUyMjQ5NzE1LC0yODg0MDY0ODcsMTYxNzQ5NT
-c0NCwzNjI2MTk0ODEsMjAzNTgyMTUzNCwtMTI5ODExMjMxNCwt
-NDQ1MjMwNzMwXX0=
+eyJoaXN0b3J5IjpbNDcxMTYyMDgsLTkzOTczNjE1OCwtMTAwOT
+Y0NTAxMywtNzkyMDk4OTAyLC0xNjE2NjI4ODE2LC0xMDI4MDYy
+OTI1LDE4MDMzNTQ1MjYsLTQyNjc1OTY4MywtMTI1NzEwMTAzNS
+wxNjM4OTIzOTAzLC0xNTg5Nzg2NTE4LDYxMTAwOTM2MywxMTY4
+NDk4MjAyLDc1MjI0OTcxNSwtMjg4NDA2NDg3LDE2MTc0OTU3ND
+QsMzYyNjE5NDgxLDIwMzU4MjE1MzQsLTEyOTgxMTIzMTQsLTQ0
+NTIzMDczMF19
 -->
