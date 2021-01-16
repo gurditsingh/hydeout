@@ -110,16 +110,17 @@ To ensure the best chance of delivery, The `acks` setting is a producer configur
 
  - Depending on your application, message ordering can be important but
    message order is only preserved within a given partition.
- - If the producer sends messages to a partition in a specific order, that order will be the order in which the broker appends them to the log
+ - If the producer sends messages to a partition in a specific order, that order will be the order in which the broker appends them to the log and it will be the order that the consumers will read them from the log.
+ - Messages sent to multiple partitions, will not have a global order. Now this should be expected and understood at this point given our discussion about partitioning strategies.
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUwMjMwMzM2LC05Mzk3MzYxNTgsLTEwMD
-k2NDUwMTMsLTc5MjA5ODkwMiwtMTYxNjYyODgxNiwtMTAyODA2
-MjkyNSwxODAzMzU0NTI2LC00MjY3NTk2ODMsLTEyNTcxMDEwMz
-UsMTYzODkyMzkwMywtMTU4OTc4NjUxOCw2MTEwMDkzNjMsMTE2
-ODQ5ODIwMiw3NTIyNDk3MTUsLTI4ODQwNjQ4NywxNjE3NDk1Nz
-Q0LDM2MjYxOTQ4MSwxNjI0MzQzMDQwLDIwMzU4MjE1MzQsLTEy
-OTgxMTIzMTRdfQ==
+eyJoaXN0b3J5IjpbMTcxNzIxOTc3NCwtOTM5NzM2MTU4LC0xMD
+A5NjQ1MDEzLC03OTIwOTg5MDIsLTE2MTY2Mjg4MTYsLTEwMjgw
+NjI5MjUsMTgwMzM1NDUyNiwtNDI2NzU5NjgzLC0xMjU3MTAxMD
+M1LDE2Mzg5MjM5MDMsLTE1ODk3ODY1MTgsNjExMDA5MzYzLDEx
+Njg0OTgyMDIsNzUyMjQ5NzE1LC0yODg0MDY0ODcsMTYxNzQ5NT
+c0NCwzNjI2MTk0ODEsMTYyNDM0MzA0MCwyMDM1ODIxNTM0LC0x
+Mjk4MTEyMzE0XX0=
 -->
