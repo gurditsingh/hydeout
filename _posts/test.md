@@ -93,13 +93,13 @@ val KProducer=new KafkaProducer[String,String](props)
  - There are a lot of **configuration settings** that determine how many producer records are to be accumulated and buffered into a RecordBatch before it is sent off to the brokers.
 	 - **batch.size :** This batch.size value represents the maximum number of bytes that can be buffered per each RecordBatch.
 	 - **buffer.memory :** The buffer.memory setting to establishes threshold value for how much memory can be used to buffer records waiting to be sent to the brokers.
-	 - max.block.ms :
+	 - **max.block.ms :** If the high volume of records being buffered reaches the threshold established by the buffer.memory setting, the max.block .ms setting comes into effect. This setting determines how many milliseconds the send method will be blocked.
 
 	 buffer.memory
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNTAzNDkyMywtMTAwOTY0NTAxMywtNz
+eyJoaXN0b3J5IjpbLTkzOTczNjE1OCwtMTAwOTY0NTAxMywtNz
 kyMDk4OTAyLC0xNjE2NjI4ODE2LC0xMDI4MDYyOTI1LDE4MDMz
 NTQ1MjYsLTQyNjc1OTY4MywtMTI1NzEwMTAzNSwxNjM4OTIzOT
 AzLC0xNTg5Nzg2NTE4LDYxMTAwOTM2MywxMTY4NDk4MjAyLDc1
