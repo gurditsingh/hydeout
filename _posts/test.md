@@ -124,14 +124,15 @@ To ensure the best chance of delivery, The `acks` setting is a producer configur
  
 ------------
 
-## Sample source code available:
+### Sample source code available
+https://github.com/gurditsingh/LearnKafka
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQyMTcwNDI0LDEyNTc5MTM3NjgsLTczND
-I2MzE5MywxNzE3MjE5Nzc0LC05Mzk3MzYxNTgsLTEwMDk2NDUw
-MTMsLTc5MjA5ODkwMiwtMTYxNjYyODgxNiwtMTAyODA2MjkyNS
-wxODAzMzU0NTI2LC00MjY3NTk2ODMsLTEyNTcxMDEwMzUsMTYz
-ODkyMzkwMywtMTU4OTc4NjUxOCw2MTEwMDkzNjMsMTE2ODQ5OD
-IwMiw3NTIyNDk3MTUsLTI4ODQwNjQ4NywxNjE3NDk1NzQ0LDM2
-MjYxOTQ4MV19
+eyJoaXN0b3J5IjpbLTIwNzMzNTQ2NzgsMTI1NzkxMzc2OCwtNz
+M0MjYzMTkzLDE3MTcyMTk3NzQsLTkzOTczNjE1OCwtMTAwOTY0
+NTAxMywtNzkyMDk4OTAyLC0xNjE2NjI4ODE2LC0xMDI4MDYyOT
+I1LDE4MDMzNTQ1MjYsLTQyNjc1OTY4MywtMTI1NzEwMTAzNSwx
+NjM4OTIzOTAzLC0xNTg5Nzg2NTE4LDYxMTAwOTM2MywxMTY4ND
+k4MjAyLDc1MjI0OTcxNSwtMjg4NDA2NDg3LDE2MTc0OTU3NDQs
+MzYyNjE5NDgxXX0=
 -->
