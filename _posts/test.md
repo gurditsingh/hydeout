@@ -80,14 +80,18 @@ val KProducer=new KafkaProducer[String,String](props)
 
 
 ### - Process of Sending Messages
+ 
 
+ - Once the partitioning scheme established, the producer can now
+   dispatch the producer record onto an in‑memory queue‑like data
+   structure called a RecordAccumulator.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjgxNzA0ODIsLTc5MjA5ODkwMiwtMT
-YxNjYyODgxNiwtMTAyODA2MjkyNSwxODAzMzU0NTI2LC00MjY3
-NTk2ODMsLTEyNTcxMDEwMzUsMTYzODkyMzkwMywtMTU4OTc4Nj
-UxOCw2MTEwMDkzNjMsMTE2ODQ5ODIwMiw3NTIyNDk3MTUsLTI4
-ODQwNjQ4NywxNjE3NDk1NzQ0LDM2MjYxOTQ4MSwyMDM1ODIxNT
-M0LC0xMjk4MTEyMzE0LC00NDUyMzA3MzAsLTk2OTk1OTM2LC0x
-NjYwNTQ5MzY5XX0=
+eyJoaXN0b3J5IjpbLTQ2MjAyMDEwNCwtNzkyMDk4OTAyLC0xNj
+E2NjI4ODE2LC0xMDI4MDYyOTI1LDE4MDMzNTQ1MjYsLTQyNjc1
+OTY4MywtMTI1NzEwMTAzNSwxNjM4OTIzOTAzLC0xNTg5Nzg2NT
+E4LDYxMTAwOTM2MywxMTY4NDk4MjAyLDc1MjI0OTcxNSwtMjg4
+NDA2NDg3LDE2MTc0OTU3NDQsMzYyNjE5NDgxLDIwMzU4MjE1Mz
+QsLTEyOTgxMTIzMTQsLTQ0NTIzMDczMCwtOTY5OTU5MzYsLTE2
+NjA1NDkzNjldfQ==
 -->
