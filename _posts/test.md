@@ -118,16 +118,17 @@ To ensure the best chance of delivery, The `acks` setting is a producer configur
 
 ### - Advanced Topics
 
- - Custom serializers, how to create customer serializers. use your own serializer/deserializer for the Kafka message value
+ - Custom serializers, use your own serializer/deserializer for the Kafka message key and value.
+ - Customs partitioners, how to create custom partitioning schemes.
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTQ4NTQ1ODMsLTczNDI2MzE5MywxNz
-E3MjE5Nzc0LC05Mzk3MzYxNTgsLTEwMDk2NDUwMTMsLTc5MjA5
-ODkwMiwtMTYxNjYyODgxNiwtMTAyODA2MjkyNSwxODAzMzU0NT
-I2LC00MjY3NTk2ODMsLTEyNTcxMDEwMzUsMTYzODkyMzkwMywt
-MTU4OTc4NjUxOCw2MTEwMDkzNjMsMTE2ODQ5ODIwMiw3NTIyND
-k3MTUsLTI4ODQwNjQ4NywxNjE3NDk1NzQ0LDM2MjYxOTQ4MSwy
-MDM1ODIxNTM0XX0=
+eyJoaXN0b3J5IjpbLTI1NTA0NzQ0OCwtNzM0MjYzMTkzLDE3MT
+cyMTk3NzQsLTkzOTczNjE1OCwtMTAwOTY0NTAxMywtNzkyMDk4
+OTAyLC0xNjE2NjI4ODE2LC0xMDI4MDYyOTI1LDE4MDMzNTQ1Mj
+YsLTQyNjc1OTY4MywtMTI1NzEwMTAzNSwxNjM4OTIzOTAzLC0x
+NTg5Nzg2NTE4LDYxMTAwOTM2MywxMTY4NDk4MjAyLDc1MjI0OT
+cxNSwtMjg4NDA2NDg3LDE2MTc0OTU3NDQsMzYyNjE5NDgxLDIw
+MzU4MjE1MzRdfQ==
 -->
