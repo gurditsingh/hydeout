@@ -86,14 +86,14 @@ val KProducer=new KafkaProducer[String,String](props)
    dispatch the producer record in‑memory queue‑like data
    structure called a RecordAccumulator.
  - Each time you send, persist, or read a message, resource overhead is
-   incurred. Kafka's approach to addressing common inefficiencies in messaging systems, micro‑batching
+   incurred. Kafka's approach to addressing common inefficiencies by 		 micro‑batching.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA2OTUzMzMwLC0xMDA5NjQ1MDEzLC03OT
-IwOTg5MDIsLTE2MTY2Mjg4MTYsLTEwMjgwNjI5MjUsMTgwMzM1
-NDUyNiwtNDI2NzU5NjgzLC0xMjU3MTAxMDM1LDE2Mzg5MjM5MD
-MsLTE1ODk3ODY1MTgsNjExMDA5MzYzLDExNjg0OTgyMDIsNzUy
-MjQ5NzE1LC0yODg0MDY0ODcsMTYxNzQ5NTc0NCwzNjI2MTk0OD
-EsMTYyNDM0MzA0MCwyMDM1ODIxNTM0LC0xMjk4MTEyMzE0LC00
-NDUyMzA3MzBdfQ==
+eyJoaXN0b3J5IjpbLTE1MTEzNzQ3OTQsLTEwMDk2NDUwMTMsLT
+c5MjA5ODkwMiwtMTYxNjYyODgxNiwtMTAyODA2MjkyNSwxODAz
+MzU0NTI2LC00MjY3NTk2ODMsLTEyNTcxMDEwMzUsMTYzODkyMz
+kwMywtMTU4OTc4NjUxOCw2MTEwMDkzNjMsMTE2ODQ5ODIwMiw3
+NTIyNDk3MTUsLTI4ODQwNjQ4NywxNjE3NDk1NzQ0LDM2MjYxOT
+Q4MSwxNjI0MzQzMDQwLDIwMzU4MjE1MzQsLTEyOTgxMTIzMTQs
+LTQ0NTIzMDczMF19
 -->
