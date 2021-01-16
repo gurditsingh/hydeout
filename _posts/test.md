@@ -67,9 +67,11 @@ val KProducer=new KafkaProducer[String,String](props)
 ### - Process of Sending Messages
 
  - Calling the send method on producer, then producer will reach out to the cluster using the bootstrap.servers list to discover the cluster membership.
+ - The response comes back as metadata, containing detailed information related to the topics, their partitions and their managing brokers on the cluster.
+ - With the producer now having an actual producer record to work with, the first step in this pipeline will be to pass the message through the serializer using the configured serializer.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNDI0OTg4OCwxODAzMzU0NTI2LC00Mj
+eyJoaXN0b3J5IjpbLTY5NTI1NDkwMCwxODAzMzU0NTI2LC00Mj
 Y3NTk2ODMsLTEyNTcxMDEwMzUsMTYzODkyMzkwMywtMTU4OTc4
 NjUxOCw2MTEwMDkzNjMsMTE2ODQ5ODIwMiw3NTIyNDk3MTUsLT
 I4ODQwNjQ4NywxNjE3NDk1NzQ0LDM2MjYxOTQ4MSwyMDM1ODIx
