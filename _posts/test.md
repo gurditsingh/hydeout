@@ -7,12 +7,14 @@ Having knowledge of producer configurations becomes critical for us in order to 
 ### - Configuration Properties : 
 When creating a Kafka producer client application, first need an object to represent the required configuration properties needed to start up a producer. There are three required properties, bootstrap.servers and both key and value serializers.
 
+Configuration items are generally key‑value pairs, the easiest way to do it is to use the Properties class from the core java.util's library.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjk5ODkxODYsNjExMDA5MzYzLDExNj
-g0OTgyMDIsNzUyMjQ5NzE1LC0yODg0MDY0ODcsMTYxNzQ5NTc0
-NCwzNjI2MTk0ODEsMjAzNTgyMTUzNCwtMTI5ODExMjMxNCwtND
-Q1MjMwNzMwLC05Njk5NTkzNiwtMTY2MDU0OTM2OSwtMTYzNDc1
-MzcxNSwxMTg1NTc3MDcwLC0yMDU0NDg2NjgxLC00NzA0NTI2MD
-gsNjUwODk4MTgsLTIwODg3NDY2MTIsLTIwODg3NDY2MTIsLTEx
-NzE5Mjg0NV19
+eyJoaXN0b3J5IjpbODQ0MTMyODQ5LDYxMTAwOTM2MywxMTY4ND
+k4MjAyLDc1MjI0OTcxNSwtMjg4NDA2NDg3LDE2MTc0OTU3NDQs
+MzYyNjE5NDgxLDIwMzU4MjE1MzQsLTEyOTgxMTIzMTQsLTQ0NT
+IzMDczMCwtOTY5OTU5MzYsLTE2NjA1NDkzNjksLTE2MzQ3NTM3
+MTUsMTE4NTU3NzA3MCwtMjA1NDQ4NjY4MSwtNDcwNDUyNjA4LD
+Y1MDg5ODE4LC0yMDg4NzQ2NjEyLC0yMDg4NzQ2NjEyLC0xMTcx
+OTI4NDVdfQ==
 -->
