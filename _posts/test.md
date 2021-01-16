@@ -88,11 +88,11 @@ val KProducer=new KafkaProducer[String,String](props)
  - Each time you send, persist, or read a message, resource overhead is
    incurred. Kafka's addressing this inefficiencies by micro‑batching.
  - The RecordAccumulator gives the producer its ability to micro‑batch
-   records intended to be sent at high volumes and high frequencies.
-   
+   records intended to be sent at high volumes and high frequencies. 
+ - When a producer record has been assigned to a partition through the partitioner, it will get handed over to a RecordAccumulator, where it will be added to a collection of record batch objects.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MTM5MDEyOCwtMTAwOTY0NTAxMywtNz
+eyJoaXN0b3J5IjpbMTc2MTkzOTI1MywtMTAwOTY0NTAxMywtNz
 kyMDk4OTAyLC0xNjE2NjI4ODE2LC0xMDI4MDYyOTI1LDE4MDMz
 NTQ1MjYsLTQyNjc1OTY4MywtMTI1NzEwMTAzNSwxNjM4OTIzOT
 AzLC0xNTg5Nzg2NTE4LDYxMTAwOTM2MywxMTY4NDk4MjAyLDc1
