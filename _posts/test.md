@@ -38,12 +38,11 @@ val KProducer=new KafkaProducer[String,String](props)
 ```
 
  - **ProducerConfig :** If you look inside the implementation of the KafkaProducer, you will notice a type called ProducerConfig. When the KafkaProducer object is created, the properties are used to instantiate an instance of the ProducerConfig class, and from there, all producer configuration is defined and referenced internally.
-
-
-
+ 
+ - **Producer Records :** What you will find is a critical class called ProducerRecord, and it represents what will be published by the Kafka Producer.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgyNTY1NTczLC0xNTg5Nzg2NTE4LDYxMT
+eyJoaXN0b3J5IjpbNzI2NzQ3MjQ0LC0xNTg5Nzg2NTE4LDYxMT
 AwOTM2MywxMTY4NDk4MjAyLDc1MjI0OTcxNSwtMjg4NDA2NDg3
 LDE2MTc0OTU3NDQsMzYyNjE5NDgxLDE2MjQzNDMwNDAsMjAzNT
 gyMTUzNCwtMTI5ODExMjMxNCwtNDQ1MjMwNzMwLC05Njk5NTkz
