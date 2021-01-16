@@ -2,8 +2,11 @@
 Kafka Producer API allows applications to send streams of data to topics in the Kafka cluster.
 
 It is a component of the Kafka ecosystem which is used to publish messages onto a Kafka topic.
+
+# Kafka producer configurations
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MjkwMTIwOSwxMTY4NDk4MjAyLDc1Mj
+eyJoaXN0b3J5IjpbMTQ3ODA3ODI2NSwxMTY4NDk4MjAyLDc1Mj
 I0OTcxNSwtMjg4NDA2NDg3LDE2MTc0OTU3NDQsMzYyNjE5NDgx
 LDE2MjQzNDMwNDAsMjAzNTgyMTUzNCwtMTI5ODExMjMxNCwtND
 Q1MjMwNzMwLC05Njk5NTkzNiwtMTY2MDU0OTM2OSwtMTYzNDc1
