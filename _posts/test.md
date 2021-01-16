@@ -70,14 +70,15 @@ val KProducer=new KafkaProducer[String,String](props)
  - The response comes back as metadata, containing detailed information related to the topics, their partitions and their managing brokers on the cluster.
  - Now producer having an actual producer record to work with, the first step in this process will be to pass the message through the serializer using the configured serializer.
  - The next step in the process is the partitioner, whose job it is to determine what partition to send the record to. The producer can employ different **partitioning strategies**, depending on the values being passed to it in the producer record.
-	 - Direct Partitioning Strategy
+	 - **Direct Partitioning Strategy :** If producer record contains partition value then it direct goes to specified partition.
+	 - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTY2Mjg4MTYsLTEwMjgwNjI5MjUsMT
-gwMzM1NDUyNiwtNDI2NzU5NjgzLC0xMjU3MTAxMDM1LDE2Mzg5
-MjM5MDMsLTE1ODk3ODY1MTgsNjExMDA5MzYzLDExNjg0OTgyMD
-IsNzUyMjQ5NzE1LC0yODg0MDY0ODcsMTYxNzQ5NTc0NCwzNjI2
-MTk0ODEsMjAzNTgyMTUzNCwtMTI5ODExMjMxNCwtNDQ1MjMwNz
-MwLC05Njk5NTkzNiwtMTY2MDU0OTM2OSwtMTYzNDc1MzcxNSwx
-MTg1NTc3MDcwXX0=
+eyJoaXN0b3J5IjpbLTE5MzczNTE4MDUsLTE2MTY2Mjg4MTYsLT
+EwMjgwNjI5MjUsMTgwMzM1NDUyNiwtNDI2NzU5NjgzLC0xMjU3
+MTAxMDM1LDE2Mzg5MjM5MDMsLTE1ODk3ODY1MTgsNjExMDA5Mz
+YzLDExNjg0OTgyMDIsNzUyMjQ5NzE1LC0yODg0MDY0ODcsMTYx
+NzQ5NTc0NCwzNjI2MTk0ODEsMjAzNTgyMTUzNCwtMTI5ODExMj
+MxNCwtNDQ1MjMwNzMwLC05Njk5NTkzNiwtMTY2MDU0OTM2OSwt
+MTYzNDc1MzcxNV19
 -->
