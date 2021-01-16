@@ -66,16 +66,14 @@ val KProducer=new KafkaProducer[String,String](props)
 
 ### - Process of Sending Messages
 
- - When calling the send method, the producer will reach out to the
-   cluster using the bootstrap.servers list to discover the cluster
-   membership.
+ - Calling the send method on producer, then producer will reach out to the cluster using the bootstrap.servers list to discover the cluster membership.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODY1OTkzMzEsMTgwMzM1NDUyNiwtND
-I2NzU5NjgzLC0xMjU3MTAxMDM1LDE2Mzg5MjM5MDMsLTE1ODk3
-ODY1MTgsNjExMDA5MzYzLDExNjg0OTgyMDIsNzUyMjQ5NzE1LC
-0yODg0MDY0ODcsMTYxNzQ5NTc0NCwzNjI2MTk0ODEsMjAzNTgy
-MTUzNCwtMTI5ODExMjMxNCwtNDQ1MjMwNzMwLC05Njk5NTkzNi
-wtMTY2MDU0OTM2OSwtMTYzNDc1MzcxNSwxMTg1NTc3MDcwLC0y
-MDU0NDg2NjgxXX0=
+eyJoaXN0b3J5IjpbMTAzNDI0OTg4OCwxODAzMzU0NTI2LC00Mj
+Y3NTk2ODMsLTEyNTcxMDEwMzUsMTYzODkyMzkwMywtMTU4OTc4
+NjUxOCw2MTEwMDkzNjMsMTE2ODQ5ODIwMiw3NTIyNDk3MTUsLT
+I4ODQwNjQ4NywxNjE3NDk1NzQ0LDM2MjYxOTQ4MSwyMDM1ODIx
+NTM0LC0xMjk4MTEyMzE0LC00NDUyMzA3MzAsLTk2OTk1OTM2LC
+0xNjYwNTQ5MzY5LC0xNjM0NzUzNzE1LDExODU1NzcwNzAsLTIw
+NTQ0ODY2ODFdfQ==
 -->
