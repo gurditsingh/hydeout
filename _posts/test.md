@@ -14,14 +14,17 @@ Configuration items are generally key‑value pairs, the easiest way to do it is
 	 - The producer doesn't connect to every broker referenced in this list, just the first available one.
 	 - The broker it connects to for discovering the full membership of the cluster.
 	 - The membership  determine the partition owners or leaders so that when it's ready to send messages.
- - **key and value serializers**
+	 
+ - **Key and Value serializers :**
+	 - key and value serializers are 
+ 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxODUyOTkzNyw2MTEwMDkzNjMsMTE2OD
-Q5ODIwMiw3NTIyNDk3MTUsLTI4ODQwNjQ4NywxNjE3NDk1NzQ0
-LDM2MjYxOTQ4MSwxNjI0MzQzMDQwLDIwMzU4MjE1MzQsLTEyOT
-gxMTIzMTQsLTQ0NTIzMDczMCwtOTY5OTU5MzYsLTE2NjA1NDkz
-NjksLTE2MzQ3NTM3MTUsMTE4NTU3NzA3MCwtMjA1NDQ4NjY4MS
-wtNDcwNDUyNjA4LDY1MDg5ODE4LC0yMDg4NzQ2NjEyLC0yMDg4
-NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbNzc5Mzg4MTk0LDYxMTAwOTM2MywxMTY4ND
+k4MjAyLDc1MjI0OTcxNSwtMjg4NDA2NDg3LDE2MTc0OTU3NDQs
+MzYyNjE5NDgxLDE2MjQzNDMwNDAsMjAzNTgyMTUzNCwtMTI5OD
+ExMjMxNCwtNDQ1MjMwNzMwLC05Njk5NTkzNiwtMTY2MDU0OTM2
+OSwtMTYzNDc1MzcxNSwxMTg1NTc3MDcwLC0yMDU0NDg2NjgxLC
+00NzA0NTI2MDgsNjUwODk4MTgsLTIwODg3NDY2MTIsLTIwODg3
+NDY2MTJdfQ==
 -->
