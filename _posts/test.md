@@ -40,7 +40,7 @@ When instantiating a Kafka producer with a Properties object, you are effectivel
 val KProducer=new KafkaProducer[String,String](props)
 ```
 
- - **ProducerConfig :**
+ - **Producer Config :**
 	 -  If you look inside the implementation of the KafkaProducer, you will notice a type called ProducerConfig. 
 	 - When the KafkaProducer object is created, the properties are used to instantiate an instance of the ProducerConfig class, and from there, all producer configuration is defined and referenced internally.
  
@@ -128,11 +128,11 @@ To ensure the best chance of delivery, The `acks` setting is a producer configur
 https://github.com/gurditsingh/LearnKafka
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyMjgxODI0MCwtMjA3MzM1NDY3OCwxMj
-U3OTEzNzY4LC03MzQyNjMxOTMsMTcxNzIxOTc3NCwtOTM5NzM2
-MTU4LC0xMDA5NjQ1MDEzLC03OTIwOTg5MDIsLTE2MTY2Mjg4MT
-YsLTEwMjgwNjI5MjUsMTgwMzM1NDUyNiwtNDI2NzU5NjgzLC0x
-MjU3MTAxMDM1LDE2Mzg5MjM5MDMsLTE1ODk3ODY1MTgsNjExMD
-A5MzYzLDExNjg0OTgyMDIsNzUyMjQ5NzE1LC0yODg0MDY0ODcs
-MTYxNzQ5NTc0NF19
+eyJoaXN0b3J5IjpbLTYzNzMzNjAwNiwtODIyODE4MjQwLC0yMD
+czMzU0Njc4LDEyNTc5MTM3NjgsLTczNDI2MzE5MywxNzE3MjE5
+Nzc0LC05Mzk3MzYxNTgsLTEwMDk2NDUwMTMsLTc5MjA5ODkwMi
+wtMTYxNjYyODgxNiwtMTAyODA2MjkyNSwxODAzMzU0NTI2LC00
+MjY3NTk2ODMsLTEyNTcxMDEwMzUsMTYzODkyMzkwMywtMTU4OT
+c4NjUxOCw2MTEwMDkzNjMsMTE2ODQ5ODIwMiw3NTIyNDk3MTUs
+LTI4ODQwNjQ4N119
 -->
