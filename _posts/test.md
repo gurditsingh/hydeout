@@ -98,15 +98,17 @@ val KProducer=new KafkaProducer[String,String](props)
 ------------
 
 ### - Message Delivery and Ordering Guarantees
-To ensure the best chance of delivery, The `acks` setting is a producer configuration. It denotes the number of brokers that must receive the record before we consider the write as successful. It support three values — `0`, `1`, and `all`.
+To ensure the best chance of delivery, The `acks` setting is a producer configuration. It denotes the number of brokers that must receive the record before we consider the write as successful. It support three values — `0`, `1`, and `2`.
 
  - **‘acks=0’ :** With a value of `0` (fire and forget), the producer won’t even wait for a response from the broker. It immediately considers the write successful the moment the record is sent out.
  - **‘acks=1’ :** With a setting of `1` (middle of the road), the producer will consider the write successful when the leader receives the record. The leader broker will know to immediately respond the moment it receives the record and not wait any longer.
+ - **‘acks=2’ :** When set to `2`, the producer will consider the write successful when all of the in-sync replicas receive the record. This is achieved by the leader broker being smart as to when it responds to the request — it’ll send back a response once all the in-sync replicas receive the record themselves.
+ - 
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjUxMjU3MTIxLC05Mzk3MzYxNTgsLTEwMD
+eyJoaXN0b3J5IjpbNTA0NTkwMDU4LC05Mzk3MzYxNTgsLTEwMD
 k2NDUwMTMsLTc5MjA5ODkwMiwtMTYxNjYyODgxNiwtMTAyODA2
 MjkyNSwxODAzMzU0NTI2LC00MjY3NTk2ODMsLTEyNTcxMDEwMz
 UsMTYzODkyMzkwMywtMTU4OTc4NjUxOCw2MTEwMDkzNjMsMTE2
