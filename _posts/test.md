@@ -112,12 +112,13 @@ To ensure the best chance of delivery, The `acks` setting is a producer configur
    message order is only preserved within a given partition.
  - If the producer sends messages to a partition in a specific order, that order will be the order in which the broker appends them to the log and it will be the order that the consumers will read them from the log.
  - Messages sent to multiple partitions, will not have a global order due to partitioning strategies to send record on multiple partitions.
- - But to derive a global order across partitions, the order logic will have to be handled at the consumer level
+ - But to achieve global order across partitions, the order logic will have to be handled at the consumer level.
+ - 
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzMzU3NzM2OSwxNzE3MjE5Nzc0LC05Mz
+eyJoaXN0b3J5IjpbLTczNDI2MzE5MywxNzE3MjE5Nzc0LC05Mz
 k3MzYxNTgsLTEwMDk2NDUwMTMsLTc5MjA5ODkwMiwtMTYxNjYy
 ODgxNiwtMTAyODA2MjkyNSwxODAzMzU0NTI2LC00MjY3NTk2OD
 MsLTEyNTcxMDEwMzUsMTYzODkyMzkwMywtMTU4OTc4NjUxOCw2
