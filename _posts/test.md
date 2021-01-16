@@ -52,13 +52,14 @@ val KProducer=new KafkaProducer[String,String](props)
 	 - It allows for the explicit setting of a **Timestamp** to the producer record and it's long data type.
 		- The actual timestamp that will be logged for a message will be based on settings defined in the broker server.properties file, specifically the log.message.timestamp.type setting and there are two modes available.
 		- **CreateTime**, which is the default, the timestamp applied to the message is set by the producer and will be what is committed to the log.
+		- **LogAppendTime**, which will overwrite whatever the timestamp is coming from the producer with the timestamp of the broker at the time the message is appended to the log.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNjc1OTY4MywtMTI1NzEwMTAzNSwxNj
-M4OTIzOTAzLC0xNTg5Nzg2NTE4LDYxMTAwOTM2MywxMTY4NDk4
-MjAyLDc1MjI0OTcxNSwtMjg4NDA2NDg3LDE2MTc0OTU3NDQsMz
-YyNjE5NDgxLDE2MjQzNDMwNDAsMjAzNTgyMTUzNCwtMTI5ODEx
-MjMxNCwtNDQ1MjMwNzMwLC05Njk5NTkzNiwtMTY2MDU0OTM2OS
-wtMTYzNDc1MzcxNSwxMTg1NTc3MDcwLC0yMDU0NDg2NjgxLC00
-NzA0NTI2MDhdfQ==
+eyJoaXN0b3J5IjpbMTEyNzAxOTc2NCwtNDI2NzU5NjgzLC0xMj
+U3MTAxMDM1LDE2Mzg5MjM5MDMsLTE1ODk3ODY1MTgsNjExMDA5
+MzYzLDExNjg0OTgyMDIsNzUyMjQ5NzE1LC0yODg0MDY0ODcsMT
+YxNzQ5NTc0NCwzNjI2MTk0ODEsMTYyNDM0MzA0MCwyMDM1ODIx
+NTM0LC0xMjk4MTEyMzE0LC00NDUyMzA3MzAsLTk2OTk1OTM2LC
+0xNjYwNTQ5MzY5LC0xNjM0NzUzNzE1LDExODU1NzcwNzAsLTIw
+NTQ0ODY2ODFdfQ==
 -->
