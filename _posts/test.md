@@ -34,8 +34,14 @@ Configuration items are generally key‑value pairs, the easiest way to do it is
 ### - Instantiating Kafka producer :
 When instantiating a Kafka producer with a Properties object, you are effectively setting things up for the Kafka producer to start sending messages.
 
+If you look inside the implementation of the KafkaProducer, you will notice a type called ProducerConfig. When the KafkaProducer object is created, the properties are used to instantiate an instance of the ProducerConfig class, and from there, all producer configuration is defined and referenced internally.
+
+```scala
+val KProducer=new KafkaProducer[String,String](props)
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDQyMDgwNjYsLTE1ODk3ODY1MTgsNj
+eyJoaXN0b3J5IjpbLTIwMTQ5Mjg0MDgsLTE1ODk3ODY1MTgsNj
 ExMDA5MzYzLDExNjg0OTgyMDIsNzUyMjQ5NzE1LC0yODg0MDY0
 ODcsMTYxNzQ5NTc0NCwzNjI2MTk0ODEsMjAzNTgyMTUzNCwtMT
 I5ODExMjMxNCwtNDQ1MjMwNzMwLC05Njk5NTkzNiwtMTY2MDU0
