@@ -43,15 +43,16 @@ val KProducer=new KafkaProducer[String,String](props)
  
  - **Producer Records :** 
 	 - The ProducerRecord represents what will be published by the Kafka Producer.
-	 - A producer record is also fairly basic and straightforward, it only requires two values to be set in order for it to be considered a valid record sent by the Kafka Producer.
+	 - A producer record is also fairly basic and straightforward, it only requires two values to be set in order for it to be considered a valid record sent by the Kafka Producer (two values are the topic and the value).
+	 - The topic to which these record is destined. The value is really just the contents of the message that are to be serialized using the specific serializer in the configuration settings. 
 	 - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1ODQ1MTEzNywtMTU4OTc4NjUxOCw2MT
-EwMDkzNjMsMTE2ODQ5ODIwMiw3NTIyNDk3MTUsLTI4ODQwNjQ4
-NywxNjE3NDk1NzQ0LDM2MjYxOTQ4MSwxNjI0MzQzMDQwLDIwMz
-U4MjE1MzQsLTEyOTgxMTIzMTQsLTQ0NTIzMDczMCwtOTY5OTU5
-MzYsLTE2NjA1NDkzNjksLTE2MzQ3NTM3MTUsMTE4NTU3NzA3MC
-wtMjA1NDQ4NjY4MSwtNDcwNDUyNjA4LDY1MDg5ODE4LC0yMDg4
-NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbNjYyMzcyOTAyLC0xNTg5Nzg2NTE4LDYxMT
+AwOTM2MywxMTY4NDk4MjAyLDc1MjI0OTcxNSwtMjg4NDA2NDg3
+LDE2MTc0OTU3NDQsMzYyNjE5NDgxLDE2MjQzNDMwNDAsMjAzNT
+gyMTUzNCwtMTI5ODExMjMxNCwtNDQ1MjMwNzMwLC05Njk5NTkz
+NiwtMTY2MDU0OTM2OSwtMTYzNDc1MzcxNSwxMTg1NTc3MDcwLC
+0yMDU0NDg2NjgxLC00NzA0NTI2MDgsNjUwODk4MTgsLTIwODg3
+NDY2MTJdfQ==
 -->
