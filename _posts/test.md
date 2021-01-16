@@ -19,14 +19,16 @@ Configuration items are generally key‑value pairs, the easiest way to do it is
 	 - key and value serializers are basically to encode the message content.
 	 - This is to optimize the size of the messages not only for network transmission, but for storage and even compression.
 	 - The producer that serves as the beginning of a message's lifecycle how the message contents are to be encoded so the consumer can know how to decode them.
+
+
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODk3ODY1MTgsNjExMDA5MzYzLDExNj
-g0OTgyMDIsNzUyMjQ5NzE1LC0yODg0MDY0ODcsMTYxNzQ5NTc0
-NCwzNjI2MTk0ODEsMTYyNDM0MzA0MCwyMDM1ODIxNTM0LC0xMj
-k4MTEyMzE0LC00NDUyMzA3MzAsLTk2OTk1OTM2LC0xNjYwNTQ5
-MzY5LC0xNjM0NzUzNzE1LDExODU1NzcwNzAsLTIwNTQ0ODY2OD
-EsLTQ3MDQ1MjYwOCw2NTA4OTgxOCwtMjA4ODc0NjYxMiwtMjA4
-ODc0NjYxMl19
+eyJoaXN0b3J5IjpbNDQyODc1NDA2LC0xNTg5Nzg2NTE4LDYxMT
+AwOTM2MywxMTY4NDk4MjAyLDc1MjI0OTcxNSwtMjg4NDA2NDg3
+LDE2MTc0OTU3NDQsMzYyNjE5NDgxLDE2MjQzNDMwNDAsMjAzNT
+gyMTUzNCwtMTI5ODExMjMxNCwtNDQ1MjMwNzMwLC05Njk5NTkz
+NiwtMTY2MDU0OTM2OSwtMTYzNDc1MzcxNSwxMTg1NTc3MDcwLC
+0yMDU0NDg2NjgxLC00NzA0NTI2MDgsNjUwODk4MTgsLTIwODg3
+NDY2MTJdfQ==
 -->
