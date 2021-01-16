@@ -107,15 +107,19 @@ To ensure the best chance of delivery, The `acks` setting is a producer configur
 ------------
 
 ### -Ordering Guarantees
-Depending on your application, message ordering can be important message order is only preserved within a given partition.
+
+ - Depending on your application, message ordering can be important but
+   message order is only preserved within a given partition.
+ - If the producer sends messages to a partition in a specific order, that order will be the order in which the broker appends them to the log
+
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDcxMTYyMDgsLTkzOTczNjE1OCwtMTAwOT
-Y0NTAxMywtNzkyMDk4OTAyLC0xNjE2NjI4ODE2LC0xMDI4MDYy
-OTI1LDE4MDMzNTQ1MjYsLTQyNjc1OTY4MywtMTI1NzEwMTAzNS
-wxNjM4OTIzOTAzLC0xNTg5Nzg2NTE4LDYxMTAwOTM2MywxMTY4
-NDk4MjAyLDc1MjI0OTcxNSwtMjg4NDA2NDg3LDE2MTc0OTU3ND
-QsMzYyNjE5NDgxLDIwMzU4MjE1MzQsLTEyOTgxMTIzMTQsLTQ0
-NTIzMDczMF19
+eyJoaXN0b3J5IjpbOTUwMjMwMzM2LC05Mzk3MzYxNTgsLTEwMD
+k2NDUwMTMsLTc5MjA5ODkwMiwtMTYxNjYyODgxNiwtMTAyODA2
+MjkyNSwxODAzMzU0NTI2LC00MjY3NTk2ODMsLTEyNTcxMDEwMz
+UsMTYzODkyMzkwMywtMTU4OTc4NjUxOCw2MTEwMDkzNjMsMTE2
+ODQ5ODIwMiw3NTIyNDk3MTUsLTI4ODQwNjQ4NywxNjE3NDk1Nz
+Q0LDM2MjYxOTQ4MSwyMDM1ODIxNTM0LC0xMjk4MTEyMzE0LC00
+NDUyMzA3MzBdfQ==
 -->
