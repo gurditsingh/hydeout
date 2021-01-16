@@ -106,23 +106,26 @@ To ensure the best chance of delivery, The `acks` setting is a producer configur
 
 ------------
 
-### -Ordering Guarantees
+### - Ordering Guarantees
 
  - Depending on your application, message ordering can be important but
    message order is only preserved within a given partition.
  - If the producer sends messages to a partition in a specific order, that order will be the order in which the broker appends them to the log and it will be the order that the consumers will read them from the log.
  - Messages sent to multiple partitions, will not have a global order due to partitioning strategies to send record on multiple partitions.
  - But to achieve global order across partitions, the order logic will have to be handled at the consumer level.
- - 
+
+------------
+
+### - Advanced Topics
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczNDI2MzE5MywxNzE3MjE5Nzc0LC05Mz
-k3MzYxNTgsLTEwMDk2NDUwMTMsLTc5MjA5ODkwMiwtMTYxNjYy
-ODgxNiwtMTAyODA2MjkyNSwxODAzMzU0NTI2LC00MjY3NTk2OD
-MsLTEyNTcxMDEwMzUsMTYzODkyMzkwMywtMTU4OTc4NjUxOCw2
-MTEwMDkzNjMsMTE2ODQ5ODIwMiw3NTIyNDk3MTUsLTI4ODQwNj
-Q4NywxNjE3NDk1NzQ0LDM2MjYxOTQ4MSwxNjI0MzQzMDQwLDIw
-MzU4MjE1MzRdfQ==
+eyJoaXN0b3J5IjpbMTY3NTE4MDM4MiwtNzM0MjYzMTkzLDE3MT
+cyMTk3NzQsLTkzOTczNjE1OCwtMTAwOTY0NTAxMywtNzkyMDk4
+OTAyLC0xNjE2NjI4ODE2LC0xMDI4MDYyOTI1LDE4MDMzNTQ1Mj
+YsLTQyNjc1OTY4MywtMTI1NzEwMTAzNSwxNjM4OTIzOTAzLC0x
+NTg5Nzg2NTE4LDYxMTAwOTM2MywxMTY4NDk4MjAyLDc1MjI0OT
+cxNSwtMjg4NDA2NDg3LDE2MTc0OTU3NDQsMzYyNjE5NDgxLDE2
+MjQzNDMwNDBdfQ==
 -->
