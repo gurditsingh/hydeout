@@ -85,13 +85,15 @@ val KProducer=new KafkaProducer[String,String](props)
  - Once the partitioning scheme established, the producer can now
    dispatch the producer record in‑memory queue‑like data
    structure called a RecordAccumulator.
+ - Each time you send, persist, or read a message, resource overhead is
+   incurred. Kafka's approach to addressing common inefficiencies in messaging systems, micro‑batching
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDk2NDUwMTMsLTc5MjA5ODkwMiwtMT
-YxNjYyODgxNiwtMTAyODA2MjkyNSwxODAzMzU0NTI2LC00MjY3
-NTk2ODMsLTEyNTcxMDEwMzUsMTYzODkyMzkwMywtMTU4OTc4Nj
-UxOCw2MTEwMDkzNjMsMTE2ODQ5ODIwMiw3NTIyNDk3MTUsLTI4
-ODQwNjQ4NywxNjE3NDk1NzQ0LDM2MjYxOTQ4MSwxNjI0MzQzMD
-QwLDIwMzU4MjE1MzQsLTEyOTgxMTIzMTQsLTQ0NTIzMDczMCwt
-OTY5OTU5MzZdfQ==
+eyJoaXN0b3J5IjpbNTA2OTUzMzMwLC0xMDA5NjQ1MDEzLC03OT
+IwOTg5MDIsLTE2MTY2Mjg4MTYsLTEwMjgwNjI5MjUsMTgwMzM1
+NDUyNiwtNDI2NzU5NjgzLC0xMjU3MTAxMDM1LDE2Mzg5MjM5MD
+MsLTE1ODk3ODY1MTgsNjExMDA5MzYzLDExNjg0OTgyMDIsNzUy
+MjQ5NzE1LC0yODg0MDY0ODcsMTYxNzQ5NTc0NCwzNjI2MTk0OD
+EsMTYyNDM0MzA0MCwyMDM1ODIxNTM0LC0xMjk4MTEyMzE0LC00
+NDUyMzA3MzBdfQ==
 -->
