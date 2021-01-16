@@ -53,10 +53,13 @@ val KProducer=new KafkaProducer[String,String](props)
 		- The actual timestamp that will be logged for a message will be based on settings defined in the broker server.properties file, specifically the log.message.timestamp.type setting and there are two modes available.
 		- **CreateTime**, which is the default, the timestamp applied to the message is set by the producer and will be what is committed to the log.
 		- **LogAppendTime**, which will overwrite whatever the timestamp is coming from the producer with the timestamp of the broker at the time the message is appended to the log.
-	The key is a value that, if present, will determine how and to which partition within a topic the Kafka producer will be sending the message
+	
+	 - The **Key** is a value that,  determine to which
+	   partition within a topic the Kafka producer will be sending the
+	   messages.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxODYzNzExMywtNDI2NzU5NjgzLC0xMj
+eyJoaXN0b3J5IjpbMTgwMzM1NDUyNiwtNDI2NzU5NjgzLC0xMj
 U3MTAxMDM1LDE2Mzg5MjM5MDMsLTE1ODk3ODY1MTgsNjExMDA5
 MzYzLDExNjg0OTgyMDIsNzUyMjQ5NzE1LC0yODg0MDY0ODcsMT
 YxNzQ5NTc0NCwzNjI2MTk0ODEsMTYyNDM0MzA0MCwyMDM1ODIx
