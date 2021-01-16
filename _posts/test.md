@@ -73,14 +73,15 @@ val KProducer=new KafkaProducer[String,String](props)
 	 - **Direct Partitioning Strategy :** If producer record contains partition value then it direct goes to specified partition.
 	 - **Round Robin Partitioning Strategy :** If producer record doesn't contain partition and key value then it goes in round robin fashion, each partition receive a batch with single record.
 	 - **Hash Partitioning Strategy :** If producer record contains key value then hash strategy calculate the hash value and record goes to calculated partition.
-	 - **Custom Partitioning Strategy :** User can provide custom partition strategy configuration properties
+	 - **Custom Partitioning Strategy :** User can provide custom partition strategy by configuration properties called PARTITIONER_CLASS_CONFIG.
+	 - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzQ3NzkwODQsLTE2MTY2Mjg4MTYsLT
-EwMjgwNjI5MjUsMTgwMzM1NDUyNiwtNDI2NzU5NjgzLC0xMjU3
-MTAxMDM1LDE2Mzg5MjM5MDMsLTE1ODk3ODY1MTgsNjExMDA5Mz
-YzLDExNjg0OTgyMDIsNzUyMjQ5NzE1LC0yODg0MDY0ODcsMTYx
-NzQ5NTc0NCwzNjI2MTk0ODEsMjAzNTgyMTUzNCwtMTI5ODExMj
-MxNCwtNDQ1MjMwNzMwLC05Njk5NTkzNiwtMTY2MDU0OTM2OSwt
-MTYzNDc1MzcxNV19
+eyJoaXN0b3J5IjpbLTc5MjA5ODkwMiwtMTYxNjYyODgxNiwtMT
+AyODA2MjkyNSwxODAzMzU0NTI2LC00MjY3NTk2ODMsLTEyNTcx
+MDEwMzUsMTYzODkyMzkwMywtMTU4OTc4NjUxOCw2MTEwMDkzNj
+MsMTE2ODQ5ODIwMiw3NTIyNDk3MTUsLTI4ODQwNjQ4NywxNjE3
+NDk1NzQ0LDM2MjYxOTQ4MSwyMDM1ODIxNTM0LC0xMjk4MTEyMz
+E0LC00NDUyMzA3MzAsLTk2OTk1OTM2LC0xNjYwNTQ5MzY5LC0x
+NjM0NzUzNzE1XX0=
 -->
