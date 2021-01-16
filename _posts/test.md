@@ -68,14 +68,15 @@ val KProducer=new KafkaProducer[String,String](props)
 
  - Calling the send method on producer, then producer will reach out to the cluster using the bootstrap.servers list to discover the cluster membership.
  - The response comes back as metadata, containing detailed information related to the topics, their partitions and their managing brokers on the cluster.
- - With the producer now having an actual producer record to work with, the first step in this pipeline will be to pass the message through the serializer using the configured serializer.
+ - Now producer having an actual producer record to work with, the first step in this process will be to pass the message through the serializer using the configured serializer.
+ - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5NTI1NDkwMCwxODAzMzU0NTI2LC00Mj
-Y3NTk2ODMsLTEyNTcxMDEwMzUsMTYzODkyMzkwMywtMTU4OTc4
-NjUxOCw2MTEwMDkzNjMsMTE2ODQ5ODIwMiw3NTIyNDk3MTUsLT
-I4ODQwNjQ4NywxNjE3NDk1NzQ0LDM2MjYxOTQ4MSwyMDM1ODIx
-NTM0LC0xMjk4MTEyMzE0LC00NDUyMzA3MzAsLTk2OTk1OTM2LC
-0xNjYwNTQ5MzY5LC0xNjM0NzUzNzE1LDExODU1NzcwNzAsLTIw
-NTQ0ODY2ODFdfQ==
+eyJoaXN0b3J5IjpbNDc1NDkwMjQzLDE4MDMzNTQ1MjYsLTQyNj
+c1OTY4MywtMTI1NzEwMTAzNSwxNjM4OTIzOTAzLC0xNTg5Nzg2
+NTE4LDYxMTAwOTM2MywxMTY4NDk4MjAyLDc1MjI0OTcxNSwtMj
+g4NDA2NDg3LDE2MTc0OTU3NDQsMzYyNjE5NDgxLDIwMzU4MjE1
+MzQsLTEyOTgxMTIzMTQsLTQ0NTIzMDczMCwtOTY5OTU5MzYsLT
+E2NjA1NDkzNjksLTE2MzQ3NTM3MTUsMTE4NTU3NzA3MCwtMjA1
+NDQ4NjY4MV19
 -->
