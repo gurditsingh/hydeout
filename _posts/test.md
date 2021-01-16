@@ -95,15 +95,14 @@ val KProducer=new KafkaProducer[String,String](props)
 	 - **buffer.memory :** The buffer.memory setting to establishes threshold value for how much memory can be used to buffer records waiting to be sent to the brokers.
 	 - **max.block.ms :** If the high volume of records being buffered reaches the threshold established by the buffer.memory setting, the max.block .ms setting comes into effect. This setting determines how many milliseconds the send method will be blocked.
 
-	 buffer.memory
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzOTczNjE1OCwtMTAwOTY0NTAxMywtNz
-kyMDk4OTAyLC0xNjE2NjI4ODE2LC0xMDI4MDYyOTI1LDE4MDMz
-NTQ1MjYsLTQyNjc1OTY4MywtMTI1NzEwMTAzNSwxNjM4OTIzOT
-AzLC0xNTg5Nzg2NTE4LDYxMTAwOTM2MywxMTY4NDk4MjAyLDc1
-MjI0OTcxNSwtMjg4NDA2NDg3LDE2MTc0OTU3NDQsMzYyNjE5ND
-gxLDE2MjQzNDMwNDAsMjAzNTgyMTUzNCwtMTI5ODExMjMxNCwt
-NDQ1MjMwNzMwXX0=
+eyJoaXN0b3J5IjpbMTgzMjUwMzA4MSwtOTM5NzM2MTU4LC0xMD
+A5NjQ1MDEzLC03OTIwOTg5MDIsLTE2MTY2Mjg4MTYsLTEwMjgw
+NjI5MjUsMTgwMzM1NDUyNiwtNDI2NzU5NjgzLC0xMjU3MTAxMD
+M1LDE2Mzg5MjM5MDMsLTE1ODk3ODY1MTgsNjExMDA5MzYzLDEx
+Njg0OTgyMDIsNzUyMjQ5NzE1LC0yODg0MDY0ODcsMTYxNzQ5NT
+c0NCwzNjI2MTk0ODEsMTYyNDM0MzA0MCwyMDM1ODIxNTM0LC0x
+Mjk4MTEyMzE0XX0=
 -->
