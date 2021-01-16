@@ -32,14 +32,14 @@ Configuration items are generally key‑value pairs, the easiest way to do it is
 	 
 
 ### - Instantiating Kafka producer :
-When instantiating a Kafka producer with a Properties object, you are effectively setting things up for the Kafka producer to start sending messages with the basic defaults.
+When instantiating a Kafka producer with a Properties object, you are effectively setting things up for the Kafka producer to start sending messages.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMjE5MTA1MSwtMTU4OTc4NjUxOCw2MT
-EwMDkzNjMsMTE2ODQ5ODIwMiw3NTIyNDk3MTUsLTI4ODQwNjQ4
-NywxNjE3NDk1NzQ0LDM2MjYxOTQ4MSwxNjI0MzQzMDQwLDIwMz
-U4MjE1MzQsLTEyOTgxMTIzMTQsLTQ0NTIzMDczMCwtOTY5OTU5
-MzYsLTE2NjA1NDkzNjksLTE2MzQ3NTM3MTUsMTE4NTU3NzA3MC
-wtMjA1NDQ4NjY4MSwtNDcwNDUyNjA4LDY1MDg5ODE4LC0yMDg4
-NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTIxMDQyMDgwNjYsLTE1ODk3ODY1MTgsNj
+ExMDA5MzYzLDExNjg0OTgyMDIsNzUyMjQ5NzE1LC0yODg0MDY0
+ODcsMTYxNzQ5NTc0NCwzNjI2MTk0ODEsMTYyNDM0MzA0MCwyMD
+M1ODIxNTM0LC0xMjk4MTEyMzE0LC00NDUyMzA3MzAsLTk2OTk1
+OTM2LC0xNjYwNTQ5MzY5LC0xNjM0NzUzNzE1LDExODU1NzcwNz
+AsLTIwNTQ0ODY2ODEsLTQ3MDQ1MjYwOCw2NTA4OTgxOCwtMjA4
+ODc0NjYxMl19
 -->
