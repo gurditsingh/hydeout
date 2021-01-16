@@ -16,15 +16,17 @@ Configuration items are generally key‑value pairs, the easiest way to do it is
 	 - The membership  determine the partition owners or leaders so that when it's ready to send messages.
 	 
  - **Key and Value serializers :**
-	 - key and value serializers are 
+	 - key and value serializers are basically to encode the message content.
+	 - This is to optimize the size of the messages not only for network transmission, but for storage and even compression.
+	 - the producer that serves as the beginning of a message's lifecycle, it is responsible for describing how the message contents are to be encoded so the consumer can know how to decode them.
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzc5Mzg4MTk0LDYxMTAwOTM2MywxMTY4ND
-k4MjAyLDc1MjI0OTcxNSwtMjg4NDA2NDg3LDE2MTc0OTU3NDQs
-MzYyNjE5NDgxLDIwMzU4MjE1MzQsLTEyOTgxMTIzMTQsLTQ0NT
-IzMDczMCwtOTY5OTU5MzYsLTE2NjA1NDkzNjksLTE2MzQ3NTM3
-MTUsMTE4NTU3NzA3MCwtMjA1NDQ4NjY4MSwtNDcwNDUyNjA4LD
-Y1MDg5ODE4LC0yMDg4NzQ2NjEyLC0yMDg4NzQ2NjEyLC0xMTcx
-OTI4NDVdfQ==
+eyJoaXN0b3J5IjpbLTEzNzg1ODM0NDgsNjExMDA5MzYzLDExNj
+g0OTgyMDIsNzUyMjQ5NzE1LC0yODg0MDY0ODcsMTYxNzQ5NTc0
+NCwzNjI2MTk0ODEsMjAzNTgyMTUzNCwtMTI5ODExMjMxNCwtND
+Q1MjMwNzMwLC05Njk5NTkzNiwtMTY2MDU0OTM2OSwtMTYzNDc1
+MzcxNSwxMTg1NTc3MDcwLC0yMDU0NDg2NjgxLC00NzA0NTI2MD
+gsNjUwODk4MTgsLTIwODg3NDY2MTIsLTIwODg3NDY2MTIsLTEx
+NzE5Mjg0NV19
 -->
