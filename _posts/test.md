@@ -50,13 +50,14 @@ val KProducer=new KafkaProducer[String,String](props)
 	 
 	 - When creating a producer record, you can set a specific partition value to send a message to a specific partition (the message you want to sent it to specific broker)
 	 - It allows for the explicit setting of a timestamp to the producer record and it's long data type.
+		- sdfjklk 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjg3MjUxMTAsMTYzODkyMzkwMywtMT
-U4OTc4NjUxOCw2MTEwMDkzNjMsMTE2ODQ5ODIwMiw3NTIyNDk3
-MTUsLTI4ODQwNjQ4NywxNjE3NDk1NzQ0LDM2MjYxOTQ4MSwxNj
-I0MzQzMDQwLDIwMzU4MjE1MzQsLTEyOTgxMTIzMTQsLTQ0NTIz
-MDczMCwtOTY5OTU5MzYsLTE2NjA1NDkzNjksLTE2MzQ3NTM3MT
-UsMTE4NTU3NzA3MCwtMjA1NDQ4NjY4MSwtNDcwNDUyNjA4LDY1
-MDg5ODE4XX0=
+eyJoaXN0b3J5IjpbNTUzMjE4NjAyLDE2Mzg5MjM5MDMsLTE1OD
+k3ODY1MTgsNjExMDA5MzYzLDExNjg0OTgyMDIsNzUyMjQ5NzE1
+LC0yODg0MDY0ODcsMTYxNzQ5NTc0NCwzNjI2MTk0ODEsMTYyND
+M0MzA0MCwyMDM1ODIxNTM0LC0xMjk4MTEyMzE0LC00NDUyMzA3
+MzAsLTk2OTk1OTM2LC0xNjYwNTQ5MzY5LC0xNjM0NzUzNzE1LD
+ExODU1NzcwNzAsLTIwNTQ0ODY2ODEsLTQ3MDQ1MjYwOCw2NTA4
+OTgxOF19
 -->
