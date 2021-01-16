@@ -91,11 +91,14 @@ val KProducer=new KafkaProducer[String,String](props)
  - Producer record handed over to a RecordAccumulator, where it will be added to a collection of record batch objects.
  - Each of these RecordBatch objects is going to be sent to the broker that owns the assigned partition.
  - There are a lot of **configuration settings** that determine how many producer records are to be accumulated and buffered into a RecordBatch before it is sent off to the brokers.
-	 **- batch.size :** This batch.size value represents the maximum number of bytes that can be buffered per each RecordBatch.
+ - batch.size : This batch.size value represents the maximum number of  
+   bytes that can be buffered per each RecordBatch.
+
+	 buffer.memory
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4NjUyMjk5OSwtMTAwOTY0NTAxMywtNz
+eyJoaXN0b3J5IjpbMTg1NTQyMzc3MCwtMTAwOTY0NTAxMywtNz
 kyMDk4OTAyLC0xNjE2NjI4ODE2LC0xMDI4MDYyOTI1LDE4MDMz
 NTQ1MjYsLTQyNjc1OTY4MywtMTI1NzEwMTAzNSwxNjM4OTIzOT
 AzLC0xNTg5Nzg2NTE4LDYxMTAwOTM2MywxMTY4NDk4MjAyLDc1
