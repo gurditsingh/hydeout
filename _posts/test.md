@@ -116,20 +116,22 @@ To ensure the best chance of delivery, The `acks` setting is a producer configur
 
 ------------
 
-### - Advanced Topics
+### - More Topics
 
  - Custom serializers, use your own serializer/deserializer for the Kafka message key and value.
  - Customs partitioners, how to create custom partitioning schemes. User can provide custom partition strategy to partiton the keys.
  - There's options to send messages using an asynchronous callback and a future.
-
  
+------------
+
+## Sample source code available:
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1NzkxMzc2OCwtNzM0MjYzMTkzLDE3MT
-cyMTk3NzQsLTkzOTczNjE1OCwtMTAwOTY0NTAxMywtNzkyMDk4
-OTAyLC0xNjE2NjI4ODE2LC0xMDI4MDYyOTI1LDE4MDMzNTQ1Mj
-YsLTQyNjc1OTY4MywtMTI1NzEwMTAzNSwxNjM4OTIzOTAzLC0x
-NTg5Nzg2NTE4LDYxMTAwOTM2MywxMTY4NDk4MjAyLDc1MjI0OT
-cxNSwtMjg4NDA2NDg3LDE2MTc0OTU3NDQsMzYyNjE5NDgxLDIw
-MzU4MjE1MzRdfQ==
+eyJoaXN0b3J5IjpbNDQyMTcwNDI0LDEyNTc5MTM3NjgsLTczND
+I2MzE5MywxNzE3MjE5Nzc0LC05Mzk3MzYxNTgsLTEwMDk2NDUw
+MTMsLTc5MjA5ODkwMiwtMTYxNjYyODgxNiwtMTAyODA2MjkyNS
+wxODAzMzU0NTI2LC00MjY3NTk2ODMsLTEyNTcxMDEwMzUsMTYz
+ODkyMzkwMywtMTU4OTc4NjUxOCw2MTEwMDkzNjMsMTE2ODQ5OD
+IwMiw3NTIyNDk3MTUsLTI4ODQwNjQ4NywxNjE3NDk1NzQ0LDM2
+MjYxOTQ4MV19
 -->
