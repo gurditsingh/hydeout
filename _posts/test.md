@@ -4,12 +4,15 @@ The primary role of a Kafka consumer is to take Kafka connection and consumer pr
 ## Subscribing and Unsubscribing to Topics
 Kafka use a `KafkaConsumer` to subscribe to Kafka topics and receive messages from these topics.
 
+ -  The subscribe method. The method signature for subscribe takes in a collection of strings, which represent a list of topics.
+ - 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTAxODcwMiwyMTE3ODEyODgxLDE1MD
-UyNzAyOTYsLTE5Njg2NzE3MywtNjM3MzM2MDA2LC04MjI4MTgy
-NDAsLTIwNzMzNTQ2NzgsMTI1NzkxMzc2OCwtNzM0MjYzMTkzLD
-E3MTcyMTk3NzQsLTkzOTczNjE1OCwtMTAwOTY0NTAxMywtNzky
-MDk4OTAyLC0xNjE2NjI4ODE2LC0xMDI4MDYyOTI1LDE4MDMzNT
-Q1MjYsLTQyNjc1OTY4MywtMTI1NzEwMTAzNSwxNjM4OTIzOTAz
-LC0xNTg5Nzg2NTE4XX0=
+eyJoaXN0b3J5IjpbLTEzOTc3OTg2NTUsMjExNzgxMjg4MSwxNT
+A1MjcwMjk2LC0xOTY4NjcxNzMsLTYzNzMzNjAwNiwtODIyODE4
+MjQwLC0yMDczMzU0Njc4LDEyNTc5MTM3NjgsLTczNDI2MzE5My
+wxNzE3MjE5Nzc0LC05Mzk3MzYxNTgsLTEwMDk2NDUwMTMsLTc5
+MjA5ODkwMiwtMTYxNjYyODgxNiwtMTAyODA2MjkyNSwxODAzMz
+U0NTI2LC00MjY3NTk2ODMsLTEyNTcxMDEwMzUsMTYzODkyMzkw
+MywtMTU4OTc4NjUxOF19
 -->
