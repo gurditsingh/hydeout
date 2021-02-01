@@ -1,12 +1,12 @@
 # kafka Consumer
-
+The primary role of a Kafka consumer is to take Kafka connection and consumer properties to read records from the appropriate Kafka broker. Complexities of concurrent application consumption, offset management, delivery semantics, and a lot more are taken care of by Consumer APIs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Njg2NzE3MywtNjM3MzM2MDA2LC04Mj
-I4MTgyNDAsLTIwNzMzNTQ2NzgsMTI1NzkxMzc2OCwtNzM0MjYz
-MTkzLDE3MTcyMTk3NzQsLTkzOTczNjE1OCwtMTAwOTY0NTAxMy
-wtNzkyMDk4OTAyLC0xNjE2NjI4ODE2LC0xMDI4MDYyOTI1LDE4
-MDMzNTQ1MjYsLTQyNjc1OTY4MywtMTI1NzEwMTAzNSwxNjM4OT
-IzOTAzLC0xNTg5Nzg2NTE4LDYxMTAwOTM2MywxMTY4NDk4MjAy
-LDc1MjI0OTcxNV19
+eyJoaXN0b3J5IjpbLTE3NTYwMDE4MTksLTE5Njg2NzE3MywtNj
+M3MzM2MDA2LC04MjI4MTgyNDAsLTIwNzMzNTQ2NzgsMTI1Nzkx
+Mzc2OCwtNzM0MjYzMTkzLDE3MTcyMTk3NzQsLTkzOTczNjE1OC
+wtMTAwOTY0NTAxMywtNzkyMDk4OTAyLC0xNjE2NjI4ODE2LC0x
+MDI4MDYyOTI1LDE4MDMzNTQ1MjYsLTQyNjc1OTY4MywtMTI1Nz
+EwMTAzNSwxNjM4OTIzOTAzLC0xNTg5Nzg2NTE4LDYxMTAwOTM2
+MywxMTY4NDk4MjAyXX0=
 -->
