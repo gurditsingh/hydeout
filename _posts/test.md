@@ -40,16 +40,15 @@ A Bloom Filter is a probabilistic data structure to test whether data belong to 
 > of a key.
 
 Understand by Example:
-Suppose you are creating an account, you want to enter a cool username, you entered it and got a message, “Username is already taken”. You added your birth date along username, still no luck. Now you have added , still got “Username is already taken”. It’s really frustrating, isn’t it?  
-But have you ever thought how quickly Geekbook check availability of username by searching millions of username registered with it. There are many ways to do this job –
+Suppose you are creating an account on any "Social Media", you want to enter a cool username, you entered it and got a message, “Username is already taken”. You added your birth date along username, still no luck. Now you have added more information, still got “Username is already taken”. It’s really frustrating, isn’t it? But have you ever thought how quickly "Social Media" check availability of username by searching millions of username registered with it. There are many ways to do this job –
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1Nzg1NzA0LC0xOTQyMjgzMjIwLC00Mj
-IzMTg5OTQsLTMyNDI4MDczMCwtMjExNDUwMDQ4MywtMjEyMjQ2
-NTc4MSw0NTg4OTAwMTMsLTE2NTY4NzcwMTAsMTE4MzQ1MjM0OC
-wtMTg5NTk4OTU1MSwyMTE3ODEyODgxLDE1MDUyNzAyOTYsLTE5
-Njg2NzE3MywtNjM3MzM2MDA2LC04MjI4MTgyNDAsLTIwNzMzNT
-Q2NzgsMTI1NzkxMzc2OCwtNzM0MjYzMTkzLDE3MTcyMTk3NzQs
-LTkzOTczNjE1OF19
+eyJoaXN0b3J5IjpbMTI1MTAxNjI2NywtMTk0MjI4MzIyMCwtND
+IyMzE4OTk0LC0zMjQyODA3MzAsLTIxMTQ1MDA0ODMsLTIxMjI0
+NjU3ODEsNDU4ODkwMDEzLC0xNjU2ODc3MDEwLDExODM0NTIzND
+gsLTE4OTU5ODk1NTEsMjExNzgxMjg4MSwxNTA1MjcwMjk2LC0x
+OTY4NjcxNzMsLTYzNzMzNjAwNiwtODIyODE4MjQwLC0yMDczMz
+U0Njc4LDEyNTc5MTM3NjgsLTczNDI2MzE5MywxNzE3MjE5Nzc0
+LC05Mzk3MzYxNThdfQ==
 -->
