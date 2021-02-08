@@ -16,6 +16,7 @@ Big data is a collection of large amount of data which increases in volume, velo
 The conventional data structures and algorithm are not sufficient to manage larger and more complex dataset of Big Data.
 
 **First Understand the Problem:**
+
 Suppose you are creating an account on any "Social Media", you want to enter a cool username, you entered it and got a message, “Username is already taken”. You added your birth date along username, still no luck. Now you have added more information, still got “Username is already taken”. It’s really frustrating, isn’t it? But have you ever thought how quickly "Social Media" check availability of username by searching millions of username registered with it. There are many ways to do this job –
 -   **Linear search  :**  Bad idea!
 -   **Binary Search :**  Store all username alphabetically and compare entered username with middle one in list, If it matched, then username is taken otherwise figure out , and repeat this process until you got a match or search end with no match. This technique is better and promising but still it requires multiple steps. 
@@ -44,6 +45,7 @@ A Bloom Filter is a probabilistic data structure to test whether data belong to 
 **Operations that a Bloom Filter supports**
 
 **insert(x) :** To insert an element in the Bloom Filter.
+
 **lookup(x) :** to check whether an element is already present in Bloom Filter with a positive false probability.
 
  - You initiate an empty bit array of length m.
