@@ -42,19 +42,16 @@ A Bloom Filter is a probabilistic data structure to test whether data belong to 
 Understand by Example:
 Suppose you are creating an account on any "Social Media", you want to enter a cool username, you entered it and got a message, “Username is already taken”. You added your birth date along username, still no luck. Now you have added more information, still got “Username is already taken”. It’s really frustrating, isn’t it? But have you ever thought how quickly "Social Media" check availability of username by searching millions of username registered with it. There are many ways to do this job –
 -   **Linear search  :**  Bad idea!
--   **Binary Search :**  Store all username alphabetically and compare entered username with middle one in list, If it matched, then username is taken otherwise figure out , Now search after middle one and repeat this process until you got a match or search end with no match.This technique is better and promising but still it requires multiple steps.  
-    But, There must be something better!!
-
-**Bloom Filter**  is a data structure that can do this job.  
-For understanding bloom filters, you must know what is  [hashing](http://quiz.geeksforgeeks.org/hashing-set-1-introduction/). A hash function takes input and outputs a unique identifier of fixed length which is used for identification of input.
+-   **Binary Search :**  Store all username alphabetically and compare entered username with middle one in list, If it matched, then username is taken otherwise figure out , and repeat this process until you got a match or search end with no match. This technique is better and promising but still it requires multiple steps. 
+- **Bloom Filter :**  
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzIwMTUzODUsLTE5NDIyODMyMjAsLT
-QyMjMxODk5NCwtMzI0MjgwNzMwLC0yMTE0NTAwNDgzLC0yMTIy
-NDY1NzgxLDQ1ODg5MDAxMywtMTY1Njg3NzAxMCwxMTgzNDUyMz
-Q4LC0xODk1OTg5NTUxLDIxMTc4MTI4ODEsMTUwNTI3MDI5Niwt
-MTk2ODY3MTczLC02MzczMzYwMDYsLTgyMjgxODI0MCwtMjA3Mz
-M1NDY3OCwxMjU3OTEzNzY4LC03MzQyNjMxOTMsMTcxNzIxOTc3
-NCwtOTM5NzM2MTU4XX0=
+eyJoaXN0b3J5IjpbLTM3MzE5MDA3NiwtMTk0MjI4MzIyMCwtND
+IyMzE4OTk0LC0zMjQyODA3MzAsLTIxMTQ1MDA0ODMsLTIxMjI0
+NjU3ODEsNDU4ODkwMDEzLC0xNjU2ODc3MDEwLDExODM0NTIzND
+gsLTE4OTU5ODk1NTEsMjExNzgxMjg4MSwxNTA1MjcwMjk2LC0x
+OTY4NjcxNzMsLTYzNzMzNjAwNiwtODIyODE4MjQwLC0yMDczMz
+U0Njc4LDEyNTc5MTM3NjgsLTczNDI2MzE5MywxNzE3MjE5Nzc0
+LC05Mzk3MzYxNThdfQ==
 -->
