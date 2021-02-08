@@ -17,13 +17,15 @@ But these Data Structures are not suitable for analysis of the huge capacity of 
 A Bloom Filter is a probabilistic data structure to test whether data belong to a data set by using multiple hash functions. 
 
  - Bloom Filtering Technique is used to test whether an element is a member of a set. It returns two types of results false positive or false negative.
+ - Bloom Filter is used to check membership of an element E in a
+set of S elements.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNDI4MDczMCwtMjExNDUwMDQ4MywtMj
-EyMjQ2NTc4MSw0NTg4OTAwMTMsLTE2NTY4NzcwMTAsMTE4MzQ1
-MjM0OCwtMTg5NTk4OTU1MSwyMTE3ODEyODgxLDE1MDUyNzAyOT
-YsLTE5Njg2NzE3MywtNjM3MzM2MDA2LC04MjI4MTgyNDAsLTIw
-NzMzNTQ2NzgsMTI1NzkxMzc2OCwtNzM0MjYzMTkzLDE3MTcyMT
-k3NzQsLTkzOTczNjE1OCwtMTAwOTY0NTAxMywtNzkyMDk4OTAy
-LC0xNjE2NjI4ODE2XX0=
+eyJoaXN0b3J5IjpbMTMyNDkwOTI4MiwtMzI0MjgwNzMwLC0yMT
+E0NTAwNDgzLC0yMTIyNDY1NzgxLDQ1ODg5MDAxMywtMTY1Njg3
+NzAxMCwxMTgzNDUyMzQ4LC0xODk1OTg5NTUxLDIxMTc4MTI4OD
+EsMTUwNTI3MDI5NiwtMTk2ODY3MTczLC02MzczMzYwMDYsLTgy
+MjgxODI0MCwtMjA3MzM1NDY3OCwxMjU3OTEzNzY4LC03MzQyNj
+MxOTMsMTcxNzIxOTc3NCwtOTM5NzM2MTU4LC0xMDA5NjQ1MDEz
+LC03OTIwOTg5MDJdfQ==
 -->
