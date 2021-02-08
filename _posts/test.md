@@ -54,14 +54,15 @@ A Bloom Filter is a probabilistic data structure to test whether data belong to 
 - In **RocksDB**, each SST file has a corresponding Bloom filter. It is created when the SST file is written to storage, and is stored as part of the associated SST file. Bloom filter is used to determine if the file may contain the key we're looking for.
 - In **Hive** Bloom Filters again helps in the push-down predicates for ORC File formats.
 - **Medium** uses Bloom filters to avoid recommending articles a user has previously read
+-  **Weak password detection**
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyNzAxNTAwNywtOTU5MTM5Mjc4LDk4NT
-YzNTY1NCwtMTU0MjYwODI1NCwtMTk0MjI4MzIyMCwtNDIyMzE4
-OTk0LC0zMjQyODA3MzAsLTIxMTQ1MDA0ODMsLTIxMjI0NjU3OD
-EsNDU4ODkwMDEzLC0xNjU2ODc3MDEwLDExODM0NTIzNDgsLTE4
-OTU5ODk1NTEsMjExNzgxMjg4MSwxNTA1MjcwMjk2LC0xOTY4Nj
-cxNzMsLTYzNzMzNjAwNiwtODIyODE4MjQwLC0yMDczMzU0Njc4
-LDEyNTc5MTM3NjhdfQ==
+eyJoaXN0b3J5IjpbLTY2NDE5OTg5MCwtNzI3MDE1MDA3LC05NT
+kxMzkyNzgsOTg1NjM1NjU0LC0xNTQyNjA4MjU0LC0xOTQyMjgz
+MjIwLC00MjIzMTg5OTQsLTMyNDI4MDczMCwtMjExNDUwMDQ4My
+wtMjEyMjQ2NTc4MSw0NTg4OTAwMTMsLTE2NTY4NzcwMTAsMTE4
+MzQ1MjM0OCwtMTg5NTk4OTU1MSwyMTE3ODEyODgxLDE1MDUyNz
+AyOTYsLTE5Njg2NzE3MywtNjM3MzM2MDA2LC04MjI4MTgyNDAs
+LTIwNzMzNTQ2NzhdfQ==
 -->
