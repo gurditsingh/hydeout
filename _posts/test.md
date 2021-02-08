@@ -8,7 +8,7 @@ The conventional data structures and algorithm are not sufficient to manage larg
 Suppose you are creating an account on any "Social Media", you want to enter a cool username, you entered it and got a message, “Username is already taken”. You added your birth date along username, still no luck. Now you have added more information, still got “Username is already taken”. It’s really frustrating, isn’t it? But have you ever thought how quickly "Social Media" check availability of username by searching millions of username registered with it. There are many ways to do this job –
 -   **Linear search  :**  Bad idea!
 -   **Binary Search :**  Store all username alphabetically and compare entered username with middle one in list, If it matched, then username is taken otherwise figure out , and repeat this process until you got a match or search end with no match. This technique is better and promising but still it requires multiple steps. 
-- **Bloom Filter :** 
+- **Bloom Filter :** Bloom filter is a **space-efficient**
   
 ## What is PROBABILISTIC DATA STRUCTURE
 Data structures are nothing different. They are like the bookshelves of your application where you can organize your data. Different data structures will give you different facility and benefits. 
@@ -57,11 +57,11 @@ Suppose you are creating an account on any "Social Media", you want to enter a c
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkyNzMxODIxLC0xNTQyNjA4MjU0LC0xOT
-QyMjgzMjIwLC00MjIzMTg5OTQsLTMyNDI4MDczMCwtMjExNDUw
-MDQ4MywtMjEyMjQ2NTc4MSw0NTg4OTAwMTMsLTE2NTY4NzcwMT
-AsMTE4MzQ1MjM0OCwtMTg5NTk4OTU1MSwyMTE3ODEyODgxLDE1
-MDUyNzAyOTYsLTE5Njg2NzE3MywtNjM3MzM2MDA2LC04MjI4MT
-gyNDAsLTIwNzMzNTQ2NzgsMTI1NzkxMzc2OCwtNzM0MjYzMTkz
-LDE3MTcyMTk3NzRdfQ==
+eyJoaXN0b3J5IjpbLTIwNTIzMzgyNzEsLTE1NDI2MDgyNTQsLT
+E5NDIyODMyMjAsLTQyMjMxODk5NCwtMzI0MjgwNzMwLC0yMTE0
+NTAwNDgzLC0yMTIyNDY1NzgxLDQ1ODg5MDAxMywtMTY1Njg3Nz
+AxMCwxMTgzNDUyMzQ4LC0xODk1OTg5NTUxLDIxMTc4MTI4ODEs
+MTUwNTI3MDI5NiwtMTk2ODY3MTczLC02MzczMzYwMDYsLTgyMj
+gxODI0MCwtMjA3MzM1NDY3OCwxMjU3OTEzNzY4LC03MzQyNjMx
+OTMsMTcxNzIxOTc3NF19
 -->
