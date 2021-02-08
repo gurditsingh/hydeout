@@ -30,7 +30,7 @@ A Bloom Filter is a probabilistic data structure to test whether data belong to 
  - if you want to add an element, you calculate all the k hashes of this value and set the corresponding bits to 1
  - To test whether it is in the set, feed it to each of the  _k_  hash functions to get  _k_  array positions
 -   If any of the bits at these positions is 0, the element is definitely not in the set
--   if it were, then all the bits would have been set to 1 when it was inserted. If all are 1, then either the element is in the set, or the bits have by chance been set to 1 during the insertion of other elements.
+-   if , then all the bits would have been set to 1 when it was inserted. If all are 1, then either the element is in the set, or the bits have by chance been set to 1 during the insertion of other elements.
 -   **Remember: I said that the bits have by chance been set to 1 during the insertion of other elements, that's y there is confusion**
 
    
@@ -38,11 +38,11 @@ A Bloom Filter is a probabilistic data structure to test whether data belong to 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk4NzM2OTM4LC00MjIzMTg5OTQsLTMyND
-I4MDczMCwtMjExNDUwMDQ4MywtMjEyMjQ2NTc4MSw0NTg4OTAw
-MTMsLTE2NTY4NzcwMTAsMTE4MzQ1MjM0OCwtMTg5NTk4OTU1MS
-wyMTE3ODEyODgxLDE1MDUyNzAyOTYsLTE5Njg2NzE3MywtNjM3
-MzM2MDA2LC04MjI4MTgyNDAsLTIwNzMzNTQ2NzgsMTI1NzkxMz
-c2OCwtNzM0MjYzMTkzLDE3MTcyMTk3NzQsLTkzOTczNjE1OCwt
-MTAwOTY0NTAxM119
+eyJoaXN0b3J5IjpbLTExMzg3NzA1NTYsLTQyMjMxODk5NCwtMz
+I0MjgwNzMwLC0yMTE0NTAwNDgzLC0yMTIyNDY1NzgxLDQ1ODg5
+MDAxMywtMTY1Njg3NzAxMCwxMTgzNDUyMzQ4LC0xODk1OTg5NT
+UxLDIxMTc4MTI4ODEsMTUwNTI3MDI5NiwtMTk2ODY3MTczLC02
+MzczMzYwMDYsLTgyMjgxODI0MCwtMjA3MzM1NDY3OCwxMjU3OT
+EzNzY4LC03MzQyNjMxOTMsMTcxNzIxOTc3NCwtOTM5NzM2MTU4
+LC0xMDA5NjQ1MDEzXX0=
 -->
