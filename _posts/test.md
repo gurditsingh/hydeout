@@ -24,6 +24,10 @@ A Bloom Filter is a probabilistic data structure to test whether data belong to 
  - 
 
 ## Bloom Filter Works:
+**Operations that a Bloom Filter supports**
+
+**insert(x) :** To insert an element in the Bloom Filter.
+**lookup(x) :** to check whether an element is already present in Bloom Filter with a positive false probability.
 
  - You initiate an empty bit array of length m.
  - you select k different hash functions (the more independent the better)
@@ -47,11 +51,11 @@ Suppose you are creating an account on any "Social Media", you want to enter a c
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MzE5MDA3NiwtMTk0MjI4MzIyMCwtND
-IyMzE4OTk0LC0zMjQyODA3MzAsLTIxMTQ1MDA0ODMsLTIxMjI0
-NjU3ODEsNDU4ODkwMDEzLC0xNjU2ODc3MDEwLDExODM0NTIzND
-gsLTE4OTU5ODk1NTEsMjExNzgxMjg4MSwxNTA1MjcwMjk2LC0x
-OTY4NjcxNzMsLTYzNzMzNjAwNiwtODIyODE4MjQwLC0yMDczMz
-U0Njc4LDEyNTc5MTM3NjgsLTczNDI2MzE5MywxNzE3MjE5Nzc0
-LC05Mzk3MzYxNThdfQ==
+eyJoaXN0b3J5IjpbLTE1NDI2MDgyNTQsLTE5NDIyODMyMjAsLT
+QyMjMxODk5NCwtMzI0MjgwNzMwLC0yMTE0NTAwNDgzLC0yMTIy
+NDY1NzgxLDQ1ODg5MDAxMywtMTY1Njg3NzAxMCwxMTgzNDUyMz
+Q4LC0xODk1OTg5NTUxLDIxMTc4MTI4ODEsMTUwNTI3MDI5Niwt
+MTk2ODY3MTczLC02MzczMzYwMDYsLTgyMjgxODI0MCwtMjA3Mz
+M1NDY3OCwxMjU3OTEzNzY4LC03MzQyNjMxOTMsMTcxNzIxOTc3
+NCwtOTM5NzM2MTU4XX0=
 -->
