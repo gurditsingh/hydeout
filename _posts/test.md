@@ -53,14 +53,15 @@ A Bloom Filter is a probabilistic data structure to test whether data belong to 
 -   **Google Bigtable**,  **Apache HBase** and **Apache Cassandra** and **Postgresql** use Bloom filters to reduce the disk lookups for non-existent rows or columns. Avoiding costly disk lookups considerably increases the performance of a database query operation.
 - In **RocksDB**, each SST file has a corresponding Bloom filter. It is created when the SST file is written to storage, and is stored as part of the associated SST file. Bloom filter is used to determine if the file may contain the key we're looking for.
 - In **Hive** Bloom Filters again helps in the push-down predicates for ORC File formats.
+- **Medium** uses Bloom filters to avoid recommending articles a user has previously read
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1OTEzOTI3OCw5ODU2MzU2NTQsLTE1ND
-I2MDgyNTQsLTE5NDIyODMyMjAsLTQyMjMxODk5NCwtMzI0Mjgw
-NzMwLC0yMTE0NTAwNDgzLC0yMTIyNDY1NzgxLDQ1ODg5MDAxMy
-wtMTY1Njg3NzAxMCwxMTgzNDUyMzQ4LC0xODk1OTg5NTUxLDIx
-MTc4MTI4ODEsMTUwNTI3MDI5NiwtMTk2ODY3MTczLC02MzczMz
-YwMDYsLTgyMjgxODI0MCwtMjA3MzM1NDY3OCwxMjU3OTEzNzY4
-LC03MzQyNjMxOTNdfQ==
+eyJoaXN0b3J5IjpbLTcyNzAxNTAwNywtOTU5MTM5Mjc4LDk4NT
+YzNTY1NCwtMTU0MjYwODI1NCwtMTk0MjI4MzIyMCwtNDIyMzE4
+OTk0LC0zMjQyODA3MzAsLTIxMTQ1MDA0ODMsLTIxMjI0NjU3OD
+EsNDU4ODkwMDEzLC0xNjU2ODc3MDEwLDExODM0NTIzNDgsLTE4
+OTU5ODk1NTEsMjExNzgxMjg4MSwxNTA1MjcwMjk2LC0xOTY4Nj
+cxNzMsLTYzNzMzNjAwNiwtODIyODE4MjQwLC0yMDczMzU0Njc4
+LDEyNTc5MTM3NjhdfQ==
 -->
