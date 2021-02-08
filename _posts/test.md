@@ -11,15 +11,15 @@ The main-stream data structures like Lists, Maps, Sets, Trees etc. are mostly us
 
 But these Data Structures are not suitable for analysis of the huge capacity of Big Data because the computational and time complexity is large. Probabilistic Data Structure is more efficient of constant run time.
 
-These techniques are based on hash functions to represent a set of elements randomly. They provide answer approximately. However, reliable sources to estimate error is also given. They use much less memory and have constant query time. They can be paralleled and supports union and intersection operations. All these make Probabilistic Data Structure suitable for
+**PROBABILISTIC DATA STRUCTURE**  are based on hash functions to represent a set of elements randomly. They provide answer approximately. They use much less memory and have constant query time. They can be paralleled and supports union and intersection operations. All these make Probabilistic Data Structure suitable for
 Big Data Analysis and Processing. They are used in all the aspects of Big Data, viz., Volume to check the membership, Velocity to find frequency and rank and Variety to check similarity.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4MDA0NTkwNCwtMjEyMjQ2NTc4MSw0NT
-g4OTAwMTMsLTE2NTY4NzcwMTAsMTE4MzQ1MjM0OCwtMTg5NTk4
-OTU1MSwyMTE3ODEyODgxLDE1MDUyNzAyOTYsLTE5Njg2NzE3My
-wtNjM3MzM2MDA2LC04MjI4MTgyNDAsLTIwNzMzNTQ2NzgsMTI1
-NzkxMzc2OCwtNzM0MjYzMTkzLDE3MTcyMTk3NzQsLTkzOTczNj
-E1OCwtMTAwOTY0NTAxMywtNzkyMDk4OTAyLC0xNjE2NjI4ODE2
-LC0xMDI4MDYyOTI1XX0=
+eyJoaXN0b3J5IjpbLTE2ODU2NTYyMzcsLTIxMjI0NjU3ODEsND
+U4ODkwMDEzLC0xNjU2ODc3MDEwLDExODM0NTIzNDgsLTE4OTU5
+ODk1NTEsMjExNzgxMjg4MSwxNTA1MjcwMjk2LC0xOTY4NjcxNz
+MsLTYzNzMzNjAwNiwtODIyODE4MjQwLC0yMDczMzU0Njc4LDEy
+NTc5MTM3NjgsLTczNDI2MzE5MywxNzE3MjE5Nzc0LC05Mzk3Mz
+YxNTgsLTEwMDk2NDUwMTMsLTc5MjA5ODkwMiwtMTYxNjYyODgx
+NiwtMTAyODA2MjkyNV19
 -->
