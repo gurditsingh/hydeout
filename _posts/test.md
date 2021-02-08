@@ -1,7 +1,7 @@
 
-Role of Bloom Filter in Analysis of Big Data
+# Probabilistic Data structures
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUwNjk4OTcyLDExODM0NTIzNDgsLTE4OT
+eyJoaXN0b3J5IjpbNjgyODQyMjMwLDExODM0NTIzNDgsLTE4OT
 U5ODk1NTEsMjExNzgxMjg4MSwxNTA1MjcwMjk2LC0xOTY4Njcx
 NzMsLTYzNzMzNjAwNiwtODIyODE4MjQwLC0yMDczMzU0Njc4LD
 EyNTc5MTM3NjgsLTczNDI2MzE5MywxNzE3MjE5Nzc0LC05Mzk3
