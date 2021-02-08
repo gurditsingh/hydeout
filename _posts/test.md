@@ -13,12 +13,15 @@ But these Data Structures are not suitable for analysis of the huge capacity of 
 
 **PROBABILISTIC DATA STRUCTURE**  are based on hash functions to represent a set of elements randomly. They provide answer approximately. They use much less memory and constant query time. Probabilistic Data Structure can be paralleled that's the way it's  suitable for Big Data Analysis and Processing.
 
+## Bloom filter
+A Bloom Filter is a probabilistic data structure to test whether data belong to a larger set by using multiple has functions
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTgxNjEzNzcsLTIxMTQ1MDA0ODMsLT
-IxMjI0NjU3ODEsNDU4ODkwMDEzLC0xNjU2ODc3MDEwLDExODM0
-NTIzNDgsLTE4OTU5ODk1NTEsMjExNzgxMjg4MSwxNTA1MjcwMj
-k2LC0xOTY4NjcxNzMsLTYzNzMzNjAwNiwtODIyODE4MjQwLC0y
-MDczMzU0Njc4LDEyNTc5MTM3NjgsLTczNDI2MzE5MywxNzE3Mj
-E5Nzc0LC05Mzk3MzYxNTgsLTEwMDk2NDUwMTMsLTc5MjA5ODkw
-MiwtMTYxNjYyODgxNl19
+eyJoaXN0b3J5IjpbMTg5MDU4OTkzMSwtMjExNDUwMDQ4MywtMj
+EyMjQ2NTc4MSw0NTg4OTAwMTMsLTE2NTY4NzcwMTAsMTE4MzQ1
+MjM0OCwtMTg5NTk4OTU1MSwyMTE3ODEyODgxLDE1MDUyNzAyOT
+YsLTE5Njg2NzE3MywtNjM3MzM2MDA2LC04MjI4MTgyNDAsLTIw
+NzMzNTQ2NzgsMTI1NzkxMzc2OCwtNzM0MjYzMTkzLDE3MTcyMT
+k3NzQsLTkzOTczNjE1OCwtMTAwOTY0NTAxMywtNzkyMDk4OTAy
+LC0xNjE2NjI4ODE2XX0=
 -->
