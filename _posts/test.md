@@ -39,16 +39,17 @@ A Bloom Filter is a probabilistic data structure to test whether data belong to 
 > number of hash functions, it will be very fast to test non-existence
 > of a key.
 
-   
-
+Understand by Example:
+Suppose you are creating an account, you want to enter a cool username, you entered it and got a message, “Username is already taken”. You added your birth date along username, still no luck. Now you have added more in, still got “Username is already taken”. It’s really frustrating, isn’t it?  
+But have you ever thought how quickly Geekbook check availability of username by searching millions of username registered with it. There are many ways to do this job –
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDIyODMyMjAsLTQyMjMxODk5NCwtMz
-I0MjgwNzMwLC0yMTE0NTAwNDgzLC0yMTIyNDY1NzgxLDQ1ODg5
-MDAxMywtMTY1Njg3NzAxMCwxMTgzNDUyMzQ4LC0xODk1OTg5NT
-UxLDIxMTc4MTI4ODEsMTUwNTI3MDI5NiwtMTk2ODY3MTczLC02
-MzczMzYwMDYsLTgyMjgxODI0MCwtMjA3MzM1NDY3OCwxMjU3OT
-EzNzY4LC03MzQyNjMxOTMsMTcxNzIxOTc3NCwtOTM5NzM2MTU4
-LC0xMDA5NjQ1MDEzXX0=
+eyJoaXN0b3J5IjpbLTY1MzAwMDA2NiwtMTk0MjI4MzIyMCwtND
+IyMzE4OTk0LC0zMjQyODA3MzAsLTIxMTQ1MDA0ODMsLTIxMjI0
+NjU3ODEsNDU4ODkwMDEzLC0xNjU2ODc3MDEwLDExODM0NTIzND
+gsLTE4OTU5ODk1NTEsMjExNzgxMjg4MSwxNTA1MjcwMjk2LC0x
+OTY4NjcxNzMsLTYzNzMzNjAwNiwtODIyODE4MjQwLC0yMDczMz
+U0Njc4LDEyNTc5MTM3NjgsLTczNDI2MzE5MywxNzE3MjE5Nzc0
+LC05Mzk3MzYxNThdfQ==
 -->
