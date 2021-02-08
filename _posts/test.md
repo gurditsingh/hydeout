@@ -25,18 +25,20 @@ A Bloom Filter is a probabilistic data structure to test whether data belong to 
 
 ## Bloom Filter Works:
 
-
+ - You initiate an empty bit array of length m.
+ - you select k different hash functions (the more independent the better)
+ - if you want to add an element, you calculate all the k hashes of this value and set the corresponding bits to 1
 
    
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyMjMxODk5NCwtMzI0MjgwNzMwLC0yMT
-E0NTAwNDgzLC0yMTIyNDY1NzgxLDQ1ODg5MDAxMywtMTY1Njg3
-NzAxMCwxMTgzNDUyMzQ4LC0xODk1OTg5NTUxLDIxMTc4MTI4OD
-EsMTUwNTI3MDI5NiwtMTk2ODY3MTczLC02MzczMzYwMDYsLTgy
-MjgxODI0MCwtMjA3MzM1NDY3OCwxMjU3OTEzNzY4LC03MzQyNj
-MxOTMsMTcxNzIxOTc3NCwtOTM5NzM2MTU4LC0xMDA5NjQ1MDEz
-LC03OTIwOTg5MDJdfQ==
+eyJoaXN0b3J5IjpbLTE1MTA2MTE1MTcsLTQyMjMxODk5NCwtMz
+I0MjgwNzMwLC0yMTE0NTAwNDgzLC0yMTIyNDY1NzgxLDQ1ODg5
+MDAxMywtMTY1Njg3NzAxMCwxMTgzNDUyMzQ4LC0xODk1OTg5NT
+UxLDIxMTc4MTI4ODEsMTUwNTI3MDI5NiwtMTk2ODY3MTczLC02
+MzczMzYwMDYsLTgyMjgxODI0MCwtMjA3MzM1NDY3OCwxMjU3OT
+EzNzY4LC03MzQyNjMxOTMsMTcxNzIxOTc3NCwtOTM5NzM2MTU4
+LC0xMDA5NjQ1MDEzXX0=
 -->
