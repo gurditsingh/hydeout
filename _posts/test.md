@@ -56,12 +56,14 @@ A Bloom Filter is a probabilistic data structure to test whether data belong to 
 -  **Weak password detection**  the system can maintain a list of weak password in a form of Bloom Filter. This can be updated whenever an new user enters a password or an existing user updates the password.
 - **Medium** uses Bloom filters to avoid recommending articles a user has previously read 
 
+
+**Sample java application for bloom filter implementation: [here](https://github.com/gurditsingh/BloomFilter)**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMDQwMzQzMSwtNzI3MDE1MDA3LC05NT
-kxMzkyNzgsOTg1NjM1NjU0LC0xNTQyNjA4MjU0LC0xOTQyMjgz
-MjIwLC00MjIzMTg5OTQsLTMyNDI4MDczMCwtMjExNDUwMDQ4My
-wtMjEyMjQ2NTc4MSw0NTg4OTAwMTMsLTE2NTY4NzcwMTAsMTE4
-MzQ1MjM0OCwtMTg5NTk4OTU1MSwyMTE3ODEyODgxLDE1MDUyNz
-AyOTYsLTE5Njg2NzE3MywtNjM3MzM2MDA2LC04MjI4MTgyNDAs
-LTIwNzMzNTQ2NzhdfQ==
+eyJoaXN0b3J5IjpbNjg0MjA1MzcwLDE2MDA0MDM0MzEsLTcyNz
+AxNTAwNywtOTU5MTM5Mjc4LDk4NTYzNTY1NCwtMTU0MjYwODI1
+NCwtMTk0MjI4MzIyMCwtNDIyMzE4OTk0LC0zMjQyODA3MzAsLT
+IxMTQ1MDA0ODMsLTIxMjI0NjU3ODEsNDU4ODkwMDEzLC0xNjU2
+ODc3MDEwLDExODM0NTIzNDgsLTE4OTU5ODk1NTEsMjExNzgxMj
+g4MSwxNTA1MjcwMjk2LC0xOTY4NjcxNzMsLTYzNzMzNjAwNiwt
+ODIyODE4MjQwXX0=
 -->
