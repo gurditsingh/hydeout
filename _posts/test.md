@@ -18,15 +18,16 @@ A Bloom Filter is a probabilistic data structure to test whether data belong to 
 
  - Bloom Filtering Technique is used to test whether an element is a member of a set. It returns two types of results false positive or false negative.
  - Bloom Filter is used to check membership of an element E in a set of S elements.
- - Bloom filter consists of a data set consisting of 0's or 1's and some
+ - Bloom Filter consists of a data set consisting of 0's or 1's and some
    hash functions.
-   
+ - In Bloom Filter the number of hash function depends on the required accuracy of bloom filter. Other factors impacting the accuracy of bloom filter are size of the data set and number of elements added to the set.
+
    
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0ODgyMTk5NiwtMzI0MjgwNzMwLC0yMT
+eyJoaXN0b3J5IjpbMTM5ODYyMzc2NiwtMzI0MjgwNzMwLC0yMT
 E0NTAwNDgzLC0yMTIyNDY1NzgxLDQ1ODg5MDAxMywtMTY1Njg3
 NzAxMCwxMTgzNDUyMzQ4LC0xODk1OTg5NTUxLDIxMTc4MTI4OD
 EsMTUwNTI3MDI5NiwtMTk2ODY3MTczLC02MzczMzYwMDYsLTgy
