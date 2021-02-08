@@ -14,10 +14,12 @@ But these Data Structures are not suitable for analysis of the huge capacity of 
 **PROBABILISTIC DATA STRUCTURE**  are based on hash functions to represent a set of elements randomly. They provide answer approximately. They use much less memory and constant query time. Probabilistic Data Structure can be paralleled that's the way it's  suitable for Big Data Analysis and Processing.
 
 ## Bloom filter
-A Bloom Filter is a probabilistic data structure to test whether data belong to a larger set by using multiple has functions
+A Bloom Filter is a probabilistic data structure to test whether data belong to a data set by using multiple hash functions. 
+
+ - Bloom Filtering Technique is used to test whether an element is a member of a set. It returns two types of results false positive or false negative.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MDU4OTkzMSwtMjExNDUwMDQ4MywtMj
+eyJoaXN0b3J5IjpbLTMyNDI4MDczMCwtMjExNDUwMDQ4MywtMj
 EyMjQ2NTc4MSw0NTg4OTAwMTMsLTE2NTY4NzcwMTAsMTE4MzQ1
 MjM0OCwtMTg5NTk4OTU1MSwyMTE3ODEyODgxLDE1MDUyNzAyOT
 YsLTE5Njg2NzE3MywtNjM3MzM2MDA2LC04MjI4MTgyNDAsLTIw
