@@ -5,14 +5,14 @@ Big data is a collection of large amount of data which increases in volume, velo
 The conventional data structures and algorithm are not sufficient to manage larger and more complex dataset of Big Data.
 
 ## What is PROBABILISTIC DATA STRUCTURE
-
+fieldsNames
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjI0NjU3ODEsNDU4ODkwMDEzLC0xNj
-U2ODc3MDEwLDExODM0NTIzNDgsLTE4OTU5ODk1NTEsMjExNzgx
-Mjg4MSwxNTA1MjcwMjk2LC0xOTY4NjcxNzMsLTYzNzMzNjAwNi
-wtODIyODE4MjQwLC0yMDczMzU0Njc4LDEyNTc5MTM3NjgsLTcz
-NDI2MzE5MywxNzE3MjE5Nzc0LC05Mzk3MzYxNTgsLTEwMDk2ND
-UwMTMsLTc5MjA5ODkwMiwtMTYxNjYyODgxNiwtMTAyODA2Mjky
-NSwxODAzMzU0NTI2XX0=
+eyJoaXN0b3J5IjpbNzk5NTY1MDIsLTIxMjI0NjU3ODEsNDU4OD
+kwMDEzLC0xNjU2ODc3MDEwLDExODM0NTIzNDgsLTE4OTU5ODk1
+NTEsMjExNzgxMjg4MSwxNTA1MjcwMjk2LC0xOTY4NjcxNzMsLT
+YzNzMzNjAwNiwtODIyODE4MjQwLC0yMDczMzU0Njc4LDEyNTc5
+MTM3NjgsLTczNDI2MzE5MywxNzE3MjE5Nzc0LC05Mzk3MzYxNT
+gsLTEwMDk2NDUwMTMsLTc5MjA5ODkwMiwtMTYxNjYyODgxNiwt
+MTAyODA2MjkyNV19
 -->
