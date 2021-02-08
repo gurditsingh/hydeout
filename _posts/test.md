@@ -8,7 +8,7 @@ The conventional data structures and algorithm are not sufficient to manage larg
 Suppose you are creating an account on any "Social Media", you want to enter a cool username, you entered it and got a message, “Username is already taken”. You added your birth date along username, still no luck. Now you have added more information, still got “Username is already taken”. It’s really frustrating, isn’t it? But have you ever thought how quickly "Social Media" check availability of username by searching millions of username registered with it. There are many ways to do this job –
 -   **Linear search  :**  Bad idea!
 -   **Binary Search :**  Store all username alphabetically and compare entered username with middle one in list, If it matched, then username is taken otherwise figure out , and repeat this process until you got a match or search end with no match. This technique is better and promising but still it requires multiple steps. 
-- **Bloom Filter :** Give you 
+- **Bloom Filter :** Bloom filter is a space-efficient and constant query time that we will understand.
   
 ## What is PROBABILISTIC DATA STRUCTURE
 Data structures are nothing different. They are like the bookshelves of your application where you can organize your data. Different data structures will give you different facility and benefits. 
@@ -49,19 +49,15 @@ A Bloom Filter is a probabilistic data structure to test whether data belong to 
 > number of hash functions, it will be very fast to test non-existence
 > of a key.
 
-Understand by Example:
-Suppose you are creating an account on any "Social Media", you want to enter a cool username, you entered it and got a message, “Username is already taken”. You added your birth date along username, still no luck. Now you have added more information, still got “Username is already taken”. It’s really frustrating, isn’t it? But have you ever thought how quickly "Social Media" check availability of username by searching millions of username registered with it. There are many ways to do this job –
--   **Linear search  :**  Bad idea!
--   **Binary Search :**  Store all username alphabetically and compare entered username with middle one in list, If it matched, then username is taken otherwise figure out , and repeat this process until you got a match or search end with no match. This technique is better and promising but still it requires multiple steps. 
-- **Bloom Filter :**  
+
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyMjg5ODMwNSwtMTU0MjYwODI1NCwtMT
-k0MjI4MzIyMCwtNDIyMzE4OTk0LC0zMjQyODA3MzAsLTIxMTQ1
-MDA0ODMsLTIxMjI0NjU3ODEsNDU4ODkwMDEzLC0xNjU2ODc3MD
-EwLDExODM0NTIzNDgsLTE4OTU5ODk1NTEsMjExNzgxMjg4MSwx
-NTA1MjcwMjk2LC0xOTY4NjcxNzMsLTYzNzMzNjAwNiwtODIyOD
-E4MjQwLC0yMDczMzU0Njc4LDEyNTc5MTM3NjgsLTczNDI2MzE5
-MywxNzE3MjE5Nzc0XX0=
+eyJoaXN0b3J5IjpbLTEzMDk3ODQ2MjQsLTE1NDI2MDgyNTQsLT
+E5NDIyODMyMjAsLTQyMjMxODk5NCwtMzI0MjgwNzMwLC0yMTE0
+NTAwNDgzLC0yMTIyNDY1NzgxLDQ1ODg5MDAxMywtMTY1Njg3Nz
+AxMCwxMTgzNDUyMzQ4LC0xODk1OTg5NTUxLDIxMTc4MTI4ODEs
+MTUwNTI3MDI5NiwtMTk2ODY3MTczLC02MzczMzYwMDYsLTgyMj
+gxODI0MCwtMjA3MzM1NDY3OCwxMjU3OTEzNzY4LC03MzQyNjMx
+OTMsMTcxNzIxOTc3NF19
 -->
