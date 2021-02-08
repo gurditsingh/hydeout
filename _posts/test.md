@@ -49,15 +49,16 @@ A Bloom Filter is a probabilistic data structure to test whether data belong to 
 > number of hash functions, it will be very fast to test non-existence
 > of a key.
 
-
+## Applications of Bloom Filter
+-   Google Bigtable,  Apache HBase and Apache Cassandra and Postgresql use Bloom filters to reduce the disk lookups for non-existent rows or columns. Avoiding costly disk lookups considerably increases the performance of a database query operation.
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDk3ODQ2MjQsLTE1NDI2MDgyNTQsLT
-E5NDIyODMyMjAsLTQyMjMxODk5NCwtMzI0MjgwNzMwLC0yMTE0
-NTAwNDgzLC0yMTIyNDY1NzgxLDQ1ODg5MDAxMywtMTY1Njg3Nz
-AxMCwxMTgzNDUyMzQ4LC0xODk1OTg5NTUxLDIxMTc4MTI4ODEs
-MTUwNTI3MDI5NiwtMTk2ODY3MTczLC02MzczMzYwMDYsLTgyMj
-gxODI0MCwtMjA3MzM1NDY3OCwxMjU3OTEzNzY4LC03MzQyNjMx
-OTMsMTcxNzIxOTc3NF19
+eyJoaXN0b3J5IjpbLTE0ODgyMzM1LC0xNTQyNjA4MjU0LC0xOT
+QyMjgzMjIwLC00MjIzMTg5OTQsLTMyNDI4MDczMCwtMjExNDUw
+MDQ4MywtMjEyMjQ2NTc4MSw0NTg4OTAwMTMsLTE2NTY4NzcwMT
+AsMTE4MzQ1MjM0OCwtMTg5NTk4OTU1MSwyMTE3ODEyODgxLDE1
+MDUyNzAyOTYsLTE5Njg2NzE3MywtNjM3MzM2MDA2LC04MjI4MT
+gyNDAsLTIwNzMzNTQ2NzgsMTI1NzkxMzc2OCwtNzM0MjYzMTkz
+LDE3MTcyMTk3NzRdfQ==
 -->
