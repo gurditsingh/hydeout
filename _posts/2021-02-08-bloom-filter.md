@@ -11,8 +11,6 @@ tags:
   - md5
 ---
 
-
-# Probabilistic Data structures in Analysis of Big Data
 Big data is a collection of large amount of data which increases in volume, velocity and variety. In this blog discuses the methods of using Probabilistic Data Structure in Big Data Analysis and primarily focused on **Bloom Filter** which decreased the space or time.
 
 The conventional data structures and algorithm are not sufficient to manage larger and more complex dataset of Big Data.
