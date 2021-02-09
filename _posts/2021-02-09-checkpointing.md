@@ -47,8 +47,8 @@ streamDataFrame.writeStream
 ```
 In the above example we have provided **Checkpoint directory** and **Storage directory** Paths.
 
- - **Under the Checkpoint directory :** we have an offsets directory and that commits directory.
- - **Under the Storage directory :** we have an actual data files and _spark_metadata directory.
+ - **Under the Checkpoint directory :** will generate offsets directory and commits directory.
+ - **Under the Storage directory :** will generate actual data files and _spark_metadata directory.
 
 ### what happens when we start processing :
 
