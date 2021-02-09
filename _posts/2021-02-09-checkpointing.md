@@ -53,9 +53,13 @@ In the above example we have provided **Checkpoint directory** and **Storage dir
 ### what happens when we start processing :
 
 **First Step :**  Creates a file for Micro Batch One under Offsets directory. It contains offsets against which spark extract from the source.
+
 **Second Step :**  Next step it will extract the data from source and store the  output files under Storage directory. The number of output files are depends on the number of partitions.
+
 **Third Step :**  Next step it will create file under _spark_metadata directory and store file names which have been written for Micro Batch one.
+
 **Fourth Step :** Finally it will create a file under Commits folder once Micro Batch one is committed.
+
 
 > **These Steps will executed for each Micro Batch run.**
 
@@ -74,4 +78,4 @@ Suppose job starts processing again for Micro Batch two, a file is created under
 
 **when we wants to read data from storage directory Spark first check _spark_metadata directory because it only reads the output file which have an entry in _spark_metadata directory this ensures that no duplicate data is read.**
 
- 
+ Sample Code [here](https://github.com/gurditsingh/100DaysOfCode/tree/master/SparkStreaming/src/main/scala/com/learn/day2 "here")
