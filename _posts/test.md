@@ -36,11 +36,11 @@ streamDataFrame.writeStream
 ```
 In the above example we have provided **Checkpoint directory** and **Storage directory** Paths.
 
-**Under the Checkpoint directory**
+**Under the Checkpoint directory :**
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMTM5NzY2NiwtNDc0NDY3MTIxLDg1OD
+eyJoaXN0b3J5IjpbLTM3NzczMjYwNCwtNDc0NDY3MTIxLDg1OD
 YyMDQ2NCw3ODcxMjcyNTEsLTE4NDc2OTYzNzcsLTE2OTMxMzgz
 NTEsMTY1NjEzMjYyOCwyNDE3Mzg0NzcsNjg0MjA1MzcwLDE2MD
 A0MDM0MzEsLTcyNzAxNTAwNywtOTU5MTM5Mjc4LDk4NTYzNTY1
