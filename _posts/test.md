@@ -59,12 +59,14 @@ Suppose job starts processing again for Micro Batch two, a file is created under
 ### At the end of streaming job
 
  - Storage directory will contain 3 output files (suppose one file for per batch)  for Micro Batch one, Failed Micro Batch two and restarted Micro Batch two.
- - _spark_metadata directory under Storage directory will contain only 2 files for Micro Batch one and restarted Mic
+ - _spark_metadata directory under Storage directory will contain only 2 files for Micro Batch one and restarted Micro Batch two.
+
+when we wants to read data from storage directory it first see  of metadata because of which it only reads from file 124 and five, but not from File S3. And this ensures that no duplicate data is read.
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMzYxMTUyMSwtMjk5NjYxMjY5LC0xNT
+eyJoaXN0b3J5IjpbMTcxMTUwODQ3MSwtMjk5NjYxMjY5LC0xNT
 IyMzQxMjg3LC00NzQ0NjcxMjEsODU4NjIwNDY0LDc4NzEyNzI1
 MSwtMTg0NzY5NjM3NywtMTY5MzEzODM1MSwxNjU2MTMyNjI4LD
 I0MTczODQ3Nyw2ODQyMDUzNzAsMTYwMDQwMzQzMSwtNzI3MDE1
