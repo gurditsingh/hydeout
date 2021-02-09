@@ -51,14 +51,15 @@ In the above example we have provided **Checkpoint directory** and **Storage dir
 ### what happens in case of job failure:
 suppose job starts processing again for Micro Batch two, a file is created under offsets, and it then starts to write the data to storage directory. Assume one file is written, and there is a job failure. This means partial output has been written out.
 
-
+ - when the query is restarted, Apache Spark will simply check whether
+   the last written offset has the corresponding commit log
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5OTY2MTI2OSwtMTUyMjM0MTI4NywtND
-c0NDY3MTIxLDg1ODYyMDQ2NCw3ODcxMjcyNTEsLTE4NDc2OTYz
-NzcsLTE2OTMxMzgzNTEsMTY1NjEzMjYyOCwyNDE3Mzg0NzcsNj
-g0MjA1MzcwLDE2MDA0MDM0MzEsLTcyNzAxNTAwNywtOTU5MTM5
-Mjc4LDk4NTYzNTY1NCwtMTU0MjYwODI1NCwtMTk0MjI4MzIyMC
-wtNDIyMzE4OTk0LC0zMjQyODA3MzAsLTIxMTQ1MDA0ODMsLTIx
-MjI0NjU3ODFdfQ==
+eyJoaXN0b3J5IjpbMTY1OTkyNTM2MywtMjk5NjYxMjY5LC0xNT
+IyMzQxMjg3LC00NzQ0NjcxMjEsODU4NjIwNDY0LDc4NzEyNzI1
+MSwtMTg0NzY5NjM3NywtMTY5MzEzODM1MSwxNjU2MTMyNjI4LD
+I0MTczODQ3Nyw2ODQyMDUzNzAsMTYwMDQwMzQzMSwtNzI3MDE1
+MDA3LC05NTkxMzkyNzgsOTg1NjM1NjU0LC0xNTQyNjA4MjU0LC
+0xOTQyMjgzMjIwLC00MjIzMTg5OTQsLTMyNDI4MDczMCwtMjEx
+NDUwMDQ4M119
 -->
