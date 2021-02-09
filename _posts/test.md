@@ -13,8 +13,8 @@ To enable checkpointing, set the option `checkpointLocation` to a HDFS or cloud 
 ```scala
 streamDataFrame.writeStream
   .format("csv")
-  .option("path", "/outputStoragePath")
-  .option("checkpointLocation", "/checkpointPath")
+  .option("path", "event/outputStoragePath")
+  .option("checkpointLocation", "event/checkpointPath")
   .start()
 ```
 ## What is stored in Checkpoint Path
@@ -61,12 +61,12 @@ Suppose job starts processing again for Micro Batch two, a file is created under
  - Storage directory will contain 3 output files (suppose one file for per batch)  for Micro Batch one, Failed Micro Batch two and restarted Micro Batch two.
  - _spark_metadata directory under Storage directory will contain only 2 files for Micro Batch one and restarted Micro Batch two.
 
-when we wants to read data from storage directory Spark first check _spark_metadata directory because it only reads the output file which have an entery in _spark_metadata directory from file 124 and five, but not from File S3. And this ensures that no duplicate data is read.
+**when we wants to read data from storage directory Spark first check _spark_metadata directory because it only reads the output file which have an entry in _spark_metadata directory this ensures that no duplicate data is read.**
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODM1MDA3NDgwLC0yOTk2NjEyNjksLTE1Mj
+eyJoaXN0b3J5IjpbNTMwNDY4Nzg4LC0yOTk2NjEyNjksLTE1Mj
 IzNDEyODcsLTQ3NDQ2NzEyMSw4NTg2MjA0NjQsNzg3MTI3MjUx
 LC0xODQ3Njk2Mzc3LC0xNjkzMTM4MzUxLDE2NTYxMzI2MjgsMj
 QxNzM4NDc3LDY4NDIwNTM3MCwxNjAwNDAzNDMxLC03MjcwMTUw
