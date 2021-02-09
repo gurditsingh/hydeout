@@ -49,21 +49,23 @@ In the above example we have provided **Checkpoint directory** and **Storage dir
 > **These Steps will executed for each Micro Batch run.**
 
 ### what happens in case of job failure:
-suppose job starts processing again for Micro Batch two, a file is created under offsets, and it then starts to write the data to storage directory. Assume one file is written, and there is a job failure. This means partial output has been written out and files are also not created under _spark_metadata and Commits directory.
+Suppose job starts processing again for Micro Batch two, a file is created under offsets, and it then starts to write the data to storage directory. Assume one file is written, and there is a job failure. This means partial output has been written out and files are also not created under _spark_metadata and Commits directory.
 
  - when the query is restarted, Spark will simply check whether
    the last written offset has the corresponding commit log. in this case we don't have the commit log because job was fail in between due to some reason.
  - Next spark extracts the Micro Batch two offsets again and then right to more files in the storage directory.
- - Ne
+ - Next spark will create files under _spark_metadata and Commits directory for restarted Micro Batch two.
+
+At the end to streaming 
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2OTY5NjI4MywtMjk5NjYxMjY5LC0xNT
-IyMzQxMjg3LC00NzQ0NjcxMjEsODU4NjIwNDY0LDc4NzEyNzI1
-MSwtMTg0NzY5NjM3NywtMTY5MzEzODM1MSwxNjU2MTMyNjI4LD
-I0MTczODQ3Nyw2ODQyMDUzNzAsMTYwMDQwMzQzMSwtNzI3MDE1
-MDA3LC05NTkxMzkyNzgsOTg1NjM1NjU0LC0xNTQyNjA4MjU0LC
-0xOTQyMjgzMjIwLC00MjIzMTg5OTQsLTMyNDI4MDczMCwtMjEx
-NDUwMDQ4M119
+eyJoaXN0b3J5IjpbNDA1MDU2NTkwLC0yOTk2NjEyNjksLTE1Mj
+IzNDEyODcsLTQ3NDQ2NzEyMSw4NTg2MjA0NjQsNzg3MTI3MjUx
+LC0xODQ3Njk2Mzc3LC0xNjkzMTM4MzUxLDE2NTYxMzI2MjgsMj
+QxNzM4NDc3LDY4NDIwNTM3MCwxNjAwNDAzNDMxLC03MjcwMTUw
+MDcsLTk1OTEzOTI3OCw5ODU2MzU2NTQsLTE1NDI2MDgyNTQsLT
+E5NDIyODMyMjAsLTQyMjMxODk5NCwtMzI0MjgwNzMwLC0yMTE0
+NTAwNDgzXX0=
 -->
