@@ -41,9 +41,9 @@ In the above example we have provided **Checkpoint directory** and **Storage dir
 
 ### what happens when we start processing :
 
-
+**First Step :**  create a file for Batch one under Offsets folder. It contains offsets against which park will extract even from the source.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzNTA1NTQ3NSwtMTUyMjM0MTI4NywtND
+eyJoaXN0b3J5IjpbMTI0MDgwNjA4OCwtMTUyMjM0MTI4NywtND
 c0NDY3MTIxLDg1ODYyMDQ2NCw3ODcxMjcyNTEsLTE4NDc2OTYz
 NzcsLTE2OTMxMzgzNTEsMTY1NjEzMjYyOCwyNDE3Mzg0NzcsNj
 g0MjA1MzcwLDE2MDA0MDM0MzEsLTcyNzAxNTAwNywtOTU5MTM5
