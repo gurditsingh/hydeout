@@ -37,14 +37,16 @@ streamDataFrame.writeStream
 In the above example we have provided **Checkpoint directory** and **Storage directory** Paths.
 
  - **Under the Checkpoint directory :** we have an offsets directory and that commits directory.
- - **Under the Storage directory :** we have an actual data files 
+ - **Under the Storage directory :** we have an actual data files and _spark_metadata directory.
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTkxNTM5NTU2LC0xNTIyMzQxMjg3LC00Nz
-Q0NjcxMjEsODU4NjIwNDY0LDc4NzEyNzI1MSwtMTg0NzY5NjM3
-NywtMTY5MzEzODM1MSwxNjU2MTMyNjI4LDI0MTczODQ3Nyw2OD
-QyMDUzNzAsMTYwMDQwMzQzMSwtNzI3MDE1MDA3LC05NTkxMzky
-NzgsOTg1NjM1NjU0LC0xNTQyNjA4MjU0LC0xOTQyMjgzMjIwLC
-00MjIzMTg5OTQsLTMyNDI4MDczMCwtMjExNDUwMDQ4MywtMjEy
-MjQ2NTc4MV19
+eyJoaXN0b3J5IjpbMjA3Nzk2Mjc1OCwtMTUyMjM0MTI4NywtND
+c0NDY3MTIxLDg1ODYyMDQ2NCw3ODcxMjcyNTEsLTE4NDc2OTYz
+NzcsLTE2OTMxMzgzNTEsMTY1NjEzMjYyOCwyNDE3Mzg0NzcsNj
+g0MjA1MzcwLDE2MDA0MDM0MzEsLTcyNzAxNTAwNywtOTU5MTM5
+Mjc4LDk4NTYzNTY1NCwtMTU0MjYwODI1NCwtMTk0MjI4MzIyMC
+wtNDIyMzE4OTk0LC0zMjQyODA3MzAsLTIxMTQ1MDA0ODMsLTIx
+MjI0NjU3ODFdfQ==
 -->
