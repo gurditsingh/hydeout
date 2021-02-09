@@ -61,16 +61,16 @@ Suppose job starts processing again for Micro Batch two, a file is created under
  - Storage directory will contain 3 output files (suppose one file for per batch)  for Micro Batch one, Failed Micro Batch two and restarted Micro Batch two.
  - _spark_metadata directory under Storage directory will contain only 2 files for Micro Batch one and restarted Micro Batch two.
 
-when we wants to read data from storage directory it first see  of metadata because of which it only reads from file 124 and five, but not from File S3. And this ensures that no duplicate data is read.
+when we wants to read data from storage directory Spark first check _spark_metadata directory because it only reads the output file which have an entery in _spark_metadata directory from file 124 and five, but not from File S3. And this ensures that no duplicate data is read.
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMTUwODQ3MSwtMjk5NjYxMjY5LC0xNT
-IyMzQxMjg3LC00NzQ0NjcxMjEsODU4NjIwNDY0LDc4NzEyNzI1
-MSwtMTg0NzY5NjM3NywtMTY5MzEzODM1MSwxNjU2MTMyNjI4LD
-I0MTczODQ3Nyw2ODQyMDUzNzAsMTYwMDQwMzQzMSwtNzI3MDE1
-MDA3LC05NTkxMzkyNzgsOTg1NjM1NjU0LC0xNTQyNjA4MjU0LC
-0xOTQyMjgzMjIwLC00MjIzMTg5OTQsLTMyNDI4MDczMCwtMjEx
-NDUwMDQ4M119
+eyJoaXN0b3J5IjpbODM1MDA3NDgwLC0yOTk2NjEyNjksLTE1Mj
+IzNDEyODcsLTQ3NDQ2NzEyMSw4NTg2MjA0NjQsNzg3MTI3MjUx
+LC0xODQ3Njk2Mzc3LC0xNjkzMTM4MzUxLDE2NTYxMzI2MjgsMj
+QxNzM4NDc3LDY4NDIwNTM3MCwxNjAwNDAzNDMxLC03MjcwMTUw
+MDcsLTk1OTEzOTI3OCw5ODU2MzU2NTQsLTE1NDI2MDgyNTQsLT
+E5NDIyODMyMjAsLTQyMjMxODk5NCwtMzI0MjgwNzMwLC0yMTE0
+NTAwNDgzXX0=
 -->
