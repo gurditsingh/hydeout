@@ -58,12 +58,12 @@ Suppose job starts processing again for Micro Batch two, a file is created under
 
 ### At the end of streaming job
 
- - Stro
+ - Storage directory will contain output files for Micro Batch one, Failed Micro Batch two and restarted Micro Batch two (suppose one file for per batch) 
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2NzA3MjU0MywtMjk5NjYxMjY5LC0xNT
+eyJoaXN0b3J5IjpbLTczMzY2MTk1NCwtMjk5NjYxMjY5LC0xNT
 IyMzQxMjg3LC00NzQ0NjcxMjEsODU4NjIwNDY0LDc4NzEyNzI1
 MSwtMTg0NzY5NjM3NywtMTY5MzEzODM1MSwxNjU2MTMyNjI4LD
 I0MTczODQ3Nyw2ODQyMDUzNzAsMTYwMDQwMzQzMSwtNzI3MDE1
