@@ -10,13 +10,21 @@ Checkpoints are also important to guarantee at-least once processing in case of 
 
 ## Enable checkpointing
 To enable checkpointing, set the option `checkpointLocation` to a HDFS or cloud storage path. For example:
+```scala
+streamDataFrame.writeStream
+  .format("csv")
+  .option("path", "/outputStoragePath")
+  .option("checkpointLocation", "/checkpointPath")
+  .start()
+```
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTMxMzgzNTEsMTY1NjEzMjYyOCwyND
-E3Mzg0NzcsNjg0MjA1MzcwLDE2MDA0MDM0MzEsLTcyNzAxNTAw
-NywtOTU5MTM5Mjc4LDk4NTYzNTY1NCwtMTU0MjYwODI1NCwtMT
-k0MjI4MzIyMCwtNDIyMzE4OTk0LC0zMjQyODA3MzAsLTIxMTQ1
-MDA0ODMsLTIxMjI0NjU3ODEsNDU4ODkwMDEzLC0xNjU2ODc3MD
-EwLDExODM0NTIzNDgsLTE4OTU5ODk1NTEsMjExNzgxMjg4MSwx
-NTA1MjcwMjk2XX0=
+eyJoaXN0b3J5IjpbMTQ1NTUxMTc2NiwtMTY5MzEzODM1MSwxNj
+U2MTMyNjI4LDI0MTczODQ3Nyw2ODQyMDUzNzAsMTYwMDQwMzQz
+MSwtNzI3MDE1MDA3LC05NTkxMzkyNzgsOTg1NjM1NjU0LC0xNT
+QyNjA4MjU0LC0xOTQyMjgzMjIwLC00MjIzMTg5OTQsLTMyNDI4
+MDczMCwtMjExNDUwMDQ4MywtMjEyMjQ2NTc4MSw0NTg4OTAwMT
+MsLTE2NTY4NzcwMTAsMTE4MzQ1MjM0OCwtMTg5NTk4OTU1MSwy
+MTE3ODEyODgxXX0=
 -->
