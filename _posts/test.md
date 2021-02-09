@@ -39,10 +39,11 @@ In the above example we have provided **Checkpoint directory** and **Storage dir
  - **Under the Checkpoint directory :** we have an offsets directory and that commits directory.
  - **Under the Storage directory :** we have an actual data files and _spark_metadata directory.
 
+### what happens when we start processing :
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3Nzk2Mjc1OCwtMTUyMjM0MTI4NywtND
+eyJoaXN0b3J5IjpbMjEzNTA1NTQ3NSwtMTUyMjM0MTI4NywtND
 c0NDY3MTIxLDg1ODYyMDQ2NCw3ODcxMjcyNTEsLTE4NDc2OTYz
 NzcsLTE2OTMxMzgzNTEsMTY1NjEzMjYyOCwyNDE3Mzg0NzcsNj
 g0MjA1MzcwLDE2MDA0MDM0MzEsLTcyNzAxNTAwNywtOTU5MTM5
