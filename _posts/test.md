@@ -49,14 +49,14 @@ In the above example we have provided **Checkpoint directory** and **Storage dir
 > **These Steps will executed for each Micro Batch run.**
 
 ### what happens in case of job failure:
-suppose job starts processing again for Micro Batch two, a file is created under offsets, and it then starts to write the data to storage directory. Assume one file is written, and there is a job failure.
+suppose job starts processing again for Micro Batch two, a file is created under offsets, and it then starts to write the data to storage directory. Assume one file is written, and there is a job failure. This means partial output has been written out.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjI5ODQxNjYsLTE1MjIzNDEyODcsLT
-Q3NDQ2NzEyMSw4NTg2MjA0NjQsNzg3MTI3MjUxLC0xODQ3Njk2
-Mzc3LC0xNjkzMTM4MzUxLDE2NTYxMzI2MjgsMjQxNzM4NDc3LD
-Y4NDIwNTM3MCwxNjAwNDAzNDMxLC03MjcwMTUwMDcsLTk1OTEz
-OTI3OCw5ODU2MzU2NTQsLTE1NDI2MDgyNTQsLTE5NDIyODMyMj
-AsLTQyMjMxODk5NCwtMzI0MjgwNzMwLC0yMTE0NTAwNDgzLC0y
-MTIyNDY1NzgxXX0=
+eyJoaXN0b3J5IjpbLTc3MzA0NjU3NywtMTUyMjM0MTI4NywtND
+c0NDY3MTIxLDg1ODYyMDQ2NCw3ODcxMjcyNTEsLTE4NDc2OTYz
+NzcsLTE2OTMxMzgzNTEsMTY1NjEzMjYyOCwyNDE3Mzg0NzcsNj
+g0MjA1MzcwLDE2MDA0MDM0MzEsLTcyNzAxNTAwNywtOTU5MTM5
+Mjc4LDk4NTYzNTY1NCwtMTU0MjYwODI1NCwtMTk0MjI4MzIyMC
+wtNDIyMzE4OTk0LC0zMjQyODA3MzAsLTIxMTQ1MDA0ODMsLTIx
+MjI0NjU3ODFdfQ==
 -->
