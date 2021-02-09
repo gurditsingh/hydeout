@@ -1,5 +1,5 @@
 
-# Spark Structured Streaming Checkpointing
+# Checkpointing in Spark Structured Streaming.
 
 In Structured Streaming, if you enable checkpointing for a streaming query, then you can restart the query after a failure and the restarted query will continue where the failed one left off, while ensuring fault tolerance and data consistency guarantees.
 
@@ -14,7 +14,7 @@ To enable checkpointing, set the option `checkpointLocation` to a HDFS or cloud 
 streamDataFrame.writeStream
   .format("csv")
   .option("path", "event/outputStoragePath")
-  .option("checkpointLocation", "en/checkpointPath")
+  .option("checkpointLocation", "event/checkpointPath")
   .start()
 ```
 ## What is stored in Checkpoint Path
@@ -30,8 +30,8 @@ Let's see how checkpoint works in File Sink.
 ```scala
 streamDataFrame.writeStream
   .format("csv")
-  .option("path", "/outputStoragePath")
-  .option("checkpointLocation", "/checkpointPath")
+  .option("path", "event/outputStoragePath")
+  .option("checkpointLocation", "event/checkpointPath")
   .start()
 ```
 In the above example we have provided **Checkpoint directory** and **Storage directory** Paths.
@@ -66,11 +66,11 @@ Suppose job starts processing again for Micro Batch two, a file is created under
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3MDE5NDk4MSwtMjk5NjYxMjY5LC0xNT
-IyMzQxMjg3LC00NzQ0NjcxMjEsODU4NjIwNDY0LDc4NzEyNzI1
-MSwtMTg0NzY5NjM3NywtMTY5MzEzODM1MSwxNjU2MTMyNjI4LD
-I0MTczODQ3Nyw2ODQyMDUzNzAsMTYwMDQwMzQzMSwtNzI3MDE1
-MDA3LC05NTkxMzkyNzgsOTg1NjM1NjU0LC0xNTQyNjA4MjU0LC
-0xOTQyMjgzMjIwLC00MjIzMTg5OTQsLTMyNDI4MDczMCwtMjEx
-NDUwMDQ4M119
+eyJoaXN0b3J5IjpbNzUyMjEwMzc1LC0yOTk2NjEyNjksLTE1Mj
+IzNDEyODcsLTQ3NDQ2NzEyMSw4NTg2MjA0NjQsNzg3MTI3MjUx
+LC0xODQ3Njk2Mzc3LC0xNjkzMTM4MzUxLDE2NTYxMzI2MjgsMj
+QxNzM4NDc3LDY4NDIwNTM3MCwxNjAwNDAzNDMxLC03MjcwMTUw
+MDcsLTk1OTEzOTI3OCw5ODU2MzU2NTQsLTE1NDI2MDgyNTQsLT
+E5NDIyODMyMjAsLTQyMjMxODk5NCwtMzI0MjgwNzMwLC0yMTE0
+NTAwNDgzXX0=
 -->
