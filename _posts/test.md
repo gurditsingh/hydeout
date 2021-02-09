@@ -56,16 +56,18 @@ Suppose job starts processing again for Micro Batch two, a file is created under
  - Next spark extracts the Micro Batch two offsets again and then right to more files in the storage directory.
  - Next spark will create files under _spark_metadata and Commits directory for restarted Micro Batch two.
 
-At the end to streaming 
+### At the end of streaming job
+
+ - Stro
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA1MDU2NTkwLC0yOTk2NjEyNjksLTE1Mj
-IzNDEyODcsLTQ3NDQ2NzEyMSw4NTg2MjA0NjQsNzg3MTI3MjUx
-LC0xODQ3Njk2Mzc3LC0xNjkzMTM4MzUxLDE2NTYxMzI2MjgsMj
-QxNzM4NDc3LDY4NDIwNTM3MCwxNjAwNDAzNDMxLC03MjcwMTUw
-MDcsLTk1OTEzOTI3OCw5ODU2MzU2NTQsLTE1NDI2MDgyNTQsLT
-E5NDIyODMyMjAsLTQyMjMxODk5NCwtMzI0MjgwNzMwLC0yMTE0
-NTAwNDgzXX0=
+eyJoaXN0b3J5IjpbMTI2NzA3MjU0MywtMjk5NjYxMjY5LC0xNT
+IyMzQxMjg3LC00NzQ0NjcxMjEsODU4NjIwNDY0LDc4NzEyNzI1
+MSwtMTg0NzY5NjM3NywtMTY5MzEzODM1MSwxNjU2MTMyNjI4LD
+I0MTczODQ3Nyw2ODQyMDUzNzAsMTYwMDQwMzQzMSwtNzI3MDE1
+MDA3LC05NTkxMzkyNzgsOTg1NjM1NjU0LC0xNTQyNjA4MjU0LC
+0xOTQyMjgzMjIwLC00MjIzMTg5OTQsLTMyNDI4MDczMCwtMjEx
+NDUwMDQ4M119
 -->
