@@ -34,11 +34,13 @@ streamDataFrame.writeStream
   .option("checkpointLocation", "/checkpointPath")
   .start()
 ```
-In the above exampl
+In the above example we have provided **Checkpoint directory** and **Storage directory** Paths.
+
+**Under the Checkpoint directory**:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODMyMDI2MjYsLTQ3NDQ2NzEyMSw4NT
+eyJoaXN0b3J5IjpbLTExNTU4MzgyMjAsLTQ3NDQ2NzEyMSw4NT
 g2MjA0NjQsNzg3MTI3MjUxLC0xODQ3Njk2Mzc3LC0xNjkzMTM4
 MzUxLDE2NTYxMzI2MjgsMjQxNzM4NDc3LDY4NDIwNTM3MCwxNj
 AwNDAzNDMxLC03MjcwMTUwMDcsLTk1OTEzOTI3OCw5ODU2MzU2
