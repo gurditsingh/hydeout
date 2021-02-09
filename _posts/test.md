@@ -43,13 +43,13 @@ In the above example we have provided **Checkpoint directory** and **Storage dir
 
 **First Step :**  Creates a file for Batch One under Offsets directory. It contains offsets against which spark extract from the source.
 **Second Step :**  Next step it will then extract the data from source and store it in output files under Storage directory. The number of output files are depends on the number of partitions.
-**Third Step :** 
+**Third Step :**  Next step it will create a file under _spark_metadata a folder and store that File one and file to have been written for Micro Batch one.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NDI4Njc5NywtMTUyMjM0MTI4NywtND
-c0NDY3MTIxLDg1ODYyMDQ2NCw3ODcxMjcyNTEsLTE4NDc2OTYz
-NzcsLTE2OTMxMzgzNTEsMTY1NjEzMjYyOCwyNDE3Mzg0NzcsNj
-g0MjA1MzcwLDE2MDA0MDM0MzEsLTcyNzAxNTAwNywtOTU5MTM5
-Mjc4LDk4NTYzNTY1NCwtMTU0MjYwODI1NCwtMTk0MjI4MzIyMC
-wtNDIyMzE4OTk0LC0zMjQyODA3MzAsLTIxMTQ1MDA0ODMsLTIx
-MjI0NjU3ODFdfQ==
+eyJoaXN0b3J5IjpbLTE4OTA4Mzc0ODIsLTE1MjIzNDEyODcsLT
+Q3NDQ2NzEyMSw4NTg2MjA0NjQsNzg3MTI3MjUxLC0xODQ3Njk2
+Mzc3LC0xNjkzMTM4MzUxLDE2NTYxMzI2MjgsMjQxNzM4NDc3LD
+Y4NDIwNTM3MCwxNjAwNDAzNDMxLC03MjcwMTUwMDcsLTk1OTEz
+OTI3OCw5ODU2MzU2NTQsLTE1NDI2MDgyNTQsLTE5NDIyODMyMj
+AsLTQyMjMxODk5NCwtMzI0MjgwNzMwLC0yMTE0NTAwNDgzLC0y
+MTIyNDY1NzgxXX0=
 -->
