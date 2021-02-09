@@ -42,13 +42,13 @@ In the above example we have provided **Checkpoint directory** and **Storage dir
 ### what happens when we start processing :
 
 **First Step :**  Creates a file for Batch One under Offsets directory. It contains offsets against which spark extract from the source.
-Second Step :
+**Second Step :**  Next step it will then extract the data from source and store it in files under Storage directory. The number of output files are depends on the number of partitions
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIxNTQxOTc3LC0xNTIyMzQxMjg3LC00Nz
-Q0NjcxMjEsODU4NjIwNDY0LDc4NzEyNzI1MSwtMTg0NzY5NjM3
-NywtMTY5MzEzODM1MSwxNjU2MTMyNjI4LDI0MTczODQ3Nyw2OD
-QyMDUzNzAsMTYwMDQwMzQzMSwtNzI3MDE1MDA3LC05NTkxMzky
-NzgsOTg1NjM1NjU0LC0xNTQyNjA4MjU0LC0xOTQyMjgzMjIwLC
-00MjIzMTg5OTQsLTMyNDI4MDczMCwtMjExNDUwMDQ4MywtMjEy
-MjQ2NTc4MV19
+eyJoaXN0b3J5IjpbLTI2NzUwNjY5OSwtMTUyMjM0MTI4NywtND
+c0NDY3MTIxLDg1ODYyMDQ2NCw3ODcxMjcyNTEsLTE4NDc2OTYz
+NzcsLTE2OTMxMzgzNTEsMTY1NjEzMjYyOCwyNDE3Mzg0NzcsNj
+g0MjA1MzcwLDE2MDA0MDM0MzEsLTcyNzAxNTAwNywtOTU5MTM5
+Mjc4LDk4NTYzNTY1NCwtMTU0MjYwODI1NCwtMTk0MjI4MzIyMC
+wtNDIyMzE4OTk0LC0zMjQyODA3MzAsLTIxMTQ1MDA0ODMsLTIx
+MjI0NjU3ODFdfQ==
 -->
