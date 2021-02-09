@@ -46,9 +46,12 @@ In the above example we have provided **Checkpoint directory** and **Storage dir
 **Third Step :**  Next step it will create file under _spark_metadata directory and store file names which have been written for Micro Batch one.
 **Fourth Step :** Finally it will create a file under Commits folder once Micro Batch one is committed.
 
-these Step will 
+> **These Steps will executed for each Micro Batch run.**
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwOTc5NzI5MiwtMTUyMjM0MTI4NywtND
+eyJoaXN0b3J5IjpbLTgwNzI2MDU0MywtMTUyMjM0MTI4NywtND
 c0NDY3MTIxLDg1ODYyMDQ2NCw3ODcxMjcyNTEsLTE4NDc2OTYz
 NzcsLTE2OTMxMzgzNTEsMTY1NjEzMjYyOCwyNDE3Mzg0NzcsNj
 g0MjA1MzcwLDE2MDA0MDM0MzEsLTcyNzAxNTAwNywtOTU5MTM5
