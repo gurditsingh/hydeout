@@ -15,12 +15,13 @@ There are three types of time stamps **Event time**, **Ingestion Time** and **Pr
 ![Example](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/Streaming.jpg?raw=true)
 
  - Assume wireless sensor generating some events, in that event it specifies unique ID, and Timestamp , let's say time is 2 a.m. when the event is generated. So this timestamp at which the event actually happened is called the event or application time, and this timestamp is present in the payload itself.
- - So next wireless sensor sends this event to the streaming source like Apache kafka assume that it took one second for the event to reach the source. So the time at which the even reaches the source is known as injection or arrival time.
+ - So next wireless sensor sends this event to the streaming source like Apache kafka assume that it took one second for the event to reach the source (due to some network latency). So the time at which the even reaches the source is known as injection or arrival time.
+ - 
  - 
  - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI3ODI3NTIzLDg5MzE5MDgyOSwtMTk2ND
+eyJoaXN0b3J5IjpbLTU0NTIzNDA0LDg5MzE5MDgyOSwtMTk2ND
 I1NzUxOSwtMTcyMDMzNDk1OSwtMTA1NjY3MjE5MiwxNDIwNzk4
 NTYxLDg1NzM0NTM0MiwzOTkzODQzNiwxOTY2NDAyNzc2LDE4Nj
 M4ODg5OTcsNzUyMjEwMzc1LC0yOTk2NjEyNjksLTE1MjIzNDEy
