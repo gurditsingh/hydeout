@@ -14,16 +14,17 @@ There are three types of time stamps **Event time**, **Ingestion Time** and **Pr
 ## Let's take an example to understand Time
 ![Example](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/SStime.jpg?raw=true)
 
- - Assume smart watch generating some events regarding number of steps, in the event it specifies unique ID, and Time, let's say time is 2 a.m. So this timestamp at which the event actually happened is called the event or application time, and this time stamp is present in the payload itself.
+ - Assume smart watch generating some events regarding number of steps, in the event it specifies unique ID, and Timestamp , let's say time is 2 a.m. So this timestamp at which the event actually happened is called the event or application time, and this timestamp is present in the payload itself.
+ - 
  - 
  - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDM5MzE1NTYsLTE5NjQyNTc1MTksLT
-E3MjAzMzQ5NTksLTEwNTY2NzIxOTIsMTQyMDc5ODU2MSw4NTcz
-NDUzNDIsMzk5Mzg0MzYsMTk2NjQwMjc3NiwxODYzODg4OTk3LD
-c1MjIxMDM3NSwtMjk5NjYxMjY5LC0xNTIyMzQxMjg3LC00NzQ0
-NjcxMjEsODU4NjIwNDY0LDc4NzEyNzI1MSwtMTg0NzY5NjM3Ny
-wtMTY5MzEzODM1MSwxNjU2MTMyNjI4LDI0MTczODQ3Nyw2ODQy
-MDUzNzBdfQ==
+eyJoaXN0b3J5IjpbODQ5OTAyMTI4LC0xOTY0MjU3NTE5LC0xNz
+IwMzM0OTU5LC0xMDU2NjcyMTkyLDE0MjA3OTg1NjEsODU3MzQ1
+MzQyLDM5OTM4NDM2LDE5NjY0MDI3NzYsMTg2Mzg4ODk5Nyw3NT
+IyMTAzNzUsLTI5OTY2MTI2OSwtMTUyMjM0MTI4NywtNDc0NDY3
+MTIxLDg1ODYyMDQ2NCw3ODcxMjcyNTEsLTE4NDc2OTYzNzcsLT
+E2OTMxMzgzNTEsMTY1NjEzMjYyOCwyNDE3Mzg0NzcsNjg0MjA1
+MzcwXX0=
 -->
