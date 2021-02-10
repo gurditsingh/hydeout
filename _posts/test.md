@@ -23,12 +23,16 @@ There are three types of time stamps **Event time**, **Ingestion Time** and **Pr
 
 > **So you have 2 a.m. as the Event time, one second past 2 a.m. as Ingestion Time and five seconds past 2 a.m. as the Processing time.**
 
+
+------------
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNDM4OTQwLC0yMDgyOTUzMjQwLDg5Mz
-E5MDgyOSwtMTk2NDI1NzUxOSwtMTcyMDMzNDk1OSwtMTA1NjY3
-MjE5MiwxNDIwNzk4NTYxLDg1NzM0NTM0MiwzOTkzODQzNiwxOT
-Y2NDAyNzc2LDE4NjM4ODg5OTcsNzUyMjEwMzc1LC0yOTk2NjEy
-NjksLTE1MjIzNDEyODcsLTQ3NDQ2NzEyMSw4NTg2MjA0NjQsNz
-g3MTI3MjUxLC0xODQ3Njk2Mzc3LC0xNjkzMTM4MzUxLDE2NTYx
-MzI2MjhdfQ==
+eyJoaXN0b3J5IjpbLTgwMTYxODI3NiwtMjM0Mzg5NDAsLTIwOD
+I5NTMyNDAsODkzMTkwODI5LC0xOTY0MjU3NTE5LC0xNzIwMzM0
+OTU5LC0xMDU2NjcyMTkyLDE0MjA3OTg1NjEsODU3MzQ1MzQyLD
+M5OTM4NDM2LDE5NjY0MDI3NzYsMTg2Mzg4ODk5Nyw3NTIyMTAz
+NzUsLTI5OTY2MTI2OSwtMTUyMjM0MTI4NywtNDc0NDY3MTIxLD
+g1ODYyMDQ2NCw3ODcxMjcyNTEsLTE4NDc2OTYzNzcsLTE2OTMx
+MzgzNTFdfQ==
 -->
