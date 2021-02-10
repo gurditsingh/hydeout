@@ -34,13 +34,16 @@ There are three types of time stamps **Event time**, **Ingestion Time** and **Pr
  - Next Event took one second for the event to reach the source, but the injection time is 02:00:01that means one second past two.
 
 	**How can this be possible ?**
+	
+	 - It may be clock's error because many time it not in sync.
+	 - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5Mzk2MTIsLTIzNDM4OTQwLC0yMDgyOT
-UzMjQwLDg5MzE5MDgyOSwtMTk2NDI1NzUxOSwtMTcyMDMzNDk1
-OSwtMTA1NjY3MjE5MiwxNDIwNzk4NTYxLDg1NzM0NTM0MiwzOT
-kzODQzNiwxOTY2NDAyNzc2LDE4NjM4ODg5OTcsNzUyMjEwMzc1
-LC0yOTk2NjEyNjksLTE1MjIzNDEyODcsLTQ3NDQ2NzEyMSw4NT
-g2MjA0NjQsNzg3MTI3MjUxLC0xODQ3Njk2Mzc3LC0xNjkzMTM4
-MzUxXX0=
+eyJoaXN0b3J5IjpbLTEyNjE5MDkzNjksLTIzNDM4OTQwLC0yMD
+gyOTUzMjQwLDg5MzE5MDgyOSwtMTk2NDI1NzUxOSwtMTcyMDMz
+NDk1OSwtMTA1NjY3MjE5MiwxNDIwNzk4NTYxLDg1NzM0NTM0Mi
+wzOTkzODQzNiwxOTY2NDAyNzc2LDE4NjM4ODg5OTcsNzUyMjEw
+Mzc1LC0yOTk2NjEyNjksLTE1MjIzNDEyODcsLTQ3NDQ2NzEyMS
+w4NTg2MjA0NjQsNzg3MTI3MjUxLC0xODQ3Njk2Mzc3LC0xNjkz
+MTM4MzUxXX0=
 -->
