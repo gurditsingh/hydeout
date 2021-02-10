@@ -40,18 +40,20 @@ There are three types of time stamps **Event time**, **Ingestion Time** and **Pr
 	
 **Late Events:** 
 
- - Suppose sensor generates and event at 2 a.m. So that's the event
-   time. Then, after a second, it generates another event 02:00:01 that
+ - Suppose sensor generates and event "event A" at 2 a.m. So that's the event
+   time. Then, after a second, it generates another event "event A" 02:00:01 that
    means one second past two as there event time.
 
-Assume Since the app is multi threaded, multiple threads are delivering the events to streaming source.
+ - Assume the sensor app(which generates the events) is multi threaded,
+   multiple threads are delivering the events to streaming source.
+   
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTM3ODA3NzYsLTIzNDM4OTQwLC0yMD
-gyOTUzMjQwLDg5MzE5MDgyOSwtMTk2NDI1NzUxOSwtMTcyMDMz
-NDk1OSwtMTA1NjY3MjE5MiwxNDIwNzk4NTYxLDg1NzM0NTM0Mi
-wzOTkzODQzNiwxOTY2NDAyNzc2LDE4NjM4ODg5OTcsNzUyMjEw
-Mzc1LC0yOTk2NjEyNjksLTE1MjIzNDEyODcsLTQ3NDQ2NzEyMS
-w4NTg2MjA0NjQsNzg3MTI3MjUxLC0xODQ3Njk2Mzc3LC0xNjkz
-MTM4MzUxXX0=
+eyJoaXN0b3J5IjpbMjg3NzkyODUzLC0yMzQzODk0MCwtMjA4Mj
+k1MzI0MCw4OTMxOTA4MjksLTE5NjQyNTc1MTksLTE3MjAzMzQ5
+NTksLTEwNTY2NzIxOTIsMTQyMDc5ODU2MSw4NTczNDUzNDIsMz
+k5Mzg0MzYsMTk2NjQwMjc3NiwxODYzODg4OTk3LDc1MjIxMDM3
+NSwtMjk5NjYxMjY5LC0xNTIyMzQxMjg3LC00NzQ0NjcxMjEsOD
+U4NjIwNDY0LDc4NzEyNzI1MSwtMTg0NzY5NjM3NywtMTY5MzEz
+ODM1MV19
 -->
