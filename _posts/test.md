@@ -6,7 +6,7 @@ A streaming application is an always running application. So in order to underst
 ## Types of Time in Structured Streaming
 There are three types of time stamps **Event time**, **Ingestion Time** and **Processing time**. Every event that is generated and processed has these time stamps associated with it.
 
- - **Event time :**  Event-time is the time embedded in the data itself. Normally the data which we collect from sources like sensors, logs
+ - **Event time :**  Timestamp at which event happened. Event-time is the time embedded in the data itself. Normally the data which we collect from sources like sensors, logs
    have a time embedded in them. This time signifies when a given event
    is generated at the source.
    
@@ -20,11 +20,11 @@ There are three types of time stamps **Event time**, **Ingestion Time** and **Pr
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMDc5ODU2MSw4NTczNDUzNDIsMzk5Mz
-g0MzYsMTk2NjQwMjc3NiwxODYzODg4OTk3LDc1MjIxMDM3NSwt
-Mjk5NjYxMjY5LC0xNTIyMzQxMjg3LC00NzQ0NjcxMjEsODU4Nj
-IwNDY0LDc4NzEyNzI1MSwtMTg0NzY5NjM3NywtMTY5MzEzODM1
-MSwxNjU2MTMyNjI4LDI0MTczODQ3Nyw2ODQyMDUzNzAsMTYwMD
-QwMzQzMSwtNzI3MDE1MDA3LC05NTkxMzkyNzgsOTg1NjM1NjU0
-XX0=
+eyJoaXN0b3J5IjpbLTExMTkyNjkxMTQsMTQyMDc5ODU2MSw4NT
+czNDUzNDIsMzk5Mzg0MzYsMTk2NjQwMjc3NiwxODYzODg4OTk3
+LDc1MjIxMDM3NSwtMjk5NjYxMjY5LC0xNTIyMzQxMjg3LC00Nz
+Q0NjcxMjEsODU4NjIwNDY0LDc4NzEyNzI1MSwtMTg0NzY5NjM3
+NywtMTY5MzEzODM1MSwxNjU2MTMyNjI4LDI0MTczODQ3Nyw2OD
+QyMDUzNzAsMTYwMDQwMzQzMSwtNzI3MDE1MDA3LC05NTkxMzky
+NzhdfQ==
 -->
