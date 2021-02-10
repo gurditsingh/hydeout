@@ -38,10 +38,11 @@ There are three types of time stamps **Event time**, **Ingestion Time** and **Pr
 	 - It may be clock's error because many time it not in sync.
 	 - sensor device maybe using a different time zone and not mentioned in the payload.
 	
-Late Events: 
+**Late Events:** 
+Suppose sensor generates and event at 2 a.m. So that's the even time. Then, after a second off travel, it generates another event. Be with one second past one as there even time. Since the app is multi threaded, multiple threads are delivering the events to streaming source.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MDIwODQwOCwtMjM0Mzg5NDAsLTIwOD
+eyJoaXN0b3J5IjpbMTQyNjgwOTczOSwtMjM0Mzg5NDAsLTIwOD
 I5NTMyNDAsODkzMTkwODI5LC0xOTY0MjU3NTE5LC0xNzIwMzM0
 OTU5LC0xMDU2NjcyMTkyLDE0MjA3OTg1NjEsODU3MzQ1MzQyLD
 M5OTM4NDM2LDE5NjY0MDI3NzYsMTg2Mzg4ODk5Nyw3NTIyMTAz
