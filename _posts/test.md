@@ -9,7 +9,7 @@ There are three types of time stamps **Event time**, **Ingestion Time** and **Pr
  - **Event time :**  Timestamp at which event happened. Event-time is the time embedded in the data itself. Normally the data which we collect from sources like sensors, logs have a time embedded in them. This time signifies when a given event is generated at the source.
    
  - **Ingestion Time :** Timestamp at which reaches to source. Ingestion time is a time captured at the ingestion of data. Ingestion time is the time when events ingested into the system. This time is in between of the event time and processing time.
- - **Processing time :** Timestamp at which events processed. Processing time is time tracked by processing engine regarding when data was arrived for processing. In this abstraction of time, time passed is signified by the central clock maintained at the driver.
+ - **Processing time :** Timestamp at which events processed and processing time is the one when event is processed by the Spark. Processing time is time tracked by processing engine. In this abstraction of time, time passed is signified by the central clock maintained at the driver.
 
 ## Let's take an example to understand Time
 ![Example](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/Streaming.jpg?raw=true)
@@ -24,11 +24,11 @@ There are three types of time stamps **Event time**, **Ingestion Time** and **Pr
 > **So you have 2 a.m. as the Event time, one second past 2 a.m. as Ingestion Time and five seconds past 2 a.m. as the Processing time.**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODI5NTMyNDAsODkzMTkwODI5LC0xOT
-Y0MjU3NTE5LC0xNzIwMzM0OTU5LC0xMDU2NjcyMTkyLDE0MjA3
-OTg1NjEsODU3MzQ1MzQyLDM5OTM4NDM2LDE5NjY0MDI3NzYsMT
-g2Mzg4ODk5Nyw3NTIyMTAzNzUsLTI5OTY2MTI2OSwtMTUyMjM0
-MTI4NywtNDc0NDY3MTIxLDg1ODYyMDQ2NCw3ODcxMjcyNTEsLT
-E4NDc2OTYzNzcsLTE2OTMxMzgzNTEsMTY1NjEzMjYyOCwyNDE3
-Mzg0NzddfQ==
+eyJoaXN0b3J5IjpbLTIzNDM4OTQwLC0yMDgyOTUzMjQwLDg5Mz
+E5MDgyOSwtMTk2NDI1NzUxOSwtMTcyMDMzNDk1OSwtMTA1NjY3
+MjE5MiwxNDIwNzk4NTYxLDg1NzM0NTM0MiwzOTkzODQzNiwxOT
+Y2NDAyNzc2LDE4NjM4ODg5OTcsNzUyMjEwMzc1LC0yOTk2NjEy
+NjksLTE1MjIzNDEyODcsLTQ3NDQ2NzEyMSw4NTg2MjA0NjQsNz
+g3MTI3MjUxLC0xODQ3Njk2Mzc3LC0xNjkzMTM4MzUxLDE2NTYx
+MzI2MjhdfQ==
 -->
