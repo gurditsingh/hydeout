@@ -15,18 +15,19 @@ There are three types of time stamps **Event time**, **Ingestion Time** and **Pr
 ![Example](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/Streaming.jpg?raw=true)
 
  - Assume wireless sensor generating some events, in that event it specifies unique ID, and Timestamp , let's say time is 2 a.m. when the event is generated. So this timestamp at which the event actually happened is called the event or application time, and this timestamp is present in the payload itself.
+ 
  - So next wireless sensor sends this event to the streaming source like Apache kafka assume that it took one second for the event to reach the source (due to some network latency). So the time at which the even reaches the source is known as injection or arrival time.
  
  - Next even though event has reached the source, it will be picked up by spark for possessing only when the job triggers. assume spark took five seconds to kick off the job. This is what is known as processing time.
- - 
- - 
+ 
+ So you have 2 a.m. as the event time, one second past one as Thean dish in time and five seconds past one as the processing time.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyOTE0MjMwOSw4OTMxOTA4MjksLTE5Nj
-QyNTc1MTksLTE3MjAzMzQ5NTksLTEwNTY2NzIxOTIsMTQyMDc5
-ODU2MSw4NTczNDUzNDIsMzk5Mzg0MzYsMTk2NjQwMjc3NiwxOD
-YzODg4OTk3LDc1MjIxMDM3NSwtMjk5NjYxMjY5LC0xNTIyMzQx
-Mjg3LC00NzQ0NjcxMjEsODU4NjIwNDY0LDc4NzEyNzI1MSwtMT
-g0NzY5NjM3NywtMTY5MzEzODM1MSwxNjU2MTMyNjI4LDI0MTcz
-ODQ3N119
+eyJoaXN0b3J5IjpbNjU0ODU4NDE3LDg5MzE5MDgyOSwtMTk2ND
+I1NzUxOSwtMTcyMDMzNDk1OSwtMTA1NjY3MjE5MiwxNDIwNzk4
+NTYxLDg1NzM0NTM0MiwzOTkzODQzNiwxOTY2NDAyNzc2LDE4Nj
+M4ODg5OTcsNzUyMjEwMzc1LC0yOTk2NjEyNjksLTE1MjIzNDEy
+ODcsLTQ3NDQ2NzEyMSw4NTg2MjA0NjQsNzg3MTI3MjUxLC0xOD
+Q3Njk2Mzc3LC0xNjkzMTM4MzUxLDE2NTYxMzI2MjgsMjQxNzM4
+NDc3XX0=
 -->
