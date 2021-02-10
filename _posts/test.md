@@ -14,13 +14,13 @@ There are three types of time stamps **Event time**, **Ingestion Time** and **Pr
    into the system. This time is in between of the event time and
    processing time.
 
-**Processing time :** 
+**Processing time :** Processing time is the time tracked using a clock run by the processing engine. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODE2NzQ4NjEsMzk5Mzg0MzYsMTk2Nj
-QwMjc3NiwxODYzODg4OTk3LDc1MjIxMDM3NSwtMjk5NjYxMjY5
-LC0xNTIyMzQxMjg3LC00NzQ0NjcxMjEsODU4NjIwNDY0LDc4Nz
-EyNzI1MSwtMTg0NzY5NjM3NywtMTY5MzEzODM1MSwxNjU2MTMy
-NjI4LDI0MTczODQ3Nyw2ODQyMDUzNzAsMTYwMDQwMzQzMSwtNz
-I3MDE1MDA3LC05NTkxMzkyNzgsOTg1NjM1NjU0LC0xNTQyNjA4
-MjU0XX0=
+eyJoaXN0b3J5IjpbODU3MzQ1MzQyLDM5OTM4NDM2LDE5NjY0MD
+I3NzYsMTg2Mzg4ODk5Nyw3NTIyMTAzNzUsLTI5OTY2MTI2OSwt
+MTUyMjM0MTI4NywtNDc0NDY3MTIxLDg1ODYyMDQ2NCw3ODcxMj
+cyNTEsLTE4NDc2OTYzNzcsLTE2OTMxMzgzNTEsMTY1NjEzMjYy
+OCwyNDE3Mzg0NzcsNjg0MjA1MzcwLDE2MDA0MDM0MzEsLTcyNz
+AxNTAwNywtOTU5MTM5Mjc4LDk4NTYzNTY1NCwtMTU0MjYwODI1
+NF19
 -->
