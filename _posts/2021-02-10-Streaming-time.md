@@ -14,8 +14,6 @@ tags:
 ---
 
 
-# Concept of Time in Spark Structured Streaming
-
 A streaming application is an always running application. So in order to understand the behavior of the application over time, we need to take snapshots of the stream in various points. Normally these various points are defined using a time component.
 
 ## Types of Time in Structured Streaming
@@ -44,6 +42,7 @@ There are three types of time stamps **Event time**, **Ingestion Time** and **Pr
 
 ## Scenario while working with Time
 
+
 **Clock Skew :**
 
  - Suppose the sensor generates an event at 02:00:06 that means six seconds past two as the even time.
@@ -53,6 +52,7 @@ There are three types of time stamps **Event time**, **Ingestion Time** and **Pr
 	
 	 - It may be clock's error because many time it not in sync.
 	 - sensor device maybe using a different time zone and not mentioned in the payload.
+	 
 	
 **Late Events:** 
 
