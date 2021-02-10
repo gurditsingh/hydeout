@@ -40,23 +40,26 @@ There are three types of time stamps **Event time**, **Ingestion Time** and **Pr
 	
 **Late Events:** 
 
- - Suppose sensor generates and event "event A" at 02:00:00 asEvent time. Then, after a second, it generates another event "event B" 02:00:01 that means one second past two as there event time.
+ - Suppose sensor generates and event "event A" at 02:00:00 as a Event time. Then, after a second, it generates another event "event B" 02:00:01 that means one second past two as there event time.
 
  - Assume the sensor app(which generates the events) is multi threaded,
    multiple threads are delivering the events to streaming source.
    
  - Next the event A reaches the source at 02:00:04 so that's the
-   ingestion time.
+   Ingestion time.
 
-   Next comes the problem. The thread off event A was responding slow, so it reached at 02:00:06 as a Ingestion time
+ - Next comes the problem. The thread off event A was responding slow,
+   so it reached at 02:00:06 as a Ingestion time. these events are known
+   as a late or out of order events.
+
    
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2ODk0ODE3MSwtMjM0Mzg5NDAsLTIwOD
-I5NTMyNDAsODkzMTkwODI5LC0xOTY0MjU3NTE5LC0xNzIwMzM0
-OTU5LC0xMDU2NjcyMTkyLDE0MjA3OTg1NjEsODU3MzQ1MzQyLD
-M5OTM4NDM2LDE5NjY0MDI3NzYsMTg2Mzg4ODk5Nyw3NTIyMTAz
-NzUsLTI5OTY2MTI2OSwtMTUyMjM0MTI4NywtNDc0NDY3MTIxLD
-g1ODYyMDQ2NCw3ODcxMjcyNTEsLTE4NDc2OTYzNzcsLTE2OTMx
-MzgzNTFdfQ==
+eyJoaXN0b3J5IjpbLTY3NTI1NjgsLTIzNDM4OTQwLC0yMDgyOT
+UzMjQwLDg5MzE5MDgyOSwtMTk2NDI1NzUxOSwtMTcyMDMzNDk1
+OSwtMTA1NjY3MjE5MiwxNDIwNzk4NTYxLDg1NzM0NTM0MiwzOT
+kzODQzNiwxOTY2NDAyNzc2LDE4NjM4ODg5OTcsNzUyMjEwMzc1
+LC0yOTk2NjEyNjksLTE1MjIzNDEyODcsLTQ3NDQ2NzEyMSw4NT
+g2MjA0NjQsNzg3MTI3MjUxLC0xODQ3Njk2Mzc3LC0xNjkzMTM4
+MzUxXX0=
 -->
