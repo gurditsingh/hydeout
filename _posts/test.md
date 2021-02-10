@@ -28,10 +28,10 @@ There are three types of time stamps **Event time**, **Ingestion Time** and **Pr
 
 ## Scenario while working with Time
 
-
+**Clock Skew :**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwOTE4MDg4NywtMjM0Mzg5NDAsLTIwOD
+eyJoaXN0b3J5IjpbLTE1OTg3OTM3MywtMjM0Mzg5NDAsLTIwOD
 I5NTMyNDAsODkzMTkwODI5LC0xOTY0MjU3NTE5LC0xNzIwMzM0
 OTU5LC0xMDU2NjcyMTkyLDE0MjA3OTg1NjEsODU3MzQ1MzQyLD
 M5OTM4NDM2LDE5NjY0MDI3NzYsMTg2Mzg4ODk5Nyw3NTIyMTAz
