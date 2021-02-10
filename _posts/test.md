@@ -12,14 +12,14 @@ There are three types of time stamps **Event time**, **Ingestion Time** and **Pr
  - **Processing time :** Timestamp at which events processed. Processing time is time tracked by processing engine regarding when data was arrived for processing. In this abstraction of time, time passed is signified by the central clock maintained at the driver.
 
 ## Let's take an example to understand Time
-
+![Flow](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/time.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjAzMzQ5NTksLTEwNTY2NzIxOTIsMT
-QyMDc5ODU2MSw4NTczNDUzNDIsMzk5Mzg0MzYsMTk2NjQwMjc3
-NiwxODYzODg4OTk3LDc1MjIxMDM3NSwtMjk5NjYxMjY5LC0xNT
-IyMzQxMjg3LC00NzQ0NjcxMjEsODU4NjIwNDY0LDc4NzEyNzI1
-MSwtMTg0NzY5NjM3NywtMTY5MzEzODM1MSwxNjU2MTMyNjI4LD
-I0MTczODQ3Nyw2ODQyMDUzNzAsMTYwMDQwMzQzMSwtNzI3MDE1
-MDA3XX0=
+eyJoaXN0b3J5IjpbLTE5NjQyNTc1MTksLTE3MjAzMzQ5NTksLT
+EwNTY2NzIxOTIsMTQyMDc5ODU2MSw4NTczNDUzNDIsMzk5Mzg0
+MzYsMTk2NjQwMjc3NiwxODYzODg4OTk3LDc1MjIxMDM3NSwtMj
+k5NjYxMjY5LC0xNTIyMzQxMjg3LC00NzQ0NjcxMjEsODU4NjIw
+NDY0LDc4NzEyNzI1MSwtMTg0NzY5NjM3NywtMTY5MzEzODM1MS
+wxNjU2MTMyNjI4LDI0MTczODQ3Nyw2ODQyMDUzNzAsMTYwMDQw
+MzQzMV19
 -->
