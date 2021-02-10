@@ -14,13 +14,17 @@ There are three types of time stamps **Event time**, **Ingestion Time** and **Pr
    into the system. This time is in between of the event time and
    processing time.
 
-**Processing time :** Processing time is the time tracked using a clock run by the processing engine. In this abstraction of time, time passed is signified by the central clock maintained at the driver.
+**Processing time :** Processing time is time tracked by processing engine regarding when data was arrived for processing. In this abstraction of time, time passed is signified by the central clock maintained at the driver.
+
+## Let's take an example to understand Time
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMjIwNTYxLDg1NzM0NTM0MiwzOTkzOD
-QzNiwxOTY2NDAyNzc2LDE4NjM4ODg5OTcsNzUyMjEwMzc1LC0y
-OTk2NjEyNjksLTE1MjIzNDEyODcsLTQ3NDQ2NzEyMSw4NTg2Mj
-A0NjQsNzg3MTI3MjUxLC0xODQ3Njk2Mzc3LC0xNjkzMTM4MzUx
-LDE2NTYxMzI2MjgsMjQxNzM4NDc3LDY4NDIwNTM3MCwxNjAwND
-AzNDMxLC03MjcwMTUwMDcsLTk1OTEzOTI3OCw5ODU2MzU2NTRd
-fQ==
+eyJoaXN0b3J5IjpbMTQyMDc5ODU2MSw4NTczNDUzNDIsMzk5Mz
+g0MzYsMTk2NjQwMjc3NiwxODYzODg4OTk3LDc1MjIxMDM3NSwt
+Mjk5NjYxMjY5LC0xNTIyMzQxMjg3LC00NzQ0NjcxMjEsODU4Nj
+IwNDY0LDc4NzEyNzI1MSwtMTg0NzY5NjM3NywtMTY5MzEzODM1
+MSwxNjU2MTMyNjI4LDI0MTczODQ3Nyw2ODQyMDUzNzAsMTYwMD
+QwMzQzMSwtNzI3MDE1MDA3LC05NTkxMzkyNzgsOTg1NjM1NjU0
+XX0=
 -->
