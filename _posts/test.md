@@ -20,10 +20,12 @@ There are three types of time stamps **Event time**, **Ingestion Time** and **Pr
  
  - Next even though event has reached the source, it will be picked up by spark for possessing only when the job triggers. assume spark took five seconds to kick off the job. This is what is known as processing time.
  
- So you have 2 a.m. as the event time, one second past one as Thean dish in time and five seconds past one as the processing time.
+
+**> So you have 2 a.m. as the Event time, one second past 2 a.m. as
+> Ingestion Time and five seconds past 2 a.m. as the Processing time.**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU0ODU4NDE3LDg5MzE5MDgyOSwtMTk2ND
+eyJoaXN0b3J5IjpbODgzODE0NzI0LDg5MzE5MDgyOSwtMTk2ND
 I1NzUxOSwtMTcyMDMzNDk1OSwtMTA1NjY3MjE5MiwxNDIwNzk4
 NTYxLDg1NzM0NTM0MiwzOTkzODQzNiwxOTY2NDAyNzc2LDE4Nj
 M4ODg5OTcsNzUyMjEwMzc1LC0yOTk2NjEyNjksLTE1MjIzNDEy
