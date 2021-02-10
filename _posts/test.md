@@ -36,14 +36,15 @@ There are three types of time stamps **Event time**, **Ingestion Time** and **Pr
 	**How can this be possible ?**
 	
 	 - It may be clock's error because many time it not in sync.
-	 - 
+	 - sensor device maybe using a different time zone and not mentioned in the payload.
+	 -  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjE5MDkzNjksLTIzNDM4OTQwLC0yMD
-gyOTUzMjQwLDg5MzE5MDgyOSwtMTk2NDI1NzUxOSwtMTcyMDMz
-NDk1OSwtMTA1NjY3MjE5MiwxNDIwNzk4NTYxLDg1NzM0NTM0Mi
-wzOTkzODQzNiwxOTY2NDAyNzc2LDE4NjM4ODg5OTcsNzUyMjEw
-Mzc1LC0yOTk2NjEyNjksLTE1MjIzNDEyODcsLTQ3NDQ2NzEyMS
-w4NTg2MjA0NjQsNzg3MTI3MjUxLC0xODQ3Njk2Mzc3LC0xNjkz
-MTM4MzUxXX0=
+eyJoaXN0b3J5IjpbMTc4Nzk2MDExNiwtMjM0Mzg5NDAsLTIwOD
+I5NTMyNDAsODkzMTkwODI5LC0xOTY0MjU3NTE5LC0xNzIwMzM0
+OTU5LC0xMDU2NjcyMTkyLDE0MjA3OTg1NjEsODU3MzQ1MzQyLD
+M5OTM4NDM2LDE5NjY0MDI3NzYsMTg2Mzg4ODk5Nyw3NTIyMTAz
+NzUsLTI5OTY2MTI2OSwtMTUyMjM0MTI4NywtNDc0NDY3MTIxLD
+g1ODYyMDQ2NCw3ODcxMjcyNTEsLTE4NDc2OTYzNzcsLTE2OTMx
+MzgzNTFdfQ==
 -->
