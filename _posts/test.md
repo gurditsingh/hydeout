@@ -10,9 +10,9 @@ There are three types of time stamps **Event time**, **Ingestion Time** and **pr
    have a time embedded in them. This time signifies when a given event
    is generated at the source.
 
-**Ingestion Time :** 
+**Ingestion Time :** Ingestion time is a time captured at the ingestion of data. Ingestion time is the time when events ingested into the system. This time is in between of the event time and processing time.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ1OTc0NDY2OSwzOTkzODQzNiwxOTY2ND
+eyJoaXN0b3J5IjpbLTIwMTc2ODE3NCwzOTkzODQzNiwxOTY2ND
 AyNzc2LDE4NjM4ODg5OTcsNzUyMjEwMzc1LC0yOTk2NjEyNjks
 LTE1MjIzNDEyODcsLTQ3NDQ2NzEyMSw4NTg2MjA0NjQsNzg3MT
 I3MjUxLC0xODQ3Njk2Mzc3LC0xNjkzMTM4MzUxLDE2NTYxMzI2
