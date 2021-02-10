@@ -12,7 +12,7 @@ There are three types of time stamps **Event time**, **Ingestion Time** and **Pr
  - **Processing time :** Timestamp at which events processed. Processing time is time tracked by processing engine regarding when data was arrived for processing. In this abstraction of time, time passed is signified by the central clock maintained at the driver.
 
 ## Let's take an example to understand Time
-![Example](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/SStime.jpg?raw=true)
+![Example](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/d.jpg?raw=true)
 
  - Assume smart watch generating some events regarding number of steps, in the event it specifies unique ID, and Timestamp , let's say time is 2 a.m. So this timestamp at which the event actually happened is called the event or application time, and this timestamp is present in the payload itself.
  - So next  sends this event to the streaming source like Azure Event-Hubs assume that it took one second for the event to reach the source.
@@ -20,11 +20,11 @@ There are three types of time stamps **Event time**, **Ingestion Time** and **Pr
  - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODkzMTkwODI5LC0xOTY0MjU3NTE5LC0xNz
-IwMzM0OTU5LC0xMDU2NjcyMTkyLDE0MjA3OTg1NjEsODU3MzQ1
-MzQyLDM5OTM4NDM2LDE5NjY0MDI3NzYsMTg2Mzg4ODk5Nyw3NT
-IyMTAzNzUsLTI5OTY2MTI2OSwtMTUyMjM0MTI4NywtNDc0NDY3
-MTIxLDg1ODYyMDQ2NCw3ODcxMjcyNTEsLTE4NDc2OTYzNzcsLT
-E2OTMxMzgzNTEsMTY1NjEzMjYyOCwyNDE3Mzg0NzcsNjg0MjA1
-MzcwXX0=
+eyJoaXN0b3J5IjpbLTI4NzQ3MTU4Miw4OTMxOTA4MjksLTE5Nj
+QyNTc1MTksLTE3MjAzMzQ5NTksLTEwNTY2NzIxOTIsMTQyMDc5
+ODU2MSw4NTczNDUzNDIsMzk5Mzg0MzYsMTk2NjQwMjc3NiwxOD
+YzODg4OTk3LDc1MjIxMDM3NSwtMjk5NjYxMjY5LC0xNTIyMzQx
+Mjg3LC00NzQ0NjcxMjEsODU4NjIwNDY0LDc4NzEyNzI1MSwtMT
+g0NzY5NjM3NywtMTY5MzEzODM1MSwxNjU2MTMyNjI4LDI0MTcz
+ODQ3N119
 -->
