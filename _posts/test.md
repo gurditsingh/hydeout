@@ -15,12 +15,12 @@ There are three types of time stamps **Event time**, **Ingestion Time** and **Pr
 ![Example](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/SStime.jpg?raw=true)
 
  - Assume smart watch generating some events regarding number of steps, in the event it specifies unique ID, and Timestamp , let's say time is 2 a.m. So this timestamp at which the event actually happened is called the event or application time, and this timestamp is present in the payload itself.
- - 
+ - So next  sends this event to the streaming source like Azure Event-Hubs assume that it took one second for the event to reach the source.
  - 
  - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ5OTAyMTI4LC0xOTY0MjU3NTE5LC0xNz
+eyJoaXN0b3J5IjpbODkzMTkwODI5LC0xOTY0MjU3NTE5LC0xNz
 IwMzM0OTU5LC0xMDU2NjcyMTkyLDE0MjA3OTg1NjEsODU3MzQ1
 MzQyLDM5OTM4NDM2LDE5NjY0MDI3NzYsMTg2Mzg4ODk5Nyw3NT
 IyMTAzNzUsLTI5OTY2MTI2OSwtMTUyMjM0MTI4NywtNDc0NDY3
