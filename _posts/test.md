@@ -30,10 +30,11 @@ There are three types of time stamps **Event time**, **Ingestion Time** and **Pr
 
 **Clock Skew :**
 
- - suppose the sensor generates an event at 02:00:06 that means six seconds past one as the even time.
+ - Suppose the sensor generates an event at 02:00:06 that means six seconds past two as the even time.
+ - Next Event took one second for the event to reach the source, but the injection time is 02:00:01t one second past one.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjI4NzEyNDQsLTIzNDM4OTQwLC0yMD
+eyJoaXN0b3J5IjpbLTEwMDQ5NDAwODQsLTIzNDM4OTQwLC0yMD
 gyOTUzMjQwLDg5MzE5MDgyOSwtMTk2NDI1NzUxOSwtMTcyMDMz
 NDk1OSwtMTA1NjY3MjE5MiwxNDIwNzk4NTYxLDg1NzM0NTM0Mi
 wzOTkzODQzNiwxOTY2NDAyNzc2LDE4NjM4ODg5OTcsNzUyMjEw
