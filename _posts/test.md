@@ -14,17 +14,17 @@ There are three types of time stamps **Event time**, **Ingestion Time** and **Pr
 ## Let's take an example to understand Time
 ![Example](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/Streaming.jpg?raw=true)
 
- - Assume smart watch generating some events regarding number of steps, in the event it specifies unique ID, and Timestamp , let's say time is 2 a.m. So this timestamp at which the event actually happened is called the event or application time, and this timestamp is present in the payload itself.
- - So next  sends this event to the streaming source like Azure Event-Hubs assume that it took one second for the event to reach the source.
+ - Assume wireless sensor generating some events, in that event it specifies unique ID, and Timestamp , let's say time is 2 a.m. when the event is generated. So this timestamp at which the event actually happened is called the event or application time, and this timestamp is present in the payload itself.
+ - So next sends this event to the streaming source like Azure Event-Hubs assume that it took one second for the event to reach the source.
  - 
  - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjgwMTUyMjgsODkzMTkwODI5LC0xOT
-Y0MjU3NTE5LC0xNzIwMzM0OTU5LC0xMDU2NjcyMTkyLDE0MjA3
-OTg1NjEsODU3MzQ1MzQyLDM5OTM4NDM2LDE5NjY0MDI3NzYsMT
-g2Mzg4ODk5Nyw3NTIyMTAzNzUsLTI5OTY2MTI2OSwtMTUyMjM0
-MTI4NywtNDc0NDY3MTIxLDg1ODYyMDQ2NCw3ODcxMjcyNTEsLT
-E4NDc2OTYzNzcsLTE2OTMxMzgzNTEsMTY1NjEzMjYyOCwyNDE3
-Mzg0NzddfQ==
+eyJoaXN0b3J5IjpbLTc1MzA3ODE5OCw4OTMxOTA4MjksLTE5Nj
+QyNTc1MTksLTE3MjAzMzQ5NTksLTEwNTY2NzIxOTIsMTQyMDc5
+ODU2MSw4NTczNDUzNDIsMzk5Mzg0MzYsMTk2NjQwMjc3NiwxOD
+YzODg4OTk3LDc1MjIxMDM3NSwtMjk5NjYxMjY5LC0xNTIyMzQx
+Mjg3LC00NzQ0NjcxMjEsODU4NjIwNDY0LDc4NzEyNzI1MSwtMT
+g0NzY5NjM3NywtMTY5MzEzODM1MSwxNjU2MTMyNjI4LDI0MTcz
+ODQ3N119
 -->
