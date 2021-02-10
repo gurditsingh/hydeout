@@ -14,9 +14,10 @@ There are three types of time stamps **Event time**, **Ingestion Time** and **Pr
 ## Let's take an example to understand Time
 ![Example](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/SStime.jpg?raw=true)
 
+ - Assume smart watch generating some events regarding that, in the event it specifies unique right IDE, the local time off, pick up pick up location
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTA5OTQzNzUsLTE5NjQyNTc1MTksLT
+eyJoaXN0b3J5IjpbLTE2NzI2NTIwNTMsLTE5NjQyNTc1MTksLT
 E3MjAzMzQ5NTksLTEwNTY2NzIxOTIsMTQyMDc5ODU2MSw4NTcz
 NDUzNDIsMzk5Mzg0MzYsMTk2NjQwMjc3NiwxODYzODg4OTk3LD
 c1MjIxMDM3NSwtMjk5NjYxMjY5LC0xNTIyMzQxMjg3LC00NzQ0
