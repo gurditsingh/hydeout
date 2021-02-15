@@ -15,7 +15,7 @@ Let's say there are events arriving at the source and applied operations individ
 
 --------02:00--------02:05--------02:10--------02:15--------02:20-------->
 
-In code we use groupby method and specify five minutes window. We're using productSold time, this means here we are using event time and then apply the count operation.
+In code we use groupBy method and specify five minutes window. We're using productSold time, this means here we are using event time and then apply the count operation.
 ```scala
 prdouctDF
 	.groupBy(window($"productTime", "5 minute"))
@@ -23,11 +23,11 @@ prdouctDF
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyMTQ3NjEzNCw0NDk3NDI4LDc5OTczOT
-E3MiwtMjM0Mzg5NDAsLTIwODI5NTMyNDAsODkzMTkwODI5LC0x
-OTY0MjU3NTE5LC0xNzIwMzM0OTU5LC0xMDU2NjcyMTkyLDE0Mj
-A3OTg1NjEsODU3MzQ1MzQyLDM5OTM4NDM2LDE5NjY0MDI3NzYs
-MTg2Mzg4ODk5Nyw3NTIyMTAzNzUsLTI5OTY2MTI2OSwtMTUyMj
-M0MTI4NywtNDc0NDY3MTIxLDg1ODYyMDQ2NCw3ODcxMjcyNTFd
-fQ==
+eyJoaXN0b3J5IjpbNTUxMjQ2NjYsNDQ5NzQyOCw3OTk3MzkxNz
+IsLTIzNDM4OTQwLC0yMDgyOTUzMjQwLDg5MzE5MDgyOSwtMTk2
+NDI1NzUxOSwtMTcyMDMzNDk1OSwtMTA1NjY3MjE5MiwxNDIwNz
+k4NTYxLDg1NzM0NTM0MiwzOTkzODQzNiwxOTY2NDAyNzc2LDE4
+NjM4ODg5OTcsNzUyMjEwMzc1LC0yOTk2NjEyNjksLTE1MjIzND
+EyODcsLTQ3NDQ2NzEyMSw4NTg2MjA0NjQsNzg3MTI3MjUxXX0=
+
 -->
