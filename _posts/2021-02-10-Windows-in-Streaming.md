@@ -32,7 +32,7 @@ Let's say there are events arriving at the source and applied operations individ
 
 In code we use groupBy method and specify five minutes window. We're using productSold time, this means here we are using event time and then apply the count operation.
 ```scala
-prdouctDF
+productDF
 	.groupBy(window($"productTime", "5 minute"))
     .count()
 ```
@@ -50,7 +50,7 @@ prdouctDF
 
 	**sample code:**
 	```scala
-	prdouctDF
+	productDF
 		.groupBy(window($"productTime", "5 minutes"))
 	    .count()
 	```
@@ -78,7 +78,7 @@ prdouctDF
 
 	**sample code:**
 	```scala
-	prdouctDF
+	productDF
 		.groupBy(window($"productTime", "10 minutes" , "5 minutes"))
 	    .count()
 	```
