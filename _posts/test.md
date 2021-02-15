@@ -45,7 +45,7 @@ prdouctDF
 
 	 - Batch 1 have two events between 01:00 to 01:05 so the count is 2.
 	 - Batch 2 have three events one record belongs to 01:00 to 01:05 so the count updates to 3. next one event between 01:05 to 01:10. last event between 01:10 to 01:15.
-	 - Batch 3 have three events one e belongs to 01:10 to 01:15 so the count updates to 2. next two records between 01:15 to 01:20 so the count is 2.
+	 - Batch 3 have three events one event belongs to 01:10 to 01:15 so the count updates to 2. next two event between 01:15 to 01:20 so the count is 2.
 
 	> This is how tumbling window works, you have noticed that even if you change the micro batch interval or called trigger interval, it will still produce the same output.
 ----
@@ -71,14 +71,15 @@ prdouctDF
 
 	 
 
-	 - Batch 1 have two events
+	 - Batch 1 have two events between 01:00 to 01:10 so the count is 2.
+	 - Batch 2 have three events, one event belongs to 01:00 to 0:
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM3ODc5NTU3LC0xMTc1NTM2ODc5LDYyOT
-gwMjc3Myw2MjQ2MjAyMTAsMTE5OTMxNDU2MiwtMTI5NTQwMTQ2
-OCw0MzI3Njk3NDcsNTUxMjQ2NjYsNDQ5NzQyOCw3OTk3MzkxNz
-IsLTIzNDM4OTQwLC0yMDgyOTUzMjQwLDg5MzE5MDgyOSwtMTk2
-NDI1NzUxOSwtMTcyMDMzNDk1OSwtMTA1NjY3MjE5MiwxNDIwNz
-k4NTYxLDg1NzM0NTM0MiwzOTkzODQzNiwxOTY2NDAyNzc2XX0=
-
+eyJoaXN0b3J5IjpbLTE1NzY5MjI5NDEsLTExNzU1MzY4NzksNj
+I5ODAyNzczLDYyNDYyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAx
+NDY4LDQzMjc2OTc0Nyw1NTEyNDY2Niw0NDk3NDI4LDc5OTczOT
+E3MiwtMjM0Mzg5NDAsLTIwODI5NTMyNDAsODkzMTkwODI5LC0x
+OTY0MjU3NTE5LC0xNzIwMzM0OTU5LC0xMDU2NjcyMTkyLDE0Mj
+A3OTg1NjEsODU3MzQ1MzQyLDM5OTM4NDM2LDE5NjY0MDI3NzZd
+fQ==
 -->
