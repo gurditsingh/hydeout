@@ -45,12 +45,12 @@ prdouctDF
 
 	 - Batch 1 have two records between 01:00 to 01:05 so the count is 2.
 	 - Batch 2 have three records one record belongs to 01:00 to 01:05 so the count updates to 3. next one record between 01:05 to 01:10. last record between 01:10 to 01:15.
-	 - Batch 2 have three records one records belongs to 01:10 to 01:15 so the count updates to 2. next two records between 01:15 to 01:20 so the count is 2.
+	 - Batch 3 have three records one records belongs to 01:10 to 01:15 so the count updates to 2. next two records between 01:15 to 01:20 so the count is 2.
 
 > This is how tumbling window works, you have noticed that even if you change the micro batch interval or called trigger interval, it will still produce the same output.
 ----
 
-**Sliding window:**
+**Sliding window:** are aggregates over a period of time that are reported at a higher frequency than the aggregation period itself. As such, sliding windows refer to an aggregation with two time specifications: the window length and the reporting frequency.
 
 
  
@@ -58,11 +58,11 @@ prdouctDF
 	
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI5ODAyNzczLDYyNDYyMDIxMCwxMTk5Mz
-E0NTYyLC0xMjk1NDAxNDY4LDQzMjc2OTc0Nyw1NTEyNDY2Niw0
-NDk3NDI4LDc5OTczOTE3MiwtMjM0Mzg5NDAsLTIwODI5NTMyND
-AsODkzMTkwODI5LC0xOTY0MjU3NTE5LC0xNzIwMzM0OTU5LC0x
-MDU2NjcyMTkyLDE0MjA3OTg1NjEsODU3MzQ1MzQyLDM5OTM4ND
-M2LDE5NjY0MDI3NzYsMTg2Mzg4ODk5Nyw3NTIyMTAzNzVdfQ==
+eyJoaXN0b3J5IjpbMTgyMjEyMTgxNyw2Mjk4MDI3NzMsNjI0Nj
+IwMjEwLDExOTkzMTQ1NjIsLTEyOTU0MDE0NjgsNDMyNzY5NzQ3
+LDU1MTI0NjY2LDQ0OTc0MjgsNzk5NzM5MTcyLC0yMzQzODk0MC
+wtMjA4Mjk1MzI0MCw4OTMxOTA4MjksLTE5NjQyNTc1MTksLTE3
+MjAzMzQ5NTksLTEwNTY2NzIxOTIsMTQyMDc5ODU2MSw4NTczND
+UzNDIsMzk5Mzg0MzYsMTk2NjQwMjc3NiwxODYzODg4OTk3XX0=
 
 -->
