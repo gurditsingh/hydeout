@@ -29,14 +29,16 @@ prdouctDF
 ## There are different types of windows
 
  - **Tumbling windows** are a series of fixed or equal sized windows, non-overlapping and contiguous time intervals.
- 
+
+	Tumbling windows are the norm when we need to produce aggregates of our data over regular periods of time, with each period independent from previous periods.
+	
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzg0NzUwNDIsLTEyOTU0MDE0NjgsND
-MyNzY5NzQ3LDU1MTI0NjY2LDQ0OTc0MjgsNzk5NzM5MTcyLC0y
-MzQzODk0MCwtMjA4Mjk1MzI0MCw4OTMxOTA4MjksLTE5NjQyNT
-c1MTksLTE3MjAzMzQ5NTksLTEwNTY2NzIxOTIsMTQyMDc5ODU2
-MSw4NTczNDUzNDIsMzk5Mzg0MzYsMTk2NjQwMjc3NiwxODYzOD
-g4OTk3LDc1MjIxMDM3NSwtMjk5NjYxMjY5LC0xNTIyMzQxMjg3
-XX0=
+eyJoaXN0b3J5IjpbLTQ0NjM5MDIwNywtMTI5NTQwMTQ2OCw0Mz
+I3Njk3NDcsNTUxMjQ2NjYsNDQ5NzQyOCw3OTk3MzkxNzIsLTIz
+NDM4OTQwLC0yMDgyOTUzMjQwLDg5MzE5MDgyOSwtMTk2NDI1Nz
+UxOSwtMTcyMDMzNDk1OSwtMTA1NjY3MjE5MiwxNDIwNzk4NTYx
+LDg1NzM0NTM0MiwzOTkzODQzNiwxOTY2NDAyNzc2LDE4NjM4OD
+g5OTcsNzUyMjEwMzc1LC0yOTk2NjEyNjksLTE1MjIzNDEyODdd
+fQ==
 -->
