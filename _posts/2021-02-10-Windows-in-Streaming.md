@@ -63,7 +63,10 @@ productDF
 	 - Batch 2 have three events one record belongs to 01:00 to 01:05 so the count updates to 3. next one event between 01:05 to 01:10. last event between 01:10 to 01:15.
 	 - Batch 3 have three events one event belongs to 01:10 to 01:15 so the count updates to 2. next two event between 01:15 to 01:20 so the count is 2.
 
+
 	> This is how tumbling window works, you have noticed that even if you change the micro batch interval or called trigger interval, it will still produce the same output.
+	
+	
 ----
 
  2. **Sliding window:** are aggregates over a period of time that are reported at a higher frequency than the aggregation period itself. As
