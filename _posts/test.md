@@ -12,8 +12,9 @@ Let's say there are events arriving at the source and applied operations individ
 **Problem Statement :** Assume we are processing the e-commerce sites events. we want to find the total number of product sold, every five minutes.
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NDQ5MjY1Myw0NDk3NDI4LDc5OTczOT
+eyJoaXN0b3J5IjpbLTg4ODY5NDAxNSw0NDk3NDI4LDc5OTczOT
 E3MiwtMjM0Mzg5NDAsLTIwODI5NTMyNDAsODkzMTkwODI5LC0x
 OTY0MjU3NTE5LC0xNzIwMzM0OTU5LC0xMDU2NjcyMTkyLDE0Mj
 A3OTg1NjEsODU3MzQ1MzQyLDM5OTM4NDM2LDE5NjY0MDI3NzYs
