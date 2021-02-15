@@ -8,12 +8,15 @@ Let's say there are events arriving at the source and applied operations individ
  - We can use any timestamp to define this interval (like event time, ingestion time, processing time).
  - Once you have events in the window, you can apply operations (like count, sum, max, min etc.)
 
+### Let's understand this with an example.
+**Problem Statement :** suppose we we want to find the total number of KAB writes, starting every five minutes
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ5NzQyOCw3OTk3MzkxNzIsLTIzNDM4OT
-QwLC0yMDgyOTUzMjQwLDg5MzE5MDgyOSwtMTk2NDI1NzUxOSwt
-MTcyMDMzNDk1OSwtMTA1NjY3MjE5MiwxNDIwNzk4NTYxLDg1Nz
-M0NTM0MiwzOTkzODQzNiwxOTY2NDAyNzc2LDE4NjM4ODg5OTcs
-NzUyMjEwMzc1LC0yOTk2NjEyNjksLTE1MjIzNDEyODcsLTQ3ND
-Q2NzEyMSw4NTg2MjA0NjQsNzg3MTI3MjUxLC0xODQ3Njk2Mzc3
+eyJoaXN0b3J5IjpbLTE0MzM2MzM5NzcsNDQ5NzQyOCw3OTk3Mz
+kxNzIsLTIzNDM4OTQwLC0yMDgyOTUzMjQwLDg5MzE5MDgyOSwt
+MTk2NDI1NzUxOSwtMTcyMDMzNDk1OSwtMTA1NjY3MjE5MiwxND
+IwNzk4NTYxLDg1NzM0NTM0MiwzOTkzODQzNiwxOTY2NDAyNzc2
+LDE4NjM4ODg5OTcsNzUyMjEwMzc1LC0yOTk2NjEyNjksLTE1Mj
+IzNDEyODcsLTQ3NDQ2NzEyMSw4NTg2MjA0NjQsNzg3MTI3MjUx
 XX0=
 -->
