@@ -29,13 +29,14 @@ prdouctDF
 ## There are different types of windows
 
  - **Tumbling windows** are a series of fixed or equal sized windows, non-overlapping and contiguous time intervals.
+ - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTU0MDE0NjgsNDMyNzY5NzQ3LDU1MT
-I0NjY2LDQ0OTc0MjgsNzk5NzM5MTcyLC0yMzQzODk0MCwtMjA4
-Mjk1MzI0MCw4OTMxOTA4MjksLTE5NjQyNTc1MTksLTE3MjAzMz
-Q5NTksLTEwNTY2NzIxOTIsMTQyMDc5ODU2MSw4NTczNDUzNDIs
-Mzk5Mzg0MzYsMTk2NjQwMjc3NiwxODYzODg4OTk3LDc1MjIxMD
-M3NSwtMjk5NjYxMjY5LC0xNTIyMzQxMjg3LC00NzQ0NjcxMjFd
+eyJoaXN0b3J5IjpbMTM0MTE2MjA5MSwtMTI5NTQwMTQ2OCw0Mz
+I3Njk3NDcsNTUxMjQ2NjYsNDQ5NzQyOCw3OTk3MzkxNzIsLTIz
+NDM4OTQwLC0yMDgyOTUzMjQwLDg5MzE5MDgyOSwtMTk2NDI1Nz
+UxOSwtMTcyMDMzNDk1OSwtMTA1NjY3MjE5MiwxNDIwNzk4NTYx
+LDg1NzM0NTM0MiwzOTkzODQzNiwxOTY2NDAyNzc2LDE4NjM4OD
+g5OTcsNzUyMjEwMzc1LC0yOTk2NjEyNjksLTE1MjIzNDEyODdd
 fQ==
 -->
