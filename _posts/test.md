@@ -9,14 +9,14 @@ Let's say there are events arriving at the source and applied operations individ
  - Once you have events in the window, you can apply operations (like count, sum, max, min etc.)
 
 ### Let's understand this with an example.
-**Problem Statement :** suppose we we want to find the total number of KAB writes, starting every five minutes
+**Problem Statement :** suppose we are processing the e-commerce sites events. we want to find the total number of KAB writes, starting every five minutes
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzM2MzM5NzcsNDQ5NzQyOCw3OTk3Mz
-kxNzIsLTIzNDM4OTQwLC0yMDgyOTUzMjQwLDg5MzE5MDgyOSwt
-MTk2NDI1NzUxOSwtMTcyMDMzNDk1OSwtMTA1NjY3MjE5MiwxND
-IwNzk4NTYxLDg1NzM0NTM0MiwzOTkzODQzNiwxOTY2NDAyNzc2
-LDE4NjM4ODg5OTcsNzUyMjEwMzc1LC0yOTk2NjEyNjksLTE1Mj
-IzNDEyODcsLTQ3NDQ2NzEyMSw4NTg2MjA0NjQsNzg3MTI3MjUx
-XX0=
+eyJoaXN0b3J5IjpbLTQzNzU5MjU4OSw0NDk3NDI4LDc5OTczOT
+E3MiwtMjM0Mzg5NDAsLTIwODI5NTMyNDAsODkzMTkwODI5LC0x
+OTY0MjU3NTE5LC0xNzIwMzM0OTU5LC0xMDU2NjcyMTkyLDE0Mj
+A3OTg1NjEsODU3MzQ1MzQyLDM5OTM4NDM2LDE5NjY0MDI3NzYs
+MTg2Mzg4ODk5Nyw3NTIyMTAzNzUsLTI5OTY2MTI2OSwtMTUyMj
+M0MTI4NywtNDc0NDY3MTIxLDg1ODYyMDQ2NCw3ODcxMjcyNTFd
+fQ==
 -->
