@@ -31,10 +31,19 @@ prdouctDF
  - **Tumbling windows** are a series of fixed or equal sized windows, non-overlapping and contiguous time intervals.
 
 	Tumbling windows are the norm when we need to produce aggregates of our data over regular periods of time, with each period independent from previous periods.
+
+	**sample code:**
+	```scala
+	prdouctDF
+		.groupBy(window($"productTime", "5 minute"))
+	    .count()
+	```
+	----
+	
 	
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0NjM5MDIwNywtMTI5NTQwMTQ2OCw0Mz
+eyJoaXN0b3J5IjpbMTE5OTMxNDU2MiwtMTI5NTQwMTQ2OCw0Mz
 I3Njk3NDcsNTUxMjQ2NjYsNDQ5NzQyOCw3OTk3MzkxNzIsLTIz
 NDM4OTQwLC0yMDgyOTUzMjQwLDg5MzE5MDgyOSwtMTk2NDI1Nz
 UxOSwtMTcyMDMzNDk1OSwtMTA1NjY3MjE5MiwxNDIwNzk4NTYx
