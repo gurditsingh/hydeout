@@ -35,7 +35,7 @@ prdouctDF
 	**sample code:**
 	```scala
 	prdouctDF
-		.groupBy(window($"productTime", "5 minute"))
+		.groupBy(window($"productTime", "5 minutes"))
 	    .count()
 	```
 	----
@@ -64,7 +64,7 @@ prdouctDF
 	**sample code:**
 	```scala
 	prdouctDF
-		.groupBy(window($"productTime", "5 minute"))
+		.groupBy(window($"productTime", "10 minutes" , "5 minutes"))
 	    .count()
 	```
 	----
@@ -75,7 +75,7 @@ prdouctDF
 	
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NDM0NDI2MSw2Mjk4MDI3NzMsNjI0Nj
+eyJoaXN0b3J5IjpbMTgwOTkwMDA0Myw2Mjk4MDI3NzMsNjI0Nj
 IwMjEwLDExOTkzMTQ1NjIsLTEyOTU0MDE0NjgsNDMyNzY5NzQ3
 LDU1MTI0NjY2LDQ0OTc0MjgsNzk5NzM5MTcyLC0yMzQzODk0MC
 wtMjA4Mjk1MzI0MCw4OTMxOTA4MjksLTE5NjQyNTc1MTksLTE3
