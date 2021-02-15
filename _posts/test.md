@@ -41,7 +41,7 @@ prdouctDF
 	----
 	**Basic Example:**
 	
-	![Lambda Architecture](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/TumblingWindows.jpg?raw=true)
+	![Tumbling Window](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/TumblingWindows.jpg?raw=true)
 
 	 - Batch 1 have two records between 01:00 to 01:05 so the count is 2.
 	 - Batch 2 have three records one record belongs to 01:00 to 01:05 so the count updates to 3. next one record between 01:05 to 01:10. last record between 01:10 to 01:15.
@@ -67,18 +67,18 @@ prdouctDF
 	    .count()
 	```
 	----
-
+	![Tumbling Window](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/slidingWindow.jpg?raw=true)
 
  
 		
 	
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzU1MzY4NzksNjI5ODAyNzczLDYyND
-YyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAxNDY4LDQzMjc2OTc0
-Nyw1NTEyNDY2Niw0NDk3NDI4LDc5OTczOTE3MiwtMjM0Mzg5ND
-AsLTIwODI5NTMyNDAsODkzMTkwODI5LC0xOTY0MjU3NTE5LC0x
-NzIwMzM0OTU5LC0xMDU2NjcyMTkyLDE0MjA3OTg1NjEsODU3Mz
-Q1MzQyLDM5OTM4NDM2LDE5NjY0MDI3NzYsMTg2Mzg4ODk5N119
-
+eyJoaXN0b3J5IjpbLTExNDU0MDQwOTQsLTExNzU1MzY4NzksNj
+I5ODAyNzczLDYyNDYyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAx
+NDY4LDQzMjc2OTc0Nyw1NTEyNDY2Niw0NDk3NDI4LDc5OTczOT
+E3MiwtMjM0Mzg5NDAsLTIwODI5NTMyNDAsODkzMTkwODI5LC0x
+OTY0MjU3NTE5LC0xNzIwMzM0OTU5LC0xMDU2NjcyMTkyLDE0Mj
+A3OTg1NjEsODU3MzQ1MzQyLDM5OTM4NDM2LDE5NjY0MDI3NzZd
+fQ==
 -->
