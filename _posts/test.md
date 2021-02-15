@@ -21,13 +21,20 @@ prdouctDF
 	.groupBy(window($"productTime", "5 minute"))
     .count()
 ```
+----
+**Remember**, 
+
+> same windows will be generated irrespective of when the processing
+> happens. Whether you have trigger interval or five seconds 10 seconds.
+> One minute, 10 minutes. It does not matter. It will still generate the
+> same windows. Since we're grouping based on even time Makes sense.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUxMjQ2NjYsNDQ5NzQyOCw3OTk3MzkxNz
-IsLTIzNDM4OTQwLC0yMDgyOTUzMjQwLDg5MzE5MDgyOSwtMTk2
-NDI1NzUxOSwtMTcyMDMzNDk1OSwtMTA1NjY3MjE5MiwxNDIwNz
-k4NTYxLDg1NzM0NTM0MiwzOTkzODQzNiwxOTY2NDAyNzc2LDE4
-NjM4ODg5OTcsNzUyMjEwMzc1LC0yOTk2NjEyNjksLTE1MjIzND
-EyODcsLTQ3NDQ2NzEyMSw4NTg2MjA0NjQsNzg3MTI3MjUxXX0=
+eyJoaXN0b3J5IjpbMTQ3MDUyOTA5MSw1NTEyNDY2Niw0NDk3ND
+I4LDc5OTczOTE3MiwtMjM0Mzg5NDAsLTIwODI5NTMyNDAsODkz
+MTkwODI5LC0xOTY0MjU3NTE5LC0xNzIwMzM0OTU5LC0xMDU2Nj
+cyMTkyLDE0MjA3OTg1NjEsODU3MzQ1MzQyLDM5OTM4NDM2LDE5
+NjY0MDI3NzYsMTg2Mzg4ODk5Nyw3NTIyMTAzNzUsLTI5OTY2MT
+I2OSwtMTUyMjM0MTI4NywtNDc0NDY3MTIxLDg1ODYyMDQ2NF19
 
 -->
