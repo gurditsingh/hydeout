@@ -16,10 +16,14 @@ Let's say there are events arriving at the source and applied operations individ
 --------02:00--------02:05--------02:10--------02:15--------02:20-------->
 
 In code we use groupby method and specify five minutes window. We're using productSold time, this means here we are using event time and then apply the count operation.
-
+```scala
+prdouctDF
+	.groupBy(window($"productTime", "5 minute"))
+    .count()
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzMTkyNzAzMiw0NDk3NDI4LDc5OTczOT
+eyJoaXN0b3J5IjpbLTIyMTQ3NjEzNCw0NDk3NDI4LDc5OTczOT
 E3MiwtMjM0Mzg5NDAsLTIwODI5NTMyNDAsODkzMTkwODI5LC0x
 OTY0MjU3NTE5LC0xNzIwMzM0OTU5LC0xMDU2NjcyMTkyLDE0Mj
 A3OTg1NjEsODU3MzQ1MzQyLDM5OTM4NDM2LDE5NjY0MDI3NzYs
