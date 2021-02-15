@@ -22,16 +22,17 @@ prdouctDF
     .count()
 ```
 ----
-**Remember**, 
+**Remember**
 
-> same windows will be generated irrespective of when the processing happens. Whether you have trigger interval or 5seconds, 10 seconds. One minute, 10 minutes. It does not matter. It will still generate the same windows. Since we're grouping based on even time Makes sense.
+> same windows will be generated irrespective of when the processing happens. Whether you have trigger interval or 5 seconds, 10 seconds, 5 minute or 10 minutes. It does not matter. It will still generate the same windows. Since we're grouping based on event time.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg3OTIzOTE0LDU1MTI0NjY2LDQ0OTc0Mj
-gsNzk5NzM5MTcyLC0yMzQzODk0MCwtMjA4Mjk1MzI0MCw4OTMx
-OTA4MjksLTE5NjQyNTc1MTksLTE3MjAzMzQ5NTksLTEwNTY2Nz
-IxOTIsMTQyMDc5ODU2MSw4NTczNDUzNDIsMzk5Mzg0MzYsMTk2
-NjQwMjc3NiwxODYzODg4OTk3LDc1MjIxMDM3NSwtMjk5NjYxMj
-Y5LC0xNTIyMzQxMjg3LC00NzQ0NjcxMjEsODU4NjIwNDY0XX0=
+eyJoaXN0b3J5IjpbMTMxNTUxODA0MSw1NTEyNDY2Niw0NDk3ND
+I4LDc5OTczOTE3MiwtMjM0Mzg5NDAsLTIwODI5NTMyNDAsODkz
+MTkwODI5LC0xOTY0MjU3NTE5LC0xNzIwMzM0OTU5LC0xMDU2Nj
+cyMTkyLDE0MjA3OTg1NjEsODU3MzQ1MzQyLDM5OTM4NDM2LDE5
+NjY0MDI3NzYsMTg2Mzg4ODk5Nyw3NTIyMTAzNzUsLTI5OTY2MT
+I2OSwtMTUyMjM0MTI4NywtNDc0NDY3MTIxLDg1ODYyMDQ2NF19
 
 -->
