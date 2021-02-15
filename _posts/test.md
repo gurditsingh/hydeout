@@ -42,7 +42,8 @@ prdouctDF
 	**Basic Example:**
 	
 
- - Batch 1 have two records 
+ - Batch 1 have two records between 01:00 to 01:05.
+ - Batch 2 have three records 
 
 	 
 	![Lambda Architecture](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/TumblingWindows.jpg?raw=true) 
@@ -50,7 +51,7 @@ prdouctDF
 	
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODgxNzM4NzY4LDYyNDYyMDIxMCwxMTk5Mz
+eyJoaXN0b3J5IjpbNjQxNDk5NjkzLDYyNDYyMDIxMCwxMTk5Mz
 E0NTYyLC0xMjk1NDAxNDY4LDQzMjc2OTc0Nyw1NTEyNDY2Niw0
 NDk3NDI4LDc5OTczOTE3MiwtMjM0Mzg5NDAsLTIwODI5NTMyND
 AsODkzMTkwODI5LC0xOTY0MjU3NTE5LC0xNzIwMzM0OTU5LC0x
