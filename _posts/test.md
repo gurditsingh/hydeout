@@ -39,20 +39,22 @@ prdouctDF
 	    .count()
 	```
 	----
-Basic Example:
-
-
- 
-![Lambda Architecture](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/TumblingWindows.jpg?raw=true) 
+	**Basic Example:**
 	
+
+ - Batch 1 have two records 
+
+	 
+	![Lambda Architecture](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/TumblingWindows.jpg?raw=true) 
+		
 	
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI0NjIwMjEwLDExOTkzMTQ1NjIsLTEyOT
-U0MDE0NjgsNDMyNzY5NzQ3LDU1MTI0NjY2LDQ0OTc0MjgsNzk5
-NzM5MTcyLC0yMzQzODk0MCwtMjA4Mjk1MzI0MCw4OTMxOTA4Mj
-ksLTE5NjQyNTc1MTksLTE3MjAzMzQ5NTksLTEwNTY2NzIxOTIs
-MTQyMDc5ODU2MSw4NTczNDUzNDIsMzk5Mzg0MzYsMTk2NjQwMj
-c3NiwxODYzODg4OTk3LDc1MjIxMDM3NSwtMjk5NjYxMjY5XX0=
+eyJoaXN0b3J5IjpbODgxNzM4NzY4LDYyNDYyMDIxMCwxMTk5Mz
+E0NTYyLC0xMjk1NDAxNDY4LDQzMjc2OTc0Nyw1NTEyNDY2Niw0
+NDk3NDI4LDc5OTczOTE3MiwtMjM0Mzg5NDAsLTIwODI5NTMyND
+AsODkzMTkwODI5LC0xOTY0MjU3NTE5LC0xNzIwMzM0OTU5LC0x
+MDU2NjcyMTkyLDE0MjA3OTg1NjEsODU3MzQ1MzQyLDM5OTM4ND
+M2LDE5NjY0MDI3NzYsMTg2Mzg4ODk5Nyw3NTIyMTAzNzVdfQ==
 
 -->
