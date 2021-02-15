@@ -7,13 +7,14 @@ Let's say there are events arriving at the source and applied operations individ
  - The number of events may differ in a window.
  - We can use any timestamp to define this interval (like event time, ingestion time, processing time).
  - Once you have events in the window, you can apply operations (like count, sum, max, min etc.)
+ - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ5NzQyOCw3OTk3MzkxNzIsLTIzNDM4OT
-QwLC0yMDgyOTUzMjQwLDg5MzE5MDgyOSwtMTk2NDI1NzUxOSwt
-MTcyMDMzNDk1OSwtMTA1NjY3MjE5MiwxNDIwNzk4NTYxLDg1Nz
-M0NTM0MiwzOTkzODQzNiwxOTY2NDAyNzc2LDE4NjM4ODg5OTcs
-NzUyMjEwMzc1LC0yOTk2NjEyNjksLTE1MjIzNDEyODcsLTQ3ND
-Q2NzEyMSw4NTg2MjA0NjQsNzg3MTI3MjUxLC0xODQ3Njk2Mzc3
-XX0=
+eyJoaXN0b3J5IjpbNTU3ODY5NjU5LDQ0OTc0MjgsNzk5NzM5MT
+cyLC0yMzQzODk0MCwtMjA4Mjk1MzI0MCw4OTMxOTA4MjksLTE5
+NjQyNTc1MTksLTE3MjAzMzQ5NTksLTEwNTY2NzIxOTIsMTQyMD
+c5ODU2MSw4NTczNDUzNDIsMzk5Mzg0MzYsMTk2NjQwMjc3Niwx
+ODYzODg4OTk3LDc1MjIxMDM3NSwtMjk5NjYxMjY5LC0xNTIyMz
+QxMjg3LC00NzQ0NjcxMjEsODU4NjIwNDY0LDc4NzEyNzI1MV19
+
 -->
