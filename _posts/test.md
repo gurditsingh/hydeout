@@ -72,10 +72,11 @@ prdouctDF
 	 
 
 	 - Batch 1 have two events between 01:00 to 01:10 so the count is 2.
-	 - Batch 2 have three events, one event belongs to 01:00 to 01:10 and update the count to 4. next sliding window moves 5 mins ahead 01:05 to 01:15 and the count is 2. last event 01:10 to 01:20 and count is 1
+	 - Batch 2 have three events, one event belongs to 01:00 to 01:10 and update the count to 4. next sliding window moves 5 mins ahead 01:05 to 01:15 and the count is 2. last event 01:10 to 01:20 and count is 1.
+	 - Batch 3 have three events, one event belongs to 01:05 to 01:15 and update the count to 3 same for 01:10 to 01:20 update the count to 4. last event 01:15 to 01 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjAyMTQ4ODgsLTExNzU1MzY4NzksNj
+eyJoaXN0b3J5IjpbLTE2MTI0MzYyODQsLTExNzU1MzY4NzksNj
 I5ODAyNzczLDYyNDYyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAx
 NDY4LDQzMjc2OTc0Nyw1NTEyNDY2Niw0NDk3NDI4LDc5OTczOT
 E3MiwtMjM0Mzg5NDAsLTIwODI5NTMyNDAsODkzMTkwODI5LC0x
