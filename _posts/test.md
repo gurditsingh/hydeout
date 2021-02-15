@@ -28,8 +28,8 @@ prdouctDF
 
 ## There are different types of windows
 
- - **Tumbling window** 
- are a series of fixed or equal sized windows, non-overlapping and contiguous time intervals.
+
+ 1. **Tumbling window** are a series of fixed or equal sized windows, non-overlapping and contiguous time intervals.
 
 	Tumbling windows are the norm when we need to produce aggregates of our data over regular periods of time, with each period independent from previous periods.
 
@@ -51,7 +51,7 @@ prdouctDF
 	> This is how tumbling window works, you have noticed that even if you change the micro batch interval or called trigger interval, it will still produce the same output.
 ----
 
- - **Sliding window:** are aggregates over a period of time that are reported at a higher frequency than the aggregation period itself. As
+ 2. **Sliding window:** are aggregates over a period of time that are reported at a higher frequency than the aggregation period itself. As
    such, sliding windows refer to an aggregation with two time
    specifications: the window length and the reporting frequency.
 
@@ -78,14 +78,14 @@ prdouctDF
 
 	> If you change the micro batch interval, it will still produce these same output.
 
- 
+ ----
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NjIwNDQ2NCwtMTE3NTUzNjg3OSw2Mj
-k4MDI3NzMsNjI0NjIwMjEwLDExOTkzMTQ1NjIsLTEyOTU0MDE0
-NjgsNDMyNzY5NzQ3LDU1MTI0NjY2LDQ0OTc0MjgsNzk5NzM5MT
-cyLC0yMzQzODk0MCwtMjA4Mjk1MzI0MCw4OTMxOTA4MjksLTE5
-NjQyNTc1MTksLTE3MjAzMzQ5NTksLTEwNTY2NzIxOTIsMTQyMD
-c5ODU2MSw4NTczNDUzNDIsMzk5Mzg0MzYsMTk2NjQwMjc3Nl19
+eyJoaXN0b3J5IjpbNDc2NDM1MDQ3LC0xMTc1NTM2ODc5LDYyOT
+gwMjc3Myw2MjQ2MjAyMTAsMTE5OTMxNDU2MiwtMTI5NTQwMTQ2
+OCw0MzI3Njk3NDcsNTUxMjQ2NjYsNDQ5NzQyOCw3OTk3MzkxNz
+IsLTIzNDM4OTQwLC0yMDgyOTUzMjQwLDg5MzE5MDgyOSwtMTk2
+NDI1NzUxOSwtMTcyMDMzNDk1OSwtMTA1NjY3MjE5MiwxNDIwNz
+k4NTYxLDg1NzM0NTM0MiwzOTkzODQzNiwxOTY2NDAyNzc2XX0=
 
 -->
