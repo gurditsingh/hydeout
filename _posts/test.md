@@ -39,15 +39,17 @@ prdouctDF
 	    .count()
 	```
 	----
+
+![Lambda Architecture](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/lambda.png?raw=true) 
 	
 	
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE5OTMxNDU2MiwtMTI5NTQwMTQ2OCw0Mz
-I3Njk3NDcsNTUxMjQ2NjYsNDQ5NzQyOCw3OTk3MzkxNzIsLTIz
-NDM4OTQwLC0yMDgyOTUzMjQwLDg5MzE5MDgyOSwtMTk2NDI1Nz
-UxOSwtMTcyMDMzNDk1OSwtMTA1NjY3MjE5MiwxNDIwNzk4NTYx
-LDg1NzM0NTM0MiwzOTkzODQzNiwxOTY2NDAyNzc2LDE4NjM4OD
-g5OTcsNzUyMjEwMzc1LC0yOTk2NjEyNjksLTE1MjIzNDEyODdd
+eyJoaXN0b3J5IjpbLTE4NTgwMTQyODgsMTE5OTMxNDU2MiwtMT
+I5NTQwMTQ2OCw0MzI3Njk3NDcsNTUxMjQ2NjYsNDQ5NzQyOCw3
+OTk3MzkxNzIsLTIzNDM4OTQwLC0yMDgyOTUzMjQwLDg5MzE5MD
+gyOSwtMTk2NDI1NzUxOSwtMTcyMDMzNDk1OSwtMTA1NjY3MjE5
+MiwxNDIwNzk4NTYxLDg1NzM0NTM0MiwzOTkzODQzNiwxOTY2ND
+AyNzc2LDE4NjM4ODg5OTcsNzUyMjEwMzc1LC0yOTk2NjEyNjld
 fQ==
 -->
