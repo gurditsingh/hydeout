@@ -11,11 +11,13 @@ Let's say there are events arriving at the source and applied operations individ
 ### Let's understand this with an example.
 **Problem Statement :** Assume we are processing the e-commerce sites events. we want to find the total number of product sold, every five minutes.
 
-**Solution:** We need to group the rides by a five minute window and then apply the count as our aggregation operation
+**Solution:** We need to group the events by a five minute window and then apply the count as our aggregation operation.
 --------02:00--------02:05--------02:10--------02:15--------02:20-------->
 
+Let's use goodbye method and specify five minutes window. We're using pickup time since we want to find the rights. Please don't when they started, this means here we are using even timestamp and then apply the count operation 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5MTQ4MzU0Myw0NDk3NDI4LDc5OTczOT
+eyJoaXN0b3J5IjpbLTU4Nzg3NTQzMyw0NDk3NDI4LDc5OTczOT
 E3MiwtMjM0Mzg5NDAsLTIwODI5NTMyNDAsODkzMTkwODI5LC0x
 OTY0MjU3NTE5LC0xNzIwMzM0OTU5LC0xMDU2NjcyMTkyLDE0Mj
 A3OTg1NjEsODU3MzQ1MzQyLDM5OTM4NDM2LDE5NjY0MDI3NzYs
