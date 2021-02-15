@@ -39,17 +39,20 @@ prdouctDF
 	    .count()
 	```
 	----
+Basic Example:
 
-![Lambda Architecture](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/lambda.png?raw=true) 
+
+ 
+![Lambda Architecture](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/TumblingWindows.jpg?raw=true) 
 	
 	
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTgwMTQyODgsMTE5OTMxNDU2MiwtMT
-I5NTQwMTQ2OCw0MzI3Njk3NDcsNTUxMjQ2NjYsNDQ5NzQyOCw3
-OTk3MzkxNzIsLTIzNDM4OTQwLC0yMDgyOTUzMjQwLDg5MzE5MD
-gyOSwtMTk2NDI1NzUxOSwtMTcyMDMzNDk1OSwtMTA1NjY3MjE5
-MiwxNDIwNzk4NTYxLDg1NzM0NTM0MiwzOTkzODQzNiwxOTY2ND
-AyNzc2LDE4NjM4ODg5OTcsNzUyMjEwMzc1LC0yOTk2NjEyNjld
-fQ==
+eyJoaXN0b3J5IjpbNjI0NjIwMjEwLDExOTkzMTQ1NjIsLTEyOT
+U0MDE0NjgsNDMyNzY5NzQ3LDU1MTI0NjY2LDQ0OTc0MjgsNzk5
+NzM5MTcyLC0yMzQzODk0MCwtMjA4Mjk1MzI0MCw4OTMxOTA4Mj
+ksLTE5NjQyNTc1MTksLTE3MjAzMzQ5NTksLTEwNTY2NzIxOTIs
+MTQyMDc5ODU2MSw4NTczNDUzNDIsMzk5Mzg0MzYsMTk2NjQwMj
+c3NiwxODYzODg4OTk3LDc1MjIxMDM3NSwtMjk5NjYxMjY5XX0=
+
 -->
