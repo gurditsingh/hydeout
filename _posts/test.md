@@ -4,13 +4,15 @@ Let's say there are events arriving at the source and applied operations individ
 > where **windows** comes in picture
 
  - It is a subset off events based on a time interval, so over a period of time you will have multiple windows.
+ - The number of events may differ in a window.
+ - you can use any time stamp to define this interval
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzODMyNDEzMCw3OTk3MzkxNzIsLTIzND
-M4OTQwLC0yMDgyOTUzMjQwLDg5MzE5MDgyOSwtMTk2NDI1NzUx
-OSwtMTcyMDMzNDk1OSwtMTA1NjY3MjE5MiwxNDIwNzk4NTYxLD
-g1NzM0NTM0MiwzOTkzODQzNiwxOTY2NDAyNzc2LDE4NjM4ODg5
-OTcsNzUyMjEwMzc1LC0yOTk2NjEyNjksLTE1MjIzNDEyODcsLT
-Q3NDQ2NzEyMSw4NTg2MjA0NjQsNzg3MTI3MjUxLC0xODQ3Njk2
-Mzc3XX0=
+eyJoaXN0b3J5IjpbLTIwNjQxMDIxNDYsNzk5NzM5MTcyLC0yMz
+QzODk0MCwtMjA4Mjk1MzI0MCw4OTMxOTA4MjksLTE5NjQyNTc1
+MTksLTE3MjAzMzQ5NTksLTEwNTY2NzIxOTIsMTQyMDc5ODU2MS
+w4NTczNDUzNDIsMzk5Mzg0MzYsMTk2NjQwMjc3NiwxODYzODg4
+OTk3LDc1MjIxMDM3NSwtMjk5NjYxMjY5LC0xNTIyMzQxMjg3LC
+00NzQ0NjcxMjEsODU4NjIwNDY0LDc4NzEyNzI1MSwtMTg0NzY5
+NjM3N119
 -->
