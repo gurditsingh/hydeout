@@ -50,7 +50,11 @@ prdouctDF
 > This is how tumbling window works, you have noticed that even if you change the micro batch interval or called trigger interval, it will still produce the same output.
 ----
 
-**Sliding window:** are aggregates over a period of time that are reported at a higher frequency than the aggregation period itself. As such, sliding windows refer to an aggregation with two time specifications: the window length and the reporting frequency.
+ - **Sliding window:** are aggregates over a period of time that are reported at a higher frequency than the aggregation period itself. As
+   such, sliding windows refer to an aggregation with two time
+   specifications: the window length and the reporting frequency.
+
+	Sliding windows are also fixed and equal sides windows assume that you have a window size off 10 minutes, so the first window is from 1 to 1 10. Great, but along with the window size you also define is sliding interval hair. Let's see, it is five minutes. This means even though window sizes, 10 minutes moves or slides by only five minutes, so the next window is from one of 5 to 1 15 makes sense. This also means you now have overlapping windows and because of this one event may belong to multiple windows.
 
 
  
@@ -58,11 +62,11 @@ prdouctDF
 	
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyMjEyMTgxNyw2Mjk4MDI3NzMsNjI0Nj
-IwMjEwLDExOTkzMTQ1NjIsLTEyOTU0MDE0NjgsNDMyNzY5NzQ3
-LDU1MTI0NjY2LDQ0OTc0MjgsNzk5NzM5MTcyLC0yMzQzODk0MC
-wtMjA4Mjk1MzI0MCw4OTMxOTA4MjksLTE5NjQyNTc1MTksLTE3
-MjAzMzQ5NTksLTEwNTY2NzIxOTIsMTQyMDc5ODU2MSw4NTczND
-UzNDIsMzk5Mzg0MzYsMTk2NjQwMjc3NiwxODYzODg4OTk3XX0=
+eyJoaXN0b3J5IjpbLTE4NDAzMzA3MzQsNjI5ODAyNzczLDYyND
+YyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAxNDY4LDQzMjc2OTc0
+Nyw1NTEyNDY2Niw0NDk3NDI4LDc5OTczOTE3MiwtMjM0Mzg5ND
+AsLTIwODI5NTMyNDAsODkzMTkwODI5LC0xOTY0MjU3NTE5LC0x
+NzIwMzM0OTU5LC0xMDU2NjcyMTkyLDE0MjA3OTg1NjEsODU3Mz
+Q1MzQyLDM5OTM4NDM2LDE5NjY0MDI3NzYsMTg2Mzg4ODk5N119
 
 -->
