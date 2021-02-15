@@ -72,14 +72,15 @@ prdouctDF
 	 
 
 	 - Batch 1 have two events between 01:00 to 01:10 so the count is 2.
-	 - Batch 2 have three events, one event belongs to 01:00 to 01:10
+	 - Batch 2 have three events, one event belongs to 01:00 to 01:10 and update the count to 4. next sliding window moves 5 mins ahead 01:05 to 01:15 and the count is 2. last event 01:10 to 01:20 and count is 1.
+	 - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyMDI4MDUsLTExNzU1MzY4NzksNjI5OD
-AyNzczLDYyNDYyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAxNDY4
-LDQzMjc2OTc0Nyw1NTEyNDY2Niw0NDk3NDI4LDc5OTczOTE3Mi
-wtMjM0Mzg5NDAsLTIwODI5NTMyNDAsODkzMTkwODI5LC0xOTY0
-MjU3NTE5LC0xNzIwMzM0OTU5LC0xMDU2NjcyMTkyLDE0MjA3OT
-g1NjEsODU3MzQ1MzQyLDM5OTM4NDM2LDE5NjY0MDI3NzZdfQ==
-
+eyJoaXN0b3J5IjpbLTE1MzcwNzQzMzksLTExNzU1MzY4NzksNj
+I5ODAyNzczLDYyNDYyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAx
+NDY4LDQzMjc2OTc0Nyw1NTEyNDY2Niw0NDk3NDI4LDc5OTczOT
+E3MiwtMjM0Mzg5NDAsLTIwODI5NTMyNDAsODkzMTkwODI5LC0x
+OTY0MjU3NTE5LC0xNzIwMzM0OTU5LC0xMDU2NjcyMTkyLDE0Mj
+A3OTg1NjEsODU3MzQ1MzQyLDM5OTM4NDM2LDE5NjY0MDI3NzZd
+fQ==
 -->
