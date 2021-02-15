@@ -41,20 +41,22 @@ prdouctDF
 	----
 	**Basic Example:**
 	
+![Lambda Architecture](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/TumblingWindows.jpg?raw=true)
 
  - Batch 1 have two records between 01:00 to 01:05 so the count is 2.
  - Batch 2 have three records one record belongs to 01:00 to 01:05 so the count updates to 3. next one record between 01:05 to 01:10. last record between 01:10 to 01:15.
  - Batch 2 have three records one records belongs to 01:10 to 01:15 so the count updates to 2. next two records between 01:15 to 01:20 so the count is 2.
 
-This is how tumbling window works, and I'm sure you have noticed that even if you change the micro badge interval or called trigger interval, it will still produce the same output.
+> This is how tumbling window works, you have noticed that even if you change the micro batch interval or called trigger interval, it will still produce the same output.
 
-	 
-	![Lambda Architecture](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/TumblingWindows.jpg?raw=true) 
+
+
+ 
 		
 	
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0MzEzNjMyMiw2MjQ2MjAyMTAsMTE5OT
+eyJoaXN0b3J5IjpbLTE0MzYzMjQ2Niw2MjQ2MjAyMTAsMTE5OT
 MxNDU2MiwtMTI5NTQwMTQ2OCw0MzI3Njk3NDcsNTUxMjQ2NjYs
 NDQ5NzQyOCw3OTk3MzkxNzIsLTIzNDM4OTQwLC0yMDgyOTUzMj
 QwLDg5MzE5MDgyOSwtMTk2NDI1NzUxOSwtMTcyMDMzNDk1OSwt
