@@ -42,8 +42,8 @@ prdouctDF
 	**Basic Example:**
 	
 
- - Batch 1 have two records between 01:00 to 01:05.
- - Batch 2 have three recor
+ - Batch 1 have two records between 01:00 to 01:05 so the count is 2.
+ - Batch 2 have three records one record belongs to 01:00 to 01:05 so the count updates to 3. next two records betwenn 
 
 	 
 	![Lambda Architecture](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/TumblingWindows.jpg?raw=true) 
@@ -51,7 +51,7 @@ prdouctDF
 	
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzOTgyNzgwMCw2MjQ2MjAyMTAsMTE5OT
+eyJoaXN0b3J5IjpbMTg0MDQ0MTQ5Nyw2MjQ2MjAyMTAsMTE5OT
 MxNDU2MiwtMTI5NTQwMTQ2OCw0MzI3Njk3NDcsNTUxMjQ2NjYs
 NDQ5NzQyOCw3OTk3MzkxNzIsLTIzNDM4OTQwLC0yMDgyOTUzMj
 QwLDg5MzE5MDgyOSwtMTk2NDI1NzUxOSwtMTcyMDMzNDk1OSwt
