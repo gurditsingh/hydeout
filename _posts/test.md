@@ -57,7 +57,7 @@ prdouctDF
 	Sliding windows are also fixed and equal sides windows assume that you have a window size off 10 minutes, so the first window is from 1:00 to 1:10. 
 
 
-Along with the window size you also define is sliding interval hair. Let's see, it is five minutes. This means even though window sizes, 10 minutes moves or slides by only five minutes, so the next window is from one of 5 to 1 15 makes sense. This also means you now have overlapping windows and because of this one event may belong to multiple windows.
+Along with the window size you also define is sliding interval. Let's assume, it is five minutes. This means even though window sizes, 10 minutes moves or slides by only five minutes, so the next window is from 1:05 to 1:15 makes sense. This also means you now have overlapping windows and because of this one event may belong to multiple windows.
 
 
  
@@ -65,11 +65,11 @@ Along with the window size you also define is sliding interval hair. Let's see, 
 	
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDY5MjU3NjMwLDYyOTgwMjc3Myw2MjQ2Mj
-AyMTAsMTE5OTMxNDU2MiwtMTI5NTQwMTQ2OCw0MzI3Njk3NDcs
-NTUxMjQ2NjYsNDQ5NzQyOCw3OTk3MzkxNzIsLTIzNDM4OTQwLC
-0yMDgyOTUzMjQwLDg5MzE5MDgyOSwtMTk2NDI1NzUxOSwtMTcy
-MDMzNDk1OSwtMTA1NjY3MjE5MiwxNDIwNzk4NTYxLDg1NzM0NT
-M0MiwzOTkzODQzNiwxOTY2NDAyNzc2LDE4NjM4ODg5OTddfQ==
+eyJoaXN0b3J5IjpbLTIxMTQ0MzkzNDUsNjI5ODAyNzczLDYyND
+YyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAxNDY4LDQzMjc2OTc0
+Nyw1NTEyNDY2Niw0NDk3NDI4LDc5OTczOTE3MiwtMjM0Mzg5ND
+AsLTIwODI5NTMyNDAsODkzMTkwODI5LC0xOTY0MjU3NTE5LC0x
+NzIwMzM0OTU5LC0xMDU2NjcyMTkyLDE0MjA3OTg1NjEsODU3Mz
+Q1MzQyLDM5OTM4NDM2LDE5NjY0MDI3NzYsMTg2Mzg4ODk5N119
 
 -->
