@@ -28,7 +28,8 @@ prdouctDF
 
 ## There are different types of windows
 
- - **Tumbling window** are a series of fixed or equal sized windows, non-overlapping and contiguous time intervals.
+ - **Tumbling window** 
+ - are a series of fixed or equal sized windows, non-overlapping and contiguous time intervals.
 
 	Tumbling windows are the norm when we need to produce aggregates of our data over regular periods of time, with each period independent from previous periods.
 
@@ -73,14 +74,18 @@ prdouctDF
 
 	 - Batch 1 have two events between 01:00 to 01:10 so the count is 2.
 	 - Batch 2 have three events, one event belongs to 01:00 to 01:10 and update the count to 4. next sliding window moves 5 mins ahead 01:05 to 01:15 and the count is 2. last event 01:10 to 01:20 and count is 1.
-	 - Batch 3 have three events, one event belongs to 01:05 to 01:15 and update the count to 3 same for 01:10 to 01:20 update the count to 4. last event 01:15 to 01 
+	 - Batch 3 have three events, one event belongs to 01:05 to 01:15 and update the count to 3 same for 01:10 to 01:20 update the count to 4. last event 01:15 to 01:25 and count is 2.
+
+	> If you change the micro batch interval, it will still produce these same output.
+
+ 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTI0MzYyODQsLTExNzU1MzY4NzksNj
-I5ODAyNzczLDYyNDYyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAx
-NDY4LDQzMjc2OTc0Nyw1NTEyNDY2Niw0NDk3NDI4LDc5OTczOT
-E3MiwtMjM0Mzg5NDAsLTIwODI5NTMyNDAsODkzMTkwODI5LC0x
-OTY0MjU3NTE5LC0xNzIwMzM0OTU5LC0xMDU2NjcyMTkyLDE0Mj
-A3OTg1NjEsODU3MzQ1MzQyLDM5OTM4NDM2LDE5NjY0MDI3NzZd
-fQ==
+eyJoaXN0b3J5IjpbMTI5MzI2OTY2NywtMTE3NTUzNjg3OSw2Mj
+k4MDI3NzMsNjI0NjIwMjEwLDExOTkzMTQ1NjIsLTEyOTU0MDE0
+NjgsNDMyNzY5NzQ3LDU1MTI0NjY2LDQ0OTc0MjgsNzk5NzM5MT
+cyLC0yMzQzODk0MCwtMjA4Mjk1MzI0MCw4OTMxOTA4MjksLTE5
+NjQyNTc1MTksLTE3MjAzMzQ5NTksLTEwNTY2NzIxOTIsMTQyMD
+c5ODU2MSw4NTczNDUzNDIsMzk5Mzg0MzYsMTk2NjQwMjc3Nl19
+
 -->
