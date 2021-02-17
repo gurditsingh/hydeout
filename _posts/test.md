@@ -19,14 +19,15 @@ Suppose we want to find the total number of product sell in every five minutes.
  
  **How spark know 04:03 is a late event :**   First of all, spark calculates, Max Time from previous batch , the max event time from previous is 04:04. then spark check if any up coming event is smaller than 04:04 is a late event.
 
- The event is a late event. If it's timestamp is smaller than the max timestemp from the previous patch 
+> The event is a late event. If it's timestamp is smaller than the max timestamp from the previous batch.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzY2ODg3NTQsMTY5MzM4OTY1OSwtMz
-U5MTQ1MzU5LDQ3NjQzNTA0NywtMTE3NTUzNjg3OSw2Mjk4MDI3
-NzMsNjI0NjIwMjEwLDExOTkzMTQ1NjIsLTEyOTU0MDE0NjgsND
-MyNzY5NzQ3LDU1MTI0NjY2LDQ0OTc0MjgsNzk5NzM5MTcyLC0y
-MzQzODk0MCwtMjA4Mjk1MzI0MCw4OTMxOTA4MjksLTE5NjQyNT
-c1MTksLTE3MjAzMzQ5NTksLTEwNTY2NzIxOTIsMTQyMDc5ODU2
-MV19
+eyJoaXN0b3J5IjpbMTExODk4NjMzMCwxNjkzMzg5NjU5LC0zNT
+kxNDUzNTksNDc2NDM1MDQ3LC0xMTc1NTM2ODc5LDYyOTgwMjc3
+Myw2MjQ2MjAyMTAsMTE5OTMxNDU2MiwtMTI5NTQwMTQ2OCw0Mz
+I3Njk3NDcsNTUxMjQ2NjYsNDQ5NzQyOCw3OTk3MzkxNzIsLTIz
+NDM4OTQwLC0yMDgyOTUzMjQwLDg5MzE5MDgyOSwtMTk2NDI1Nz
+UxOSwtMTcyMDMzNDk1OSwtMTA1NjY3MjE5MiwxNDIwNzk4NTYx
+XX0=
 -->
