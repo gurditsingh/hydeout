@@ -30,16 +30,16 @@ Suppose we want to find the total number of product sell in every five minutes.
 ## How state cleanup happens
 It is necessary for the system to bound the amount of intermediate in-memory state it accumulates. This means the system needs to know when an old aggregate can be dropped from the in-memory state because the application is not going to receive late data for that aggregate any more.
 
-**Spark introduced watermarking** Watermark is moving threshold of how late the data is expected to be and accordingly the engine can drop old state. You can define the watermark of a query by specifying the event time column and the threshold on how late the data is expected to be in terms of event time.
+**Spark introduced watermarking:** Watermark is moving threshold of how late the data is expected to be and accordingly the engine can drop old state. You can define the watermark of a query by specifying the event time column and the threshold on how late the data is expected to be in terms of event time.
 
-How Spark calculate the Wa
+**How Spark calculate the Watermarking:** 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MTg2MjM0MywxNjkzMzg5NjU5LC0zNT
-kxNDUzNTksNDc2NDM1MDQ3LC0xMTc1NTM2ODc5LDYyOTgwMjc3
-Myw2MjQ2MjAyMTAsMTE5OTMxNDU2MiwtMTI5NTQwMTQ2OCw0Mz
-I3Njk3NDcsNTUxMjQ2NjYsNDQ5NzQyOCw3OTk3MzkxNzIsLTIz
-NDM4OTQwLC0yMDgyOTUzMjQwLDg5MzE5MDgyOSwtMTk2NDI1Nz
-UxOSwtMTcyMDMzNDk1OSwtMTA1NjY3MjE5MiwxNDIwNzk4NTYx
-XX0=
+eyJoaXN0b3J5IjpbNTQ1MTE2MzIzLDE2OTMzODk2NTksLTM1OT
+E0NTM1OSw0NzY0MzUwNDcsLTExNzU1MzY4NzksNjI5ODAyNzcz
+LDYyNDYyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAxNDY4LDQzMj
+c2OTc0Nyw1NTEyNDY2Niw0NDk3NDI4LDc5OTczOTE3MiwtMjM0
+Mzg5NDAsLTIwODI5NTMyNDAsODkzMTkwODI5LC0xOTY0MjU3NT
+E5LC0xNzIwMzM0OTU5LC0xMDU2NjcyMTkyLDE0MjA3OTg1NjFd
+fQ==
 -->
