@@ -11,6 +11,8 @@ In window aggregation Spark automatically takes cares of late data. Every aggreg
 **Problems:**
 
  - The size of the state will continue to increase over time so number of window are increase to handling all the late events .
+ - Some of the late events may not have much business value after a while.
+ - Reading/Writing state for every micro batch   
 
 ## Lets see in example what events are late events
 
@@ -27,7 +29,7 @@ Suppose we want to find the total number of product sell in every five minutes.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNjIyNzA0OTAsMTY5MzM4OTY1OSwtMz
+eyJoaXN0b3J5IjpbLTExNjk4MzY3NDcsMTY5MzM4OTY1OSwtMz
 U5MTQ1MzU5LDQ3NjQzNTA0NywtMTE3NTUzNjg3OSw2Mjk4MDI3
 NzMsNjI0NjIwMjEwLDExOTkzMTQ1NjIsLTEyOTU0MDE0NjgsND
 MyNzY5NzQ3LDU1MTI0NjY2LDQ0OTc0MjgsNzk5NzM5MTcyLC0y
