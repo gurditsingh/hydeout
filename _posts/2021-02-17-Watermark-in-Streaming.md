@@ -12,7 +12,7 @@ tags:
   - late event
   - late data
 ---
-# Handling Late Data Using Watermarking
+
 
 ## What is Late Data
 The data is considered to be late when it arrives to the system after the end of its window. For instance let's suppose we've a window storing items for event time included in 2020-02-02 10:00 - 2020-02-02 10:15 interval. Any item having the event time included in this interval but that comes to the system after the window computation is considered to be on late. 
@@ -35,11 +35,13 @@ Suppose we want to find the total number of product sell in every five minutes.
 ![window events](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/late_1.jpg?raw=true) 
 
  - First micro batch contains two events from 04:00 to 04:05.
- - Second micro batch contains two events from 04:05 to 04:10 but one event has late event (in red 04:03)
+ - Second micro batch contains two events from 04:05 to 04:10 but one event is late event (in above diagram shown in red 04:03)
  
  **How spark know 04:03 is a late event :**   First of all, spark calculates, Max Time from previous batch , the max event time from previous is 04:04. then spark check if any up coming event is smaller than 04:04 is a late event.
 
 > The event is a late event. If it's timestamp is smaller than the max timestamp from the previous batch.
+
+----
 
 ## How state cleanup happens
 It is necessary for the system to bound the amount of intermediate in-memory state it accumulates. This means the system needs to know when an old aggregate can be dropped from the in-memory state because the application is not going to receive late data for that aggregate any more.
@@ -79,6 +81,7 @@ Suppose we want to find the total number of product sell in every 10 minutes wit
 	 - The second event 04:12 is late event but it's acceptable because the value is grater than the watermark value(04:10).
 	 - The third event 04:06 is too late event and it's not acceptable because the value is less than the watermark value (04:10).
 
+----
 
 ## How watermark works in different Output Modes
 
