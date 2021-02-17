@@ -8,13 +8,14 @@ In window aggregation Spark automatically takes cares of late data. Every aggreg
 
 > Structured Streaming can maintain the intermediate state for partial aggregates for a long period of time such that late data can update aggregates of old windows correctly.
 
+## Lets see in example what events are late events
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1OTE0NTM1OSw0NzY0MzUwNDcsLTExNz
-U1MzY4NzksNjI5ODAyNzczLDYyNDYyMDIxMCwxMTk5MzE0NTYy
-LC0xMjk1NDAxNDY4LDQzMjc2OTc0Nyw1NTEyNDY2Niw0NDk3ND
-I4LDc5OTczOTE3MiwtMjM0Mzg5NDAsLTIwODI5NTMyNDAsODkz
-MTkwODI5LC0xOTY0MjU3NTE5LC0xNzIwMzM0OTU5LC0xMDU2Nj
-cyMTkyLDE0MjA3OTg1NjEsODU3MzQ1MzQyLDM5OTM4NDM2XX0=
-
+eyJoaXN0b3J5IjpbMTY5NjM5MTY3OSwtMzU5MTQ1MzU5LDQ3Nj
+QzNTA0NywtMTE3NTUzNjg3OSw2Mjk4MDI3NzMsNjI0NjIwMjEw
+LDExOTkzMTQ1NjIsLTEyOTU0MDE0NjgsNDMyNzY5NzQ3LDU1MT
+I0NjY2LDQ0OTc0MjgsNzk5NzM5MTcyLC0yMzQzODk0MCwtMjA4
+Mjk1MzI0MCw4OTMxOTA4MjksLTE5NjQyNTc1MTksLTE3MjAzMz
+Q5NTksLTEwNTY2NzIxOTIsMTQyMDc5ODU2MSw4NTczNDUzNDJd
+fQ==
 -->
