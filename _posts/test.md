@@ -69,14 +69,14 @@ Suppose we want to find the total number of product sell in every 10 minutes wit
 ## How watermark works in different Output Modes
 
  - **Update Output Mode:** If this query is run in Update output mode, the engine will keep updating counts of a window in the Result Table until the window is older than the watermark.
- - **Append Output Mode:** 
+ - **Append Output Mode:** The engine maintains intermediate counts for each window. However, the partial counts are not updated to the Result Table and not written to sink. The engine waits for “_ mins” for late date to be counted, then drops intermediate state of a window < watermark, and appends the final counts to the Result Table/sink. For example, the final counts of window `12:00 - 12:10` is appended to the Result Table only after the watermark is updated to `12:11`.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzAzNTkyOTU1LDEwMTgxMDAyMTMsMTU2Mj
-c3NTU2Nyw1NDUxMTYzMjMsMTY5MzM4OTY1OSwtMzU5MTQ1MzU5
-LDQ3NjQzNTA0NywtMTE3NTUzNjg3OSw2Mjk4MDI3NzMsNjI0Nj
-IwMjEwLDExOTkzMTQ1NjIsLTEyOTU0MDE0NjgsNDMyNzY5NzQ3
-LDU1MTI0NjY2LDQ0OTc0MjgsNzk5NzM5MTcyLC0yMzQzODk0MC
-wtMjA4Mjk1MzI0MCw4OTMxOTA4MjksLTE5NjQyNTc1MTldfQ==
+eyJoaXN0b3J5IjpbLTEwOTczMzA5MjEsMTAxODEwMDIxMywxNT
+YyNzc1NTY3LDU0NTExNjMyMywxNjkzMzg5NjU5LC0zNTkxNDUz
+NTksNDc2NDM1MDQ3LC0xMTc1NTM2ODc5LDYyOTgwMjc3Myw2Mj
+Q2MjAyMTAsMTE5OTMxNDU2MiwtMTI5NTQwMTQ2OCw0MzI3Njk3
+NDcsNTUxMjQ2NjYsNDQ5NzQyOCw3OTk3MzkxNzIsLTIzNDM4OT
+QwLC0yMDgyOTUzMjQwLDg5MzE5MDgyOSwtMTk2NDI1NzUxOV19
 
 -->
