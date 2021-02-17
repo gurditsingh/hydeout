@@ -53,21 +53,23 @@ Suppose we want to find the total number of product sell in every 10 minutes wit
 ![window events](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/streaming_late_data.jpg?raw=true)
 
  - Batch 1 have two events from 04:00 to 04:10.
- - Batch 2 have three events from 04:10 to 04:20 and if you see in the above diagram Batch 2 table for watermark calculations then 04:00 is the watermark threshold value.
+ - Batch 2 have three events from 04:10 to 04:20 and if you see in the above diagram Batch 2 table for watermark calculations 04:00 is the watermark threshold value.
 	 -  The first event is valid because the event is in the current window timestamp. 
-	 -  The second event 04:04 is late event but it's acceptable because watermark value is 04:00 (any value grater than this considered as valid).
+	 -  The second event 04:04 is late event but it's acceptable because the value is grater than the watermark value(04:00).
 	 - The third event is valid because the event is in the current window timestamp. 
- - Batch 3 have three events from 04:20 to 04:30 and if you see in the above diagram Batch 3 table for watermark calculations then 04:10 is the watermark threshold value.
+ - Batch 3 have three events from 04:20 to 04:30 and if you see in the above diagram Batch 3 table for watermark calculations 04:10 is the watermark threshold value.
 	 - The first event is valid because the event is in the current window timestamp.
 	 - The second event 04:12 is late event but it's acceptable because the value is grater than the watermark value(04:10).
 	 - The third event 04:06 is too late event and it's not acceptable because the value is less than the watermark value (04:10).
 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzYxNjkxMDEsMTAxODEwMDIxMywxNT
-YyNzc1NTY3LDU0NTExNjMyMywxNjkzMzg5NjU5LC0zNTkxNDUz
-NTksNDc2NDM1MDQ3LC0xMTc1NTM2ODc5LDYyOTgwMjc3Myw2Mj
-Q2MjAyMTAsMTE5OTMxNDU2MiwtMTI5NTQwMTQ2OCw0MzI3Njk3
-NDcsNTUxMjQ2NjYsNDQ5NzQyOCw3OTk3MzkxNzIsLTIzNDM4OT
-QwLC0yMDgyOTUzMjQwLDg5MzE5MDgyOSwtMTk2NDI1NzUxOV19
+eyJoaXN0b3J5IjpbNjQyMjg2MjcxLDEwMTgxMDAyMTMsMTU2Mj
+c3NTU2Nyw1NDUxMTYzMjMsMTY5MzM4OTY1OSwtMzU5MTQ1MzU5
+LDQ3NjQzNTA0NywtMTE3NTUzNjg3OSw2Mjk4MDI3NzMsNjI0Nj
+IwMjEwLDExOTkzMTQ1NjIsLTEyOTU0MDE0NjgsNDMyNzY5NzQ3
+LDU1MTI0NjY2LDQ0OTc0MjgsNzk5NzM5MTcyLC0yMzQzODk0MC
+wtMjA4Mjk1MzI0MCw4OTMxOTA4MjksLTE5NjQyNTc1MTldfQ==
 
 -->
