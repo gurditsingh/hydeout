@@ -48,14 +48,16 @@ val productDF = df.withWatermark("productTime", "10 minutes")
  - Any windows which are older than watermark are also dropped from the state.
 
  **Let's understand with example:**
+Suppose we want to find the total number of product sell in every 10 minutes with 8 minutes of watermark.
  
 ![window events](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/streaming_late_data.jpg?raw=true)
 
- - Batch 1 have two events from 04:00 to 04:08
+ - Batch 1 have two events from 04:00 to 04:08 so the count is 2.
+ - Batch 2 have three events f
  - lets understand with the above shown example the Batch 2 table have calculations about watermarking. the watermark value is 04:00 and in batch  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2NTczMjM1MSwxMDE4MTAwMjEzLDE1Nj
+eyJoaXN0b3J5IjpbLTc4MzE0NzY0OCwxMDE4MTAwMjEzLDE1Nj
 I3NzU1NjcsNTQ1MTE2MzIzLDE2OTMzODk2NTksLTM1OTE0NTM1
 OSw0NzY0MzUwNDcsLTExNzU1MzY4NzksNjI5ODAyNzczLDYyND
 YyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAxNDY4LDQzMjc2OTc0
