@@ -8,6 +8,10 @@ In window aggregation Spark automatically takes cares of late data. Every aggreg
 
 > Structured Streaming can maintain the intermediate state for partial aggregates for a long period of time such that late data can update aggregates of old windows correctly.
 
+**Problems:**
+
+ - The size of the state will continue to increase over time numb
+
 ## Lets see in example what events are late events
 
 Suppose we want to find the total number of product sell in every five minutes.
@@ -23,7 +27,7 @@ Suppose we want to find the total number of product sell in every five minutes.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExODk4NjMzMCwxNjkzMzg5NjU5LC0zNT
+eyJoaXN0b3J5IjpbMTgwMzE3Mjc4MywxNjkzMzg5NjU5LC0zNT
 kxNDUzNTksNDc2NDM1MDQ3LC0xMTc1NTM2ODc5LDYyOTgwMjc3
 Myw2MjQ2MjAyMTAsMTE5OTMxNDU2MiwtMTI5NTQwMTQ2OCw0Mz
 I3Njk3NDcsNTUxMjQ2NjYsNDQ5NzQyOCw3OTk3MzkxNzIsLTIz
