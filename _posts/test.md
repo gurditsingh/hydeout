@@ -34,12 +34,21 @@ It is necessary for the system to bound the amount of intermediate in-memory sta
 
 **How Spark calculate the Watermarking:** 
 
+```scala
+val productDF = df.withWatermark("productTime", "10 minutes")
+      .groupBy(window($"productTime", "5 minutes"))
+      .count()
+```
+
+ - Lets say the watermark value is 10 minutes.
+ - 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ1MTE2MzIzLDE2OTMzODk2NTksLTM1OT
-E0NTM1OSw0NzY0MzUwNDcsLTExNzU1MzY4NzksNjI5ODAyNzcz
-LDYyNDYyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAxNDY4LDQzMj
-c2OTc0Nyw1NTEyNDY2Niw0NDk3NDI4LDc5OTczOTE3MiwtMjM0
-Mzg5NDAsLTIwODI5NTMyNDAsODkzMTkwODI5LC0xOTY0MjU3NT
-E5LC0xNzIwMzM0OTU5LC0xMDU2NjcyMTkyLDE0MjA3OTg1NjFd
+eyJoaXN0b3J5IjpbMTg4NTUxMTAzMiw1NDUxMTYzMjMsMTY5Mz
+M4OTY1OSwtMzU5MTQ1MzU5LDQ3NjQzNTA0NywtMTE3NTUzNjg3
+OSw2Mjk4MDI3NzMsNjI0NjIwMjEwLDExOTkzMTQ1NjIsLTEyOT
+U0MDE0NjgsNDMyNzY5NzQ3LDU1MTI0NjY2LDQ0OTc0MjgsNzk5
+NzM5MTcyLC0yMzQzODk0MCwtMjA4Mjk1MzI0MCw4OTMxOTA4Mj
+ksLTE5NjQyNTc1MTksLTE3MjAzMzQ5NTksLTEwNTY2NzIxOTJd
 fQ==
 -->
