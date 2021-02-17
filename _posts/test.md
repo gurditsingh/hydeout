@@ -66,16 +66,16 @@ Suppose we want to find the total number of product sell in every 10 minutes wit
 	 - The third event 04:06 is too late event and it's not acceptable because the value is less than the watermark value (04:10).
 
 
+## How watermark works in different Output Modes
 
-
-
+ - **Update Output Mode:** 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4OTAwMjIzMywxMDE4MTAwMjEzLDE1Nj
-I3NzU1NjcsNTQ1MTE2MzIzLDE2OTMzODk2NTksLTM1OTE0NTM1
-OSw0NzY0MzUwNDcsLTExNzU1MzY4NzksNjI5ODAyNzczLDYyND
-YyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAxNDY4LDQzMjc2OTc0
-Nyw1NTEyNDY2Niw0NDk3NDI4LDc5OTczOTE3MiwtMjM0Mzg5ND
-AsLTIwODI5NTMyNDAsODkzMTkwODI5LC0xOTY0MjU3NTE5XX0=
+eyJoaXN0b3J5IjpbNDAxNzI5ODUyLDEwMTgxMDAyMTMsMTU2Mj
+c3NTU2Nyw1NDUxMTYzMjMsMTY5MzM4OTY1OSwtMzU5MTQ1MzU5
+LDQ3NjQzNTA0NywtMTE3NTUzNjg3OSw2Mjk4MDI3NzMsNjI0Nj
+IwMjEwLDExOTkzMTQ1NjIsLTEyOTU0MDE0NjgsNDMyNzY5NzQ3
+LDU1MTI0NjY2LDQ0OTc0MjgsNzk5NzM5MTcyLC0yMzQzODk0MC
+wtMjA4Mjk1MzI0MCw4OTMxOTA4MjksLTE5NjQyNTc1MTldfQ==
 
 -->
