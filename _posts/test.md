@@ -52,12 +52,12 @@ Suppose we want to find the total number of product sell in every 10 minutes wit
  
 ![window events](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/streaming_late_data.jpg?raw=true)
 
- - Batch 1 have two events from 04:00 to 04:08 so the count is 2.
- - Batch 2 have three events f
+ - Batch 1 have two events from 04:00 to 04:10 so the count is 2.
+ - Batch 2 have three events from 04:10 to 04:20 and if you see in the above diagram Batch 2 table for watermark calculations then 04:00 is the threshold value. the e
  - lets understand with the above shown example the Batch 2 table have calculations about watermarking. the watermark value is 04:00 and in batch  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4MzE0NzY0OCwxMDE4MTAwMjEzLDE1Nj
+eyJoaXN0b3J5IjpbMTI3OTU4MzgwNiwxMDE4MTAwMjEzLDE1Nj
 I3NzU1NjcsNTQ1MTE2MzIzLDE2OTMzODk2NTksLTM1OTE0NTM1
 OSw0NzY0MzUwNDcsLTExNzU1MzY4NzksNjI5ODAyNzczLDYyND
 YyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAxNDY4LDQzMjc2OTc0
