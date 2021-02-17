@@ -18,7 +18,7 @@ In window aggregation Spark automatically takes cares of late data. Every aggreg
 
 Suppose we want to find the total number of product sell in every five minutes.
 
-![Lambda Architecture](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/late_1.jpg?raw=true) 
+![window events](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/late_1.jpg?raw=true) 
 
  - First micro batch contains two events from 04:00 to 04:05.
  - Second micro batch contains two events from 04:05 to 04:10 but one event has late event (in red 04:03)
@@ -47,12 +47,18 @@ val productDF = df.withWatermark("productTime", "10 minutes")
  - The events older than watermark with event time before 04:20 are considered too late and these events will be dropped by spark.
  - Any windows which are older than watermark are also dropped from the state.
 
+ **Let's understand with example:**
+ 
+![window events](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/late_data.jpg?raw=true)
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2Mjc3NTU2Nyw1NDUxMTYzMjMsMTY5Mz
-M4OTY1OSwtMzU5MTQ1MzU5LDQ3NjQzNTA0NywtMTE3NTUzNjg3
-OSw2Mjk4MDI3NzMsNjI0NjIwMjEwLDExOTkzMTQ1NjIsLTEyOT
-U0MDE0NjgsNDMyNzY5NzQ3LDU1MTI0NjY2LDQ0OTc0MjgsNzk5
-NzM5MTcyLC0yMzQzODk0MCwtMjA4Mjk1MzI0MCw4OTMxOTA4Mj
-ksLTE5NjQyNTc1MTksLTE3MjAzMzQ5NTksLTEwNTY2NzIxOTJd
-fQ==
+eyJoaXN0b3J5IjpbMjAxMTc5OTg0NiwxNTYyNzc1NTY3LDU0NT
+ExNjMyMywxNjkzMzg5NjU5LC0zNTkxNDUzNTksNDc2NDM1MDQ3
+LC0xMTc1NTM2ODc5LDYyOTgwMjc3Myw2MjQ2MjAyMTAsMTE5OT
+MxNDU2MiwtMTI5NTQwMTQ2OCw0MzI3Njk3NDcsNTUxMjQ2NjYs
+NDQ5NzQyOCw3OTk3MzkxNzIsLTIzNDM4OTQwLC0yMDgyOTUzMj
+QwLDg5MzE5MDgyOSwtMTk2NDI1NzUxOSwtMTcyMDMzNDk1OV19
+
 -->
