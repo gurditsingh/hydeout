@@ -42,15 +42,15 @@ val productDF = df.withWatermark("productTime", "10 minutes")
 
  - Lets say the watermark value is 10 minutes.
  - Next for every micro batch execution spark engine will first calculate the maximum time off previous batch (Assume that it is 04:30).
- - Now spark will calculate the watermark. It's a difference between maximum time and the watermark value (04:30 minus 10 minutes) called the watermark, and this is now the acceptable delay.
- - 
+ - Now spark will calculate the watermark. It's a difference between **maximum time** and the **watermark value** (04:30 minus 10 minutes = 04:20) called the watermark, and this is now the acceptable delay.
+ - The events which are  04:20 to 04:30 are late events, but they are accepted and processed by spark
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNjY4MTYyMCw1NDUxMTYzMjMsMTY5Mz
-M4OTY1OSwtMzU5MTQ1MzU5LDQ3NjQzNTA0NywtMTE3NTUzNjg3
-OSw2Mjk4MDI3NzMsNjI0NjIwMjEwLDExOTkzMTQ1NjIsLTEyOT
-U0MDE0NjgsNDMyNzY5NzQ3LDU1MTI0NjY2LDQ0OTc0MjgsNzk5
-NzM5MTcyLC0yMzQzODk0MCwtMjA4Mjk1MzI0MCw4OTMxOTA4Mj
-ksLTE5NjQyNTc1MTksLTE3MjAzMzQ5NTksLTEwNTY2NzIxOTJd
-fQ==
+eyJoaXN0b3J5IjpbLTIwMTY1NzU4NTQsNTQ1MTE2MzIzLDE2OT
+MzODk2NTksLTM1OTE0NTM1OSw0NzY0MzUwNDcsLTExNzU1MzY4
+NzksNjI5ODAyNzczLDYyNDYyMDIxMCwxMTk5MzE0NTYyLC0xMj
+k1NDAxNDY4LDQzMjc2OTc0Nyw1NTEyNDY2Niw0NDk3NDI4LDc5
+OTczOTE3MiwtMjM0Mzg5NDAsLTIwODI5NTMyNDAsODkzMTkwOD
+I5LC0xOTY0MjU3NTE5LC0xNzIwMzM0OTU5LC0xMDU2NjcyMTky
+XX0=
 -->
