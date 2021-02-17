@@ -54,16 +54,17 @@ Suppose we want to find the total number of product sell in every 10 minutes wit
 
  - Batch 1 have two events from 04:00 to 04:10.
  - Batch 2 have three events from 04:10 to 04:20 and if you see in the above diagram Batch 2 table for watermark calculations then 04:00 is the watermark threshold value.
-	 -  The first event is valid because the event is in current window timestamp. 
+	 -  The first event is valid because the event is in the current window timestamp. 
 	 -  The second event 04:04 is late event but it's acceptable because watermark value is 04:00 (any value grater than this considered as valid).
-	 - The third event
+	 - The third event is valid because the event is in the current window timestamp. 
  - Batch 3 have three events from 04:20 to 04:30 and if you see in the above diagram Batch 3 table for watermark calculations then 04:10 is the watermark threshold value.
 	 - The first event is valid because the event is in the current window timestamp.
-	 - The second event 04:04 is late event but it's acceptable because watermark value is 04:00 (any value grater than this considered as valid).
+	 - The second event 04:12 is late event but it's acceptable because watermark value is 04:10 (any value grater than this considered as valid).
+	 - The third event 04:06 is too late event and it's not 
  - lets understand with the above shown example the Batch 2 table have calculations about watermarking. the watermark value is 04:00 and in batch  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxMTMzNTg0LDEwMTgxMDAyMTMsMTU2Mj
+eyJoaXN0b3J5IjpbNzQzNzE3NTYxLDEwMTgxMDAyMTMsMTU2Mj
 c3NTU2Nyw1NDUxMTYzMjMsMTY5MzM4OTY1OSwtMzU5MTQ1MzU5
 LDQ3NjQzNTA0NywtMTE3NTUzNjg3OSw2Mjk4MDI3NzMsNjI0Nj
 IwMjEwLDExOTkzMTQ1NjIsLTEyOTU0MDE0NjgsNDMyNzY5NzQ3
