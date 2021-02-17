@@ -10,10 +10,12 @@ In window aggregation Spark automatically takes cares of late data. Every aggreg
 
 ## Lets see in example what events are late events
 
-![Lambda Architecture](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/lambda.png?raw=true) 
+Suppose we want to find the total number of product sale in every five minutes.
+
+![Lambda Architecture](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/late_1.jpg?raw=true) 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE2MTUwNzE1LDE2OTMzODk2NTksLTM1OT
+eyJoaXN0b3J5IjpbNzMyMzE5MzgxLDE2OTMzODk2NTksLTM1OT
 E0NTM1OSw0NzY0MzUwNDcsLTExNzU1MzY4NzksNjI5ODAyNzcz
 LDYyNDYyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAxNDY4LDQzMj
 c2OTc0Nyw1NTEyNDY2Niw0NDk3NDI4LDc5OTczOTE3MiwtMjM0
