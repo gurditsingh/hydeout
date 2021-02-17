@@ -28,14 +28,16 @@ Suppose we want to find the total number of product sell in every five minutes.
 > The event is a late event. If it's timestamp is smaller than the max timestamp from the previous batch.
 
 ## How state cleanup happens
+It is necessary for the system to bound the amount of intermediate in-memory state it accumulates. This means the system needs to know when an old aggregate can be dropped from the in-memory state because the application is not going to receive late data for that aggregate any more.
 
+**Spark introduced watermarking**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYwNjE5NjA1LDE2OTMzODk2NTksLTM1OT
-E0NTM1OSw0NzY0MzUwNDcsLTExNzU1MzY4NzksNjI5ODAyNzcz
-LDYyNDYyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAxNDY4LDQzMj
-c2OTc0Nyw1NTEyNDY2Niw0NDk3NDI4LDc5OTczOTE3MiwtMjM0
-Mzg5NDAsLTIwODI5NTMyNDAsODkzMTkwODI5LC0xOTY0MjU3NT
-E5LC0xNzIwMzM0OTU5LC0xMDU2NjcyMTkyLDE0MjA3OTg1NjFd
-fQ==
+eyJoaXN0b3J5IjpbMjA4Mzc4NTU5MCwxNjkzMzg5NjU5LC0zNT
+kxNDUzNTksNDc2NDM1MDQ3LC0xMTc1NTM2ODc5LDYyOTgwMjc3
+Myw2MjQ2MjAyMTAsMTE5OTMxNDU2MiwtMTI5NTQwMTQ2OCw0Mz
+I3Njk3NDcsNTUxMjQ2NjYsNDQ5NzQyOCw3OTk3MzkxNzIsLTIz
+NDM4OTQwLC0yMDgyOTUzMjQwLDg5MzE5MDgyOSwtMTk2NDI1Nz
+UxOSwtMTcyMDMzNDk1OSwtMTA1NjY3MjE5MiwxNDIwNzk4NTYx
+XX0=
 -->
