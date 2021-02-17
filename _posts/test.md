@@ -41,13 +41,15 @@ val productDF = df.withWatermark("productTime", "10 minutes")
 ```
 
  - Lets say the watermark value is 10 minutes.
+ - Next for every micro batch execution spark engine will first calculate the maximum time off previous batch (Assume that it is 04:30).
+ - Now spark will calculate the watermark. It's a difference between maximum time and the watermark value.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQxOTcwOTAzLDU0NTExNjMyMywxNjkzMz
-g5NjU5LC0zNTkxNDUzNTksNDc2NDM1MDQ3LC0xMTc1NTM2ODc5
-LDYyOTgwMjc3Myw2MjQ2MjAyMTAsMTE5OTMxNDU2MiwtMTI5NT
-QwMTQ2OCw0MzI3Njk3NDcsNTUxMjQ2NjYsNDQ5NzQyOCw3OTk3
-MzkxNzIsLTIzNDM4OTQwLC0yMDgyOTUzMjQwLDg5MzE5MDgyOS
-wtMTk2NDI1NzUxOSwtMTcyMDMzNDk1OSwtMTA1NjY3MjE5Ml19
-
+eyJoaXN0b3J5IjpbLTc2MDYxNTQ1Niw1NDUxMTYzMjMsMTY5Mz
+M4OTY1OSwtMzU5MTQ1MzU5LDQ3NjQzNTA0NywtMTE3NTUzNjg3
+OSw2Mjk4MDI3NzMsNjI0NjIwMjEwLDExOTkzMTQ1NjIsLTEyOT
+U0MDE0NjgsNDMyNzY5NzQ3LDU1MTI0NjY2LDQ0OTc0MjgsNzk5
+NzM5MTcyLC0yMzQzODk0MCwtMjA4Mjk1MzI0MCw4OTMxOTA4Mj
+ksLTE5NjQyNTc1MTksLTE3MjAzMzQ5NTksLTEwNTY2NzIxOTJd
+fQ==
 -->
