@@ -51,14 +51,14 @@ val productDF = df.withWatermark("productTime", "10 minutes")
  
 ![window events](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/late_data.jpg?raw=true)
 
- - lets understand with the above shown example the batch 2 table have calculations about watermark
+ - lets understand with the above shown example the Batch 2 table have calculations about watermarking. the watermark value is 04:00 the events  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjkwMDk5MzQ0LDE1NjI3NzU1NjcsNTQ1MT
-E2MzIzLDE2OTMzODk2NTksLTM1OTE0NTM1OSw0NzY0MzUwNDcs
-LTExNzU1MzY4NzksNjI5ODAyNzczLDYyNDYyMDIxMCwxMTk5Mz
-E0NTYyLC0xMjk1NDAxNDY4LDQzMjc2OTc0Nyw1NTEyNDY2Niw0
-NDk3NDI4LDc5OTczOTE3MiwtMjM0Mzg5NDAsLTIwODI5NTMyND
-AsODkzMTkwODI5LC0xOTY0MjU3NTE5LC0xNzIwMzM0OTU5XX0=
+eyJoaXN0b3J5IjpbMTA2MzA1OTA5NCwxNTYyNzc1NTY3LDU0NT
+ExNjMyMywxNjkzMzg5NjU5LC0zNTkxNDUzNTksNDc2NDM1MDQ3
+LC0xMTc1NTM2ODc5LDYyOTgwMjc3Myw2MjQ2MjAyMTAsMTE5OT
+MxNDU2MiwtMTI5NTQwMTQ2OCw0MzI3Njk3NDcsNTUxMjQ2NjYs
+NDQ5NzQyOCw3OTk3MzkxNzIsLTIzNDM4OTQwLC0yMDgyOTUzMj
+QwLDg5MzE5MDgyOSwtMTk2NDI1NzUxOSwtMTcyMDMzNDk1OV19
 
 -->
