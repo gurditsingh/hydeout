@@ -51,10 +51,10 @@ val productDF = df.withWatermark("productTime", "10 minutes")
  
 ![window events](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/late_data.jpg?raw=true)
 
-
+ - les
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMTc5OTg0NiwxNTYyNzc1NTY3LDU0NT
+eyJoaXN0b3J5IjpbMTIyNDU4ODA5NSwxNTYyNzc1NTY3LDU0NT
 ExNjMyMywxNjkzMzg5NjU5LC0zNTkxNDUzNTksNDc2NDM1MDQ3
 LC0xMTc1NTM2ODc5LDYyOTgwMjc3Myw2MjQ2MjAyMTAsMTE5OT
 MxNDU2MiwtMTI5NTQwMTQ2OCw0MzI3Njk3NDcsNTUxMjQ2NjYs
