@@ -32,8 +32,10 @@ It is necessary for the system to bound the amount of intermediate in-memory sta
 
 **Spark introduced watermarking** Watermark is moving threshold of how late the data is expected to be and accordingly the engine can drop old state. You can define the watermark of a query by specifying the event time column and the threshold on how late the data is expected to be in terms of event time.
 
+How Spark calculate the Watermarkin
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5ODkwMDk0NSwxNjkzMzg5NjU5LC0zNT
+eyJoaXN0b3J5IjpbLTc1MTY2ODQ1OCwxNjkzMzg5NjU5LC0zNT
 kxNDUzNTksNDc2NDM1MDQ3LC0xMTc1NTM2ODc5LDYyOTgwMjc3
 Myw2MjQ2MjAyMTAsMTE5OTMxNDU2MiwtMTI5NTQwMTQ2OCw0Mz
 I3Njk3NDcsNTUxMjQ2NjYsNDQ5NzQyOCw3OTk3MzkxNzIsLTIz
