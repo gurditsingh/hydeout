@@ -68,10 +68,11 @@ Suppose we want to find the total number of product sell in every 10 minutes wit
 
 ## How watermark works in different Output Modes
 
- - **Update Output Mode:** 
+ - **Update Output Mode:** If this query is run in Update output mode, the engine will keep updating counts of a window in the Result Table until the window is older than the watermark.
+ - **Append Output Mode:** 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAxNzI5ODUyLDEwMTgxMDAyMTMsMTU2Mj
+eyJoaXN0b3J5IjpbNzAzNTkyOTU1LDEwMTgxMDAyMTMsMTU2Mj
 c3NTU2Nyw1NDUxMTYzMjMsMTY5MzM4OTY1OSwtMzU5MTQ1MzU5
 LDQ3NjQzNTA0NywtMTE3NTUzNjg3OSw2Mjk4MDI3NzMsNjI0Nj
 IwMjEwLDExOTkzMTQ1NjIsLTEyOTU0MDE0NjgsNDMyNzY5NzQ3
