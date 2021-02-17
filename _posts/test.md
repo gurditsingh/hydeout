@@ -66,12 +66,12 @@ Suppose we want to find the total number of product sell in every 10 minutes wit
 	 - The third event 04:06 is too late event and it's not acceptable because the value is less than the watermark value (04:10).
 
 
+## How watermark works in different Output Modes
 
-
-
+ - **Update Output Mode:** If this query is run in Update output mode (discussed later in [Output Modes](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html#output-modes) section), the engine will keep updating counts of a window in the Result Table until the window is older than the watermark
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4OTAwMjIzMywxMDE4MTAwMjEzLDE1Nj
+eyJoaXN0b3J5IjpbLTg3ODI3MDc4MCwxMDE4MTAwMjEzLDE1Nj
 I3NzU1NjcsNTQ1MTE2MzIzLDE2OTMzODk2NTksLTM1OTE0NTM1
 OSw0NzY0MzUwNDcsLTExNzU1MzY4NzksNjI5ODAyNzczLDYyND
 YyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAxNDY4LDQzMjc2OTc0
