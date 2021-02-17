@@ -68,14 +68,15 @@ Suppose we want to find the total number of product sell in every 10 minutes wit
 
 ## How watermark works in different Output Modes
 
- - **Update Output Mode:** If this query is run in Update output mode (discussed later in [Output Modes](https://spark.apache.org/docs/latest/structured-streaming-programming-guide.html#output-modes) section), the engine will keep updating counts of a window in the Result Table until the window is older than the watermark
+ - **Update Output Mode:** If this query is run in Update output mode, the engine will keep updating counts of a window in the Result Table until the window is older than the watermark.
+ - **Append Output Mode:** 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3ODI3MDc4MCwxMDE4MTAwMjEzLDE1Nj
-I3NzU1NjcsNTQ1MTE2MzIzLDE2OTMzODk2NTksLTM1OTE0NTM1
-OSw0NzY0MzUwNDcsLTExNzU1MzY4NzksNjI5ODAyNzczLDYyND
-YyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAxNDY4LDQzMjc2OTc0
-Nyw1NTEyNDY2Niw0NDk3NDI4LDc5OTczOTE3MiwtMjM0Mzg5ND
-AsLTIwODI5NTMyNDAsODkzMTkwODI5LC0xOTY0MjU3NTE5XX0=
+eyJoaXN0b3J5IjpbNzAzNTkyOTU1LDEwMTgxMDAyMTMsMTU2Mj
+c3NTU2Nyw1NDUxMTYzMjMsMTY5MzM4OTY1OSwtMzU5MTQ1MzU5
+LDQ3NjQzNTA0NywtMTE3NTUzNjg3OSw2Mjk4MDI3NzMsNjI0Nj
+IwMjEwLDExOTkzMTQ1NjIsLTEyOTU0MDE0NjgsNDMyNzY5NzQ3
+LDU1MTI0NjY2LDQ0OTc0MjgsNzk5NzM5MTcyLC0yMzQzODk0MC
+wtMjA4Mjk1MzI0MCw4OTMxOTA4MjksLTE5NjQyNTc1MTldfQ==
 
 -->
