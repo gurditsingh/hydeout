@@ -17,14 +17,14 @@ Suppose we want to find the total number of product sell in every five minutes.
  - First micro batch contains two events from 04:00 to 04:05.
  - Second micro batch contains two events from 04:05 to 04:10 but one event has late event (in red 04:03)
  
- **How spark know 04:03 is a late event :**   First of all, spark calculates, Max Time from previous patch here, the max even time from previous one is one of four.
+ **How spark know 04:03 is a late event :**   First of all, spark calculates, Max Time from previous batch , the max event time from previous is 04:04. then spark check if any up coming ev 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5MTg2NjE5OCwxNjkzMzg5NjU5LC0zNT
-kxNDUzNTksNDc2NDM1MDQ3LC0xMTc1NTM2ODc5LDYyOTgwMjc3
-Myw2MjQ2MjAyMTAsMTE5OTMxNDU2MiwtMTI5NTQwMTQ2OCw0Mz
-I3Njk3NDcsNTUxMjQ2NjYsNDQ5NzQyOCw3OTk3MzkxNzIsLTIz
-NDM4OTQwLC0yMDgyOTUzMjQwLDg5MzE5MDgyOSwtMTk2NDI1Nz
-UxOSwtMTcyMDMzNDk1OSwtMTA1NjY3MjE5MiwxNDIwNzk4NTYx
-XX0=
+eyJoaXN0b3J5IjpbNDIxNzAwNDE3LDE2OTMzODk2NTksLTM1OT
+E0NTM1OSw0NzY0MzUwNDcsLTExNzU1MzY4NzksNjI5ODAyNzcz
+LDYyNDYyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAxNDY4LDQzMj
+c2OTc0Nyw1NTEyNDY2Niw0NDk3NDI4LDc5OTczOTE3MiwtMjM0
+Mzg5NDAsLTIwODI5NTMyNDAsODkzMTkwODI5LC0xOTY0MjU3NT
+E5LC0xNzIwMzM0OTU5LC0xMDU2NjcyMTkyLDE0MjA3OTg1NjFd
+fQ==
 -->
