@@ -14,8 +14,10 @@ Suppose we want to find the total number of product sell in every five minutes.
 
 ![Lambda Architecture](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/late_1.jpg?raw=true) 
 
+ - First micro batch contains two events from 04:00 to 0
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODA1MjY0ODYsMTY5MzM4OTY1OSwtMz
+eyJoaXN0b3J5IjpbLTE0MTU2NDc3OTAsMTY5MzM4OTY1OSwtMz
 U5MTQ1MzU5LDQ3NjQzNTA0NywtMTE3NTUzNjg3OSw2Mjk4MDI3
 NzMsNjI0NjIwMjEwLDExOTkzMTQ1NjIsLTEyOTU0MDE0NjgsND
 MyNzY5NzQ3LDU1MTI0NjY2LDQ0OTc0MjgsNzk5NzM5MTcyLC0y
