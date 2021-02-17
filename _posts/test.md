@@ -43,10 +43,12 @@ val productDF = df.withWatermark("productTime", "10 minutes")
  - Lets say the watermark value is 10 minutes.
  - Next for every micro batch execution spark engine will first calculate the maximum time off previous batch (Assume that it is 04:30).
  - Now spark will calculate the watermark. It's a difference between **maximum time** and the **watermark value** (04:30 minus 10 minutes = 04:20) called the watermark, and this is now the acceptable delay.
- - The events which are  04:20 to 04:30 are late events, but they are accepted and processed by spark
+ - The events which are  04:20 to 04:30 are late events, but they are accepted and processed by spark.
+ - The events older than watermark with event time before 04:20 are considered too late and these events will be dropped by spark.
+ - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTY1NzU4NTQsNTQ1MTE2MzIzLDE2OT
+eyJoaXN0b3J5IjpbLTE5NzQwNDEwNTksNTQ1MTE2MzIzLDE2OT
 MzODk2NTksLTM1OTE0NTM1OSw0NzY0MzUwNDcsLTExNzU1MzY4
 NzksNjI5ODAyNzczLDYyNDYyMDIxMCwxMTk5MzE0NTYyLC0xMj
 k1NDAxNDY4LDQzMjc2OTc0Nyw1NTEyNDY2Niw0NDk3NDI4LDc5
