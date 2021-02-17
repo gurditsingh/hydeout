@@ -1,6 +1,9 @@
 # Handling Late Data Using Watermarking
+
+## Handling Late Data
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3NzA1ODc2NCw0NzY0MzUwNDcsLTExNz
+eyJoaXN0b3J5IjpbMjEyMTQxNzQ4MSw0NzY0MzUwNDcsLTExNz
 U1MzY4NzksNjI5ODAyNzczLDYyNDYyMDIxMCwxMTk5MzE0NTYy
 LC0xMjk1NDAxNDY4LDQzMjc2OTc0Nyw1NTEyNDY2Niw0NDk3ND
 I4LDc5OTczOTE3MiwtMjM0Mzg5NDAsLTIwODI5NTMyNDAsODkz
