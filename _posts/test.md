@@ -10,8 +10,10 @@ In window aggregation Spark automatically takes cares of late data. Every aggreg
 
 ## Lets see in example what events are late events
 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NjM5MTY3OSwtMzU5MTQ1MzU5LDQ3Nj
+eyJoaXN0b3J5IjpbMTY5MzM4OTY1OSwtMzU5MTQ1MzU5LDQ3Nj
 QzNTA0NywtMTE3NTUzNjg3OSw2Mjk4MDI3NzMsNjI0NjIwMjEw
 LDExOTkzMTQ1NjIsLTEyOTU0MDE0NjgsNDMyNzY5NzQ3LDU1MT
 I0NjY2LDQ0OTc0MjgsNzk5NzM5MTcyLC0yMzQzODk0MCwtMjA4
