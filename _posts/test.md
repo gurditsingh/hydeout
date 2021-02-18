@@ -48,6 +48,13 @@ val joinDF = streamingDFTest1.join(streamingDFTest2,List("column"),"inner")
 ```
 Note that **stream-stream joins are stateful**, so state management is necessary.
 
+### Supported Join Types
+
+ - **Inner Join :**  Inner join type is Supported and it's not not Stateful
+ - **Left Outer Join :** Left Outer join type is supported when streaming DataFrame on left side of the join and it's not Stateful.
+ - **Right Outer Join :** Right Outer join type is supported when streaming DataFrame on right side of the join and it's not Stateful.
+ - **Full Outer Join :** Full Outer join type is not Supported.
+
 ## why is this a Stateful operation?
 Let's assume an example in which we have some sensor events. sensor generates a start and then after sensor generates end event after the start events.
 
@@ -98,11 +105,10 @@ As we know to join two streams together, the event from both the streams will be
 
 		val joinDF = streamingDFTest1.join(streamingDFTest2,"startID = endID AND endTime <= startTime + interval 3 hours")
 		```
-hjk
-hjk
-----
+
+point
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTY5MTY3OTYsLTE5NDQ2Nzc0NDAsMT
+eyJoaXN0b3J5IjpbLTIwMjA5ODcyMjQsLTE5NDQ2Nzc0NDAsMT
 Y3Mjg4MzczMSwtNzQ1NTg0NzEzLC02NDcyOTk2NzgsNDA4MjAz
 NDg2LC0xOTQ4NDUzOTY1LDY2MzUzNDg2OCwzNjA0ODA2ODAsMT
 AxODEwMDIxMywxNTYyNzc1NTY3LDU0NTExNjMyMywxNjkzMzg5
