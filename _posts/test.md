@@ -76,30 +76,23 @@ As we know to join two streams together, the event from both the streams will be
 
  1. **Watermarking** this is the maximum acceptable delay for an event to reach the processing engine. e.g. any start event that reaches 2 hours late is acceptable.
 	 ```scala
-	val streamingDFTest1 = spark.readStream
-	      .format("kafka")
-	      .option("kafka.bootstrap.servers", "localhost:9092")
-	      .option("subscribe", "join_events_test1")
-	      .load()
+	val streamingDFTest1 = spark.readStream ....
 
-	val streamingDFTest2 = spark.readStream
-	      .format("kafka")
-	      .option("kafka.bootstrap.servers", "localhost:9092")
-	      .option("subscribe", "join_events_test2")
-	      .load()
-	      
+	val streamingDFTest2 = spark.readStream ....
+	     .... 
+	     ....
 	val watermarkDF1 = streamingDFTest1.withWatermark("eventTime","2 hours")
 	val watermarkDF2 = streamingDFTest1.withWatermark("eventTime","2 hours")
 	      
-	val joinDF = watermarkDF1 .join(streamingDFTest2,List("id"),"inner")
+	val joinDF = watermarkDF1.join(watermarkDF2,List("colume"),"inner")
 	```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUzMjk3NjMsLTE5NDQ2Nzc0NDAsMTY3Mj
-g4MzczMSwtNzQ1NTg0NzEzLC02NDcyOTk2NzgsNDA4MjAzNDg2
-LC0xOTQ4NDUzOTY1LDY2MzUzNDg2OCwzNjA0ODA2ODAsMTAxOD
-EwMDIxMywxNTYyNzc1NTY3LDU0NTExNjMyMywxNjkzMzg5NjU5
-LC0zNTkxNDUzNTksNDc2NDM1MDQ3LC0xMTc1NTM2ODc5LDYyOT
-gwMjc3Myw2MjQ2MjAyMTAsMTE5OTMxNDU2MiwtMTI5NTQwMTQ2
-OF19
+eyJoaXN0b3J5IjpbMTE2NTgwNjQyNCwtMTk0NDY3NzQ0MCwxNj
+cyODgzNzMxLC03NDU1ODQ3MTMsLTY0NzI5OTY3OCw0MDgyMDM0
+ODYsLTE5NDg0NTM5NjUsNjYzNTM0ODY4LDM2MDQ4MDY4MCwxMD
+E4MTAwMjEzLDE1NjI3NzU1NjcsNTQ1MTE2MzIzLDE2OTMzODk2
+NTksLTM1OTE0NTM1OSw0NzY0MzUwNDcsLTExNzU1MzY4NzksNj
+I5ODAyNzczLDYyNDYyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAx
+NDY4XX0=
 -->
