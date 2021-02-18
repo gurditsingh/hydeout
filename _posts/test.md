@@ -27,7 +27,7 @@ Note that **stream-static joins are not stateful**, so no state management is ne
  - **Right Outer Join :** Right Outer join type is supported when streaming DataFrame on right side of the join and it's not Stateful.
  - **Full Outer Join :** Full Outer join type is not Supported.
 
------
+
 ## Joining Stream with Stream
 Spark added support for stream-stream joins, that is, you can join two streaming DataFrames. In which we can join multiple streams together.
 
@@ -72,7 +72,7 @@ Let's assume an example in which we have some sensor events. sensor generates a 
  - Batch 3 have two end events with id **R3, R2** and both the events are store in end state store but there is no start event. but spark find match for **R2** from start state store and produce join output (R2,01:07,01:13).
  - Batch 4 have one late start event **R3** and stored in start state store. As spark maintaining the state automatically and gracefully handle the late data. After that join produce the output (R3,01:06,01:12).
 
-----
+
 
 ## Handling state in Stream-Stream join
 As we know to join two streams together, the event from both the streams will be stored in the state store.
@@ -110,9 +110,13 @@ As we know to join two streams together, the event from both the streams will be
 
 The outer NULL results will be generated with a delay that depends on the specified watermark delay and the time range condition. This is because the engine has to wait for that long to ensure there were no matches and there will be no more matches in future.
 
+If any of the two input streams being joined does not receive data for a while, the outer (both cases, left or right) output may get delayed.
+
+----
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTg5MjYwMjIsLTE5NDQ2Nzc0NDAsMT
+eyJoaXN0b3J5IjpbLTExMTM1NjM4MjYsLTE5NDQ2Nzc0NDAsMT
 Y3Mjg4MzczMSwtNzQ1NTg0NzEzLC02NDcyOTk2NzgsNDA4MjAz
 NDg2LC0xOTQ4NDUzOTY1LDY2MzUzNDg2OCwzNjA0ODA2ODAsMT
 AxODEwMDIxMywxNTYyNzc1NTY3LDU0NTExNjMyMywxNjkzMzg5
