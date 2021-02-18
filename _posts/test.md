@@ -48,12 +48,14 @@ val joinDF = streamingDFTest1.join(streamingDFTest2,List("id"),"inner")
 ```
 Note that **stream-stream joins are stateful**, so state management is necessary.
 
+## why is this a state full operation?
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDYxMTQyNCwtNjQ3Mjk5Njc4LDQwODIwMz
-Q4NiwtMTk0ODQ1Mzk2NSw2NjM1MzQ4NjgsMzYwNDgwNjgwLDEw
-MTgxMDAyMTMsMTU2Mjc3NTU2Nyw1NDUxMTYzMjMsMTY5MzM4OT
-Y1OSwtMzU5MTQ1MzU5LDQ3NjQzNTA0NywtMTE3NTUzNjg3OSw2
-Mjk4MDI3NzMsNjI0NjIwMjEwLDExOTkzMTQ1NjIsLTEyOTU0MD
-E0NjgsNDMyNzY5NzQ3LDU1MTI0NjY2LDQ0OTc0MjhdfQ==
+eyJoaXN0b3J5IjpbLTc0NTU4NDcxMywtNjQ3Mjk5Njc4LDQwOD
+IwMzQ4NiwtMTk0ODQ1Mzk2NSw2NjM1MzQ4NjgsMzYwNDgwNjgw
+LDEwMTgxMDAyMTMsMTU2Mjc3NTU2Nyw1NDUxMTYzMjMsMTY5Mz
+M4OTY1OSwtMzU5MTQ1MzU5LDQ3NjQzNTA0NywtMTE3NTUzNjg3
+OSw2Mjk4MDI3NzMsNjI0NjIwMjEwLDExOTkzMTQ1NjIsLTEyOT
+U0MDE0NjgsNDMyNzY5NzQ3LDU1MTI0NjY2LDQ0OTc0MjhdfQ==
+
 -->
