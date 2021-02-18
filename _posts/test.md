@@ -60,11 +60,12 @@ Let's assume an example in which we have some sensor events. sensor generates a 
 
 **Lets understand state with Example**![window events](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/join_stream.jpg?raw=true)
 
- - Batch 1 we have two events one from start event and one from end event. both events have  
+ - Batch 1 we have two events one from start event and one from end event. both events have same event id **R1** so join output comes as (R1,01:00,01:04) 
+ - Batch 2 have only one start e
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNTkxOTU0OSwtMTk0NDY3NzQ0MCwxNj
+eyJoaXN0b3J5IjpbLTE2OTQ0MTgxMywtMTk0NDY3NzQ0MCwxNj
 cyODgzNzMxLC03NDU1ODQ3MTMsLTY0NzI5OTY3OCw0MDgyMDM0
 ODYsLTE5NDg0NTM5NjUsNjYzNTM0ODY4LDM2MDQ4MDY4MCwxMD
 E4MTAwMjEzLDE1NjI3NzU1NjcsNTQ1MTE2MzIzLDE2OTMzODk2
