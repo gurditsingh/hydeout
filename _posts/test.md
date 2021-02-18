@@ -74,14 +74,15 @@ As we know to join two streams together, the event from both the streams will be
 
 ### How to Limit the state
 
- 1. **Watermarking** this is the maximum acceptable delay for an event to reach the processing engine.
+ 1. **Watermarking** this is the maximum acceptable delay for an event to reach the processing engine. e.g. any start event that reaches 2 hours late is acceptable.
+ 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI2NzQwMDcsLTE5NDQ2Nzc0NDAsMTY3Mj
-g4MzczMSwtNzQ1NTg0NzEzLC02NDcyOTk2NzgsNDA4MjAzNDg2
-LC0xOTQ4NDUzOTY1LDY2MzUzNDg2OCwzNjA0ODA2ODAsMTAxOD
-EwMDIxMywxNTYyNzc1NTY3LDU0NTExNjMyMywxNjkzMzg5NjU5
-LC0zNTkxNDUzNTksNDc2NDM1MDQ3LC0xMTc1NTM2ODc5LDYyOT
-gwMjc3Myw2MjQ2MjAyMTAsMTE5OTMxNDU2MiwtMTI5NTQwMTQ2
-OF19
+eyJoaXN0b3J5IjpbNDIxMjA3MDIwLC0xOTQ0Njc3NDQwLDE2Nz
+I4ODM3MzEsLTc0NTU4NDcxMywtNjQ3Mjk5Njc4LDQwODIwMzQ4
+NiwtMTk0ODQ1Mzk2NSw2NjM1MzQ4NjgsMzYwNDgwNjgwLDEwMT
+gxMDAyMTMsMTU2Mjc3NTU2Nyw1NDUxMTYzMjMsMTY5MzM4OTY1
+OSwtMzU5MTQ1MzU5LDQ3NjQzNTA0NywtMTE3NTUzNjg3OSw2Mj
+k4MDI3NzMsNjI0NjIwMjEwLDExOTkzMTQ1NjIsLTEyOTU0MDE0
+NjhdfQ==
 -->
