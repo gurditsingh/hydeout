@@ -18,12 +18,15 @@ val staticDF=spark.read
       
 val joinDF = streamingDF.join(staticDF,List("id"),"inner")
 ```
+Note that stream-static joins are not stateful, so no state management is necessary.
+
+### Supported Join Types
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA4MjAzNDg2LC0xOTQ4NDUzOTY1LDY2Mz
-UzNDg2OCwzNjA0ODA2ODAsMTAxODEwMDIxMywxNTYyNzc1NTY3
-LDU0NTExNjMyMywxNjkzMzg5NjU5LC0zNTkxNDUzNTksNDc2ND
-M1MDQ3LC0xMTc1NTM2ODc5LDYyOTgwMjc3Myw2MjQ2MjAyMTAs
-MTE5OTMxNDU2MiwtMTI5NTQwMTQ2OCw0MzI3Njk3NDcsNTUxMj
-Q2NjYsNDQ5NzQyOCw3OTk3MzkxNzIsLTIzNDM4OTQwXX0=
+eyJoaXN0b3J5IjpbMzY1NDMwMDY4LDQwODIwMzQ4NiwtMTk0OD
+Q1Mzk2NSw2NjM1MzQ4NjgsMzYwNDgwNjgwLDEwMTgxMDAyMTMs
+MTU2Mjc3NTU2Nyw1NDUxMTYzMjMsMTY5MzM4OTY1OSwtMzU5MT
+Q1MzU5LDQ3NjQzNTA0NywtMTE3NTUzNjg3OSw2Mjk4MDI3NzMs
+NjI0NjIwMjEwLDExOTkzMTQ1NjIsLTEyOTU0MDE0NjgsNDMyNz
+Y5NzQ3LDU1MTI0NjY2LDQ0OTc0MjgsNzk5NzM5MTcyXX0=
 -->
