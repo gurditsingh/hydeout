@@ -54,14 +54,16 @@ Let's assume an example in which we have some sensor events. sensor generates a 
  - So ideally, the end events should arrive and processed after the start events.
  - This means the start events must be stored in the state to match the end events which will come in the future.
  - Events can be delayed. start events can arrive after end events.
- - This means end
+ - This means end events must be stored in state, to match start events come in future.
+
+The challenge of generating join results between two data streams is that, at any point of time, the view of the dataset is incomplete for both sides of the join making it much harder to find matches between inputs. Any row received from one input stream can match with any future, yet-to-be-received row from the other input stream. Hence, for both the input streams, we buffer past input as streaming state, so that we can match every future input with past input and accordingly generate joined results.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1Mzk4NzEyNTIsMTY3Mjg4MzczMSwtNz
-Q1NTg0NzEzLC02NDcyOTk2NzgsNDA4MjAzNDg2LC0xOTQ4NDUz
-OTY1LDY2MzUzNDg2OCwzNjA0ODA2ODAsMTAxODEwMDIxMywxNT
-YyNzc1NTY3LDU0NTExNjMyMywxNjkzMzg5NjU5LC0zNTkxNDUz
-NTksNDc2NDM1MDQ3LC0xMTc1NTM2ODc5LDYyOTgwMjc3Myw2Mj
-Q2MjAyMTAsMTE5OTMxNDU2MiwtMTI5NTQwMTQ2OCw0MzI3Njk3
-NDddfQ==
+eyJoaXN0b3J5IjpbLTcxNzAwNjg0LDE2NzI4ODM3MzEsLTc0NT
+U4NDcxMywtNjQ3Mjk5Njc4LDQwODIwMzQ4NiwtMTk0ODQ1Mzk2
+NSw2NjM1MzQ4NjgsMzYwNDgwNjgwLDEwMTgxMDAyMTMsMTU2Mj
+c3NTU2Nyw1NDUxMTYzMjMsMTY5MzM4OTY1OSwtMzU5MTQ1MzU5
+LDQ3NjQzNTA0NywtMTE3NTUzNjg3OSw2Mjk4MDI3NzMsNjI0Nj
+IwMjEwLDExOTkzMTQ1NjIsLTEyOTU0MDE0NjgsNDMyNzY5NzQ3
+XX0=
 -->
