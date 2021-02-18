@@ -51,8 +51,8 @@ Note that **stream-stream joins are stateful**, so state management is necessary
 ### Supported Join Types
 
  - **Inner Join :**  Inner join type is Supported and it's not not Stateful
- - **Left Outer Join :** Left Outer join type is supported when streaming DataFrame on left side of the join and it's not Stateful.
- - **Right Outer Join :** Right Outer join type is supported when streaming DataFrame on right side of the join and it's not Stateful.
+ - **Left Outer Join :** Conditionally supported, must specify watermark on right + time constraints for correct results, optionally specify watermark on left for all state cleanup.
+ - **Right Outer Join :** Conditionally supported, must specify watermark on left + time constraints for correct results, optionally specify watermark on right for all state cleanup.
  - **Full Outer Join :** Full Outer join type is not Supported.
 
 ## why is this a Stateful operation?
@@ -108,13 +108,15 @@ As we know to join two streams together, the event from both the streams will be
 
 ## Points to Remember
 
-The outer join  NULL results will be generated with a delay that depends on the specified watermark delay and the time range condition._ This is because the engine has to wait for that long to ensure there were no matches and there will be no more matches in future.
+The outer NULL results will be generated with a delay that depends on the specified watermark delay and the time range condition. This is because the engine has to wait for that long to ensure there were no matches and there will be no more matches in future.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxNzAyNzk3NSwtMTk0NDY3NzQ0MCwxNj
-cyODgzNzMxLC03NDU1ODQ3MTMsLTY0NzI5OTY3OCw0MDgyMDM0
-ODYsLTE5NDg0NTM5NjUsNjYzNTM0ODY4LDM2MDQ4MDY4MCwxMD
-E4MTAwMjEzLDE1NjI3NzU1NjcsNTQ1MTE2MzIzLDE2OTMzODk2
-NTksLTM1OTE0NTM1OSw0NzY0MzUwNDcsLTExNzU1MzY4NzksNj
-I5ODAyNzczLDYyNDYyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAx
-NDY4XX0=
+eyJoaXN0b3J5IjpbLTE3MTg5MjYwMjIsLTE5NDQ2Nzc0NDAsMT
+Y3Mjg4MzczMSwtNzQ1NTg0NzEzLC02NDcyOTk2NzgsNDA4MjAz
+NDg2LC0xOTQ4NDUzOTY1LDY2MzUzNDg2OCwzNjA0ODA2ODAsMT
+AxODEwMDIxMywxNTYyNzc1NTY3LDU0NTExNjMyMywxNjkzMzg5
+NjU5LC0zNTkxNDUzNTksNDc2NDM1MDQ3LC0xMTc1NTM2ODc5LD
+YyOTgwMjc3Myw2MjQ2MjAyMTAsMTE5OTMxNDU2MiwtMTI5NTQw
+MTQ2OF19
 -->
