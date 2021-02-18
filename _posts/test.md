@@ -53,14 +53,15 @@ Let's assume an example in which we have some sensor events. sensor generates a 
 
  - So ideally, the end events should arrive and processed after the start events.
  - This means the start events must be stored in the state to match the end events which will come in the future.
- - 
+ - Events can be delayed. start events can arrive after end events.
+ - This means end
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2NjA5MjEwNiwxNjcyODgzNzMxLC03ND
-U1ODQ3MTMsLTY0NzI5OTY3OCw0MDgyMDM0ODYsLTE5NDg0NTM5
-NjUsNjYzNTM0ODY4LDM2MDQ4MDY4MCwxMDE4MTAwMjEzLDE1Nj
-I3NzU1NjcsNTQ1MTE2MzIzLDE2OTMzODk2NTksLTM1OTE0NTM1
-OSw0NzY0MzUwNDcsLTExNzU1MzY4NzksNjI5ODAyNzczLDYyND
-YyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAxNDY4LDQzMjc2OTc0
-N119
+eyJoaXN0b3J5IjpbLTE1Mzk4NzEyNTIsMTY3Mjg4MzczMSwtNz
+Q1NTg0NzEzLC02NDcyOTk2NzgsNDA4MjAzNDg2LC0xOTQ4NDUz
+OTY1LDY2MzUzNDg2OCwzNjA0ODA2ODAsMTAxODEwMDIxMywxNT
+YyNzc1NTY3LDU0NTExNjMyMywxNjkzMzg5NjU5LC0zNTkxNDUz
+NTksNDc2NDM1MDQ3LC0xMTc1NTM2ODc5LDYyOTgwMjc3Myw2Mj
+Q2MjAyMTAsMTE5OTMxNDU2MiwtMTI5NTQwMTQ2OCw0MzI3Njk3
+NDddfQ==
 -->
