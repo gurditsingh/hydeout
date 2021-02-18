@@ -2,7 +2,7 @@
 Structured Streaming supports joining a streaming DataFrame with a static DataFrame as well as another streaming DataFrame. The result of the streaming join is generated incrementally, similar to the results of streaming aggregations.
 
 ## Joining Stream with Static data
-In many of the cases, you won't be working with stream of data only. Only many a times you are required to join the Streaming data with other static data sets back to our scenario.
+In many of the cases, you won't be working with stream of data only. Only many a times you are required to join the Streaming data with other static data sets.
 
 ```scala
 val streamingDF = spark.readStream
@@ -30,7 +30,7 @@ Note that stream-static joins are not stateful, so no state management is necess
 -----
 ## Joining Stream with Stream
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5MDM4NDg2NCw0MDgyMDM0ODYsLTE5ND
+eyJoaXN0b3J5IjpbLTY0NzI5OTY3OCw0MDgyMDM0ODYsLTE5ND
 g0NTM5NjUsNjYzNTM0ODY4LDM2MDQ4MDY4MCwxMDE4MTAwMjEz
 LDE1NjI3NzU1NjcsNTQ1MTE2MzIzLDE2OTMzODk2NTksLTM1OT
 E0NTM1OSw0NzY0MzUwNDcsLTExNzU1MzY4NzksNjI5ODAyNzcz
