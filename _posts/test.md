@@ -23,11 +23,12 @@ Note that stream-static joins are not stateful, so no state management is necess
 ### Supported Join Types
 
  - **Inner Join :**  Inner join type is Supported and it's not not Stateful
- - **Left Outer Join :** Left Outer join type is supported when streaming dataframe of left side of the join and it's not Stateful.
- - **Right Outer Join :** Right Outer
+ - **Left Outer Join :** Left Outer join type is supported when streaming dataframe on left side of the join and it's not Stateful.
+ - **Right Outer Join :** Right Outer join type is supported when streaming dataframe on right side of the join and it's not Stateful.
+ - Full Outer Join :
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyOTg4MzE3NCw0MDgyMDM0ODYsLTE5ND
+eyJoaXN0b3J5IjpbLTE4ODA0ODEwMyw0MDgyMDM0ODYsLTE5ND
 g0NTM5NjUsNjYzNTM0ODY4LDM2MDQ4MDY4MCwxMDE4MTAwMjEz
 LDE1NjI3NzU1NjcsNTQ1MTE2MzIzLDE2OTMzODk2NTksLTM1OT
 E0NTM1OSw0NzY0MzUwNDcsLTExNzU1MzY4NzksNjI5ODAyNzcz
