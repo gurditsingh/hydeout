@@ -2,7 +2,7 @@
 Structured Streaming supports joining a streaming DataFrame with a static DataFrame as well as another streaming DataFrame. The result of the streaming join is generated incrementally, similar to the results of streaming aggregations.
 
 ## Joining Stream with Static data
-In many of the cases, you won't be working with stream of data only. Only many a times you are required to join the screaming data with other data sets back to our scenario.
+In many of the cases, you won't be working with stream of data only. Only many a times you are required to join the Streaming data with other static data sets back to our scenario.
 
 ```scala
 val streamingDF = spark.readStream
@@ -27,13 +27,13 @@ Note that stream-static joins are not stateful, so no state management is necess
  - **Right Outer Join :** Right Outer join type is supported when streaming dataframe on right side of the join and it's not Stateful.
  - **Full Outer Join :** Full Outer join type is not Supported.
 
-
-
+-----
+## Joining Stream with Stream
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQxOTE3MzQsNDA4MjAzNDg2LC0xOTQ4ND
-UzOTY1LDY2MzUzNDg2OCwzNjA0ODA2ODAsMTAxODEwMDIxMywx
-NTYyNzc1NTY3LDU0NTExNjMyMywxNjkzMzg5NjU5LC0zNTkxND
-UzNTksNDc2NDM1MDQ3LC0xMTc1NTM2ODc5LDYyOTgwMjc3Myw2
-MjQ2MjAyMTAsMTE5OTMxNDU2MiwtMTI5NTQwMTQ2OCw0MzI3Nj
-k3NDcsNTUxMjQ2NjYsNDQ5NzQyOCw3OTk3MzkxNzJdfQ==
+eyJoaXN0b3J5IjpbLTI5MDM4NDg2NCw0MDgyMDM0ODYsLTE5ND
+g0NTM5NjUsNjYzNTM0ODY4LDM2MDQ4MDY4MCwxMDE4MTAwMjEz
+LDE1NjI3NzU1NjcsNTQ1MTE2MzIzLDE2OTMzODk2NTksLTM1OT
+E0NTM1OSw0NzY0MzUwNDcsLTExNzU1MzY4NzksNjI5ODAyNzcz
+LDYyNDYyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAxNDY4LDQzMj
+c2OTc0Nyw1NTEyNDY2Niw0NDk3NDI4LDc5OTczOTE3Ml19
 -->
