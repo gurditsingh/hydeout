@@ -58,13 +58,13 @@ Let's assume an example in which we have some sensor events. sensor generates a 
 
 > The challenge of generating join results between two data streams is that, at any point of time, the view of the dataset is incomplete for both sides of the join making it much harder to find matches between inputs. Any row received from one input stream can match with any future, yet-to-be-received row from the other input stream. Hence, for both the input streams, we buffer past input as streaming state, so that we can match every future input with past input and accordingly generate joined results.
 
-
+**Lets understand with Example how state maintained**![window events](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/late_1.jpg?raw=true) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDQ2Nzc0NDAsMTY3Mjg4MzczMSwtNz
-Q1NTg0NzEzLC02NDcyOTk2NzgsNDA4MjAzNDg2LC0xOTQ4NDUz
-OTY1LDY2MzUzNDg2OCwzNjA0ODA2ODAsMTAxODEwMDIxMywxNT
-YyNzc1NTY3LDU0NTExNjMyMywxNjkzMzg5NjU5LC0zNTkxNDUz
-NTksNDc2NDM1MDQ3LC0xMTc1NTM2ODc5LDYyOTgwMjc3Myw2Mj
-Q2MjAyMTAsMTE5OTMxNDU2MiwtMTI5NTQwMTQ2OCw0MzI3Njk3
-NDddfQ==
+eyJoaXN0b3J5IjpbMTU5OTM2NjU3NywtMTk0NDY3NzQ0MCwxNj
+cyODgzNzMxLC03NDU1ODQ3MTMsLTY0NzI5OTY3OCw0MDgyMDM0
+ODYsLTE5NDg0NTM5NjUsNjYzNTM0ODY4LDM2MDQ4MDY4MCwxMD
+E4MTAwMjEzLDE1NjI3NzU1NjcsNTQ1MTE2MzIzLDE2OTMzODk2
+NTksLTM1OTE0NTM1OSw0NzY0MzUwNDcsLTExNzU1MzY4NzksNj
+I5ODAyNzczLDYyNDYyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAx
+NDY4XX0=
 -->
