@@ -25,13 +25,15 @@ Note that stream-static joins are not stateful, so no state management is necess
  - **Inner Join :**  Inner join type is Supported and it's not not Stateful
  - **Left Outer Join :** Left Outer join type is supported when streaming dataframe on left side of the join and it's not Stateful.
  - **Right Outer Join :** Right Outer join type is supported when streaming dataframe on right side of the join and it's not Stateful.
- - Full Outer Join :
+ - **Full Outer Join :** Full Outer join type is not Supported.
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODA0ODEwMyw0MDgyMDM0ODYsLTE5ND
-g0NTM5NjUsNjYzNTM0ODY4LDM2MDQ4MDY4MCwxMDE4MTAwMjEz
-LDE1NjI3NzU1NjcsNTQ1MTE2MzIzLDE2OTMzODk2NTksLTM1OT
-E0NTM1OSw0NzY0MzUwNDcsLTExNzU1MzY4NzksNjI5ODAyNzcz
-LDYyNDYyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAxNDY4LDQzMj
-c2OTc0Nyw1NTEyNDY2Niw0NDk3NDI4LDc5OTczOTE3Ml19
+eyJoaXN0b3J5IjpbMzQxOTE3MzQsNDA4MjAzNDg2LC0xOTQ4ND
+UzOTY1LDY2MzUzNDg2OCwzNjA0ODA2ODAsMTAxODEwMDIxMywx
+NTYyNzc1NTY3LDU0NTExNjMyMywxNjkzMzg5NjU5LC0zNTkxND
+UzNTksNDc2NDM1MDQ3LC0xMTc1NTM2ODc5LDYyOTgwMjc3Myw2
+MjQ2MjAyMTAsMTE5OTMxNDU2MiwtMTI5NTQwMTQ2OCw0MzI3Nj
+k3NDcsNTUxMjQ2NjYsNDQ5NzQyOCw3OTk3MzkxNzJdfQ==
 -->
