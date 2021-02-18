@@ -70,14 +70,15 @@ Let's assume an example in which we have some sensor events. sensor generates a 
 ## Handling state in Stream-Stream join
 As we know to join two streams together, the event from both the streams will be stored in the state store.
 
-**The challenge**  The size of the state will continue to increase indefinitely with events from both the streams. This increases the micro batch processing time and can cause memory issues
+**The challenge**  The size of the state will continue to increase indefinitely with events from both the streams. This increases the micro batch processing time and can cause memory issues.
+
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3ODU0NDQ1MzAsLTE5NDQ2Nzc0NDAsMT
-Y3Mjg4MzczMSwtNzQ1NTg0NzEzLC02NDcyOTk2NzgsNDA4MjAz
-NDg2LC0xOTQ4NDUzOTY1LDY2MzUzNDg2OCwzNjA0ODA2ODAsMT
-AxODEwMDIxMywxNTYyNzc1NTY3LDU0NTExNjMyMywxNjkzMzg5
-NjU5LC0zNTkxNDUzNTksNDc2NDM1MDQ3LC0xMTc1NTM2ODc5LD
-YyOTgwMjc3Myw2MjQ2MjAyMTAsMTE5OTMxNDU2MiwtMTI5NTQw
-MTQ2OF19
+eyJoaXN0b3J5IjpbLTkxMzkwODk1MCwtMTk0NDY3NzQ0MCwxNj
+cyODgzNzMxLC03NDU1ODQ3MTMsLTY0NzI5OTY3OCw0MDgyMDM0
+ODYsLTE5NDg0NTM5NjUsNjYzNTM0ODY4LDM2MDQ4MDY4MCwxMD
+E4MTAwMjEzLDE1NjI3NzU1NjcsNTQ1MTE2MzIzLDE2OTMzODk2
+NTksLTM1OTE0NTM1OSw0NzY0MzUwNDcsLTExNzU1MzY4NzksNj
+I5ODAyNzczLDYyNDYyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAx
+NDY4XX0=
 -->
