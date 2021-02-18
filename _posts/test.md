@@ -23,17 +23,20 @@ Note that stream-static joins are not stateful, so no state management is necess
 ### Supported Join Types
 
  - **Inner Join :**  Inner join type is Supported and it's not not Stateful
- - **Left Outer Join :** Left Outer join type is supported when streaming dataframe on left side of the join and it's not Stateful.
- - **Right Outer Join :** Right Outer join type is supported when streaming dataframe on right side of the join and it's not Stateful.
+ - **Left Outer Join :** Left Outer join type is supported when streaming DataFrame on left side of the join and it's not Stateful.
+ - **Right Outer Join :** Right Outer join type is supported when streaming DataFrame on right side of the join and it's not Stateful.
  - **Full Outer Join :** Full Outer join type is not Supported.
 
 -----
 ## Joining Stream with Stream
+Spark added support for stream-stream joins, that is, you can join two streaming DataFrames. 
+ The challenge of generating join results between two data streams is that, at any point of time,
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NzI5OTY3OCw0MDgyMDM0ODYsLTE5ND
-g0NTM5NjUsNjYzNTM0ODY4LDM2MDQ4MDY4MCwxMDE4MTAwMjEz
-LDE1NjI3NzU1NjcsNTQ1MTE2MzIzLDE2OTMzODk2NTksLTM1OT
-E0NTM1OSw0NzY0MzUwNDcsLTExNzU1MzY4NzksNjI5ODAyNzcz
-LDYyNDYyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAxNDY4LDQzMj
-c2OTc0Nyw1NTEyNDY2Niw0NDk3NDI4LDc5OTczOTE3Ml19
+eyJoaXN0b3J5IjpbMTI5MzQ2Nzg0NSwtNjQ3Mjk5Njc4LDQwOD
+IwMzQ4NiwtMTk0ODQ1Mzk2NSw2NjM1MzQ4NjgsMzYwNDgwNjgw
+LDEwMTgxMDAyMTMsMTU2Mjc3NTU2Nyw1NDUxMTYzMjMsMTY5Mz
+M4OTY1OSwtMzU5MTQ1MzU5LDQ3NjQzNTA0NywtMTE3NTUzNjg3
+OSw2Mjk4MDI3NzMsNjI0NjIwMjEwLDExOTkzMTQ1NjIsLTEyOT
+U0MDE0NjgsNDMyNzY5NzQ3LDU1MTI0NjY2LDQ0OTc0MjhdfQ==
+
 -->
