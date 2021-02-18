@@ -96,14 +96,14 @@ As we know to join two streams together, the event from both the streams will be
 	     .... 
 	     ....
 
-	val joinDF = streamingDFTest1.join(streamingDFTest2,List("column"),"inner")
+	val joinDF = streamingDFTest1.join(streamingDFTest2,"startID = endID AND endTime <= startTime + interval 3 hours")
 	```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NTYzMDY5NCwtMTk0NDY3NzQ0MCwxNj
-cyODgzNzMxLC03NDU1ODQ3MTMsLTY0NzI5OTY3OCw0MDgyMDM0
-ODYsLTE5NDg0NTM5NjUsNjYzNTM0ODY4LDM2MDQ4MDY4MCwxMD
-E4MTAwMjEzLDE1NjI3NzU1NjcsNTQ1MTE2MzIzLDE2OTMzODk2
-NTksLTM1OTE0NTM1OSw0NzY0MzUwNDcsLTExNzU1MzY4NzksNj
-I5ODAyNzczLDYyNDYyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAx
-NDY4XX0=
+eyJoaXN0b3J5IjpbOTQ5NzY3OTk4LC0xOTQ0Njc3NDQwLDE2Nz
+I4ODM3MzEsLTc0NTU4NDcxMywtNjQ3Mjk5Njc4LDQwODIwMzQ4
+NiwtMTk0ODQ1Mzk2NSw2NjM1MzQ4NjgsMzYwNDgwNjgwLDEwMT
+gxMDAyMTMsMTU2Mjc3NTU2Nyw1NDUxMTYzMjMsMTY5MzM4OTY1
+OSwtMzU5MTQ1MzU5LDQ3NjQzNTA0NywtMTE3NTUzNjg3OSw2Mj
+k4MDI3NzMsNjI0NjIwMjEwLDExOTkzMTQ1NjIsLTEyOTU0MDE0
+NjhdfQ==
 -->
