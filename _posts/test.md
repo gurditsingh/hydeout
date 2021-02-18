@@ -87,10 +87,11 @@ As we know to join two streams together, the event from both the streams will be
 	val joinDF = watermarkDF1.join(watermarkDF2,List("column"),"inner")
 	```
 
- 2. **Time Constraints** is the range between generation off events at the source. This means what could be the maximum time between generation off to events. e.g. 
+ 2. **Time Constraints** is the range between generation off events at the source. This means what could be the maximum time between generation off to events. e.g. A sensor event can take up to 3 hours to complete the event.
+ 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY3ODU3NDExLC0xOTQ0Njc3NDQwLDE2Nz
+eyJoaXN0b3J5IjpbMTkwMzc4ODE0LC0xOTQ0Njc3NDQwLDE2Nz
 I4ODM3MzEsLTc0NTU4NDcxMywtNjQ3Mjk5Njc4LDQwODIwMzQ4
 NiwtMTk0ODQ1Mzk2NSw2NjM1MzQ4NjgsMzYwNDgwNjgwLDEwMT
 gxMDAyMTMsMTU2Mjc3NTU2Nyw1NDUxMTYzMjMsMTY5MzM4OTY1
