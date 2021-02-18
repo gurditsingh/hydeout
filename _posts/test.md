@@ -49,14 +49,14 @@ val joinDF = streamingDFTest1.join(streamingDFTest2,List("id"),"inner")
 Note that **stream-stream joins are stateful**, so state management is necessary.
 
 ## why is this a Stateful operation?
-Let's assume an example in which we have some sensor events. sensor generates a start and then after sensor e end even search generated after the start events
+Let's assume an example in which we have some sensor events. sensor generates a start and then after sensor generates end event after the start events.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MjEwMTAwLDE2NzI4ODM3MzEsLTc0NT
-U4NDcxMywtNjQ3Mjk5Njc4LDQwODIwMzQ4NiwtMTk0ODQ1Mzk2
-NSw2NjM1MzQ4NjgsMzYwNDgwNjgwLDEwMTgxMDAyMTMsMTU2Mj
-c3NTU2Nyw1NDUxMTYzMjMsMTY5MzM4OTY1OSwtMzU5MTQ1MzU5
-LDQ3NjQzNTA0NywtMTE3NTUzNjg3OSw2Mjk4MDI3NzMsNjI0Nj
-IwMjEwLDExOTkzMTQ1NjIsLTEyOTU0MDE0NjgsNDMyNzY5NzQ3
-XX0=
+eyJoaXN0b3J5IjpbMTkwODQwOTQ5NiwxNjcyODgzNzMxLC03ND
+U1ODQ3MTMsLTY0NzI5OTY3OCw0MDgyMDM0ODYsLTE5NDg0NTM5
+NjUsNjYzNTM0ODY4LDM2MDQ4MDY4MCwxMDE4MTAwMjEzLDE1Nj
+I3NzU1NjcsNTQ1MTE2MzIzLDE2OTMzODk2NTksLTM1OTE0NTM1
+OSw0NzY0MzUwNDcsLTExNzU1MzY4NzksNjI5ODAyNzczLDYyND
+YyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAxNDY4LDQzMjc2OTc0
+N119
 -->
