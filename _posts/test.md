@@ -89,21 +89,22 @@ As we know to join two streams together, the event from both the streams will be
 
  2. **Time Constraints** is the range between generation off events at the source. This means what could be the maximum time between generation off to events. e.g. A sensor event can take up to 3 hours to complete the event.
  
-```scala
-	val streamingDFTest1 = spark.readStream ....
+	```scala
+		val streamingDFTest1 = spark.readStream ....
 
-	val streamingDFTest2 = spark.readStream ....
-	     .... 
-	     ....
+		val streamingDFTest2 = spark.readStream ....
+		     .... 
+		     ....
 
-	val joinDF = streamingDFTest1.join(streamingDFTest2,"startID = endID AND endTime <= startTime + interval 3 hours")
-	```
+		val joinDF = streamingDFTest1.join(streamingDFTest2,"startID = endID AND endTime <= startTime + interval 3 hours")
+		```
+----
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ5NzY3OTk4LC0xOTQ0Njc3NDQwLDE2Nz
-I4ODM3MzEsLTc0NTU4NDcxMywtNjQ3Mjk5Njc4LDQwODIwMzQ4
-NiwtMTk0ODQ1Mzk2NSw2NjM1MzQ4NjgsMzYwNDgwNjgwLDEwMT
-gxMDAyMTMsMTU2Mjc3NTU2Nyw1NDUxMTYzMjMsMTY5MzM4OTY1
-OSwtMzU5MTQ1MzU5LDQ3NjQzNTA0NywtMTE3NTUzNjg3OSw2Mj
-k4MDI3NzMsNjI0NjIwMjEwLDExOTkzMTQ1NjIsLTEyOTU0MDE0
-NjhdfQ==
+eyJoaXN0b3J5IjpbLTEwOTA0ODM0MjAsLTE5NDQ2Nzc0NDAsMT
+Y3Mjg4MzczMSwtNzQ1NTg0NzEzLC02NDcyOTk2NzgsNDA4MjAz
+NDg2LC0xOTQ4NDUzOTY1LDY2MzUzNDg2OCwzNjA0ODA2ODAsMT
+AxODEwMDIxMywxNTYyNzc1NTY3LDU0NTExNjMyMywxNjkzMzg5
+NjU5LC0zNTkxNDUzNTksNDc2NDM1MDQ3LC0xMTc1NTM2ODc5LD
+YyOTgwMjc3Myw2MjQ2MjAyMTAsMTE5OTMxNDU2MiwtMTI5NTQw
+MTQ2OF19
 -->
