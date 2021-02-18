@@ -70,11 +70,14 @@ Let's assume an example in which we have some sensor events. sensor generates a 
 ## Handling state in Stream-Stream join
 As we know to join two streams together, the event from both the streams will be stored in the state store.
 
-**The challenge**  The size of the state will continue to increase indefinitely with events from both the streams. This increases the micro batch processing time and can cause memory issues.
+**The challenge**  The size of the state will continue to increase infinitely with events from both the streams. This increases the micro batch processing time and can cause memory issues.
 
- 
+### How to Limit the state
+
+ 1. Watermarking
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMzkwODk1MCwtMTk0NDY3NzQ0MCwxNj
+eyJoaXN0b3J5IjpbMTM2NTU5NDA2MSwtMTk0NDY3NzQ0MCwxNj
 cyODgzNzMxLC03NDU1ODQ3MTMsLTY0NzI5OTY3OCw0MDgyMDM0
 ODYsLTE5NDg0NTM5NjUsNjYzNTM0ODY4LDM2MDQ4MDY4MCwxMD
 E4MTAwMjEzLDE1NjI3NzU1NjcsNTQ1MTE2MzIzLDE2OTMzODk2
