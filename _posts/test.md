@@ -51,8 +51,12 @@ Note that **stream-stream joins are stateful**, so state management is necessary
 ## why is this a Stateful operation?
 Let's assume an example in which we have some sensor events. sensor generates a start and then after sensor generates end event after the start events.
 
+ - So ideally, the end events should arrive and processed after the start events.
+ - This means the start events must be stored in the state to match the end events which will come in the future.
+ - 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwODQwOTQ5NiwxNjcyODgzNzMxLC03ND
+eyJoaXN0b3J5IjpbMTA2NjA5MjEwNiwxNjcyODgzNzMxLC03ND
 U1ODQ3MTMsLTY0NzI5OTY3OCw0MDgyMDM0ODYsLTE5NDg0NTM5
 NjUsNjYzNTM0ODY4LDM2MDQ4MDY4MCwxMDE4MTAwMjEzLDE1Nj
 I3NzU1NjcsNTQ1MTE2MzIzLDE2OTMzODk2NTksLTM1OTE0NTM1
