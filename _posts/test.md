@@ -48,12 +48,12 @@ val joinDF = streamingDFTest1.join(streamingDFTest2,List("id"),"inner")
 ```
 Note that **stream-stream joins are stateful**, so state management is necessary.
 
- The challenge of generating join results between two data streams is that, at any point of time,
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM4OTAwMDYsLTY0NzI5OTY3OCw0MDgyMD
-M0ODYsLTE5NDg0NTM5NjUsNjYzNTM0ODY4LDM2MDQ4MDY4MCwx
-MDE4MTAwMjEzLDE1NjI3NzU1NjcsNTQ1MTE2MzIzLDE2OTMzOD
-k2NTksLTM1OTE0NTM1OSw0NzY0MzUwNDcsLTExNzU1MzY4Nzks
-NjI5ODAyNzczLDYyNDYyMDIxMCwxMTk5MzE0NTYyLC0xMjk1ND
-AxNDY4LDQzMjc2OTc0Nyw1NTEyNDY2Niw0NDk3NDI4XX0=
+eyJoaXN0b3J5IjpbNDYxMTQyNCwtNjQ3Mjk5Njc4LDQwODIwMz
+Q4NiwtMTk0ODQ1Mzk2NSw2NjM1MzQ4NjgsMzYwNDgwNjgwLDEw
+MTgxMDAyMTMsMTU2Mjc3NTU2Nyw1NDUxMTYzMjMsMTY5MzM4OT
+Y1OSwtMzU5MTQ1MzU5LDQ3NjQzNTA0NywtMTE3NTUzNjg3OSw2
+Mjk4MDI3NzMsNjI0NjIwMjEwLDExOTkzMTQ1NjIsLTEyOTU0MD
+E0NjgsNDMyNzY5NzQ3LDU1MTI0NjY2LDQ0OTc0MjhdfQ==
 -->
