@@ -98,9 +98,11 @@ As we know to join two streams together, the event from both the streams will be
 
 		val joinDF = streamingDFTest1.join(streamingDFTest2,"startID = endID AND endTime <= startTime + interval 3 hours")
 		```
+hjk
+hjk
 ----
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTA0ODM0MjAsLTE5NDQ2Nzc0NDAsMT
+eyJoaXN0b3J5IjpbLTIxMTY5MTY3OTYsLTE5NDQ2Nzc0NDAsMT
 Y3Mjg4MzczMSwtNzQ1NTg0NzEzLC02NDcyOTk2NzgsNDA4MjAz
 NDg2LC0xOTQ4NDUzOTY1LDY2MzUzNDg2OCwzNjA0ODA2ODAsMT
 AxODEwMDIxMywxNTYyNzc1NTY3LDU0NTExNjMyMywxNjkzMzg5
