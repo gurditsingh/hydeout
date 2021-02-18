@@ -18,7 +18,7 @@ val staticDF=spark.read
       
 val joinDF = streamingDF.join(staticDF,List("id"),"inner")
 ```
-Note that stream-static joins are not stateful, so no state management is necessary.
+Note that **stream-static joins are not stateful**, so no state management is necessary.
 
 ### Supported Join Types
 
@@ -46,13 +46,14 @@ val streamingDFTest2 = spark.readStream
       
 val joinDF = streamingDFTest1.join(streamingDFTest2,List("id"),"inner")
 ```
+Note that **stream-stream joins are stateful**, so state management is necessary.
 
  The challenge of generating join results between two data streams is that, at any point of time,
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTczMTQ3NjUwLC02NDcyOTk2NzgsNDA4Mj
-AzNDg2LC0xOTQ4NDUzOTY1LDY2MzUzNDg2OCwzNjA0ODA2ODAs
-MTAxODEwMDIxMywxNTYyNzc1NTY3LDU0NTExNjMyMywxNjkzMz
-g5NjU5LC0zNTkxNDUzNTksNDc2NDM1MDQ3LC0xMTc1NTM2ODc5
-LDYyOTgwMjc3Myw2MjQ2MjAyMTAsMTE5OTMxNDU2MiwtMTI5NT
-QwMTQ2OCw0MzI3Njk3NDcsNTUxMjQ2NjYsNDQ5NzQyOF19
+eyJoaXN0b3J5IjpbMzM4OTAwMDYsLTY0NzI5OTY3OCw0MDgyMD
+M0ODYsLTE5NDg0NTM5NjUsNjYzNTM0ODY4LDM2MDQ4MDY4MCwx
+MDE4MTAwMjEzLDE1NjI3NzU1NjcsNTQ1MTE2MzIzLDE2OTMzOD
+k2NTksLTM1OTE0NTM1OSw0NzY0MzUwNDcsLTExNzU1MzY4Nzks
+NjI5ODAyNzczLDYyNDYyMDIxMCwxMTk5MzE0NTYyLC0xMjk1ND
+AxNDY4LDQzMjc2OTc0Nyw1NTEyNDY2Niw0NDk3NDI4XX0=
 -->
