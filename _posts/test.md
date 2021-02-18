@@ -88,15 +88,18 @@ As we know to join two streams together, the event from both the streams will be
 	      .option("subscribe", "join_events_test2")
 	      .load()
 	      
-	val joinDF = streamingDFTest1.join(streamingDFTest2,List("id"),"inner")
+	val watermarkDF1 = streamingDFTest1.withWatermark("eventTime","2 hours")
+	val watermarkDF2 = streamingDFTest1.withWatermark("eventTime","2 hours")
+	      
+	val joinDF = watermarkDF1 .join(streamingDFTest2,List("id"),"inner")
 	```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDM2NjI0OTYsLTE5NDQ2Nzc0NDAsMT
-Y3Mjg4MzczMSwtNzQ1NTg0NzEzLC02NDcyOTk2NzgsNDA4MjAz
-NDg2LC0xOTQ4NDUzOTY1LDY2MzUzNDg2OCwzNjA0ODA2ODAsMT
-AxODEwMDIxMywxNTYyNzc1NTY3LDU0NTExNjMyMywxNjkzMzg5
-NjU5LC0zNTkxNDUzNTksNDc2NDM1MDQ3LC0xMTc1NTM2ODc5LD
-YyOTgwMjc3Myw2MjQ2MjAyMTAsMTE5OTMxNDU2MiwtMTI5NTQw
-MTQ2OF19
+eyJoaXN0b3J5IjpbNDUzMjk3NjMsLTE5NDQ2Nzc0NDAsMTY3Mj
+g4MzczMSwtNzQ1NTg0NzEzLC02NDcyOTk2NzgsNDA4MjAzNDg2
+LC0xOTQ4NDUzOTY1LDY2MzUzNDg2OCwzNjA0ODA2ODAsMTAxOD
+EwMDIxMywxNTYyNzc1NTY3LDU0NTExNjMyMywxNjkzMzg5NjU5
+LC0zNTkxNDUzNTksNDc2NDM1MDQ3LC0xMTc1NTM2ODc5LDYyOT
+gwMjc3Myw2MjQ2MjAyMTAsMTE5OTMxNDU2MiwtMTI5NTQwMTQ2
+OF19
 -->
