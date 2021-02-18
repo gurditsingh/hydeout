@@ -44,7 +44,7 @@ val streamingDFTest2 = spark.readStream
       .option("subscribe", "join_events_test2")
       .load()
       
-val joinDF = streamingDFTest1.join(streamingDFTest2,List("id"),"inner")
+val joinDF = streamingDFTest1.join(streamingDFTest2,List("column"),"inner")
 ```
 Note that **stream-stream joins are stateful**, so state management is necessary.
 
@@ -84,15 +84,17 @@ As we know to join two streams together, the event from both the streams will be
 	val watermarkDF1 = streamingDFTest1.withWatermark("eventTime","2 hours")
 	val watermarkDF2 = streamingDFTest1.withWatermark("eventTime","2 hours")
 	      
-	val joinDF = watermarkDF1.join(watermarkDF2,List("colume"),"inner")
+	val joinDF = watermarkDF1.join(watermarkDF2,List("column"),"inner")
 	```
 
+ 2. **Time Constraints** is the range between generation off events at the source. This means what could be the maximum time between generation off to events. e.g. 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2NTgwNjQyNCwtMTk0NDY3NzQ0MCwxNj
-cyODgzNzMxLC03NDU1ODQ3MTMsLTY0NzI5OTY3OCw0MDgyMDM0
-ODYsLTE5NDg0NTM5NjUsNjYzNTM0ODY4LDM2MDQ4MDY4MCwxMD
-E4MTAwMjEzLDE1NjI3NzU1NjcsNTQ1MTE2MzIzLDE2OTMzODk2
-NTksLTM1OTE0NTM1OSw0NzY0MzUwNDcsLTExNzU1MzY4NzksNj
-I5ODAyNzczLDYyNDYyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAx
-NDY4XX0=
+eyJoaXN0b3J5IjpbODY3ODU3NDExLC0xOTQ0Njc3NDQwLDE2Nz
+I4ODM3MzEsLTc0NTU4NDcxMywtNjQ3Mjk5Njc4LDQwODIwMzQ4
+NiwtMTk0ODQ1Mzk2NSw2NjM1MzQ4NjgsMzYwNDgwNjgwLDEwMT
+gxMDAyMTMsMTU2Mjc3NTU2Nyw1NDUxMTYzMjMsMTY5MzM4OTY1
+OSwtMzU5MTQ1MzU5LDQ3NjQzNTA0NywtMTE3NTUzNjg3OSw2Mj
+k4MDI3NzMsNjI0NjIwMjEwLDExOTkzMTQ1NjIsLTEyOTU0MDE0
+NjhdfQ==
 -->
