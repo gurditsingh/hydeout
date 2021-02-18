@@ -32,28 +32,27 @@ Note that stream-static joins are not stateful, so no state management is necess
 Spark added support for stream-stream joins, that is, you can join two streaming DataFrames. In which we can join multiple streams together.
 
 ```scala
-val streamingDF = spark.readStream
+val streamingDFTest1 = spark.readStream
       .format("kafka")
       .option("kafka.bootstrap.servers", "localhost:9092")
-      .option("subscribe", "join_events")
+      .option("subscribe", "join_events_test1")
       .load()
 
-val streamingDF = spark.readStream
+val streamingDFTest2 = spark.readStream
       .format("kafka")
       .option("kafka.bootstrap.servers", "localhost:9092")
-      .option("subscribe", "join_events")
+      .option("subscribe", "join_events_test2")
       .load()
       
-val joinDF = streamingDF.join(staticDF,List("id"),"inner")
+val joinDF = streamingDFTest1.join(streamingDFTest2,List("id"),"inner")
 ```
 
  The challenge of generating join results between two data streams is that, at any point of time,
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1OTUwMTU0OSwtNjQ3Mjk5Njc4LDQwOD
-IwMzQ4NiwtMTk0ODQ1Mzk2NSw2NjM1MzQ4NjgsMzYwNDgwNjgw
-LDEwMTgxMDAyMTMsMTU2Mjc3NTU2Nyw1NDUxMTYzMjMsMTY5Mz
-M4OTY1OSwtMzU5MTQ1MzU5LDQ3NjQzNTA0NywtMTE3NTUzNjg3
-OSw2Mjk4MDI3NzMsNjI0NjIwMjEwLDExOTkzMTQ1NjIsLTEyOT
-U0MDE0NjgsNDMyNzY5NzQ3LDU1MTI0NjY2LDQ0OTc0MjhdfQ==
-
+eyJoaXN0b3J5IjpbNTczMTQ3NjUwLC02NDcyOTk2NzgsNDA4Mj
+AzNDg2LC0xOTQ4NDUzOTY1LDY2MzUzNDg2OCwzNjA0ODA2ODAs
+MTAxODEwMDIxMywxNTYyNzc1NTY3LDU0NTExNjMyMywxNjkzMz
+g5NjU5LC0zNTkxNDUzNTksNDc2NDM1MDQ3LC0xMTc1NTM2ODc5
+LDYyOTgwMjc3Myw2MjQ2MjAyMTAsMTE5OTMxNDU2MiwtMTI5NT
+QwMTQ2OCw0MzI3Njk3NDcsNTUxMjQ2NjYsNDQ5NzQyOF19
 -->
