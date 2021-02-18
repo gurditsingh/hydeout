@@ -27,7 +27,7 @@ Note that **stream-static joins are not stateful**, so no state management is ne
  - **Right Outer Join :** Right Outer join type is supported when streaming DataFrame on right side of the join and it's not Stateful.
  - **Full Outer Join :** Full Outer join type is not Supported.
 
------
+
 ## Joining Stream with Stream
 Spark added support for stream-stream joins, that is, you can join two streaming DataFrames. In which we can join multiple streams together.
 
@@ -52,7 +52,7 @@ Note that **stream-stream joins are stateful**, so state management is necessary
 
  - **Inner Join :**  Inner join type is Supported and it's not not Stateful
  - **Left Outer Join :** Conditionally supported, must specify watermark on right + time constraints for correct results, optionally specify watermark on left for all state cleanup.
- - **Right Outer Join :** Right Outer join type is supported when streaming DataFrame on right side of the join and it's not Stateful.
+ - **Right Outer Join :** Conditionally supported, must specify watermark on left + time constraints for correct results, optionally specify watermark on right for all state cleanup.
  - **Full Outer Join :** Full Outer join type is not Supported.
 
 ## why is this a Stateful operation?
@@ -72,7 +72,7 @@ Let's assume an example in which we have some sensor events. sensor generates a 
  - Batch 3 have two end events with id **R3, R2** and both the events are store in end state store but there is no start event. but spark find match for **R2** from start state store and produce join output (R2,01:07,01:13).
  - Batch 4 have one late start event **R3** and stored in start state store. As spark maintaining the state automatically and gracefully handle the late data. After that join produce the output (R3,01:06,01:12).
 
-----
+
 
 ## Handling state in Stream-Stream join
 As we know to join two streams together, the event from both the streams will be stored in the state store.
@@ -110,13 +110,17 @@ As we know to join two streams together, the event from both the streams will be
 
 The outer NULL results will be generated with a delay that depends on the specified watermark delay and the time range condition. This is because the engine has to wait for that long to ensure there were no matches and there will be no more matches in future.
 
+If any of the two input streams being joined does not receive data for a while, the outer (both cases, left or right) output may get delayed.
+
+----
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwODY4NzQ1NywtMTk0NDY3NzQ0MCwxNj
-cyODgzNzMxLC03NDU1ODQ3MTMsLTY0NzI5OTY3OCw0MDgyMDM0
-ODYsLTE5NDg0NTM5NjUsNjYzNTM0ODY4LDM2MDQ4MDY4MCwxMD
-E4MTAwMjEzLDE1NjI3NzU1NjcsNTQ1MTE2MzIzLDE2OTMzODk2
-NTksLTM1OTE0NTM1OSw0NzY0MzUwNDcsLTExNzU1MzY4NzksNj
-I5ODAyNzczLDYyNDYyMDIxMCwxMTk5MzE0NTYyLC0xMjk1NDAx
-NDY4XX0=
+eyJoaXN0b3J5IjpbLTExMTM1NjM4MjYsLTE5NDQ2Nzc0NDAsMT
+Y3Mjg4MzczMSwtNzQ1NTg0NzEzLC02NDcyOTk2NzgsNDA4MjAz
+NDg2LC0xOTQ4NDUzOTY1LDY2MzUzNDg2OCwzNjA0ODA2ODAsMT
+AxODEwMDIxMywxNTYyNzc1NTY3LDU0NTExNjMyMywxNjkzMzg5
+NjU5LC0zNTkxNDUzNTksNDc2NDM1MDQ3LC0xMTc1NTM2ODc5LD
+YyOTgwMjc3Myw2MjQ2MjAyMTAsMTE5OTMxNDU2MiwtMTI5NTQw
+MTQ2OF19
 -->
