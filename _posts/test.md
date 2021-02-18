@@ -62,11 +62,11 @@ Let's assume an example in which we have some sensor events. sensor generates a 
 
  - Batch 1 we have two events one from start event and one from end event. both events are stored in start state and end state and join generates output as (R1,01:00,01:04) 
  - Batch 2 have only one start event with id **R2** but batch 2 don't have end event so join does not generates any output. Spark store start event in start state and expect end event in future.
- - B
+ - Batch 3 have two end events with id **R3, R2** and both the events store in end state. but no start event occur in batch 3 and both
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3OTg4MzY4LC0xOTQ0Njc3NDQwLDE2Nz
+eyJoaXN0b3J5IjpbNzkzOTgxNTc3LC0xOTQ0Njc3NDQwLDE2Nz
 I4ODM3MzEsLTc0NTU4NDcxMywtNjQ3Mjk5Njc4LDQwODIwMzQ4
 NiwtMTk0ODQ1Mzk2NSw2NjM1MzQ4NjgsMzYwNDgwNjgwLDEwMT
 gxMDAyMTMsMTU2Mjc3NTU2Nyw1NDUxMTYzMjMsMTY5MzM4OTY1
