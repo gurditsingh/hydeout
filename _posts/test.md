@@ -74,16 +74,17 @@ config.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG,Serdes.String().getCla
 ```
 
 ## Let's Build first word count application with kafka stream
-lets describe the steps first to perform word count example
+lets describe the Topology of different processors to perform word count example
 
- 1. ReadStream from kafka
+ 1. Read data from kafka topic and define the Source Processor.
+ 2. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4OTMwMDA3OSwyMDgyNjAxNjE2LC0yMT
-EzNzI5OTMyLC05MzE2MjE5NSw2Mzk1MzUwMDAsMTYzNjg4OTA1
-MiwtNjc2MjEzOTY2LC0xMDg4MjE0NTU0LC0xMTEzNTYzODI2LC
-0xOTQ0Njc3NDQwLDE2NzI4ODM3MzEsLTc0NTU4NDcxMywtNjQ3
-Mjk5Njc4LDQwODIwMzQ4NiwtMTk0ODQ1Mzk2NSw2NjM1MzQ4Nj
-gsMzYwNDgwNjgwLDEwMTgxMDAyMTMsMTU2Mjc3NTU2Nyw1NDUx
-MTYzMjNdfQ==
+eyJoaXN0b3J5IjpbOTYwMzA1MjQxLDIwODI2MDE2MTYsLTIxMT
+M3Mjk5MzIsLTkzMTYyMTk1LDYzOTUzNTAwMCwxNjM2ODg5MDUy
+LC02NzYyMTM5NjYsLTEwODgyMTQ1NTQsLTExMTM1NjM4MjYsLT
+E5NDQ2Nzc0NDAsMTY3Mjg4MzczMSwtNzQ1NTg0NzEzLC02NDcy
+OTk2NzgsNDA4MjAzNDg2LC0xOTQ4NDUzOTY1LDY2MzUzNDg2OC
+wzNjA0ODA2ODAsMTAxODEwMDIxMywxNTYyNzc1NTY3LDU0NTEx
+NjMyM119
 -->
