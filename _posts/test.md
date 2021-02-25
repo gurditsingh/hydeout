@@ -62,16 +62,19 @@ Like in kafka consumer and producer application we set some config parameters sa
 	-   As the name of the subdirectory in the state directory (`state.dir`)
 	-   As the prefix of internal Kafka topic names
 	
-2. **bootstrap . servers**
+2. **bootstrap . servers** This is the same setting that is used by the underlying producer and consumer clients to connect to the Kafka cluster.
+
+**Example:**
+
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTU0ODEzOTQsMjA4MjYwMTYxNiwtMj
-ExMzcyOTkzMiwtOTMxNjIxOTUsNjM5NTM1MDAwLDE2MzY4ODkw
-NTIsLTY3NjIxMzk2NiwtMTA4ODIxNDU1NCwtMTExMzU2MzgyNi
-wtMTk0NDY3NzQ0MCwxNjcyODgzNzMxLC03NDU1ODQ3MTMsLTY0
-NzI5OTY3OCw0MDgyMDM0ODYsLTE5NDg0NTM5NjUsNjYzNTM0OD
-Y4LDM2MDQ4MDY4MCwxMDE4MTAwMjEzLDE1NjI3NzU1NjcsNTQ1
-MTE2MzIzXX0=
+eyJoaXN0b3J5IjpbMjA1MDgyMjQ3NiwyMDgyNjAxNjE2LC0yMT
+EzNzI5OTMyLC05MzE2MjE5NSw2Mzk1MzUwMDAsMTYzNjg4OTA1
+MiwtNjc2MjEzOTY2LC0xMDg4MjE0NTU0LC0xMTEzNTYzODI2LC
+0xOTQ0Njc3NDQwLDE2NzI4ODM3MzEsLTc0NTU4NDcxMywtNjQ3
+Mjk5Njc4LDQwODIwMzQ4NiwtMTk0ODQ1Mzk2NSw2NjM1MzQ4Nj
+gsMzYwNDgwNjgwLDEwMTgxMDAyMTMsMTU2Mjc3NTU2Nyw1NDUx
+MTYzMjNdfQ==
 -->
