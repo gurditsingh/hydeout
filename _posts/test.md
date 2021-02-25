@@ -108,8 +108,9 @@ config.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG, Serdes.String().getCl
     kafkaStreams.start()
 ```
 
-## Describe the Topology and Shutdown the application
-**Describe the Topology** or logging the topology is helpful in development and it's helpful to understand the application flow. The topology represents all the sources,  processors and sinks of your application.
+## Logging the Topology and Shutdown the application
+**Logging the Topology** or printing the topology is helpful in development and it's helpful to understand the application flow. The topology represents all the sources,  processors and sinks of your application.
+
  **Example:**
  ```scala
 val config = ....
@@ -123,15 +124,27 @@ kafkaStreams.start()
 
 **Shutdown the application** is good for any application. To shutdown the kafka stream application just add the shut down hook.
  
+ **Example:**
+ ```scala
+val config = ....
+val streamsBuilder = ....
+....
+....
+val kafkaStreams = new KafkaStreams(streamsBuilder.build(),config)
+kafkaStreams.start()
 
+sys.ShutdownHookThread {  
+  kafkaStreams.close(Duration.ofSeconds(10))  
+}
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwNDI3MzQ3MCwtMTE2MTc0MDU3NSwtMj
-E0NjUxMDAwMywyMDgyNjAxNjE2LC0yMTEzNzI5OTMyLC05MzE2
-MjE5NSw2Mzk1MzUwMDAsMTYzNjg4OTA1MiwtNjc2MjEzOTY2LC
-0xMDg4MjE0NTU0LC0xMTEzNTYzODI2LC0xOTQ0Njc3NDQwLDE2
-NzI4ODM3MzEsLTc0NTU4NDcxMywtNjQ3Mjk5Njc4LDQwODIwMz
-Q4NiwtMTk0ODQ1Mzk2NSw2NjM1MzQ4NjgsMzYwNDgwNjgwLDEw
-MTgxMDAyMTNdfQ==
+eyJoaXN0b3J5IjpbLTk1MDAyNTAxMiwtNTA0MjczNDcwLC0xMT
+YxNzQwNTc1LC0yMTQ2NTEwMDAzLDIwODI2MDE2MTYsLTIxMTM3
+Mjk5MzIsLTkzMTYyMTk1LDYzOTUzNTAwMCwxNjM2ODg5MDUyLC
+02NzYyMTM5NjYsLTEwODgyMTQ1NTQsLTExMTM1NjM4MjYsLTE5
+NDQ2Nzc0NDAsMTY3Mjg4MzczMSwtNzQ1NTg0NzEzLC02NDcyOT
+k2NzgsNDA4MjAzNDg2LC0xOTQ4NDUzOTY1LDY2MzUzNDg2OCwz
+NjA0ODA2ODBdfQ==
 -->
