@@ -121,16 +121,17 @@ kafkaStreams.start()
 
 ```
 
-**Shutdown the application** is good for any application. To shu
+**Shutdown the application** is good for any application. To shutdown the kafka stream application just add the shut down hook.
+ 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTk2MDE3NTYsLTExNjE3NDA1NzUsLTIxND
-Y1MTAwMDMsMjA4MjYwMTYxNiwtMjExMzcyOTkzMiwtOTMxNjIx
-OTUsNjM5NTM1MDAwLDE2MzY4ODkwNTIsLTY3NjIxMzk2NiwtMT
-A4ODIxNDU1NCwtMTExMzU2MzgyNiwtMTk0NDY3NzQ0MCwxNjcy
-ODgzNzMxLC03NDU1ODQ3MTMsLTY0NzI5OTY3OCw0MDgyMDM0OD
-YsLTE5NDg0NTM5NjUsNjYzNTM0ODY4LDM2MDQ4MDY4MCwxMDE4
-MTAwMjEzXX0=
+eyJoaXN0b3J5IjpbLTUwNDI3MzQ3MCwtMTE2MTc0MDU3NSwtMj
+E0NjUxMDAwMywyMDgyNjAxNjE2LC0yMTEzNzI5OTMyLC05MzE2
+MjE5NSw2Mzk1MzUwMDAsMTYzNjg4OTA1MiwtNjc2MjEzOTY2LC
+0xMDg4MjE0NTU0LC0xMTEzNTYzODI2LC0xOTQ0Njc3NDQwLDE2
+NzI4ODM3MzEsLTc0NTU4NDcxMywtNjQ3Mjk5Njc4LDQwODIwMz
+Q4NiwtMTk0ODQ1Mzk2NSw2NjM1MzQ4NjgsMzYwNDgwNjgwLDEw
+MTgxMDAyMTNdfQ==
 -->
