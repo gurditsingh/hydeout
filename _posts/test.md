@@ -39,14 +39,15 @@ println(topology.describe())
 
 ### Kafka Streams
 
- - It manages execution of kafka stream application lik
+ - It manages execution of topology of kafka stream application like start, close and state
+ - It consumes records from kafka
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MTQ0MzcxNSwtOTMxNjIxOTUsNjM5NT
-M1MDAwLDE2MzY4ODkwNTIsLTY3NjIxMzk2NiwtMTA4ODIxNDU1
-NCwtMTExMzU2MzgyNiwtMTk0NDY3NzQ0MCwxNjcyODgzNzMxLC
-03NDU1ODQ3MTMsLTY0NzI5OTY3OCw0MDgyMDM0ODYsLTE5NDg0
-NTM5NjUsNjYzNTM0ODY4LDM2MDQ4MDY4MCwxMDE4MTAwMjEzLD
-E1NjI3NzU1NjcsNTQ1MTE2MzIzLDE2OTMzODk2NTksLTM1OTE0
-NTM1OV19
+eyJoaXN0b3J5IjpbNzY5ODgwMTA5LC05MzE2MjE5NSw2Mzk1Mz
+UwMDAsMTYzNjg4OTA1MiwtNjc2MjEzOTY2LC0xMDg4MjE0NTU0
+LC0xMTEzNTYzODI2LC0xOTQ0Njc3NDQwLDE2NzI4ODM3MzEsLT
+c0NTU4NDcxMywtNjQ3Mjk5Njc4LDQwODIwMzQ4NiwtMTk0ODQ1
+Mzk2NSw2NjM1MzQ4NjgsMzYwNDgwNjgwLDEwMTgxMDAyMTMsMT
+U2Mjc3NTU2Nyw1NDUxMTYzMjMsMTY5MzM4OTY1OSwtMzU5MTQ1
+MzU5XX0=
 -->
