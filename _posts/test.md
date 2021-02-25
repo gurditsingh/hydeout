@@ -12,19 +12,21 @@ Kafka Streams simplifies application development by building on the Apache Kafka
 ## Core Concepts:
 
  
-![window events](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/Processor-Topology.png?raw=true) 
+![window events](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/kafka-topology.png?raw=true) 
  - **Stream :** A Stream is a sequence of immutable data records that are fully ordered, can be restart and fault tolerant.
  - **Stream Processor :** A Stream Processor defines the stream processing computational logic for your application, means how input data is transformed into output data. Stream Processor is a node in a processor topology/graph. It process record by record and create new stream after each stream processor. There are two special processors in the topology:
 	-   **Source Processor**: A source processor is a special type of  stream processor that does not have any upstream processors. It produces an input stream to its topology from one or multiple Kafka topics by consuming records from these topics and forward them to its down-stream processors.
 	-   **Sink Processor**: A sink processor is a special type of stream processor that does not have down-stream processors. It sends any received records from its up-stream processors to a specified Kafka topic.
 - **Topology :** A Topology is a graph of processors chained together by streams.
 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2NzkzODU0NCwxNjM2ODg5MDUyLC02Nz
-YyMTM5NjYsLTEwODgyMTQ1NTQsLTExMTM1NjM4MjYsLTE5NDQ2
-Nzc0NDAsMTY3Mjg4MzczMSwtNzQ1NTg0NzEzLC02NDcyOTk2Nz
-gsNDA4MjAzNDg2LC0xOTQ4NDUzOTY1LDY2MzUzNDg2OCwzNjA0
-ODA2ODAsMTAxODEwMDIxMywxNTYyNzc1NTY3LDU0NTExNjMyMy
-wxNjkzMzg5NjU5LC0zNTkxNDUzNTksNDc2NDM1MDQ3LC0xMTc1
-NTM2ODc5XX0=
+eyJoaXN0b3J5IjpbNjM5NTM1MDAwLDE2MzY4ODkwNTIsLTY3Nj
+IxMzk2NiwtMTA4ODIxNDU1NCwtMTExMzU2MzgyNiwtMTk0NDY3
+NzQ0MCwxNjcyODgzNzMxLC03NDU1ODQ3MTMsLTY0NzI5OTY3OC
+w0MDgyMDM0ODYsLTE5NDg0NTM5NjUsNjYzNTM0ODY4LDM2MDQ4
+MDY4MCwxMDE4MTAwMjEzLDE1NjI3NzU1NjcsNTQ1MTE2MzIzLD
+E2OTMzODk2NTksLTM1OTE0NTM1OSw0NzY0MzUwNDcsLTExNzU1
+MzY4NzldfQ==
 -->
