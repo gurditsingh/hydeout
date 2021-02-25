@@ -134,7 +134,7 @@ val streamsBuilder = ....
 ....
 val kafkaStreams = new KafkaStreams(streamsBuilder.build(),config)
 kafkaStreams.start()
-
+println(kafkaStreams.toString)
 ```
 
 **Shutdown the application** is good for any application. To shutdown the kafka stream application just add the shut down hook.
