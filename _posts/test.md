@@ -56,16 +56,22 @@ kafkaStreams.start()
 ## Configuration parameter for Streaming application
 Like in kafka consumer and producer application we set some config parameters same way we need to pass to streaming application. In kafka streams application we can apply bunch of parameters but lets describe the requires one.
 
- 1. **application . id**  Each stream processing application must have a unique ID. The same ID must be given to all instances of the application. This ID is used in the couple of other places to isolate resources used by the application from others:
+ 1. **application . id**  Each stream processing application must have a unique ID. The same ID must be given to all instances of the application. This ID is used in the couple of other places to isolate resources used by the application from others.
+	 -   As the default Kafka consumer and producer  `client.id`  prefix
+	-   As the Kafka consumer  `group.id`  for coordination
+	-   As the name of the subdirectory in the state directory (`state.dir`)
+	-   As the prefix of internal Kafka topic names
+	
+2. **bootstrap . servers**
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3NzcyNDI1OCwyMDgyNjAxNjE2LC0yMT
-EzNzI5OTMyLC05MzE2MjE5NSw2Mzk1MzUwMDAsMTYzNjg4OTA1
-MiwtNjc2MjEzOTY2LC0xMDg4MjE0NTU0LC0xMTEzNTYzODI2LC
-0xOTQ0Njc3NDQwLDE2NzI4ODM3MzEsLTc0NTU4NDcxMywtNjQ3
-Mjk5Njc4LDQwODIwMzQ4NiwtMTk0ODQ1Mzk2NSw2NjM1MzQ4Nj
-gsMzYwNDgwNjgwLDEwMTgxMDAyMTMsMTU2Mjc3NTU2Nyw1NDUx
-MTYzMjNdfQ==
+eyJoaXN0b3J5IjpbLTIwMTU0ODEzOTQsMjA4MjYwMTYxNiwtMj
+ExMzcyOTkzMiwtOTMxNjIxOTUsNjM5NTM1MDAwLDE2MzY4ODkw
+NTIsLTY3NjIxMzk2NiwtMTA4ODIxNDU1NCwtMTExMzU2MzgyNi
+wtMTk0NDY3NzQ0MCwxNjcyODgzNzMxLC03NDU1ODQ3MTMsLTY0
+NzI5OTY3OCw0MDgyMDM0ODYsLTE5NDg0NTM5NjUsNjYzNTM0OD
+Y4LDM2MDQ4MDY4MCwxMDE4MTAwMjEzLDE1NjI3NzU1NjcsNTQ1
+MTE2MzIzXX0=
 -->
