@@ -61,13 +61,16 @@ Like in kafka consumer and producer application we set some config parameters sa
 	-   As the Kafka consumer  `group.id`  for coordination
 	-   As the name of the subdirectory in the state directory (`state.dir`)
 	-   As the prefix of internal Kafka topic names
-	- 
-2. **bootstrap . servers**
+	
+2. **bootstrap . servers** This is the same setting that is used by the underlying producer and consumer clients to connect to the Kafka cluster.
+
+**Example:**
+
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4MzQyNzY4MSwyMDgyNjAxNjE2LC0yMT
+eyJoaXN0b3J5IjpbMjA1MDgyMjQ3NiwyMDgyNjAxNjE2LC0yMT
 EzNzI5OTMyLC05MzE2MjE5NSw2Mzk1MzUwMDAsMTYzNjg4OTA1
 MiwtNjc2MjEzOTY2LC0xMDg4MjE0NTU0LC0xMTEzNTYzODI2LC
 0xOTQ0Njc3NDQwLDE2NzI4ODM3MzEsLTc0NTU4NDcxMywtNjQ3
