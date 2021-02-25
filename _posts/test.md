@@ -109,10 +109,10 @@ config.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG, Serdes.String().getCl
 ```
 
 ## Describe the Topology
-To print or logging the toplology i
+To print or logging the topology is helpful in development and it's helpful to understand the application flow 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODEyMDc3MzksLTExNjE3NDA1NzUsLT
+eyJoaXN0b3J5IjpbLTIwNTU0OTMxMDIsLTExNjE3NDA1NzUsLT
 IxNDY1MTAwMDMsMjA4MjYwMTYxNiwtMjExMzcyOTkzMiwtOTMx
 NjIxOTUsNjM5NTM1MDAwLDE2MzY4ODkwNTIsLTY3NjIxMzk2Ni
 wtMTA4ODIxNDU1NCwtMTExMzU2MzgyNiwtMTk0NDY3NzQ0MCwx
