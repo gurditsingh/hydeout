@@ -13,14 +13,15 @@ Kafka Streams simplifies application development by building on the Apache Kafka
 
  
 
- - **Stream :** Stream is a sequence of immutable data records that are fully ordered, can be restart and fault tolerant 
+ - **Stream :** Stream is a sequence of immutable data records that are fully ordered, can be restart and fault tolerant.
+ - Stream Processor
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NjIxMzk2NiwtMTA4ODIxNDU1NCwtMT
-ExMzU2MzgyNiwtMTk0NDY3NzQ0MCwxNjcyODgzNzMxLC03NDU1
-ODQ3MTMsLTY0NzI5OTY3OCw0MDgyMDM0ODYsLTE5NDg0NTM5Nj
-UsNjYzNTM0ODY4LDM2MDQ4MDY4MCwxMDE4MTAwMjEzLDE1NjI3
-NzU1NjcsNTQ1MTE2MzIzLDE2OTMzODk2NTksLTM1OTE0NTM1OS
-w0NzY0MzUwNDcsLTExNzU1MzY4NzksNjI5ODAyNzczLDYyNDYy
-MDIxMF19
+eyJoaXN0b3J5IjpbMjAzNjg4NTIwOSwtNjc2MjEzOTY2LC0xMD
+g4MjE0NTU0LC0xMTEzNTYzODI2LC0xOTQ0Njc3NDQwLDE2NzI4
+ODM3MzEsLTc0NTU4NDcxMywtNjQ3Mjk5Njc4LDQwODIwMzQ4Ni
+wtMTk0ODQ1Mzk2NSw2NjM1MzQ4NjgsMzYwNDgwNjgwLDEwMTgx
+MDAyMTMsMTU2Mjc3NTU2Nyw1NDUxMTYzMjMsMTY5MzM4OTY1OS
+wtMzU5MTQ1MzU5LDQ3NjQzNTA0NywtMTE3NTUzNjg3OSw2Mjk4
+MDI3NzNdfQ==
 -->
