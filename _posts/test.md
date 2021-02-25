@@ -83,14 +83,17 @@ lets describe the Topology of different processors to perform word count example
  5. Next define the **GroupByKey processor** to aggregate the data on key.
  6. Next define the **Count processor** to count the result on aggregated data.
  7. Next define the **Sink processor** the write the data to kafka topic.
- 8. 
+
+**Example:**
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNzM3NjI5NywyMDgyNjAxNjE2LC0yMT
-EzNzI5OTMyLC05MzE2MjE5NSw2Mzk1MzUwMDAsMTYzNjg4OTA1
-MiwtNjc2MjEzOTY2LC0xMDg4MjE0NTU0LC0xMTEzNTYzODI2LC
-0xOTQ0Njc3NDQwLDE2NzI4ODM3MzEsLTc0NTU4NDcxMywtNjQ3
-Mjk5Njc4LDQwODIwMzQ4NiwtMTk0ODQ1Mzk2NSw2NjM1MzQ4Nj
-gsMzYwNDgwNjgwLDEwMTgxMDAyMTMsMTU2Mjc3NTU2Nyw1NDUx
-MTYzMjNdfQ==
+eyJoaXN0b3J5IjpbLTIxNDY1MTAwMDMsMjA4MjYwMTYxNiwtMj
+ExMzcyOTkzMiwtOTMxNjIxOTUsNjM5NTM1MDAwLDE2MzY4ODkw
+NTIsLTY3NjIxMzk2NiwtMTA4ODIxNDU1NCwtMTExMzU2MzgyNi
+wtMTk0NDY3NzQ0MCwxNjcyODgzNzMxLC03NDU1ODQ3MTMsLTY0
+NzI5OTY3OCw0MDgyMDM0ODYsLTE5NDg0NTM5NjUsNjYzNTM0OD
+Y4LDM2MDQ4MDY4MCwxMDE4MTAwMjEzLDE1NjI3NzU1NjcsNTQ1
+MTE2MzIzXX0=
 -->
