@@ -109,14 +109,24 @@ config.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG, Serdes.String().getCl
 ```
 
 ## Describe the Topology
-To print or logging the topology is helpful in development and it's helpful to understand the application flow 
+To print or logging the topology is helpful in development and it's helpful to understand the application flow. The topology represents all the sources,  processors and sinks of your application.
+ **Example:**
+ ```scala
+val config = ....
+val streamsBuilder = ....
+....
+....
+val kafkaStreams = new KafkaStreams(streamsBuilder.build(),config)
+kafkaStreams.start()
+```
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTU0OTMxMDIsLTExNjE3NDA1NzUsLT
-IxNDY1MTAwMDMsMjA4MjYwMTYxNiwtMjExMzcyOTkzMiwtOTMx
-NjIxOTUsNjM5NTM1MDAwLDE2MzY4ODkwNTIsLTY3NjIxMzk2Ni
-wtMTA4ODIxNDU1NCwtMTExMzU2MzgyNiwtMTk0NDY3NzQ0MCwx
-NjcyODgzNzMxLC03NDU1ODQ3MTMsLTY0NzI5OTY3OCw0MDgyMD
-M0ODYsLTE5NDg0NTM5NjUsNjYzNTM0ODY4LDM2MDQ4MDY4MCwx
-MDE4MTAwMjEzXX0=
+eyJoaXN0b3J5IjpbNDg2NzcxNjgzLC0xMTYxNzQwNTc1LC0yMT
+Q2NTEwMDAzLDIwODI2MDE2MTYsLTIxMTM3Mjk5MzIsLTkzMTYy
+MTk1LDYzOTUzNTAwMCwxNjM2ODg5MDUyLC02NzYyMTM5NjYsLT
+EwODgyMTQ1NTQsLTExMTM1NjM4MjYsLTE5NDQ2Nzc0NDAsMTY3
+Mjg4MzczMSwtNzQ1NTg0NzEzLC02NDcyOTk2NzgsNDA4MjAzND
+g2LC0xOTQ4NDUzOTY1LDY2MzUzNDg2OCwzNjA0ODA2ODAsMTAx
+ODEwMDIxM119
 -->
