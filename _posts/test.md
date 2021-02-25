@@ -42,13 +42,20 @@ println(topology.describe())
  - It manages execution of topology of kafka stream application like start, close and state
  - It consumes records from and produce results to kafka topic.
  - To create multiple kafka streams instances per kafka stream application.
- 
+ ```scala
+val config = ....
+val streamsBuilder = ....
+....
+....
+val kafkaStreams = new KafkaStreams(streamsBuilder.build(),config)
+kafkaStreams.start()
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTM3Mjk5MzIsLTkzMTYyMTk1LDYzOT
-UzNTAwMCwxNjM2ODg5MDUyLC02NzYyMTM5NjYsLTEwODgyMTQ1
-NTQsLTExMTM1NjM4MjYsLTE5NDQ2Nzc0NDAsMTY3Mjg4MzczMS
-wtNzQ1NTg0NzEzLC02NDcyOTk2NzgsNDA4MjAzNDg2LC0xOTQ4
-NDUzOTY1LDY2MzUzNDg2OCwzNjA0ODA2ODAsMTAxODEwMDIxMy
-wxNTYyNzc1NTY3LDU0NTExNjMyMywxNjkzMzg5NjU5LC0zNTkx
-NDUzNTldfQ==
+eyJoaXN0b3J5IjpbLTgxMjI5ODMzMiwtMjExMzcyOTkzMiwtOT
+MxNjIxOTUsNjM5NTM1MDAwLDE2MzY4ODkwNTIsLTY3NjIxMzk2
+NiwtMTA4ODIxNDU1NCwtMTExMzU2MzgyNiwtMTk0NDY3NzQ0MC
+wxNjcyODgzNzMxLC03NDU1ODQ3MTMsLTY0NzI5OTY3OCw0MDgy
+MDM0ODYsLTE5NDg0NTM5NjUsNjYzNTM0ODY4LDM2MDQ4MDY4MC
+wxMDE4MTAwMjEzLDE1NjI3NzU1NjcsNTQ1MTE2MzIzLDE2OTMz
+ODk2NTldfQ==
 -->
