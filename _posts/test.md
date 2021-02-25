@@ -24,14 +24,16 @@ Kafka Streams simplifies application development by building on the Apache Kafka
 
 ### Topology
 
- - It 
+ - It represents the streaming processing logic of kafka stream application.
+ - It is a DAG (directed acyclic graph) of processors.
+ - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyMzU2NTI4Niw2Mzk1MzUwMDAsMTYzNj
-g4OTA1MiwtNjc2MjEzOTY2LC0xMDg4MjE0NTU0LC0xMTEzNTYz
-ODI2LC0xOTQ0Njc3NDQwLDE2NzI4ODM3MzEsLTc0NTU4NDcxMy
-wtNjQ3Mjk5Njc4LDQwODIwMzQ4NiwtMTk0ODQ1Mzk2NSw2NjM1
-MzQ4NjgsMzYwNDgwNjgwLDEwMTgxMDAyMTMsMTU2Mjc3NTU2Ny
-w1NDUxMTYzMjMsMTY5MzM4OTY1OSwtMzU5MTQ1MzU5LDQ3NjQz
-NTA0N119
+eyJoaXN0b3J5IjpbODI5ODAzNjA5LDYzOTUzNTAwMCwxNjM2OD
+g5MDUyLC02NzYyMTM5NjYsLTEwODgyMTQ1NTQsLTExMTM1NjM4
+MjYsLTE5NDQ2Nzc0NDAsMTY3Mjg4MzczMSwtNzQ1NTg0NzEzLC
+02NDcyOTk2NzgsNDA4MjAzNDg2LC0xOTQ4NDUzOTY1LDY2MzUz
+NDg2OCwzNjA0ODA2ODAsMTAxODEwMDIxMywxNTYyNzc1NTY3LD
+U0NTExNjMyMywxNjkzMzg5NjU5LC0zNTkxNDUzNTksNDc2NDM1
+MDQ3XX0=
 -->
