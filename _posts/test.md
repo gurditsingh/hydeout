@@ -7,14 +7,18 @@ Kafka Streams simplifies application development by building on the Apache Kafka
  - Kafka streams provide the wrapper around the kafka Producer and Consumer API's.
  - Kafka streams provide the Topology to describe the flow of the stream.
  - In Kafka streams the Topology process one record at a time.
- - Kafka streams application can 
+ - Kafka streams application can be run in multiple instances. 
+
+## Core Concepts:
+
+ 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MjQzNTgwNywtMTExMzU2MzgyNiwtMT
-k0NDY3NzQ0MCwxNjcyODgzNzMxLC03NDU1ODQ3MTMsLTY0NzI5
-OTY3OCw0MDgyMDM0ODYsLTE5NDg0NTM5NjUsNjYzNTM0ODY4LD
-M2MDQ4MDY4MCwxMDE4MTAwMjEzLDE1NjI3NzU1NjcsNTQ1MTE2
-MzIzLDE2OTMzODk2NTksLTM1OTE0NTM1OSw0NzY0MzUwNDcsLT
-ExNzU1MzY4NzksNjI5ODAyNzczLDYyNDYyMDIxMCwxMTk5MzE0
-NTYyXX0=
+eyJoaXN0b3J5IjpbLTEwODgyMTQ1NTQsLTExMTM1NjM4MjYsLT
+E5NDQ2Nzc0NDAsMTY3Mjg4MzczMSwtNzQ1NTg0NzEzLC02NDcy
+OTk2NzgsNDA4MjAzNDg2LC0xOTQ4NDUzOTY1LDY2MzUzNDg2OC
+wzNjA0ODA2ODAsMTAxODEwMDIxMywxNTYyNzc1NTY3LDU0NTEx
+NjMyMywxNjkzMzg5NjU5LC0zNTkxNDUzNTksNDc2NDM1MDQ3LC
+0xMTc1NTM2ODc5LDYyOTgwMjc3Myw2MjQ2MjAyMTAsMTE5OTMx
+NDU2Ml19
 -->
