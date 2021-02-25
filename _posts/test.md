@@ -40,14 +40,15 @@ println(topology.describe())
 ### Kafka Streams
 
  - It manages execution of topology of kafka stream application like start, close and state
- - It consumes records from kafka
-
+ - It consumes records from and produce results to kafka topic.
+ - To create multiple kafka streams instances per kafka stream application.
+ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzY5ODgwMTA5LC05MzE2MjE5NSw2Mzk1Mz
-UwMDAsMTYzNjg4OTA1MiwtNjc2MjEzOTY2LC0xMDg4MjE0NTU0
-LC0xMTEzNTYzODI2LC0xOTQ0Njc3NDQwLDE2NzI4ODM3MzEsLT
-c0NTU4NDcxMywtNjQ3Mjk5Njc4LDQwODIwMzQ4NiwtMTk0ODQ1
-Mzk2NSw2NjM1MzQ4NjgsMzYwNDgwNjgwLDEwMTgxMDAyMTMsMT
-U2Mjc3NTU2Nyw1NDUxMTYzMjMsMTY5MzM4OTY1OSwtMzU5MTQ1
-MzU5XX0=
+eyJoaXN0b3J5IjpbLTIxMTM3Mjk5MzIsLTkzMTYyMTk1LDYzOT
+UzNTAwMCwxNjM2ODg5MDUyLC02NzYyMTM5NjYsLTEwODgyMTQ1
+NTQsLTExMTM1NjM4MjYsLTE5NDQ2Nzc0NDAsMTY3Mjg4MzczMS
+wtNzQ1NTg0NzEzLC02NDcyOTk2NzgsNDA4MjAzNDg2LC0xOTQ4
+NDUzOTY1LDY2MzUzNDg2OCwzNjA0ODA2ODAsMTAxODEwMDIxMy
+wxNTYyNzc1NTY3LDU0NTExNjMyMywxNjkzMzg5NjU5LC0zNTkx
+NDUzNTldfQ==
 -->
