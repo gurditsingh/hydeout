@@ -28,14 +28,25 @@ Kafka Streams simplifies application development by building on the Apache Kafka
  - It is a DAG (directed acyclic graph) of processors.
  - By Topology API developer can add sources , processors and sinks.
  - Developer can describe the topology and see the logical representation.
-  
+ 
+ 
+ Example:
+```scala
+val streamsBuilder = new StreamsBuilder
+val topology = streamsBuilder.build()
+println(topology.describe())
+``` 
+
+### Kafka Streams
+
+ - It manages execution of kafka stream application lik
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMTYyMTk1LDYzOTUzNTAwMCwxNjM2OD
-g5MDUyLC02NzYyMTM5NjYsLTEwODgyMTQ1NTQsLTExMTM1NjM4
-MjYsLTE5NDQ2Nzc0NDAsMTY3Mjg4MzczMSwtNzQ1NTg0NzEzLC
-02NDcyOTk2NzgsNDA4MjAzNDg2LC0xOTQ4NDUzOTY1LDY2MzUz
-NDg2OCwzNjA0ODA2ODAsMTAxODEwMDIxMywxNTYyNzc1NTY3LD
-U0NTExNjMyMywxNjkzMzg5NjU5LC0zNTkxNDUzNTksNDc2NDM1
-MDQ3XX0=
+eyJoaXN0b3J5IjpbLTk3MTQ0MzcxNSwtOTMxNjIxOTUsNjM5NT
+M1MDAwLDE2MzY4ODkwNTIsLTY3NjIxMzk2NiwtMTA4ODIxNDU1
+NCwtMTExMzU2MzgyNiwtMTk0NDY3NzQ0MCwxNjcyODgzNzMxLC
+03NDU1ODQ3MTMsLTY0NzI5OTY3OCw0MDgyMDM0ODYsLTE5NDg0
+NTM5NjUsNjYzNTM0ODY4LDM2MDQ4MDY4MCwxMDE4MTAwMjEzLD
+E1NjI3NzU1NjcsNTQ1MTE2MzIzLDE2OTMzODk2NTksLTM1OTE0
+NTM1OV19
 -->
