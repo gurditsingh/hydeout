@@ -20,13 +20,18 @@ Kafka Streams simplifies application development by building on the Apache Kafka
 - **Topology :** A Topology is a graph of processors chained together by streams.
 
 
+## Kafka Stream API's at developer side
+
+### Topology
+
+ - It 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM5NTM1MDAwLDE2MzY4ODkwNTIsLTY3Nj
-IxMzk2NiwtMTA4ODIxNDU1NCwtMTExMzU2MzgyNiwtMTk0NDY3
-NzQ0MCwxNjcyODgzNzMxLC03NDU1ODQ3MTMsLTY0NzI5OTY3OC
-w0MDgyMDM0ODYsLTE5NDg0NTM5NjUsNjYzNTM0ODY4LDM2MDQ4
-MDY4MCwxMDE4MTAwMjEzLDE1NjI3NzU1NjcsNTQ1MTE2MzIzLD
-E2OTMzODk2NTksLTM1OTE0NTM1OSw0NzY0MzUwNDcsLTExNzU1
-MzY4NzldfQ==
+eyJoaXN0b3J5IjpbLTMyMzU2NTI4Niw2Mzk1MzUwMDAsMTYzNj
+g4OTA1MiwtNjc2MjEzOTY2LC0xMDg4MjE0NTU0LC0xMTEzNTYz
+ODI2LC0xOTQ0Njc3NDQwLDE2NzI4ODM3MzEsLTc0NTU4NDcxMy
+wtNjQ3Mjk5Njc4LDQwODIwMzQ4NiwtMTk0ODQ1Mzk2NSw2NjM1
+MzQ4NjgsMzYwNDgwNjgwLDEwMTgxMDAyMTMsMTU2Mjc3NTU2Ny
+w1NDUxMTYzMjMsMTY5MzM4OTY1OSwtMzU5MTQ1MzU5LDQ3NjQz
+NTA0N119
 -->
