@@ -79,14 +79,16 @@ lets describe the Topology of different processors to perform word count example
  1. Read data from kafka topic and define the **Source Processor**.
  2. Next define the **MapValues processor** to transform the values to lowercase.
  3. Next define the flatMapValues processor to split the one incoming record into number of outgoing records.
- 4. Next define the SelectKey processor to apply the same key 
+ 4. Next define the SelectKey processor to apply the value of the record as key.
+ 5. Next define the GroupByKey processor to aggregate the data on key.
+ 6. Next define the Count processor to count the 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4Njk1ODAxNywyMDgyNjAxNjE2LC0yMT
-EzNzI5OTMyLC05MzE2MjE5NSw2Mzk1MzUwMDAsMTYzNjg4OTA1
-MiwtNjc2MjEzOTY2LC0xMDg4MjE0NTU0LC0xMTEzNTYzODI2LC
-0xOTQ0Njc3NDQwLDE2NzI4ODM3MzEsLTc0NTU4NDcxMywtNjQ3
-Mjk5Njc4LDQwODIwMzQ4NiwtMTk0ODQ1Mzk2NSw2NjM1MzQ4Nj
-gsMzYwNDgwNjgwLDEwMTgxMDAyMTMsMTU2Mjc3NTU2Nyw1NDUx
-MTYzMjNdfQ==
+eyJoaXN0b3J5IjpbLTE0MDY3Mzc3NDIsMjA4MjYwMTYxNiwtMj
+ExMzcyOTkzMiwtOTMxNjIxOTUsNjM5NTM1MDAwLDE2MzY4ODkw
+NTIsLTY3NjIxMzk2NiwtMTA4ODIxNDU1NCwtMTExMzU2MzgyNi
+wtMTk0NDY3NzQ0MCwxNjcyODgzNzMxLC03NDU1ODQ3MTMsLTY0
+NzI5OTY3OCw0MDgyMDM0ODYsLTE5NDg0NTM5NjUsNjYzNTM0OD
+Y4LDM2MDQ4MDY4MCwxMDE4MTAwMjEzLDE1NjI3NzU1NjcsNTQ1
+MTE2MzIzXX0=
 -->
