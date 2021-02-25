@@ -84,10 +84,12 @@ lets describe the Topology of different processors to perform word count example
  6. Next define the **Count processor** to count the result on aggregated data.
  7. Next define the **Sink processor** the write the data to kafka topic.
 
+**Example:**
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTY2OTQyMzksMjA4MjYwMTYxNiwtMj
+eyJoaXN0b3J5IjpbLTIxNDY1MTAwMDMsMjA4MjYwMTYxNiwtMj
 ExMzcyOTkzMiwtOTMxNjIxOTUsNjM5NTM1MDAwLDE2MzY4ODkw
 NTIsLTY3NjIxMzk2NiwtMTA4ODIxNDU1NCwtMTExMzU2MzgyNi
 wtMTk0NDY3NzQ0MCwxNjcyODgzNzMxLC03NDU1ODQ3MTMsLTY0
