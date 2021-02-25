@@ -109,7 +109,7 @@ config.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG, Serdes.String().getCl
 ```
 
 ## Describe the Topology and Shutdown the application
-To Describe the Topologyprint or logging the topology is helpful in development and it's helpful to understand the application flow. The topology represents all the sources,  processors and sinks of your application.
+**Describe the Topology** or logging the topology is helpful in development and it's helpful to understand the application flow. The topology represents all the sources,  processors and sinks of your application.
  **Example:**
  ```scala
 val config = ....
@@ -121,16 +121,16 @@ kafkaStreams.start()
 
 ```
 
-
+**Shutdown the application** is good for any application. To 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyODYyNzczMiwtMTE2MTc0MDU3NSwtMj
-E0NjUxMDAwMywyMDgyNjAxNjE2LC0yMTEzNzI5OTMyLC05MzE2
-MjE5NSw2Mzk1MzUwMDAsMTYzNjg4OTA1MiwtNjc2MjEzOTY2LC
-0xMDg4MjE0NTU0LC0xMTEzNTYzODI2LC0xOTQ0Njc3NDQwLDE2
-NzI4ODM3MzEsLTc0NTU4NDcxMywtNjQ3Mjk5Njc4LDQwODIwMz
-Q4NiwtMTk0ODQ1Mzk2NSw2NjM1MzQ4NjgsMzYwNDgwNjgwLDEw
-MTgxMDAyMTNdfQ==
+eyJoaXN0b3J5IjpbMTUyMDgxMjkyLC0xMTYxNzQwNTc1LC0yMT
+Q2NTEwMDAzLDIwODI2MDE2MTYsLTIxMTM3Mjk5MzIsLTkzMTYy
+MTk1LDYzOTUzNTAwMCwxNjM2ODg5MDUyLC02NzYyMTM5NjYsLT
+EwODgyMTQ1NTQsLTExMTM1NjM4MjYsLTE5NDQ2Nzc0NDAsMTY3
+Mjg4MzczMSwtNzQ1NTg0NzEzLC02NDcyOTk2NzgsNDA4MjAzND
+g2LC0xOTQ4NDUzOTY1LDY2MzUzNDg2OCwzNjA0ODA2ODAsMTAx
+ODEwMDIxM119
 -->
