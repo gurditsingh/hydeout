@@ -85,15 +85,36 @@ lets describe the Topology of different processors to perform word count example
  7. Next define the **Sink processor** the write the data to kafka topic.
 
 **Example:**
+```scala
+val config = new Properties()
+config.put(StreamsConfig.APPLICATION_ID_CONFIG, "app_id")
+config.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092")
+config.put(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG, Serdes.String().getClass)
+config.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG, Serdes.String().getClass)
 
+    val streamsBuilder: StreamsBuilder = new StreamsBuilder
+
+
+    streamsBuilder.stream("input_data")
+      .mapValues((value: String) => value.toLowerCase)
+      .flatMapValues((value: String) => util.Arrays.asList(value.split("|")))
+      .selectKey((key: String, value: String) => value)
+      .groupByKey
+      .count
+      .toStream.to("output_data")
+
+
+    val kafkaStreams = new KafkaStreams(streamsBuilder.build(), config)
+    kafkaStreams.start()
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNDY1MTAwMDMsMjA4MjYwMTYxNiwtMj
-ExMzcyOTkzMiwtOTMxNjIxOTUsNjM5NTM1MDAwLDE2MzY4ODkw
-NTIsLTY3NjIxMzk2NiwtMTA4ODIxNDU1NCwtMTExMzU2MzgyNi
-wtMTk0NDY3NzQ0MCwxNjcyODgzNzMxLC03NDU1ODQ3MTMsLTY0
-NzI5OTY3OCw0MDgyMDM0ODYsLTE5NDg0NTM5NjUsNjYzNTM0OD
-Y4LDM2MDQ4MDY4MCwxMDE4MTAwMjEzLDE1NjI3NzU1NjcsNTQ1
-MTE2MzIzXX0=
+eyJoaXN0b3J5IjpbLTExNjE3NDA1NzUsLTIxNDY1MTAwMDMsMj
+A4MjYwMTYxNiwtMjExMzcyOTkzMiwtOTMxNjIxOTUsNjM5NTM1
+MDAwLDE2MzY4ODkwNTIsLTY3NjIxMzk2NiwtMTA4ODIxNDU1NC
+wtMTExMzU2MzgyNiwtMTk0NDY3NzQ0MCwxNjcyODgzNzMxLC03
+NDU1ODQ3MTMsLTY0NzI5OTY3OCw0MDgyMDM0ODYsLTE5NDg0NT
+M5NjUsNjYzNTM0ODY4LDM2MDQ4MDY4MCwxMDE4MTAwMjEzLDE1
+NjI3NzU1NjddfQ==
 -->
