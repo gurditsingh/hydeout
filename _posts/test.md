@@ -13,15 +13,15 @@ Kafka Streams simplifies application development by building on the Apache Kafka
 
  
 
- - **Stream :** Stream is a sequence of immutable data records that are fully ordered, can be restart and fault tolerant.
- - Stream Processor
+ - **Stream :** A Stream is a sequence of immutable data records that are fully ordered, can be restart and fault tolerant.
+ - **Stream Processor** : A Stream Processor defines the stream processing computational logic for your application how input data is transformed into output data. A topology is a graph of [stream processors](https://docs.confluent.io/platform/current/streams/concepts.html#streams-concepts-processor) (nodes) that are connected by [streams](https://docs.confluent.io/platform/current/streams/concepts.html#streams-concepts-stream) (edges) or shared [state stores](https://docs.confluent.io/platform/current/streams/architecture.html#streams-architecture-state). There are two special processors in the topology:
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNjg4NTIwOSwtNjc2MjEzOTY2LC0xMD
-g4MjE0NTU0LC0xMTEzNTYzODI2LC0xOTQ0Njc3NDQwLDE2NzI4
-ODM3MzEsLTc0NTU4NDcxMywtNjQ3Mjk5Njc4LDQwODIwMzQ4Ni
-wtMTk0ODQ1Mzk2NSw2NjM1MzQ4NjgsMzYwNDgwNjgwLDEwMTgx
-MDAyMTMsMTU2Mjc3NTU2Nyw1NDUxMTYzMjMsMTY5MzM4OTY1OS
-wtMzU5MTQ1MzU5LDQ3NjQzNTA0NywtMTE3NTUzNjg3OSw2Mjk4
-MDI3NzNdfQ==
+eyJoaXN0b3J5IjpbMzA4MzI1NDQ3LC02NzYyMTM5NjYsLTEwOD
+gyMTQ1NTQsLTExMTM1NjM4MjYsLTE5NDQ2Nzc0NDAsMTY3Mjg4
+MzczMSwtNzQ1NTg0NzEzLC02NDcyOTk2NzgsNDA4MjAzNDg2LC
+0xOTQ4NDUzOTY1LDY2MzUzNDg2OCwzNjA0ODA2ODAsMTAxODEw
+MDIxMywxNTYyNzc1NTY3LDU0NTExNjMyMywxNjkzMzg5NjU5LC
+0zNTkxNDUzNTksNDc2NDM1MDQ3LC0xMTc1NTM2ODc5LDYyOTgw
+Mjc3M119
 -->
