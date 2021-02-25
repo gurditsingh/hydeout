@@ -30,7 +30,7 @@ Kafka Streams simplifies application development by building on the Apache Kafka
  - Developer can describe the topology and see the logical representation.
  
  
- Example:
+ **Example:**
 ```scala
 val streamsBuilder = new StreamsBuilder
 val topology = streamsBuilder.build()
@@ -42,6 +42,8 @@ println(topology.describe())
  - It manages execution of topology of kafka stream application like start, close and state
  - It consumes records from and produce results to kafka topic.
  - To create multiple kafka streams instances per kafka stream application.
+ 
+ **Example:**
  ```scala
 val config = ....
 val streamsBuilder = ....
@@ -50,8 +52,10 @@ val streamsBuilder = ....
 val kafkaStreams = new KafkaStreams(streamsBuilder.build(),config)
 kafkaStreams.start()
 ```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMjI5ODMzMiwtMjExMzcyOTkzMiwtOT
+eyJoaXN0b3J5IjpbMjA4MjYwMTYxNiwtMjExMzcyOTkzMiwtOT
 MxNjIxOTUsNjM5NTM1MDAwLDE2MzY4ODkwNTIsLTY3NjIxMzk2
 NiwtMTA4ODIxNDU1NCwtMTExMzU2MzgyNiwtMTk0NDY3NzQ0MC
 wxNjcyODgzNzMxLC03NDU1ODQ3MTMsLTY0NzI5OTY3OCw0MDgy
