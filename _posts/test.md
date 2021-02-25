@@ -13,10 +13,10 @@ Kafka Streams simplifies application development by building on the Apache Kafka
 
  
 
- - **Stream :** Stream is a sequence of immutable data records that are fully oredered 
+ - **Stream :** Stream is a sequence of immutable data records that are fully ordered, can be restart and fault tolerant 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NjE3Njk3OSwtMTA4ODIxNDU1NCwtMT
+eyJoaXN0b3J5IjpbLTY3NjIxMzk2NiwtMTA4ODIxNDU1NCwtMT
 ExMzU2MzgyNiwtMTk0NDY3NzQ0MCwxNjcyODgzNzMxLC03NDU1
 ODQ3MTMsLTY0NzI5OTY3OCw0MDgyMDM0ODYsLTE5NDg0NTM5Nj
 UsNjYzNTM0ODY4LDM2MDQ4MDY4MCwxMDE4MTAwMjEzLDE1NjI3
