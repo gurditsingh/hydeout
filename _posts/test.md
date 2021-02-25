@@ -65,16 +65,24 @@ Like in kafka consumer and producer application we set some config parameters sa
 2. **bootstrap . servers** This is the same setting that is used by the underlying producer and consumer clients to connect to the Kafka cluster.
 
 **Example:**
+```scala
+val config=new Properties();
+config.put(StreamsConfig.APPLICATION_ID_CONFIG,"app_id")
+config.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG,"localhost:9092")
+config.put(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG,Serdes.String().getClass)
+config.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG,Serdes.String().getClass)
+```
 
+Let's 
 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MDgyMjQ3NiwyMDgyNjAxNjE2LC0yMT
-EzNzI5OTMyLC05MzE2MjE5NSw2Mzk1MzUwMDAsMTYzNjg4OTA1
-MiwtNjc2MjEzOTY2LC0xMDg4MjE0NTU0LC0xMTEzNTYzODI2LC
-0xOTQ0Njc3NDQwLDE2NzI4ODM3MzEsLTc0NTU4NDcxMywtNjQ3
-Mjk5Njc4LDQwODIwMzQ4NiwtMTk0ODQ1Mzk2NSw2NjM1MzQ4Nj
-gsMzYwNDgwNjgwLDEwMTgxMDAyMTMsMTU2Mjc3NTU2Nyw1NDUx
-MTYzMjNdfQ==
+eyJoaXN0b3J5IjpbMzQyNDIzMTc1LDIwODI2MDE2MTYsLTIxMT
+M3Mjk5MzIsLTkzMTYyMTk1LDYzOTUzNTAwMCwxNjM2ODg5MDUy
+LC02NzYyMTM5NjYsLTEwODgyMTQ1NTQsLTExMTM1NjM4MjYsLT
+E5NDQ2Nzc0NDAsMTY3Mjg4MzczMSwtNzQ1NTg0NzEzLC02NDcy
+OTk2NzgsNDA4MjAzNDg2LC0xOTQ4NDUzOTY1LDY2MzUzNDg2OC
+wzNjA0ODA2ODAsMTAxODEwMDIxMywxNTYyNzc1NTY3LDU0NTEx
+NjMyM119
 -->
