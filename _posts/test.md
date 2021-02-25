@@ -14,10 +14,10 @@ Kafka Streams simplifies application development by building on the Apache Kafka
  
 
  - **Stream :** A Stream is a sequence of immutable data records that are fully ordered, can be restart and fault tolerant.
- - **Stream Processor** : A Stream Processor defines the stream processing computational logic for your application. how input data is transformed into output data. A topology is a graph of [stream processors](https://docs.confluent.io/platform/current/streams/concepts.html#streams-concepts-processor) (nodes) that are connected by [streams](https://docs.confluent.io/platform/current/streams/concepts.html#streams-concepts-stream) (edges) or shared [state stores](https://docs.confluent.io/platform/current/streams/architecture.html#streams-architecture-state). There are two special processors in the topology:
+ - **Stream Processor** : A Stream Processor defines the stream processing computational logic for your application, means how input data is transformed into output data. Stream Processor is a Node in a graphThere are two special processors in the topology:
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3MzYxMDU4MSwtNjc2MjEzOTY2LC0xMD
+eyJoaXN0b3J5IjpbLTMzODk4OTQ4MywtNjc2MjEzOTY2LC0xMD
 g4MjE0NTU0LC0xMTEzNTYzODI2LC0xOTQ0Njc3NDQwLDE2NzI4
 ODM3MzEsLTc0NTU4NDcxMywtNjQ3Mjk5Njc4LDQwODIwMzQ4Ni
 wtMTk0ODQ1Mzk2NSw2NjM1MzQ4NjgsMzYwNDgwNjgwLDEwMTgx
