@@ -59,14 +59,14 @@ out_word
 ```
 
 ## what is State in kafka streams:
-
+In general Stream processing becomes really interesting when you have operations that involve multiple events: counting the number of events by type, moving averages, joining two streams, etc. In those cases, you need to keep track of more information— how many events of each type did we see this hour, all events that require joining, sums, averages, etc. We call the information that is stored between events a state.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTgzMDM5MDYsMTMxOTkzMjUwNSwxMT
-k2MjgzMzE2LDE2Nzg1ODUxOTUsLTUwMTAxMzI2MSwyMDM2Nzcy
-NDQzLC0yMDg4NzQ2NjEyLC05NTAwMjUwMTIsLTUwNDI3MzQ3MC
-wtMTE2MTc0MDU3NSwtMjE0NjUxMDAwMywyMDgyNjAxNjE2LC0y
-MTEzNzI5OTMyLC05MzE2MjE5NSw2Mzk1MzUwMDAsMTYzNjg4OT
-A1MiwtNjc2MjEzOTY2LC0xMDg4MjE0NTU0LC0xMTEzNTYzODI2
-LC0xOTQ0Njc3NDQwXX0=
+eyJoaXN0b3J5IjpbMjEwMzMzOTUxNSwxMzE5OTMyNTA1LDExOT
+YyODMzMTYsMTY3ODU4NTE5NSwtNTAxMDEzMjYxLDIwMzY3NzI0
+NDMsLTIwODg3NDY2MTIsLTk1MDAyNTAxMiwtNTA0MjczNDcwLC
+0xMTYxNzQwNTc1LC0yMTQ2NTEwMDAzLDIwODI2MDE2MTYsLTIx
+MTM3Mjk5MzIsLTkzMTYyMTk1LDYzOTUzNTAwMCwxNjM2ODg5MD
+UyLC02NzYyMTM5NjYsLTEwODgyMTQ1NTQsLTExMTM1NjM4MjYs
+LTE5NDQ2Nzc0NDBdfQ==
 -->
