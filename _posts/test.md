@@ -3,19 +3,18 @@ when we create any streaming application kafka internally creates few topics to 
 
  1. **Repartitioning Topic :-**
  
-	 In case of your streaming application if you start transforming the key of your stream, a repartition will happen and create internal topic for repartitioning. The operation which can possibly change the key are **Map, FlatMap and SelectKey** etc. 
- 
-	 Repartitioning is done automatically take care by kafka streams behind the scenes.
+	 In case of your streaming application if you start transforming the key of your stream, a repartition will happen and create internal topic for repartitioning. The operation which can possibly change the key are **Map, FlatMap and SelectKey** etc. Repartitioning is done automatically take care by kafka streams behind the scenes.
 
 
-Can we avoid the repartition 
+	**Can we avoid the repartition or why do we need repartition ?**
+	In kafka 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA3OTkwNDE1LDExOTYyODMzMTYsMTY3OD
-U4NTE5NSwtNTAxMDEzMjYxLDIwMzY3NzI0NDMsLTIwODg3NDY2
-MTIsLTk1MDAyNTAxMiwtNTA0MjczNDcwLC0xMTYxNzQwNTc1LC
-0yMTQ2NTEwMDAzLDIwODI2MDE2MTYsLTIxMTM3Mjk5MzIsLTkz
-MTYyMTk1LDYzOTUzNTAwMCwxNjM2ODg5MDUyLC02NzYyMTM5Nj
-YsLTEwODgyMTQ1NTQsLTExMTM1NjM4MjYsLTE5NDQ2Nzc0NDAs
-MTY3Mjg4MzczMV19
+eyJoaXN0b3J5IjpbLTIwMzI5MTQ5NTgsMTE5NjI4MzMxNiwxNj
+c4NTg1MTk1LC01MDEwMTMyNjEsMjAzNjc3MjQ0MywtMjA4ODc0
+NjYxMiwtOTUwMDI1MDEyLC01MDQyNzM0NzAsLTExNjE3NDA1Nz
+UsLTIxNDY1MTAwMDMsMjA4MjYwMTYxNiwtMjExMzcyOTkzMiwt
+OTMxNjIxOTUsNjM5NTM1MDAwLDE2MzY4ODkwNTIsLTY3NjIxMz
+k2NiwtMTA4ODIxNDU1NCwtMTExMzU2MzgyNiwtMTk0NDY3NzQ0
+MCwxNjcyODgzNzMxXX0=
 -->
