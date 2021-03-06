@@ -66,13 +66,14 @@ It is often to store the state in variables that are local to the stream process
 **Types of state:**
 
  - **Local or internal state :** State that is accessible only by a specific instance of streaming application. This state is usually maintained and managed with an embedded, in-memory database running within the application. The advantage of local state is that it is extremely fast. The disadvantage is that you are limited to the amount of memory available.
+ - **External state :** State that is maintained in an external datastore, like NoSQL system or RDBMS. The advantages of an external state are its virtually unlimited size and the fact that it can be accessed from multiple instances of the application or even from different applications.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MzIxNTYyNywxMzE5OTMyNTA1LDExOT
-YyODMzMTYsMTY3ODU4NTE5NSwtNTAxMDEzMjYxLDIwMzY3NzI0
-NDMsLTIwODg3NDY2MTIsLTk1MDAyNTAxMiwtNTA0MjczNDcwLC
-0xMTYxNzQwNTc1LC0yMTQ2NTEwMDAzLDIwODI2MDE2MTYsLTIx
-MTM3Mjk5MzIsLTkzMTYyMTk1LDYzOTUzNTAwMCwxNjM2ODg5MD
-UyLC02NzYyMTM5NjYsLTEwODgyMTQ1NTQsLTExMTM1NjM4MjYs
-LTE5NDQ2Nzc0NDBdfQ==
+eyJoaXN0b3J5IjpbLTEyNzgzNjM5OTQsMTMxOTkzMjUwNSwxMT
+k2MjgzMzE2LDE2Nzg1ODUxOTUsLTUwMTAxMzI2MSwyMDM2Nzcy
+NDQzLC0yMDg4NzQ2NjEyLC05NTAwMjUwMTIsLTUwNDI3MzQ3MC
+wtMTE2MTc0MDU3NSwtMjE0NjUxMDAwMywyMDgyNjAxNjE2LC0y
+MTEzNzI5OTMyLC05MzE2MjE5NSw2Mzk1MzUwMDAsMTYzNjg4OT
+A1MiwtNjc2MjEzOTY2LC0xMDg4MjE0NTU0LC0xMTEzNTYzODI2
+LC0xOTQ0Njc3NDQwXX0=
 -->
