@@ -7,14 +7,14 @@ when we create any streaming application kafka internally creates few topics to 
 
 
 	**Can we avoid the repartition or why do we need repartition ?**
-	In kafk
+	In kafka stream architecture when we changed the key repartition will occure
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4NjU3MTAyMywxMTk2MjgzMzE2LDE2Nz
-g1ODUxOTUsLTUwMTAxMzI2MSwyMDM2NzcyNDQzLC0yMDg4NzQ2
-NjEyLC05NTAwMjUwMTIsLTUwNDI3MzQ3MCwtMTE2MTc0MDU3NS
-wtMjE0NjUxMDAwMywyMDgyNjAxNjE2LC0yMTEzNzI5OTMyLC05
-MzE2MjE5NSw2Mzk1MzUwMDAsMTYzNjg4OTA1MiwtNjc2MjEzOT
-Y2LC0xMDg4MjE0NTU0LC0xMTEzNTYzODI2LC0xOTQ0Njc3NDQw
-LDE2NzI4ODM3MzFdfQ==
+eyJoaXN0b3J5IjpbLTE5MTc2MTU3ODcsMTE5NjI4MzMxNiwxNj
+c4NTg1MTk1LC01MDEwMTMyNjEsMjAzNjc3MjQ0MywtMjA4ODc0
+NjYxMiwtOTUwMDI1MDEyLC01MDQyNzM0NzAsLTExNjE3NDA1Nz
+UsLTIxNDY1MTAwMDMsMjA4MjYwMTYxNiwtMjExMzcyOTkzMiwt
+OTMxNjIxOTUsNjM5NTM1MDAwLDE2MzY4ODkwNTIsLTY3NjIxMz
+k2NiwtMTA4ODIxNDU1NCwtMTExMzU2MzgyNiwtMTk0NDY3NzQ0
+MCwxNjcyODgzNzMxXX0=
 -->
