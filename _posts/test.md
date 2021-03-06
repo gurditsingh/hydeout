@@ -48,7 +48,8 @@ KafkaStreams ks = new KafkaStreams(streamsBuilder.build(), config);
 ks.start();
 
 ``` 
-If we list all the topic in kafka then we can see int
+If we list all the topic in kafka then we can see internal topics are created. because kafka stream internally use consumer API that's way _offsets topic is created.
+ 
 ```shell
 Test-KSTREAM-AGGREGATE-STATE-STORE-0000000004-changelog
 Test-KSTREAM-AGGREGATE-STATE-STORE-0000000004-repartition
@@ -58,7 +59,7 @@ out_word
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTA2MzExMjA0LDEzMTk5MzI1MDUsMTE5Nj
+eyJoaXN0b3J5IjpbLTcyMTE3MjczLDEzMTk5MzI1MDUsMTE5Nj
 I4MzMxNiwxNjc4NTg1MTk1LC01MDEwMTMyNjEsMjAzNjc3MjQ0
 MywtMjA4ODc0NjYxMiwtOTUwMDI1MDEyLC01MDQyNzM0NzAsLT
 ExNjE3NDA1NzUsLTIxNDY1MTAwMDMsMjA4MjYwMTYxNiwtMjEx
