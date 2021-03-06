@@ -58,10 +58,11 @@ in_word
 out_word
 ```
 
+## what is State in kafka streams:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTM4NTMxMTcsMTMxOTkzMjUwNSwxMT
+eyJoaXN0b3J5IjpbLTE1MTgzMDM5MDYsMTMxOTkzMjUwNSwxMT
 k2MjgzMzE2LDE2Nzg1ODUxOTUsLTUwMTAxMzI2MSwyMDM2Nzcy
 NDQzLC0yMDg4NzQ2NjEyLC05NTAwMjUwMTIsLTUwNDI3MzQ3MC
 wtMTE2MTc0MDU3NSwtMjE0NjUxMDAwMywyMDgyNjAxNjE2LC0y
