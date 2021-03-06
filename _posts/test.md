@@ -62,7 +62,7 @@ out_word
 
 Kafka Streams provides  **state stores**, which can be used by stream processing applications to store and query data, which is an important capability when implementing stateful operations. Kafka Streams automatically creates and manages such state stores when you are calling stateful operators such as  `count()`  or  `aggregate()`.
 
-Every stream task in a Kafka Streams application may embed one or more local state stores that can be accessed via APIs to store and query data required for processing. These state stores can either be a  [RocksDB](http://rocksdb.org/)  database, an in-memory hash map, or another convenient data structure. Kafka Streams offers  [fault-tolerance](https://docs.confluent.io/platform/current/streams/architecture.html#streams-architecture-fault-tolerance)  and automatic recovery for local state stores.
+Every stream task in a Kafka Streams application may embed one or more local state stores that can be accessed via APIs to store and query data required for processing. These state stores can either be a  RocksDB  database, an in-memory hash map, or another convenient data structure. Kafka Streams offers fault-tolerance and automatic recovery for local state stores.
 
 **Types of state:**
 
@@ -71,11 +71,11 @@ Every stream task in a Kafka Streams application may embed one or more local sta
  - **External state :** State that is maintained in an external datastore, like NoSQL system or RDBMS. The advantages of an external state are its virtually unlimited size and the fact that it can be accessed from multiple instances of the application or even from different applications.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMzcxNDA0NCwxNjcxMDAxMzQyLDEzMT
-k5MzI1MDUsMTE5NjI4MzMxNiwxNjc4NTg1MTk1LC01MDEwMTMy
-NjEsMjAzNjc3MjQ0MywtMjA4ODc0NjYxMiwtOTUwMDI1MDEyLC
-01MDQyNzM0NzAsLTExNjE3NDA1NzUsLTIxNDY1MTAwMDMsMjA4
-MjYwMTYxNiwtMjExMzcyOTkzMiwtOTMxNjIxOTUsNjM5NTM1MD
-AwLDE2MzY4ODkwNTIsLTY3NjIxMzk2NiwtMTA4ODIxNDU1NCwt
-MTExMzU2MzgyNl19
+eyJoaXN0b3J5IjpbLTYyOTYwODIxNSwxNzEzNzE0MDQ0LDE2Nz
+EwMDEzNDIsMTMxOTkzMjUwNSwxMTk2MjgzMzE2LDE2Nzg1ODUx
+OTUsLTUwMTAxMzI2MSwyMDM2NzcyNDQzLC0yMDg4NzQ2NjEyLC
+05NTAwMjUwMTIsLTUwNDI3MzQ3MCwtMTE2MTc0MDU3NSwtMjE0
+NjUxMDAwMywyMDgyNjAxNjE2LC0yMTEzNzI5OTMyLC05MzE2Mj
+E5NSw2Mzk1MzUwMDAsMTYzNjg4OTA1MiwtNjc2MjEzOTY2LC0x
+MDg4MjE0NTU0XX0=
 -->
