@@ -61,8 +61,10 @@ out_word
 ## what is State in kafka streams:
 In general Stream processing becomes really interesting when you have operations that involve multiple events: counting the number of events by type, moving averages, joining two streams, etc. In those cases, you need to keep track of more information— how many events of each type did we see this hour, all events that require joining, sums, averages, etc. We call the information that is stored between events a state.
 
+It is often to store the state in variables that are local to the streamprocessing app, such as a simple hash-table to store moving counts. In fact, we did just that in many examples in this book. However, this is not a reliable approach for managing state in stream processing because when the stream-processing application is stopped, the state is lost, which changes the results. This is usually not the desired outcome, so care should be taken to persist the most recent state and recover it when starting the application
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwMzMzOTUxNSwxMzE5OTMyNTA1LDExOT
+eyJoaXN0b3J5IjpbMjEyNzgwODUzNywxMzE5OTMyNTA1LDExOT
 YyODMzMTYsMTY3ODU4NTE5NSwtNTAxMDEzMjYxLDIwMzY3NzI0
 NDMsLTIwODg3NDY2MTIsLTk1MDAyNTAxMiwtNTA0MjczNDcwLC
 0xMTYxNzQwNTc1LC0yMTQ2NTEwMDAzLDIwODI2MDE2MTYsLTIx
