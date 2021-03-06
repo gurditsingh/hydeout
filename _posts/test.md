@@ -1,11 +1,10 @@
 ## What are internal topics used in Kafka Streams?
 when we create any streaming application kafka internally creates few topics to manage the state and other aspects of streaming.
 
- 1. Repartitioning Topic :- In case of your streaming application if you start transforming the key of your stream, a repartition will happen and create internal topic for repartitioning.
- As soon as 
+ 1. Repartitioning Topic :- In case of your streaming application if you start transforming the key of your stream, a repartition will happen and create internal topic for repartitioning. The operation which can possibly change the key are Map, FlatMap and 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzk1MTU0NTQsMTY3ODU4NTE5NSwtNT
+eyJoaXN0b3J5IjpbLTE4OTMyNTQzOTksMTY3ODU4NTE5NSwtNT
 AxMDEzMjYxLDIwMzY3NzI0NDMsLTIwODg3NDY2MTIsLTk1MDAy
 NTAxMiwtNTA0MjczNDcwLC0xMTYxNzQwNTc1LC0yMTQ2NTEwMD
 AzLDIwODI2MDE2MTYsLTIxMTM3Mjk5MzIsLTkzMTYyMTk1LDYz
