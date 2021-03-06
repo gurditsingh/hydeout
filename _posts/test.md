@@ -7,10 +7,10 @@ when we create any streaming application kafka internally creates few topics to 
 
 
 	**Can we avoid the repartition or why do we need repartition ?**
-	In kafka stream architecture when we changed the key repartition will occure
+	In kafka stream architecture when we changed the key  data needs to be shuffle around also called
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTc2MTU3ODcsMTE5NjI4MzMxNiwxNj
+eyJoaXN0b3J5IjpbLTE2MDU1MzM0NzAsMTE5NjI4MzMxNiwxNj
 c4NTg1MTk1LC01MDEwMTMyNjEsMjAzNjc3MjQ0MywtMjA4ODc0
 NjYxMiwtOTUwMDI1MDEyLC01MDQyNzM0NzAsLTExNjE3NDA1Nz
 UsLTIxNDY1MTAwMDMsMjA4MjYwMTYxNiwtMjExMzcyOTkzMiwt
