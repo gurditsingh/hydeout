@@ -48,7 +48,8 @@ KafkaStreams ks = new KafkaStreams(streamsBuilder.build(), config);
 ks.start();
 
 ``` 
-If we list all the topic in kafka then we can see internall
+If we list all the topic in kafka then we can see internal topics are created. because kafka stream internally use consumer API that's way _offsets topic is created.
+ 
 ```shell
 Test-KSTREAM-AGGREGATE-STATE-STORE-0000000004-changelog
 Test-KSTREAM-AGGREGATE-STATE-STORE-0000000004-repartition
@@ -58,11 +59,11 @@ out_word
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTQxMTMwODQsMTMxOTkzMjUwNSwxMT
-k2MjgzMzE2LDE2Nzg1ODUxOTUsLTUwMTAxMzI2MSwyMDM2Nzcy
-NDQzLC0yMDg4NzQ2NjEyLC05NTAwMjUwMTIsLTUwNDI3MzQ3MC
-wtMTE2MTc0MDU3NSwtMjE0NjUxMDAwMywyMDgyNjAxNjE2LC0y
-MTEzNzI5OTMyLC05MzE2MjE5NSw2Mzk1MzUwMDAsMTYzNjg4OT
-A1MiwtNjc2MjEzOTY2LC0xMDg4MjE0NTU0LC0xMTEzNTYzODI2
-LC0xOTQ0Njc3NDQwXX0=
+eyJoaXN0b3J5IjpbLTcyMTE3MjczLDEzMTk5MzI1MDUsMTE5Nj
+I4MzMxNiwxNjc4NTg1MTk1LC01MDEwMTMyNjEsMjAzNjc3MjQ0
+MywtMjA4ODc0NjYxMiwtOTUwMDI1MDEyLC01MDQyNzM0NzAsLT
+ExNjE3NDA1NzUsLTIxNDY1MTAwMDMsMjA4MjYwMTYxNiwtMjEx
+MzcyOTkzMiwtOTMxNjIxOTUsNjM5NTM1MDAwLDE2MzY4ODkwNT
+IsLTY3NjIxMzk2NiwtMTA4ODIxNDU1NCwtMTExMzU2MzgyNiwt
+MTk0NDY3NzQ0MF19
 -->
