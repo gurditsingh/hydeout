@@ -59,9 +59,10 @@ out_word
 ```
 
 ## what is State in kafka streams:
-In general Stream processing becomes really interesting when you have operations that involve multiple events: counting the number of events by type, moving averages, joining two streams, etc. In those cases, you need to keep track of more information— how many events of each type did we see this hour, all events that require joining, sums, averages, etc. We call the information that is stored between events a state.
 
-It is often to store the state in variables that are local to the stream processing application logic, such as a simple hash-table to store moving counts. However, this is not a reliable approach for managing state in stream processing because when the stream-processing application is stopped, the state is lost, which changes the results. This is usually not the desired outcome, so care should be taken to persist the most recent state and recover it when starting the application.
+Kafka Streams provides  **state stores**, which can be used by stream processing applications to store and query data, which is an important capability when implementing  [stateful operations](https://docs.confluent.io/platform/current/streams/concepts.html#streams-concepts-stateful-processing). The  [Kafka Streams DSL](https://docs.confluent.io/platform/current/streams/developer-guide/dsl-api.html#streams-developer-guide-dsl), for example, automatically creates and manages such state stores when you are calling stateful operators such as  `count()`  or  `aggregate()`, or when you are  [windowing a stream](https://docs.confluent.io/platform/current/streams/developer-guide/dsl-api.html#streams-developer-guide-dsl-windowing).
+
+Every stream task in a Kafka Streams application may embed one or more local state stores that can be accessed via APIs to store and query data required for processing. These state stores can either be a  [RocksDB](http://rocksdb.org/)  database, an in-memory hash map, or another convenient data structure. Kafka Streams offers  [fault-tolerance](https://docs.confluent.io/platform/current/streams/architecture.html#streams-architecture-fault-tolerance)  and automatic recovery for local state stores.
 
 **Types of state:**
 
@@ -70,11 +71,11 @@ It is often to store the state in variables that are local to the stream process
  - **External state :** State that is maintained in an external datastore, like NoSQL system or RDBMS. The advantages of an external state are its virtually unlimited size and the fact that it can be accessed from multiple instances of the application or even from different applications.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MTAwMTM0MiwxMzE5OTMyNTA1LDExOT
-YyODMzMTYsMTY3ODU4NTE5NSwtNTAxMDEzMjYxLDIwMzY3NzI0
-NDMsLTIwODg3NDY2MTIsLTk1MDAyNTAxMiwtNTA0MjczNDcwLC
-0xMTYxNzQwNTc1LC0yMTQ2NTEwMDAzLDIwODI2MDE2MTYsLTIx
-MTM3Mjk5MzIsLTkzMTYyMTk1LDYzOTUzNTAwMCwxNjM2ODg5MD
-UyLC02NzYyMTM5NjYsLTEwODgyMTQ1NTQsLTExMTM1NjM4MjYs
-LTE5NDQ2Nzc0NDBdfQ==
+eyJoaXN0b3J5IjpbLTIxMjE5NDkwMjYsMTY3MTAwMTM0MiwxMz
+E5OTMyNTA1LDExOTYyODMzMTYsMTY3ODU4NTE5NSwtNTAxMDEz
+MjYxLDIwMzY3NzI0NDMsLTIwODg3NDY2MTIsLTk1MDAyNTAxMi
+wtNTA0MjczNDcwLC0xMTYxNzQwNTc1LC0yMTQ2NTEwMDAzLDIw
+ODI2MDE2MTYsLTIxMTM3Mjk5MzIsLTkzMTYyMTk1LDYzOTUzNT
+AwMCwxNjM2ODg5MDUyLC02NzYyMTM5NjYsLTEwODgyMTQ1NTQs
+LTExMTM1NjM4MjZdfQ==
 -->
