@@ -22,6 +22,8 @@ when we create any streaming application kafka internally creates few topics to 
 
 
 ## Lets see in sample example
+
+In the below example we changed the key by selectKey() operator and also apply the aggregation by groupByKey()
 ```scala
 Properties config = new Properties();  
 config.put(StreamsConfig.APPLICATION_ID_CONFIG, "Test");  
@@ -49,7 +51,7 @@ ks.start();
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNTQyODUxOSwxMzE5OTMyNTA1LDExOT
+eyJoaXN0b3J5IjpbMTU2Nzg0NDEwNSwxMzE5OTMyNTA1LDExOT
 YyODMzMTYsMTY3ODU4NTE5NSwtNTAxMDEzMjYxLDIwMzY3NzI0
 NDMsLTIwODg3NDY2MTIsLTk1MDAyNTAxMiwtNTA0MjczNDcwLC
 0xMTYxNzQwNTc1LC0yMTQ2NTEwMDAzLDIwODI2MDE2MTYsLTIx
