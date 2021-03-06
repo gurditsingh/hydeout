@@ -8,10 +8,11 @@ when we create any streaming application kafka internally creates few topics to 
 
 	**Can we avoid the repartition or why do we need repartition ?**
 	In kafka stream architecture when we changed the key data needs to be shuffle/repartitioned around the streaming application where data need to written back to kafka and again reads the data back from the new key and grouped the data.
- 2. List item
+	
+ 2. **Changelog Topic :-**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2Mjc3OTE2MCwxMTk2MjgzMzE2LDE2Nz
+eyJoaXN0b3J5IjpbMTMxOTkzMjUwNSwxMTk2MjgzMzE2LDE2Nz
 g1ODUxOTUsLTUwMTAxMzI2MSwyMDM2NzcyNDQzLC0yMDg4NzQ2
 NjEyLC05NTAwMjUwMTIsLTUwNDI3MzQ3MCwtMTE2MTc0MDU3NS
 wtMjE0NjUxMDAwMywyMDgyNjAxNjE2LC0yMTEzNzI5OTMyLC05
