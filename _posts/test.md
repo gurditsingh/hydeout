@@ -22,9 +22,34 @@ when we create any streaming application kafka internally creates few topics to 
 
 
 ## Lets see in sample example
- 
+```scala
+Properties config = new Properties();  
+config.put(StreamsConfig.APPLICATION_ID_CONFIG, "Test");  
+config.put(StreamsConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");  
+config.put(StreamsConfig.DEFAULT_KEY_SERDE_CLASS_CONFIG, Serdes.String().getClass());  
+config.put(StreamsConfig.DEFAULT_VALUE_SERDE_CLASS_CONFIG, Serdes.String().getClass());  
+  
+StreamsBuilder streamsBuilder = new StreamsBuilder();  
+  
+KStream<String, String> inputStream = streamsBuilder.stream("in_word");  
+  
+inputStream.mapValues(value -> value.toLowerCase())  
+        .flatMapValues(value -> Arrays.asList(value.split("#")))  
+        .selectKey((key, value) -> value)  
+        .groupByKey()  
+        .count()  
+        .toStream()  
+        .to("out_word");  
+  
+  
+KafkaStreams ks = new KafkaStreams(streamsBuilder.build(), config);  
+ks.start();
+
+``` 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2NTMwNTE0MywxMzE5OTMyNTA1LDExOT
+eyJoaXN0b3J5IjpbMTUwNTQyODUxOSwxMzE5OTMyNTA1LDExOT
 YyODMzMTYsMTY3ODU4NTE5NSwtNTAxMDEzMjYxLDIwMzY3NzI0
 NDMsLTIwODg3NDY2MTIsLTk1MDAyNTAxMiwtNTA0MjczNDcwLC
 0xMTYxNzQwNTc1LC0yMTQ2NTEwMDAzLDIwODI2MDE2MTYsLTIx
