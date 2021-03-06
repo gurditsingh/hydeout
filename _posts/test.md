@@ -60,7 +60,7 @@ out_word
 
 ## what is State in kafka streams:
 
-Kafka Streams provides  **state stores**, which can be used by stream processing applications to store and query data, which is an important capability when implementing  [stateful operations](https://docs.confluent.io/platform/current/streams/concepts.html#streams-concepts-stateful-processing). The  [Kafka Streams DSL](https://docs.confluent.io/platform/current/streams/developer-guide/dsl-api.html#streams-developer-guide-dsl), for example, automatically creates and manages such state stores when you are calling stateful operators such as  `count()`  or  `aggregate()`, or when you are  [windowing a stream](https://docs.confluent.io/platform/current/streams/developer-guide/dsl-api.html#streams-developer-guide-dsl-windowing).
+Kafka Streams provides  **state stores**, which can be used by stream processing applications to store and query data, which is an important capability when implementing stateful operations. Kafka Streams automatically creates and manages such state stores when you are calling stateful operators such as  `count()`  or  `aggregate()`.
 
 Every stream task in a Kafka Streams application may embed one or more local state stores that can be accessed via APIs to store and query data required for processing. These state stores can either be a  [RocksDB](http://rocksdb.org/)  database, an in-memory hash map, or another convenient data structure. Kafka Streams offers  [fault-tolerance](https://docs.confluent.io/platform/current/streams/architecture.html#streams-architecture-fault-tolerance)  and automatic recovery for local state stores.
 
@@ -71,11 +71,11 @@ Every stream task in a Kafka Streams application may embed one or more local sta
  - **External state :** State that is maintained in an external datastore, like NoSQL system or RDBMS. The advantages of an external state are its virtually unlimited size and the fact that it can be accessed from multiple instances of the application or even from different applications.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMjE5NDkwMjYsMTY3MTAwMTM0MiwxMz
-E5OTMyNTA1LDExOTYyODMzMTYsMTY3ODU4NTE5NSwtNTAxMDEz
-MjYxLDIwMzY3NzI0NDMsLTIwODg3NDY2MTIsLTk1MDAyNTAxMi
-wtNTA0MjczNDcwLC0xMTYxNzQwNTc1LC0yMTQ2NTEwMDAzLDIw
-ODI2MDE2MTYsLTIxMTM3Mjk5MzIsLTkzMTYyMTk1LDYzOTUzNT
-AwMCwxNjM2ODg5MDUyLC02NzYyMTM5NjYsLTEwODgyMTQ1NTQs
-LTExMTM1NjM4MjZdfQ==
+eyJoaXN0b3J5IjpbMTcxMzcxNDA0NCwxNjcxMDAxMzQyLDEzMT
+k5MzI1MDUsMTE5NjI4MzMxNiwxNjc4NTg1MTk1LC01MDEwMTMy
+NjEsMjAzNjc3MjQ0MywtMjA4ODc0NjYxMiwtOTUwMDI1MDEyLC
+01MDQyNzM0NzAsLTExNjE3NDA1NzUsLTIxNDY1MTAwMDMsMjA4
+MjYwMTYxNiwtMjExMzcyOTkzMiwtOTMxNjIxOTUsNjM5NTM1MD
+AwLDE2MzY4ODkwNTIsLTY3NjIxMzk2NiwtMTA4ODIxNDU1NCwt
+MTExMzU2MzgyNl19
 -->
