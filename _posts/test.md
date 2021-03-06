@@ -1,11 +1,11 @@
 ## What are internal topics used in Kafka Streams?
-when we create any streaming application kafka internally creates few topics to mange
+when we create any streaming application kafka internally creates few topics to manage the state and 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDY3MDk2MDMsMjAzNjc3MjQ0MywtMj
-A4ODc0NjYxMiwtOTUwMDI1MDEyLC01MDQyNzM0NzAsLTExNjE3
-NDA1NzUsLTIxNDY1MTAwMDMsMjA4MjYwMTYxNiwtMjExMzcyOT
-kzMiwtOTMxNjIxOTUsNjM5NTM1MDAwLDE2MzY4ODkwNTIsLTY3
-NjIxMzk2NiwtMTA4ODIxNDU1NCwtMTExMzU2MzgyNiwtMTk0ND
-Y3NzQ0MCwxNjcyODgzNzMxLC03NDU1ODQ3MTMsLTY0NzI5OTY3
-OCw0MDgyMDM0ODZdfQ==
+eyJoaXN0b3J5IjpbMjE0MjI4NjYxMSwyMDM2NzcyNDQzLC0yMD
+g4NzQ2NjEyLC05NTAwMjUwMTIsLTUwNDI3MzQ3MCwtMTE2MTc0
+MDU3NSwtMjE0NjUxMDAwMywyMDgyNjAxNjE2LC0yMTEzNzI5OT
+MyLC05MzE2MjE5NSw2Mzk1MzUwMDAsMTYzNjg4OTA1MiwtNjc2
+MjEzOTY2LC0xMDg4MjE0NTU0LC0xMTEzNTYzODI2LC0xOTQ0Nj
+c3NDQwLDE2NzI4ODM3MzEsLTc0NTU4NDcxMywtNjQ3Mjk5Njc4
+LDQwODIwMzQ4Nl19
 -->
