@@ -64,15 +64,17 @@ Kafka Streams provides  **state stores**, which can be used by stream processing
 
 Every stream task in a Kafka Streams application may embed one or more local state stores that can be accessed via APIs to store and query data required for processing. These state stores can either be a  RocksDB  database, an in-memory hash map, or another convenient data structure. Kafka Streams offers fault-tolerance and automatic recovery for local state stores.
 
+![window events](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/kafka-state-store.jpg?raw=true)
+
 **Types of state:**
 
  - **Local or internal state :** State that is accessible only by a specific instance of streaming application. This state is usually maintained and managed with an embedded, in-memory database running within the application. The advantage of local state is that it is extremely fast. The disadvantage is that you are limited to the amount of memory available.
  
  - **External state :** State that is maintained in an external datastore, like NoSQL system or RDBMS. The advantages of an external state are its virtually unlimited size and the fact that it can be accessed from multiple instances of the application or even from different applications.
 
-![window events](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/late_1.jpg?raw=true) 
+ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzcyOTgwOTExLDkzOTQ5MTU5MywtNjI5Nj
+eyJoaXN0b3J5IjpbNzk3ODg4NTE1LDkzOTQ5MTU5MywtNjI5Nj
 A4MjE1LDE3MTM3MTQwNDQsMTY3MTAwMTM0MiwxMzE5OTMyNTA1
 LDExOTYyODMzMTYsMTY3ODU4NTE5NSwtNTAxMDEzMjYxLDIwMz
 Y3NzI0NDMsLTIwODg3NDY2MTIsLTk1MDAyNTAxMiwtNTA0Mjcz
