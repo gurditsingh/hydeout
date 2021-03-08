@@ -18,7 +18,7 @@ when we create any streaming application kafka internally creates few topics to 
 
 	
 
-> Kafka Streams allows for stateful stream processing, i.e. operators that have an internal state. This internal state is managed in so-called state stores. A state store can be ephemeral (lost on failure) or fault-tolerant (restored after the failure). The default implementation used by Kafka Streams DSL is a fault-tolerant state store using 1. an internally created and compacted changelog topic (for fault-tolerance) and 2. one (or multiple) RocksDB instances (for  cached key-value lookups). Thus, in case of starting/stopping  applications and rewinding/reprocessing, this internal data needs to get managed correctly.
+	> Kafka Streams allows for stateful stream processing, i.e. operators that have an internal state. This internal state is managed in so-called state stores. A state store can be ephemeral (lost on failure) or fault-tolerant (restored after the failure). The default implementation used by Kafka Streams DSL is a fault-tolerant state store using 1. an internally created and compacted changelog topic (for fault-tolerance) and 2. one (or multiple) RocksDB instances (for  cached key-value lookups). Thus, in case of starting/stopping  applications and rewinding/reprocessing, this internal data needs to get managed correctly.
 
 
 ## Lets see in sample example
@@ -74,11 +74,11 @@ Every stream task in a Kafka Streams application may embed one or more local sta
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk3ODg4NTE1LDkzOTQ5MTU5MywtNjI5Nj
-A4MjE1LDE3MTM3MTQwNDQsMTY3MTAwMTM0MiwxMzE5OTMyNTA1
-LDExOTYyODMzMTYsMTY3ODU4NTE5NSwtNTAxMDEzMjYxLDIwMz
-Y3NzI0NDMsLTIwODg3NDY2MTIsLTk1MDAyNTAxMiwtNTA0Mjcz
-NDcwLC0xMTYxNzQwNTc1LC0yMTQ2NTEwMDAzLDIwODI2MDE2MT
-YsLTIxMTM3Mjk5MzIsLTkzMTYyMTk1LDYzOTUzNTAwMCwxNjM2
-ODg5MDUyXX0=
+eyJoaXN0b3J5IjpbMTI4MDE2NzQ3LDc5Nzg4ODUxNSw5Mzk0OT
+E1OTMsLTYyOTYwODIxNSwxNzEzNzE0MDQ0LDE2NzEwMDEzNDIs
+MTMxOTkzMjUwNSwxMTk2MjgzMzE2LDE2Nzg1ODUxOTUsLTUwMT
+AxMzI2MSwyMDM2NzcyNDQzLC0yMDg4NzQ2NjEyLC05NTAwMjUw
+MTIsLTUwNDI3MzQ3MCwtMTE2MTc0MDU3NSwtMjE0NjUxMDAwMy
+wyMDgyNjAxNjE2LC0yMTEzNzI5OTMyLC05MzE2MjE5NSw2Mzk1
+MzUwMDBdfQ==
 -->
