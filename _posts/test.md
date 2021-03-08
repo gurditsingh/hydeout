@@ -80,10 +80,13 @@ Every stream task in a Kafka Streams application may embed one or more local sta
  - **Single-Event Processing :** The most basic pattern of stream processing is the processing of each event one by one. This is also known as a map/filter pattern because it is commonly used to filter unnecessary events from the stream or transform each event.
  ![window events](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/kafka-stream-single.jpg?raw=true)
 
- - **Processing with State :** Most stream-processing applications are concerned with aggregating information e.g. of finding the minimum and maximum stock prices for each day of trading and calculating a moving average. These aggregations require maintaining a state for the stream. In our example, in order to calculate the minimum and average price each day, we need to store the min‐ imum and maximum values
+ - **Processing with State :** Most stream-processing applications are concerned with aggregating information e.g. of finding the minimum and maximum stock prices for each day of trading and calculating a moving average. These aggregations require maintaining a state for the stream. All these can be done using local state (rather than a shared state).
+ ![window events](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/kafka-stream-multi.jpg?raw=true)
+----
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwNjE4MTg4MSwtNjA5MDc0MjU4LDc5Nz
+eyJoaXN0b3J5IjpbMTk2NjgxMzU3OCwtNjA5MDc0MjU4LDc5Nz
 g4ODUxNSw5Mzk0OTE1OTMsLTYyOTYwODIxNSwxNzEzNzE0MDQ0
 LDE2NzEwMDEzNDIsMTMxOTkzMjUwNSwxMTk2MjgzMzE2LDE2Nz
 g1ODUxOTUsLTUwMTAxMzI2MSwyMDM2NzcyNDQzLC0yMDg4NzQ2
