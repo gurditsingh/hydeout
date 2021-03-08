@@ -77,14 +77,17 @@ Every stream task in a Kafka Streams application may embed one or more local sta
 
 ## Stream-Processing Design Patterns
 
- - **Single-Event Processing :** The most basic pattern of stream processing is the processing of each event one by one. This is also known as a map/filter pattern because it is commonly used to filter unnecessary events from the stream or transform each event. (The term “map” is based on the map/reduce pattern in which the map stage transforms events and the reduce stage aggregates them.)
+ - **Single-Event Processing :** The most basic pattern of stream processing is the processing of each event one by one. This is also known as a map/filter pattern because it is commonly used to filter unnecessary events from the stream or transform each event.
+ ![window events](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/kafka-stream-single.jpg?raw=true)
+
+ - **Processing with State :**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzgxNTc1NDEsLTYwOTA3NDI1OCw3OT
-c4ODg1MTUsOTM5NDkxNTkzLC02Mjk2MDgyMTUsMTcxMzcxNDA0
-NCwxNjcxMDAxMzQyLDEzMTk5MzI1MDUsMTE5NjI4MzMxNiwxNj
-c4NTg1MTk1LC01MDEwMTMyNjEsMjAzNjc3MjQ0MywtMjA4ODc0
-NjYxMiwtOTUwMDI1MDEyLC01MDQyNzM0NzAsLTExNjE3NDA1Nz
-UsLTIxNDY1MTAwMDMsMjA4MjYwMTYxNiwtMjExMzcyOTkzMiwt
-OTMxNjIxOTVdfQ==
+eyJoaXN0b3J5IjpbNzIzMTM2ODg2LC02MDkwNzQyNTgsNzk3OD
+g4NTE1LDkzOTQ5MTU5MywtNjI5NjA4MjE1LDE3MTM3MTQwNDQs
+MTY3MTAwMTM0MiwxMzE5OTMyNTA1LDExOTYyODMzMTYsMTY3OD
+U4NTE5NSwtNTAxMDEzMjYxLDIwMzY3NzI0NDMsLTIwODg3NDY2
+MTIsLTk1MDAyNTAxMiwtNTA0MjczNDcwLC0xMTYxNzQwNTc1LC
+0yMTQ2NTEwMDAzLDIwODI2MDE2MTYsLTIxMTM3Mjk5MzIsLTkz
+MTYyMTk1XX0=
 -->
