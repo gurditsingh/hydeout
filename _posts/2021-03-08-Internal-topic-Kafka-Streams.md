@@ -99,3 +99,6 @@ Every stream task in a Kafka Streams application may embed one or more local sta
  - **Processing with State :** Most stream-processing applications are concerned with aggregating information e.g. of finding the minimum and maximum stock prices for each day of trading and calculating a moving average. These aggregations require maintaining a state for the stream. All these can be done using local state (rather than a shared state).
  ![window events](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/kafka-stream-multi.jpg?raw=true)
 ----
+
+You can find really nice documentation on kafka streams here :
+https://book.huihoo.com/pdf/confluent-kafka-definitive-guide-complete.pdf
