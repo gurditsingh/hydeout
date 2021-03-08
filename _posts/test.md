@@ -70,12 +70,13 @@ Every stream task in a Kafka Streams application may embed one or more local sta
  
  - **External state :** State that is maintained in an external datastore, like NoSQL system or RDBMS. The advantages of an external state are its virtually unlimited size and the fact that it can be accessed from multiple instances of the application or even from different applications.
 
+![window events](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/late_1.jpg?raw=true) 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM5NDkxNTkzLC02Mjk2MDgyMTUsMTcxMz
-cxNDA0NCwxNjcxMDAxMzQyLDEzMTk5MzI1MDUsMTE5NjI4MzMx
-NiwxNjc4NTg1MTk1LC01MDEwMTMyNjEsMjAzNjc3MjQ0MywtMj
-A4ODc0NjYxMiwtOTUwMDI1MDEyLC01MDQyNzM0NzAsLTExNjE3
-NDA1NzUsLTIxNDY1MTAwMDMsMjA4MjYwMTYxNiwtMjExMzcyOT
-kzMiwtOTMxNjIxOTUsNjM5NTM1MDAwLDE2MzY4ODkwNTIsLTY3
-NjIxMzk2Nl19
+eyJoaXN0b3J5IjpbMzcyOTgwOTExLDkzOTQ5MTU5MywtNjI5Nj
+A4MjE1LDE3MTM3MTQwNDQsMTY3MTAwMTM0MiwxMzE5OTMyNTA1
+LDExOTYyODMzMTYsMTY3ODU4NTE5NSwtNTAxMDEzMjYxLDIwMz
+Y3NzI0NDMsLTIwODg3NDY2MTIsLTk1MDAyNTAxMiwtNTA0Mjcz
+NDcwLC0xMTYxNzQwNTc1LC0yMTQ2NTEwMDAzLDIwODI2MDE2MT
+YsLTIxMTM3Mjk5MzIsLTkzMTYyMTk1LDYzOTUzNTAwMCwxNjM2
+ODg5MDUyXX0=
 -->
