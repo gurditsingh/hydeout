@@ -89,3 +89,13 @@ Every stream task in a Kafka Streams application may embed one or more local sta
  - **External state :** State that is maintained in an external datastore, like NoSQL system or RDBMS. The advantages of an external state are its virtually unlimited size and the fact that it can be accessed from multiple instances of the application or even from different applications.
 
  
+ 
+
+## Stream-Processing Design Patterns
+
+ - **Single-Event Processing :** The most basic pattern of stream processing is the processing of each event one by one. This is also known as a map/filter pattern because it is commonly used to filter unnecessary events from the stream or transform each event.
+ ![window events](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/kafka-stream-single.jpg?raw=true)
+
+ - **Processing with State :** Most stream-processing applications are concerned with aggregating information e.g. of finding the minimum and maximum stock prices for each day of trading and calculating a moving average. These aggregations require maintaining a state for the stream. All these can be done using local state (rather than a shared state).
+ ![window events](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/kafka-stream-multi.jpg?raw=true)
+----
