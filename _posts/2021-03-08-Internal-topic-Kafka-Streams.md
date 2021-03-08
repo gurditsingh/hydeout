@@ -14,7 +14,7 @@ tags:
   - State store
 ---
 
-## What are internal topics used in Kafka Streams?
+## Topics created by Kafka Streams Internally?
 when we create any streaming application kafka internally creates few topics to manage the state and other aspects of streaming.
 
  1. **Repartitioning Topic :-**
