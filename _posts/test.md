@@ -84,13 +84,13 @@ Every stream task in a Kafka Streams application may embed one or more local sta
  ![window events](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/kafka-stream-multi.jpg?raw=true)
 ----
 
-
+You can find really nice documentation on kafka connect here :
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2NjgxMzU3OCwtNjA5MDc0MjU4LDc5Nz
-g4ODUxNSw5Mzk0OTE1OTMsLTYyOTYwODIxNSwxNzEzNzE0MDQ0
-LDE2NzEwMDEzNDIsMTMxOTkzMjUwNSwxMTk2MjgzMzE2LDE2Nz
-g1ODUxOTUsLTUwMTAxMzI2MSwyMDM2NzcyNDQzLC0yMDg4NzQ2
-NjEyLC05NTAwMjUwMTIsLTUwNDI3MzQ3MCwtMTE2MTc0MDU3NS
-wtMjE0NjUxMDAwMywyMDgyNjAxNjE2LC0yMTEzNzI5OTMyLC05
-MzE2MjE5NV19
+eyJoaXN0b3J5IjpbMjA1NjcwNjEwNSwxOTY2ODEzNTc4LC02MD
+kwNzQyNTgsNzk3ODg4NTE1LDkzOTQ5MTU5MywtNjI5NjA4MjE1
+LDE3MTM3MTQwNDQsMTY3MTAwMTM0MiwxMzE5OTMyNTA1LDExOT
+YyODMzMTYsMTY3ODU4NTE5NSwtNTAxMDEzMjYxLDIwMzY3NzI0
+NDMsLTIwODg3NDY2MTIsLTk1MDAyNTAxMiwtNTA0MjczNDcwLC
+0xMTYxNzQwNTc1LC0yMTQ2NTEwMDAzLDIwODI2MDE2MTYsLTIx
+MTM3Mjk5MzJdfQ==
 -->
