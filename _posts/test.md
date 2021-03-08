@@ -1,11 +1,11 @@
 ## Kafka Streams Partitions and Tasks
-
+Kafka Streams uses the concepts of  **stream partitions**  and  **stream tasks**  as logical units of its parallelism model. There are close links between Kafka Streams and Kafka in the context of parallelism:
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDU4OTc1NjcsLTIwODg3NDY2MTIsMj
-A1NjcwNjEwNSwxOTY2ODEzNTc4LC02MDkwNzQyNTgsNzk3ODg4
-NTE1LDkzOTQ5MTU5MywtNjI5NjA4MjE1LDE3MTM3MTQwNDQsMT
-Y3MTAwMTM0MiwxMzE5OTMyNTA1LDExOTYyODMzMTYsMTY3ODU4
-NTE5NSwtNTAxMDEzMjYxLDIwMzY3NzI0NDMsLTk1MDAyNTAxMi
-wtNTA0MjczNDcwLC0xMTYxNzQwNTc1LC0yMTQ2NTEwMDAzLDIw
-ODI2MDE2MTZdfQ==
+eyJoaXN0b3J5IjpbLTE4MDUyMTQ2LC0yMDg4NzQ2NjEyLDIwNT
+Y3MDYxMDUsMTk2NjgxMzU3OCwtNjA5MDc0MjU4LDc5Nzg4ODUx
+NSw5Mzk0OTE1OTMsLTYyOTYwODIxNSwxNzEzNzE0MDQ0LDE2Nz
+EwMDEzNDIsMTMxOTkzMjUwNSwxMTk2MjgzMzE2LDE2Nzg1ODUx
+OTUsLTUwMTAxMzI2MSwyMDM2NzcyNDQzLC05NTAwMjUwMTIsLT
+UwNDI3MzQ3MCwtMTE2MTc0MDU3NSwtMjE0NjUxMDAwMywyMDgy
+NjAxNjE2XX0=
 -->
