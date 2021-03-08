@@ -1,5 +1,5 @@
 ---
-title: "Internal topics and State store in Kafka Streams: Episode 1"
+title: "Internal topics and State store in Kafka Streams: Episode 2"
 layout: post
 excerpt: "Internal topics are used internally by the Kafka Streams application while executing, for example the repartitioning and changelog topics are used for aggregation and state stores"
 last_modified_at: 2021-03-08T09:10:02-05:00
