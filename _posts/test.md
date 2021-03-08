@@ -58,7 +58,7 @@ in_word
 out_word
 ```
 
-## what is State in kafka streams:
+## what is state in kafka streams:
 
 Kafka Streams provides  **state stores**, which can be used by stream processing applications to store and query data, which is an important capability when implementing stateful operations. Kafka Streams automatically creates and manages such state stores when you are calling stateful operators such as  `count()`  or  `aggregate()`.
 
@@ -71,11 +71,11 @@ Every stream task in a Kafka Streams application may embed one or more local sta
  - **External state :** State that is maintained in an external datastore, like NoSQL system or RDBMS. The advantages of an external state are its virtually unlimited size and the fact that it can be accessed from multiple instances of the application or even from different applications.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyOTYwODIxNSwxNzEzNzE0MDQ0LDE2Nz
-EwMDEzNDIsMTMxOTkzMjUwNSwxMTk2MjgzMzE2LDE2Nzg1ODUx
-OTUsLTUwMTAxMzI2MSwyMDM2NzcyNDQzLC0yMDg4NzQ2NjEyLC
-05NTAwMjUwMTIsLTUwNDI3MzQ3MCwtMTE2MTc0MDU3NSwtMjE0
-NjUxMDAwMywyMDgyNjAxNjE2LC0yMTEzNzI5OTMyLC05MzE2Mj
-E5NSw2Mzk1MzUwMDAsMTYzNjg4OTA1MiwtNjc2MjEzOTY2LC0x
-MDg4MjE0NTU0XX0=
+eyJoaXN0b3J5IjpbOTM5NDkxNTkzLC02Mjk2MDgyMTUsMTcxMz
+cxNDA0NCwxNjcxMDAxMzQyLDEzMTk5MzI1MDUsMTE5NjI4MzMx
+NiwxNjc4NTg1MTk1LC01MDEwMTMyNjEsMjAzNjc3MjQ0MywtMj
+A4ODc0NjYxMiwtOTUwMDI1MDEyLC01MDQyNzM0NzAsLTExNjE3
+NDA1NzUsLTIxNDY1MTAwMDMsMjA4MjYwMTYxNiwtMjExMzcyOT
+kzMiwtOTMxNjIxOTUsNjM5NTM1MDAwLDE2MzY4ODkwNTIsLTY3
+NjIxMzk2Nl19
 -->
