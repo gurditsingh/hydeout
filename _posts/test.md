@@ -9,7 +9,9 @@ Kafka Streams uses the concepts of  **stream partitions**  and  **stream tasks**
 > The **maximum parallelism** at which your application may run is bounded by the maximum number of stream tasks, which itself is determined by maximum number of partitions of the input topic(s) the application is reading from. For example, if your input topic has 5 partitions, then you can run up to 5 applications instances. These instances will collaboratively process the topic’s data. If you run a larger number of app instances than partitions of the input topic, the “excess” app instances will launch but remain idle.
 
 ##  Breaking your topology down into sub-topologies and creates tasks
-Let's understand by one simple example mentioned below. we read from one topic, apply some transformations and aggregation and write to another topic. Behind the scene Kafka Streams will break the mentioned operators into tasks and star 
+Let's understand by one simple example mentioned below. we read from one topic, apply some transformations and aggregation and write to another topic. Behind the scene Kafka Streams will break the mentioned operators into tasks and starting execution.
+
+The topology can be further broken down into sub-topologies. The idea of a sub-topology is that it can be run entirely independently from any other sub-topology.
 
 ```scala
     streamBuilder
@@ -23,11 +25,11 @@ Let's understand by one simple example mentioned below. we read from one topic, 
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMjE0MDcxNCwxMzIyNjIxMzMwLDEzNj
-A0MzQyNSwxMDE1ODEzNTM0LC0yMDg4NzQ2NjEyLDIwNTY3MDYx
-MDUsMTk2NjgxMzU3OCwtNjA5MDc0MjU4LDc5Nzg4ODUxNSw5Mz
-k0OTE1OTMsLTYyOTYwODIxNSwxNzEzNzE0MDQ0LDE2NzEwMDEz
-NDIsMTMxOTkzMjUwNSwxMTk2MjgzMzE2LDE2Nzg1ODUxOTUsLT
-UwMTAxMzI2MSwyMDM2NzcyNDQzLC05NTAwMjUwMTIsLTUwNDI3
-MzQ3MF19
+eyJoaXN0b3J5IjpbLTE5NzYwMjQ4ODksMTMyMjYyMTMzMCwxMz
+YwNDM0MjUsMTAxNTgxMzUzNCwtMjA4ODc0NjYxMiwyMDU2NzA2
+MTA1LDE5NjY4MTM1NzgsLTYwOTA3NDI1OCw3OTc4ODg1MTUsOT
+M5NDkxNTkzLC02Mjk2MDgyMTUsMTcxMzcxNDA0NCwxNjcxMDAx
+MzQyLDEzMTk5MzI1MDUsMTE5NjI4MzMxNiwxNjc4NTg1MTk1LC
+01MDEwMTMyNjEsMjAzNjc3MjQ0MywtOTUwMDI1MDEyLC01MDQy
+NzM0NzBdfQ==
 -->
