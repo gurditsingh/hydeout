@@ -98,13 +98,16 @@ Task names are of the form:
 
 A `StreamThread` is an actual Java thread with its own unique Kafka consumer and producer instances. Each `StreamThread` is assigned tasks to perform. A Kafka Streams application's capacity is defined by the total number of `StreamThread` instances available over all running instances of the application.
 
+## Threading Model
+Kafka Streams allows the user to configure the number of **threads** that the library can use to parallelize processing within an application instance. Each thread can execute one or more stream tasks with their processor topologies independently.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MjMzMDk1NSwtMTM0ODQ4NDg0OSwtMT
-kyMjAxMDkxNCw0OTA4NjA2NTYsNzYxOTM4MTcyLC02MjY0NjAw
-MDQsMTMwMTMyMjQ0MiwtMTY5Mjc2NzcwLC04NTI4NjE3NDcsMT
-MyMjYyMTMzMCwxMzYwNDM0MjUsMTAxNTgxMzUzNCwyMDU2NzA2
-MTA1LDE5NjY4MTM1NzgsLTYwOTA3NDI1OCw3OTc4ODg1MTUsOT
-M5NDkxNTkzLC02Mjk2MDgyMTUsMTcxMzcxNDA0NCwxNjcxMDAx
-MzQyXX0=
+eyJoaXN0b3J5IjpbNTM0MTUyNTAwLDE3NTIzMzA5NTUsLTEzND
+g0ODQ4NDksLTE5MjIwMTA5MTQsNDkwODYwNjU2LDc2MTkzODE3
+MiwtNjI2NDYwMDA0LDEzMDEzMjI0NDIsLTE2OTI3Njc3MCwtOD
+UyODYxNzQ3LDEzMjI2MjEzMzAsMTM2MDQzNDI1LDEwMTU4MTM1
+MzQsMjA1NjcwNjEwNSwxOTY2ODEzNTc4LC02MDkwNzQyNTgsNz
+k3ODg4NTE1LDkzOTQ5MTU5MywtNjI5NjA4MjE1LDE3MTM3MTQw
+NDRdfQ==
 -->
