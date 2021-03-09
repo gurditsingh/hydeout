@@ -27,14 +27,15 @@ In the example topology above we use the different operators like mapValues(), f
 
 ![Tumbling Window](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/topology.png?raw=true)
 
+**Describing your Kafka Streams application topology** Kafka Streams makes it very simple to see how your Kafka Stream application has been broken down into sub-topologies. You simply need to describe your topology
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNjQ2MDAwNCwxMzAxMzIyNDQyLC0xNj
-kyNzY3NzAsLTg1Mjg2MTc0NywxMzIyNjIxMzMwLDEzNjA0MzQy
-NSwxMDE1ODEzNTM0LDIwNTY3MDYxMDUsMTk2NjgxMzU3OCwtNj
-A5MDc0MjU4LDc5Nzg4ODUxNSw5Mzk0OTE1OTMsLTYyOTYwODIx
-NSwxNzEzNzE0MDQ0LDE2NzEwMDEzNDIsMTMxOTkzMjUwNSwxMT
-k2MjgzMzE2LDE2Nzg1ODUxOTUsLTUwMTAxMzI2MSwyMDM2Nzcy
-NDQzXX0=
+eyJoaXN0b3J5IjpbMTAwOTc1ODcsLTYyNjQ2MDAwNCwxMzAxMz
+IyNDQyLC0xNjkyNzY3NzAsLTg1Mjg2MTc0NywxMzIyNjIxMzMw
+LDEzNjA0MzQyNSwxMDE1ODEzNTM0LDIwNTY3MDYxMDUsMTk2Nj
+gxMzU3OCwtNjA5MDc0MjU4LDc5Nzg4ODUxNSw5Mzk0OTE1OTMs
+LTYyOTYwODIxNSwxNzEzNzE0MDQ0LDE2NzEwMDEzNDIsMTMxOT
+kzMjUwNSwxMTk2MjgzMzE2LDE2Nzg1ODUxOTUsLTUwMTAxMzI2
+MV19
 -->
