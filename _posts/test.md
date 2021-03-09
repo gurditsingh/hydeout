@@ -23,13 +23,13 @@ The topology can be further broken down into sub-topologies. The idea of a sub-t
             .toStream()
             .to("out_word");
 ```
-
+In the example topology above we use the
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzYwMjQ4ODksMTMyMjYyMTMzMCwxMz
-YwNDM0MjUsMTAxNTgxMzUzNCwtMjA4ODc0NjYxMiwyMDU2NzA2
-MTA1LDE5NjY4MTM1NzgsLTYwOTA3NDI1OCw3OTc4ODg1MTUsOT
-M5NDkxNTkzLC02Mjk2MDgyMTUsMTcxMzcxNDA0NCwxNjcxMDAx
-MzQyLDEzMTk5MzI1MDUsMTE5NjI4MzMxNiwxNjc4NTg1MTk1LC
-01MDEwMTMyNjEsMjAzNjc3MjQ0MywtOTUwMDI1MDEyLC01MDQy
-NzM0NzBdfQ==
+eyJoaXN0b3J5IjpbLTg1Mjg2MTc0NywxMzIyNjIxMzMwLDEzNj
+A0MzQyNSwxMDE1ODEzNTM0LC0yMDg4NzQ2NjEyLDIwNTY3MDYx
+MDUsMTk2NjgxMzU3OCwtNjA5MDc0MjU4LDc5Nzg4ODUxNSw5Mz
+k0OTE1OTMsLTYyOTYwODIxNSwxNzEzNzE0MDQ0LDE2NzEwMDEz
+NDIsMTMxOTkzMjUwNSwxMTk2MjgzMzE2LDE2Nzg1ODUxOTUsLT
+UwMTAxMzI2MSwyMDM2NzcyNDQzLC05NTAwMjUwMTIsLTUwNDI3
+MzQ3MF19
 -->
