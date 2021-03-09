@@ -80,13 +80,13 @@ Let's assume we have below example and input topic have two partitions and see h
 
 **Task allocation :**
 
- - First kafka stream break the topology into sub-topologies
+ - First kafka stream break the topology into sub-topologies. In above example two sub-topologies are created. stream API  
 
  
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1Mjg0MzQyNiw0OTA4NjA2NTYsNzYxOT
+eyJoaXN0b3J5IjpbMTI1OTcxOTg2Niw0OTA4NjA2NTYsNzYxOT
 M4MTcyLC02MjY0NjAwMDQsMTMwMTMyMjQ0MiwtMTY5Mjc2Nzcw
 LC04NTI4NjE3NDcsMTMyMjYyMTMzMCwxMzYwNDM0MjUsMTAxNT
 gxMzUzNCwyMDU2NzA2MTA1LDE5NjY4MTM1NzgsLTYwOTA3NDI1
