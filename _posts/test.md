@@ -8,14 +8,16 @@ Kafka Streams uses the concepts of  **stream partitions**  and  **stream tasks**
 
 > The **maximum parallelism** at which your application may run is bounded by the maximum number of stream tasks, which itself is determined by maximum number of partitions of the input topic(s) the application is reading from. For example, if your input topic has 5 partitions, then you can run up to 5 applications instances. These instances will collaboratively process the topic’s data. If you run a larger number of app instances than partitions of the input topic, the “excess” app instances will launch but remain idle.
 
+How Kafka create tasks from Topology
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxNTgxMzUzNCwtMjA4ODc0NjYxMiwyMD
-U2NzA2MTA1LDE5NjY4MTM1NzgsLTYwOTA3NDI1OCw3OTc4ODg1
-MTUsOTM5NDkxNTkzLC02Mjk2MDgyMTUsMTcxMzcxNDA0NCwxNj
-cxMDAxMzQyLDEzMTk5MzI1MDUsMTE5NjI4MzMxNiwxNjc4NTg1
-MTk1LC01MDEwMTMyNjEsMjAzNjc3MjQ0MywtOTUwMDI1MDEyLC
-01MDQyNzM0NzAsLTExNjE3NDA1NzUsLTIxNDY1MTAwMDMsMjA4
-MjYwMTYxNl19
+eyJoaXN0b3J5IjpbLTc1MzMwMTExOSwxMDE1ODEzNTM0LC0yMD
+g4NzQ2NjEyLDIwNTY3MDYxMDUsMTk2NjgxMzU3OCwtNjA5MDc0
+MjU4LDc5Nzg4ODUxNSw5Mzk0OTE1OTMsLTYyOTYwODIxNSwxNz
+EzNzE0MDQ0LDE2NzEwMDEzNDIsMTMxOTkzMjUwNSwxMTk2Mjgz
+MzE2LDE2Nzg1ODUxOTUsLTUwMTAxMzI2MSwyMDM2NzcyNDQzLC
+05NTAwMjUwMTIsLTUwNDI3MzQ3MCwtMTE2MTc0MDU3NSwtMjE0
+NjUxMDAwM119
 -->
