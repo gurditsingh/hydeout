@@ -11,14 +11,23 @@ Kafka Streams uses the concepts of  **stream partitions**  and  **stream tasks**
 ##  Breaking your topology down into sub-topologies and creates tasks
 Let's understand by one simple example mentioned below. 
 
-
+```scala
+    streamBuilder
+            .mapValues(value -> value.toLowerCase())
+            .flatMapValues(value -> Arrays.asList(value.split("#")))
+            .selectKey((key, value) -> value)
+            .groupByKey()
+            .count()
+            .toStream()
+            .to("out_word");
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MDQzNDI1LDEwMTU4MTM1MzQsLTIwOD
-g3NDY2MTIsMjA1NjcwNjEwNSwxOTY2ODEzNTc4LC02MDkwNzQy
-NTgsNzk3ODg4NTE1LDkzOTQ5MTU5MywtNjI5NjA4MjE1LDE3MT
-M3MTQwNDQsMTY3MTAwMTM0MiwxMzE5OTMyNTA1LDExOTYyODMz
-MTYsMTY3ODU4NTE5NSwtNTAxMDEzMjYxLDIwMzY3NzI0NDMsLT
-k1MDAyNTAxMiwtNTA0MjczNDcwLC0xMTYxNzQwNTc1LC0yMTQ2
-NTEwMDAzXX0=
+eyJoaXN0b3J5IjpbMTMyMjYyMTMzMCwxMzYwNDM0MjUsMTAxNT
+gxMzUzNCwtMjA4ODc0NjYxMiwyMDU2NzA2MTA1LDE5NjY4MTM1
+NzgsLTYwOTA3NDI1OCw3OTc4ODg1MTUsOTM5NDkxNTkzLC02Mj
+k2MDgyMTUsMTcxMzcxNDA0NCwxNjcxMDAxMzQyLDEzMTk5MzI1
+MDUsMTE5NjI4MzMxNiwxNjc4NTg1MTk1LC01MDEwMTMyNjEsMj
+AzNjc3MjQ0MywtOTUwMDI1MDEyLC01MDQyNzM0NzAsLTExNjE3
+NDA1NzVdfQ==
 -->
