@@ -80,13 +80,15 @@ Let's assume we have below example and input topic have two partitions and see h
 
 **Task allocation :**
 
- - First kafka stream break the topology into sub-topologies. In above example two sub-topologies are created. stream API break the first sub topology after selectKey() operation because it internally create repartitioning. second sub topology read from repartitioning t 
+ - First kafka stream break the topology into sub-topologies. In above example two sub-topologies are created. stream API break the first sub topology after selectKey() operation because it internally create repartitioning. second sub topology read from repartitioning topic and do aggregation like count().
+ - Next Stream API fetch metadata and check number of partitions for each source topic and create one task per partition.
+ -  
 
  
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5ODYyMjg2MzQsNDkwODYwNjU2LDc2MT
+eyJoaXN0b3J5IjpbLTE5NDM4NTE3NzMsNDkwODYwNjU2LDc2MT
 kzODE3MiwtNjI2NDYwMDA0LDEzMDEzMjI0NDIsLTE2OTI3Njc3
 MCwtODUyODYxNzQ3LDEzMjI2MjEzMzAsMTM2MDQzNDI1LDEwMT
 U4MTM1MzQsLTIwODg3NDY2MTIsMjA1NjcwNjEwNSwxOTY2ODEz
