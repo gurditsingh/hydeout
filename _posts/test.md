@@ -23,13 +23,13 @@ The topology can be further broken down into sub-topologies. The idea of a sub-t
             .toStream()
             .to("out_word");
 ```
-In the example topology above we use the different operators like mapValues(), flatMapValues(), selectKey() and etc. 
+In the example topology above we use the different operators like mapValues(), flatMapValues(), selectKey() and create topo
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTI3Njc3MCwtODUyODYxNzQ3LDEzMj
-I2MjEzMzAsMTM2MDQzNDI1LDEwMTU4MTM1MzQsMjA1NjcwNjEw
-NSwxOTY2ODEzNTc4LC02MDkwNzQyNTgsNzk3ODg4NTE1LDkzOT
-Q5MTU5MywtNjI5NjA4MjE1LDE3MTM3MTQwNDQsMTY3MTAwMTM0
-MiwxMzE5OTMyNTA1LDExOTYyODMzMTYsMTY3ODU4NTE5NSwtNT
-AxMDEzMjYxLDIwMzY3NzI0NDMsLTIwODg3NDY2MTIsLTk1MDAy
-NTAxMl19
+eyJoaXN0b3J5IjpbNjcwMjc4MTUwLC0xNjkyNzY3NzAsLTg1Mj
+g2MTc0NywxMzIyNjIxMzMwLDEzNjA0MzQyNSwxMDE1ODEzNTM0
+LDIwNTY3MDYxMDUsMTk2NjgxMzU3OCwtNjA5MDc0MjU4LDc5Nz
+g4ODUxNSw5Mzk0OTE1OTMsLTYyOTYwODIxNSwxNzEzNzE0MDQ0
+LDE2NzEwMDEzNDIsMTMxOTkzMjUwNSwxMTk2MjgzMzE2LDE2Nz
+g1ODUxOTUsLTUwMTAxMzI2MSwyMDM2NzcyNDQzLC0yMDg4NzQ2
+NjEyXX0=
 -->
