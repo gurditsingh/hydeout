@@ -90,15 +90,17 @@ Task names are of the form:
 ```
  
  In the above example, for sub-topology 1 and sub-topology 2, each source topic has 2 partitions. These topics are assigned to task like [**1_0**,
- **1_1**],[**2_0**,**2_1**]. This
+ **1_1**],[**2_0**,**2_1**].
+
+
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjc3MTM5MDA4LDQ5MDg2MDY1Niw3NjE5Mz
-gxNzIsLTYyNjQ2MDAwNCwxMzAxMzIyNDQyLC0xNjkyNzY3NzAs
-LTg1Mjg2MTc0NywxMzIyNjIxMzMwLDEzNjA0MzQyNSwxMDE1OD
-EzNTM0LDIwNTY3MDYxMDUsMTk2NjgxMzU3OCwtNjA5MDc0MjU4
-LDc5Nzg4ODUxNSw5Mzk0OTE1OTMsLTYyOTYwODIxNSwxNzEzNz
-E0MDQ0LDE2NzEwMDEzNDIsMTMxOTkzMjUwNSwxMTk2MjgzMzE2
-XX0=
+eyJoaXN0b3J5IjpbLTE5MjIwMTA5MTQsNDkwODYwNjU2LDc2MT
+kzODE3MiwtNjI2NDYwMDA0LDEzMDEzMjI0NDIsLTE2OTI3Njc3
+MCwtODUyODYxNzQ3LDEzMjI2MjEzMzAsMTM2MDQzNDI1LDEwMT
+U4MTM1MzQsMjA1NjcwNjEwNSwxOTY2ODEzNTc4LC02MDkwNzQy
+NTgsNzk3ODg4NTE1LDkzOTQ5MTU5MywtNjI5NjA4MjE1LDE3MT
+M3MTQwNDQsMTY3MTAwMTM0MiwxMzE5OTMyNTA1LDExOTYyODMz
+MTZdfQ==
 -->
