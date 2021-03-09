@@ -23,9 +23,9 @@ The topology can be further broken down into sub-topologies. The idea of a sub-t
             .toStream()
             .to("out_word");
 ```
-In the example topology above we use the different operators like ma
+In the example topology above we use the different operators like mapValues(), flatMapValues(), selectKey() and etc. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxODk1Mjc2MCwtODUyODYxNzQ3LDEzMj
+eyJoaXN0b3J5IjpbLTE2OTI3Njc3MCwtODUyODYxNzQ3LDEzMj
 I2MjEzMzAsMTM2MDQzNDI1LDEwMTU4MTM1MzQsMjA1NjcwNjEw
 NSwxOTY2ODEzNTc4LC02MDkwNzQyNTgsNzk3ODg4NTE1LDkzOT
 Q5MTU5MywtNjI5NjA4MjE1LDE3MTM3MTQwNDQsMTY3MTAwMTM0
