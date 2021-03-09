@@ -100,8 +100,12 @@ A `StreamThread` is an actual Java thread with its own unique Kafka consumer and
 
 ## Threading Model
 Kafka Streams allows the user to configure the number of **threads** that the library can use to parallelize processing within an application instance. Each thread can execute one or more stream tasks with their processor topologies independently.
+
+To understand the parallelism model that Kafka Streams offers, let’s walk through an example.
+
+Assume a Kafka Streams application that consumes from two topics,  A  and  B, with each having 3 partitions. If we now start the application on a single machine with the number of threads configured to 2. Kafka Streams will break this topology into three tasks because the maximum number of partitions across the input topics A and B is  `max(3,  3)  ==  3`, and then distribute the six input topic partitions evenly across these three tasks. Finally, these three tasks will be spread evenly – to the extent this is possible – across the two available threads, which in this example means that the first thread will run 2 tasks (consuming from 4 partitions) and the second thread will run 1 task (consuming from 2 partitions).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE2MjUzMjcyLDE3NTIzMzA5NTUsLTEzND
+eyJoaXN0b3J5IjpbMjEzNzE3Nzk0LDE3NTIzMzA5NTUsLTEzND
 g0ODQ4NDksLTE5MjIwMTA5MTQsNDkwODYwNjU2LDc2MTkzODE3
 MiwtNjI2NDYwMDA0LDEzMDEzMjI0NDIsLTE2OTI3Njc3MCwtOD
 UyODYxNzQ3LDEzMjI2MjEzMzAsMTM2MDQzNDI1LDEwMTU4MTM1
