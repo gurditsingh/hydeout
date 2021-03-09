@@ -79,11 +79,14 @@ Let's assume we have below example and input topic have two partitions and see h
 ```
 
 **Task allocation :**
+
+ - First kafka stream break the topology into 
+
  
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDUxMjg1MjQsNDkwODYwNjU2LDc2MT
+eyJoaXN0b3J5IjpbLTE0NTExNjMzMDAsNDkwODYwNjU2LDc2MT
 kzODE3MiwtNjI2NDYwMDA0LDEzMDEzMjI0NDIsLTE2OTI3Njc3
 MCwtODUyODYxNzQ3LDEzMjI2MjEzMzAsMTM2MDQzNDI1LDEwMT
 U4MTM1MzQsLTIwODg3NDY2MTIsMjA1NjcwNjEwNSwxOTY2ODEz
