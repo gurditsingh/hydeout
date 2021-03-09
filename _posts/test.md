@@ -94,13 +94,13 @@ Task names are of the form:
 
 ## Assigning tasks to running Thread
 
- 
+ A `StreamThread` is basically a JVM thread. Task are assigned to `StreamsThread` for execution. In the current implementation, a `StreamThread` basically loops over all tasks and processes some amount of input data for each task. In between, the `StreamThread` (that is using a `KafkaConsumer`) polls the broker for new data for all its assigned tasks.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNDg0ODQ4NDksLTE5MjIwMTA5MTQsND
-kwODYwNjU2LDc2MTkzODE3MiwtNjI2NDYwMDA0LDEzMDEzMjI0
-NDIsLTE2OTI3Njc3MCwtODUyODYxNzQ3LDEzMjI2MjEzMzAsMT
-M2MDQzNDI1LDEwMTU4MTM1MzQsLTIwODg3NDY2MTIsMjA1Njcw
-NjEwNSwxOTY2ODEzNTc4LC02MDkwNzQyNTgsNzk3ODg4NTE1LD
-kzOTQ5MTU5MywtNjI5NjA4MjE1LDE3MTM3MTQwNDQsMTY3MTAw
-MTM0Ml19
+eyJoaXN0b3J5IjpbLTEyNjEyNDUzODYsLTEzNDg0ODQ4NDksLT
+E5MjIwMTA5MTQsNDkwODYwNjU2LDc2MTkzODE3MiwtNjI2NDYw
+MDA0LDEzMDEzMjI0NDIsLTE2OTI3Njc3MCwtODUyODYxNzQ3LD
+EzMjI2MjEzMzAsMTM2MDQzNDI1LDEwMTU4MTM1MzQsLTIwODg3
+NDY2MTIsMjA1NjcwNjEwNSwxOTY2ODEzNTc4LC02MDkwNzQyNT
+gsNzk3ODg4NTE1LDkzOTQ5MTU5MywtNjI5NjA4MjE1LDE3MTM3
+MTQwNDRdfQ==
 -->
