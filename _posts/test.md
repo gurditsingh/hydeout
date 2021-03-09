@@ -26,12 +26,15 @@ The topology can be further broken down into sub-topologies. The idea of a sub-t
 In the example topology above we use the different operators like mapValues(), flatMapValues(), selectKey(), etc and create topology out of that. This topology can be broken up into two separate sub-topologies.
 
 ![Tumbling Window](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/topology.png?raw=true)
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjUzMzY4MTQsMTMwMTMyMjQ0MiwtMT
-Y5Mjc2NzcwLC04NTI4NjE3NDcsMTMyMjYyMTMzMCwxMzYwNDM0
-MjUsMTAxNTgxMzUzNCwtMjA4ODc0NjYxMiwyMDU2NzA2MTA1LD
-E5NjY4MTM1NzgsLTYwOTA3NDI1OCw3OTc4ODg1MTUsOTM5NDkx
-NTkzLC02Mjk2MDgyMTUsMTcxMzcxNDA0NCwxNjcxMDAxMzQyLD
-EzMTk5MzI1MDUsMTE5NjI4MzMxNiwxNjc4NTg1MTk1LC01MDEw
-MTMyNjFdfQ==
+eyJoaXN0b3J5IjpbLTYyNjQ2MDAwNCwxMzAxMzIyNDQyLC0xNj
+kyNzY3NzAsLTg1Mjg2MTc0NywxMzIyNjIxMzMwLDEzNjA0MzQy
+NSwxMDE1ODEzNTM0LC0yMDg4NzQ2NjEyLDIwNTY3MDYxMDUsMT
+k2NjgxMzU3OCwtNjA5MDc0MjU4LDc5Nzg4ODUxNSw5Mzk0OTE1
+OTMsLTYyOTYwODIxNSwxNzEzNzE0MDQ0LDE2NzEwMDEzNDIsMT
+MxOTkzMjUwNSwxMTk2MjgzMzE2LDE2Nzg1ODUxOTUsLTUwMTAx
+MzI2MV19
 -->
