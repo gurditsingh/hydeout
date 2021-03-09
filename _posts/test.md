@@ -104,12 +104,13 @@ Kafka Streams allows the user to configure the number of **threads** that the li
 To understand the parallelism model that Kafka Streams offers, let’s walk through an example.
 
 Assume a Kafka Streams application that consumes from two topics,  A  and  B, with each having 3 partitions. If we now start the application on a single machine with the number of threads configured to 2. Kafka Streams will break this topology into three tasks because the maximum number of partitions across the input topics A and B is  `max(3,  3)  ==  3`, and then distribute the six input topic partitions evenly across these three tasks. Finally, these three tasks will be spread evenly – to the extent this is possible – across the two available threads, which in this example means that the first thread will run 2 tasks (consuming from 4 partitions) and the second thread will run 1 task (consuming from 2 partitions).
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzNzE3Nzk0LDE3NTIzMzA5NTUsLTEzND
-g0ODQ4NDksLTE5MjIwMTA5MTQsNDkwODYwNjU2LDc2MTkzODE3
-MiwtNjI2NDYwMDA0LDEzMDEzMjI0NDIsLTE2OTI3Njc3MCwtOD
-UyODYxNzQ3LDEzMjI2MjEzMzAsMTM2MDQzNDI1LDEwMTU4MTM1
-MzQsMjA1NjcwNjEwNSwxOTY2ODEzNTc4LC02MDkwNzQyNTgsNz
-k3ODg4NTE1LDkzOTQ5MTU5MywtNjI5NjA4MjE1LDE3MTM3MTQw
-NDRdfQ==
+eyJoaXN0b3J5IjpbMTI1Nzk1NTUzNiwxNzUyMzMwOTU1LC0xMz
+Q4NDg0ODQ5LC0xOTIyMDEwOTE0LDQ5MDg2MDY1Niw3NjE5Mzgx
+NzIsLTYyNjQ2MDAwNCwxMzAxMzIyNDQyLC0xNjkyNzY3NzAsLT
+g1Mjg2MTc0NywxMzIyNjIxMzMwLDEzNjA0MzQyNSwxMDE1ODEz
+NTM0LDIwNTY3MDYxMDUsMTk2NjgxMzU3OCwtNjA5MDc0MjU4LD
+c5Nzg4ODUxNSw5Mzk0OTE1OTMsLTYyOTYwODIxNSwxNzEzNzE0
+MDQ0XX0=
 -->
