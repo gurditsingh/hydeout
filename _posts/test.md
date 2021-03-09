@@ -23,13 +23,13 @@ The topology can be further broken down into sub-topologies. The idea of a sub-t
             .toStream()
             .to("out_word");
 ```
-In the example topology above we use the
+In the example topology above we use the different operators like ma
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1Mjg2MTc0NywxMzIyNjIxMzMwLDEzNj
-A0MzQyNSwxMDE1ODEzNTM0LDIwNTY3MDYxMDUsMTk2NjgxMzU3
-OCwtNjA5MDc0MjU4LDc5Nzg4ODUxNSw5Mzk0OTE1OTMsLTYyOT
-YwODIxNSwxNzEzNzE0MDQ0LDE2NzEwMDEzNDIsMTMxOTkzMjUw
-NSwxMTk2MjgzMzE2LDE2Nzg1ODUxOTUsLTUwMTAxMzI2MSwyMD
-M2NzcyNDQzLC0yMDg4NzQ2NjEyLC05NTAwMjUwMTIsLTUwNDI3
-MzQ3MF19
+eyJoaXN0b3J5IjpbLTIxODk1Mjc2MCwtODUyODYxNzQ3LDEzMj
+I2MjEzMzAsMTM2MDQzNDI1LDEwMTU4MTM1MzQsMjA1NjcwNjEw
+NSwxOTY2ODEzNTc4LC02MDkwNzQyNTgsNzk3ODg4NTE1LDkzOT
+Q5MTU5MywtNjI5NjA4MjE1LDE3MTM3MTQwNDQsMTY3MTAwMTM0
+MiwxMzE5OTMyNTA1LDExOTYyODMzMTYsMTY3ODU4NTE5NSwtNT
+AxMDEzMjYxLDIwMzY3NzI0NDMsLTIwODg3NDY2MTIsLTk1MDAy
+NTAxMl19
 -->
