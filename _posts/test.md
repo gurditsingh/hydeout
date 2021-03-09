@@ -9,7 +9,7 @@ Kafka Streams uses the concepts of  **stream partitions**  and  **stream tasks**
 > The **maximum parallelism** at which your application may run is bounded by the maximum number of stream tasks, which itself is determined by maximum number of partitions of the input topic(s) the application is reading from. For example, if your input topic has 5 partitions, then you can run up to 5 applications instances. These instances will collaboratively process the topic’s data. If you run a larger number of app instances than partitions of the input topic, the “excess” app instances will launch but remain idle.
 
 ##  Breaking your topology down into sub-topologies and creates tasks
-Let's understand by one simple example mentioned below. 
+Let's understand by one simple example mentioned below. we read from one topic, apply some transformations and aggregation and write to another topic. Behind the sKafka Streams will create exactly as many tasks
 
 ```scala
     streamBuilder
@@ -23,11 +23,11 @@ Let's understand by one simple example mentioned below.
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyMjYyMTMzMCwxMzYwNDM0MjUsMTAxNT
-gxMzUzNCwtMjA4ODc0NjYxMiwyMDU2NzA2MTA1LDE5NjY4MTM1
-NzgsLTYwOTA3NDI1OCw3OTc4ODg1MTUsOTM5NDkxNTkzLC02Mj
-k2MDgyMTUsMTcxMzcxNDA0NCwxNjcxMDAxMzQyLDEzMTk5MzI1
-MDUsMTE5NjI4MzMxNiwxNjc4NTg1MTk1LC01MDEwMTMyNjEsMj
-AzNjc3MjQ0MywtOTUwMDI1MDEyLC01MDQyNzM0NzAsLTExNjE3
-NDA1NzVdfQ==
+eyJoaXN0b3J5IjpbMjAzMjA4NDY4MSwxMzIyNjIxMzMwLDEzNj
+A0MzQyNSwxMDE1ODEzNTM0LC0yMDg4NzQ2NjEyLDIwNTY3MDYx
+MDUsMTk2NjgxMzU3OCwtNjA5MDc0MjU4LDc5Nzg4ODUxNSw5Mz
+k0OTE1OTMsLTYyOTYwODIxNSwxNzEzNzE0MDQ0LDE2NzEwMDEz
+NDIsMTMxOTkzMjUwNSwxMTk2MjgzMzE2LDE2Nzg1ODUxOTUsLT
+UwMTAxMzI2MSwyMDM2NzcyNDQzLC05NTAwMjUwMTIsLTUwNDI3
+MzQ3MF19
 -->
