@@ -23,15 +23,15 @@ The topology can be further broken down into sub-topologies. The idea of a sub-t
             .toStream()
             .to("out_word");
 ```
-In the example topology above we use the different operators like mapValues(), flatMapValues(), selectKey() and create topology out of that. This topology can be broken up into two separate sub-topologies.
+In the example topology above we use the different operators like mapValues(), flatMapValues(), selectKey(), etc and create topology out of that. This topology can be broken up into two separate sub-topologies.
 
-
+![Tumbling Window](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/topology.png?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMTMyMjQ0MiwtMTY5Mjc2NzcwLC04NT
-I4NjE3NDcsMTMyMjYyMTMzMCwxMzYwNDM0MjUsMTAxNTgxMzUz
-NCwtMjA4ODc0NjYxMiwyMDU2NzA2MTA1LDE5NjY4MTM1NzgsLT
-YwOTA3NDI1OCw3OTc4ODg1MTUsOTM5NDkxNTkzLC02Mjk2MDgy
-MTUsMTcxMzcxNDA0NCwxNjcxMDAxMzQyLDEzMTk5MzI1MDUsMT
-E5NjI4MzMxNiwxNjc4NTg1MTk1LC01MDEwMTMyNjEsMjAzNjc3
-MjQ0M119
+eyJoaXN0b3J5IjpbLTEwNjUzMzY4MTQsMTMwMTMyMjQ0MiwtMT
+Y5Mjc2NzcwLC04NTI4NjE3NDcsMTMyMjYyMTMzMCwxMzYwNDM0
+MjUsMTAxNTgxMzUzNCwtMjA4ODc0NjYxMiwyMDU2NzA2MTA1LD
+E5NjY4MTM1NzgsLTYwOTA3NDI1OCw3OTc4ODg1MTUsOTM5NDkx
+NTkzLC02Mjk2MDgyMTUsMTcxMzcxNDA0NCwxNjcxMDAxMzQyLD
+EzMTk5MzI1MDUsMTE5NjI4MzMxNiwxNjc4NTg1MTk1LC01MDEw
+MTMyNjFdfQ==
 -->
