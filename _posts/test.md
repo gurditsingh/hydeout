@@ -80,17 +80,17 @@ Let's assume we have below example and input topic have two partitions and see h
 
 **Task allocation :**
 
- - First kafka stream break the topology into sub-topologies. In above example two sub-topologies are created. stream  
+ - First kafka stream break the topology into sub-topologies. In above example two sub-topologies are created. stream API break the first sub topology after selectKey() operation because it internally create repartitioning. second sub topology read from repartitioning t 
 
  
 
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU3MDQwNzI0LDQ5MDg2MDY1Niw3NjE5Mz
-gxNzIsLTYyNjQ2MDAwNCwxMzAxMzIyNDQyLC0xNjkyNzY3NzAs
-LTg1Mjg2MTc0NywxMzIyNjIxMzMwLDEzNjA0MzQyNSwxMDE1OD
-EzNTM0LC0yMDg4NzQ2NjEyLDIwNTY3MDYxMDUsMTk2NjgxMzU3
-OCwtNjA5MDc0MjU4LDc5Nzg4ODUxNSw5Mzk0OTE1OTMsLTYyOT
-YwODIxNSwxNzEzNzE0MDQ0LDE2NzEwMDEzNDIsMTMxOTkzMjUw
-NV19
+eyJoaXN0b3J5IjpbLTE5ODYyMjg2MzQsNDkwODYwNjU2LDc2MT
+kzODE3MiwtNjI2NDYwMDA0LDEzMDEzMjI0NDIsLTE2OTI3Njc3
+MCwtODUyODYxNzQ3LDEzMjI2MjEzMzAsMTM2MDQzNDI1LDEwMT
+U4MTM1MzQsLTIwODg3NDY2MTIsMjA1NjcwNjEwNSwxOTY2ODEz
+NTc4LC02MDkwNzQyNTgsNzk3ODg4NTE1LDkzOTQ5MTU5MywtNj
+I5NjA4MjE1LDE3MTM3MTQwNDQsMTY3MTAwMTM0MiwxMzE5OTMy
+NTA1XX0=
 -->
