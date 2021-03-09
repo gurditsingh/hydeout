@@ -64,12 +64,14 @@ Topologies:
 
 ## Generating tasks from sub-topologies
 Generating sub-topologies from your overall topology is a static process that is performed at the time your topology is built and prior to connecting with Kafka. When your Kafka Streams application is started, the streams API will fetch metadata on each of the source topics from Kafka to determine how to break each sub-topology down into **tasks**. A task is the smallest unit of work that can be performed in parallel in a Kafka Streams application.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDkwODYwNjU2LDc2MTkzODE3MiwtNjI2ND
-YwMDA0LDEzMDEzMjI0NDIsLTE2OTI3Njc3MCwtODUyODYxNzQ3
-LDEzMjI2MjEzMzAsMTM2MDQzNDI1LDEwMTU4MTM1MzQsLTIwOD
-g3NDY2MTIsMjA1NjcwNjEwNSwxOTY2ODEzNTc4LC02MDkwNzQy
-NTgsNzk3ODg4NTE1LDkzOTQ5MTU5MywtNjI5NjA4MjE1LDE3MT
-M3MTQwNDQsMTY3MTAwMTM0MiwxMzE5OTMyNTA1LDExOTYyODMz
-MTZdfQ==
+eyJoaXN0b3J5IjpbMTMxMDAzMjIwNCw0OTA4NjA2NTYsNzYxOT
+M4MTcyLC02MjY0NjAwMDQsMTMwMTMyMjQ0MiwtMTY5Mjc2Nzcw
+LC04NTI4NjE3NDcsMTMyMjYyMTMzMCwxMzYwNDM0MjUsMTAxNT
+gxMzUzNCwtMjA4ODc0NjYxMiwyMDU2NzA2MTA1LDE5NjY4MTM1
+NzgsLTYwOTA3NDI1OCw3OTc4ODg1MTUsOTM5NDkxNTkzLC02Mj
+k2MDgyMTUsMTcxMzcxNDA0NCwxNjcxMDAxMzQyLDEzMTk5MzI1
+MDVdfQ==
 -->
