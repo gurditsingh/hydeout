@@ -63,13 +63,13 @@ Topologies:
 ```
 
 ## Generating tasks from sub-topologies
-Generating sub-topologies from your overall topology is a static process that is performed at the time your topology is built and prior to connecting with Kafka. When your Kafka Streams application is started, the streams API will fetch metadata on each of the source topics from Kafka to determine how to break each sub-topology down into **_tasks_**. A task is the smallest unit of work that can be performed in parallel in a Kafka Streams application.
+Generating sub-topologies from your overall topology is a static process that is performed at the time your topology is built and prior to connecting with Kafka. When your Kafka Streams application is started, the streams API will fetch metadata on each of the source topics from Kafka to determine how to break each sub-topology down into **tasks**. A task is the smallest unit of work that can be performed in parallel in a Kafka Streams application.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4NjEyNzkxOCw3NjE5MzgxNzIsLTYyNj
-Q2MDAwNCwxMzAxMzIyNDQyLC0xNjkyNzY3NzAsLTg1Mjg2MTc0
-NywxMzIyNjIxMzMwLDEzNjA0MzQyNSwxMDE1ODEzNTM0LC0yMD
-g4NzQ2NjEyLDIwNTY3MDYxMDUsMTk2NjgxMzU3OCwtNjA5MDc0
-MjU4LDc5Nzg4ODUxNSw5Mzk0OTE1OTMsLTYyOTYwODIxNSwxNz
-EzNzE0MDQ0LDE2NzEwMDEzNDIsMTMxOTkzMjUwNSwxMTk2Mjgz
-MzE2XX0=
+eyJoaXN0b3J5IjpbNDkwODYwNjU2LDc2MTkzODE3MiwtNjI2ND
+YwMDA0LDEzMDEzMjI0NDIsLTE2OTI3Njc3MCwtODUyODYxNzQ3
+LDEzMjI2MjEzMzAsMTM2MDQzNDI1LDEwMTU4MTM1MzQsLTIwOD
+g3NDY2MTIsMjA1NjcwNjEwNSwxOTY2ODEzNTc4LC02MDkwNzQy
+NTgsNzk3ODg4NTE1LDkzOTQ5MTU5MywtNjI5NjA4MjE1LDE3MT
+M3MTQwNDQsMTY3MTAwMTM0MiwxMzE5OTMyNTA1LDExOTYyODMz
+MTZdfQ==
 -->
