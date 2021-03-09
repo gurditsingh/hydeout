@@ -27,15 +27,49 @@ In the example topology above we use the different operators like mapValues(), f
 
 ![Tumbling Window](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/topology.png?raw=true)
 
-**Describing your Kafka Streams application topology** Kafka Streams makes it very simple to see how your Kafka Stream application has been broken down into sub-topologies. You simply need to describe your topology
+**Describing your Kafka Streams application topology** Kafka Streams makes it very simple to see how your Kafka Stream application has been broken down into sub-topologies. You simply need to describe your topology.
 
+```shell
+Topologies:
+   Sub-topology: 0
+    Source: KSTREAM-SOURCE-0000000000 (topics: [in_word])
+      --> KSTREAM-MAPVALUES-0000000001
+    Processor: KSTREAM-MAPVALUES-0000000001 (stores: [])
+      --> KSTREAM-FLATMAPVALUES-0000000002
+      <-- KSTREAM-SOURCE-0000000000
+    Processor: KSTREAM-FLATMAPVALUES-0000000002 (stores: [])
+      --> KSTREAM-KEY-SELECT-0000000003
+      <-- KSTREAM-MAPVALUES-0000000001
+    Processor: KSTREAM-KEY-SELECT-0000000003 (stores: [])
+      --> KSTREAM-FILTER-0000000007
+      <-- KSTREAM-FLATMAPVALUES-0000000002
+    Processor: KSTREAM-FILTER-0000000007 (stores: [])
+      --> KSTREAM-SINK-0000000006
+      <-- KSTREAM-KEY-SELECT-0000000003
+    Sink: KSTREAM-SINK-0000000006 (topic: KSTREAM-AGGREGATE-STATE-STORE-0000000004-repartition)
+      <-- KSTREAM-FILTER-0000000007
+
+  Sub-topology: 1
+    Source: KSTREAM-SOURCE-0000000008 (topics: [KSTREAM-AGGREGATE-STATE-STORE-0000000004-repartition])
+      --> KSTREAM-AGGREGATE-0000000005
+    Processor: KSTREAM-AGGREGATE-0000000005 (stores: [KSTREAM-AGGREGATE-STATE-STORE-0000000004])
+      --> KTABLE-TOSTREAM-0000000009
+      <-- KSTREAM-SOURCE-0000000008
+    Processor: KTABLE-TOSTREAM-0000000009 (stores: [])
+      --> KSTREAM-SINK-0000000010
+      <-- KSTREAM-AGGREGATE-0000000005
+    Sink: KSTREAM-SINK-0000000010 (topic: out_word)
+      <-- KTABLE-TOSTREAM-0000000009
+```
+
+## Generating tasks from sub-topologies
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwOTc1ODcsLTYyNjQ2MDAwNCwxMzAxMz
-IyNDQyLC0xNjkyNzY3NzAsLTg1Mjg2MTc0NywxMzIyNjIxMzMw
-LDEzNjA0MzQyNSwxMDE1ODEzNTM0LC0yMDg4NzQ2NjEyLDIwNT
-Y3MDYxMDUsMTk2NjgxMzU3OCwtNjA5MDc0MjU4LDc5Nzg4ODUx
-NSw5Mzk0OTE1OTMsLTYyOTYwODIxNSwxNzEzNzE0MDQ0LDE2Nz
-EwMDEzNDIsMTMxOTkzMjUwNSwxMTk2MjgzMzE2LDE2Nzg1ODUx
-OTVdfQ==
+eyJoaXN0b3J5IjpbNzYxOTM4MTcyLC02MjY0NjAwMDQsMTMwMT
+MyMjQ0MiwtMTY5Mjc2NzcwLC04NTI4NjE3NDcsMTMyMjYyMTMz
+MCwxMzYwNDM0MjUsMTAxNTgxMzUzNCwtMjA4ODc0NjYxMiwyMD
+U2NzA2MTA1LDE5NjY4MTM1NzgsLTYwOTA3NDI1OCw3OTc4ODg1
+MTUsOTM5NDkxNTkzLC02Mjk2MDgyMTUsMTcxMzcxNDA0NCwxNj
+cxMDAxMzQyLDEzMTk5MzI1MDUsMTE5NjI4MzMxNiwxNjc4NTg1
+MTk1XX0=
 -->
