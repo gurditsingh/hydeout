@@ -11,14 +11,16 @@ streamsBuilder.stream[String,String]("input-topic")
 
  - Kstream is all inserts. Every data entered into kstream as insert new
    entry for each and every record stream.
-   Ksream is similar to log just a ordered sequence of magss
+   Ksream is similar to log just a ordered sequence of mags like a topic
+   Kstream are infinite means unbounded data stream there is no end alwas
+   
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzE5MTc0NjIsMTE4MTMxNjQxLC0xOT
-I3MjU3ODcwLDE2MTExMDQxMDUsLTExNDMxNzYwNjYsMTc1MjMz
-MDk1NSwtMTM0ODQ4NDg0OSwtMTkyMjAxMDkxNCw0OTA4NjA2NT
-YsNzYxOTM4MTcyLC02MjY0NjAwMDQsMTMwMTMyMjQ0MiwtMTY5
-Mjc2NzcwLC04NTI4NjE3NDcsMTMyMjYyMTMzMCwxMzYwNDM0Mj
-UsMTAxNTgxMzUzNCwtMjA4ODc0NjYxMiwyMDU2NzA2MTA1LDE5
-NjY4MTM1NzhdfQ==
+eyJoaXN0b3J5IjpbMTkwNDYxNjA3MSwxMTgxMzE2NDEsLTE5Mj
+cyNTc4NzAsMTYxMTEwNDEwNSwtMTE0MzE3NjA2NiwxNzUyMzMw
+OTU1LC0xMzQ4NDg0ODQ5LC0xOTIyMDEwOTE0LDQ5MDg2MDY1Ni
+w3NjE5MzgxNzIsLTYyNjQ2MDAwNCwxMzAxMzIyNDQyLC0xNjky
+NzY3NzAsLTg1Mjg2MTc0NywxMzIyNjIxMzMwLDEzNjA0MzQyNS
+wxMDE1ODEzNTM0LC0yMDg4NzQ2NjEyLDIwNTY3MDYxMDUsMTk2
+NjgxMzU3OF19
 -->
