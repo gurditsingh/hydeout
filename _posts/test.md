@@ -52,7 +52,7 @@ streamsBuilder.table[String,String]("input-topic")
 ```
 
  - KTable is all Upsert on non null values.
- - KTable delete the record by null values if key is null it will drop
+ - KTable delete the record by null values if value is null, it will drop
    the record.
  - KTables are equivalent to DB tables (Tables must use the PRIMARY KEY
    constraint), and as in these, using a KTable means that you just care
@@ -61,15 +61,15 @@ streamsBuilder.table[String,String]("input-topic")
  - If you store a **KTable** into a **Kafka** topic, you'd probably want
    to enable **Kafka's log compaction** feature.
 
-Let's understand by example 
+Let's understand by below example first we have alice then it's inserted into table same with marc. Next again we have alice now we update the table be new value. last we have
 
 ![kstream](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/ktable.jpg?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTk5NjY3MDksLTE2OTQwODI1NiwtMT
-YyMDY2NzMyNCwtMjAyNjc5NTcxMywtMTY4OTkwODk1Miw0ODI3
-NjMyMCwxMTgxMzE2NDEsLTE5MjcyNTc4NzAsMTYxMTEwNDEwNS
-wtMTE0MzE3NjA2NiwxNzUyMzMwOTU1LC0xMzQ4NDg0ODQ5LC0x
-OTIyMDEwOTE0LDQ5MDg2MDY1Niw3NjE5MzgxNzIsLTYyNjQ2MD
-AwNCwxMzAxMzIyNDQyLC0xNjkyNzY3NzAsLTg1Mjg2MTc0Nywx
-MzIyNjIxMzMwXX0=
+eyJoaXN0b3J5IjpbMTYzODM4NzI2MCwtMTY5NDA4MjU2LC0xNj
+IwNjY3MzI0LC0yMDI2Nzk1NzEzLC0xNjg5OTA4OTUyLDQ4Mjc2
+MzIwLDExODEzMTY0MSwtMTkyNzI1Nzg3MCwxNjExMTA0MTA1LC
+0xMTQzMTc2MDY2LDE3NTIzMzA5NTUsLTEzNDg0ODQ4NDksLTE5
+MjIwMTA5MTQsNDkwODYwNjU2LDc2MTkzODE3MiwtNjI2NDYwMD
+A0LDEzMDEzMjI0NDIsLTE2OTI3Njc3MCwtODUyODYxNzQ3LDEz
+MjI2MjEzMzBdfQ==
 -->
