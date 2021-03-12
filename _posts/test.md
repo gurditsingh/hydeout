@@ -72,16 +72,19 @@ Let's understand by below example first we have **alice** then it's inserted int
 | ------------ | ------------ |
 | Filter  | Evaluates a boolean function for each element and retains those for which the function returns true.  |
 | FilterNot  | Evaluates a boolean function for each element and retains those for which the function returns false.  |
+| MapValues  | Takes one record and produces one record, while retaining the key of the original record. You can modify the record value and the value type.  |
 | GroupBy  |  Groups the records by a new key, which may be of a different key type. When grouping a table, you may also specify a new value and value type. |
-| join  |   |
+| join  |  Join the two KTable and produce the result |
 |   |   |
-|   |   |
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzIyMjU3MDQsLTE2OTQwODI1NiwtMT
-YyMDY2NzMyNCwtMjAyNjc5NTcxMywtMTY4OTkwODk1Miw0ODI3
-NjMyMCwxMTgxMzE2NDEsLTE5MjcyNTc4NzAsMTYxMTEwNDEwNS
-wtMTE0MzE3NjA2NiwxNzUyMzMwOTU1LC0xMzQ4NDg0ODQ5LC0x
-OTIyMDEwOTE0LDQ5MDg2MDY1Niw3NjE5MzgxNzIsLTYyNjQ2MD
-AwNCwxMzAxMzIyNDQyLC0xNjkyNzY3NzAsLTg1Mjg2MTc0Nywx
-MzIyNjIxMzMwXX0=
+eyJoaXN0b3J5IjpbMTgzNzc0NDc4MCwtMTc3MjIyNTcwNCwtMT
+Y5NDA4MjU2LC0xNjIwNjY3MzI0LC0yMDI2Nzk1NzEzLC0xNjg5
+OTA4OTUyLDQ4Mjc2MzIwLDExODEzMTY0MSwtMTkyNzI1Nzg3MC
+wxNjExMTA0MTA1LC0xMTQzMTc2MDY2LDE3NTIzMzA5NTUsLTEz
+NDg0ODQ4NDksLTE5MjIwMTA5MTQsNDkwODYwNjU2LDc2MTkzOD
+E3MiwtNjI2NDYwMDA0LDEzMDEzMjI0NDIsLTE2OTI3Njc3MCwt
+ODUyODYxNzQ3XX0=
 -->
