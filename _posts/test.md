@@ -51,16 +51,23 @@ val streamsBuilder: StreamsBuilder = new StreamsBuilder
 streamsBuilder.table[String,String]("input-topic")
 ```
 
-KTable is all Upsert on non null values
-KTable delete the record by null values if key is null it will drop the record.
-KTables are equivalent to DB tables (Tables must use the PRIMARY KEY constraint), and as in these, using a KTable means that you just care about the latest state of the row/entity, which means that any previous states can be safely thrown away.
-KTable are 
+ - KTable is all Upsert on non null values.
+ - KTable delete the record by null values if key is null it will drop
+   the record.
+ - KTables are equivalent to DB tables (Tables must use the PRIMARY KEY
+   constraint), and as in these, using a KTable means that you just care
+   about the latest state of the row/entity, which means that any
+   previous states can be safely thrown away.
+ - If you store a **KTable** into a **Kafka** topic, you'd probably want
+   to enable **Kafka's log compaction** feature.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjgxNDY1NjAsLTE2MjA2NjczMjQsLT
-IwMjY3OTU3MTMsLTE2ODk5MDg5NTIsNDgyNzYzMjAsMTE4MTMx
-NjQxLC0xOTI3MjU3ODcwLDE2MTExMDQxMDUsLTExNDMxNzYwNj
-YsMTc1MjMzMDk1NSwtMTM0ODQ4NDg0OSwtMTkyMjAxMDkxNCw0
-OTA4NjA2NTYsNzYxOTM4MTcyLC02MjY0NjAwMDQsMTMwMTMyMj
-Q0MiwtMTY5Mjc2NzcwLC04NTI4NjE3NDcsMTMyMjYyMTMzMCwx
-MzYwNDM0MjVdfQ==
+eyJoaXN0b3J5IjpbLTE2OTQwODI1NiwtMTYyMDY2NzMyNCwtMj
+AyNjc5NTcxMywtMTY4OTkwODk1Miw0ODI3NjMyMCwxMTgxMzE2
+NDEsLTE5MjcyNTc4NzAsMTYxMTEwNDEwNSwtMTE0MzE3NjA2Ni
+wxNzUyMzMwOTU1LC0xMzQ4NDg0ODQ5LC0xOTIyMDEwOTE0LDQ5
+MDg2MDY1Niw3NjE5MzgxNzIsLTYyNjQ2MDAwNCwxMzAxMzIyND
+QyLC0xNjkyNzY3NzAsLTg1Mjg2MTc0NywxMzIyNjIxMzMwLDEz
+NjA0MzQyNV19
 -->
