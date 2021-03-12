@@ -16,12 +16,12 @@ streamsBuilder.stream[String,String]("input-topic")
  - Kstream are infinite means unbounded data stream there is no end always expects more data to come.
  
  
- Let's undstand by below example first we have alice as a record and we added to KStream like 
+ Let's undstand by below example first we have **alice** as a record and we inserted to KStream like same for **marc** as well. last we have alice again we inserted into KStream.
    ![kstream](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/kstream.jpg?raw=true)
    
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODU2NTczNDksNDgyNzYzMjAsMTE4MT
+eyJoaXN0b3J5IjpbLTEwMDQ4NDczMDYsNDgyNzYzMjAsMTE4MT
 MxNjQxLC0xOTI3MjU3ODcwLDE2MTExMDQxMDUsLTExNDMxNzYw
 NjYsMTc1MjMzMDk1NSwtMTM0ODQ4NDg0OSwtMTkyMjAxMDkxNC
 w0OTA4NjA2NTYsNzYxOTM4MTcyLC02MjY0NjAwMDQsMTMwMTMy
