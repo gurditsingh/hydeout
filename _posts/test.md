@@ -1,4 +1,5 @@
 ## What is KStream
+
 A **KStream** is an abstraction of a **record stream**, where each data record represents in the unbounded data set. Using the table analogy, data records in a record stream are always interpreted as an “INSERT” – because no record replaces an existing row with the same key.
 
 `KStream` can be created directly from one or many Kafka topics (using StreamsBuilder.stream) or as a result of transformations on an existing `KStream`.
@@ -37,6 +38,7 @@ streamsBuilder.stream[String,String]("input-topic")
 
 
 ## What is KTable
+
 `KTable` is the abstraction of a **changelog stream** from a primary-keyed table. Each record in the changelog stream is an update on the primary-keyed table with the record key as the primary key.
 
 `KTable` assumes that records from the source topic that have `null` keys are simply dropped.
@@ -49,9 +51,10 @@ val streamsBuilder: StreamsBuilder = new StreamsBuilder
 streamsBuilder.table[String,String]("input-topic")
 ```
 
-
+KTable is all Upsert on non null values
+KTable delete the record by null values if key is null it wi
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwMjAyOTY2OSwtMjAyNjc5NTcxMywtMT
+eyJoaXN0b3J5IjpbMTU0MzY5OTA3MywtMjAyNjc5NTcxMywtMT
 Y4OTkwODk1Miw0ODI3NjMyMCwxMTgxMzE2NDEsLTE5MjcyNTc4
 NzAsMTYxMTEwNDEwNSwtMTE0MzE3NjA2NiwxNzUyMzMwOTU1LC
 0xMzQ4NDg0ODQ5LC0xOTIyMDEwOTE0LDQ5MDg2MDY1Niw3NjE5
