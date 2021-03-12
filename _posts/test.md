@@ -61,13 +61,15 @@ streamsBuilder.table[String,String]("input-topic")
  - If you store a **KTable** into a **Kafka** topic, you'd probably want
    to enable **Kafka's log compaction** feature.
 
+Let's understand by example 
 
+![kstream](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/ktable.jpg?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTQwODI1NiwtMTYyMDY2NzMyNCwtMj
-AyNjc5NTcxMywtMTY4OTkwODk1Miw0ODI3NjMyMCwxMTgxMzE2
-NDEsLTE5MjcyNTc4NzAsMTYxMTEwNDEwNSwtMTE0MzE3NjA2Ni
-wxNzUyMzMwOTU1LC0xMzQ4NDg0ODQ5LC0xOTIyMDEwOTE0LDQ5
-MDg2MDY1Niw3NjE5MzgxNzIsLTYyNjQ2MDAwNCwxMzAxMzIyND
-QyLC0xNjkyNzY3NzAsLTg1Mjg2MTc0NywxMzIyNjIxMzMwLDEz
-NjA0MzQyNV19
+eyJoaXN0b3J5IjpbLTE2OTk5NjY3MDksLTE2OTQwODI1NiwtMT
+YyMDY2NzMyNCwtMjAyNjc5NTcxMywtMTY4OTkwODk1Miw0ODI3
+NjMyMCwxMTgxMzE2NDEsLTE5MjcyNTc4NzAsMTYxMTEwNDEwNS
+wtMTE0MzE3NjA2NiwxNzUyMzMwOTU1LC0xMzQ4NDg0ODQ5LC0x
+OTIyMDEwOTE0LDQ5MDg2MDY1Niw3NjE5MzgxNzIsLTYyNjQ2MD
+AwNCwxMzAxMzIyNDQyLC0xNjkyNzY3NzAsLTg1Mjg2MTc0Nywx
+MzIyNjIxMzMwXX0=
 -->
