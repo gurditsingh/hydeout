@@ -21,7 +21,7 @@ streamsBuilder.stream[String,String]("input-topic")
    ![kstream](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/kstream.jpg?raw=true)
    
 **Operators supported by KStream:**
-`KStream` comes with a rich set of operators that allow for building topologies to consume, process and produce key-value records. below are the few operators 
+`KStream` comes with a rich set of operators that allow for building topologies to consume, process and produce key-value records. below are the few operators. Check out the rich set of [operators](https://jaceklaskowski.gitbooks.io/mastering-kafka-streams/content/kafka-streams-KStream.html#contract).
 
 | Operator  | Description  |
 | ------------ | ------------ |
@@ -37,11 +37,11 @@ streamsBuilder.stream[String,String]("input-topic")
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTc3Nzk3ODQsLTE2ODk5MDg5NTIsND
-gyNzYzMjAsMTE4MTMxNjQxLC0xOTI3MjU3ODcwLDE2MTExMDQx
-MDUsLTExNDMxNzYwNjYsMTc1MjMzMDk1NSwtMTM0ODQ4NDg0OS
-wtMTkyMjAxMDkxNCw0OTA4NjA2NTYsNzYxOTM4MTcyLC02MjY0
-NjAwMDQsMTMwMTMyMjQ0MiwtMTY5Mjc2NzcwLC04NTI4NjE3ND
-csMTMyMjYyMTMzMCwxMzYwNDM0MjUsMTAxNTgxMzUzNCwtMjA4
-ODc0NjYxMl19
+eyJoaXN0b3J5IjpbNzkxNzEwMzA4LC0xNjg5OTA4OTUyLDQ4Mj
+c2MzIwLDExODEzMTY0MSwtMTkyNzI1Nzg3MCwxNjExMTA0MTA1
+LC0xMTQzMTc2MDY2LDE3NTIzMzA5NTUsLTEzNDg0ODQ4NDksLT
+E5MjIwMTA5MTQsNDkwODYwNjU2LDc2MTkzODE3MiwtNjI2NDYw
+MDA0LDEzMDEzMjI0NDIsLTE2OTI3Njc3MCwtODUyODYxNzQ3LD
+EzMjI2MjEzMzAsMTM2MDQzNDI1LDEwMTU4MTM1MzQsLTIwODg3
+NDY2MTJdfQ==
 -->
