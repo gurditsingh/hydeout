@@ -39,7 +39,7 @@ streamsBuilder.stream[String,String]("input-topic")
 
 ## What is KTable
 
-`KTable` is the abstraction of a **changelog stream** from a primary-keyed table. Each record in the changelog stream is an update on the primary-keyed table with the record key as the primary key.
+`KTable` is the abstraction of a **changelog stream**where each data record represents an update. Each record in the changelog stream is an update on the primary-keyed table with the record key as the primary key.
 
 `KTable` assumes that records from the source topic that have `null` keys are simply dropped.
 
@@ -77,7 +77,7 @@ Let's understand by below example first we have **alice** then it's inserted int
 |   |   |
 |   |   |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzY0NzAyNDIsLTE2OTQwODI1NiwtMT
+eyJoaXN0b3J5IjpbLTE3NzIyMjU3MDQsLTE2OTQwODI1NiwtMT
 YyMDY2NzMyNCwtMjAyNjc5NTcxMywtMTY4OTkwODk1Miw0ODI3
 NjMyMCwxMTgxMzE2NDEsLTE5MjcyNTc4NzAsMTYxMTEwNDEwNS
 wtMTE0MzE3NjA2NiwxNzUyMzMwOTU1LC0xMzQ4NDg0ODQ5LC0x
