@@ -53,13 +53,13 @@ streamsBuilder.table[String,String]("input-topic")
 
 KTable is all Upsert on non null values
 KTable delete the record by null values if key is null it will drop the record.
-
+KTables are equivalent to DB tables(_Tables_ must use the _PRIMARY KEY constraint_), and as in these, using a KTable means that you just care about the latest state of the row/entity, which means that any previous states can be safely thrown away.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjA2NjczMjQsLTIwMjY3OTU3MTMsLT
-E2ODk5MDg5NTIsNDgyNzYzMjAsMTE4MTMxNjQxLC0xOTI3MjU3
-ODcwLDE2MTExMDQxMDUsLTExNDMxNzYwNjYsMTc1MjMzMDk1NS
-wtMTM0ODQ4NDg0OSwtMTkyMjAxMDkxNCw0OTA4NjA2NTYsNzYx
-OTM4MTcyLC02MjY0NjAwMDQsMTMwMTMyMjQ0MiwtMTY5Mjc2Nz
-cwLC04NTI4NjE3NDcsMTMyMjYyMTMzMCwxMzYwNDM0MjUsMTAx
-NTgxMzUzNF19
+eyJoaXN0b3J5IjpbLTE0MzMzMTgwOTcsLTE2MjA2NjczMjQsLT
+IwMjY3OTU3MTMsLTE2ODk5MDg5NTIsNDgyNzYzMjAsMTE4MTMx
+NjQxLC0xOTI3MjU3ODcwLDE2MTExMDQxMDUsLTExNDMxNzYwNj
+YsMTc1MjMzMDk1NSwtMTM0ODQ4NDg0OSwtMTkyMjAxMDkxNCw0
+OTA4NjA2NTYsNzYxOTM4MTcyLC02MjY0NjAwMDQsMTMwMTMyMj
+Q0MiwtMTY5Mjc2NzcwLC04NTI4NjE3NDcsMTMyMjYyMTMzMCwx
+MzYwNDM0MjVdfQ==
 -->
