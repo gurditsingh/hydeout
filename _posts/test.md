@@ -67,12 +67,21 @@ Let's understand by below example first we have **alice** then it's inserted int
 
 **Operators supported by KTable:**
 `KTable` comes with a rich set of operators that allow for building topologies to consume, process and produce key-value records. below are the few operators. Check out the rich set of [operators](https://jaceklaskowski.gitbooks.io/mastering-kafka-streams/content/kafka-streams-KTable.html).
+
+| Operator  | Description  |
+| ------------ | ------------ |
+| Filter  | Evaluates a boolean function for each element and retains those for which the function returns true.  |
+| FilterNot  | Evaluates a boolean function for each element and retains those for which the function returns false.  |
+| GroupBy  |  Groups the records by a new key, which may be of a different key type. When grouping a table, you may also specify a new value and value type. |
+| join  |   |
+|   |   |
+|   |   |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1NTI2NTIzMSwtMTY5NDA4MjU2LC0xNj
-IwNjY3MzI0LC0yMDI2Nzk1NzEzLC0xNjg5OTA4OTUyLDQ4Mjc2
-MzIwLDExODEzMTY0MSwtMTkyNzI1Nzg3MCwxNjExMTA0MTA1LC
-0xMTQzMTc2MDY2LDE3NTIzMzA5NTUsLTEzNDg0ODQ4NDksLTE5
-MjIwMTA5MTQsNDkwODYwNjU2LDc2MTkzODE3MiwtNjI2NDYwMD
-A0LDEzMDEzMjI0NDIsLTE2OTI3Njc3MCwtODUyODYxNzQ3LDEz
-MjI2MjEzMzBdfQ==
+eyJoaXN0b3J5IjpbLTIwMzY0NzAyNDIsLTE2OTQwODI1NiwtMT
+YyMDY2NzMyNCwtMjAyNjc5NTcxMywtMTY4OTkwODk1Miw0ODI3
+NjMyMCwxMTgxMzE2NDEsLTE5MjcyNTc4NzAsMTYxMTEwNDEwNS
+wtMTE0MzE3NjA2NiwxNzUyMzMwOTU1LC0xMzQ4NDg0ODQ5LC0x
+OTIyMDEwOTE0LDQ5MDg2MDY1Niw3NjE5MzgxNzIsLTYyNjQ2MD
+AwNCwxMzAxMzIyNDQyLC0xNjkyNzY3NzAsLTg1Mjg2MTc0Nywx
+MzIyNjIxMzMwXX0=
 -->
