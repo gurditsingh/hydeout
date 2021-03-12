@@ -16,11 +16,12 @@ streamsBuilder.stream[String,String]("input-topic")
  - Kstream are infinite means unbounded data stream there is no end always expects more data to come.
  
  
+ 
    ![kstream](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/kstream.jpg?raw=true)
    
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMzEzOTg5OSw0ODI3NjMyMCwxMTgxMz
+eyJoaXN0b3J5IjpbLTk3NzY0MTI1NSw0ODI3NjMyMCwxMTgxMz
 E2NDEsLTE5MjcyNTc4NzAsMTYxMTEwNDEwNSwtMTE0MzE3NjA2
 NiwxNzUyMzMwOTU1LC0xMzQ4NDg0ODQ5LC0xOTIyMDEwOTE0LD
 Q5MDg2MDY1Niw3NjE5MzgxNzIsLTYyNjQ2MDAwNCwxMzAxMzIy
