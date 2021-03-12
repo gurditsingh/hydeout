@@ -3,13 +3,17 @@ A **KStream** is an abstraction of a **record stream**, where each data record r
 
 `KStream` can be created directly from one or many Kafka topics (using StreamsBuilder.stream) or as a result of transformations on an existing `KStream`.
 
+```scala
+val streamsBuilder: StreamsBuilder = new StreamsBuilder
 
+streamsBuilder.stream[String,String]("input-topic")
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MTMxNjQxLC0xOTI3MjU3ODcwLDE2MT
-ExMDQxMDUsLTExNDMxNzYwNjYsMTc1MjMzMDk1NSwtMTM0ODQ4
-NDg0OSwtMTkyMjAxMDkxNCw0OTA4NjA2NTYsNzYxOTM4MTcyLC
-02MjY0NjAwMDQsMTMwMTMyMjQ0MiwtMTY5Mjc2NzcwLC04NTI4
-NjE3NDcsMTMyMjYyMTMzMCwxMzYwNDM0MjUsMTAxNTgxMzUzNC
-wyMDU2NzA2MTA1LDE5NjY4MTM1NzgsLTYwOTA3NDI1OCw3OTc4
-ODg1MTVdfQ==
+eyJoaXN0b3J5IjpbLTg4OTczODc3NCwxMTgxMzE2NDEsLTE5Mj
+cyNTc4NzAsMTYxMTEwNDEwNSwtMTE0MzE3NjA2NiwxNzUyMzMw
+OTU1LC0xMzQ4NDg0ODQ5LC0xOTIyMDEwOTE0LDQ5MDg2MDY1Ni
+w3NjE5MzgxNzIsLTYyNjQ2MDAwNCwxMzAxMzIyNDQyLC0xNjky
+NzY3NzAsLTg1Mjg2MTc0NywxMzIyNjIxMzMwLDEzNjA0MzQyNS
+wxMDE1ODEzNTM0LDIwNTY3MDYxMDUsMTk2NjgxMzU3OCwtNjA5
+MDc0MjU4XX0=
 -->
