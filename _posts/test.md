@@ -52,13 +52,14 @@ streamsBuilder.table[String,String]("input-topic")
 ```
 
 KTable is all Upsert on non null values
-KTable delete the record by null values if key is n
+KTable delete the record by null values if key is null it will drop the record.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1NjQ4ODA1NSwtMjAyNjc5NTcxMywtMT
-Y4OTkwODk1Miw0ODI3NjMyMCwxMTgxMzE2NDEsLTE5MjcyNTc4
-NzAsMTYxMTEwNDEwNSwtMTE0MzE3NjA2NiwxNzUyMzMwOTU1LC
-0xMzQ4NDg0ODQ5LC0xOTIyMDEwOTE0LDQ5MDg2MDY1Niw3NjE5
-MzgxNzIsLTYyNjQ2MDAwNCwxMzAxMzIyNDQyLC0xNjkyNzY3Nz
-AsLTg1Mjg2MTc0NywxMzIyNjIxMzMwLDEzNjA0MzQyNSwxMDE1
-ODEzNTM0XX0=
+eyJoaXN0b3J5IjpbLTE2MjA2NjczMjQsLTIwMjY3OTU3MTMsLT
+E2ODk5MDg5NTIsNDgyNzYzMjAsMTE4MTMxNjQxLC0xOTI3MjU3
+ODcwLDE2MTExMDQxMDUsLTExNDMxNzYwNjYsMTc1MjMzMDk1NS
+wtMTM0ODQ4NDg0OSwtMTkyMjAxMDkxNCw0OTA4NjA2NTYsNzYx
+OTM4MTcyLC02MjY0NjAwMDQsMTMwMTMyMjQ0MiwtMTY5Mjc2Nz
+cwLC04NTI4NjE3NDcsMTMyMjYyMTMzMCwxMzYwNDM0MjUsMTAx
+NTgxMzUzNF19
 -->
