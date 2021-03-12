@@ -65,10 +65,10 @@ Let's understand by below example first we have **alice** then it's inserted int
 
 ![ktable](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/ktable.jpg?raw=true)
 
-**Operators supported by KStream:**
-`KStream` comes with a rich set of operators that allow for building topologies to consume, process and produce key-value records. below are the few operators. Check out the rich set of [operators](https://jaceklaskowski.gitbooks.io/mastering-kafka-streams/content/kafka-streams-KStream.html#contract).
+**Operators supported by KTable:**
+`KTable` comes with a rich set of operators that allow for building topologies to consume, process and produce key-value records. below are the few operators. Check out the rich set of [operators](https://jaceklaskowski.gitbooks.io/mastering-kafka-streams/content/kafka-streams-KTable.html).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2OTU0MDcxOCwtMTY5NDA4MjU2LC0xNj
+eyJoaXN0b3J5IjpbLTg1NTI2NTIzMSwtMTY5NDA4MjU2LC0xNj
 IwNjY3MzI0LC0yMDI2Nzk1NzEzLC0xNjg5OTA4OTUyLDQ4Mjc2
 MzIwLDExODEzMTY0MSwtMTkyNzI1Nzg3MCwxNjExMTA0MTA1LC
 0xMTQzMTc2MDY2LDE3NTIzMzA5NTUsLTEzNDg0ODQ4NDksLTE5
