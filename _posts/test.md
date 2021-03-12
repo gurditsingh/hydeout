@@ -8,8 +8,11 @@ val streamsBuilder: StreamsBuilder = new StreamsBuilder
 
 streamsBuilder.stream[String,String]("input-topic")
 ```
+
+Kstream is all inserts. Every data entenered into kstream as insert 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4OTczODc3NCwxMTgxMzE2NDEsLTE5Mj
+eyJoaXN0b3J5IjpbLTY0MTAyNzA2MSwxMTgxMzE2NDEsLTE5Mj
 cyNTc4NzAsMTYxMTEwNDEwNSwtMTE0MzE3NjA2NiwxNzUyMzMw
 OTU1LC0xMzQ4NDg0ODQ5LC0xOTIyMDEwOTE0LDQ5MDg2MDY1Ni
 w3NjE5MzgxNzIsLTYyNjQ2MDAwNCwxMzAxMzIyNDQyLC0xNjky
