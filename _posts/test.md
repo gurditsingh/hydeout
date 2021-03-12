@@ -36,13 +36,18 @@ streamsBuilder.stream[String,String]("input-topic")
 |   |   |
 
 
-## What is KTablr
+## What is KTable
+`KTable` is the abstraction of a **changelog stream** from a primary-keyed table. Each record in the changelog stream is an update on the primary-keyed table with the record key as the primary key.
+
+`KTable` assumes that records from the source topic that have `null` keys are simply dropped.
+
+`KTable` can be created directly from a Kafka topic (using [StreamsBuilder.table](https://jaceklaskowski.gitbooks.io/mastering-kafka-streams/content/kafka-streams-StreamsBuilder.html#table) operator), as a result of [transformations](https://jaceklaskowski.gitbooks.io/mastering-kafka-streams/content/kafka-streams-KTable.html#operators) on an existing `KTable`, or aggregations (`aggregate`, `count`, and `reduce`)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUzMTE3ODgwLC0xNjg5OTA4OTUyLDQ4Mj
-c2MzIwLDExODEzMTY0MSwtMTkyNzI1Nzg3MCwxNjExMTA0MTA1
-LC0xMTQzMTc2MDY2LDE3NTIzMzA5NTUsLTEzNDg0ODQ4NDksLT
-E5MjIwMTA5MTQsNDkwODYwNjU2LDc2MTkzODE3MiwtNjI2NDYw
-MDA0LDEzMDEzMjI0NDIsLTE2OTI3Njc3MCwtODUyODYxNzQ3LD
-EzMjI2MjEzMzAsMTM2MDQzNDI1LDEwMTU4MTM1MzQsLTIwODg3
-NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbMTU3NzAzMDQxNSwtMTY4OTkwODk1Miw0OD
+I3NjMyMCwxMTgxMzE2NDEsLTE5MjcyNTc4NzAsMTYxMTEwNDEw
+NSwtMTE0MzE3NjA2NiwxNzUyMzMwOTU1LC0xMzQ4NDg0ODQ5LC
+0xOTIyMDEwOTE0LDQ5MDg2MDY1Niw3NjE5MzgxNzIsLTYyNjQ2
+MDAwNCwxMzAxMzIyNDQyLC0xNjkyNzY3NzAsLTg1Mjg2MTc0Ny
+wxMzIyNjIxMzMwLDEzNjA0MzQyNSwxMDE1ODEzNTM0LC0yMDg4
+NzQ2NjEyXX0=
 -->
