@@ -41,9 +41,9 @@ streamsBuilder.stream[String,String]("input-topic")
 
 `KTable` assumes that records from the source topic that have `null` keys are simply dropped.
 
-`KTable` can be created directly from a Kafka topic (using [StreamsBuilder.table](https://jaceklaskowski.gitbooks.io/mastering-kafka-streams/content/kafka-streams-StreamsBuilder.html#table) operator), as a result of [transformations](https://jaceklaskowski.gitbooks.io/mastering-kafka-streams/content/kafka-streams-KTable.html#operators) on an existing `KTable`, or aggregations (`aggregate`, `count`, and `reduce`)
+`KTable` can be created directly from a Kafka topic (using StreamsBuilder.table) or as a result of transformations on an existing `KTable`, or aggregations (`aggregate`, `count`, and `reduce`).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3NzAzMDQxNSwtMTY4OTkwODk1Miw0OD
+eyJoaXN0b3J5IjpbLTc3MjA3OTE4NiwtMTY4OTkwODk1Miw0OD
 I3NjMyMCwxMTgxMzE2NDEsLTE5MjcyNTc4NzAsMTYxMTEwNDEw
 NSwtMTE0MzE3NjA2NiwxNzUyMzMwOTU1LC0xMzQ4NDg0ODQ5LC
 0xOTIyMDEwOTE0LDQ5MDg2MDY1Niw3NjE5MzgxNzIsLTYyNjQ2
