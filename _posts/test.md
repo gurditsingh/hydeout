@@ -9,18 +9,22 @@ val streamsBuilder: StreamsBuilder = new StreamsBuilder
 streamsBuilder.stream[String,String]("input-topic")
 ```
 
- - Kstream is all inserts. Every data entered into kstream as insert new
+ - Kstream is all inserts. Every data entered into Kstream as insert new
    entry for each and every record stream.
-   Ksream is similar to log just a ordered sequence of mags like a topic
-   Kstream are infinite means unbounded data stream there is no end alwas
+ - Kstream is similar to log just a ordered sequence of mags like a
+   topic.
+ - Kstream are infinite means unbounded data stream there is no end always expects more data to come.
+ 
+ 
+   
    
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNDYxNjA3MSwxMTgxMzE2NDEsLTE5Mj
-cyNTc4NzAsMTYxMTEwNDEwNSwtMTE0MzE3NjA2NiwxNzUyMzMw
-OTU1LC0xMzQ4NDg0ODQ5LC0xOTIyMDEwOTE0LDQ5MDg2MDY1Ni
-w3NjE5MzgxNzIsLTYyNjQ2MDAwNCwxMzAxMzIyNDQyLC0xNjky
-NzY3NzAsLTg1Mjg2MTc0NywxMzIyNjIxMzMwLDEzNjA0MzQyNS
-wxMDE1ODEzNTM0LC0yMDg4NzQ2NjEyLDIwNTY3MDYxMDUsMTk2
-NjgxMzU3OF19
+eyJoaXN0b3J5IjpbNDgyNzYzMjAsMTE4MTMxNjQxLC0xOTI3Mj
+U3ODcwLDE2MTExMDQxMDUsLTExNDMxNzYwNjYsMTc1MjMzMDk1
+NSwtMTM0ODQ4NDg0OSwtMTkyMjAxMDkxNCw0OTA4NjA2NTYsNz
+YxOTM4MTcyLC02MjY0NjAwMDQsMTMwMTMyMjQ0MiwtMTY5Mjc2
+NzcwLC04NTI4NjE3NDcsMTMyMjYyMTMzMCwxMzYwNDM0MjUsMT
+AxNTgxMzUzNCwtMjA4ODc0NjYxMiwyMDU2NzA2MTA1LDE5NjY4
+MTM1NzhdfQ==
 -->
