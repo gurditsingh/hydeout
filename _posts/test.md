@@ -42,12 +42,18 @@ streamsBuilder.stream[String,String]("input-topic")
 `KTable` assumes that records from the source topic that have `null` keys are simply dropped.
 
 `KTable` can be created directly from a Kafka topic (using StreamsBuilder.table) or as a result of transformations on an existing `KTable`, or aggregations (`aggregate`, `count`, and `reduce`).
+
+```scala
+val streamsBuilder: StreamsBuilder = new StreamsBuilder
+
+streamsBuilder.table[String,String]("input-topic")
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3MjA3OTE4NiwtMTY4OTkwODk1Miw0OD
-I3NjMyMCwxMTgxMzE2NDEsLTE5MjcyNTc4NzAsMTYxMTEwNDEw
-NSwtMTE0MzE3NjA2NiwxNzUyMzMwOTU1LC0xMzQ4NDg0ODQ5LC
-0xOTIyMDEwOTE0LDQ5MDg2MDY1Niw3NjE5MzgxNzIsLTYyNjQ2
-MDAwNCwxMzAxMzIyNDQyLC0xNjkyNzY3NzAsLTg1Mjg2MTc0Ny
-wxMzIyNjIxMzMwLDEzNjA0MzQyNSwxMDE1ODEzNTM0LDIwNTY3
-MDYxMDVdfQ==
+eyJoaXN0b3J5IjpbLTIwMjY3OTU3MTMsLTE2ODk5MDg5NTIsND
+gyNzYzMjAsMTE4MTMxNjQxLC0xOTI3MjU3ODcwLDE2MTExMDQx
+MDUsLTExNDMxNzYwNjYsMTc1MjMzMDk1NSwtMTM0ODQ4NDg0OS
+wtMTkyMjAxMDkxNCw0OTA4NjA2NTYsNzYxOTM4MTcyLC02MjY0
+NjAwMDQsMTMwMTMyMjQ0MiwtMTY5Mjc2NzcwLC04NTI4NjE3ND
+csMTMyMjYyMTMzMCwxMzYwNDM0MjUsMTAxNTgxMzUzNCwyMDU2
+NzA2MTA1XX0=
 -->
