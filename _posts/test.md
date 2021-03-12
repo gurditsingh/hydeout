@@ -22,12 +22,27 @@ streamsBuilder.stream[String,String]("input-topic")
    
 **Operators supported by KStream:**
 `KStream` comes with a rich set of operators that allow for building topologies to consume, process and produce key-value records.
+
+| Operator  | Description  |
+| ------------ | ------------ |
+| Branch  |  Branch (or split) a KStream based on the supplied predicates into one or more KStream instances.  |
+| Filter  | Evaluates a boolean function for each element and retains those for which the function returns true.  |
+| FlatMap  | Takes one record and produces zero, one, or more records. You can modify the record keys and values, including their types.  |
+| FlatMapValues   |  Takes one record and produces zero, one, or more records, while retaining the key of the original record. You can modify the record values and the value type. |
+| Map  | Takes one record and produces one record. You can modify the record key and value, including their types.  |
+| MapValues  | Takes one record and produces one record, while retaining the key of the original record. You can modify the record value and the value type.  |
+| GroupByKey  |  Groups the records by the existing key. |
+| GroupBy  |  Groups the records by a new key, which may be of a different key type. When grouping a table, you may also specify a new value and value type. |
+
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2ODk5MDg5NTIsNDgyNzYzMjAsMTE4MT
-MxNjQxLC0xOTI3MjU3ODcwLDE2MTExMDQxMDUsLTExNDMxNzYw
-NjYsMTc1MjMzMDk1NSwtMTM0ODQ4NDg0OSwtMTkyMjAxMDkxNC
-w0OTA4NjA2NTYsNzYxOTM4MTcyLC02MjY0NjAwMDQsMTMwMTMy
-MjQ0MiwtMTY5Mjc2NzcwLC04NTI4NjE3NDcsMTMyMjYyMTMzMC
-wxMzYwNDM0MjUsMTAxNTgxMzUzNCwyMDU2NzA2MTA1LDE5NjY4
-MTM1NzhdfQ==
+eyJoaXN0b3J5IjpbLTc0MDM5NzQ1OSwtMTY4OTkwODk1Miw0OD
+I3NjMyMCwxMTgxMzE2NDEsLTE5MjcyNTc4NzAsMTYxMTEwNDEw
+NSwtMTE0MzE3NjA2NiwxNzUyMzMwOTU1LC0xMzQ4NDg0ODQ5LC
+0xOTIyMDEwOTE0LDQ5MDg2MDY1Niw3NjE5MzgxNzIsLTYyNjQ2
+MDAwNCwxMzAxMzIyNDQyLC0xNjkyNzY3NzAsLTg1Mjg2MTc0Ny
+wxMzIyNjIxMzMwLDEzNjA0MzQyNSwxMDE1ODEzNTM0LDIwNTY3
+MDYxMDVdfQ==
 -->
