@@ -21,7 +21,7 @@ streamsBuilder.stream[String,String]("input-topic")
    ![kstream](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/kstream.jpg?raw=true)
    
 **Operators supported by KStream:**
-`KStream` comes with a rich set of operators that allow for building topologies to consume, process and produce key-value records.
+`KStream` comes with a rich set of operators that allow for building topologies to consume, process and produce key-value records. below are the few operators 
 
 | Operator  | Description  |
 | ------------ | ------------ |
@@ -33,16 +33,15 @@ streamsBuilder.stream[String,String]("input-topic")
 | MapValues  | Takes one record and produces one record, while retaining the key of the original record. You can modify the record value and the value type.  |
 | GroupByKey  |  Groups the records by the existing key. |
 | GroupBy  |  Groups the records by a new key, which may be of a different key type. When grouping a table, you may also specify a new value and value type. |
-
-
+|   |   |
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0MDM5NzQ1OSwtMTY4OTkwODk1Miw0OD
-I3NjMyMCwxMTgxMzE2NDEsLTE5MjcyNTc4NzAsMTYxMTEwNDEw
-NSwtMTE0MzE3NjA2NiwxNzUyMzMwOTU1LC0xMzQ4NDg0ODQ5LC
-0xOTIyMDEwOTE0LDQ5MDg2MDY1Niw3NjE5MzgxNzIsLTYyNjQ2
-MDAwNCwxMzAxMzIyNDQyLC0xNjkyNzY3NzAsLTg1Mjg2MTc0Ny
-wxMzIyNjIxMzMwLDEzNjA0MzQyNSwxMDE1ODEzNTM0LC0yMDg4
-NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTE0NTc3Nzk3ODQsLTE2ODk5MDg5NTIsND
+gyNzYzMjAsMTE4MTMxNjQxLC0xOTI3MjU3ODcwLDE2MTExMDQx
+MDUsLTExNDMxNzYwNjYsMTc1MjMzMDk1NSwtMTM0ODQ4NDg0OS
+wtMTkyMjAxMDkxNCw0OTA4NjA2NTYsNzYxOTM4MTcyLC02MjY0
+NjAwMDQsMTMwMTMyMjQ0MiwtMTY5Mjc2NzcwLC04NTI4NjE3ND
+csMTMyMjYyMTMzMCwxMzYwNDM0MjUsMTAxNTgxMzUzNCwtMjA4
+ODc0NjYxMl19
 -->
