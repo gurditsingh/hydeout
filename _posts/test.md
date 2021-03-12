@@ -61,15 +61,18 @@ streamsBuilder.table[String,String]("input-topic")
  - If you store a **KTable** into a **Kafka** topic, you'd probably want
    to enable **Kafka's log compaction** feature.
 
-Let's understand by below example first we have alice then it's inserted into table same with marc. Next again we have alice now we update the table be new value. last we have
+Let's understand by below example first we have **alice** then it's inserted into table same with **marc**. Next again we have **alice** now we update the table be new value. last we have **marc** with null value ktable simply drop the record.
 
-![kstream](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/ktable.jpg?raw=true)
+![ktable](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/ktable.jpg?raw=true)
+
+**Operators supported by KTable:**
+`KStream` comes with a rich set of operators that allow for building topologies to consume, process and produce key-value records. below are the few operators. Check out the rich set of [operators](https://jaceklaskowski.gitbooks.io/mastering-kafka-streams/content/kafka-streams-KStream.html#contract).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzODM4NzI2MCwtMTY5NDA4MjU2LC0xNj
-IwNjY3MzI0LC0yMDI2Nzk1NzEzLC0xNjg5OTA4OTUyLDQ4Mjc2
-MzIwLDExODEzMTY0MSwtMTkyNzI1Nzg3MCwxNjExMTA0MTA1LC
-0xMTQzMTc2MDY2LDE3NTIzMzA5NTUsLTEzNDg0ODQ4NDksLTE5
-MjIwMTA5MTQsNDkwODYwNjU2LDc2MTkzODE3MiwtNjI2NDYwMD
-A0LDEzMDEzMjI0NDIsLTE2OTI3Njc3MCwtODUyODYxNzQ3LDEz
-MjI2MjEzMzBdfQ==
+eyJoaXN0b3J5IjpbLTE2MzExODI0NzIsLTE2OTQwODI1NiwtMT
+YyMDY2NzMyNCwtMjAyNjc5NTcxMywtMTY4OTkwODk1Miw0ODI3
+NjMyMCwxMTgxMzE2NDEsLTE5MjcyNTc4NzAsMTYxMTEwNDEwNS
+wtMTE0MzE3NjA2NiwxNzUyMzMwOTU1LC0xMzQ4NDg0ODQ5LC0x
+OTIyMDEwOTE0LDQ5MDg2MDY1Niw3NjE5MzgxNzIsLTYyNjQ2MD
+AwNCwxMzAxMzIyNDQyLC0xNjkyNzY3NzAsLTg1Mjg2MTc0Nywx
+MzIyNjIxMzMwXX0=
 -->
