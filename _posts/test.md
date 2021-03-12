@@ -36,8 +36,9 @@ streamsBuilder.stream[String,String]("input-topic")
 |   |   |
 
 
+## What is KTablr
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkxNzEwMzA4LC0xNjg5OTA4OTUyLDQ4Mj
+eyJoaXN0b3J5IjpbODUzMTE3ODgwLC0xNjg5OTA4OTUyLDQ4Mj
 c2MzIwLDExODEzMTY0MSwtMTkyNzI1Nzg3MCwxNjExMTA0MTA1
 LC0xMTQzMTc2MDY2LDE3NTIzMzA5NTUsLTEzNDg0ODQ4NDksLT
 E5MjIwMTA5MTQsNDkwODYwNjU2LDc2MTkzODE3MiwtNjI2NDYw
