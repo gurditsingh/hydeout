@@ -89,18 +89,24 @@ Because of the stream-table duality, we can easily turn a stream into a table, a
 
 	**Example:**
 	To sometime helpful to transform a KTable to KStream inorder to keep a changelog of all the changes to the KTable.
-	
+	```scala
+	val streamsBuilder: StreamsBuilder = new StreamsBuilder
+
+	val table:KTable[String,String]=streamsBuilder.table[String,String]("input-topic")
+
+	val stream:KStream[String,String]=table.toStream()
+	```
 
 - **Stream to Table** — A Stream could be viewed as table. A stream can be seen as a changelogs of a table. Where each data record in the stream captures a state change of the table.
 	
 	We can turn a stream into a table_ by aggregating the stream with operations such as `COUNT()` or `SUM()`
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzA5MTk0MDIzLDk2OTI2Njc0NCwxODM3Nz
-Q0NzgwLC0xNzcyMjI1NzA0LC0xNjk0MDgyNTYsLTE2MjA2Njcz
-MjQsLTIwMjY3OTU3MTMsLTE2ODk5MDg5NTIsNDgyNzYzMjAsMT
-E4MTMxNjQxLC0xOTI3MjU3ODcwLDE2MTExMDQxMDUsLTExNDMx
-NzYwNjYsMTc1MjMzMDk1NSwtMTM0ODQ4NDg0OSwtMTkyMjAxMD
-kxNCw0OTA4NjA2NTYsNzYxOTM4MTcyLC02MjY0NjAwMDQsMTMw
-MTMyMjQ0Ml19
+eyJoaXN0b3J5IjpbLTE0NTAyMDExNzIsMzA5MTk0MDIzLDk2OT
+I2Njc0NCwxODM3NzQ0NzgwLC0xNzcyMjI1NzA0LC0xNjk0MDgy
+NTYsLTE2MjA2NjczMjQsLTIwMjY3OTU3MTMsLTE2ODk5MDg5NT
+IsNDgyNzYzMjAsMTE4MTMxNjQxLC0xOTI3MjU3ODcwLDE2MTEx
+MDQxMDUsLTExNDMxNzYwNjYsMTc1MjMzMDk1NSwtMTM0ODQ4ND
+g0OSwtMTkyMjAxMDkxNCw0OTA4NjA2NTYsNzYxOTM4MTcyLC02
+MjY0NjAwMDRdfQ==
 -->
