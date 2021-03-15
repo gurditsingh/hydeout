@@ -81,13 +81,15 @@ Let's understand by below example first we have **alice** then it's inserted int
 ## The Stream Table Duality
 In Apache Kafka, streams and tables work together. A stream can be a table, and a table can be a stream. It is a property of Kafka Streams with which we can achieve this versatility.
 
+Because of the stream-table duality, we can easily turn a stream into a table, and vice versa. Even more, we can do this in a continuous, streaming manner so that both the stream and the table are always up to date with the latest events.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyMTE2MDE1NCwxODM3NzQ0NzgwLC0xNz
-cyMjI1NzA0LC0xNjk0MDgyNTYsLTE2MjA2NjczMjQsLTIwMjY3
-OTU3MTMsLTE2ODk5MDg5NTIsNDgyNzYzMjAsMTE4MTMxNjQxLC
-0xOTI3MjU3ODcwLDE2MTExMDQxMDUsLTExNDMxNzYwNjYsMTc1
-MjMzMDk1NSwtMTM0ODQ4NDg0OSwtMTkyMjAxMDkxNCw0OTA4Nj
-A2NTYsNzYxOTM4MTcyLC02MjY0NjAwMDQsMTMwMTMyMjQ0Miwt
-MTY5Mjc2NzcwXX0=
+eyJoaXN0b3J5IjpbLTIwNjUwNDk2MDcsMTgzNzc0NDc4MCwtMT
+c3MjIyNTcwNCwtMTY5NDA4MjU2LC0xNjIwNjY3MzI0LC0yMDI2
+Nzk1NzEzLC0xNjg5OTA4OTUyLDQ4Mjc2MzIwLDExODEzMTY0MS
+wtMTkyNzI1Nzg3MCwxNjExMTA0MTA1LC0xMTQzMTc2MDY2LDE3
+NTIzMzA5NTUsLTEzNDg0ODQ4NDksLTE5MjIwMTA5MTQsNDkwOD
+YwNjU2LDc2MTkzODE3MiwtNjI2NDYwMDA0LDEzMDEzMjI0NDIs
+LTE2OTI3Njc3MF19
 -->
