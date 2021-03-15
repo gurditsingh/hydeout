@@ -88,14 +88,14 @@ Because of the stream-table duality, we can easily turn a stream into a table, a
 	We can turn a table into a stream_ by capturing the changes made to the table—inserts, updates, and deletes—into a “change stream.”
 
 Example:
-
+To sometime helpful to transform a KTable to KStream inorder to keep a chn
 
 - **Stream to Table** — A Stream could be viewed as table. A stream can be seen as a changelogs of a table. Where each data record in the stream captures a state change of the table.
 	
 	We can turn a stream into a table_ by aggregating the stream with operations such as `COUNT()` or `SUM()`
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2MDE3MTQyMSw5NjkyNjY3NDQsMTgzNz
+eyJoaXN0b3J5IjpbMTQ3MTg4NTk3NSw5NjkyNjY3NDQsMTgzNz
 c0NDc4MCwtMTc3MjIyNTcwNCwtMTY5NDA4MjU2LC0xNjIwNjY3
 MzI0LC0yMDI2Nzk1NzEzLC0xNjg5OTA4OTUyLDQ4Mjc2MzIwLD
 ExODEzMTY0MSwtMTkyNzI1Nzg3MCwxNjExMTA0MTA1LC0xMTQz
