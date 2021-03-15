@@ -83,21 +83,22 @@ In Apache Kafka, streams and tables work together. A stream can be a table, and 
 
 Because of the stream-table duality, we can easily turn a stream into a table, and vice versa. Even more, we can do this in a continuous, streaming manner so that both the stream and the table are always up to date with the latest events.
 
- **Table to Stream**
+ ### 1) Table to Stream
+ 
  A Table could be viewed as a stream, with the latest values for a particular field coming in. It’s just a snapshot of the latest values of a key in a stream at a given point in time.
 
 We can turn a table into a stream_ by capturing the changes made to the table—inserts, updates, and deletes—into a “change stream.”
 
-	**Example:**
-	To sometime helpful to transform a KTable to KStream inorder to keep a changelog of all the changes to the KTable.
+**Example:**
+To sometime helpful to transform a KTable to KStream inorder to keep a changelog of all the changes to the KTable.
 	
-	```scala
+```scala
 	val streamsBuilder: StreamsBuilder = new StreamsBuilder
 
 	val table:KTable[String,String]=streamsBuilder.table[String,String]("input-topic")
 
 	val stream:KStream[String,String]=table.toStream()
-	```
+```
 
  - **Stream to Table** — A Stream could be viewed as table. A stream can be seen as a changelogs of a table. Where each data record in the stream captures a state change of the table.
 	
@@ -129,7 +130,7 @@ We can turn a table into a stream_ by capturing the changes made to the table—
 	```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxODc0NzI1NiwtNjAzMjA0OTQzLDMwOT
+eyJoaXN0b3J5IjpbMTg5MTAxNTY3NSwtNjAzMjA0OTQzLDMwOT
 E5NDAyMyw5NjkyNjY3NDQsMTgzNzc0NDc4MCwtMTc3MjIyNTcw
 NCwtMTY5NDA4MjU2LC0xNjIwNjY3MzI0LC0yMDI2Nzk1NzEzLC
 0xNjg5OTA4OTUyLDQ4Mjc2MzIwLDExODEzMTY0MSwtMTkyNzI1
