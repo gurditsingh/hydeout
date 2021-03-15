@@ -114,13 +114,23 @@ val result:KTable[String, lang.Long]=stream.groupByKey().count()
 
 ```
  - Write back to kafka topic and read as a table.
+	```scala
+	val streamsBuilder: StreamsBuilder = new StreamsBuilder
+
+	val stream:KStream[String,String]=streamsBuilder.stream[String,String]("input-topic")
+
+	stream.to("intermediate-topic")
+
+	val table:KTable[String,String]=streamsBuilder.table[String,String]("intermediate-topic")
+
+	```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwMzIwNDk0MywzMDkxOTQwMjMsOTY5Mj
-Y2NzQ0LDE4Mzc3NDQ3ODAsLTE3NzIyMjU3MDQsLTE2OTQwODI1
-NiwtMTYyMDY2NzMyNCwtMjAyNjc5NTcxMywtMTY4OTkwODk1Mi
-w0ODI3NjMyMCwxMTgxMzE2NDEsLTE5MjcyNTc4NzAsMTYxMTEw
-NDEwNSwtMTE0MzE3NjA2NiwxNzUyMzMwOTU1LC0xMzQ4NDg0OD
-Q5LC0xOTIyMDEwOTE0LDQ5MDg2MDY1Niw3NjE5MzgxNzIsLTYy
-NjQ2MDAwNF19
+eyJoaXN0b3J5IjpbLTE5MjM1OTg4NTEsLTYwMzIwNDk0MywzMD
+kxOTQwMjMsOTY5MjY2NzQ0LDE4Mzc3NDQ3ODAsLTE3NzIyMjU3
+MDQsLTE2OTQwODI1NiwtMTYyMDY2NzMyNCwtMjAyNjc5NTcxMy
+wtMTY4OTkwODk1Miw0ODI3NjMyMCwxMTgxMzE2NDEsLTE5Mjcy
+NTc4NzAsMTYxMTEwNDEwNSwtMTE0MzE3NjA2NiwxNzUyMzMwOT
+U1LC0xMzQ4NDg0ODQ5LC0xOTIyMDEwOTE0LDQ5MDg2MDY1Niw3
+NjE5MzgxNzJdfQ==
 -->
