@@ -83,12 +83,14 @@ In Apache Kafka, streams and tables work together. A stream can be a table, and 
 
 Because of the stream-table duality, we can easily turn a stream into a table, and vice versa. Even more, we can do this in a continuous, streaming manner so that both the stream and the table are always up to date with the latest events.
 
- -   **Table to Stream**  — A Table could be viewed as a stream, with the latest values for a particular field coming in. It’s just a snapshot of the latest values of a key in a stream at a given point in time.
+ **Table to Stream**
+ A Table could be viewed as a stream, with the latest values for a particular field coming in. It’s just a snapshot of the latest values of a key in a stream at a given point in time.
 
-	We can turn a table into a stream_ by capturing the changes made to the table—inserts, updates, and deletes—into a “change stream.”
+We can turn a table into a stream_ by capturing the changes made to the table—inserts, updates, and deletes—into a “change stream.”
 
 	**Example:**
 	To sometime helpful to transform a KTable to KStream inorder to keep a changelog of all the changes to the KTable.
+	
 	```scala
 	val streamsBuilder: StreamsBuilder = new StreamsBuilder
 
@@ -101,18 +103,19 @@ Because of the stream-table duality, we can easily turn a stream into a table, a
 	
 	We can turn a stream into a table_ by aggregating the stream with operations such as `COUNT()` or `SUM()`
  
- **Example:**
-	To sometime helpful to transform a KStream to KTable. by two ways we can create a KTable from KStream.
+	 **Example:**
+		To sometime helpful to transform a KStream to KTable. by two ways we can create a KTable from KStream.
 
  - Chain a groupByKey() and apply any aggregation step.
- ```scala
-val streamsBuilder: StreamsBuilder = new StreamsBuilder
+	 ```scala
+	val streamsBuilder: StreamsBuilder = new StreamsBuilder
 
-val stream:KStream[String,String]=streamsBuilder.stream[String,String]("input-topic")
+	val stream:KStream[String,String]=streamsBuilder.stream[String,String]("input-topic")
 
-val result:KTable[String, lang.Long]=stream.groupByKey().count()
+	val result:KTable[String, lang.Long]=stream.groupByKey().count()
 
-```
+	```
+
  - Write back to kafka topic and read as a table.
 	```scala
 	val streamsBuilder: StreamsBuilder = new StreamsBuilder
@@ -126,11 +129,11 @@ val result:KTable[String, lang.Long]=stream.groupByKey().count()
 	```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjM1OTg4NTEsLTYwMzIwNDk0MywzMD
-kxOTQwMjMsOTY5MjY2NzQ0LDE4Mzc3NDQ3ODAsLTE3NzIyMjU3
-MDQsLTE2OTQwODI1NiwtMTYyMDY2NzMyNCwtMjAyNjc5NTcxMy
-wtMTY4OTkwODk1Miw0ODI3NjMyMCwxMTgxMzE2NDEsLTE5Mjcy
-NTc4NzAsMTYxMTEwNDEwNSwtMTE0MzE3NjA2NiwxNzUyMzMwOT
-U1LC0xMzQ4NDg0ODQ5LC0xOTIyMDEwOTE0LDQ5MDg2MDY1Niw3
-NjE5MzgxNzJdfQ==
+eyJoaXN0b3J5IjpbMTgxODc0NzI1NiwtNjAzMjA0OTQzLDMwOT
+E5NDAyMyw5NjkyNjY3NDQsMTgzNzc0NDc4MCwtMTc3MjIyNTcw
+NCwtMTY5NDA4MjU2LC0xNjIwNjY3MzI0LC0yMDI2Nzk1NzEzLC
+0xNjg5OTA4OTUyLDQ4Mjc2MzIwLDExODEzMTY0MSwtMTkyNzI1
+Nzg3MCwxNjExMTA0MTA1LC0xMTQzMTc2MDY2LDE3NTIzMzA5NT
+UsLTEzNDg0ODQ4NDksLTE5MjIwMTA5MTQsNDkwODYwNjU2LDc2
+MTkzODE3Ml19
 -->
