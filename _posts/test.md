@@ -105,10 +105,18 @@ Because of the stream-table duality, we can easily turn a stream into a table, a
 	To sometime helpful to transform a KStream to KTable. by two ways we can create a KTable from KStream.
 
  - Chain a groupByKey() and apply any aggregation step.
- - Write back to kafka 
+ ```scala
+val streamsBuilder: StreamsBuilder = new StreamsBuilder
+
+val stream:KStream[String,String]=streamsBuilder.stream[String,String]("input-topic")
+
+val result:KTable[String, lang.Long]=stream.groupByKey().count()
+
+```
+ - Write back to kafka topic and read as a table.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1MDI3MDQyOSwzMDkxOTQwMjMsOTY5Mj
+eyJoaXN0b3J5IjpbLTYwMzIwNDk0MywzMDkxOTQwMjMsOTY5Mj
 Y2NzQ0LDE4Mzc3NDQ3ODAsLTE3NzIyMjU3MDQsLTE2OTQwODI1
 NiwtMTYyMDY2NzMyNCwtMjAyNjc5NTcxMywtMTY4OTkwODk1Mi
 w0ODI3NjMyMCwxMTgxMzE2NDEsLTE5MjcyNTc4NzAsMTYxMTEw
