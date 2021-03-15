@@ -83,15 +83,15 @@ In Apache Kafka, streams and tables work together. A stream can be a table, and 
 
 Because of the stream-table duality, we can easily turn a stream into a table, and vice versa. Even more, we can do this in a continuous, streaming manner so that both the stream and the table are always up to date with the latest events.
 
--   **Stream**  — Similarly, a table could be viewed as a stream, with the latest values for a particular field coming in. It’s just a snapshot of the latest values of a key in a stream at a given point in time.
+-   **Table to Stream**  — Similarly, a table could be viewed as a stream, with the latest values for a particular field coming in. It’s just a snapshot of the latest values of a key in a stream at a given point in time.
 - _We can turn a table into a stream_ by capturing the changes made to the table—inserts, updates, and deletes—into a “change stream.”
 - **Table** — A table can be seen as a collection of changelogs of a stream. This is to say that a table will have the latest values of a particular fact at a given point in time.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzY3MDUxMTUsMTgzNzc0NDc4MCwtMT
-c3MjIyNTcwNCwtMTY5NDA4MjU2LC0xNjIwNjY3MzI0LC0yMDI2
-Nzk1NzEzLC0xNjg5OTA4OTUyLDQ4Mjc2MzIwLDExODEzMTY0MS
-wtMTkyNzI1Nzg3MCwxNjExMTA0MTA1LC0xMTQzMTc2MDY2LDE3
-NTIzMzA5NTUsLTEzNDg0ODQ4NDksLTE5MjIwMTA5MTQsNDkwOD
-YwNjU2LDc2MTkzODE3MiwtNjI2NDYwMDA0LDEzMDEzMjI0NDIs
-LTE2OTI3Njc3MF19
+eyJoaXN0b3J5IjpbNTU0ODEyOTg2LDE4Mzc3NDQ3ODAsLTE3Nz
+IyMjU3MDQsLTE2OTQwODI1NiwtMTYyMDY2NzMyNCwtMjAyNjc5
+NTcxMywtMTY4OTkwODk1Miw0ODI3NjMyMCwxMTgxMzE2NDEsLT
+E5MjcyNTc4NzAsMTYxMTEwNDEwNSwtMTE0MzE3NjA2NiwxNzUy
+MzMwOTU1LC0xMzQ4NDg0ODQ5LC0xOTIyMDEwOTE0LDQ5MDg2MD
+Y1Niw3NjE5MzgxNzIsLTYyNjQ2MDAwNCwxMzAxMzIyNDQyLC0x
+NjkyNzY3NzBdfQ==
 -->
