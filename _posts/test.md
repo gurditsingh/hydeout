@@ -79,9 +79,11 @@ Let's understand by below example first we have **alice** then it's inserted int
 
 
 ## The Stream Table Duality
-In Apache Kafka, streams and tables work together. A stream can be a table, and a table can be a stream. It is a property of Kafka Streams with which we can attain this versatility.
+In Apache Kafka, streams and tables work together. A stream can be a table, and a table can be a stream. It is a property of Kafka Streams with which we can achieve this versatility.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODU5NDE2MCwxODM3NzQ0NzgwLC0xNz
+eyJoaXN0b3J5IjpbMTMyMTE2MDE1NCwxODM3NzQ0NzgwLC0xNz
 cyMjI1NzA0LC0xNjk0MDgyNTYsLTE2MjA2NjczMjQsLTIwMjY3
 OTU3MTMsLTE2ODk5MDg5NTIsNDgyNzYzMjAsMTE4MTMxNjQxLC
 0xOTI3MjU3ODcwLDE2MTExMDQxMDUsLTExNDMxNzYwNjYsMTc1
