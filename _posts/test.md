@@ -83,7 +83,7 @@ In Apache Kafka, streams and tables work together. A stream can be a table, and 
 
 Because of the stream-table duality, we can easily turn a stream into a table, and vice versa. Even more, we can do this in a continuous, streaming manner so that both the stream and the table are always up to date with the latest events.
 
--   **Table to Stream**  — A Table could be viewed as a stream, with the latest values for a particular field coming in. It’s just a snapshot of the latest values of a key in a stream at a given point in time.
+ -   **Table to Stream**  — A Table could be viewed as a stream, with the latest values for a particular field coming in. It’s just a snapshot of the latest values of a key in a stream at a given point in time.
 
 	We can turn a table into a stream_ by capturing the changes made to the table—inserts, updates, and deletes—into a “change stream.”
 
@@ -97,21 +97,22 @@ Because of the stream-table duality, we can easily turn a stream into a table, a
 	val stream:KStream[String,String]=table.toStream()
 	```
 
-- **Stream to Table** — A Stream could be viewed as table. A stream can be seen as a changelogs of a table. Where each data record in the stream captures a state change of the table.
+ - **Stream to Table** — A Stream could be viewed as table. A stream can be seen as a changelogs of a table. Where each data record in the stream captures a state change of the table.
 	
 	We can turn a stream into a table_ by aggregating the stream with operations such as `COUNT()` or `SUM()`
  
  **Example:**
-	To sometime helpful to transform a KStream to KTable.
+	To sometime helpful to transform a KStream to KTable. by two ways we can create a KTable from KStream.
 
-
+ - Chain a groupByKey() and apply any aggregation step.
+ - Write back to kafka 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTAyMTM1MjcsMzA5MTk0MDIzLDk2OT
-I2Njc0NCwxODM3NzQ0NzgwLC0xNzcyMjI1NzA0LC0xNjk0MDgy
-NTYsLTE2MjA2NjczMjQsLTIwMjY3OTU3MTMsLTE2ODk5MDg5NT
-IsNDgyNzYzMjAsMTE4MTMxNjQxLC0xOTI3MjU3ODcwLDE2MTEx
-MDQxMDUsLTExNDMxNzYwNjYsMTc1MjMzMDk1NSwtMTM0ODQ4ND
-g0OSwtMTkyMjAxMDkxNCw0OTA4NjA2NTYsNzYxOTM4MTcyLC02
-MjY0NjAwMDRdfQ==
+eyJoaXN0b3J5IjpbMTM1MDI3MDQyOSwzMDkxOTQwMjMsOTY5Mj
+Y2NzQ0LDE4Mzc3NDQ3ODAsLTE3NzIyMjU3MDQsLTE2OTQwODI1
+NiwtMTYyMDY2NzMyNCwtMjAyNjc5NTcxMywtMTY4OTkwODk1Mi
+w0ODI3NjMyMCwxMTgxMzE2NDEsLTE5MjcyNTc4NzAsMTYxMTEw
+NDEwNSwtMTE0MzE3NjA2NiwxNzUyMzMwOTU1LC0xMzQ4NDg0OD
+Q5LC0xOTIyMDEwOTE0LDQ5MDg2MDY1Niw3NjE5MzgxNzIsLTYy
+NjQ2MDAwNF19
 -->
