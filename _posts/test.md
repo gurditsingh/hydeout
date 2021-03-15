@@ -101,8 +101,13 @@ Because of the stream-table duality, we can easily turn a stream into a table, a
 	
 	We can turn a stream into a table_ by aggregating the stream with operations such as `COUNT()` or `SUM()`
  
+ **Example:**
+	To sometime helpful to transform a KStream to KTable.
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTAyMDExNzIsMzA5MTk0MDIzLDk2OT
+eyJoaXN0b3J5IjpbLTE1OTAyMTM1MjcsMzA5MTk0MDIzLDk2OT
 I2Njc0NCwxODM3NzQ0NzgwLC0xNzcyMjI1NzA0LC0xNjk0MDgy
 NTYsLTE2MjA2NjczMjQsLTIwMjY3OTU3MTMsLTE2ODk5MDg5NT
 IsNDgyNzYzMjAsMTE4MTMxNjQxLC0xOTI3MjU3ODcwLDE2MTEx
