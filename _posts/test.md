@@ -85,13 +85,15 @@ Because of the stream-table duality, we can easily turn a stream into a table, a
 
 -   **Table to Stream**  — A Table could be viewed as a stream, with the latest values for a particular field coming in. It’s just a snapshot of the latest values of a key in a stream at a given point in time.
 - _We can turn a table into a stream_ by capturing the changes made to the table—inserts, updates, and deletes—into a “change stream.”
-- **Stream to Table** — A Stream could be viewed as table. A stream can be seen as a changelogs of a table. Where each data record 
+- **Stream to Table** — A Stream could be viewed as table. A stream can be seen as a changelogs of a table. Where each data record in the stream captures a state change of the table.
+- _We can turn a stream into a table_ by aggregating the stream with operations such as `COUNT()` or `SUM()`
+- 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY5MjY2NzQ0LDE4Mzc3NDQ3ODAsLTE3Nz
-IyMjU3MDQsLTE2OTQwODI1NiwtMTYyMDY2NzMyNCwtMjAyNjc5
-NTcxMywtMTY4OTkwODk1Miw0ODI3NjMyMCwxMTgxMzE2NDEsLT
-E5MjcyNTc4NzAsMTYxMTEwNDEwNSwtMTE0MzE3NjA2NiwxNzUy
-MzMwOTU1LC0xMzQ4NDg0ODQ5LC0xOTIyMDEwOTE0LDQ5MDg2MD
-Y1Niw3NjE5MzgxNzIsLTYyNjQ2MDAwNCwxMzAxMzIyNDQyLC0x
-NjkyNzY3NzBdfQ==
+eyJoaXN0b3J5IjpbMjY3Mjk0ODM2LDk2OTI2Njc0NCwxODM3Nz
+Q0NzgwLC0xNzcyMjI1NzA0LC0xNjk0MDgyNTYsLTE2MjA2Njcz
+MjQsLTIwMjY3OTU3MTMsLTE2ODk5MDg5NTIsNDgyNzYzMjAsMT
+E4MTMxNjQxLC0xOTI3MjU3ODcwLDE2MTExMDQxMDUsLTExNDMx
+NzYwNjYsMTc1MjMzMDk1NSwtMTM0ODQ4NDg0OSwtMTkyMjAxMD
+kxNCw0OTA4NjA2NTYsNzYxOTM4MTcyLC02MjY0NjAwMDQsMTMw
+MTMyMjQ0Ml19
 -->
