@@ -99,7 +99,7 @@ In Apache Kafka, streams and tables work together. A stream can be a table, and 
 
 Because of the stream-table duality, we can easily turn a stream into a table, and vice versa. Even more, we can do this in a continuous, streaming manner so that both the stream and the table are always up to date with the latest events.
 
- ### 1) Table to Stream
+### 1) Table to Stream
  
  A Table could be viewed as a stream, with the latest values for a particular field coming in. It’s just a snapshot of the latest values of a key in a stream at a given point in time.
 
