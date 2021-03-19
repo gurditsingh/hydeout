@@ -16,7 +16,7 @@ A data lake is a centralized repository that allows you to store all your struct
 ### Data Lake & Data Warehouse coexist?
 The answer is yes. We call this new emerging pattern as a **cloud lakehouse**, bringing the best of data warehouse and data lake altogether.
 
-![DLDW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/data-lakehouse.png?raw=true)
+![lakehouse](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/data-lakehouse.png?raw=true)
 
 ### What is a Cloud Lakehouse?
 New systems are beginning to emerge that address the limitations of data lakes. A lakehouse is a new, open architecture that combines the best elements of data lakes and data warehouses. Lakehouses implementing similar data structures and data management features to those in a data warehouse, directly on the kind of low cost storage used for data lakes. Some highlighted **benefits** includes:
@@ -32,17 +32,15 @@ New systems are beginning to emerge that address the limitations of data lakes. 
 
 Microsoft’s Azure Synapse Analytics service, which enables a similar lakehouse pattern. Azure Synapse Analytics service is the de-facto service for combining data warehousing and big data analytics. And the Azure Synapse Workspace is providing an unique experience by unifying various components into a common user friendly interface.
 
-Azure Synapse Analytics has combined a couple different technologies here:
+![DLDW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/azure-synapse.png?raw=true)
 
- - **Azure Data Lake Storage** we have Azure Data Lake Storage, and Azure Data Lake Storage allows you to store a lot of different data types inside of one location or lake.
- - **Azure SQL Data Warehouse** 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyMTQ5MzkzOSwtMTQ2OTUxMjAwOCwtMT
-Y5NTUxMDY5NSwzMDM3ODMyNjEsMTQ1Mzg5NjAxMiwtMjA1Mzc1
-NDYyNywtMjA5NjIzODk4LC04MDQ1NTkxMTYsNTk4NTgwOTE2LC
-02MDMyMDQ5NDMsMzA5MTk0MDIzLDk2OTI2Njc0NCwxODM3NzQ0
-NzgwLC0xNzcyMjI1NzA0LC0xNjk0MDgyNTYsLTE2MjA2NjczMj
-QsLTIwMjY3OTU3MTMsLTE2ODk5MDg5NTIsNDgyNzYzMjAsMTE4
-MTMxNjQxXX0=
+eyJoaXN0b3J5IjpbLTEyMjYyODA4ODcsLTE0Njk1MTIwMDgsLT
+E2OTU1MTA2OTUsMzAzNzgzMjYxLDE0NTM4OTYwMTIsLTIwNTM3
+NTQ2MjcsLTIwOTYyMzg5OCwtODA0NTU5MTE2LDU5ODU4MDkxNi
+wtNjAzMjA0OTQzLDMwOTE5NDAyMyw5NjkyNjY3NDQsMTgzNzc0
+NDc4MCwtMTc3MjIyNTcwNCwtMTY5NDA4MjU2LC0xNjIwNjY3Mz
+I0LC0yMDI2Nzk1NzEzLC0xNjg5OTA4OTUyLDQ4Mjc2MzIwLDEx
+ODEzMTY0MV19
 -->
