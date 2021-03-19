@@ -30,12 +30,13 @@ New systems are beginning to emerge that address the limitations of data lakes. 
 
 
 
+Microsoft’s [Azure Synapse Analytics](https://azure.microsoft.com/en-us/blog/simply-unmatched-truly-limitless-announcing-azure-synapse-analytics/) service, which [integrates with Azure Databricks](https://databricks.com/blog/2019/11/04/new-microsoft-azure-data-warehouse-service-and-azure-databricks-combine-analytics-bi-and-data-science.html), enables a similar lakehouse pattern.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDgxODA1ODUsMzAzNzgzMjYxLDE0NT
-M4OTYwMTIsLTIwNTM3NTQ2MjcsLTgwNDU1OTExNiw1OTg1ODA5
-MTYsLTYwMzIwNDk0MywzMDkxOTQwMjMsOTY5MjY2NzQ0LDE4Mz
-c3NDQ3ODAsLTE3NzIyMjU3MDQsLTE2OTQwODI1NiwtMTYyMDY2
-NzMyNCwtMjAyNjc5NTcxMywtMTY4OTkwODk1Miw0ODI3NjMyMC
-wxMTgxMzE2NDEsLTE5MjcyNTc4NzAsMTYxMTEwNDEwNSwtMTE0
-MzE3NjA2Nl19
+eyJoaXN0b3J5IjpbLTgwNTA0MTUwNiwzMDM3ODMyNjEsMTQ1Mz
+g5NjAxMiwtMjA1Mzc1NDYyNywtODA0NTU5MTE2LDU5ODU4MDkx
+NiwtNjAzMjA0OTQzLDMwOTE5NDAyMyw5NjkyNjY3NDQsMTgzNz
+c0NDc4MCwtMTc3MjIyNTcwNCwtMTY5NDA4MjU2LC0xNjIwNjY3
+MzI0LC0yMDI2Nzk1NzEzLC0xNjg5OTA4OTUyLDQ4Mjc2MzIwLD
+ExODEzMTY0MSwtMTkyNzI1Nzg3MCwxNjExMTA0MTA1LC0xMTQz
+MTc2MDY2XX0=
 -->
