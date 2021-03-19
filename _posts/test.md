@@ -31,12 +31,17 @@ New systems are beginning to emerge that address the limitations of data lakes. 
 ## What is Azure Synapse Analytics?
 
 Microsoft’s Azure Synapse Analytics service, which enables a similar lakehouse pattern. Azure Synapse Analytics service is the de-facto service for combining data warehousing and big data analytics.
+
+Azure Synapse Analytics has combined a couple different technologies here:
+
+ - List item
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTU1MTA2OTUsMzAzNzgzMjYxLDE0NT
-M4OTYwMTIsLTIwNTM3NTQ2MjcsLTIwOTYyMzg5OCwtODA0NTU5
-MTE2LDU5ODU4MDkxNiwtNjAzMjA0OTQzLDMwOTE5NDAyMyw5Nj
-kyNjY3NDQsMTgzNzc0NDc4MCwtMTc3MjIyNTcwNCwtMTY5NDA4
-MjU2LC0xNjIwNjY3MzI0LC0yMDI2Nzk1NzEzLC0xNjg5OTA4OT
-UyLDQ4Mjc2MzIwLDExODEzMTY0MSwtMTkyNzI1Nzg3MCwxNjEx
-MTA0MTA1XX0=
+eyJoaXN0b3J5IjpbLTEyNTU4MTM5MDAsLTE2OTU1MTA2OTUsMz
+AzNzgzMjYxLDE0NTM4OTYwMTIsLTIwNTM3NTQ2MjcsLTIwOTYy
+Mzg5OCwtODA0NTU5MTE2LDU5ODU4MDkxNiwtNjAzMjA0OTQzLD
+MwOTE5NDAyMyw5NjkyNjY3NDQsMTgzNzc0NDc4MCwtMTc3MjIy
+NTcwNCwtMTY5NDA4MjU2LC0xNjIwNjY3MzI0LC0yMDI2Nzk1Nz
+EzLC0xNjg5OTA4OTUyLDQ4Mjc2MzIwLDExODEzMTY0MSwtMTky
+NzI1Nzg3MF19
 -->
