@@ -21,14 +21,18 @@ New systems are beginning to emerge that address the limitations of data lakes. 
 
  - Schema enforcement and governance
  - Support for both structured and unstructured
- - **Storage is decoupled from compute
+ - Storage is decoupled from compute
+ - End-to-end streaming
+ - Transaction support
+ - AI + BI support
+ - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyMTc5NDUwMSwzMDM3ODMyNjEsMTQ1Mz
-g5NjAxMiwtMjA1Mzc1NDYyNywtMjA5NjIzODk4LC04MDQ1NTkx
-MTYsNTk4NTgwOTE2LC02MDMyMDQ5NDMsMzA5MTk0MDIzLDk2OT
-I2Njc0NCwxODM3NzQ0NzgwLC0xNzcyMjI1NzA0LC0xNjk0MDgy
-NTYsLTE2MjA2NjczMjQsLTIwMjY3OTU3MTMsLTE2ODk5MDg5NT
-IsNDgyNzYzMjAsMTE4MTMxNjQxLC0xOTI3MjU3ODcwLDE2MTEx
-MDQxMDVdfQ==
+eyJoaXN0b3J5IjpbLTEwNzc1NDUwLDMwMzc4MzI2MSwxNDUzOD
+k2MDEyLC0yMDUzNzU0NjI3LC0yMDk2MjM4OTgsLTgwNDU1OTEx
+Niw1OTg1ODA5MTYsLTYwMzIwNDk0MywzMDkxOTQwMjMsOTY5Mj
+Y2NzQ0LDE4Mzc3NDQ3ODAsLTE3NzIyMjU3MDQsLTE2OTQwODI1
+NiwtMTYyMDY2NzMyNCwtMjAyNjc5NTcxMywtMTY4OTkwODk1Mi
+w0ODI3NjMyMCwxMTgxMzE2NDEsLTE5MjcyNTc4NzAsMTYxMTEw
+NDEwNV19
 -->
