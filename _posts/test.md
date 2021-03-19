@@ -17,11 +17,14 @@ A data lake is a centralized repository that allows you to store all your struct
 The answer is yes. We call this new emerging pattern as a **cloud lakehouse**, bringing the best of data warehouse and data lake altogether.
 
 ### What is a Cloud Lakehouse?
-New systems are beginning to emerge that address the limitations of data lakes. A lakehouse is a new, open architecture that combines the best elements of data lakes and data warehouses. Lakehouses implementing similar data structures and data management features to those in a data warehouse, directly on the kind of low cost storage used for data lakes.
+New systems are beginning to emerge that address the limitations of data lakes. A lakehouse is a new, open architecture that combines the best elements of data lakes and data warehouses. Lakehouses implementing similar data structures and data management features to those in a data warehouse, directly on the kind of low cost storage used for data lakes. Some highlighted **benefits** includes:
 
+ - Schema enforcement and governance
+ - Support for both structured and unstructured
+ - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDQ2NDIzMjgsMzAzNzgzMjYxLDE0NT
+eyJoaXN0b3J5IjpbLTEyNDY5NDQ5MjIsMzAzNzgzMjYxLDE0NT
 M4OTYwMTIsLTIwNTM3NTQ2MjcsLTgwNDU1OTExNiw1OTg1ODA5
 MTYsLTYwMzIwNDk0MywzMDkxOTQwMjMsOTY5MjY2NzQ0LDE4Mz
 c3NDQ3ODAsLTE3NzIyMjU3MDQsLTE2OTQwODI1NiwtMTYyMDY2
