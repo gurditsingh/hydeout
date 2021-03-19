@@ -28,11 +28,11 @@ New systems are beginning to emerge that address the limitations of data lakes. 
  - Transaction support
  - AI + BI support
 
+## What is Azure Synapse Analytics?
 
-
-Microsoft’s [Azure Synapse Analytics](https://azure.microsoft.com/en-us/blog/simply-unmatched-truly-limitless-announcing-azure-synapse-analytics/) service, which [integrates with Azure Databricks](https://databricks.com/blog/2019/11/04/new-microsoft-azure-data-warehouse-service-and-azure-databricks-combine-analytics-bi-and-data-science.html), enables a similar lakehouse pattern.
+Microsoft’s Azure Synapse Analytics service, which enables a similar lakehouse pattern.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNTA0MTUwNiwzMDM3ODMyNjEsMTQ1Mz
+eyJoaXN0b3J5IjpbLTc5ODUzMzA4MywzMDM3ODMyNjEsMTQ1Mz
 g5NjAxMiwtMjA1Mzc1NDYyNywtMjA5NjIzODk4LC04MDQ1NTkx
 MTYsNTk4NTgwOTE2LC02MDMyMDQ5NDMsMzA5MTk0MDIzLDk2OT
 I2Njc0NCwxODM3NzQ0NzgwLC0xNzcyMjI1NzA0LC0xNjk0MDgy
