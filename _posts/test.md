@@ -16,6 +16,8 @@ A data lake is a centralized repository that allows you to store all your struct
 ### Data Lake & Data Warehouse coexist?
 The answer is yes. We call this new emerging pattern as a **cloud lakehouse**, bringing the best of data warehouse and data lake altogether.
 
+![DLDW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/DataLake_DataWarehouse.jpg?raw=true)
+
 ### What is a Cloud Lakehouse?
 New systems are beginning to emerge that address the limitations of data lakes. A lakehouse is a new, open architecture that combines the best elements of data lakes and data warehouses. Lakehouses implementing similar data structures and data management features to those in a data warehouse, directly on the kind of low cost storage used for data lakes. Some highlighted **benefits** includes:
 
@@ -25,14 +27,15 @@ New systems are beginning to emerge that address the limitations of data lakes. 
  - End-to-end streaming
  - Transaction support
  - AI + BI support
- - 
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzc1NDUwLDMwMzc4MzI2MSwxNDUzOD
-k2MDEyLC0yMDUzNzU0NjI3LC0yMDk2MjM4OTgsLTgwNDU1OTEx
-Niw1OTg1ODA5MTYsLTYwMzIwNDk0MywzMDkxOTQwMjMsOTY5Mj
-Y2NzQ0LDE4Mzc3NDQ3ODAsLTE3NzIyMjU3MDQsLTE2OTQwODI1
-NiwtMTYyMDY2NzMyNCwtMjAyNjc5NTcxMywtMTY4OTkwODk1Mi
-w0ODI3NjMyMCwxMTgxMzE2NDEsLTE5MjcyNTc4NzAsMTYxMTEw
-NDEwNV19
+eyJoaXN0b3J5IjpbLTgyMTg1ODI4NCwzMDM3ODMyNjEsMTQ1Mz
+g5NjAxMiwtMjA1Mzc1NDYyNywtMjA5NjIzODk4LC04MDQ1NTkx
+MTYsNTk4NTgwOTE2LC02MDMyMDQ5NDMsMzA5MTk0MDIzLDk2OT
+I2Njc0NCwxODM3NzQ0NzgwLC0xNzcyMjI1NzA0LC0xNjk0MDgy
+NTYsLTE2MjA2NjczMjQsLTIwMjY3OTU3MTMsLTE2ODk5MDg5NT
+IsNDgyNzYzMjAsMTE4MTMxNjQxLC0xOTI3MjU3ODcwLDE2MTEx
+MDQxMDVdfQ==
 -->
