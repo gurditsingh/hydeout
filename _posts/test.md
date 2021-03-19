@@ -1,17 +1,20 @@
 
 let's first try to understand what is **Data Warehouse** and **Data Lake** and understand will Data Lake & Enterprise Data Warehouse (EDW) coexist?
 
-**Data Warehouse :** (DW) is process for collecting and managing data from varied sources to provide meaningful business insights. A Data warehouse is typically used to connect and analyze business data from heterogeneous sources.
+### Data Warehouse
+Data Warehouse (DW) is process for collecting and managing data from varied sources to provide meaningful business insights. A Data warehouse is typically used to connect and analyze business data from heterogeneous sources.
 
 In the early days of data repository, a **data warehouse** (**DW** or **DWH**), also known as an **enterprise data  warehouse** (**EDW**), is a commonly known system used for **reporting** and **data analysis** and is considered a core component of **business intelligence**, **Extract transform load** (ETL). They store current and historical data in one single place.
 
-Da
+### Data Lake
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2NTA5NzUxNCwtMjA1Mzc1NDYyNywtMj
-A5NjIzODk4LC04MDQ1NTkxMTYsNTk4NTgwOTE2LC02MDMyMDQ5
-NDMsMzA5MTk0MDIzLDk2OTI2Njc0NCwxODM3NzQ0NzgwLC0xNz
-cyMjI1NzA0LC0xNjk0MDgyNTYsLTE2MjA2NjczMjQsLTIwMjY3
-OTU3MTMsLTE2ODk5MDg5NTIsNDgyNzYzMjAsMTE4MTMxNjQxLC
-0xOTI3MjU3ODcwLDE2MTExMDQxMDUsLTExNDMxNzYwNjYsMTc1
-MjMzMDk1NV19
+eyJoaXN0b3J5IjpbLTE1ODY3NDE3NDEsLTIwNTM3NTQ2MjcsLT
+IwOTYyMzg5OCwtODA0NTU5MTE2LDU5ODU4MDkxNiwtNjAzMjA0
+OTQzLDMwOTE5NDAyMyw5NjkyNjY3NDQsMTgzNzc0NDc4MCwtMT
+c3MjIyNTcwNCwtMTY5NDA4MjU2LC0xNjIwNjY3MzI0LC0yMDI2
+Nzk1NzEzLC0xNjg5OTA4OTUyLDQ4Mjc2MzIwLDExODEzMTY0MS
+wtMTkyNzI1Nzg3MCwxNjExMTA0MTA1LC0xMTQzMTc2MDY2LDE3
+NTIzMzA5NTVdfQ==
 -->
