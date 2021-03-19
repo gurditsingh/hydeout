@@ -14,13 +14,17 @@ A data lake is a centralized repository that allows you to store all your struct
 ![DLDW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/DataLake_DataWarehouse.jpg?raw=true)
 
 ### Data Lake & Data Warehouse coexist?
+The answer is yes. We call this new emerging pattern as a **cloud lakehouse**, bringing the best of data warehouse and data lake altogether.
+
+### What is a lakehouse?
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzU5MTkyMDQ1LDMwMzc4MzI2MSwxNDUzOD
-k2MDEyLC0yMDUzNzU0NjI3LC04MDQ1NTkxMTYsNTk4NTgwOTE2
-LC02MDMyMDQ5NDMsMzA5MTk0MDIzLDk2OTI2Njc0NCwxODM3Nz
-Q0NzgwLC0xNzcyMjI1NzA0LC0xNjk0MDgyNTYsLTE2MjA2Njcz
-MjQsLTIwMjY3OTU3MTMsLTE2ODk5MDg5NTIsNDgyNzYzMjAsMT
-E4MTMxNjQxLC0xOTI3MjU3ODcwLDE2MTExMDQxMDUsLTExNDMx
-NzYwNjZdfQ==
+eyJoaXN0b3J5IjpbLTQ5NzA1NDU0MCwzMDM3ODMyNjEsMTQ1Mz
+g5NjAxMiwtMjA1Mzc1NDYyNywtODA0NTU5MTE2LDU5ODU4MDkx
+NiwtNjAzMjA0OTQzLDMwOTE5NDAyMyw5NjkyNjY3NDQsMTgzNz
+c0NDc4MCwtMTc3MjIyNTcwNCwtMTY5NDA4MjU2LC0xNjIwNjY3
+MzI0LC0yMDI2Nzk1NzEzLC0xNjg5OTA4OTUyLDQ4Mjc2MzIwLD
+ExODEzMTY0MSwtMTkyNzI1Nzg3MCwxNjExMTA0MTA1LC0xMTQz
+MTc2MDY2XX0=
 -->
