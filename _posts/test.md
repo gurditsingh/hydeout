@@ -9,10 +9,13 @@ In the early days of data repository, a **data warehouse** (**DW** or **DWH**), 
 ### Data Lake
 A data lake is a centralized repository that allows you to store all your structured and unstructured data at any scale. You can store your data as-is, without having to first structure the data, and run different types of analytics from dashboards and visualizations to big data processing, real-time analytics, and machine learning to guide better decisions.
 
-## Data Lakes compared to Data Warehouses – 
+## Data Lakes compared to Data Warehouses:
+
 ![DLDW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/DataLake_DataWarehouse.jpg?raw=true)
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk1NDc0NjkwLDE0NTM4OTYwMTIsLTIwNT
+eyJoaXN0b3J5IjpbMzAzNzgzMjYxLDE0NTM4OTYwMTIsLTIwNT
 M3NTQ2MjcsLTIwOTYyMzg5OCwtODA0NTU5MTE2LDU5ODU4MDkx
 NiwtNjAzMjA0OTQzLDMwOTE5NDAyMyw5NjkyNjY3NDQsMTgzNz
 c0NDc4MCwtMTc3MjIyNTcwNCwtMTY5NDA4MjU2LC0xNjIwNjY3
