@@ -1,12 +1,12 @@
 
-let's first try to understand what is data warehouse and data lake.
-## data lake & enterprise data warehouse (EDW) coexist?
+let's first try to understand what is **Data Warehouse** and **Data Lake** and understand will Data Lake & Enterprise Data Warehouse (EDW) coexist?
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMzMxOTk0NCwtODA0NTU5MTE2LDU5OD
-U4MDkxNiwtNjAzMjA0OTQzLDMwOTE5NDAyMyw5NjkyNjY3NDQs
-MTgzNzc0NDc4MCwtMTc3MjIyNTcwNCwtMTY5NDA4MjU2LC0xNj
-IwNjY3MzI0LC0yMDI2Nzk1NzEzLC0xNjg5OTA4OTUyLDQ4Mjc2
-MzIwLDExODEzMTY0MSwtMTkyNzI1Nzg3MCwxNjExMTA0MTA1LC
-0xMTQzMTc2MDY2LDE3NTIzMzA5NTUsLTEzNDg0ODQ4NDksLTE5
-MjIwMTA5MTRdfQ==
+eyJoaXN0b3J5IjpbLTIwNTM3NTQ2MjcsLTgwNDU1OTExNiw1OT
+g1ODA5MTYsLTYwMzIwNDk0MywzMDkxOTQwMjMsOTY5MjY2NzQ0
+LDE4Mzc3NDQ3ODAsLTE3NzIyMjU3MDQsLTE2OTQwODI1NiwtMT
+YyMDY2NzMyNCwtMjAyNjc5NTcxMywtMTY4OTkwODk1Miw0ODI3
+NjMyMCwxMTgxMzE2NDEsLTE5MjcyNTc4NzAsMTYxMTEwNDEwNS
+wtMTE0MzE3NjA2NiwxNzUyMzMwOTU1LC0xMzQ4NDg0ODQ5LC0x
+OTIyMDEwOTE0XX0=
 -->
