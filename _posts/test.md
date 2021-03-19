@@ -34,10 +34,11 @@ Microsoft’s Azure Synapse Analytics service, which enables a similar lakehouse
 
 Azure Synapse Analytics has combined a couple different technologies here:
 
- - List item
+ - **Azure Data Lake Storage** we have Azure Data Lake Storage, and Azure Data Lake Storage allows you to store a lot of different data types inside of one location or lake.
+ - **Azure SQL Data Warehouse** 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTU4MTM5MDAsLTE2OTU1MTA2OTUsMz
+eyJoaXN0b3J5IjpbLTE0Njk1MTIwMDgsLTE2OTU1MTA2OTUsMz
 AzNzgzMjYxLDE0NTM4OTYwMTIsLTIwNTM3NTQ2MjcsLTIwOTYy
 Mzg5OCwtODA0NTU5MTE2LDU5ODU4MDkxNiwtNjAzMjA0OTQzLD
 MwOTE5NDAyMyw5NjkyNjY3NDQsMTgzNzc0NDc4MCwtMTc3MjIy
