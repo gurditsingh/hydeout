@@ -1,6 +1,7 @@
 ## Introduction
+Azure Synapse Analytics service is the de-facto service for combining data warehousing and big data analytics.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczNDM1MTg1OCwtODA0NTU5MTE2LDU5OD
+eyJoaXN0b3J5IjpbLTIwOTYyMzg5OCwtODA0NTU5MTE2LDU5OD
 U4MDkxNiwtNjAzMjA0OTQzLDMwOTE5NDAyMyw5NjkyNjY3NDQs
 MTgzNzc0NDc4MCwtMTc3MjIyNTcwNCwtMTY5NDA4MjU2LC0xNj
 IwNjY3MzI0LC0yMDI2Nzk1NzEzLC0xNjg5OTA4OTUyLDQ4Mjc2
