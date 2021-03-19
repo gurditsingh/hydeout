@@ -83,7 +83,7 @@ In Apache Kafka, streams and tables work together. A stream can be a table, and 
 
 Because of the stream-table duality, we can easily turn a stream into a table, and vice versa. Even more, we can do this in a continuous, streaming manner so that both the stream and the table are always up to date with the latest events.
 
- ### 1) Table to Stream
+### 1) Table to Stream
  
  A Table could be viewed as a stream, with the latest values for a particular field coming in. It’s just a snapshot of the latest values of a key in a stream at a given point in time.
 
@@ -131,11 +131,11 @@ To sometime helpful to transform a KStream to KTable. by two ways we can create 
 	```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTk4NTgwOTE2LC02MDMyMDQ5NDMsMzA5MT
-k0MDIzLDk2OTI2Njc0NCwxODM3NzQ0NzgwLC0xNzcyMjI1NzA0
-LC0xNjk0MDgyNTYsLTE2MjA2NjczMjQsLTIwMjY3OTU3MTMsLT
-E2ODk5MDg5NTIsNDgyNzYzMjAsMTE4MTMxNjQxLC0xOTI3MjU3
-ODcwLDE2MTExMDQxMDUsLTExNDMxNzYwNjYsMTc1MjMzMDk1NS
-wtMTM0ODQ4NDg0OSwtMTkyMjAxMDkxNCw0OTA4NjA2NTYsNzYx
-OTM4MTcyXX0=
+eyJoaXN0b3J5IjpbMTE0NTk3MTY2Niw1OTg1ODA5MTYsLTYwMz
+IwNDk0MywzMDkxOTQwMjMsOTY5MjY2NzQ0LDE4Mzc3NDQ3ODAs
+LTE3NzIyMjU3MDQsLTE2OTQwODI1NiwtMTYyMDY2NzMyNCwtMj
+AyNjc5NTcxMywtMTY4OTkwODk1Miw0ODI3NjMyMCwxMTgxMzE2
+NDEsLTE5MjcyNTc4NzAsMTYxMTEwNDEwNSwtMTE0MzE3NjA2Ni
+wxNzUyMzMwOTU1LC0xMzQ4NDg0ODQ5LC0xOTIyMDEwOTE0LDQ5
+MDg2MDY1Nl19
 -->
