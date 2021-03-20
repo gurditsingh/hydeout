@@ -45,10 +45,10 @@ let's try to understand the traditional way we have been processing data and the
 	 - Sometime to cater the end user (serving layer) requirements we might create another repository let's say it's a file share or it's just a folder that contains some set to raw data.
 	 - Next we create cubes nowadays we call these cubes as enterprise models you can use various components for creating this enterprise model this is actually a multi-dimensional database which is an optimized data structure for performing analytics.
 - Next Layer is serving layer to create reports and information consumers can consume these reports.
-	- users can get data based on their requirements so user can connect with the file sha or the location or the repository that have been created for storing raw data or they can get data from relational data warehouse as well so business users they can they can connect with relational data warehouse or the model 
+	- users can get data based on their requirements so user can connect with the file share or the folder that have been created for storing raw data or they can get data from relational data warehouse as well can connect with relational data warehouse or the enterprise  model.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzY0ODI1NCwtOTg0MjEzMzE3LDE2Mz
+eyJoaXN0b3J5IjpbMTQ1OTY1MDYwNSwtOTg0MjEzMzE3LDE2Mz
 AzMjg4NTMsLTE1OTUyOTE1NiwtMTIyNjI4MDg4NywtMTQ2OTUx
 MjAwOCwtMTY5NTUxMDY5NSwzMDM3ODMyNjEsMTQ1Mzg5NjAxMi
 wtMjA1Mzc1NDYyNywtMjA5NjIzODk4LC04MDQ1NTkxMTYsNTk4
