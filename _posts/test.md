@@ -91,9 +91,9 @@ Azure Synapse is an integrated analytics service that accelerates time to insigh
 
 ## Next ?
 
-We will cover the 
+Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3NzYxMDcxMywxNjY2OTYwOTE4LC0yMT
+eyJoaXN0b3J5IjpbLTgxNjgxODMyMywxNjY2OTYwOTE4LC0yMT
 AxMDU2NywtNzExNzA4MzYxLC0zOTY3MTcyODYsNjg1NTMwNzkx
 LDcxNTMwMjc1MiwxODc0NzkxMzQyLC05ODQyMTMzMTcsMTYzMD
 MyODg1MywtMTU5NTI5MTU2LC0xMjI2MjgwODg3LC0xNDY5NTEy
