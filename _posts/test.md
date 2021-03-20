@@ -89,12 +89,15 @@ Azure Synapse is an integrated analytics service that accelerates time to insigh
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/synapse-unified-platform.png?raw=true)
 
 
+## Next ?
+
+We will cover the 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzgwNjk4MDMsMTY2Njk2MDkxOCwtMj
-EwMTA1NjcsLTcxMTcwODM2MSwtMzk2NzE3Mjg2LDY4NTUzMDc5
-MSw3MTUzMDI3NTIsMTg3NDc5MTM0MiwtOTg0MjEzMzE3LDE2Mz
-AzMjg4NTMsLTE1OTUyOTE1NiwtMTIyNjI4MDg4NywtMTQ2OTUx
-MjAwOCwtMTY5NTUxMDY5NSwzMDM3ODMyNjEsMTQ1Mzg5NjAxMi
-wtMjA1Mzc1NDYyNywtODA0NTU5MTE2LDU5ODU4MDkxNiwtNjAz
-MjA0OTQzXX0=
+eyJoaXN0b3J5IjpbLTc3NzYxMDcxMywxNjY2OTYwOTE4LC0yMT
+AxMDU2NywtNzExNzA4MzYxLC0zOTY3MTcyODYsNjg1NTMwNzkx
+LDcxNTMwMjc1MiwxODc0NzkxMzQyLC05ODQyMTMzMTcsMTYzMD
+MyODg1MywtMTU5NTI5MTU2LC0xMjI2MjgwODg3LC0xNDY5NTEy
+MDA4LC0xNjk1NTEwNjk1LDMwMzc4MzI2MSwxNDUzODk2MDEyLC
+0yMDUzNzU0NjI3LC04MDQ1NTkxMTYsNTk4NTgwOTE2LC02MDMy
+MDQ5NDNdfQ==
 -->
