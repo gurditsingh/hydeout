@@ -51,16 +51,16 @@ let's try to understand the traditional way we have been processing data and the
 
 
 ## Step 2: Modern way (by use Azure Cloud services)
-
+In the below image we have segregated 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/new-cloud-way-DWH.jpg?raw=true)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMjc5MzQ2NiwxODc0NzkxMzQyLC05OD
-QyMTMzMTcsMTYzMDMyODg1MywtMTU5NTI5MTU2LC0xMjI2Mjgw
-ODg3LC0xNDY5NTEyMDA4LC0xNjk1NTEwNjk1LDMwMzc4MzI2MS
-wxNDUzODk2MDEyLC0yMDUzNzU0NjI3LC04MDQ1NTkxMTYsNTk4
-NTgwOTE2LC02MDMyMDQ5NDMsMzA5MTk0MDIzLDk2OTI2Njc0NC
-wxODM3NzQ0NzgwLC0xNzcyMjI1NzA0LC0xNjk0MDgyNTYsLTE2
-MjA2NjczMjRdfQ==
+eyJoaXN0b3J5IjpbLTE3NzQ1MzIxNjUsMTg3NDc5MTM0MiwtOT
+g0MjEzMzE3LDE2MzAzMjg4NTMsLTE1OTUyOTE1NiwtMTIyNjI4
+MDg4NywtMTQ2OTUxMjAwOCwtMTY5NTUxMDY5NSwzMDM3ODMyNj
+EsMTQ1Mzg5NjAxMiwtMjA1Mzc1NDYyNywtODA0NTU5MTE2LDU5
+ODU4MDkxNiwtNjAzMjA0OTQzLDMwOTE5NDAyMyw5NjkyNjY3ND
+QsMTgzNzc0NDc4MCwtMTc3MjIyNTcwNCwtMTY5NDA4MjU2LC0x
+NjIwNjY3MzI0XX0=
 -->
