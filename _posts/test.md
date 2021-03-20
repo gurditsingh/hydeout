@@ -63,13 +63,14 @@ In the below image we have highlighted are for cloud services which are segregat
 
 In this Modern way by using Azure Cloud Services. Which has all the azure services/components like data lake, sql data warehouse, data factory, azure databricks.
  - everything has to be **managed maintained separately**.
- - 
+ - handle security you need to **handle security** with each and every service
+ - integration you need to configure one component and you need to make sure that other component can you know work with the first one so likewise uh there are a lot of things you need to do in order to make sure that integration works fine
 
 
 ## Step 3: 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MTgwMjk5MywtMzk2NzE3Mjg2LDY4NT
+eyJoaXN0b3J5IjpbMTY3OTgwODEzNCwtMzk2NzE3Mjg2LDY4NT
 UzMDc5MSw3MTUzMDI3NTIsMTg3NDc5MTM0MiwtOTg0MjEzMzE3
 LDE2MzAzMjg4NTMsLTE1OTUyOTE1NiwtMTIyNjI4MDg4NywtMT
 Q2OTUxMjAwOCwtMTY5NTUxMDY5NSwzMDM3ODMyNjEsMTQ1Mzg5
