@@ -48,7 +48,7 @@ Microsoft’s Azure Synapse Analytics service, which enables a similar lakehouse
 
 ![synapse](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/azure-synapse.png?raw=true)
 
-## First try to understand Data Warehouse solutions
+## First try to understand different Data Warehouse solutions
 let's try to understand the traditional way we have been processing data and then let's see how we convert the whole thing into the modern way implementing modernized data solutions specifically in cloud or Microsoft services or what sort of azure services we use for implementing various parts of our data solution and at the end let's see how we can use azure synapse for implementing the same.
 
 ## Solution 1: Traditional way
