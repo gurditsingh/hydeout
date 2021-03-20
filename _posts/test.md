@@ -79,12 +79,13 @@ A single environment you can consider as a workspace which has components for im
 
 ## Azure Synapse High-Level Architecture
 
+Azure Synapse is an integrated analytics service that accelerates time to insight from all data at any scale across data warehouses and big data analytics systems so you're not going to have two separate environments one for data the housing one for big data analytics you have one environment you'll be managing the whole thing as a single environment and you will see data warehouse components with it you will see big data components with it.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2NjI2MzQwNCwtMjEwMTA1NjcsLTcxMT
-cwODM2MSwtMzk2NzE3Mjg2LDY4NTUzMDc5MSw3MTUzMDI3NTIs
-MTg3NDc5MTM0MiwtOTg0MjEzMzE3LDE2MzAzMjg4NTMsLTE1OT
-UyOTE1NiwtMTIyNjI4MDg4NywtMTQ2OTUxMjAwOCwtMTY5NTUx
-MDY5NSwzMDM3ODMyNjEsMTQ1Mzg5NjAxMiwtMjA1Mzc1NDYyNy
-wtODA0NTU5MTE2LDU5ODU4MDkxNiwtNjAzMjA0OTQzLDMwOTE5
-NDAyM119
+eyJoaXN0b3J5IjpbNTIxNDY1NzgxLC0yMTAxMDU2NywtNzExNz
+A4MzYxLC0zOTY3MTcyODYsNjg1NTMwNzkxLDcxNTMwMjc1Miwx
+ODc0NzkxMzQyLC05ODQyMTMzMTcsMTYzMDMyODg1MywtMTU5NT
+I5MTU2LC0xMjI2MjgwODg3LC0xNDY5NTEyMDA4LC0xNjk1NTEw
+Njk1LDMwMzc4MzI2MSwxNDUzODk2MDEyLC0yMDUzNzU0NjI3LC
+04MDQ1NTkxMTYsNTk4NTgwOTE2LC02MDMyMDQ5NDMsMzA5MTk0
+MDIzXX0=
 -->
