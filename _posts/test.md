@@ -68,11 +68,11 @@ In this Modern way by using Azure Cloud Services. Which has all the azure servic
 
 
 ## Step 3: Azure Synapse Analytics
-As we understand in step 2 if we move to cloud then we need to managed the maintenance, security and integration in other for each and every services
+As we understand in step 2 if we move to cloud then we need to managed the maintenance, security and integration for each and every services separately. As we involve more services complex
 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/Cloud-DWH.jpg?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzMzUwNDE1NCwtNzExNzA4MzYxLC0zOT
+eyJoaXN0b3J5IjpbMTkyOTAzMTg5OSwtNzExNzA4MzYxLC0zOT
 Y3MTcyODYsNjg1NTMwNzkxLDcxNTMwMjc1MiwxODc0NzkxMzQy
 LC05ODQyMTMzMTcsMTYzMDMyODg1MywtMTU5NTI5MTU2LC0xMj
 I2MjgwODg3LC0xNDY5NTEyMDA4LC0xNjk1NTEwNjk1LDMwMzc4
