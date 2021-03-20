@@ -42,10 +42,10 @@ let's try to understand the traditional way we have been processing data and the
  - First Layer we have multiple sources like standard OLTP databases, cloud databases, csv file, excel files generally. These all input sources can be loaded into the system.
  - Next Layer we create relational data warehouse. 
 	 - To load the data into data warehouse we generally use ETL (Extract Transform Load).
-	 - some time end user(per) have power users in order to cater their requirements you might create another uh repository let's say it's a file share or it's just a folder that contains some you know data set as csv files
+	 - some time to cater the end user (serving layer) have power users in order to cater their requirements you might create another uh repository let's say it's a file share or it's just a folder that contains some you know data set as csv files
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NjY5NzI2OSwtOTg0MjEzMzE3LDE2Mz
+eyJoaXN0b3J5IjpbMTU5NDU5NjU4MiwtOTg0MjEzMzE3LDE2Mz
 AzMjg4NTMsLTE1OTUyOTE1NiwtMTIyNjI4MDg4NywtMTQ2OTUx
 MjAwOCwtMTY5NTUxMDY5NSwzMDM3ODMyNjEsMTQ1Mzg5NjAxMi
 wtMjA1Mzc1NDYyNywtMjA5NjIzODk4LC04MDQ1NTkxMTYsNTk4
