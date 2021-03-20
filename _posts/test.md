@@ -32,19 +32,21 @@ New systems are beginning to emerge that address the limitations of data lakes. 
 
 Microsoft’s Azure Synapse Analytics service, which enables a similar lakehouse pattern. Azure Synapse Analytics service is the de-facto service for combining data warehousing and big data analytics. And the Azure Synapse Workspace is providing an unique experience by unifying various components into a common user friendly interface.
 
-![DLDW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/azure-synapse.png?raw=true)
+![synapse](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/azure-synapse.png?raw=true)
 
 ## First try to understand the Traditional way
 let's try to understand the traditional way we have been processing data and then let's see how we uh convert the whole thing into the modern way implementing modernized data solutions specifically in cloud or Microsoft services or what sort of azure services we use for implementing various parts of our data solution and at the end let's see how we can use azure synapse for implementing the same.
 
+![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/old-way-DWH.jpg?raw=true)
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTUyOTE1NiwtMTIyNjI4MDg4NywtMT
-Q2OTUxMjAwOCwtMTY5NTUxMDY5NSwzMDM3ODMyNjEsMTQ1Mzg5
-NjAxMiwtMjA1Mzc1NDYyNywtMjA5NjIzODk4LC04MDQ1NTkxMT
-YsNTk4NTgwOTE2LC02MDMyMDQ5NDMsMzA5MTk0MDIzLDk2OTI2
-Njc0NCwxODM3NzQ0NzgwLC0xNzcyMjI1NzA0LC0xNjk0MDgyNT
-YsLTE2MjA2NjczMjQsLTIwMjY3OTU3MTMsLTE2ODk5MDg5NTIs
-NDgyNzYzMjBdfQ==
+eyJoaXN0b3J5IjpbMTYzMDMyODg1MywtMTU5NTI5MTU2LC0xMj
+I2MjgwODg3LC0xNDY5NTEyMDA4LC0xNjk1NTEwNjk1LDMwMzc4
+MzI2MSwxNDUzODk2MDEyLC0yMDUzNzU0NjI3LC0yMDk2MjM4OT
+gsLTgwNDU1OTExNiw1OTg1ODA5MTYsLTYwMzIwNDk0MywzMDkx
+OTQwMjMsOTY5MjY2NzQ0LDE4Mzc3NDQ3ODAsLTE3NzIyMjU3MD
+QsLTE2OTQwODI1NiwtMTYyMDY2NzMyNCwtMjAyNjc5NTcxMywt
+MTY4OTkwODk1Ml19
 -->
