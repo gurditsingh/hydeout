@@ -52,9 +52,9 @@ let's try to understand the traditional way we have been processing data and the
 
 ## Step 2: Modern way (by use Azure Cloud services)
 
-
+![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/new-way-DWH.jpg?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTQzNTgzMzUsLTk4NDIxMzMxNywxNj
+eyJoaXN0b3J5IjpbLTEyNTM4NzMyMTcsLTk4NDIxMzMxNywxNj
 MwMzI4ODUzLC0xNTk1MjkxNTYsLTEyMjYyODA4ODcsLTE0Njk1
 MTIwMDgsLTE2OTU1MTA2OTUsMzAzNzgzMjYxLDE0NTM4OTYwMT
 IsLTIwNTM3NTQ2MjcsLTIwOTYyMzg5OCwtODA0NTU5MTE2LDU5
