@@ -34,7 +34,7 @@ Microsoft’s Azure Synapse Analytics service, which enables a similar lakehouse
 
 ![synapse](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/azure-synapse.png?raw=true)
 
-## First try to understand in steps
+## First try to understand Data Warehouse solutions in steps
 let's try to understand the traditional way we have been processing data and then let's see how we convert the whole thing into the modern way implementing modernized data solutions specifically in cloud or Microsoft services or what sort of azure services we use for implementing various parts of our data solution and at the end let's see how we can use azure synapse for implementing the same.
 
 ## Step 1: Traditional way
@@ -76,7 +76,7 @@ A single environment you can consider as a workspace which has components for im
 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/Cloud-DWH.jpg?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzM1NjcyODcsLTIxMDEwNTY3LC03MT
+eyJoaXN0b3J5IjpbLTEwNzE0MTA1ODYsLTIxMDEwNTY3LC03MT
 E3MDgzNjEsLTM5NjcxNzI4Niw2ODU1MzA3OTEsNzE1MzAyNzUy
 LDE4NzQ3OTEzNDIsLTk4NDIxMzMxNywxNjMwMzI4ODUzLC0xNT
 k1MjkxNTYsLTEyMjYyODA4ODcsLTE0Njk1MTIwMDgsLTE2OTU1
