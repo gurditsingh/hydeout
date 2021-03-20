@@ -41,7 +41,7 @@ let's try to understand the traditional way we have been processing data and the
 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/old-way-DWH.jpg?raw=true)
 
- - First Layer we have multiple structured sources like standard OLTP databases, cloud databases, csv file, excel files and some of unstructured sources like logs messages, json, avro etc. These all input sources can be loaded into the system.
+ - First Layer we have multiple structured sources like standard OLTP databases, cloud databases, csv file, excel files and some of unstructured sources like logs messages, sensor data, json, avro etc. These all input sources can be loaded into the system.
  - Next Layer we create relational data warehouse. 
 	 - To load the data into data warehouse we generally use ETL (Extract Transform Load). ETL load the structured data into the Relational DW and ETL/ELT (Spark kind of framework) load the structured or unstructured data into the Relational DW.
 	 - Sometime to cater the end user (serving layer) requirements we might create another repository let's say it's a file share or it's just a folder that contains some set to raw data.
@@ -54,14 +54,14 @@ let's try to understand the traditional way we have been processing data and the
 In the below image we have highlighted cloud services which are segregated from first and last layer. 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/new-cloud-way-DWH.jpg?raw=true)
 
-- First Layer we have multiple sources like standard OLTP databases, cloud databases, csv file, excel files generally. These all input sources can be loaded into the system.
- - Next Layer we create relational data warehouse. 
+- First Layer we have multiple structured sources like standard OLTP databases, cloud databases, csv file, excel files and some of unstructured sources like logs messages, sensor data, json, avro etc. These all input sources can be loaded into the system.
+ - Next Layer we create relational data warehouse by using Azure Cloud Ser. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwNDYxOTM0NiwxODc0NzkxMzQyLC05OD
-QyMTMzMTcsMTYzMDMyODg1MywtMTU5NTI5MTU2LC0xMjI2Mjgw
-ODg3LC0xNDY5NTEyMDA4LC0xNjk1NTEwNjk1LDMwMzc4MzI2MS
-wxNDUzODk2MDEyLC0yMDUzNzU0NjI3LC04MDQ1NTkxMTYsNTk4
-NTgwOTE2LC02MDMyMDQ5NDMsMzA5MTk0MDIzLDk2OTI2Njc0NC
-wxODM3NzQ0NzgwLC0xNzcyMjI1NzA0LC0xNjk0MDgyNTYsLTE2
-MjA2NjczMjRdfQ==
+eyJoaXN0b3J5IjpbLTQ0MjgwNDczLDE4NzQ3OTEzNDIsLTk4ND
+IxMzMxNywxNjMwMzI4ODUzLC0xNTk1MjkxNTYsLTEyMjYyODA4
+ODcsLTE0Njk1MTIwMDgsLTE2OTU1MTA2OTUsMzAzNzgzMjYxLD
+E0NTM4OTYwMTIsLTIwNTM3NTQ2MjcsLTgwNDU1OTExNiw1OTg1
+ODA5MTYsLTYwMzIwNDk0MywzMDkxOTQwMjMsOTY5MjY2NzQ0LD
+E4Mzc3NDQ3ODAsLTE3NzIyMjU3MDQsLTE2OTQwODI1NiwtMTYy
+MDY2NzMyNF19
 -->
