@@ -70,15 +70,15 @@ In this Modern way by using Azure Cloud Services. Which has all the azure servic
 ## Step 3: Azure Synapse Analytics
 As we understand in step 2 if we move to cloud then we need to managed the maintenance, security and integration for each and every services separately. As we involve more services complexity and management of your architecture become hard need to maintain so many things.
 
-So what if Azure can give us a single environment which has all of these things that's where you see azure synapse analytics
+So what if Azure give you a single environment which has all of these things that's where you see **Azure Synapse Analytics**.
 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/Cloud-DWH.jpg?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDI1MjY1NDAsLTcxMTcwODM2MSwtMz
-k2NzE3Mjg2LDY4NTUzMDc5MSw3MTUzMDI3NTIsMTg3NDc5MTM0
-MiwtOTg0MjEzMzE3LDE2MzAzMjg4NTMsLTE1OTUyOTE1NiwtMT
-IyNjI4MDg4NywtMTQ2OTUxMjAwOCwtMTY5NTUxMDY5NSwzMDM3
-ODMyNjEsMTQ1Mzg5NjAxMiwtMjA1Mzc1NDYyNywtMjA5NjIzOD
-k4LC04MDQ1NTkxMTYsNTk4NTgwOTE2LC02MDMyMDQ5NDMsMzA5
-MTk0MDIzXX0=
+eyJoaXN0b3J5IjpbNzU3MDEyODc3LC03MTE3MDgzNjEsLTM5Nj
+cxNzI4Niw2ODU1MzA3OTEsNzE1MzAyNzUyLDE4NzQ3OTEzNDIs
+LTk4NDIxMzMxNywxNjMwMzI4ODUzLC0xNTk1MjkxNTYsLTEyMj
+YyODA4ODcsLTE0Njk1MTIwMDgsLTE2OTU1MTA2OTUsMzAzNzgz
+MjYxLDE0NTM4OTYwMTIsLTIwNTM3NTQ2MjcsLTIwOTYyMzg5OC
+wtODA0NTU5MTE2LDU5ODU4MDkxNiwtNjAzMjA0OTQzLDMwOTE5
+NDAyM119
 -->
