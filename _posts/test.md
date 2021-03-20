@@ -58,13 +58,13 @@ In the below image we have highlighted cloud services which are segregated from 
  - Next Layer we create relational data warehouse by using Azure Cloud Services.
 	 -  To load the data into data warehouse we generally use ETL (Extract Transform Load) like Azure Data Factory or SSIS package . ETL load the structured data into the Azure sql Data Warehouse (Relational DW).
 	 -  ETL/ELT we use Azure HD insight for Hadoop and Spark or use Azure Databricks to load the structured or unstructured data into the  Azure sql Data Warehouse (Relational DW).
-	 - Sometime to cater the end user (serving layer) requirements we might create another repository let's say it's a file share or it's just a folder that contains some set to raw data we can use .
+	 - Sometime to cater the end user (serving layer) requirements we might create another repository let's say it's a file share or it's just a folder that contains some set to raw data we can use Data Lake.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg2MzQ0Mjc0LDcxNTMwMjc1MiwxODc0Nz
-kxMzQyLC05ODQyMTMzMTcsMTYzMDMyODg1MywtMTU5NTI5MTU2
-LC0xMjI2MjgwODg3LC0xNDY5NTEyMDA4LC0xNjk1NTEwNjk1LD
-MwMzc4MzI2MSwxNDUzODk2MDEyLC0yMDUzNzU0NjI3LC0yMDk2
-MjM4OTgsLTgwNDU1OTExNiw1OTg1ODA5MTYsLTYwMzIwNDk0My
-wzMDkxOTQwMjMsOTY5MjY2NzQ0LDE4Mzc3NDQ3ODAsLTE3NzIy
-MjU3MDRdfQ==
+eyJoaXN0b3J5IjpbLTE5NzY5MTU3OTcsNzE1MzAyNzUyLDE4Nz
+Q3OTEzNDIsLTk4NDIxMzMxNywxNjMwMzI4ODUzLC0xNTk1Mjkx
+NTYsLTEyMjYyODA4ODcsLTE0Njk1MTIwMDgsLTE2OTU1MTA2OT
+UsMzAzNzgzMjYxLDE0NTM4OTYwMTIsLTIwNTM3NTQ2MjcsLTIw
+OTYyMzg5OCwtODA0NTU5MTE2LDU5ODU4MDkxNiwtNjAzMjA0OT
+QzLDMwOTE5NDAyMyw5NjkyNjY3NDQsMTgzNzc0NDc4MCwtMTc3
+MjIyNTcwNF19
 -->
