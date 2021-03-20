@@ -78,6 +78,7 @@ A single environment you can consider as a workspace which has components for im
 
 
 -----
+## Azure Synapse
 
 ## Azure Synapse High-Level Architecture
 
@@ -85,11 +86,11 @@ Azure Synapse is an integrated analytics service that accelerates time to insigh
 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/synapse-unified-platform.png?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDU0NDM0MjQsLTIxMDEwNTY3LC03MT
-E3MDgzNjEsLTM5NjcxNzI4Niw2ODU1MzA3OTEsNzE1MzAyNzUy
-LDE4NzQ3OTEzNDIsLTk4NDIxMzMxNywxNjMwMzI4ODUzLC0xNT
-k1MjkxNTYsLTEyMjYyODA4ODcsLTE0Njk1MTIwMDgsLTE2OTU1
-MTA2OTUsMzAzNzgzMjYxLDE0NTM4OTYwMTIsLTIwNTM3NTQ2Mj
-csLTIwOTYyMzg5OCwtODA0NTU5MTE2LDU5ODU4MDkxNiwtNjAz
-MjA0OTQzXX0=
+eyJoaXN0b3J5IjpbMTY2Njk2MDkxOCwtMjEwMTA1NjcsLTcxMT
+cwODM2MSwtMzk2NzE3Mjg2LDY4NTUzMDc5MSw3MTUzMDI3NTIs
+MTg3NDc5MTM0MiwtOTg0MjEzMzE3LDE2MzAzMjg4NTMsLTE1OT
+UyOTE1NiwtMTIyNjI4MDg4NywtMTQ2OTUxMjAwOCwtMTY5NTUx
+MDY5NSwzMDM3ODMyNjEsMTQ1Mzg5NjAxMiwtMjA1Mzc1NDYyNy
+wtMjA5NjIzODk4LC04MDQ1NTkxMTYsNTk4NTgwOTE2LC02MDMy
+MDQ5NDNdfQ==
 -->
