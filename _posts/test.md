@@ -41,12 +41,13 @@ let's try to understand the traditional way we have been processing data and the
 
  - First Layer we have multiple sources like standard OLTP databases, cloud databases, csv file, excel files generally. These all input sources can be loaded into the system.
  - Next Layer we create relational data warehouse. 
-	 - To load the data into data warehouse we generally use ETL (Extract Transform Load).
+	 - To load the data into data warehouse we generally use ETL (Extract Transform Load). 
 	 - Sometime to cater the end user (serving layer) requirements we might create another repository let's say it's a file share or it's just a folder that contains some set to raw data.
+	 - Next we create cubes nowadays we call these cubes as enterprise models you can use various components for creating this enterprise model this is actually a multi-dimensional database which is an optimized data structure for performing analytics.
 	 - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjMwMjgzNjcsLTk4NDIxMzMxNywxNj
+eyJoaXN0b3J5IjpbLTIwMzU2OTE1MzQsLTk4NDIxMzMxNywxNj
 MwMzI4ODUzLC0xNTk1MjkxNTYsLTEyMjYyODA4ODcsLTE0Njk1
 MTIwMDgsLTE2OTU1MTA2OTUsMzAzNzgzMjYxLDE0NTM4OTYwMT
 IsLTIwNTM3NTQ2MjcsLTIwOTYyMzg5OCwtODA0NTU5MTE2LDU5
