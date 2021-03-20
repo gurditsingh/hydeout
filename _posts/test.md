@@ -51,7 +51,7 @@ let's try to understand the traditional way we have been processing data and the
 
 
 ## Step 2: Modern way (by use Azure Cloud services)
-In the below image we have highlighted cloud services which are segregated from first and last layer. First
+In the below image we have highlighted cloud services which are segregated from first and last layer. First layer has no change, it just has input data and last layer aslo 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/new-cloud-way-DWH.jpg?raw=true)
 
 - First Layer we have multiple structured sources like standard OLTP databases, cloud databases, csv file, excel files and some of unstructured sources like logs messages, sensor data, json, avro etc. These all input sources can be loaded into the system.
@@ -61,11 +61,11 @@ In the below image we have highlighted cloud services which are segregated from 
 	 - Sometime to cater the end user (serving layer) requirements we might create another repository let's say it's a file share or it's just a folder that contains some set to raw data we can use **Data Lake**.
 	 - Next we create cubes using **Azure Analysis Services** nowadays we call these cubes as enterprise models you can use various components for creating this enterprise model this is actually a multi-dimensional database which is an optimized data structure for performing analytics.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjY5NTU2NSw3MTUzMDI3NTIsMTg3ND
-c5MTM0MiwtOTg0MjEzMzE3LDE2MzAzMjg4NTMsLTE1OTUyOTE1
-NiwtMTIyNjI4MDg4NywtMTQ2OTUxMjAwOCwtMTY5NTUxMDY5NS
-wzMDM3ODMyNjEsMTQ1Mzg5NjAxMiwtMjA1Mzc1NDYyNywtMjA5
-NjIzODk4LC04MDQ1NTkxMTYsNTk4NTgwOTE2LC02MDMyMDQ5ND
-MsMzA5MTk0MDIzLDk2OTI2Njc0NCwxODM3NzQ0NzgwLC0xNzcy
-MjI1NzA0XX0=
+eyJoaXN0b3J5IjpbOTIwODM1NjcxLDcxNTMwMjc1MiwxODc0Nz
+kxMzQyLC05ODQyMTMzMTcsMTYzMDMyODg1MywtMTU5NTI5MTU2
+LC0xMjI2MjgwODg3LC0xNDY5NTEyMDA4LC0xNjk1NTEwNjk1LD
+MwMzc4MzI2MSwxNDUzODk2MDEyLC0yMDUzNzU0NjI3LC0yMDk2
+MjM4OTgsLTgwNDU1OTExNiw1OTg1ODA5MTYsLTYwMzIwNDk0My
+wzMDkxOTQwMjMsOTY5MjY2NzQ0LDE4Mzc3NDQ3ODAsLTE3NzIy
+MjU3MDRdfQ==
 -->
