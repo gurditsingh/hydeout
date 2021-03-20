@@ -51,7 +51,7 @@ let's try to understand the traditional way we have been processing data and the
 
 
 ## Step 2: Modern way (by use Azure Cloud services)
-In the below image we have highlighted cloud services which are segregated from first and last layer. 
+In the below image we have highlighted cloud services which are segregated from first and last layer. First and 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/new-cloud-way-DWH.jpg?raw=true)
 
 - First Layer we have multiple structured sources like standard OLTP databases, cloud databases, csv file, excel files and some of unstructured sources like logs messages, sensor data, json, avro etc. These all input sources can be loaded into the system.
@@ -61,11 +61,11 @@ In the below image we have highlighted cloud services which are segregated from 
 	 - Sometime to cater the end user (serving layer) requirements we might create another repository let's say it's a file share or it's just a folder that contains some set to raw data we can use **Data Lake**.
 	 - Next we create cubes using **Azure Analysis Services** nowadays we call these cubes as enterprise models you can use various components for creating this enterprise model this is actually a multi-dimensional database which is an optimized data structure for performing analytics.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyMDk0OTY5Nyw3MTUzMDI3NTIsMTg3ND
-c5MTM0MiwtOTg0MjEzMzE3LDE2MzAzMjg4NTMsLTE1OTUyOTE1
-NiwtMTIyNjI4MDg4NywtMTQ2OTUxMjAwOCwtMTY5NTUxMDY5NS
-wzMDM3ODMyNjEsMTQ1Mzg5NjAxMiwtMjA1Mzc1NDYyNywtODA0
-NTU5MTE2LDU5ODU4MDkxNiwtNjAzMjA0OTQzLDMwOTE5NDAyMy
-w5NjkyNjY3NDQsMTgzNzc0NDc4MCwtMTc3MjIyNTcwNCwtMTY5
-NDA4MjU2XX0=
+eyJoaXN0b3J5IjpbLTEyMjc3OTM0ODAsNzE1MzAyNzUyLDE4Nz
+Q3OTEzNDIsLTk4NDIxMzMxNywxNjMwMzI4ODUzLC0xNTk1Mjkx
+NTYsLTEyMjYyODA4ODcsLTE0Njk1MTIwMDgsLTE2OTU1MTA2OT
+UsMzAzNzgzMjYxLDE0NTM4OTYwMTIsLTIwNTM3NTQ2MjcsLTgw
+NDU1OTExNiw1OTg1ODA5MTYsLTYwMzIwNDk0MywzMDkxOTQwMj
+MsOTY5MjY2NzQ0LDE4Mzc3NDQ3ODAsLTE3NzIyMjU3MDQsLTE2
+OTQwODI1Nl19
 -->
