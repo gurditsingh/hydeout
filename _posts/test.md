@@ -41,7 +41,7 @@ let's try to understand the traditional way we have been processing data and the
 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/old-way-DWH.jpg?raw=true)
 
- - First Layer we have multiple sources like standard OLTP databases, cloud databases, csv file, excel files generally. These all input sources can be loaded into the system.
+ - First Layer we have multiple structured sources like standard OLTP databases, cloud databases, csv file, excel files and some of unstructure data like json, avro, no generally. These all input sources can be loaded into the system.
  - Next Layer we create relational data warehouse. 
 	 - To load the data into data warehouse we generally use ETL (Extract Transform Load). ETL load the structured data into the Relational DW and ETL/ELT (Spark kind of framework) load the structured or unstructured data into the Relational DW.
 	 - Sometime to cater the end user (serving layer) requirements we might create another repository let's say it's a file share or it's just a folder that contains some set to raw data.
@@ -54,9 +54,10 @@ let's try to understand the traditional way we have been processing data and the
 In the below image we have highlighted cloud services which are segregated from first and last layer. 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/new-cloud-way-DWH.jpg?raw=true)
 
-
+- First Layer we have multiple sources like standard OLTP databases, cloud databases, csv file, excel files generally. These all input sources can be loaded into the system.
+ - Next Layer we create relational data warehouse. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODQxNTY1MjAsMTg3NDc5MTM0MiwtOT
+eyJoaXN0b3J5IjpbLTEwODAxMTkwMjcsMTg3NDc5MTM0MiwtOT
 g0MjEzMzE3LDE2MzAzMjg4NTMsLTE1OTUyOTE1NiwtMTIyNjI4
 MDg4NywtMTQ2OTUxMjAwOCwtMTY5NTUxMDY5NSwzMDM3ODMyNj
 EsMTQ1Mzg5NjAxMiwtMjA1Mzc1NDYyNywtODA0NTU5MTE2LDU5
