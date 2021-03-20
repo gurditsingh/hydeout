@@ -39,15 +39,15 @@ let's try to understand the traditional way we have been processing data and the
 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/old-way-DWH.jpg?raw=true)
 
- - First layer we have multiple sources like standard oltp databases, cloud databases, csv file, excel files generally. These all input sources can be loaded into the system.
- - 
+ - First Layer we have multiple sources like standard OLTP databases, cloud databases, csv file, excel files generally. These all input sources can be loaded into the system.
+ - Next Layer we create relational data warehouse.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4NDIxMzMxNywxNjMwMzI4ODUzLC0xNT
-k1MjkxNTYsLTEyMjYyODA4ODcsLTE0Njk1MTIwMDgsLTE2OTU1
-MTA2OTUsMzAzNzgzMjYxLDE0NTM4OTYwMTIsLTIwNTM3NTQ2Mj
-csLTgwNDU1OTExNiw1OTg1ODA5MTYsLTYwMzIwNDk0MywzMDkx
-OTQwMjMsOTY5MjY2NzQ0LDE4Mzc3NDQ3ODAsLTE3NzIyMjU3MD
-QsLTE2OTQwODI1NiwtMTYyMDY2NzMyNCwtMjAyNjc5NTcxMywt
-MTY4OTkwODk1Ml19
+eyJoaXN0b3J5IjpbMTI2MTA5ODU1LC05ODQyMTMzMTcsMTYzMD
+MyODg1MywtMTU5NTI5MTU2LC0xMjI2MjgwODg3LC0xNDY5NTEy
+MDA4LC0xNjk1NTEwNjk1LDMwMzc4MzI2MSwxNDUzODk2MDEyLC
+0yMDUzNzU0NjI3LC04MDQ1NTkxMTYsNTk4NTgwOTE2LC02MDMy
+MDQ5NDMsMzA5MTk0MDIzLDk2OTI2Njc0NCwxODM3NzQ0NzgwLC
+0xNzcyMjI1NzA0LC0xNjk0MDgyNTYsLTE2MjA2NjczMjQsLTIw
+MjY3OTU3MTNdfQ==
 -->
