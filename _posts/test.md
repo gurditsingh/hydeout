@@ -34,13 +34,15 @@ Microsoft’s Azure Synapse Analytics service, which enables a similar lakehouse
 
 ![DLDW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/azure-synapse.png?raw=true)
 
+## First try to understand the Traditional way
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjYyODA4ODcsLTE0Njk1MTIwMDgsLT
-E2OTU1MTA2OTUsMzAzNzgzMjYxLDE0NTM4OTYwMTIsLTIwNTM3
-NTQ2MjcsLTIwOTYyMzg5OCwtODA0NTU5MTE2LDU5ODU4MDkxNi
-wtNjAzMjA0OTQzLDMwOTE5NDAyMyw5NjkyNjY3NDQsMTgzNzc0
-NDc4MCwtMTc3MjIyNTcwNCwtMTY5NDA4MjU2LC0xNjIwNjY3Mz
-I0LC0yMDI2Nzk1NzEzLC0xNjg5OTA4OTUyLDQ4Mjc2MzIwLDEx
-ODEzMTY0MV19
+eyJoaXN0b3J5IjpbMTA5NzU2MDExMiwtMTIyNjI4MDg4NywtMT
+Q2OTUxMjAwOCwtMTY5NTUxMDY5NSwzMDM3ODMyNjEsMTQ1Mzg5
+NjAxMiwtMjA1Mzc1NDYyNywtMjA5NjIzODk4LC04MDQ1NTkxMT
+YsNTk4NTgwOTE2LC02MDMyMDQ5NDMsMzA5MTk0MDIzLDk2OTI2
+Njc0NCwxODM3NzQ0NzgwLC0xNzcyMjI1NzA0LC0xNjk0MDgyNT
+YsLTE2MjA2NjczMjQsLTIwMjY3OTU3MTMsLTE2ODk5MDg5NTIs
+NDgyNzYzMjBdfQ==
 -->
