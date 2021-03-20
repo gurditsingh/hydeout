@@ -77,9 +77,10 @@ A single environment you can consider as a workspace which has components for im
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/Cloud-DWH.jpg?raw=true)
 
 
+## Azure Synapse High-Level Architecture
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1NTA3Nzg3MiwtMjEwMTA1NjcsLTcxMT
+eyJoaXN0b3J5IjpbMTc2NjI2MzQwNCwtMjEwMTA1NjcsLTcxMT
 cwODM2MSwtMzk2NzE3Mjg2LDY4NTUzMDc5MSw3MTUzMDI3NTIs
 MTg3NDc5MTM0MiwtOTg0MjEzMzE3LDE2MzAzMjg4NTMsLTE1OT
 UyOTE1NiwtMTIyNjI4MDg4NywtMTQ2OTUxMjAwOCwtMTY5NTUx
