@@ -82,7 +82,7 @@ In this Modern way by using Azure Cloud Services. Which has all the azure servic
 
 
 ## Solution 3: Azure Synapse Analytics
-As we understand in step 2 if we move to cloud then we need to managed the maintenance, security and integration for each and every services separately. As we involve more services complexity and management of your architecture become hard need to maintain so many things.
+As we understand in Solution 2 if we move to cloud then we need to managed the maintenance, security and integration for each and every services separately. As we involve more services complexity and management of your architecture become hard need to maintain so many things.
 
 So what if Azure give you a single environment which has all of these things that's where you can see **Azure Synapse Analytics**.
 
