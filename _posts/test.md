@@ -46,7 +46,7 @@ let's try to understand the traditional way we have been processing data and the
 	 - To load the data into data warehouse we generally use ETL (Extract Transform Load). ETL load the structured data into the Relational DW and ETL/ELT (Spark kind of framework) load the structured or unstructured data into the Relational DW.
 	 - Sometime to cater the end user (serving layer) requirements we might create another repository let's say it's a file share or it's just a folder that contains some set to raw data.
 	 - Next we create cubes nowadays we call these cubes as enterprise models you can use various components for creating this enterprise model this is actually a multi-dimensional database which is an optimized data structure for performing analytics.
-- Next Layer is serving layer to create reports and information consumers can consume these reports.
+- Next Layer is serving layer basically of information consumer to consume the created data by  to create reports and information consumers can consume these reports.
 	- users can get data based on their requirements so user can connect with the file share or the folder that have been created for storing raw data or they can get data from relational data warehouse as well can connect with relational data warehouse or the enterprise  model.
 
 
@@ -54,7 +54,7 @@ let's try to understand the traditional way we have been processing data and the
 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/new-way-DWH.jpg?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTM4NzMyMTcsLTk4NDIxMzMxNywxNj
+eyJoaXN0b3J5IjpbLTE5NjkwMzYyMjksLTk4NDIxMzMxNywxNj
 MwMzI4ODUzLC0xNTk1MjkxNTYsLTEyMjYyODA4ODcsLTE0Njk1
 MTIwMDgsLTE2OTU1MTA2OTUsMzAzNzgzMjYxLDE0NTM4OTYwMT
 IsLTIwNTM3NTQ2MjcsLTIwOTYyMzg5OCwtODA0NTU5MTE2LDU5
