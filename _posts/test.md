@@ -49,8 +49,11 @@ let's try to understand the traditional way we have been processing data and the
 - Next Layer is serving layer to create reports and information consumers can consume these reports.
 	- users can get data based on their requirements so user can connect with the file share or the folder that have been created for storing raw data or they can get data from relational data warehouse as well can connect with relational data warehouse or the enterprise  model.
 
+
+## Modernized
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzE2NTQ1NTEsLTk4NDIxMzMxNywxNj
+eyJoaXN0b3J5IjpbLTE1MTUzMjc5NTQsLTk4NDIxMzMxNywxNj
 MwMzI4ODUzLC0xNTk1MjkxNTYsLTEyMjYyODA4ODcsLTE0Njk1
 MTIwMDgsLTE2OTU1MTA2OTUsMzAzNzgzMjYxLDE0NTM4OTYwMT
 IsLTIwNTM3NTQ2MjcsLTIwOTYyMzg5OCwtODA0NTU5MTE2LDU5
