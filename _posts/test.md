@@ -91,13 +91,13 @@ Azure Synapse is an integrated analytics service that accelerates time to insigh
 
 ## Next ?
 
-Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution 
+Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNjgxODMyMywxNjY2OTYwOTE4LC0yMT
-AxMDU2NywtNzExNzA4MzYxLC0zOTY3MTcyODYsNjg1NTMwNzkx
-LDcxNTMwMjc1MiwxODc0NzkxMzQyLC05ODQyMTMzMTcsMTYzMD
-MyODg1MywtMTU5NTI5MTU2LC0xMjI2MjgwODg3LC0xNDY5NTEy
-MDA4LC0xNjk1NTEwNjk1LDMwMzc4MzI2MSwxNDUzODk2MDEyLC
-0yMDUzNzU0NjI3LC04MDQ1NTkxMTYsNTk4NTgwOTE2LC02MDMy
-MDQ5NDNdfQ==
+eyJoaXN0b3J5IjpbNzE1MTY0NzAzLDE2NjY5NjA5MTgsLTIxMD
+EwNTY3LC03MTE3MDgzNjEsLTM5NjcxNzI4Niw2ODU1MzA3OTEs
+NzE1MzAyNzUyLDE4NzQ3OTEzNDIsLTk4NDIxMzMxNywxNjMwMz
+I4ODUzLC0xNTk1MjkxNTYsLTEyMjYyODA4ODcsLTE0Njk1MTIw
+MDgsLTE2OTU1MTA2OTUsMzAzNzgzMjYxLDE0NTM4OTYwMTIsLT
+IwNTM3NTQ2MjcsLTgwNDU1OTExNiw1OTg1ODA5MTYsLTYwMzIw
+NDk0M119
 -->
