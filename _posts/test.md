@@ -37,7 +37,7 @@ Microsoft’s Azure Synapse Analytics service, which enables a similar lakehouse
 ## Try to understand in steps
 let's try to understand the traditional way we have been processing data and then let's see how we convert the whole thing into the modern way implementing modernized data solutions specifically in cloud or Microsoft services or what sort of azure services we use for implementing various parts of our data solution and at the end let's see how we can use azure synapse for implementing the same.
 
-## Traditional way
+## Step 1: Traditional way
 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/old-way-DWH.jpg?raw=true)
 
@@ -50,10 +50,11 @@ let's try to understand the traditional way we have been processing data and the
 	- users can get data based on their requirements so user can connect with the file share or the folder that have been created for storing raw data or they can get data from relational data warehouse as well can connect with relational data warehouse or the enterprise  model.
 
 
-## Modernized
+## Step 2: Modern way (by use Azure Cloud services)
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTUzMjc5NTQsLTk4NDIxMzMxNywxNj
+eyJoaXN0b3J5IjpbLTE5NTQzNTgzMzUsLTk4NDIxMzMxNywxNj
 MwMzI4ODUzLC0xNTk1MjkxNTYsLTEyMjYyODA4ODcsLTE0Njk1
 MTIwMDgsLTE2OTU1MTA2OTUsMzAzNzgzMjYxLDE0NTM4OTYwMT
 IsLTIwNTM3NTQ2MjcsLTgwNDU1OTExNiw1OTg1ODA5MTYsLTYw
