@@ -78,7 +78,8 @@ A single environment you can consider as a workspace which has components for im
 
 
 -----
-## Azure Synapse
+## Azure Synapse efinition
+Azure Synapse Analytics is a limitless analytics service that brings together data integration, enterprise data warehousing and big data analytics. It gives you the freedom to query data on your terms, using either serverless or dedicated resources—at scale. Azure Synapse brings these worlds together with a unified experience to ingest, explore, prepare, manage and serve data for immediate BI and machine learning needs.
 
 ## Azure Synapse High-Level Architecture
 
@@ -86,11 +87,11 @@ Azure Synapse is an integrated analytics service that accelerates time to insigh
 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/synapse-unified-platform.png?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2Njk2MDkxOCwtMjEwMTA1NjcsLTcxMT
-cwODM2MSwtMzk2NzE3Mjg2LDY4NTUzMDc5MSw3MTUzMDI3NTIs
-MTg3NDc5MTM0MiwtOTg0MjEzMzE3LDE2MzAzMjg4NTMsLTE1OT
-UyOTE1NiwtMTIyNjI4MDg4NywtMTQ2OTUxMjAwOCwtMTY5NTUx
-MDY5NSwzMDM3ODMyNjEsMTQ1Mzg5NjAxMiwtMjA1Mzc1NDYyNy
-wtMjA5NjIzODk4LC04MDQ1NTkxMTYsNTk4NTgwOTE2LC02MDMy
-MDQ5NDNdfQ==
+eyJoaXN0b3J5IjpbODU0MTY1NTA5LDE2NjY5NjA5MTgsLTIxMD
+EwNTY3LC03MTE3MDgzNjEsLTM5NjcxNzI4Niw2ODU1MzA3OTEs
+NzE1MzAyNzUyLDE4NzQ3OTEzNDIsLTk4NDIxMzMxNywxNjMwMz
+I4ODUzLC0xNTk1MjkxNTYsLTEyMjYyODA4ODcsLTE0Njk1MTIw
+MDgsLTE2OTU1MTA2OTUsMzAzNzgzMjYxLDE0NTM4OTYwMTIsLT
+IwNTM3NTQ2MjcsLTIwOTYyMzg5OCwtODA0NTU5MTE2LDU5ODU4
+MDkxNl19
 -->
