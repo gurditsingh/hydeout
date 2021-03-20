@@ -67,14 +67,16 @@ In this Modern way by using Azure Cloud Services. Which has all the azure servic
  - integration you need to configure each and every component to make sure that each component **integration** works fine
 
 
-## Step 3: 
+## Step 3: Azure Synapse Analytics
 
+
+![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/Cloud-DWH.jpg?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMTcwODM2MSwtMzk2NzE3Mjg2LDY4NT
-UzMDc5MSw3MTUzMDI3NTIsMTg3NDc5MTM0MiwtOTg0MjEzMzE3
-LDE2MzAzMjg4NTMsLTE1OTUyOTE1NiwtMTIyNjI4MDg4NywtMT
-Q2OTUxMjAwOCwtMTY5NTUxMDY5NSwzMDM3ODMyNjEsMTQ1Mzg5
-NjAxMiwtMjA1Mzc1NDYyNywtMjA5NjIzODk4LC04MDQ1NTkxMT
-YsNTk4NTgwOTE2LC02MDMyMDQ5NDMsMzA5MTk0MDIzLDk2OTI2
-Njc0NF19
+eyJoaXN0b3J5IjpbMzgzNDM4MjEwLC03MTE3MDgzNjEsLTM5Nj
+cxNzI4Niw2ODU1MzA3OTEsNzE1MzAyNzUyLDE4NzQ3OTEzNDIs
+LTk4NDIxMzMxNywxNjMwMzI4ODUzLC0xNTk1MjkxNTYsLTEyMj
+YyODA4ODcsLTE0Njk1MTIwMDgsLTE2OTU1MTA2OTUsMzAzNzgz
+MjYxLDE0NTM4OTYwMTIsLTIwNTM3NTQ2MjcsLTIwOTYyMzg5OC
+wtODA0NTU5MTE2LDU5ODU4MDkxNiwtNjAzMjA0OTQzLDMwOTE5
+NDAyM119
 -->
