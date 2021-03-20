@@ -72,11 +72,11 @@ As we understand in step 2 if we move to cloud then we need to managed the maint
 
 So what if Azure give you a single environment which has all of these things that's where you see **Azure Synapse Analytics**.
 
-A single environment you can consider as a workspace which has components for implementing your modern data solution if you have a requirement for **data warehouse solution** you can use azure synapse if you have a requirement for a **big data solution** you can use azure synapse if you have a requirement for **machine learning** or **data science solution** you can use azure synapse basically it is a combination of everything you have used for implementing your data solution
+A single environment you can consider as a workspace which has components for implementing your modern data solution if you have a requirement for **data warehouse solution** you can use azure synapse if you have a requirement for a **big data solution** you can use azure synapse if you have a requirement for **machine learning solution** or **data science solution** you can use azure synapse basically it is a combination of everything you have used for implementing your data solution.
 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/Cloud-DWH.jpg?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYxMTY4NTUwLC03MTE3MDgzNjEsLTM5Nj
+eyJoaXN0b3J5IjpbLTIxMDEwNTY3LC03MTE3MDgzNjEsLTM5Nj
 cxNzI4Niw2ODU1MzA3OTEsNzE1MzAyNzUyLDE4NzQ3OTEzNDIs
 LTk4NDIxMzMxNywxNjMwMzI4ODUzLC0xNTk1MjkxNTYsLTEyMj
 YyODA4ODcsLTE0Njk1MTIwMDgsLTE2OTU1MTA2OTUsMzAzNzgz
