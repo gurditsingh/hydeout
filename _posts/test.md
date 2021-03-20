@@ -75,12 +75,15 @@ So what if Azure give you a single environment which has all of these things tha
 A single environment you can consider as a workspace which has components for implementing your modern data solution if you have a requirement for **data warehouse solution** you can use azure synapse if you have a requirement for a **big data solution** you can use azure synapse if you have a requirement for **machine learning solution** or **data science solution** you can use azure synapse basically it is a combination of everything you have used for implementing your data solution.
 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/Cloud-DWH.jpg?raw=true)
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNzE0MTA1ODYsLTIxMDEwNTY3LC03MT
-E3MDgzNjEsLTM5NjcxNzI4Niw2ODU1MzA3OTEsNzE1MzAyNzUy
-LDE4NzQ3OTEzNDIsLTk4NDIxMzMxNywxNjMwMzI4ODUzLC0xNT
-k1MjkxNTYsLTEyMjYyODA4ODcsLTE0Njk1MTIwMDgsLTE2OTU1
-MTA2OTUsMzAzNzgzMjYxLDE0NTM4OTYwMTIsLTIwNTM3NTQ2Mj
-csLTgwNDU1OTExNiw1OTg1ODA5MTYsLTYwMzIwNDk0MywzMDkx
-OTQwMjNdfQ==
+eyJoaXN0b3J5IjpbMTg1NTA3Nzg3MiwtMjEwMTA1NjcsLTcxMT
+cwODM2MSwtMzk2NzE3Mjg2LDY4NTUzMDc5MSw3MTUzMDI3NTIs
+MTg3NDc5MTM0MiwtOTg0MjEzMzE3LDE2MzAzMjg4NTMsLTE1OT
+UyOTE1NiwtMTIyNjI4MDg4NywtMTQ2OTUxMjAwOCwtMTY5NTUx
+MDY5NSwzMDM3ODMyNjEsMTQ1Mzg5NjAxMiwtMjA1Mzc1NDYyNy
+wtODA0NTU5MTE2LDU5ODU4MDkxNiwtNjAzMjA0OTQzLDMwOTE5
+NDAyM119
 -->
