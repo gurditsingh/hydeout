@@ -39,14 +39,14 @@ let's try to understand the traditional way we have been processing data and the
 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/old-way-DWH.jpg?raw=true)
 
-
+ - First layer we have multiple sources we have our standard oltp databases we have cloud databases a csv file excel files generally
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMDMyODg1MywtMTU5NTI5MTU2LC0xMj
-I2MjgwODg3LC0xNDY5NTEyMDA4LC0xNjk1NTEwNjk1LDMwMzc4
-MzI2MSwxNDUzODk2MDEyLC0yMDUzNzU0NjI3LC0yMDk2MjM4OT
-gsLTgwNDU1OTExNiw1OTg1ODA5MTYsLTYwMzIwNDk0MywzMDkx
-OTQwMjMsOTY5MjY2NzQ0LDE4Mzc3NDQ3ODAsLTE3NzIyMjU3MD
-QsLTE2OTQwODI1NiwtMTYyMDY2NzMyNCwtMjAyNjc5NTcxMywt
-MTY4OTkwODk1Ml19
+eyJoaXN0b3J5IjpbMzAzNjE5Njc4LDE2MzAzMjg4NTMsLTE1OT
+UyOTE1NiwtMTIyNjI4MDg4NywtMTQ2OTUxMjAwOCwtMTY5NTUx
+MDY5NSwzMDM3ODMyNjEsMTQ1Mzg5NjAxMiwtMjA1Mzc1NDYyNy
+wtMjA5NjIzODk4LC04MDQ1NTkxMTYsNTk4NTgwOTE2LC02MDMy
+MDQ5NDMsMzA5MTk0MDIzLDk2OTI2Njc0NCwxODM3NzQ0NzgwLC
+0xNzcyMjI1NzA0LC0xNjk0MDgyNTYsLTE2MjA2NjczMjQsLTIw
+MjY3OTU3MTNdfQ==
 -->
