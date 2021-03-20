@@ -60,12 +60,15 @@ In the below image we have highlighted are for cloud services which are segregat
 	 -  ETL/ELT we use **Azure HD insight** for Hadoop and Spark or use **Azure Databricks** to load the structured or unstructured data into the  Azure sql Data Warehouse (Relational DW).
 	 - Sometime to cater the end user (serving layer) requirements we might create another repository let's say it's a file share or it's just a folder that contains some set to raw data we can use **Data Lake**.
 	 - Next we create cubes using **Azure Analysis Services** nowadays we call these cubes as enterprise models you can use various components for creating this enterprise model this is actually a multi-dimensional database which is an optimized data structure for performing analytics.
+
+## Step 3: 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg1NTMwNzkxLDcxNTMwMjc1MiwxODc0Nz
-kxMzQyLC05ODQyMTMzMTcsMTYzMDMyODg1MywtMTU5NTI5MTU2
-LC0xMjI2MjgwODg3LC0xNDY5NTEyMDA4LC0xNjk1NTEwNjk1LD
-MwMzc4MzI2MSwxNDUzODk2MDEyLC0yMDUzNzU0NjI3LC04MDQ1
-NTkxMTYsNTk4NTgwOTE2LC02MDMyMDQ5NDMsMzA5MTk0MDIzLD
-k2OTI2Njc0NCwxODM3NzQ0NzgwLC0xNzcyMjI1NzA0LC0xNjk0
-MDgyNTZdfQ==
+eyJoaXN0b3J5IjpbLTM5NjcxNzI4Niw2ODU1MzA3OTEsNzE1Mz
+AyNzUyLDE4NzQ3OTEzNDIsLTk4NDIxMzMxNywxNjMwMzI4ODUz
+LC0xNTk1MjkxNTYsLTEyMjYyODA4ODcsLTE0Njk1MTIwMDgsLT
+E2OTU1MTA2OTUsMzAzNzgzMjYxLDE0NTM4OTYwMTIsLTIwNTM3
+NTQ2MjcsLTgwNDU1OTExNiw1OTg1ODA5MTYsLTYwMzIwNDk0My
+wzMDkxOTQwMjMsOTY5MjY2NzQ0LDE4Mzc3NDQ3ODAsLTE3NzIy
+MjU3MDRdfQ==
 -->
