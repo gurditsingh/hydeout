@@ -61,14 +61,16 @@ In the below image we have highlighted are for cloud services which are segregat
 	 - Sometime to cater the end user (serving layer) requirements we might create another repository let's say it's a file share or it's just a folder that contains some set to raw data we can use **Data Lake**.
 	 - Next we create cubes using **Azure Analysis Services** nowadays we call these cubes as enterprise models you can use various components for creating this enterprise model this is actually a multi-dimensional database which is an optimized data structure for performing analytics.
 
+In this Modern way by using Azure Cloud srvices  
+
 ## Step 3: 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM5NjcxNzI4Niw2ODU1MzA3OTEsNzE1Mz
-AyNzUyLDE4NzQ3OTEzNDIsLTk4NDIxMzMxNywxNjMwMzI4ODUz
-LC0xNTk1MjkxNTYsLTEyMjYyODA4ODcsLTE0Njk1MTIwMDgsLT
-E2OTU1MTA2OTUsMzAzNzgzMjYxLDE0NTM4OTYwMTIsLTIwNTM3
-NTQ2MjcsLTgwNDU1OTExNiw1OTg1ODA5MTYsLTYwMzIwNDk0My
-wzMDkxOTQwMjMsOTY5MjY2NzQ0LDE4Mzc3NDQ3ODAsLTE3NzIy
-MjU3MDRdfQ==
+eyJoaXN0b3J5IjpbLTIwMTE3ODE4MywtMzk2NzE3Mjg2LDY4NT
+UzMDc5MSw3MTUzMDI3NTIsMTg3NDc5MTM0MiwtOTg0MjEzMzE3
+LDE2MzAzMjg4NTMsLTE1OTUyOTE1NiwtMTIyNjI4MDg4NywtMT
+Q2OTUxMjAwOCwtMTY5NTUxMDY5NSwzMDM3ODMyNjEsMTQ1Mzg5
+NjAxMiwtMjA1Mzc1NDYyNywtODA0NTU5MTE2LDU5ODU4MDkxNi
+wtNjAzMjA0OTQzLDMwOTE5NDAyMyw5NjkyNjY3NDQsMTgzNzc0
+NDc4MF19
 -->
