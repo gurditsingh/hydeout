@@ -34,8 +34,10 @@ Microsoft’s Azure Synapse Analytics service, which enables a similar lakehouse
 
 ![synapse](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/azure-synapse.png?raw=true)
 
-## First try to understand the Traditional way
-let's try to understand the traditional way we have been processing data and then let's see how we uh convert the whole thing into the modern way implementing modernized data solutions specifically in cloud or Microsoft services or what sort of azure services we use for implementing various parts of our data solution and at the end let's see how we can use azure synapse for implementing the same.
+## Try to understand in steps
+let's try to understand the traditional way we have been processing data and then let's see how we convert the whole thing into the modern way implementing modernized data solutions specifically in cloud or Microsoft services or what sort of azure services we use for implementing various parts of our data solution and at the end let's see how we can use azure synapse for implementing the same.
+
+## Traditional way
 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/old-way-DWH.jpg?raw=true)
 
@@ -48,11 +50,11 @@ let's try to understand the traditional way we have been processing data and the
 	- users can get data based on their requirements so user can connect with the file share or the folder that have been created for storing raw data or they can get data from relational data warehouse as well can connect with relational data warehouse or the enterprise  model.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1OTY1MDYwNSwtOTg0MjEzMzE3LDE2Mz
-AzMjg4NTMsLTE1OTUyOTE1NiwtMTIyNjI4MDg4NywtMTQ2OTUx
-MjAwOCwtMTY5NTUxMDY5NSwzMDM3ODMyNjEsMTQ1Mzg5NjAxMi
-wtMjA1Mzc1NDYyNywtODA0NTU5MTE2LDU5ODU4MDkxNiwtNjAz
-MjA0OTQzLDMwOTE5NDAyMyw5NjkyNjY3NDQsMTgzNzc0NDc4MC
-wtMTc3MjIyNTcwNCwtMTY5NDA4MjU2LC0xNjIwNjY3MzI0LC0y
-MDI2Nzk1NzEzXX0=
+eyJoaXN0b3J5IjpbLTIwMzE2NTQ1NTEsLTk4NDIxMzMxNywxNj
+MwMzI4ODUzLC0xNTk1MjkxNTYsLTEyMjYyODA4ODcsLTE0Njk1
+MTIwMDgsLTE2OTU1MTA2OTUsMzAzNzgzMjYxLDE0NTM4OTYwMT
+IsLTIwNTM3NTQ2MjcsLTgwNDU1OTExNiw1OTg1ODA5MTYsLTYw
+MzIwNDk0MywzMDkxOTQwMjMsOTY5MjY2NzQ0LDE4Mzc3NDQ3OD
+AsLTE3NzIyMjU3MDQsLTE2OTQwODI1NiwtMTYyMDY2NzMyNCwt
+MjAyNjc5NTcxM119
 -->
