@@ -70,22 +70,26 @@ In this Modern way by using Azure Cloud Services. Which has all the azure servic
 ## Step 3: Azure Synapse Analytics
 As we understand in step 2 if we move to cloud then we need to managed the maintenance, security and integration for each and every services separately. As we involve more services complexity and management of your architecture become hard need to maintain so many things.
 
-So what if Azure give you a single environment which has all of these things that's where you csee **Azure Synapse Analytics**.
+So what if Azure give you a single environment which has all of these things that's where you can see **Azure Synapse Analytics**.
 
 A single environment you can consider as a workspace which has components for implementing your modern data solution if you have a requirement for **data warehouse solution** you can use azure synapse if you have a requirement for a **big data solution** you can use azure synapse if you have a requirement for **machine learning solution** or **data science solution** you can use azure synapse basically it is a combination of everything you have used for implementing your data solution.
 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/Cloud-DWH.jpg?raw=true)
 
 
+-----
+
 ## Azure Synapse High-Level Architecture
 
 Azure Synapse is an integrated analytics service that accelerates time to insight from all data at any scale across data warehouses and big data analytics systems so you're not going to have two separate environments one for data the housing one for big data analytics you have one environment you'll be managing the whole thing as a single environment and you will see data warehouse components with it you will see big data components with it.
+
+![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/synapse-unified-platform.png?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4Mzc3OTYyMCwtMjEwMTA1NjcsLTcxMT
-cwODM2MSwtMzk2NzE3Mjg2LDY4NTUzMDc5MSw3MTUzMDI3NTIs
-MTg3NDc5MTM0MiwtOTg0MjEzMzE3LDE2MzAzMjg4NTMsLTE1OT
-UyOTE1NiwtMTIyNjI4MDg4NywtMTQ2OTUxMjAwOCwtMTY5NTUx
-MDY5NSwzMDM3ODMyNjEsMTQ1Mzg5NjAxMiwtMjA1Mzc1NDYyNy
-wtMjA5NjIzODk4LC04MDQ1NTkxMTYsNTk4NTgwOTE2LC02MDMy
-MDQ5NDNdfQ==
+eyJoaXN0b3J5IjpbLTE0MDU0NDM0MjQsLTIxMDEwNTY3LC03MT
+E3MDgzNjEsLTM5NjcxNzI4Niw2ODU1MzA3OTEsNzE1MzAyNzUy
+LDE4NzQ3OTEzNDIsLTk4NDIxMzMxNywxNjMwMzI4ODUzLC0xNT
+k1MjkxNTYsLTEyMjYyODA4ODcsLTE0Njk1MTIwMDgsLTE2OTU1
+MTA2OTUsMzAzNzgzMjYxLDE0NTM4OTYwMTIsLTIwNTM3NTQ2Mj
+csLTIwOTYyMzg5OCwtODA0NTU5MTE2LDU5ODU4MDkxNiwtNjAz
+MjA0OTQzXX0=
 -->
