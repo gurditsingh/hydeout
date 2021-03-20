@@ -48,10 +48,10 @@ Microsoft’s Azure Synapse Analytics service, which enables a similar lakehouse
 
 ![synapse](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/azure-synapse.png?raw=true)
 
-## First try to understand Data Warehouse solutions in steps
+## First try to understand Data Warehouse solutions
 let's try to understand the traditional way we have been processing data and then let's see how we convert the whole thing into the modern way implementing modernized data solutions specifically in cloud or Microsoft services or what sort of azure services we use for implementing various parts of our data solution and at the end let's see how we can use azure synapse for implementing the same.
 
-## Step 1: Traditional way
+## Solution 1: Traditional way
 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/old-way-DWH.jpg?raw=true)
 
@@ -64,7 +64,7 @@ let's try to understand the traditional way we have been processing data and the
 	- users can get data based on their requirements so user can connect with the file share or the folder that have been created for storing raw data or they can get data from relational data warehouse as well can connect with relational data warehouse or the enterprise  model.
 
 
-## Step 2: Modern way (by use Azure Cloud services)
+## Solution 2: Modern way (by use Azure Cloud services)
 In the below image we have highlighted are for cloud services which are segregated from first and last layer. First layer has no change, it just has input data and last layer also has no change it just serve the data to information consumers.
 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/new-cloud-way-DWH.jpg?raw=true)
@@ -81,7 +81,7 @@ In this Modern way by using Azure Cloud Services. Which has all the azure servic
  - integration you need to configure each and every component to make sure that each component **integration** works fine
 
 
-## Step 3: Azure Synapse Analytics
+## Solution 3: Azure Synapse Analytics
 As we understand in step 2 if we move to cloud then we need to managed the maintenance, security and integration for each and every services separately. As we involve more services complexity and management of your architecture become hard need to maintain so many things.
 
 So what if Azure give you a single environment which has all of these things that's where you can see **Azure Synapse Analytics**.
