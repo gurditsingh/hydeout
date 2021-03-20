@@ -51,17 +51,17 @@ let's try to understand the traditional way we have been processing data and the
 
 
 ## Step 2: Modern way (by use Azure Cloud services)
-In the below image we have highlighted cloud services which are segregated from first and last layer. First layer has no change, it just has input data and last layer aslo 
+In the below image we have highlighted are for cloud services which are segregated from first and last layer. First layer has no change, it just has input data and last layer also has no change it just serve the data to information consumers.
+
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/new-cloud-way-DWH.jpg?raw=true)
 
-- First Layer we have multiple structured sources like standard OLTP databases, cloud databases, csv file, excel files and some of unstructured sources like logs messages, sensor data, json, avro etc. These all input sources can be loaded into the system.
- - Next Layer we create relational data warehouse by using **Azure Cloud Services**.
+ - Middle Layer we create relational data warehouse by using **Azure Cloud Services**.
 	 -  To load the data into data warehouse we generally use ETL (Extract Transform Load) like **Azure Data Factory** or **SSIS package** . ETL load the structured data into the Azure sql Data Warehouse (Relational DW).
 	 -  ETL/ELT we use **Azure HD insight** for Hadoop and Spark or use **Azure Databricks** to load the structured or unstructured data into the  Azure sql Data Warehouse (Relational DW).
 	 - Sometime to cater the end user (serving layer) requirements we might create another repository let's say it's a file share or it's just a folder that contains some set to raw data we can use **Data Lake**.
 	 - Next we create cubes using **Azure Analysis Services** nowadays we call these cubes as enterprise models you can use various components for creating this enterprise model this is actually a multi-dimensional database which is an optimized data structure for performing analytics.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTIwODM1NjcxLDcxNTMwMjc1MiwxODc0Nz
+eyJoaXN0b3J5IjpbNjg1NTMwNzkxLDcxNTMwMjc1MiwxODc0Nz
 kxMzQyLC05ODQyMTMzMTcsMTYzMDMyODg1MywtMTU5NTI5MTU2
 LC0xMjI2MjgwODg3LC0xNDY5NTEyMDA4LC0xNjk1NTEwNjk1LD
 MwMzc4MzI2MSwxNDUzODk2MDEyLC0yMDUzNzU0NjI3LC0yMDk2
