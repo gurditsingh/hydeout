@@ -35,10 +35,12 @@ Microsoft’s Azure Synapse Analytics service, which enables a similar lakehouse
 ![DLDW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/azure-synapse.png?raw=true)
 
 ## First try to understand the Traditional way
+let's try to understand the traditional way we have been processing data and then let's see how we uh convert the whole thing into the modern way implementing modernized data solutions specifically in cloud or Microsoft services or what sort of azure services we use for implementing various parts of our data solution and at the end let's see how we can use azure synapse for implementing the same.
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5NzU2MDExMiwtMTIyNjI4MDg4NywtMT
+eyJoaXN0b3J5IjpbLTE1OTUyOTE1NiwtMTIyNjI4MDg4NywtMT
 Q2OTUxMjAwOCwtMTY5NTUxMDY5NSwzMDM3ODMyNjEsMTQ1Mzg5
 NjAxMiwtMjA1Mzc1NDYyNywtMjA5NjIzODk4LC04MDQ1NTkxMT
 YsNTk4NTgwOTE2LC02MDMyMDQ5NDMsMzA5MTk0MDIzLDk2OTI2
