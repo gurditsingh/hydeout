@@ -39,10 +39,10 @@ let's try to understand the traditional way we have been processing data and the
 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/old-way-DWH.jpg?raw=true)
 
- - First layer we have multiple sources we have our standard oltp databases we have cloud databases a csv file excel files generally
+ - First layer we have multiple sources like standard oltp databases, cloud databases, csv file, excel files generally. These all input sources can be 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAzNjE5Njc4LDE2MzAzMjg4NTMsLTE1OT
+eyJoaXN0b3J5IjpbNDI0NjQ2ODAxLDE2MzAzMjg4NTMsLTE1OT
 UyOTE1NiwtMTIyNjI4MDg4NywtMTQ2OTUxMjAwOCwtMTY5NTUx
 MDY5NSwzMDM3ODMyNjEsMTQ1Mzg5NjAxMiwtMjA1Mzc1NDYyNy
 wtMjA5NjIzODk4LC04MDQ1NTkxMTYsNTk4NTgwOTE2LC02MDMy
