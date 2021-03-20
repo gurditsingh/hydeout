@@ -51,12 +51,12 @@ let's try to understand the traditional way we have been processing data and the
 
 
 ## Step 2: Modern way (by use Azure Cloud services)
-In the below image we have segregated 
+In the below image we have highlighted cloud services which are segregated from first and last layer. 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/new-cloud-way-DWH.jpg?raw=true)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzQ1MzIxNjUsMTg3NDc5MTM0MiwtOT
+eyJoaXN0b3J5IjpbLTEyODQxNTY1MjAsMTg3NDc5MTM0MiwtOT
 g0MjEzMzE3LDE2MzAzMjg4NTMsLTE1OTUyOTE1NiwtMTIyNjI4
 MDg4NywtMTQ2OTUxMjAwOCwtMTY5NTUxMDY5NSwzMDM3ODMyNj
 EsMTQ1Mzg5NjAxMiwtMjA1Mzc1NDYyNywtMjA5NjIzODk4LC04
