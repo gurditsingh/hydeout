@@ -68,15 +68,15 @@ In this Modern way by using Azure Cloud Services. Which has all the azure servic
 
 
 ## Step 3: Azure Synapse Analytics
-
+As we understand in step 2 if we move to cloud then we need to managed, handle security and integration in eac
 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/Cloud-DWH.jpg?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzgzNDM4MjEwLC03MTE3MDgzNjEsLTM5Nj
-cxNzI4Niw2ODU1MzA3OTEsNzE1MzAyNzUyLDE4NzQ3OTEzNDIs
-LTk4NDIxMzMxNywxNjMwMzI4ODUzLC0xNTk1MjkxNTYsLTEyMj
-YyODA4ODcsLTE0Njk1MTIwMDgsLTE2OTU1MTA2OTUsMzAzNzgz
-MjYxLDE0NTM4OTYwMTIsLTIwNTM3NTQ2MjcsLTgwNDU1OTExNi
-w1OTg1ODA5MTYsLTYwMzIwNDk0MywzMDkxOTQwMjMsOTY5MjY2
-NzQ0XX0=
+eyJoaXN0b3J5IjpbMTQ3MjAxMTc4MSwtNzExNzA4MzYxLC0zOT
+Y3MTcyODYsNjg1NTMwNzkxLDcxNTMwMjc1MiwxODc0NzkxMzQy
+LC05ODQyMTMzMTcsMTYzMDMyODg1MywtMTU5NTI5MTU2LC0xMj
+I2MjgwODg3LC0xNDY5NTEyMDA4LC0xNjk1NTEwNjk1LDMwMzc4
+MzI2MSwxNDUzODk2MDEyLC0yMDUzNzU0NjI3LC04MDQ1NTkxMT
+YsNTk4NTgwOTE2LC02MDMyMDQ5NDMsMzA5MTk0MDIzLDk2OTI2
+Njc0NF19
 -->
