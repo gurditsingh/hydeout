@@ -46,19 +46,21 @@ let's try to understand the traditional way we have been processing data and the
 	 - To load the data into data warehouse we generally use ETL (Extract Transform Load). ETL load the structured data into the Relational DW and ETL/ELT (Spark kind of framework) load the structured or unstructured data into the Relational DW.
 	 - Sometime to cater the end user (serving layer) requirements we might create another repository let's say it's a file share or it's just a folder that contains some set to raw data.
 	 - Next we create cubes nowadays we call these cubes as enterprise models you can use various components for creating this enterprise model this is actually a multi-dimensional database which is an optimized data structure for performing analytics.
-- Next Layer is serving layer basically of information consumer to consume the created data by  to create reports and information consumers can consume these reports.
+- Next Layer is serving layer basically of information consumers to consume the created data in the way of Relational DW or Modes.
 	- users can get data based on their requirements so user can connect with the file share or the folder that have been created for storing raw data or they can get data from relational data warehouse as well can connect with relational data warehouse or the enterprise  model.
 
 
 ## Step 2: Modern way (by use Azure Cloud services)
 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/new-way-DWH.jpg?raw=true)
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjkwMzYyMjksLTk4NDIxMzMxNywxNj
-MwMzI4ODUzLC0xNTk1MjkxNTYsLTEyMjYyODA4ODcsLTE0Njk1
-MTIwMDgsLTE2OTU1MTA2OTUsMzAzNzgzMjYxLDE0NTM4OTYwMT
-IsLTIwNTM3NTQ2MjcsLTIwOTYyMzg5OCwtODA0NTU5MTE2LDU5
-ODU4MDkxNiwtNjAzMjA0OTQzLDMwOTE5NDAyMyw5NjkyNjY3ND
-QsMTgzNzc0NDc4MCwtMTc3MjIyNTcwNCwtMTY5NDA4MjU2LC0x
-NjIwNjY3MzI0XX0=
+eyJoaXN0b3J5IjpbMTg3NDc5MTM0MiwtOTg0MjEzMzE3LDE2Mz
+AzMjg4NTMsLTE1OTUyOTE1NiwtMTIyNjI4MDg4NywtMTQ2OTUx
+MjAwOCwtMTY5NTUxMDY5NSwzMDM3ODMyNjEsMTQ1Mzg5NjAxMi
+wtMjA1Mzc1NDYyNywtMjA5NjIzODk4LC04MDQ1NTkxMTYsNTk4
+NTgwOTE2LC02MDMyMDQ5NDMsMzA5MTk0MDIzLDk2OTI2Njc0NC
+wxODM3NzQ0NzgwLC0xNzcyMjI1NzA0LC0xNjk0MDgyNTYsLTE2
+MjA2NjczMjRdfQ==
 -->
