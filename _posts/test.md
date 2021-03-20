@@ -40,14 +40,16 @@ let's try to understand the traditional way we have been processing data and the
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/old-way-DWH.jpg?raw=true)
 
  - First Layer we have multiple sources like standard OLTP databases, cloud databases, csv file, excel files generally. These all input sources can be loaded into the system.
- - Next Layer we create relational data warehouse. To load the data into data warehouse we generally use ETL (Extract Transform Load).
+ - Next Layer we create relational data warehouse. 
+	 - To load the data into data warehouse we generally use ETL (Extract Transform Load).
+	 - S
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODI0NTYxMTUsLTk4NDIxMzMxNywxNj
-MwMzI4ODUzLC0xNTk1MjkxNTYsLTEyMjYyODA4ODcsLTE0Njk1
-MTIwMDgsLTE2OTU1MTA2OTUsMzAzNzgzMjYxLDE0NTM4OTYwMT
-IsLTIwNTM3NTQ2MjcsLTgwNDU1OTExNiw1OTg1ODA5MTYsLTYw
-MzIwNDk0MywzMDkxOTQwMjMsOTY5MjY2NzQ0LDE4Mzc3NDQ3OD
-AsLTE3NzIyMjU3MDQsLTE2OTQwODI1NiwtMTYyMDY2NzMyNCwt
-MjAyNjc5NTcxM119
+eyJoaXN0b3J5IjpbNzkyODg5MDg2LC05ODQyMTMzMTcsMTYzMD
+MyODg1MywtMTU5NTI5MTU2LC0xMjI2MjgwODg3LC0xNDY5NTEy
+MDA4LC0xNjk1NTEwNjk1LDMwMzc4MzI2MSwxNDUzODk2MDEyLC
+0yMDUzNzU0NjI3LC04MDQ1NTkxMTYsNTk4NTgwOTE2LC02MDMy
+MDQ5NDMsMzA5MTk0MDIzLDk2OTI2Njc0NCwxODM3NzQ0NzgwLC
+0xNzcyMjI1NzA0LC0xNjk0MDgyNTYsLTE2MjA2NjczMjQsLTIw
+MjY3OTU3MTNdfQ==
 -->
