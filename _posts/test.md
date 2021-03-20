@@ -43,7 +43,7 @@ let's try to understand the traditional way we have been processing data and the
 
  - First Layer we have multiple structured sources like standard OLTP databases, cloud databases, csv file, excel files and some of unstructured sources like logs messages, sensor data, json, avro etc. These all input sources can be loaded into the system.
  - Next Layer we create relational data warehouse. 
-	 - To load the data into data warehouse we generally use ETL (Extract Transform Load). ETL load the structured data into the Relational DW and ETL/ELT we use Hadoop and Spark kind of framework load the structured or unstructured data into the Relational DW.
+	 - To load the data into data warehouse we generally use ETL (Extract Transform Load). ETL load the structured data into the Relational DW and ETL/ELT we use Hadoop and Spark to load the structured or unstructured data into the Relational DW.
 	 - Sometime to cater the end user (serving layer) requirements we might create another repository let's say it's a file share or it's just a folder that contains some set to raw data.
 	 - Next we create cubes nowadays we call these cubes as enterprise models you can use various components for creating this enterprise model this is actually a multi-dimensional database which is an optimized data structure for performing analytics.
 - Next Layer is serving layer basically of information consumers to consume the created data in the way of Relational DW or Modes.
@@ -57,13 +57,14 @@ In the below image we have highlighted cloud services which are segregated from 
 - First Layer we have multiple structured sources like standard OLTP databases, cloud databases, csv file, excel files and some of unstructured sources like logs messages, sensor data, json, avro etc. These all input sources can be loaded into the system.
  - Next Layer we create relational data warehouse by using Azure Cloud Services.
 	 -  To load the data into data warehouse we generally use ETL (Extract Transform Load) like Azure Data Factory or SSIS package . ETL load the structured data into the Azure sql Data Warehouse (Relational DW).
-	 -  ETL/ELT we use Azure HD insight for Hadoop and Spark kind of tools load the structured or unstructured data into the  Azure sql Data Warehouse (Relational DW).
+	 -  ETL/ELT we use Azure HD insight for Hadoop and Spark or use Azure Databricks to load the structured or unstructured data into the  Azure sql Data Warehouse (Relational DW).
+	 - 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MTM2NDE3MSwxODc0NzkxMzQyLC05OD
-QyMTMzMTcsMTYzMDMyODg1MywtMTU5NTI5MTU2LC0xMjI2Mjgw
-ODg3LC0xNDY5NTEyMDA4LC0xNjk1NTEwNjk1LDMwMzc4MzI2MS
-wxNDUzODk2MDEyLC0yMDUzNzU0NjI3LC0yMDk2MjM4OTgsLTgw
-NDU1OTExNiw1OTg1ODA5MTYsLTYwMzIwNDk0MywzMDkxOTQwMj
-MsOTY5MjY2NzQ0LDE4Mzc3NDQ3ODAsLTE3NzIyMjU3MDQsLTE2
-OTQwODI1Nl19
+eyJoaXN0b3J5IjpbNzE1MzAyNzUyLDE4NzQ3OTEzNDIsLTk4ND
+IxMzMxNywxNjMwMzI4ODUzLC0xNTk1MjkxNTYsLTEyMjYyODA4
+ODcsLTE0Njk1MTIwMDgsLTE2OTU1MTA2OTUsMzAzNzgzMjYxLD
+E0NTM4OTYwMTIsLTIwNTM3NTQ2MjcsLTIwOTYyMzg5OCwtODA0
+NTU5MTE2LDU5ODU4MDkxNiwtNjAzMjA0OTQzLDMwOTE5NDAyMy
+w5NjkyNjY3NDQsMTgzNzc0NDc4MCwtMTc3MjIyNTcwNCwtMTY5
+NDA4MjU2XX0=
 -->
