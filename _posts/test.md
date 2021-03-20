@@ -56,10 +56,10 @@ In the below image we have highlighted cloud services which are segregated from 
 
 - First Layer we have multiple structured sources like standard OLTP databases, cloud databases, csv file, excel files and some of unstructured sources like logs messages, sensor data, json, avro etc. These all input sources can be loaded into the system.
  - Next Layer we create relational data warehouse by using Azure Cloud Services.
-	 -  To load the data into data warehouse we generally use ETL (Extract Transform Load) like Azure Data Factory or SSIS package . ETL load the structured data into the Relational DW.
-	 -  ETL/ELT we use Azure Hadoop and Spark kind of framework load the structured or unstructured data into the Relational DW.
+	 -  To load the data into data warehouse we generally use ETL (Extract Transform Load) like Azure Data Factory or SSIS package . ETL load the structured data into the Azure sql Data Warehouse (Relational DW).
+	 -  ETL/ELT we use Azure HD insight for Hadoop and Spark kind of tools load the structured or unstructured data into the  Azure sql Data Warehouse (Relational DW).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxOTM3NzkwNSwxODc0NzkxMzQyLC05OD
+eyJoaXN0b3J5IjpbLTU2MTM2NDE3MSwxODc0NzkxMzQyLC05OD
 QyMTMzMTcsMTYzMDMyODg1MywtMTU5NTI5MTU2LC0xMjI2Mjgw
 ODg3LC0xNDY5NTEyMDA4LC0xNjk1NTEwNjk1LDMwMzc4MzI2MS
 wxNDUzODk2MDEyLC0yMDUzNzU0NjI3LC0yMDk2MjM4OTgsLTgw
