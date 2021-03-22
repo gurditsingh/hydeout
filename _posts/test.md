@@ -12,14 +12,9 @@ Azure Synapse Analytics is a limitless analytics service that brings together da
 	Synapse SQL feature is also available in a serverless manner, where no fixed capacity of the infrastructure needs to be provisioned. Instead, Azure manages the required infrastructure capacity to meet the needs of the workloads.
 - **Apache Spark for Azure Synapse :** This component of Synapse provides Spark runtime to perform the same set of tasks like data loading, data processing, data preparation, ETLs, and other tasks that are generally related to data warehousing. Once a Synapse workspace is created, one can provision Apache Spark pools. Azure provides Data Bricks, too, as a service that is based on Spark runtime with a certain set of optimizations.
 
+## Azure Synapse Architecture
 
-
-
-
-
-
-## Azure Synapse High-Level Architecture
-
+![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/synapse-unified-platform.png?raw=true)
 
 
 
@@ -29,11 +24,11 @@ Azure Synapse Analytics is a limitless analytics service that brings together da
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjczODQ3NzU5LC0xOTIwMTQ4ODQ1LC01MT
-YzNjQ3ODIsMTg4OTgwNTE0MSwxNTM0OTc4ODQyLDcxNTE2NDcw
-MywxNjY2OTYwOTE4LC0yMTAxMDU2NywtNzExNzA4MzYxLC0zOT
-Y3MTcyODYsNjg1NTMwNzkxLDcxNTMwMjc1MiwxODc0NzkxMzQy
-LC05ODQyMTMzMTcsMTYzMDMyODg1MywtMTU5NTI5MTU2LC0xMj
-I2MjgwODg3LC0xNDY5NTEyMDA4LC0xNjk1NTEwNjk1LDMwMzc4
-MzI2MV19
+eyJoaXN0b3J5IjpbLTExOTc4NTM4MDIsLTE5MjAxNDg4NDUsLT
+UxNjM2NDc4MiwxODg5ODA1MTQxLDE1MzQ5Nzg4NDIsNzE1MTY0
+NzAzLDE2NjY5NjA5MTgsLTIxMDEwNTY3LC03MTE3MDgzNjEsLT
+M5NjcxNzI4Niw2ODU1MzA3OTEsNzE1MzAyNzUyLDE4NzQ3OTEz
+NDIsLTk4NDIxMzMxNywxNjMwMzI4ODUzLC0xNTk1MjkxNTYsLT
+EyMjYyODA4ODcsLTE0Njk1MTIwMDgsLTE2OTU1MTA2OTUsMzAz
+NzgzMjYxXX0=
 -->
