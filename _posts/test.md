@@ -5,6 +5,8 @@ Azure Synapse Analytics is a limitless analytics service that brings together da
 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/synapse-unified-platform.png?raw=true)
 
+ - **Azure Synapse Studio :**
+
 
 
 
@@ -22,7 +24,7 @@ Azure Synapse Analytics is a limitless analytics service that brings together da
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMjA1NDExNCwxNTM0OTc4ODQyLDcxNT
+eyJoaXN0b3J5IjpbMTg4OTgwNTE0MSwxNTM0OTc4ODQyLDcxNT
 E2NDcwMywxNjY2OTYwOTE4LC0yMTAxMDU2NywtNzExNzA4MzYx
 LC0zOTY3MTcyODYsNjg1NTMwNzkxLDcxNTMwMjc1MiwxODc0Nz
 kxMzQyLC05ODQyMTMzMTcsMTYzMDMyODg1MywtMTU5NTI5MTU2
