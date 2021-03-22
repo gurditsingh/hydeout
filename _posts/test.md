@@ -6,7 +6,7 @@ Azure Synapse Analytics is a limitless analytics service that brings together da
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/synapse-unified-platform.png?raw=true)
 
  - **Azure Synapse Studio :** This tool is a web-based tool that provides developers to work with every aspect of Synapse Analytics from a single console. In this generally starts with creating a workspace and launching this tool that provides access to different synapse features like Ingesting data using import mechanisms or data pipelines and create data flows, explore data using notebooks, analyze data with spark jobs or SQL scripts, and finally visualize data for reporting and dashboarding purposes.
- - **Azure Synapse Data Integration :** 
+ - **Azure Synapse Data Integration :** This service comes with an integrated orchestration engine that is identical to Azure Data Factory to create data pipelines and rich data transformation capabilities within the Synapse workspace itself. Key features include support for 90+ data sources that include Azure-based data sources, open-source and cross-cloud data warehouses and databases, file-based data sources, No SQL based data sources, 28 Services and Apps that can serve as data providers, as well as 4 generic protocols like ODBC, REST, etc.
 
 
 
@@ -25,7 +25,7 @@ Azure Synapse Analytics is a limitless analytics service that brings together da
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzOTY5OTYyMSwxODg5ODA1MTQxLDE1Mz
+eyJoaXN0b3J5IjpbLTQ3NDMxMDU5MSwxODg5ODA1MTQxLDE1Mz
 Q5Nzg4NDIsNzE1MTY0NzAzLDE2NjY5NjA5MTgsLTIxMDEwNTY3
 LC03MTE3MDgzNjEsLTM5NjcxNzI4Niw2ODU1MzA3OTEsNzE1Mz
 AyNzUyLDE4NzQ3OTEzNDIsLTk4NDIxMzMxNywxNjMwMzI4ODUz
