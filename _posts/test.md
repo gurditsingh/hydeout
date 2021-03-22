@@ -10,7 +10,7 @@ Azure Synapse Analytics is a limitless analytics service that brings together da
  - **Synapse SQL Pools :** This feature of the service available in a provisioned manner where a fixed capacity of DWU units is allocated to the instance of the service for data processing. Data can be imported into Synapse using different mechanisms like SSIS, Polybase, Azure Data Factory, etc.
 
 	Synapse SQL feature is also available in a serverless manner, where no fixed capacity of the infrastructure needs to be provisioned. Instead, Azure manages the required infrastructure capacity to meet the needs of the workloads.
-- 
+- **Apache Spark for Azure Synapse :** This component of Synapse provides Spark runtime to perform the same set of tasks like data loading, data processing, data preparation, ETLs, and other tasks that are generally related to data warehousing. Azure provides Data Bricks, too, as a service that is based on Spark runtime with a certain set of optimizations,
 
 
 
@@ -29,11 +29,11 @@ Azure Synapse Analytics is a limitless analytics service that brings together da
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjAxNDg4NDUsLTUxNjM2NDc4MiwxOD
-g5ODA1MTQxLDE1MzQ5Nzg4NDIsNzE1MTY0NzAzLDE2NjY5NjA5
-MTgsLTIxMDEwNTY3LC03MTE3MDgzNjEsLTM5NjcxNzI4Niw2OD
-U1MzA3OTEsNzE1MzAyNzUyLDE4NzQ3OTEzNDIsLTk4NDIxMzMx
-NywxNjMwMzI4ODUzLC0xNTk1MjkxNTYsLTEyMjYyODA4ODcsLT
-E0Njk1MTIwMDgsLTE2OTU1MTA2OTUsMzAzNzgzMjYxLDE0NTM4
-OTYwMTJdfQ==
+eyJoaXN0b3J5IjpbLTI2MjEyMzQ3NCwtMTkyMDE0ODg0NSwtNT
+E2MzY0NzgyLDE4ODk4MDUxNDEsMTUzNDk3ODg0Miw3MTUxNjQ3
+MDMsMTY2Njk2MDkxOCwtMjEwMTA1NjcsLTcxMTcwODM2MSwtMz
+k2NzE3Mjg2LDY4NTUzMDc5MSw3MTUzMDI3NTIsMTg3NDc5MTM0
+MiwtOTg0MjEzMzE3LDE2MzAzMjg4NTMsLTE1OTUyOTE1NiwtMT
+IyNjI4MDg4NywtMTQ2OTUxMjAwOCwtMTY5NTUxMDY5NSwzMDM3
+ODMyNjFdfQ==
 -->
