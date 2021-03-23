@@ -18,19 +18,18 @@ In the below diagram gives you a high level overview of what is involved in this
 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/Azure-Synapse-Analytics.jpg?raw=true)
 
-
-
+### Ingest Layer
 
 
 ## Next ?
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExNjAxMjc2OSwtNjE4MTQ3OTk2LC0xOT
-IwMTQ4ODQ1LC01MTYzNjQ3ODIsMTg4OTgwNTE0MSwxNTM0OTc4
-ODQyLDcxNTE2NDcwMywxNjY2OTYwOTE4LC0yMTAxMDU2NywtNz
-ExNzA4MzYxLC0zOTY3MTcyODYsNjg1NTMwNzkxLDcxNTMwMjc1
-MiwxODc0NzkxMzQyLC05ODQyMTMzMTcsMTYzMDMyODg1MywtMT
-U5NTI5MTU2LC0xMjI2MjgwODg3LC0xNDY5NTEyMDA4LC0xNjk1
-NTEwNjk1XX0=
+eyJoaXN0b3J5IjpbLTI5NzM3NjQxNSwxMTE2MDEyNzY5LC02MT
+gxNDc5OTYsLTE5MjAxNDg4NDUsLTUxNjM2NDc4MiwxODg5ODA1
+MTQxLDE1MzQ5Nzg4NDIsNzE1MTY0NzAzLDE2NjY5NjA5MTgsLT
+IxMDEwNTY3LC03MTE3MDgzNjEsLTM5NjcxNzI4Niw2ODU1MzA3
+OTEsNzE1MzAyNzUyLDE4NzQ3OTEzNDIsLTk4NDIxMzMxNywxNj
+MwMzI4ODUzLC0xNTk1MjkxNTYsLTEyMjYyODA4ODcsLTE0Njk1
+MTIwMDhdfQ==
 -->
