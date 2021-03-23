@@ -14,7 +14,7 @@ Azure Synapse Analytics is a limitless analytics service that brings together da
 
 ## Azure Synapse Architecture
 
-In the below diagram gives you a high level overview of what is involved in this new in workspace environment andif we look at this everything's under a workspace an azure synopsis workspace you can create multiple workspaces underneath that workspace the main thing you'll be using is azure synapse studio and this is the new product that creates that single place of glass where everything we're going to do is going to be underneath that aggression app studio
+In the below diagram gives you a high level overview of what is involved in this new in workspace environment and if we look at this everything's under a workspace an azure Synapse workspace you can create multiple workspaces. The main thing you'll be using is azure synapse studio and this is the new product that creates that single place where everything going to do  underneath that aggression app studio
 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/Azure-Synapse-Analytics.jpg?raw=true)
 
@@ -26,11 +26,11 @@ In the below diagram gives you a high level overview of what is involved in this
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMDUwNzE1NywtNjE4MTQ3OTk2LC0xOT
-IwMTQ4ODQ1LC01MTYzNjQ3ODIsMTg4OTgwNTE0MSwxNTM0OTc4
-ODQyLDcxNTE2NDcwMywxNjY2OTYwOTE4LC0yMTAxMDU2NywtNz
-ExNzA4MzYxLC0zOTY3MTcyODYsNjg1NTMwNzkxLDcxNTMwMjc1
-MiwxODc0NzkxMzQyLC05ODQyMTMzMTcsMTYzMDMyODg1MywtMT
-U5NTI5MTU2LC0xMjI2MjgwODg3LC0xNDY5NTEyMDA4LC0xNjk1
-NTEwNjk1XX0=
+eyJoaXN0b3J5IjpbMzU0NzE1NDEzLC02MTgxNDc5OTYsLTE5Mj
+AxNDg4NDUsLTUxNjM2NDc4MiwxODg5ODA1MTQxLDE1MzQ5Nzg4
+NDIsNzE1MTY0NzAzLDE2NjY5NjA5MTgsLTIxMDEwNTY3LC03MT
+E3MDgzNjEsLTM5NjcxNzI4Niw2ODU1MzA3OTEsNzE1MzAyNzUy
+LDE4NzQ3OTEzNDIsLTk4NDIxMzMxNywxNjMwMzI4ODUzLC0xNT
+k1MjkxNTYsLTEyMjYyODA4ODcsLTE0Njk1MTIwMDgsLTE2OTU1
+MTA2OTVdfQ==
 -->
