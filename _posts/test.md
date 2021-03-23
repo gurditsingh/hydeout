@@ -14,6 +14,8 @@ Azure Synapse Analytics is a limitless analytics service that brings together da
 
 ## Azure Synapse Architecture
 
+In the below diagram gives you a high level overview of what is involved in this new in workspace environment andif  we look at this everything's under a workspace an azure synopsis workspace you can create multiple workspaces underneath that workspace the main thing you'll be using is azure synapse studio and this is the new product that creates that single place of glass where everything we're going to do is going to be underneath that aggression app studio
+
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/Azure-Synapse-Analytics.jpg?raw=true)
 
 
@@ -24,11 +26,11 @@ Azure Synapse Analytics is a limitless analytics service that brings together da
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxODE0Nzk5NiwtMTkyMDE0ODg0NSwtNT
-E2MzY0NzgyLDE4ODk4MDUxNDEsMTUzNDk3ODg0Miw3MTUxNjQ3
-MDMsMTY2Njk2MDkxOCwtMjEwMTA1NjcsLTcxMTcwODM2MSwtMz
-k2NzE3Mjg2LDY4NTUzMDc5MSw3MTUzMDI3NTIsMTg3NDc5MTM0
-MiwtOTg0MjEzMzE3LDE2MzAzMjg4NTMsLTE1OTUyOTE1NiwtMT
-IyNjI4MDg4NywtMTQ2OTUxMjAwOCwtMTY5NTUxMDY5NSwzMDM3
-ODMyNjFdfQ==
+eyJoaXN0b3J5IjpbMTU4MzU2MzkwNSwtNjE4MTQ3OTk2LC0xOT
+IwMTQ4ODQ1LC01MTYzNjQ3ODIsMTg4OTgwNTE0MSwxNTM0OTc4
+ODQyLDcxNTE2NDcwMywxNjY2OTYwOTE4LC0yMTAxMDU2NywtNz
+ExNzA4MzYxLC0zOTY3MTcyODYsNjg1NTMwNzkxLDcxNTMwMjc1
+MiwxODc0NzkxMzQyLC05ODQyMTMzMTcsMTYzMDMyODg1MywtMT
+U5NTI5MTU2LC0xMjI2MjgwODg3LC0xNDY5NTEyMDA4LC0xNjk1
+NTEwNjk1XX0=
 -->
