@@ -54,16 +54,17 @@ so we have ingest and we have the storage but now we have to compute on top of t
 	> Spark pools in Azure Synapse are compatible with Relational Database, Azure Storage and Azure Data Lake Generation. So you can use Spark pools to process your data stored in Azure.
 
 ### Visualize Layer
+we have **Power BI** within this Azure Synapse environment and power bi now can be used in multiple different ways.
 
 ## Next ?
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE4MjEwNDY4LC05MzI1NDUwNjMsLTEwND
-AzNDU3MjksLTI5NzM3NjQxNSwxMTE2MDEyNzY5LC02MTgxNDc5
-OTYsLTE5MjAxNDg4NDUsLTUxNjM2NDc4MiwxODg5ODA1MTQxLD
-E1MzQ5Nzg4NDIsNzE1MTY0NzAzLDE2NjY5NjA5MTgsLTIxMDEw
-NTY3LC03MTE3MDgzNjEsLTM5NjcxNzI4Niw2ODU1MzA3OTEsNz
-E1MzAyNzUyLDE4NzQ3OTEzNDIsLTk4NDIxMzMxNywxNjMwMzI4
-ODUzXX0=
+eyJoaXN0b3J5IjpbLTIwOTAzMDgxNzEsMzE4MjEwNDY4LC05Mz
+I1NDUwNjMsLTEwNDAzNDU3MjksLTI5NzM3NjQxNSwxMTE2MDEy
+NzY5LC02MTgxNDc5OTYsLTE5MjAxNDg4NDUsLTUxNjM2NDc4Mi
+wxODg5ODA1MTQxLDE1MzQ5Nzg4NDIsNzE1MTY0NzAzLDE2NjY5
+NjA5MTgsLTIxMDEwNTY3LC03MTE3MDgzNjEsLTM5NjcxNzI4Ni
+w2ODU1MzA3OTEsNzE1MzAyNzUyLDE4NzQ3OTEzNDIsLTk4NDIx
+MzMxN119
 -->
