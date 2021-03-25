@@ -32,17 +32,17 @@ In the storage layer we have different options to load or store the data.
 ### Compute Layer
 so we have ingest and we have the storage but now we have to compute on top of the storage so we have three ways of doing that in azure synapse.
 
- - **Sql Provisioned Pool** We have the sql provision this is your traditional sql data warehouse that has a one-to-one relationship with a relational database
+ - **Sql Provisioned Pool** We have the sql provision this is your traditional sql data warehouse that has a one-to-one relationship with a relational database. Dedicated SQL pool (formerly SQL DW) represents a collection of analytic resources that are provisioned when using Synapse SQL. The size of a dedicated SQL pool (formerly SQL DW) is determined by Data Warehousing Units (DWU).
 
 ## Next ?
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMjU0NTA2MywtMTA0MDM0NTcyOSwtMj
-k3Mzc2NDE1LDExMTYwMTI3NjksLTYxODE0Nzk5NiwtMTkyMDE0
-ODg0NSwtNTE2MzY0NzgyLDE4ODk4MDUxNDEsMTUzNDk3ODg0Mi
-w3MTUxNjQ3MDMsMTY2Njk2MDkxOCwtMjEwMTA1NjcsLTcxMTcw
-ODM2MSwtMzk2NzE3Mjg2LDY4NTUzMDc5MSw3MTUzMDI3NTIsMT
-g3NDc5MTM0MiwtOTg0MjEzMzE3LDE2MzAzMjg4NTMsLTE1OTUy
-OTE1Nl19
+eyJoaXN0b3J5IjpbLTEyMTgzMDAxMDgsLTkzMjU0NTA2MywtMT
+A0MDM0NTcyOSwtMjk3Mzc2NDE1LDExMTYwMTI3NjksLTYxODE0
+Nzk5NiwtMTkyMDE0ODg0NSwtNTE2MzY0NzgyLDE4ODk4MDUxND
+EsMTUzNDk3ODg0Miw3MTUxNjQ3MDMsMTY2Njk2MDkxOCwtMjEw
+MTA1NjcsLTcxMTcwODM2MSwtMzk2NzE3Mjg2LDY4NTUzMDc5MS
+w3MTUzMDI3NTIsMTg3NDc5MTM0MiwtOTg0MjEzMzE3LDE2MzAz
+Mjg4NTNdfQ==
 -->
