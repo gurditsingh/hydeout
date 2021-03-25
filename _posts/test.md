@@ -30,17 +30,19 @@ In the storage layer we have different options to load or store the data.
  - **Cosmos db**   you can land it into cosmos db within the synapse studio. Azure synapse introduced a link to cosmos db so if you land data and content on db that can be easily queried for reporting purposes.
 
 ### Compute Layer
+so we have ingest and we have the storage but now we have to compute on top of the storage so we have three ways of doing that in azure synapse.
 
+ - List item
 
 ## Next ?
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0Njc5OTE0MCwtMTA0MDM0NTcyOSwtMj
-k3Mzc2NDE1LDExMTYwMTI3NjksLTYxODE0Nzk5NiwtMTkyMDE0
-ODg0NSwtNTE2MzY0NzgyLDE4ODk4MDUxNDEsMTUzNDk3ODg0Mi
-w3MTUxNjQ3MDMsMTY2Njk2MDkxOCwtMjEwMTA1NjcsLTcxMTcw
-ODM2MSwtMzk2NzE3Mjg2LDY4NTUzMDc5MSw3MTUzMDI3NTIsMT
-g3NDc5MTM0MiwtOTg0MjEzMzE3LDE2MzAzMjg4NTMsLTE1OTUy
-OTE1Nl19
+eyJoaXN0b3J5IjpbLTE2NTUyMjE5NzUsLTEwNDAzNDU3MjksLT
+I5NzM3NjQxNSwxMTE2MDEyNzY5LC02MTgxNDc5OTYsLTE5MjAx
+NDg4NDUsLTUxNjM2NDc4MiwxODg5ODA1MTQxLDE1MzQ5Nzg4ND
+IsNzE1MTY0NzAzLDE2NjY5NjA5MTgsLTIxMDEwNTY3LC03MTE3
+MDgzNjEsLTM5NjcxNzI4Niw2ODU1MzA3OTEsNzE1MzAyNzUyLD
+E4NzQ3OTEzNDIsLTk4NDIxMzMxNywxNjMwMzI4ODUzLC0xNTk1
+MjkxNTZdfQ==
 -->
