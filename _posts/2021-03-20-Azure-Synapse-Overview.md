@@ -1,5 +1,5 @@
 ---
-title: "Azure Synapse Analytics as a Cloud Lakehouse: Overview #Episode-1"
+title: "Episode-1 Overview : Azure Synapse Analytics as a Cloud Lakehouse"
 layout: post
 excerpt: "Azure Synapse Analytics and that allows you to have Azure SQL Data Warehouse, Azure Data Lake, Azure Analytics, Power BI, Azure Machine Learning,  and it all is in one ecosystem inside of Microsoft Azure."
 last_modified_at: 2021-03-20T09:12:02-05:00
