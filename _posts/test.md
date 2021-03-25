@@ -48,17 +48,22 @@ so we have ingest and we have the storage but now we have to compute on top of t
 	> you can query Data lake, Spark table and Cosmos db you've created in the storage, directly from serverless SQL pool.
 
  - **Apache Spark Pool -** Azure Synapse makes it easy to create and configure a serverless Apache Spark pool in Azure.
-Apache Spark includes many language features to support preparation and processing of large volumes of data so that it can be made more valuable and then consumed by other services within Azure Synapse Analytics. This is enabled through multiple languages (C#, Scala, PySpark, Spark SQL) and supplied libraries for processing and connectivity.
+  
+	Apache Spark includes many language features to support preparation and processing of large volumes of data so that it can be made more valuable and then consumed by other services within Azure Synapse Analytics. This is enabled through multiple languages (C#, Scala, PySpark, Spark SQL) and supplied libraries for processing and connectivity.
+
+> Spark pools in Azure Synapse are compatible with Relational Database,
+> Azure Storage and Azure Data Lake Generation. So you can use Spark
+> pools to process your data stored in Azure.
 
 ## Next ?
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIzNTUwNTE4LC05MzI1NDUwNjMsLTEwND
-AzNDU3MjksLTI5NzM3NjQxNSwxMTE2MDEyNzY5LC02MTgxNDc5
-OTYsLTE5MjAxNDg4NDUsLTUxNjM2NDc4MiwxODg5ODA1MTQxLD
-E1MzQ5Nzg4NDIsNzE1MTY0NzAzLDE2NjY5NjA5MTgsLTIxMDEw
-NTY3LC03MTE3MDgzNjEsLTM5NjcxNzI4Niw2ODU1MzA3OTEsNz
-E1MzAyNzUyLDE4NzQ3OTEzNDIsLTk4NDIxMzMxNywxNjMwMzI4
-ODUzXX0=
+eyJoaXN0b3J5IjpbNzg2MzA5OTIsLTkzMjU0NTA2MywtMTA0MD
+M0NTcyOSwtMjk3Mzc2NDE1LDExMTYwMTI3NjksLTYxODE0Nzk5
+NiwtMTkyMDE0ODg0NSwtNTE2MzY0NzgyLDE4ODk4MDUxNDEsMT
+UzNDk3ODg0Miw3MTUxNjQ3MDMsMTY2Njk2MDkxOCwtMjEwMTA1
+NjcsLTcxMTcwODM2MSwtMzk2NzE3Mjg2LDY4NTUzMDc5MSw3MT
+UzMDI3NTIsMTg3NDc5MTM0MiwtOTg0MjEzMzE3LDE2MzAzMjg4
+NTNdfQ==
 -->
