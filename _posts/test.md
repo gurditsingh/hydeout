@@ -38,7 +38,10 @@ so we have ingest and we have the storage but now we have to compute on top of t
 	 
 	 Dedicated SQL pool (formerly SQL DW) stores data in relational tables with columnar storage. This format significantly reduces the data storage costs, and improves query performance. Once data is stored, you can run analytics at massive scale.
 
-you can query 
+	
+
+> you can query Relational Database or Data lake you've created in the storage, directly from SQL pool.
+
 	 
  - **Sql On-Demand Pool -** Sql On-Demand or Serverless SQL pool is serverless, hence there's no infrastructure to setup or clusters to maintain. A default endpoint for this service is provided within every Azure Synapse workspace, so you can start querying data as soon as the workspace is created.
 
@@ -49,11 +52,11 @@ you can query
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0ODg2NDQ1MCwtOTMyNTQ1MDYzLC0xMD
-QwMzQ1NzI5LC0yOTczNzY0MTUsMTExNjAxMjc2OSwtNjE4MTQ3
-OTk2LC0xOTIwMTQ4ODQ1LC01MTYzNjQ3ODIsMTg4OTgwNTE0MS
-wxNTM0OTc4ODQyLDcxNTE2NDcwMywxNjY2OTYwOTE4LC0yMTAx
-MDU2NywtNzExNzA4MzYxLC0zOTY3MTcyODYsNjg1NTMwNzkxLD
-cxNTMwMjc1MiwxODc0NzkxMzQyLC05ODQyMTMzMTcsMTYzMDMy
-ODg1M119
+eyJoaXN0b3J5IjpbMzA3MTQwOTMwLC05MzI1NDUwNjMsLTEwND
+AzNDU3MjksLTI5NzM3NjQxNSwxMTE2MDEyNzY5LC02MTgxNDc5
+OTYsLTE5MjAxNDg4NDUsLTUxNjM2NDc4MiwxODg5ODA1MTQxLD
+E1MzQ5Nzg4NDIsNzE1MTY0NzAzLDE2NjY5NjA5MTgsLTIxMDEw
+NTY3LC03MTE3MDgzNjEsLTM5NjcxNzI4Niw2ODU1MzA3OTEsNz
+E1MzAyNzUyLDE4NzQ3OTEzNDIsLTk4NDIxMzMxNywxNjMwMzI4
+ODUzXX0=
 -->
