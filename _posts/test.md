@@ -18,14 +18,18 @@ In the below diagram gives you a high level overview of what is involved in this
 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/Azure-Synapse-Analytics.jpg?raw=true)
 
-### Ingest Layer
-At the top level have ingest data into synapse studio and it's using azure data factory. we don't call it data factory within synapse studio but we have pipelines and data flows to ingest the data and land the data in storage.
+### 1) Ingest Layer
+At the top level have Ingest data Layer into synapse studio and it's using azure data factory. we don't call it data factory within synapse studio but we have pipelines and data flows to ingest the data and land the data in storage.
+
+### Storage Layer
+
+
 
 ## Next ?
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyMTg4Mjk1OCwtMjk3Mzc2NDE1LDExMT
+eyJoaXN0b3J5IjpbLTI4MTM3MjAzOCwtMjk3Mzc2NDE1LDExMT
 YwMTI3NjksLTYxODE0Nzk5NiwtMTkyMDE0ODg0NSwtNTE2MzY0
 NzgyLDE4ODk4MDUxNDEsMTUzNDk3ODg0Miw3MTUxNjQ3MDMsMT
 Y2Njk2MDkxOCwtMjEwMTA1NjcsLTcxMTcwODM2MSwtMzk2NzE3
