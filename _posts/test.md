@@ -25,17 +25,17 @@ At the top level have Ingest data Layer into synapse studio and it's using azure
 In the storage layer we have different options to load or store the data.
 
  - **Relational Database** you can land it into your traditional relational database or your data warehouse and that is what we used to call the sql data warehouse it's the same concept it's a relational database for your data warehouse.
- - **Data Lake** you can land it into your data lake store gen 2 it's your data lake (data lake store gen 2 is our c is our enhancement to) or what we used to call blob store what we still call blob store and azure data lake store we now call gen 1 we took the best features of both those products and put it into gen 2. so that's your landing zone it's schema on read it's like a file folder it's a glorified file structure now and i can land data in there in any type of format on that
+ - **Data Lake** you can land it into your data lake store gen 2 it's your data lake (ADLS Gen 2) or what we used to call blob store or azure data lake store and can land data in there in any type of format on that
 
 ## Next ?
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjUxODE0OTAsLTI5NzM3NjQxNSwxMT
-E2MDEyNzY5LC02MTgxNDc5OTYsLTE5MjAxNDg4NDUsLTUxNjM2
-NDc4MiwxODg5ODA1MTQxLDE1MzQ5Nzg4NDIsNzE1MTY0NzAzLD
-E2NjY5NjA5MTgsLTIxMDEwNTY3LC03MTE3MDgzNjEsLTM5Njcx
-NzI4Niw2ODU1MzA3OTEsNzE1MzAyNzUyLDE4NzQ3OTEzNDIsLT
-k4NDIxMzMxNywxNjMwMzI4ODUzLC0xNTk1MjkxNTYsLTEyMjYy
-ODA4ODddfQ==
+eyJoaXN0b3J5IjpbMTQwOTgwNzIxMiwtMjk3Mzc2NDE1LDExMT
+YwMTI3NjksLTYxODE0Nzk5NiwtMTkyMDE0ODg0NSwtNTE2MzY0
+NzgyLDE4ODk4MDUxNDEsMTUzNDk3ODg0Miw3MTUxNjQ3MDMsMT
+Y2Njk2MDkxOCwtMjEwMTA1NjcsLTcxMTcwODM2MSwtMzk2NzE3
+Mjg2LDY4NTUzMDc5MSw3MTUzMDI3NTIsMTg3NDc5MTM0MiwtOT
+g0MjEzMzE3LDE2MzAzMjg4NTMsLTE1OTUyOTE1NiwtMTIyNjI4
+MDg4N119
 -->
