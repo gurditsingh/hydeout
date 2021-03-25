@@ -26,17 +26,18 @@ In the storage layer we have different options to load or store the data.
 
  - **Relational Database** you can land it into your traditional relational database or your data warehouse and that is what we used to call the sql data warehouse it's the same concept it's a relational database for your data warehouse.
  - **Data Lake** you can land it into your data lake store gen 2 it's your data lake (ADLS Gen 2) or what we used to call blob store or azure data lake store and can land data in there in any type of format.
- - **Spark Tables** you can land it into spark table within synapse studio. if you're familiar with Azure Databricks database is a collection of tables. An Azure Databricks table is a collection of structured data. You can cache, filter, and perform any operations supported by Apache Spark on Azure Databricks tables. You can query tables with Spark APIs and Spark SQL.
+ - **Spark Tables** you can land it into spark table within synapse studio. if you're familiar with Azure Databricks. An Azure Databricks table is a collection of structured data. You can cache, filter, and perform any operations supported by Apache Spark on Azure Databricks tables. You can query tables with Spark APIs and Spark SQL.
+ - **Cosmos db**   you can land it into Cosmos db
 
 ## Next ?
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNjM1NDE0NiwtMTA0MDM0NTcyOSwtMj
-k3Mzc2NDE1LDExMTYwMTI3NjksLTYxODE0Nzk5NiwtMTkyMDE0
-ODg0NSwtNTE2MzY0NzgyLDE4ODk4MDUxNDEsMTUzNDk3ODg0Mi
-w3MTUxNjQ3MDMsMTY2Njk2MDkxOCwtMjEwMTA1NjcsLTcxMTcw
-ODM2MSwtMzk2NzE3Mjg2LDY4NTUzMDc5MSw3MTUzMDI3NTIsMT
-g3NDc5MTM0MiwtOTg0MjEzMzE3LDE2MzAzMjg4NTMsLTE1OTUy
-OTE1Nl19
+eyJoaXN0b3J5IjpbLTE0MDQ5MTk4MzgsLTEwNDAzNDU3MjksLT
+I5NzM3NjQxNSwxMTE2MDEyNzY5LC02MTgxNDc5OTYsLTE5MjAx
+NDg4NDUsLTUxNjM2NDc4MiwxODg5ODA1MTQxLDE1MzQ5Nzg4ND
+IsNzE1MTY0NzAzLDE2NjY5NjA5MTgsLTIxMDEwNTY3LC03MTE3
+MDgzNjEsLTM5NjcxNzI4Niw2ODU1MzA3OTEsNzE1MzAyNzUyLD
+E4NzQ3OTEzNDIsLTk4NDIxMzMxNywxNjMwMzI4ODUzLC0xNTk1
+MjkxNTZdfQ==
 -->
