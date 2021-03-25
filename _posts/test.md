@@ -58,17 +58,18 @@ we have **Power BI** within this Azure Synapse environment and power bi now can 
 
 one is where call a provision pool and run a stored procedure or run a query or execute a view and it pulls data in from the relational database that could be a direct query where it pushes down the query or it can import the data into power bi.
 
+second is where we can use power bi on top of the sql on demand pool to query data in the data lake so think about this i can land data quickly in the data lake store gen 2 and i can run a sql on-demand pool on top of that and call that with through power bi so power vi the only time i'm being charged is the storage in gen 2 which is extremely cheap and when that query runs through the on-demand pool through power bi so this gets me a quick way to create a report i can even use power bi just to investigate the data and see if it's interesting or not
 
 
 ## Next ?
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY0NDcwNDEyLDMxODIxMDQ2OCwtOTMyNT
-Q1MDYzLC0xMDQwMzQ1NzI5LC0yOTczNzY0MTUsMTExNjAxMjc2
-OSwtNjE4MTQ3OTk2LC0xOTIwMTQ4ODQ1LC01MTYzNjQ3ODIsMT
-g4OTgwNTE0MSwxNTM0OTc4ODQyLDcxNTE2NDcwMywxNjY2OTYw
-OTE4LC0yMTAxMDU2NywtNzExNzA4MzYxLC0zOTY3MTcyODYsNj
-g1NTMwNzkxLDcxNTMwMjc1MiwxODc0NzkxMzQyLC05ODQyMTMz
-MTddfQ==
+eyJoaXN0b3J5IjpbLTE4MjQ2MzMxNDIsMzE4MjEwNDY4LC05Mz
+I1NDUwNjMsLTEwNDAzNDU3MjksLTI5NzM3NjQxNSwxMTE2MDEy
+NzY5LC02MTgxNDc5OTYsLTE5MjAxNDg4NDUsLTUxNjM2NDc4Mi
+wxODg5ODA1MTQxLDE1MzQ5Nzg4NDIsNzE1MTY0NzAzLDE2NjY5
+NjA5MTgsLTIxMDEwNTY3LC03MTE3MDgzNjEsLTM5NjcxNzI4Ni
+w2ODU1MzA3OTEsNzE1MzAyNzUyLDE4NzQ3OTEzNDIsLTk4NDIx
+MzMxN119
 -->
