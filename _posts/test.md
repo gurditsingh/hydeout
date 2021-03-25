@@ -60,16 +60,17 @@ one is where call a provision pool and run a stored procedure or run a query or 
 
 second is where we can use power bi on top of the sql on demand pool to query data in the data lake. Suppose we have data lake store gen 2 and can run a sql on-demand pool on top of that and call that with through power BI and being charged for the data processed by queries. when that query runs through the on-demand pool through power BI so this gets me a quick way to create a report can even use power bi just to investigate the data.
 
+### Monitoring and Management
 
 ## Next ?
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODY4ODQ3OTIsMzE4MjEwNDY4LC05Mz
-I1NDUwNjMsLTEwNDAzNDU3MjksLTI5NzM3NjQxNSwxMTE2MDEy
-NzY5LC02MTgxNDc5OTYsLTE5MjAxNDg4NDUsLTUxNjM2NDc4Mi
-wxODg5ODA1MTQxLDE1MzQ5Nzg4NDIsNzE1MTY0NzAzLDE2NjY5
-NjA5MTgsLTIxMDEwNTY3LC03MTE3MDgzNjEsLTM5NjcxNzI4Ni
-w2ODU1MzA3OTEsNzE1MzAyNzUyLDE4NzQ3OTEzNDIsLTk4NDIx
-MzMxN119
+eyJoaXN0b3J5IjpbMTExMzQ3ODI3NywzMTgyMTA0NjgsLTkzMj
+U0NTA2MywtMTA0MDM0NTcyOSwtMjk3Mzc2NDE1LDExMTYwMTI3
+NjksLTYxODE0Nzk5NiwtMTkyMDE0ODg0NSwtNTE2MzY0NzgyLD
+E4ODk4MDUxNDEsMTUzNDk3ODg0Miw3MTUxNjQ3MDMsMTY2Njk2
+MDkxOCwtMjEwMTA1NjcsLTcxMTcwODM2MSwtMzk2NzE3Mjg2LD
+Y4NTUzMDc5MSw3MTUzMDI3NTIsMTg3NDc5MTM0MiwtOTg0MjEz
+MzE3XX0=
 -->
