@@ -32,11 +32,12 @@ In the storage layer we have different options to load or store the data.
 ### Compute Layer
 so we have ingest and we have the storage but now we have to compute on top of the storage so we have three ways of doing that in azure synapse.
 
- - **Sql Provisioned Pool** We have the sql provision this is your traditional sql data warehouse that has a one-to-one relationship with a relational database. Dedicated SQL pool (formerly SQL DW) represents a collection of analytic resources that are provisioned when using Synapse SQL. The size of a dedicated SQL pool (formerly SQL DW) is determined by Data Warehousing Units (DWU).
+ - **Sql Provisioned Pool -** We have the sql provision this is your traditional sql data warehouse that has a one-to-one relationship with a relational database. Dedicated SQL pool (formerly SQL DW) represents a collection of analytic resources that are provisioned when using Synapse SQL. The size of a dedicated SQL pool (formerly SQL DW) is determined by Data Warehousing Units (DWU).
  
 	 When the data is ready for complex analysis, dedicated SQL pool uses PolyBase to query the big data stores. PolyBase uses standard T-SQL queries to bring the data into dedicated SQL pool (formerly SQL DW) tables.
 	 
 	 Dedicated SQL pool (formerly SQL DW) stores data in relational tables with columnar storage. This format significantly reduces the data storage costs, and improves query performance. Once data is stored, you can run analytics at massive scale.
+	 
  - **Sql On-Demand Pool** Sql On-Demand or Serverless SQL pool is serverless, hence there's no infrastructure to setup or clusters to maintain. A default endpoint for this service is provided within every Azure Synapse workspace, so you can start querying data as soon as the workspace is created.
 
 	There is no charge for resources reserved, you are only being charged for the data processed by queries you run, hence this model is a true pay-per-use model.
@@ -46,11 +47,11 @@ so we have ingest and we have the storage but now we have to compute on top of t
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NjQyNjczNSwtOTMyNTQ1MDYzLC0xMD
-QwMzQ1NzI5LC0yOTczNzY0MTUsMTExNjAxMjc2OSwtNjE4MTQ3
-OTk2LC0xOTIwMTQ4ODQ1LC01MTYzNjQ3ODIsMTg4OTgwNTE0MS
-wxNTM0OTc4ODQyLDcxNTE2NDcwMywxNjY2OTYwOTE4LC0yMTAx
-MDU2NywtNzExNzA4MzYxLC0zOTY3MTcyODYsNjg1NTMwNzkxLD
-cxNTMwMjc1MiwxODc0NzkxMzQyLC05ODQyMTMzMTcsMTYzMDMy
-ODg1M119
+eyJoaXN0b3J5IjpbLTE3Mjg4NjE4NzgsLTkzMjU0NTA2MywtMT
+A0MDM0NTcyOSwtMjk3Mzc2NDE1LDExMTYwMTI3NjksLTYxODE0
+Nzk5NiwtMTkyMDE0ODg0NSwtNTE2MzY0NzgyLDE4ODk4MDUxND
+EsMTUzNDk3ODg0Miw3MTUxNjQ3MDMsMTY2Njk2MDkxOCwtMjEw
+MTA1NjcsLTcxMTcwODM2MSwtMzk2NzE3Mjg2LDY4NTUzMDc5MS
+w3MTUzMDI3NTIsMTg3NDc5MTM0MiwtOTg0MjEzMzE3LDE2MzAz
+Mjg4NTNdfQ==
 -->
