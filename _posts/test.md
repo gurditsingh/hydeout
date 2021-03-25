@@ -47,13 +47,13 @@ so we have ingest and we have the storage but now we have to compute on top of t
 	There is no charge for resources reserved, you are only being charged for the data processed by queries you run, hence this model is a true pay-per-use model.
 	> you can query Data lake, Spark table and Cosmos db you've created in the storage, directly from serverless SQL pool.
 
-
+ - **Apache Spark Pool -** Azure Synapse makes it easy to create and configure a serverless Apache Spark pool in Azure.
 
 ## Next ?
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYxODExMzQ2LC05MzI1NDUwNjMsLTEwND
+eyJoaXN0b3J5IjpbNTMwMTk2MjcxLC05MzI1NDUwNjMsLTEwND
 AzNDU3MjksLTI5NzM3NjQxNSwxMTE2MDEyNzY5LC02MTgxNDc5
 OTYsLTE5MjAxNDg4NDUsLTUxNjM2NDc4MiwxODg5ODA1MTQxLD
 E1MzQ5Nzg4NDIsNzE1MTY0NzAzLDE2NjY5NjA5MTgsLTIxMDEw
