@@ -1,7 +1,7 @@
 ---
 title: "Episode-2 'Architecture' : Azure Synapse Analytics as a Cloud Lakehouse"
 layout: post
-excerpt: "Azure Synapse Analytics and that allows you to create Cloud Lakehouse, lets see high level architecture of what is involved in this new in workspace environment"
+excerpt: "Azure Synapse Analytics allows you to create Cloud Lakehouse, lets see high level architecture of what is involved in this new in workspace environment"
 last_modified_at: 2021-03-25T09:11:02-05:00
 tags:
   - Azure
