@@ -56,15 +56,19 @@ so we have ingest and we have the storage but now we have to compute on top of t
 ### Visualize Layer
 we have **Power BI** within this Azure Synapse environment and power bi now can be used in multiple different ways.
 
+one is where call a provision pool and run a stored procedure or run a query or execute a view and it pulls data in from the relational database that could be a direct query where it pushes down the query or it can import the data into power bi.
+
+
+
 ## Next ?
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTAzMDgxNzEsMzE4MjEwNDY4LC05Mz
-I1NDUwNjMsLTEwNDAzNDU3MjksLTI5NzM3NjQxNSwxMTE2MDEy
-NzY5LC02MTgxNDc5OTYsLTE5MjAxNDg4NDUsLTUxNjM2NDc4Mi
-wxODg5ODA1MTQxLDE1MzQ5Nzg4NDIsNzE1MTY0NzAzLDE2NjY5
-NjA5MTgsLTIxMDEwNTY3LC03MTE3MDgzNjEsLTM5NjcxNzI4Ni
-w2ODU1MzA3OTEsNzE1MzAyNzUyLDE4NzQ3OTEzNDIsLTk4NDIx
-MzMxN119
+eyJoaXN0b3J5IjpbOTY0NDcwNDEyLDMxODIxMDQ2OCwtOTMyNT
+Q1MDYzLC0xMDQwMzQ1NzI5LC0yOTczNzY0MTUsMTExNjAxMjc2
+OSwtNjE4MTQ3OTk2LC0xOTIwMTQ4ODQ1LC01MTYzNjQ3ODIsMT
+g4OTgwNTE0MSwxNTM0OTc4ODQyLDcxNTE2NDcwMywxNjY2OTYw
+OTE4LC0yMTAxMDU2NywtNzExNzA4MzYxLC0zOTY3MTcyODYsNj
+g1NTMwNzkxLDcxNTMwMjc1MiwxODc0NzkxMzQyLC05ODQyMTMz
+MTddfQ==
 -->
