@@ -32,17 +32,17 @@ In the storage layer we have different options to load or store the data.
 ### Compute Layer
 so we have ingest and we have the storage but now we have to compute on top of the storage so we have three ways of doing that in azure synapse.
 
- - List item
+ - **Sql Provisioned Pool** 
 
 ## Next ?
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTUyMjE5NzUsLTEwNDAzNDU3MjksLT
-I5NzM3NjQxNSwxMTE2MDEyNzY5LC02MTgxNDc5OTYsLTE5MjAx
-NDg4NDUsLTUxNjM2NDc4MiwxODg5ODA1MTQxLDE1MzQ5Nzg4ND
-IsNzE1MTY0NzAzLDE2NjY5NjA5MTgsLTIxMDEwNTY3LC03MTE3
-MDgzNjEsLTM5NjcxNzI4Niw2ODU1MzA3OTEsNzE1MzAyNzUyLD
-E4NzQ3OTEzNDIsLTk4NDIxMzMxNywxNjMwMzI4ODUzLC0xNTk1
-MjkxNTZdfQ==
+eyJoaXN0b3J5IjpbODI4NjcyMDkwLC0xMDQwMzQ1NzI5LC0yOT
+czNzY0MTUsMTExNjAxMjc2OSwtNjE4MTQ3OTk2LC0xOTIwMTQ4
+ODQ1LC01MTYzNjQ3ODIsMTg4OTgwNTE0MSwxNTM0OTc4ODQyLD
+cxNTE2NDcwMywxNjY2OTYwOTE4LC0yMTAxMDU2NywtNzExNzA4
+MzYxLC0zOTY3MTcyODYsNjg1NTMwNzkxLDcxNTMwMjc1MiwxOD
+c0NzkxMzQyLC05ODQyMTMzMTcsMTYzMDMyODg1MywtMTU5NTI5
+MTU2XX0=
 -->
