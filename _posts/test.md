@@ -26,14 +26,14 @@ In the storage layer we have different options to load or store the data.
 
  - **Relational Database** you can land it into your traditional relational database or your data warehouse and that is what we used to call the sql data warehouse it's the same concept it's a relational database for your data warehouse.
  - **Data Lake** you can land it into your data lake store gen 2 it's your data lake (ADLS Gen 2) or what we used to call blob store or azure data lake store and can land data in there in any type of format.
- - **Spark Tables** you can land it into spark table within synapse studio. if you're familiar with Azure Databricks. An Azure Databricks table is a collection of structured data. You can cache, filter, and perform any operations supported by Apache Spark on Azure Databricks tables. You can query tables with Spark APIs and Spark SQL.
- - **Cosmos db**   you can land it into 
+ - **Spark Tables** you can land it into spark table within the synapse studio. if you're familiar with Azure Databricks. An Azure Databricks table is a collection of structured data. You can cache, filter, and perform any operations supported by Apache Spark on Azure Databricks tables. You can query tables with Spark APIs and Spark SQL.
+ - **Cosmos db**   you can land it into cosmos db within the synapse studio. Azure synapse into
 
 ## Next ?
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ5NzU1NjM5NCwtMTA0MDM0NTcyOSwtMj
+eyJoaXN0b3J5IjpbLTQ5MDI0MTA5MiwtMTA0MDM0NTcyOSwtMj
 k3Mzc2NDE1LDExMTYwMTI3NjksLTYxODE0Nzk5NiwtMTkyMDE0
 ODg0NSwtNTE2MzY0NzgyLDE4ODk4MDUxNDEsMTUzNDk3ODg0Mi
 w3MTUxNjQ3MDMsMTY2Njk2MDkxOCwtMjEwMTA1NjcsLTcxMTcw
