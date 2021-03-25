@@ -24,17 +24,17 @@ At the top level have Ingest data Layer into synapse studio and it's using azure
 ### Storage Layer
 In the storage layer we have different options to load or store the data.
 
-
+ - **Relational Database** you can land it into your traditional relational database or your data warehouse and that is what we used to call the sql data warehouse it's the same concept it's a relational database for your data warehouse.
 
 ## Next ?
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NDU3MDMwNywtMjk3Mzc2NDE1LDExMT
-YwMTI3NjksLTYxODE0Nzk5NiwtMTkyMDE0ODg0NSwtNTE2MzY0
-NzgyLDE4ODk4MDUxNDEsMTUzNDk3ODg0Miw3MTUxNjQ3MDMsMT
-Y2Njk2MDkxOCwtMjEwMTA1NjcsLTcxMTcwODM2MSwtMzk2NzE3
-Mjg2LDY4NTUzMDc5MSw3MTUzMDI3NTIsMTg3NDc5MTM0MiwtOT
-g0MjEzMzE3LDE2MzAzMjg4NTMsLTE1OTUyOTE1NiwtMTIyNjI4
-MDg4N119
+eyJoaXN0b3J5IjpbNDE5MDc4MjgzLC0yOTczNzY0MTUsMTExNj
+AxMjc2OSwtNjE4MTQ3OTk2LC0xOTIwMTQ4ODQ1LC01MTYzNjQ3
+ODIsMTg4OTgwNTE0MSwxNTM0OTc4ODQyLDcxNTE2NDcwMywxNj
+Y2OTYwOTE4LC0yMTAxMDU2NywtNzExNzA4MzYxLC0zOTY3MTcy
+ODYsNjg1NTMwNzkxLDcxNTMwMjc1MiwxODc0NzkxMzQyLC05OD
+QyMTMzMTcsMTYzMDMyODg1MywtMTU5NTI5MTU2LC0xMjI2Mjgw
+ODg3XX0=
 -->
