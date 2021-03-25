@@ -51,15 +51,15 @@ so we have ingest and we have the storage but now we have to compute on top of t
   
 	Apache Spark includes many language features to support preparation and processing of large volumes of data so that it can be made more valuable and then consumed by other services within Azure Synapse Analytics. This is enabled through multiple languages (C#, Scala, PySpark, Spark SQL) and supplied libraries for processing and connectivity.
 
-> Spark pools in Azure Synapse are compatible with Relational Database,
->Azure Storage and Azure Data Lake Generation. So you can use Spark
-> pools to process your data stored in Azure.
+	> Spark pools in Azure Synapse are compatible with Relational Database, Azure Storage and Azure Data Lake Generation. So you can use Spark pools to process your data stored in Azure.
+
+### Compute Layer
 
 ## Next ?
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2NjE3MDA3OCwtOTMyNTQ1MDYzLC0xMD
+eyJoaXN0b3J5IjpbLTk4OTc2MjQ4OSwtOTMyNTQ1MDYzLC0xMD
 QwMzQ1NzI5LC0yOTczNzY0MTUsMTExNjAxMjc2OSwtNjE4MTQ3
 OTk2LC0xOTIwMTQ4ODQ1LC01MTYzNjQ3ODIsMTg4OTgwNTE0MS
 wxNTM0OTc4ODQyLDcxNTE2NDcwMywxNjY2OTYwOTE4LC0yMTAx
