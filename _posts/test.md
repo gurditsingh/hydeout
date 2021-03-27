@@ -80,14 +80,15 @@ A distribution is the basic unit of storage and processing for parallel queries 
  - You can improve the efficiency and the performance of loading data by use of partition deletion, switching, and merging. So depending upon how you partition your data, you can load just the data that you need.
  - It can also be used to improve query performance by just focusing on the data that you want a query and not having to bother searching through all the data that you don't want to query.
  
-
+### Three types of Partitioning
+ 1. List item
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg2MzgzNDg1LC03MzAzNjEzMjcsLTIwMz
-A3MDI5MjYsNTM4ODUyOTg2LDI3NDU3MTIwNywxMDgyOTAzNjA5
-LDE3MDA1OTk1NTAsMTU5NzkwNjgwLC0xNzkwOTAzMjYxLDEyNz
-E2MTk3NiwzMTE1MzM5NDYsMzU4MDg4NjM0LC02MTQyOTYwODYs
-LTIwODY4ODQ3OTIsMzE4MjEwNDY4LC05MzI1NDUwNjMsLTEwND
-AzNDU3MjksLTI5NzM3NjQxNSwxMTE2MDEyNzY5LC02MTgxNDc5
-OTZdfQ==
+eyJoaXN0b3J5IjpbLTQ0MzY5NTIwOCw3ODYzODM0ODUsLTczMD
+M2MTMyNywtMjAzMDcwMjkyNiw1Mzg4NTI5ODYsMjc0NTcxMjA3
+LDEwODI5MDM2MDksMTcwMDU5OTU1MCwxNTk3OTA2ODAsLTE3OT
+A5MDMyNjEsMTI3MTYxOTc2LDMxMTUzMzk0NiwzNTgwODg2MzQs
+LTYxNDI5NjA4NiwtMjA4Njg4NDc5MiwzMTgyMTA0NjgsLTkzMj
+U0NTA2MywtMTA0MDM0NTcyOSwtMjk3Mzc2NDE1LDExMTYwMTI3
+NjldfQ==
 -->
