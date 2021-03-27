@@ -7,7 +7,7 @@ Synapse SQL Pool (formerly SQL Data Warehouse) is an MPP Enterprise Data Warehou
 -  Workload management is additional feature around managing resource utilization, concurrency and query priority.
 -  Synapse compute can be scale up down via SQL, PowerShell and Portal. The SQL ability for scaling is unique, and can be achieved via an “ALTER” command.
 
-## How organizations use the MSQL Data Warehouse ?
+## How organizations use the Modern SQL Data Warehouse ?
 
  - If you want to independently size compute power regardless of your storage needs because the compute nodes and the storage nodes are kept separate.
  - This way allows you can grow or shrink the compute power without moving that data. what you're doing is you're moving to compute node over to the data rather than moving all the date around, putting in one place, and then having to analyse it there. You can grow or shrink the compute power.
@@ -15,7 +15,7 @@ Synapse SQL Pool (formerly SQL Data Warehouse) is an MPP Enterprise Data Warehou
  - You can resume your compute capacity during business hours and start processing the data for reporting and etc.
 
 
-## Massive Parallel Processing
+## Massive Parallel Processing (MPP Architecture)
 In the Massive Parallel Processing at the top here we have the control node and this is the application or user connection. The control node is the brain/heart of your massive parallel processing engine. 
 
 It divides it up into 60 different nodes, and what this allows you to do processing in parallel to different nodes that you have of your storage. So what this is going to do is make a very powerful engine to run massive queries upon your data.
@@ -42,7 +42,7 @@ And at the bottom we have the Azure storage, this is where you keep your data, a
 **Storage Node (Azure Storage)** and lastly, we have the storage node, and the storage node is kept separate from compute in order to keep data at rest. And this data at rest is cheaper than the data that is being analysed.
 
 
-## Implementing Data Distributions for an SQL Data Warehouse
+## Implementing Data Distributions for SQL Data Warehouse
 
 A distribution is the basic unit of storage and processing for parallel queries that run on distributed data. When Synapse SQL runs a query, the work is divided into 60 smaller queries that run in parallel. Each of the 60 smaller queries runs on one of the data distributions.
 
@@ -74,7 +74,7 @@ A distribution is the basic unit of storage and processing for parallel queries 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/data-distribution-to-use.jpg?raw=true)
 
 
-## Implementing partitions for an SQL Data Warehouse
+## Implementing partitions for SQL Data Warehouse
 
  - Table partitions enable you to divide the data into smaller groups of data to make it more functionable when you're dealing with a large amount of data.
  - You can improve the efficiency and the performance of loading data by use of partition deletion, switching, and merging. So depending upon how you partition your data, you can load just the data that you need.
@@ -86,13 +86,15 @@ A distribution is the basic unit of storage and processing for parallel queries 
  3. **Heap :** To use Heap where data is not in any particular order, and it's best used when data does not have a natural order to it, then you should use a heap.
 
 
+## Next ?
 
+Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg0MTkzNTA4LDc4NjM4MzQ4NSwtNzMwMz
-YxMzI3LC0yMDMwNzAyOTI2LDUzODg1Mjk4NiwyNzQ1NzEyMDcs
-MTA4MjkwMzYwOSwxNzAwNTk5NTUwLDE1OTc5MDY4MCwtMTc5MD
-kwMzI2MSwxMjcxNjE5NzYsMzExNTMzOTQ2LDM1ODA4ODYzNCwt
-NjE0Mjk2MDg2LC0yMDg2ODg0NzkyLDMxODIxMDQ2OCwtOTMyNT
-Q1MDYzLC0xMDQwMzQ1NzI5LC0yOTczNzY0MTUsMTExNjAxMjc2
-OV19
+eyJoaXN0b3J5IjpbLTE2NTQzMDAzNSw3ODYzODM0ODUsLTczMD
+M2MTMyNywtMjAzMDcwMjkyNiw1Mzg4NTI5ODYsMjc0NTcxMjA3
+LDEwODI5MDM2MDksMTcwMDU5OTU1MCwxNTk3OTA2ODAsLTE3OT
+A5MDMyNjEsMTI3MTYxOTc2LDMxMTUzMzk0NiwzNTgwODg2MzQs
+LTYxNDI5NjA4NiwtMjA4Njg4NDc5MiwzMTgyMTA0NjgsLTkzMj
+U0NTA2MywtMTA0MDM0NTcyOSwtMjk3Mzc2NDE1LDExMTYwMTI3
+NjldfQ==
 -->
