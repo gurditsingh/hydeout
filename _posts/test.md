@@ -12,14 +12,17 @@ Synapse SQL Pool (formerly SQL Data Warehouse) is an MPP Enterprise Data Warehou
  - If you want to independently size compute power regardless of your storage needs because the compute nodes and the storage nodes are kept separate.
  - This way allows you can grow or shrink the compute power without moving that data. what you're doing is you're moving to compute node over to the data rather than moving all the date around, putting in one place, and then having to analyse it there. You can grow or shrink the compute power.
  - You can pause your compute capacity while leaving data intact so this makes it so you only pay for the storage(storage is more cheaper than the processing).
- - You can resume your compute capacity during business hours.
+ - You can resume your compute capacity during business hours and start processing the data for reporting and etc.
+
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MzMwNjI3LDEyNzE2MTk3NiwzMTE1Mz
-M5NDYsMzU4MDg4NjM0LC02MTQyOTYwODYsLTIwODY4ODQ3OTIs
-MzE4MjEwNDY4LC05MzI1NDUwNjMsLTEwNDAzNDU3MjksLTI5Nz
-M3NjQxNSwxMTE2MDEyNzY5LC02MTgxNDc5OTYsLTE5MjAxNDg4
-NDUsLTUxNjM2NDc4MiwxODg5ODA1MTQxLDE1MzQ5Nzg4NDIsNz
-E1MTY0NzAzLDE2NjY5NjA5MTgsLTIxMDEwNTY3LC03MTE3MDgz
-NjFdfQ==
+eyJoaXN0b3J5IjpbLTIwMDI1ODEwNzQsMTI3MTYxOTc2LDMxMT
+UzMzk0NiwzNTgwODg2MzQsLTYxNDI5NjA4NiwtMjA4Njg4NDc5
+MiwzMTgyMTA0NjgsLTkzMjU0NTA2MywtMTA0MDM0NTcyOSwtMj
+k3Mzc2NDE1LDExMTYwMTI3NjksLTYxODE0Nzk5NiwtMTkyMDE0
+ODg0NSwtNTE2MzY0NzgyLDE4ODk4MDUxNDEsMTUzNDk3ODg0Mi
+w3MTUxNjQ3MDMsMTY2Njk2MDkxOCwtMjEwMTA1NjcsLTcxMTcw
+ODM2MV19
 -->
