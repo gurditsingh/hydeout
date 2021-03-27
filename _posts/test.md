@@ -7,7 +7,23 @@ Synapse SQL Pool (formerly SQL Data Warehouse) is an MPP Enterprise Data Warehou
 -  Workload management is additional feature around managing resource utilization, concurrency and query priority.
 -  Synapse compute can be scale up down via SQL, PowerShell and Portal. The SQL ability for scaling is unique, and can be achieved via an “ALTER” command.
 
-## Modern Way of SQL Data Warehouse
+## How organizations use the SQL Data Warehouse ?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/synapse-unifid-platform.png?raw=true)
@@ -17,11 +33,11 @@ Synapse SQL Pool (formerly SQL Data Warehouse) is an MPP Enterprise Data Warehou
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NDcyMTczNiwzMTE1MzM5NDYsMzU4MD
-g4NjM0LC02MTQyOTYwODYsLTIwODY4ODQ3OTIsMzE4MjEwNDY4
-LC05MzI1NDUwNjMsLTEwNDAzNDU3MjksLTI5NzM3NjQxNSwxMT
-E2MDEyNzY5LC02MTgxNDc5OTYsLTE5MjAxNDg4NDUsLTUxNjM2
-NDc4MiwxODg5ODA1MTQxLDE1MzQ5Nzg4NDIsNzE1MTY0NzAzLD
-E2NjY5NjA5MTgsLTIxMDEwNTY3LC03MTE3MDgzNjEsLTM5Njcx
-NzI4Nl19
+eyJoaXN0b3J5IjpbMTI3MTYxOTc2LDMxMTUzMzk0NiwzNTgwOD
+g2MzQsLTYxNDI5NjA4NiwtMjA4Njg4NDc5MiwzMTgyMTA0Njgs
+LTkzMjU0NTA2MywtMTA0MDM0NTcyOSwtMjk3Mzc2NDE1LDExMT
+YwMTI3NjksLTYxODE0Nzk5NiwtMTkyMDE0ODg0NSwtNTE2MzY0
+NzgyLDE4ODk4MDUxNDEsMTUzNDk3ODg0Miw3MTUxNjQ3MDMsMT
+Y2Njk2MDkxOCwtMjEwMTA1NjcsLTcxMTcwODM2MSwtMzk2NzE3
+Mjg2XX0=
 -->
