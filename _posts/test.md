@@ -44,16 +44,18 @@ And at the bottom we have the Azure storage, this is where you keep your data, a
 
 ## Implementing Data Distributions for an SQL Data Warehouse
 
-A distribution is the basic unit of storage and processing for parallel queries that run on distributed data. When Synapse SQL runs a query, the work is divided into 60 smaller queries that run in parallel.
+A distribution is the basic unit of storage and processing for parallel queries that run on distributed data. When Synapse SQL runs a query, the work is divided into 60 smaller queries that run in parallel. Each of the 60 smaller queries runs on one of the data distributions.
 
-Each of the 60 smaller queries runs on one of the data distributions.
+### Three types of Distributions
+
+ 1. **Replicated Table :**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1OTAzNzk3MSwxMDgyOTAzNjA5LDE3MD
-A1OTk1NTAsMTU5NzkwNjgwLDEyNzE2MTk3NiwzMTE1MzM5NDYs
-MzU4MDg4NjM0LC02MTQyOTYwODYsLTIwODY4ODQ3OTIsMzE4Mj
-EwNDY4LC05MzI1NDUwNjMsLTEwNDAzNDU3MjksLTI5NzM3NjQx
-NSwxMTE2MDEyNzY5LC02MTgxNDc5OTYsLTE5MjAxNDg4NDUsLT
-UxNjM2NDc4MiwxODg5ODA1MTQxLDE1MzQ5Nzg4NDIsNzE1MTY0
-NzAzXX0=
+eyJoaXN0b3J5IjpbMjc0NTcxMjA3LDEwODI5MDM2MDksMTcwMD
+U5OTU1MCwxNTk3OTA2ODAsMTI3MTYxOTc2LDMxMTUzMzk0Niwz
+NTgwODg2MzQsLTYxNDI5NjA4NiwtMjA4Njg4NDc5MiwzMTgyMT
+A0NjgsLTkzMjU0NTA2MywtMTA0MDM0NTcyOSwtMjk3Mzc2NDE1
+LDExMTYwMTI3NjksLTYxODE0Nzk5NiwtMTkyMDE0ODg0NSwtNT
+E2MzY0NzgyLDE4ODk4MDUxNDEsMTUzNDk3ODg0Miw3MTUxNjQ3
+MDNdfQ==
 -->
