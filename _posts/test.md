@@ -81,14 +81,15 @@ A distribution is the basic unit of storage and processing for parallel queries 
  - It can also be used to improve query performance by just focusing on the data that you want a query and not having to bother searching through all the data that you don't want to query.
  
 ### Three types of Partitioning
- 1. List item
+ 1. **Clustered Columnstore :** The Clustered Column store, and that's updatable primary storage method, and it's great for read‑only.
+ 2. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0MzY5NTIwOCw3ODYzODM0ODUsLTczMD
-M2MTMyNywtMjAzMDcwMjkyNiw1Mzg4NTI5ODYsMjc0NTcxMjA3
-LDEwODI5MDM2MDksMTcwMDU5OTU1MCwxNTk3OTA2ODAsMTI3MT
-YxOTc2LDMxMTUzMzk0NiwzNTgwODg2MzQsLTYxNDI5NjA4Niwt
-MjA4Njg4NDc5MiwzMTgyMTA0NjgsLTkzMjU0NTA2MywtMTA0MD
-M0NTcyOSwtMjk3Mzc2NDE1LDExMTYwMTI3NjksLTYxODE0Nzk5
-Nl19
+eyJoaXN0b3J5IjpbNDgyMzE3MjQ3LDc4NjM4MzQ4NSwtNzMwMz
+YxMzI3LC0yMDMwNzAyOTI2LDUzODg1Mjk4NiwyNzQ1NzEyMDcs
+MTA4MjkwMzYwOSwxNzAwNTk5NTUwLDE1OTc5MDY4MCwxMjcxNj
+E5NzYsMzExNTMzOTQ2LDM1ODA4ODYzNCwtNjE0Mjk2MDg2LC0y
+MDg2ODg0NzkyLDMxODIxMDQ2OCwtOTMyNTQ1MDYzLC0xMDQwMz
+Q1NzI5LC0yOTczNzY0MTUsMTExNjAxMjc2OSwtNjE4MTQ3OTk2
+XX0=
 -->
