@@ -40,12 +40,15 @@ And at the bottom we have the Azure storage, this is where you keep your data, a
 **Data Movement Service** is the data transport technology that coordinates data movement between the Compute nodes. Some queries require data movement to ensure the parallel queries return accurate results. When data movement is required, DMS ensures the right data gets to the right location.
 
 **Storage Node (Azure Storage)** and lastly, we have the storage node, and the storage node is kept separate from compute in order to keep data at rest. And this data at rest is cheaper than the data that is being analysed.
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTcxOTE1NjQsMTA4MjkwMzYwOSwxNz
-AwNTk5NTUwLDE1OTc5MDY4MCwxMjcxNjE5NzYsMzExNTMzOTQ2
-LDM1ODA4ODYzNCwtNjE0Mjk2MDg2LC0yMDg2ODg0NzkyLDMxOD
-IxMDQ2OCwtOTMyNTQ1MDYzLC0xMDQwMzQ1NzI5LC0yOTczNzY0
-MTUsMTExNjAxMjc2OSwtNjE4MTQ3OTk2LC0xOTIwMTQ4ODQ1LC
-01MTYzNjQ3ODIsMTg4OTgwNTE0MSwxNTM0OTc4ODQyLDcxNTE2
-NDcwM119
+eyJoaXN0b3J5IjpbMjAxODYyNzQ1NCwxMDgyOTAzNjA5LDE3MD
+A1OTk1NTAsMTU5NzkwNjgwLDEyNzE2MTk3NiwzMTE1MzM5NDYs
+MzU4MDg4NjM0LC02MTQyOTYwODYsLTIwODY4ODQ3OTIsMzE4Mj
+EwNDY4LC05MzI1NDUwNjMsLTEwNDAzNDU3MjksLTI5NzM3NjQx
+NSwxMTE2MDEyNzY5LC02MTgxNDc5OTYsLTE5MjAxNDg4NDUsLT
+UxNjM2NDc4MiwxODg5ODA1MTQxLDE1MzQ5Nzg4NDIsNzE1MTY0
+NzAzXX0=
 -->
