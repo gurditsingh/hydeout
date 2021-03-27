@@ -52,9 +52,11 @@ A distribution is the basic unit of storage and processing for parallel queries 
 
 	> A replicated table provides the fastest query performance for small tables.
 
+	![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/replicated-table.png?raw=true)
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTM3MzE5NzAsMjc0NTcxMjA3LDEwOD
+eyJoaXN0b3J5IjpbLTEwODc0NTM2NTQsMjc0NTcxMjA3LDEwOD
 I5MDM2MDksMTcwMDU5OTU1MCwxNTk3OTA2ODAsMTI3MTYxOTc2
 LDMxMTUzMzk0NiwzNTgwODg2MzQsLTYxNDI5NjA4NiwtMjA4Nj
 g4NDc5MiwzMTgyMTA0NjgsLTkzMjU0NTA2MywtMTA0MDM0NTcy
