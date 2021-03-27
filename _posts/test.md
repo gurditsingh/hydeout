@@ -7,7 +7,7 @@ Synapse SQL Pool (formerly SQL Data Warehouse) is an MPP Enterprise Data Warehou
 -  Workload management is additional feature around managing resource utilization, concurrency and query priority.
 -  Synapse compute can be scale up down via SQL, PowerShell and Portal. The SQL ability for scaling is unique, and can be achieved via an “ALTER” command.
 
-## How organizations use the SQL Data Warehouse ?
+## How organizations use the MSQL Data Warehouse ?
 
  - If you want to independently size compute power regardless of your storage needs because the compute nodes and the storage nodes are kept separate.
  - This way allows you can grow or shrink the compute power without moving that data. what you're doing is you're moving to compute node over to the data rather than moving all the date around, putting in one place, and then having to analyse it there. You can grow or shrink the compute power.
@@ -83,14 +83,16 @@ A distribution is the basic unit of storage and processing for parallel queries 
 ### Three types of Partitioning
  1. **Clustered Columnstore :** The Clustered Column store, and that's updatable primary storage method, and it's great for read‑only.
  2. **Clustered Index :** The Clustered Index, and that index is physically stored on the same order as the data being indexed. So a Clustered Index requires order.
- 3. **Heap :** 
+ 3. **Heap :** To use Heap where data is not in any particular order, and it's best used when data does not have a natural order to it, then you should use a heap.
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxMjg2OTM2OSw3ODYzODM0ODUsLTczMD
-M2MTMyNywtMjAzMDcwMjkyNiw1Mzg4NTI5ODYsMjc0NTcxMjA3
-LDEwODI5MDM2MDksMTcwMDU5OTU1MCwxNTk3OTA2ODAsLTE3OT
-A5MDMyNjEsMTI3MTYxOTc2LDMxMTUzMzk0NiwzNTgwODg2MzQs
-LTYxNDI5NjA4NiwtMjA4Njg4NDc5MiwzMTgyMTA0NjgsLTkzMj
-U0NTA2MywtMTA0MDM0NTcyOSwtMjk3Mzc2NDE1LDExMTYwMTI3
-NjldfQ==
+eyJoaXN0b3J5IjpbNDg0MTkzNTA4LDc4NjM4MzQ4NSwtNzMwMz
+YxMzI3LC0yMDMwNzAyOTI2LDUzODg1Mjk4NiwyNzQ1NzEyMDcs
+MTA4MjkwMzYwOSwxNzAwNTk5NTUwLDE1OTc5MDY4MCwtMTc5MD
+kwMzI2MSwxMjcxNjE5NzYsMzExNTMzOTQ2LDM1ODA4ODYzNCwt
+NjE0Mjk2MDg2LC0yMDg2ODg0NzkyLDMxODIxMDQ2OCwtOTMyNT
+Q1MDYzLC0xMDQwMzQ1NzI5LC0yOTczNzY0MTUsMTExNjAxMjc2
+OV19
 -->
