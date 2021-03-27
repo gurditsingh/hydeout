@@ -10,10 +10,11 @@ Synapse SQL Pool (formerly SQL Data Warehouse) is an MPP Enterprise Data Warehou
 ## How organizations use the SQL Data Warehouse ?
 
  - If you want to independently size compute power regardless of your storage needs because the compute nodes and the storage nodes are kept separate.
+ - This way allows you can grow or shrink the compute power without moving that data. what you're doing is you're moving to compute node over to the data rather than moving all the date around, putting in one place, and then having to analyze it there. You can grow or shrink the compute power.
  - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0NzE0NjMxNCwxMjcxNjE5NzYsMzExNT
+eyJoaXN0b3J5IjpbLTM0MzI1ODkwMCwxMjcxNjE5NzYsMzExNT
 MzOTQ2LDM1ODA4ODYzNCwtNjE0Mjk2MDg2LC0yMDg2ODg0Nzky
 LDMxODIxMDQ2OCwtOTMyNTQ1MDYzLC0xMDQwMzQ1NzI5LC0yOT
 czNzY0MTUsMTExNjAxMjc2OSwtNjE4MTQ3OTk2LC0xOTIwMTQ4
