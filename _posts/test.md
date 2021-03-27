@@ -33,12 +33,12 @@ And at the bottom we have the Azure storage, this is where you keep your data, a
 
 **Control node**  This is the front end that interacts with all applications and connections, and the MPP engine runs on the control node, and this optimizes and coordinates your parallel queries. When you submit a T-SQL query, the Control node transforms it into queries that run against each distribution in parallel.
 
-
+**Compute nodes** provides a computational power for your analytics. It's separated from the storage nodes, and you can scale this using what's called Data Warehouse Units. As you pay for more compute resources, distributions are remapped to available Compute nodes. The number of compute nodes ranges from 1 to 60, and is determined by the service level for Synapse SQL.
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3MzA5ODk2OSwxMDgyOTAzNjA5LDE3MD
+eyJoaXN0b3J5IjpbLTk5ODgzNjk0MywxMDgyOTAzNjA5LDE3MD
 A1OTk1NTAsMTU5NzkwNjgwLDEyNzE2MTk3NiwzMTE1MzM5NDYs
 MzU4MDg4NjM0LC02MTQyOTYwODYsLTIwODY4ODQ3OTIsMzE4Mj
 EwNDY4LC05MzI1NDUwNjMsLTEwNDAzNDU3MjksLTI5NzM3NjQx
