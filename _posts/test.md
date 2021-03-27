@@ -54,9 +54,10 @@ A distribution is the basic unit of storage and processing for parallel queries 
 
 	![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/replicated-table.png?raw=true)
 
+ 2.  **Round-robin Table :**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODc0NTM2NTQsMjc0NTcxMjA3LDEwOD
+eyJoaXN0b3J5IjpbLTE0NDMxNjc3NzUsMjc0NTcxMjA3LDEwOD
 I5MDM2MDksMTcwMDU5OTU1MCwxNTk3OTA2ODAsLTE3OTA5MDMy
 NjEsMTI3MTYxOTc2LDMxMTUzMzk0NiwzNTgwODg2MzQsLTYxND
 I5NjA4NiwtMjA4Njg4NDc5MiwzMTgyMTA0NjgsLTkzMjU0NTA2
