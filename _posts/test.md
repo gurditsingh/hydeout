@@ -61,10 +61,10 @@ A distribution is the basic unit of storage and processing for parallel queries 
 
 		![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/round-robin-mpp.png?raw=true)
 
- 3. **Hash Distributed Table :** 
+ 3. **Hash Distributed Table :** This uses a hash function to assign each row to one distribution. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NjIzNDQ3Nyw1Mzg4NTI5ODYsMjc0NT
+eyJoaXN0b3J5IjpbLTk3NjAyMDE1MCw1Mzg4NTI5ODYsMjc0NT
 cxMjA3LDEwODI5MDM2MDksMTcwMDU5OTU1MCwxNTk3OTA2ODAs
 MTI3MTYxOTc2LDMxMTUzMzk0NiwzNTgwODg2MzQsLTYxNDI5Nj
 A4NiwtMjA4Njg4NDc5MiwzMTgyMTA0NjgsLTkzMjU0NTA2Mywt
