@@ -69,13 +69,18 @@ A distribution is the basic unit of storage and processing for parallel queries 
 	![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/hash-mpp.png?raw=true)	
 
 
+### what data distribution to use?
+
+![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/data-distribution-to-use.jpg?raw=true)
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzA3MDI5MjYsNTM4ODUyOTg2LDI3ND
-U3MTIwNywxMDgyOTAzNjA5LDE3MDA1OTk1NTAsMTU5NzkwNjgw
-LDEyNzE2MTk3NiwzMTE1MzM5NDYsMzU4MDg4NjM0LC02MTQyOT
-YwODYsLTIwODY4ODQ3OTIsMzE4MjEwNDY4LC05MzI1NDUwNjMs
-LTEwNDAzNDU3MjksLTI5NzM3NjQxNSwxMTE2MDEyNzY5LC02MT
-gxNDc5OTYsLTE5MjAxNDg4NDUsLTUxNjM2NDc4MiwxODg5ODA1
-MTQxXX0=
+eyJoaXN0b3J5IjpbLTczMDM2MTMyNywtMjAzMDcwMjkyNiw1Mz
+g4NTI5ODYsMjc0NTcxMjA3LDEwODI5MDM2MDksMTcwMDU5OTU1
+MCwxNTk3OTA2ODAsMTI3MTYxOTc2LDMxMTUzMzk0NiwzNTgwOD
+g2MzQsLTYxNDI5NjA4NiwtMjA4Njg4NDc5MiwzMTgyMTA0Njgs
+LTkzMjU0NTA2MywtMTA0MDM0NTcyOSwtMjk3Mzc2NDE1LDExMT
+YwMTI3NjksLTYxODE0Nzk5NiwtMTkyMDE0ODg0NSwtNTE2MzY0
+NzgyXX0=
 -->
