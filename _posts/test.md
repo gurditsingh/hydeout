@@ -9,35 +9,15 @@ Synapse SQL Pool (formerly SQL Data Warehouse) is an MPP Enterprise Data Warehou
 
 ## How organizations use the SQL Data Warehouse ?
 
+ - If you want to independently size compute power regardless of your storage needs because the compute nodes and the storage nodes are kept separate.
+ - 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/synapse-unifid-platform.png?raw=true)
-
-
-## Next ?
-
-Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MTYxOTc2LDMxMTUzMzk0NiwzNTgwOD
-g2MzQsLTYxNDI5NjA4NiwtMjA4Njg4NDc5MiwzMTgyMTA0Njgs
-LTkzMjU0NTA2MywtMTA0MDM0NTcyOSwtMjk3Mzc2NDE1LDExMT
-YwMTI3NjksLTYxODE0Nzk5NiwtMTkyMDE0ODg0NSwtNTE2MzY0
-NzgyLDE4ODk4MDUxNDEsMTUzNDk3ODg0Miw3MTUxNjQ3MDMsMT
-Y2Njk2MDkxOCwtMjEwMTA1NjcsLTcxMTcwODM2MSwtMzk2NzE3
-Mjg2XX0=
+eyJoaXN0b3J5IjpbLTc0NzE0NjMxNCwxMjcxNjE5NzYsMzExNT
+MzOTQ2LDM1ODA4ODYzNCwtNjE0Mjk2MDg2LC0yMDg2ODg0Nzky
+LDMxODIxMDQ2OCwtOTMyNTQ1MDYzLC0xMDQwMzQ1NzI5LC0yOT
+czNzY0MTUsMTExNjAxMjc2OSwtNjE4MTQ3OTk2LC0xOTIwMTQ4
+ODQ1LC01MTYzNjQ3ODIsMTg4OTgwNTE0MSwxNTM0OTc4ODQyLD
+cxNTE2NDcwMywxNjY2OTYwOTE4LC0yMTAxMDU2NywtNzExNzA4
+MzYxXX0=
 -->
