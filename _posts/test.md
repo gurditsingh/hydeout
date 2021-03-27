@@ -82,14 +82,15 @@ A distribution is the basic unit of storage and processing for parallel queries 
  
 ### Three types of Partitioning
  1. **Clustered Columnstore :** The Clustered Column store, and that's updatable primary storage method, and it's great for read‑only.
- 2. 
+ 2. **Clustered Index :** The Clustered Index, and that index is physically stored on the same order as the data being indexed. So a Clustered Index requires order.
+ 3. **Heap :** 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDgyMzE3MjQ3LDc4NjM4MzQ4NSwtNzMwMz
-YxMzI3LC0yMDMwNzAyOTI2LDUzODg1Mjk4NiwyNzQ1NzEyMDcs
-MTA4MjkwMzYwOSwxNzAwNTk5NTUwLDE1OTc5MDY4MCwtMTc5MD
-kwMzI2MSwxMjcxNjE5NzYsMzExNTMzOTQ2LDM1ODA4ODYzNCwt
-NjE0Mjk2MDg2LC0yMDg2ODg0NzkyLDMxODIxMDQ2OCwtOTMyNT
-Q1MDYzLC0xMDQwMzQ1NzI5LC0yOTczNzY0MTUsMTExNjAxMjc2
-OV19
+eyJoaXN0b3J5IjpbLTMxMjg2OTM2OSw3ODYzODM0ODUsLTczMD
+M2MTMyNywtMjAzMDcwMjkyNiw1Mzg4NTI5ODYsMjc0NTcxMjA3
+LDEwODI5MDM2MDksMTcwMDU5OTU1MCwxNTk3OTA2ODAsLTE3OT
+A5MDMyNjEsMTI3MTYxOTc2LDMxMTUzMzk0NiwzNTgwODg2MzQs
+LTYxNDI5NjA4NiwtMjA4Njg4NDc5MiwzMTgyMTA0NjgsLTkzMj
+U0NTA2MywtMTA0MDM0NTcyOSwtMjk3Mzc2NDE1LDExMTYwMTI3
+NjldfQ==
 -->
