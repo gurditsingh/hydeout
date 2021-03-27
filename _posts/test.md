@@ -15,14 +15,14 @@ Synapse SQL Pool (formerly SQL Data Warehouse) is an MPP Enterprise Data Warehou
  - You can resume your compute capacity during business hours and start processing the data for reporting and etc.
 
 
-
+## Massive Parallel Processing
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDI1ODEwNzQsMTI3MTYxOTc2LDMxMT
-UzMzk0NiwzNTgwODg2MzQsLTYxNDI5NjA4NiwtMjA4Njg4NDc5
-MiwzMTgyMTA0NjgsLTkzMjU0NTA2MywtMTA0MDM0NTcyOSwtMj
-k3Mzc2NDE1LDExMTYwMTI3NjksLTYxODE0Nzk5NiwtMTkyMDE0
-ODg0NSwtNTE2MzY0NzgyLDE4ODk4MDUxNDEsMTUzNDk3ODg0Mi
-w3MTUxNjQ3MDMsMTY2Njk2MDkxOCwtMjEwMTA1NjcsLTcxMTcw
-ODM2MV19
+eyJoaXN0b3J5IjpbMTcwMDU5OTU1MCwxMjcxNjE5NzYsMzExNT
+MzOTQ2LDM1ODA4ODYzNCwtNjE0Mjk2MDg2LC0yMDg2ODg0Nzky
+LDMxODIxMDQ2OCwtOTMyNTQ1MDYzLC0xMDQwMzQ1NzI5LC0yOT
+czNzY0MTUsMTExNjAxMjc2OSwtNjE4MTQ3OTk2LC0xOTIwMTQ4
+ODQ1LC01MTYzNjQ3ODIsMTg4OTgwNTE0MSwxNTM0OTc4ODQyLD
+cxNTE2NDcwMywxNjY2OTYwOTE4LC0yMTAxMDU2NywtNzExNzA4
+MzYxXX0=
 -->
