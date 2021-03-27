@@ -35,14 +35,14 @@ And at the bottom we have the Azure storage, this is where you keep your data, a
 
 **Compute nodes** provides a computational power for your analytics. It's separated from the storage nodes, and you can scale this using what's called Data Warehouse Units. As you pay for more compute resources, distributions are remapped to available Compute nodes. The number of compute nodes ranges from 1 to 60, and is determined by the service level for Synapse SQL.
 
-
+**Data Warehouse Units** is a collection of analytic resources that are provisioned, and it's basically a combination of CPU, memory and IO. And you can scale this up and you can scale this down depending upon what your needs are. A DWU, or Data Warehouse Unit, is the basic unit of these different resources, and you can add DWUs or subtracted DWUs.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5ODgzNjk0MywxMDgyOTAzNjA5LDE3MD
-A1OTk1NTAsMTU5NzkwNjgwLC0xNzkwOTAzMjYxLDEyNzE2MTk3
-NiwzMTE1MzM5NDYsMzU4MDg4NjM0LC02MTQyOTYwODYsLTIwOD
-Y4ODQ3OTIsMzE4MjEwNDY4LC05MzI1NDUwNjMsLTEwNDAzNDU3
-MjksLTI5NzM3NjQxNSwxMTE2MDEyNzY5LC02MTgxNDc5OTYsLT
-E5MjAxNDg4NDUsLTUxNjM2NDc4MiwxODg5ODA1MTQxLDE1MzQ5
-Nzg4NDJdfQ==
+eyJoaXN0b3J5IjpbLTIwNTgyNjE2MTEsMTA4MjkwMzYwOSwxNz
+AwNTk5NTUwLDE1OTc5MDY4MCwtMTc5MDkwMzI2MSwxMjcxNjE5
+NzYsMzExNTMzOTQ2LDM1ODA4ODYzNCwtNjE0Mjk2MDg2LC0yMD
+g2ODg0NzkyLDMxODIxMDQ2OCwtOTMyNTQ1MDYzLC0xMDQwMzQ1
+NzI5LC0yOTczNzY0MTUsMTExNjAxMjc2OSwtNjE4MTQ3OTk2LC
+0xOTIwMTQ4ODQ1LC01MTYzNjQ3ODIsMTg4OTgwNTE0MSwxNTM0
+OTc4ODQyXX0=
 -->
