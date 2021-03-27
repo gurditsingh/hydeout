@@ -17,13 +17,16 @@ Synapse SQL Pool (formerly SQL Data Warehouse) is an MPP Enterprise Data Warehou
 
 ## Massive Parallel Processing
 
-[ ![](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/synapse-unified-platform.png?raw=true) ](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/synapse-unified-platform.png?raw=true)
+[ ![](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/sql-architecture-mpp.png?raw=true) ](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/sql-architecture-mpp.png?raw=true)
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDQ5MjIzNjcsMTcwMDU5OTU1MCwxNT
-k3OTA2ODAsLTE3OTA5MDMyNjEsMTI3MTYxOTc2LDMxMTUzMzk0
-NiwzNTgwODg2MzQsLTYxNDI5NjA4NiwtMjA4Njg4NDc5MiwzMT
-gyMTA0NjgsLTkzMjU0NTA2MywtMTA0MDM0NTcyOSwtMjk3Mzc2
-NDE1LDExMTYwMTI3NjksLTYxODE0Nzk5NiwtMTkyMDE0ODg0NS
-wtNTE2MzY0NzgyLDE4ODk4MDUxNDEsMTUzNDk3ODg0Miw3MTUx
-NjQ3MDNdfQ==
+eyJoaXN0b3J5IjpbMTU2MDc4NzI3NSwxNzAwNTk5NTUwLDE1OT
+c5MDY4MCwtMTc5MDkwMzI2MSwxMjcxNjE5NzYsMzExNTMzOTQ2
+LDM1ODA4ODYzNCwtNjE0Mjk2MDg2LC0yMDg2ODg0NzkyLDMxOD
+IxMDQ2OCwtOTMyNTQ1MDYzLC0xMDQwMzQ1NzI5LC0yOTczNzY0
+MTUsMTExNjAxMjc2OSwtNjE4MTQ3OTk2LC0xOTIwMTQ4ODQ1LC
+01MTYzNjQ3ODIsMTg4OTgwNTE0MSwxNTM0OTc4ODQyLDcxNTE2
+NDcwM119
 -->
