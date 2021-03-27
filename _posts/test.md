@@ -42,9 +42,14 @@ And at the bottom we have the Azure storage, this is where you keep your data, a
 **Storage Node (Azure Storage)** and lastly, we have the storage node, and the storage node is kept separate from compute in order to keep data at rest. And this data at rest is cheaper than the data that is being analysed.
 
 
+## Implementing Data Distributions for an SQL Data Warehouse
+
+A distribution is the basic unit of storage and processing for parallel queries that run on distributed data. When Synapse SQL runs a query, the work is divided into 60 smaller queries that run in parallel.
+
+Each of the 60 smaller queries runs on one of the data distributions.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxODYyNzQ1NCwxMDgyOTAzNjA5LDE3MD
+eyJoaXN0b3J5IjpbLTM1OTAzNzk3MSwxMDgyOTAzNjA5LDE3MD
 A1OTk1NTAsMTU5NzkwNjgwLDEyNzE2MTk3NiwzMTE1MzM5NDYs
 MzU4MDg4NjM0LC02MTQyOTYwODYsLTIwODY4ODQ3OTIsMzE4Mj
 EwNDY4LC05MzI1NDUwNjMsLTEwNDAzNDU3MjksLTI5NzM3NjQx
