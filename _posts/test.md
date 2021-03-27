@@ -56,20 +56,17 @@ A distribution is the basic unit of storage and processing for parallel queries 
 
  
  2.  **Round-robin distributed Table :** A round-robin distributed table distributes data evenly across the table but without any further optimization. A distribution is first chosen at random and then buffers of rows are assigned to distributions sequentially. It is quick to load data into a round-robin table. Joins on round-robin tables require reshuffling data, which takes additional time.
- 
-	 
 
-> A round-robin table is the simplest table to create and delivers fast
-> performance when used as a staging table for loads.
+		> A replicated table provides the fastest query performance for small tables.
 
- ![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/round-robin-mpp.png?raw=true)
+		![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/round-robin-mpp.png?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIzMzQ0NjA4LDUzODg1Mjk4NiwyNzQ1Nz
-EyMDcsMTA4MjkwMzYwOSwxNzAwNTk5NTUwLDE1OTc5MDY4MCwx
-MjcxNjE5NzYsMzExNTMzOTQ2LDM1ODA4ODYzNCwtNjE0Mjk2MD
-g2LC0yMDg2ODg0NzkyLDMxODIxMDQ2OCwtOTMyNTQ1MDYzLC0x
-MDQwMzQ1NzI5LC0yOTczNzY0MTUsMTExNjAxMjc2OSwtNjE4MT
-Q3OTk2LC0xOTIwMTQ4ODQ1LC01MTYzNjQ3ODIsMTg4OTgwNTE0
-MV19
+eyJoaXN0b3J5IjpbMTg3NjcxNjkzMyw1Mzg4NTI5ODYsMjc0NT
+cxMjA3LDEwODI5MDM2MDksMTcwMDU5OTU1MCwxNTk3OTA2ODAs
+MTI3MTYxOTc2LDMxMTUzMzk0NiwzNTgwODg2MzQsLTYxNDI5Nj
+A4NiwtMjA4Njg4NDc5MiwzMTgyMTA0NjgsLTkzMjU0NTA2Mywt
+MTA0MDM0NTcyOSwtMjk3Mzc2NDE1LDExMTYwMTI3NjksLTYxOD
+E0Nzk5NiwtMTkyMDE0ODg0NSwtNTE2MzY0NzgyLDE4ODk4MDUx
+NDFdfQ==
 -->
