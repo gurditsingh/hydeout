@@ -66,14 +66,16 @@ A distribution is the basic unit of storage and processing for parallel queries 
 
 	> A hash distributed table can deliver the highest query performance for joins and aggregations on large tables.
 	
-	![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/ hash-mpp.png?raw=true)	
+	![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/hash-mpp.png?raw=true)	
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3Mzg2MDI2LDUzODg1Mjk4NiwyNzQ1Nz
-EyMDcsMTA4MjkwMzYwOSwxNzAwNTk5NTUwLDE1OTc5MDY4MCwt
-MTc5MDkwMzI2MSwxMjcxNjE5NzYsMzExNTMzOTQ2LDM1ODA4OD
-YzNCwtNjE0Mjk2MDg2LC0yMDg2ODg0NzkyLDMxODIxMDQ2OCwt
-OTMyNTQ1MDYzLC0xMDQwMzQ1NzI5LC0yOTczNzY0MTUsMTExNj
-AxMjc2OSwtNjE4MTQ3OTk2LC0xOTIwMTQ4ODQ1LC01MTYzNjQ3
-ODJdfQ==
+eyJoaXN0b3J5IjpbLTIwMzA3MDI5MjYsNTM4ODUyOTg2LDI3ND
+U3MTIwNywxMDgyOTAzNjA5LDE3MDA1OTk1NTAsMTU5NzkwNjgw
+LC0xNzkwOTAzMjYxLDEyNzE2MTk3NiwzMTE1MzM5NDYsMzU4MD
+g4NjM0LC02MTQyOTYwODYsLTIwODY4ODQ3OTIsMzE4MjEwNDY4
+LC05MzI1NDUwNjMsLTEwNDAzNDU3MjksLTI5NzM3NjQxNSwxMT
+E2MDEyNzY5LC02MTgxNDc5OTYsLTE5MjAxNDg4NDUsLTUxNjM2
+NDc4Ml19
 -->
