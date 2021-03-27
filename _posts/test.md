@@ -77,14 +77,17 @@ A distribution is the basic unit of storage and processing for parallel queries 
 ## Implementing partitions for an SQL Data Warehouse
 
  - Table partitions enable you to divide the data into smaller groups of data to make it more functionable when you're dealing with a large amount of data.
- - You can improve the efficiency and the performance of loading data by use of partition deletion, switching, and merging. So depending upon how you partition your data, you can load just the date that you need, and not into the tables or columns that are not being used.
+ - You can improve the efficiency and the performance of loading data by use of partition deletion, switching, and merging. So depending upon how you partition your data, you can load just the data that you need.
+ - It can also be used to improve query performance by just focusing on the data that you want a query and not having to bother searching through all the data that you don't want to query.
+ 
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTY4NzY3MSwtNzMwMzYxMzI3LC0yMD
-MwNzAyOTI2LDUzODg1Mjk4NiwyNzQ1NzEyMDcsMTA4MjkwMzYw
-OSwxNzAwNTk5NTUwLDE1OTc5MDY4MCwtMTc5MDkwMzI2MSwxMj
-cxNjE5NzYsMzExNTMzOTQ2LDM1ODA4ODYzNCwtNjE0Mjk2MDg2
-LC0yMDg2ODg0NzkyLDMxODIxMDQ2OCwtOTMyNTQ1MDYzLC0xMD
-QwMzQ1NzI5LC0yOTczNzY0MTUsMTExNjAxMjc2OSwtNjE4MTQ3
-OTk2XX0=
+eyJoaXN0b3J5IjpbNzg2MzgzNDg1LC03MzAzNjEzMjcsLTIwMz
+A3MDI5MjYsNTM4ODUyOTg2LDI3NDU3MTIwNywxMDgyOTAzNjA5
+LDE3MDA1OTk1NTAsMTU5NzkwNjgwLC0xNzkwOTAzMjYxLDEyNz
+E2MTk3NiwzMTE1MzM5NDYsMzU4MDg4NjM0LC02MTQyOTYwODYs
+LTIwODY4ODQ3OTIsMzE4MjEwNDY4LC05MzI1NDUwNjMsLTEwND
+AzNDU3MjksLTI5NzM3NjQxNSwxMTE2MDEyNzY5LC02MTgxNDc5
+OTZdfQ==
 -->
