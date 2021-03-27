@@ -61,14 +61,14 @@ A distribution is the basic unit of storage and processing for parallel queries 
 
 		![DW](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/round-robin-mpp.png?raw=true)
 
- 3. **Hash Distributed Table :** This uses a hash function to assign each row to one distribution. 
+ 3. **Hash Distributed Table :** This uses a hash function to assign each row to one distribution or node. In the table definition, one of the columns is designated as the distribution column. The hash function uses the values in the distribution column to assign each row to a distribution.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk3NjAyMDE1MCw1Mzg4NTI5ODYsMjc0NT
-cxMjA3LDEwODI5MDM2MDksMTcwMDU5OTU1MCwxNTk3OTA2ODAs
-LTE3OTA5MDMyNjEsMTI3MTYxOTc2LDMxMTUzMzk0NiwzNTgwOD
-g2MzQsLTYxNDI5NjA4NiwtMjA4Njg4NDc5MiwzMTgyMTA0Njgs
-LTkzMjU0NTA2MywtMTA0MDM0NTcyOSwtMjk3Mzc2NDE1LDExMT
-YwMTI3NjksLTYxODE0Nzk5NiwtMTkyMDE0ODg0NSwtNTE2MzY0
-NzgyXX0=
+eyJoaXN0b3J5IjpbLTIwNjU0NDk5MTUsNTM4ODUyOTg2LDI3ND
+U3MTIwNywxMDgyOTAzNjA5LDE3MDA1OTk1NTAsMTU5NzkwNjgw
+LC0xNzkwOTAzMjYxLDEyNzE2MTk3NiwzMTE1MzM5NDYsMzU4MD
+g4NjM0LC02MTQyOTYwODYsLTIwODY4ODQ3OTIsMzE4MjEwNDY4
+LC05MzI1NDUwNjMsLTEwNDAzNDU3MjksLTI5NzM3NjQxNSwxMT
+E2MDEyNzY5LC02MTgxNDc5OTYsLTE5MjAxNDg4NDUsLTUxNjM2
+NDc4Ml19
 -->
