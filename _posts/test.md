@@ -48,14 +48,17 @@ A distribution is the basic unit of storage and processing for parallel queries 
 
 ### Three types of Distributions
 
- 1. **Replicated Table :**
+ 1. **Replicated Table :** A table that is replicated caches a full copy of the table on each compute node. Consequently, replicating a table removes the need to transfer data among compute nodes before a join or aggregation. Replicated tables are best utilized with small tables. Extra storage is required and there is additional overhead that is incurred when writing data.
+
+	> A replicated table provides the fastest query performance for small tables.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc0NTcxMjA3LDEwODI5MDM2MDksMTcwMD
-U5OTU1MCwxNTk3OTA2ODAsMTI3MTYxOTc2LDMxMTUzMzk0Niwz
-NTgwODg2MzQsLTYxNDI5NjA4NiwtMjA4Njg4NDc5MiwzMTgyMT
-A0NjgsLTkzMjU0NTA2MywtMTA0MDM0NTcyOSwtMjk3Mzc2NDE1
-LDExMTYwMTI3NjksLTYxODE0Nzk5NiwtMTkyMDE0ODg0NSwtNT
-E2MzY0NzgyLDE4ODk4MDUxNDEsMTUzNDk3ODg0Miw3MTUxNjQ3
-MDNdfQ==
+eyJoaXN0b3J5IjpbLTE5MTM3MzE5NzAsMjc0NTcxMjA3LDEwOD
+I5MDM2MDksMTcwMDU5OTU1MCwxNTk3OTA2ODAsMTI3MTYxOTc2
+LDMxMTUzMzk0NiwzNTgwODg2MzQsLTYxNDI5NjA4NiwtMjA4Nj
+g4NDc5MiwzMTgyMTA0NjgsLTkzMjU0NTA2MywtMTA0MDM0NTcy
+OSwtMjk3Mzc2NDE1LDExMTYwMTI3NjksLTYxODE0Nzk5NiwtMT
+kyMDE0ODg0NSwtNTE2MzY0NzgyLDE4ODk4MDUxNDEsMTUzNDk3
+ODg0Ml19
 -->
