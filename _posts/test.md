@@ -8,7 +8,11 @@ Once the spark pool is created it would appear in the list of spark pools in the
 Now that the spark pool has been created, we need to test it by trying to access some sample data from Azure Data Lake Storage account.
 
 ## What is Apache Spark
+Apache Spark is an open-source, distributed processing system used for big data workloads. It utilizes in-memory caching and optimized query execution for fast queries against data of any size. Simply put, Spark is a  **fast and general engine for large-scale data processing**.
 
+The  **fast**  part means that it’s faster than previous approaches to work with Big Data like classical  [MapReduce](https://www.ibm.com/analytics/hadoop/mapreduce). The secret for being faster is that Spark runs on memory (RAM), and that makes the processing much faster than on disk drives.
+
+The  **general**  part means that it can be used for multiple things like running distributed SQL, creating data pipelines, ingesting data into a database, running Machine Learning algorithms, working with graphs or data streams, and much more.
 
 
 
@@ -96,11 +100,11 @@ A distribution is the basic unit of storage and processing for parallel queries 
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTYyMzYwNjYsMTYyNzg1NDAxNywtMT
-c5NzcwMjY0OCwtMTY1NDMwMDM1LDc4NjM4MzQ4NSwtNzMwMzYx
-MzI3LC0yMDMwNzAyOTI2LDUzODg1Mjk4NiwyNzQ1NzEyMDcsMT
-A4MjkwMzYwOSwxNzAwNTk5NTUwLDE1OTc5MDY4MCwtMTc5MDkw
-MzI2MSwxMjcxNjE5NzYsMzExNTMzOTQ2LDM1ODA4ODYzNCwtNj
-E0Mjk2MDg2LC0yMDg2ODg0NzkyLDMxODIxMDQ2OCwtOTMyNTQ1
-MDYzXX0=
+eyJoaXN0b3J5IjpbMTYyMTA3MzEzNiwxNjI3ODU0MDE3LC0xNz
+k3NzAyNjQ4LC0xNjU0MzAwMzUsNzg2MzgzNDg1LC03MzAzNjEz
+MjcsLTIwMzA3MDI5MjYsNTM4ODUyOTg2LDI3NDU3MTIwNywxMD
+gyOTAzNjA5LDE3MDA1OTk1NTAsMTU5NzkwNjgwLC0xNzkwOTAz
+MjYxLDEyNzE2MTk3NiwzMTE1MzM5NDYsMzU4MDg4NjM0LC02MT
+QyOTYwODYsLTIwODY4ODQ3OTIsMzE4MjEwNDY4LC05MzI1NDUw
+NjNdfQ==
 -->
