@@ -39,6 +39,7 @@ Spark pools in Azure Synapse offer a fully managed Spark service. The benefits o
 
 ## Spark pool architecture
 
+![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark-architecture.png?raw=true)
  - Spark applications run as independent sets of processes on a pool, coordinated by the SparkContext object in your main program(driver program).
  - The SparkContext can connect to the cluster manager, which allocates resources across applications.
  - The cluster manager is YARN. Once connected, Spark acquires executors on nodes in the pool from Resource manager, which are processes that run computations and store data for your application.
@@ -49,11 +50,11 @@ Spark pools in Azure Synapse offer a fully managed Spark service. The benefits o
  - The graph consists of individual tasks that get executed within an executor process on the nodes. Each application gets its own executor processes, which stay up for the duration of the whole application and run tasks in multiple threads.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0MDY4ODc2NSw0NTQwOTgyOTAsLTEyND
-U2MTkxMTQsMTYyNzg1NDAxNywtMTc5NzcwMjY0OCwtMTY1NDMw
-MDM1LDc4NjM4MzQ4NSwtNzMwMzYxMzI3LC0yMDMwNzAyOTI2LD
-UzODg1Mjk4NiwyNzQ1NzEyMDcsMTA4MjkwMzYwOSwxNzAwNTk5
-NTUwLDE1OTc5MDY4MCwtMTc5MDkwMzI2MSwxMjcxNjE5NzYsMz
-ExNTMzOTQ2LDM1ODA4ODYzNCwtNjE0Mjk2MDg2LC0yMDg2ODg0
-NzkyXX0=
+eyJoaXN0b3J5IjpbLTQ2MDk2NTI3NCwtNjQwNjg4NzY1LDQ1ND
+A5ODI5MCwtMTI0NTYxOTExNCwxNjI3ODU0MDE3LC0xNzk3NzAy
+NjQ4LC0xNjU0MzAwMzUsNzg2MzgzNDg1LC03MzAzNjEzMjcsLT
+IwMzA3MDI5MjYsNTM4ODUyOTg2LDI3NDU3MTIwNywxMDgyOTAz
+NjA5LDE3MDA1OTk1NTAsMTU5NzkwNjgwLC0xNzkwOTAzMjYxLD
+EyNzE2MTk3NiwzMTE1MzM5NDYsMzU4MDg4NjM0LC02MTQyOTYw
+ODZdfQ==
 -->
