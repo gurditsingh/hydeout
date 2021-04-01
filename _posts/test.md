@@ -14,8 +14,15 @@ The  **fast**  part means that it’s faster than previous approaches to work wi
 
 The  **general**  part means that it can be used for multiple things like running distributed SQL, creating data pipelines, ingesting data into a database, running Machine Learning algorithms, working with graphs or data streams, and much more.
 
-Spark 
+### Spark Components
 
+1.  **Apache Spark Core**  – Spark Core is the underlying general execution engine for the Spark platform that all other functionality is built upon. It provides in-memory computing and referencing datasets in external storage systems.
+2.  **Spark SQL**  – Spark SQL is Apache Spark’s module for working with structured data. The interfaces offered by Spark SQL provides Spark with more information about the structure of both the data and the computation being performed.
+3.  **Spark Streaming**  – This component allows Spark to process real-time streaming data. Data can be ingested from many sources like Kafka, Flume, and HDFS (Hadoop Distributed File System). Then the data can be processed using complex algorithms and pushed out to file systems, databases, and live dashboards.
+4.  **MLlib (Machine Learning Library)**  – Apache Spark is equipped with a rich library known as MLlib. This library contains a wide array of machine learning algorithms- classification, regression, clustering, and collaborative filtering. It also includes other tools for constructing, evaluating, and tuning ML Pipelines. All these functionalities help Spark scale out across a cluster.
+5.  **GraphX**  – Spark also comes with a library to manipulate graph databases and perform computations called GraphX. GraphX unifies ETL (Extract, Transform, and Load) process, exploratory analysis, and iterative graph computation within a single system.
+
+## Spark pools in Azure Synapse offer a fully managed Spark service
 
 
 ## How organizations use the Modern SQL Data Warehouse ?
@@ -101,11 +108,11 @@ A distribution is the basic unit of storage and processing for parallel queries 
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1MTM2MzQzNSwtMTI0NTYxOTExNCwxNj
-I3ODU0MDE3LC0xNzk3NzAyNjQ4LC0xNjU0MzAwMzUsNzg2Mzgz
-NDg1LC03MzAzNjEzMjcsLTIwMzA3MDI5MjYsNTM4ODUyOTg2LD
-I3NDU3MTIwNywxMDgyOTAzNjA5LDE3MDA1OTk1NTAsMTU5Nzkw
-NjgwLDEyNzE2MTk3NiwzMTE1MzM5NDYsMzU4MDg4NjM0LC02MT
-QyOTYwODYsLTIwODY4ODQ3OTIsMzE4MjEwNDY4LC05MzI1NDUw
-NjNdfQ==
+eyJoaXN0b3J5IjpbNTAwOTgxMTg3LC0xMjQ1NjE5MTE0LDE2Mj
+c4NTQwMTcsLTE3OTc3MDI2NDgsLTE2NTQzMDAzNSw3ODYzODM0
+ODUsLTczMDM2MTMyNywtMjAzMDcwMjkyNiw1Mzg4NTI5ODYsMj
+c0NTcxMjA3LDEwODI5MDM2MDksMTcwMDU5OTU1MCwxNTk3OTA2
+ODAsMTI3MTYxOTc2LDMxMTUzMzk0NiwzNTgwODg2MzQsLTYxND
+I5NjA4NiwtMjA4Njg4NDc5MiwzMTgyMTA0NjgsLTkzMjU0NTA2
+M119
 -->
