@@ -6,6 +6,10 @@ Once the spark pool is created it would appear in the list of spark pools in the
 
 Now that the spark pool has been created, we need to test it by trying to access some sample data from Azure Data Lake Storage account.
 
+## Apache Spark in Azure Synapse Analytics
+Apache Spark is a parallel processing framework that supports in-memory processing to boost the performance of big-data analytic applications. Apache Spark in Azure Synapse Analytics is one of Microsoft implementations of Apache Spark in the cloud. Azure Synapse makes it easy to create and configure a serverless Apache Spark pool in Azure. Spark pools in Azure Synapse are compatible with Azure Storage and Azure Data Lake Generation 2 Storage. So you can use Spark pools to process your data stored in Azure.
+
+
 ## How organizations use the Modern SQL Data Warehouse ?
 
  - If you want to independently size compute power regardless of your storage needs because the compute nodes and the storage nodes are kept separate.
@@ -89,11 +93,11 @@ A distribution is the basic unit of storage and processing for parallel queries 
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyNzg1NDAxNywtMTc5NzcwMjY0OCwtMT
-Y1NDMwMDM1LDc4NjM4MzQ4NSwtNzMwMzYxMzI3LC0yMDMwNzAy
-OTI2LDUzODg1Mjk4NiwyNzQ1NzEyMDcsMTA4MjkwMzYwOSwxNz
-AwNTk5NTUwLDE1OTc5MDY4MCwxMjcxNjE5NzYsMzExNTMzOTQ2
-LDM1ODA4ODYzNCwtNjE0Mjk2MDg2LC0yMDg2ODg0NzkyLDMxOD
-IxMDQ2OCwtOTMyNTQ1MDYzLC0xMDQwMzQ1NzI5LC0yOTczNzY0
-MTVdfQ==
+eyJoaXN0b3J5IjpbLTQxMzA1MjcxNywxNjI3ODU0MDE3LC0xNz
+k3NzAyNjQ4LC0xNjU0MzAwMzUsNzg2MzgzNDg1LC03MzAzNjEz
+MjcsLTIwMzA3MDI5MjYsNTM4ODUyOTg2LDI3NDU3MTIwNywxMD
+gyOTAzNjA5LDE3MDA1OTk1NTAsMTU5NzkwNjgwLDEyNzE2MTk3
+NiwzMTE1MzM5NDYsMzU4MDg4NjM0LC02MTQyOTYwODYsLTIwOD
+Y4ODQ3OTIsMzE4MjEwNDY4LC05MzI1NDUwNjMsLTEwNDAzNDU3
+MjldfQ==
 -->
