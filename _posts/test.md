@@ -55,17 +55,18 @@ Spark pools in Azure Synapse offer a fully managed Spark service. The benefits o
 ## Apache Spark in Azure Synapse Analytics use cases
 
 ### Data Engineering/Data Preparation
+
 Apache Spark includes many language features to support preparation and processing of large volumes of data so that it can be made more valuable and then consumed by other services within Azure Synapse Analytics. This is enabled through multiple languages (C#, Scala, PySpark, Spark SQL) and supplied libraries for processing and connectivity.
 
-## Machine Learning
+### Machine Learning
 
-Apache Spark comes with MLlib, a machine learning library built on top of Spark that you can use from a Spark pool in Azure Synapse Analytics. Spark pools in Azure Synapse Analytics also include Anaconda, a Python distribution with a variety of packages for data science including machine learning. When combined with built-in support for notebooks, you have an environment for creating machine learning applications.
+Apache Spark comes with MLlib, a machine learning library built on top of Spark that you can use from a Spark pool in Azure Synapse Analytics.  Azure Synapse Analytics comes with built-in support for notebooks, you have an environment for creating machine learning applications.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTY2NDE4NTUsLTY0MDY4ODc2NSw0NT
-QwOTgyOTAsLTEyNDU2MTkxMTQsMTYyNzg1NDAxNywtMTc5Nzcw
-MjY0OCwtMTY1NDMwMDM1LDc4NjM4MzQ4NSwtNzMwMzYxMzI3LC
-0yMDMwNzAyOTI2LDUzODg1Mjk4NiwyNzQ1NzEyMDcsMTA4Mjkw
-MzYwOSwxNzAwNTk5NTUwLDE1OTc5MDY4MCwtMTc5MDkwMzI2MS
-wxMjcxNjE5NzYsMzExNTMzOTQ2LDM1ODA4ODYzNCwtNjE0Mjk2
-MDg2XX0=
+eyJoaXN0b3J5IjpbMTM2MTMxNTExOCwtNjQwNjg4NzY1LDQ1ND
+A5ODI5MCwtMTI0NTYxOTExNCwxNjI3ODU0MDE3LC0xNzk3NzAy
+NjQ4LC0xNjU0MzAwMzUsNzg2MzgzNDg1LC03MzAzNjEzMjcsLT
+IwMzA3MDI5MjYsNTM4ODUyOTg2LDI3NDU3MTIwNywxMDgyOTAz
+NjA5LDE3MDA1OTk1NTAsMTU5NzkwNjgwLC0xNzkwOTAzMjYxLD
+EyNzE2MTk3NiwzMTE1MzM5NDYsMzU4MDg4NjM0LC02MTQyOTYw
+ODZdfQ==
 -->
