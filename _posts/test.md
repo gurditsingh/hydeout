@@ -4,7 +4,7 @@ Azure Synapse makes it easy to create and configure a serverless Apache Spark po
 
 Once the spark pool is created it would appear in the list of spark pools in the Azure Synapse Analytics workspace dashboard page. This would mean that the spark cluster got successfully created and provisioned. Now we are ready to use this pool. 
 
-
+Now that the spark pool has been created, we need to test it by trying to access some sample data from Azure Data Lake Storage account.
 
 ## How organizations use the Modern SQL Data Warehouse ?
 
@@ -89,11 +89,11 @@ A distribution is the basic unit of storage and processing for parallel queries 
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc3NjA1MjYxLC0xNzk3NzAyNjQ4LC0xNj
-U0MzAwMzUsNzg2MzgzNDg1LC03MzAzNjEzMjcsLTIwMzA3MDI5
-MjYsNTM4ODUyOTg2LDI3NDU3MTIwNywxMDgyOTAzNjA5LDE3MD
-A1OTk1NTAsMTU5NzkwNjgwLDEyNzE2MTk3NiwzMTE1MzM5NDYs
-MzU4MDg4NjM0LC02MTQyOTYwODYsLTIwODY4ODQ3OTIsMzE4Mj
-EwNDY4LC05MzI1NDUwNjMsLTEwNDAzNDU3MjksLTI5NzM3NjQx
-NV19
+eyJoaXN0b3J5IjpbMTYyNzg1NDAxNywtMTc5NzcwMjY0OCwtMT
+Y1NDMwMDM1LDc4NjM4MzQ4NSwtNzMwMzYxMzI3LC0yMDMwNzAy
+OTI2LDUzODg1Mjk4NiwyNzQ1NzEyMDcsMTA4MjkwMzYwOSwxNz
+AwNTk5NTUwLDE1OTc5MDY4MCwxMjcxNjE5NzYsMzExNTMzOTQ2
+LDM1ODA4ODYzNCwtNjE0Mjk2MDg2LC0yMDg2ODg0NzkyLDMxOD
+IxMDQ2OCwtOTMyNTQ1MDYzLC0xMDQwMzQ1NzI5LC0yOTczNzY0
+MTVdfQ==
 -->
