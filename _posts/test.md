@@ -16,6 +16,8 @@ The  **general**  part means that it can be used for multiple things like runnin
 
 ### Spark Components
 
+![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/Spark-components.png?raw=true)
+
 1.  **Apache Spark Core**  – Spark Core is the underlying general execution engine for the Spark platform that all other functionality is built upon. It provides in-memory computing and referencing datasets in external storage systems.
 2.  **Spark SQL**  – Spark SQL is Apache Spark’s module for working with structured data. The interfaces offered by Spark SQL provides Spark with more information about the structure of both the data and the computation being performed.
 3.  **Spark Streaming**  – This component allows Spark to process real-time streaming data. Data can be ingested from many sources like Kafka, Flume, and HDFS (Hadoop Distributed File System). Then the data can be processed using complex algorithms and pushed out to file systems, databases, and live dashboards.
@@ -35,7 +37,7 @@ Spark pools in Azure Synapse offer a fully managed Spark service. The benefits o
 |  Support for Azure Data Lake Storage V2 |  Spark pools in Azure Synapse can use Azure Data Lake Storage Generation 2 as well as BLOB storage. |
 
 
-
+## Spark pool architecture
 
 ## How organizations use the Modern SQL Data Warehouse ?
 
@@ -120,11 +122,11 @@ A distribution is the basic unit of storage and processing for parallel queries 
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYyMTM1NjYxLDQ1NDA5ODI5MCwtMTI0NT
-YxOTExNCwxNjI3ODU0MDE3LC0xNzk3NzAyNjQ4LC0xNjU0MzAw
-MzUsNzg2MzgzNDg1LC03MzAzNjEzMjcsLTIwMzA3MDI5MjYsNT
-M4ODUyOTg2LDI3NDU3MTIwNywxMDgyOTAzNjA5LDE3MDA1OTk1
-NTAsMTU5NzkwNjgwLC0xNzkwOTAzMjYxLDEyNzE2MTk3NiwzMT
-E1MzM5NDYsMzU4MDg4NjM0LC02MTQyOTYwODYsLTIwODY4ODQ3
-OTJdfQ==
+eyJoaXN0b3J5IjpbLTE5MDIyMTcwMyw0NTQwOTgyOTAsLTEyND
+U2MTkxMTQsMTYyNzg1NDAxNywtMTc5NzcwMjY0OCwtMTY1NDMw
+MDM1LDc4NjM4MzQ4NSwtNzMwMzYxMzI3LC0yMDMwNzAyOTI2LD
+UzODg1Mjk4NiwyNzQ1NzEyMDcsMTA4MjkwMzYwOSwxNzAwNTk5
+NTUwLDE1OTc5MDY4MCwtMTc5MDkwMzI2MSwxMjcxNjE5NzYsMz
+ExNTMzOTQ2LDM1ODA4ODYzNCwtNjE0Mjk2MDg2LC0yMDg2ODg0
+NzkyXX0=
 -->
