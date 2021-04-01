@@ -1,4 +1,5 @@
 ## What is Synapse Spark pool?
+Apache Spark is a parallel processing framework that supports in-memory processing to boost the performance of big-data analytic applications. Apache Spark in Azure Synapse Analytics is one of Microsoft implementations of Apache Spark in the cloud. Azure Synapse makes it easy to create and configure a serverless Apache Spark pool in Azure. Spark pools in Azure Synapse are compatible with Azure Storage and Azure Data Lake Storage. So you can use Spark pools to process your data stored in Azure.
 
 Azure Synapse makes it easy to create and configure a serverless Apache Spark pool in Azure. Apache Spark includes many language features to support preparation and processing of large volumes of data so that it can be made more valuable and then consumed by other services within Azure Synapse Analytics. This is enabled through multiple languages (C#, Scala, PySpark, Spark SQL) and supplied libraries for processing and connectivity.
 
@@ -6,8 +7,8 @@ Once the spark pool is created it would appear in the list of spark pools in the
 
 Now that the spark pool has been created, we need to test it by trying to access some sample data from Azure Data Lake Storage account.
 
-## Apache Spark in Azure Synapse Analytics
-Apache Spark is a parallel processing framework that supports in-memory processing to boost the performance of big-data analytic applications. Apache Spark in Azure Synapse Analytics is one of Microsoft implementations of Apache Spark in the cloud. Azure Synapse makes it easy to create and configure a serverless Apache Spark pool in Azure. Spark pools in Azure Synapse are compatible with Azure Storage and Azure Data Lake Storage. So you can use Spark pools to process your data stored in Azure.
+## What is Apache Spark
+
 
 
 
@@ -95,11 +96,11 @@ A distribution is the basic unit of storage and processing for parallel queries 
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQxMjY4Njc3LDE2Mjc4NTQwMTcsLTE3OT
-c3MDI2NDgsLTE2NTQzMDAzNSw3ODYzODM0ODUsLTczMDM2MTMy
-NywtMjAzMDcwMjkyNiw1Mzg4NTI5ODYsMjc0NTcxMjA3LDEwOD
-I5MDM2MDksMTcwMDU5OTU1MCwxNTk3OTA2ODAsMTI3MTYxOTc2
-LDMxMTUzMzk0NiwzNTgwODg2MzQsLTYxNDI5NjA4NiwtMjA4Nj
-g4NDc5MiwzMTgyMTA0NjgsLTkzMjU0NTA2MywtMTA0MDM0NTcy
-OV19
+eyJoaXN0b3J5IjpbLTE2OTYyMzYwNjYsMTYyNzg1NDAxNywtMT
+c5NzcwMjY0OCwtMTY1NDMwMDM1LDc4NjM4MzQ4NSwtNzMwMzYx
+MzI3LC0yMDMwNzAyOTI2LDUzODg1Mjk4NiwyNzQ1NzEyMDcsMT
+A4MjkwMzYwOSwxNzAwNTk5NTUwLDE1OTc5MDY4MCwxMjcxNjE5
+NzYsMzExNTMzOTQ2LDM1ODA4ODYzNCwtNjE0Mjk2MDg2LC0yMD
+g2ODg0NzkyLDMxODIxMDQ2OCwtOTMyNTQ1MDYzLC0xMDQwMzQ1
+NzI5XX0=
 -->
