@@ -22,7 +22,8 @@ The  **general**  part means that it can be used for multiple things like runnin
 4.  **MLlib (Machine Learning Library)**  – Apache Spark is equipped with a rich library known as MLlib. This library contains a wide array of machine learning algorithms- classification, regression, clustering, and collaborative filtering. It also includes other tools for constructing, evaluating, and tuning ML Pipelines. All these functionalities help Spark scale out across a cluster.
 5.  **GraphX**  – Spark also comes with a library to manipulate graph databases and perform computations called GraphX. GraphX unifies ETL (Extract, Transform, and Load) process, exploratory analysis, and iterative graph computation within a single system.
 
-## Spark pools in Azure Synapse offer a fully managed Spark service
+## Azure Synapse offer a fully managed Spark service.
+
 
 
 ## How organizations use the Modern SQL Data Warehouse ?
@@ -108,7 +109,7 @@ A distribution is the basic unit of storage and processing for parallel queries 
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTAwOTgxMTg3LC0xMjQ1NjE5MTE0LDE2Mj
+eyJoaXN0b3J5IjpbNDU0MDk4MjkwLC0xMjQ1NjE5MTE0LDE2Mj
 c4NTQwMTcsLTE3OTc3MDI2NDgsLTE2NTQzMDAzNSw3ODYzODM0
 ODUsLTczMDM2MTMyNywtMjAzMDcwMjkyNiw1Mzg4NTI5ODYsMj
 c0NTcxMjA3LDEwODI5MDM2MDksMTcwMDU5OTU1MCwxNTk3OTA2
