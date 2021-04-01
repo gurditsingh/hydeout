@@ -60,13 +60,13 @@ Apache Spark includes many language features to support preparation and processi
 
 ### Machine Learning
 
-Apache Spark comes with MLlib, a machine learning library built on top of Spark that you can use from a Spark pool in Azure Synapse Analytics.  Azure Synapse Analytics comes with built-in support for notebooks, you have an environment for creating machine learning applications.
+Apache Spark comes with MLlib, a machine learning library built on top of Spark that you can use from a Spark pool in Azure Synapse Analytics.  Azure Synapse Analytics comes with built-in support for notebooks and you have an environment for creating machine learning applications.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MTMxNTExOCwtNjQwNjg4NzY1LDQ1ND
-A5ODI5MCwtMTI0NTYxOTExNCwxNjI3ODU0MDE3LC0xNzk3NzAy
-NjQ4LC0xNjU0MzAwMzUsNzg2MzgzNDg1LC03MzAzNjEzMjcsLT
-IwMzA3MDI5MjYsNTM4ODUyOTg2LDI3NDU3MTIwNywxMDgyOTAz
-NjA5LDE3MDA1OTk1NTAsMTU5NzkwNjgwLDEyNzE2MTk3NiwzMT
-E1MzM5NDYsMzU4MDg4NjM0LC02MTQyOTYwODYsLTIwODY4ODQ3
-OTJdfQ==
+eyJoaXN0b3J5IjpbMzkwODI3Njk3LC02NDA2ODg3NjUsNDU0MD
+k4MjkwLC0xMjQ1NjE5MTE0LDE2Mjc4NTQwMTcsLTE3OTc3MDI2
+NDgsLTE2NTQzMDAzNSw3ODYzODM0ODUsLTczMDM2MTMyNywtMj
+AzMDcwMjkyNiw1Mzg4NTI5ODYsMjc0NTcxMjA3LDEwODI5MDM2
+MDksMTcwMDU5OTU1MCwxNTk3OTA2ODAsMTI3MTYxOTc2LDMxMT
+UzMzk0NiwzNTgwODg2MzQsLTYxNDI5NjA4NiwtMjA4Njg4NDc5
+Ml19
 -->
