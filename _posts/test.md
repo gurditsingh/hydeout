@@ -45,10 +45,11 @@ Spark pools in Azure Synapse offer a fully managed Spark service. The benefits o
  - Once the Resource manager assigned the resources it sends your application code (defined by JAR or Python files passed to SparkContext) to the executors. Finally, SparkContext sends tasks to the executors to run.
  - The SparkContext runs the user's main function and executes the various parallel operations on the nodes.
  - The SparkContext collects the results of the operations. The nodes read and write data from and to the file system. The nodes also cache transformed data in-memory as Resilient Distributed Datasets (RDDs).
- - 
+ - The SparkContext connects to the Spark pool and is responsible for converting an application to a directed acyclic graph (DAG).
+ - The graph consists of individual tasks that get executed within an executor process on the nodes. Each application gets its own executor processes, which stay up for the duration of the whole application and run tasks in multiple threads.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5Mjg3OTQ1MCw0NTQwOTgyOTAsLTEyND
+eyJoaXN0b3J5IjpbLTY0MDY4ODc2NSw0NTQwOTgyOTAsLTEyND
 U2MTkxMTQsMTYyNzg1NDAxNywtMTc5NzcwMjY0OCwtMTY1NDMw
 MDM1LDc4NjM4MzQ4NSwtNzMwMzYxMzI3LC0yMDMwNzAyOTI2LD
 UzODg1Mjk4NiwyNzQ1NzEyMDcsMTA4MjkwMzYwOSwxNzAwNTk5
