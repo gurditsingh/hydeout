@@ -14,6 +14,7 @@ The  **fast**  part means that it’s faster than previous approaches to work wi
 
 The  **general**  part means that it can be used for multiple things like running distributed SQL, creating data pipelines, ingesting data into a database, running Machine Learning algorithms, working with graphs or data streams, and much more.
 
+Spark Compon
 
 
 
@@ -100,11 +101,11 @@ A distribution is the basic unit of storage and processing for parallel queries 
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDU2MTkxMTQsMTYyNzg1NDAxNywtMT
-c5NzcwMjY0OCwtMTY1NDMwMDM1LDc4NjM4MzQ4NSwtNzMwMzYx
-MzI3LC0yMDMwNzAyOTI2LDUzODg1Mjk4NiwyNzQ1NzEyMDcsMT
-A4MjkwMzYwOSwxNzAwNTk5NTUwLDE1OTc5MDY4MCwtMTc5MDkw
-MzI2MSwxMjcxNjE5NzYsMzExNTMzOTQ2LDM1ODA4ODYzNCwtNj
-E0Mjk2MDg2LC0yMDg2ODg0NzkyLDMxODIxMDQ2OCwtOTMyNTQ1
-MDYzXX0=
+eyJoaXN0b3J5IjpbMTc2NDEyMzI1NywtMTI0NTYxOTExNCwxNj
+I3ODU0MDE3LC0xNzk3NzAyNjQ4LC0xNjU0MzAwMzUsNzg2Mzgz
+NDg1LC03MzAzNjEzMjcsLTIwMzA3MDI5MjYsNTM4ODUyOTg2LD
+I3NDU3MTIwNywxMDgyOTAzNjA5LDE3MDA1OTk1NTAsMTU5Nzkw
+NjgwLC0xNzkwOTAzMjYxLDEyNzE2MTk3NiwzMTE1MzM5NDYsMz
+U4MDg4NjM0LC02MTQyOTYwODYsLTIwODY4ODQ3OTIsMzE4MjEw
+NDY4XX0=
 -->
