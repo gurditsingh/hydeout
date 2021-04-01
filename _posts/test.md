@@ -23,6 +23,17 @@ The  **general**  part means that it can be used for multiple things like runnin
 5.  **GraphX**  – Spark also comes with a library to manipulate graph databases and perform computations called GraphX. GraphX unifies ETL (Extract, Transform, and Load) process, exploratory analysis, and iterative graph computation within a single system.
 
 ## Azure Synapse offer a fully managed Spark service.
+Spark pools in Azure Synapse offer a fully managed Spark service. The benefits of creating a Spark pool in Azure Synapse Analytics are listed below.
+
+| Feature  | Description  |
+| ------------ | ------------ |
+|  Scalability | Apache Spark in Azure Synapse pools can have Auto-Scale enabled, so that pools scale by adding or removing nodes as needed  |
+| Ease to use  |  Synapse Analytics includes a custom notebook for interactive data processing and visualization. |
+|  Ease to provision | You can create a new Spark pool in Azure Synapse in minutes using the Azure portal, Azure PowerShell, or the Synapse Analytics .  |
+| REST APIs  | Spark in Azure Synapse Analytics includes Apache Livy, a REST API-based Spark job server to remotely submit and monitor jobs.  |
+| Speed and efficiency  | Spark instances start in minutes and also scale to number of nodes winthin an minutes  |
+|  Support for Azure Data Lake Storage V2 |  Spark pools in Azure Synapse can use Azure Data Lake Storage Generation 2 as well as BLOB storage. |
+
 
 
 
@@ -109,11 +120,11 @@ A distribution is the basic unit of storage and processing for parallel queries 
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDU0MDk4MjkwLC0xMjQ1NjE5MTE0LDE2Mj
-c4NTQwMTcsLTE3OTc3MDI2NDgsLTE2NTQzMDAzNSw3ODYzODM0
-ODUsLTczMDM2MTMyNywtMjAzMDcwMjkyNiw1Mzg4NTI5ODYsMj
-c0NTcxMjA3LDEwODI5MDM2MDksMTcwMDU5OTU1MCwxNTk3OTA2
-ODAsMTI3MTYxOTc2LDMxMTUzMzk0NiwzNTgwODg2MzQsLTYxND
-I5NjA4NiwtMjA4Njg4NDc5MiwzMTgyMTA0NjgsLTkzMjU0NTA2
-M119
+eyJoaXN0b3J5IjpbNTYyMTM1NjYxLDQ1NDA5ODI5MCwtMTI0NT
+YxOTExNCwxNjI3ODU0MDE3LC0xNzk3NzAyNjQ4LC0xNjU0MzAw
+MzUsNzg2MzgzNDg1LC03MzAzNjEzMjcsLTIwMzA3MDI5MjYsNT
+M4ODUyOTg2LDI3NDU3MTIwNywxMDgyOTAzNjA5LDE3MDA1OTk1
+NTAsMTU5NzkwNjgwLDEyNzE2MTk3NiwzMTE1MzM5NDYsMzU4MD
+g4NjM0LC02MTQyOTYwODYsLTIwODY4ODQ3OTIsMzE4MjEwNDY4
+XX0=
 -->
