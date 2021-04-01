@@ -1,11 +1,6 @@
-## What is Synapse SQL pool?
-Synapse SQL Pool (formerly SQL Data Warehouse) is an MPP Enterprise Data Warehouse on Azure.
+## What is Synapse Spark pool?
 
--  Synapse SQL pool stores data in relational tables with columnar storage.
--  Synapse SQL pool has compute separate from storage which enables to scale.
--  Synapse Service Level Objective (Compute) is the scalability setting which determines cost and performance of the data warehouse (DWU). It ranges from DW100c to DW30000c, higher configuration has more nodes.
--  Workload management is additional feature around managing resource utilization, concurrency and query priority.
--  Synapse compute can be scale up down via SQL, PowerShell and Portal. The SQL ability for scaling is unique, and can be achieved via an “ALTER” command.
+Azure Synapse makes it easy to create and configure a serverless Apache Spark pool in Azure. Apache Spark includes many language features to support preparation and processing of large volumes of data so that it can be made more valuable and then consumed by other services within Azure Synapse Analytics. This is enabled through multiple languages (C#, Scala, PySpark, Spark SQL) and supplied libraries for processing and connectivity.
 
 ## How organizations use the Modern SQL Data Warehouse ?
 
@@ -90,11 +85,11 @@ A distribution is the basic unit of storage and processing for parallel queries 
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTQzMDAzNSw3ODYzODM0ODUsLTczMD
-M2MTMyNywtMjAzMDcwMjkyNiw1Mzg4NTI5ODYsMjc0NTcxMjA3
-LDEwODI5MDM2MDksMTcwMDU5OTU1MCwxNTk3OTA2ODAsMTI3MT
-YxOTc2LDMxMTUzMzk0NiwzNTgwODg2MzQsLTYxNDI5NjA4Niwt
-MjA4Njg4NDc5MiwzMTgyMTA0NjgsLTkzMjU0NTA2MywtMTA0MD
-M0NTcyOSwtMjk3Mzc2NDE1LDExMTYwMTI3NjksLTYxODE0Nzk5
-Nl19
+eyJoaXN0b3J5IjpbLTE3OTc3MDI2NDgsLTE2NTQzMDAzNSw3OD
+YzODM0ODUsLTczMDM2MTMyNywtMjAzMDcwMjkyNiw1Mzg4NTI5
+ODYsMjc0NTcxMjA3LDEwODI5MDM2MDksMTcwMDU5OTU1MCwxNT
+k3OTA2ODAsMTI3MTYxOTc2LDMxMTUzMzk0NiwzNTgwODg2MzQs
+LTYxNDI5NjA4NiwtMjA4Njg4NDc5MiwzMTgyMTA0NjgsLTkzMj
+U0NTA2MywtMTA0MDM0NTcyOSwtMjk3Mzc2NDE1LDExMTYwMTI3
+NjldfQ==
 -->
