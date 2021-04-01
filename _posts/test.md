@@ -2,6 +2,10 @@
 
 Azure Synapse makes it easy to create and configure a serverless Apache Spark pool in Azure. Apache Spark includes many language features to support preparation and processing of large volumes of data so that it can be made more valuable and then consumed by other services within Azure Synapse Analytics. This is enabled through multiple languages (C#, Scala, PySpark, Spark SQL) and supplied libraries for processing and connectivity.
 
+Once the spark pool is created it would appear in the list of spark pools in the Azure Synapse Analytics workspace dashboard page. This would mean that the spark cluster got successfully created and provisioned. Now we are ready to use this pool. 
+
+
+
 ## How organizations use the Modern SQL Data Warehouse ?
 
  - If you want to independently size compute power regardless of your storage needs because the compute nodes and the storage nodes are kept separate.
@@ -85,11 +89,11 @@ A distribution is the basic unit of storage and processing for parallel queries 
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTc3MDI2NDgsLTE2NTQzMDAzNSw3OD
-YzODM0ODUsLTczMDM2MTMyNywtMjAzMDcwMjkyNiw1Mzg4NTI5
-ODYsMjc0NTcxMjA3LDEwODI5MDM2MDksMTcwMDU5OTU1MCwxNT
-k3OTA2ODAsLTE3OTA5MDMyNjEsMTI3MTYxOTc2LDMxMTUzMzk0
-NiwzNTgwODg2MzQsLTYxNDI5NjA4NiwtMjA4Njg4NDc5MiwzMT
-gyMTA0NjgsLTkzMjU0NTA2MywtMTA0MDM0NTcyOSwtMjk3Mzc2
-NDE1XX0=
+eyJoaXN0b3J5IjpbODc3NjA1MjYxLC0xNzk3NzAyNjQ4LC0xNj
+U0MzAwMzUsNzg2MzgzNDg1LC03MzAzNjEzMjcsLTIwMzA3MDI5
+MjYsNTM4ODUyOTg2LDI3NDU3MTIwNywxMDgyOTAzNjA5LDE3MD
+A1OTk1NTAsMTU5NzkwNjgwLC0xNzkwOTAzMjYxLDEyNzE2MTk3
+NiwzMTE1MzM5NDYsMzU4MDg4NjM0LC02MTQyOTYwODYsLTIwOD
+Y4ODQ3OTIsMzE4MjEwNDY4LC05MzI1NDUwNjMsLTEwNDAzNDU3
+MjldfQ==
 -->
