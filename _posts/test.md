@@ -7,7 +7,9 @@ Once the spark pool is created it would appear in the list of spark pools in the
 Now that the spark pool has been created, we need to test it by trying to access some sample data from Azure Data Lake Storage account.
 
 ## Apache Spark in Azure Synapse Analytics
-Apache Spark is a parallel processing framework that supports in-memory processing to boost the performance of big-data analytic applications. Apache Spark in Azure Synapse Analytics is one of Microsoft implementations of Apache Spark in the cloud. Azure Synapse makes it easy to create and configure a serverless Apache Spark pool in Azure. Spark pools in Azure Synapse are compatible with Azure Storage and Azure Data Lake Generation 2 Storage. So you can use Spark pools to process your data stored in Azure.
+Apache Spark is a parallel processing framework that supports in-memory processing to boost the performance of big-data analytic applications. Apache Spark in Azure Synapse Analytics is one of Microsoft implementations of Apache Spark in the cloud. Azure Synapse makes it easy to create and configure a serverless Apache Spark pool in Azure. Spark pools in Azure Synapse are compatible with Azure Storage and Azure Data Lake Storage. So you can use Spark pools to process your data stored in Azure.
+
+
 
 
 ## How organizations use the Modern SQL Data Warehouse ?
@@ -93,11 +95,11 @@ A distribution is the basic unit of storage and processing for parallel queries 
 
 Planning to create multiple blogs episodes on azure synapse covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMzA1MjcxNywxNjI3ODU0MDE3LC0xNz
-k3NzAyNjQ4LC0xNjU0MzAwMzUsNzg2MzgzNDg1LC03MzAzNjEz
-MjcsLTIwMzA3MDI5MjYsNTM4ODUyOTg2LDI3NDU3MTIwNywxMD
-gyOTAzNjA5LDE3MDA1OTk1NTAsMTU5NzkwNjgwLC0xNzkwOTAz
-MjYxLDEyNzE2MTk3NiwzMTE1MzM5NDYsMzU4MDg4NjM0LC02MT
-QyOTYwODYsLTIwODY4ODQ3OTIsMzE4MjEwNDY4LC05MzI1NDUw
-NjNdfQ==
+eyJoaXN0b3J5IjpbNTQxMjY4Njc3LDE2Mjc4NTQwMTcsLTE3OT
+c3MDI2NDgsLTE2NTQzMDAzNSw3ODYzODM0ODUsLTczMDM2MTMy
+NywtMjAzMDcwMjkyNiw1Mzg4NTI5ODYsMjc0NTcxMjA3LDEwOD
+I5MDM2MDksMTcwMDU5OTU1MCwxNTk3OTA2ODAsLTE3OTA5MDMy
+NjEsMTI3MTYxOTc2LDMxMTUzMzk0NiwzNTgwODg2MzQsLTYxND
+I5NjA4NiwtMjA4Njg4NDc5MiwzMTgyMTA0NjgsLTkzMjU0NTA2
+M119
 -->
