@@ -42,10 +42,10 @@ Spark pools in Azure Synapse offer a fully managed Spark service. The benefits o
  - Spark applications run as independent sets of processes on a pool, coordinated by the SparkContext object in your main program(driver program).
  - The SparkContext can connect to the cluster manager, which allocates resources across applications.
  - The cluster manager is YARN. Once connected, Spark acquires executors on nodes in the pool from Resource manager, which are processes that run computations and store data for your application.
- - Once the Resource manager sends your application code (defined by JAR or Python files passed to SparkContext) to the executors. Finally, SparkContext sends tasks to the executors to run.
+ - Once the Resource manager assigned sends your application code (defined by JAR or Python files passed to SparkContext) to the executors. Finally, SparkContext sends tasks to the executors to run.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODQ3MzU0OTIsNDU0MDk4MjkwLC0xMj
+eyJoaXN0b3J5IjpbLTE2NDUyOTM5MDIsNDU0MDk4MjkwLC0xMj
 Q1NjE5MTE0LDE2Mjc4NTQwMTcsLTE3OTc3MDI2NDgsLTE2NTQz
 MDAzNSw3ODYzODM0ODUsLTczMDM2MTMyNywtMjAzMDcwMjkyNi
 w1Mzg4NTI5ODYsMjc0NTcxMjA3LDEwODI5MDM2MDksMTcwMDU5
