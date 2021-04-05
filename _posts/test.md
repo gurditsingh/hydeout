@@ -17,7 +17,7 @@ Spark Performance Tuning refers to the process of adjusting settings to record f
 
  - To apply any parameters first we need the information regarding the Cluster Size accordingly we can supply the parameters.
  - We need the information regarding the Instance type used in the Cluster like General Purpose, Compute-optimized, Memory-optimized, Storage-optimized and etc.
- - We need the information regarding the number of processors so that we can choose the number of partitions.
+ - We can  number of processors so that we can choose the number of partitions.
  - We need the information regarding the memory size so that we can select the optimal number of executors.
  - We need the information regarding the type of disk like SSD, RAM_DISK, HDD and etc.
 
@@ -26,11 +26,11 @@ Spark Performance Tuning refers to the process of adjusting settings to record f
  - P
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNDA1Nzc4NSwtMTA1NTgxNDgwNywtMT
-c3NjQxNTM3NCwxNjA2OTM2MDk3LDU4NDc3MzgzOSwxNDM3Mjkx
-NjQ1LC0yMDg4NzQ2NjEyLDM5MDgyNzY5NywtNjQwNjg4NzY1LD
-Q1NDA5ODI5MCwtMTI0NTYxOTExNCwxNjI3ODU0MDE3LC0xNzk3
-NzAyNjQ4LC0xNjU0MzAwMzUsNzg2MzgzNDg1LC03MzAzNjEzMj
-csLTIwMzA3MDI5MjYsNTM4ODUyOTg2LDI3NDU3MTIwNywxMDgy
-OTAzNjA5XX0=
+eyJoaXN0b3J5IjpbLTIxMjY2NTgzMjAsMjAxNDA1Nzc4NSwtMT
+A1NTgxNDgwNywtMTc3NjQxNTM3NCwxNjA2OTM2MDk3LDU4NDc3
+MzgzOSwxNDM3MjkxNjQ1LC0yMDg4NzQ2NjEyLDM5MDgyNzY5Ny
+wtNjQwNjg4NzY1LDQ1NDA5ODI5MCwtMTI0NTYxOTExNCwxNjI3
+ODU0MDE3LC0xNzk3NzAyNjQ4LC0xNjU0MzAwMzUsNzg2MzgzND
+g1LC03MzAzNjEzMjcsLTIwMzA3MDI5MjYsNTM4ODUyOTg2LDI3
+NDU3MTIwN119
 -->
