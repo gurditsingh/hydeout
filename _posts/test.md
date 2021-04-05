@@ -23,10 +23,11 @@ Spark Performance Tuning refers to the process of adjusting settings to record f
 
 ### Spark Configurations
 
- - Parallelism can be decided on number of cores in your cluster or specified queue. 
+ - Parallelism can be decided on number of cores and executors in your cluster or specified queue.
+ - In your spark job you can avoid Shuffle  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzM2MzU3NywyMDE0MDU3Nzg1LC0xMD
+eyJoaXN0b3J5IjpbMTUwMjcxMjMwMiwyMDE0MDU3Nzg1LC0xMD
 U1ODE0ODA3LC0xNzc2NDE1Mzc0LDE2MDY5MzYwOTcsNTg0Nzcz
 ODM5LDE0MzcyOTE2NDUsLTIwODg3NDY2MTIsMzkwODI3Njk3LC
 02NDA2ODg3NjUsNDU0MDk4MjkwLC0xMjQ1NjE5MTE0LDE2Mjc4
