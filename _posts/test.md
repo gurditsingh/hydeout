@@ -32,10 +32,10 @@ First thing is How do we start with parameter tuning or job optimization. Basica
 
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark-tuning-lifecycle.jpg?raw=true)
 
- - **Run the Job** We start with running the job with the default parameters and job can hours to complete. Bascially we can start fro
+ - **Run the Job :** We can start the job with the default parameters and job can hours to complete. Basically we can start from any point either if we have any knowledge than we can setup some of the **tuning parameters** or we can start with default. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzExMjY0NDQ5LC0xMDkxMjQzOTIyLDE2MT
+eyJoaXN0b3J5IjpbNzMxMzA4MzMyLC0xMDkxMjQzOTIyLDE2MT
 kxMjcxOTgsMTk4ODM5MzMyOCwxODc3NzY5NDU1LDIwMTQwNTc3
 ODUsLTEwNTU4MTQ4MDcsLTE3NzY0MTUzNzQsMTYwNjkzNjA5Ny
 w1ODQ3NzM4MzksMTQzNzI5MTY0NSwtMjA4ODc0NjYxMiwzOTA4
