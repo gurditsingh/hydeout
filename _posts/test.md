@@ -24,10 +24,10 @@ Spark Performance Tuning refers to the process of adjusting settings to record f
 ### Spark Configurations
 Because of the in-memory nature of most Spark computations, Spark programs can be bottlenecked by any resource in the cluster: CPU, network bandwidth, or memory. 
 
-Spark configurations like parallelism how spark the shuffle storage JVM tuning flags or feature flags and and you know there are probably hundreds of knobs you don't need to know or tune all of them but they exist they're hard-coded and it's up to you to configure them and by performance tuning.
+Spark configurations like parallelism, shuffle, storage, JVM tuning flags, feature flags and you know there are probably hundreds of configs you don't need to know or tune all of them but they exist they're hard-coded and it's up to you to configure them and by performance tuning.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3MzQ2NTkxMiwxODc3NzY5NDU1LDIwMT
+eyJoaXN0b3J5IjpbMTk4ODM5MzMyOCwxODc3NzY5NDU1LDIwMT
 QwNTc3ODUsLTEwNTU4MTQ4MDcsLTE3NzY0MTUzNzQsMTYwNjkz
 NjA5Nyw1ODQ3NzM4MzksMTQzNzI5MTY0NSwtMjA4ODc0NjYxMi
 wzOTA4Mjc2OTcsLTY0MDY4ODc2NSw0NTQwOTgyOTAsLTEyNDU2
