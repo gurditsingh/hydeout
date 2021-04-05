@@ -5,12 +5,12 @@ Spark Performance Tuning refers to the process of adjusting settings to record f
  - **Data serialization** also determines a good network performance. You will be able to obtain good results in Spark performance by serialization. Spark supports two serialization libraries Java Serialization, Kryo Serialization.
  - **Memory Tuning** is necessary or important step in tuning. we need to give as much memory so that the entire dataset has to fit in memory.
  -  **Data Structure Tuning** One option to reduce memory consumption is by staying away from java features. Avoid the nested structure with lots of small objects and pointers. Instead of using strings for keys use numeric.
- -  **Garbage Collection Tuning** 
+ -  **Garbage Collection Tuning** In order to avoid the large “churn” related to the RDDs that have been previously stored by the program, java will dismiss old objects in order to create space for new ones. However, by using data structures that feature fewer objects the cost is greatly reduced. One such example would be the employment an array of Ints instead of a linked list.
  -  **Memory Management** An efficient memory use is essential to good performance. Spark uses memory mainly for storage and execution. Storage memory is used to cache data that will be reused later. On the other hand, execution memory is used for computation in shuffles, sorts, joins, and aggregations.
  - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3ODIwNjMyMyw1ODQ3NzM4MzksMTQzNz
+eyJoaXN0b3J5IjpbMTYwNjkzNjA5Nyw1ODQ3NzM4MzksMTQzNz
 I5MTY0NSwtMjA4ODc0NjYxMiwzOTA4Mjc2OTcsLTY0MDY4ODc2
 NSw0NTQwOTgyOTAsLTEyNDU2MTkxMTQsMTYyNzg1NDAxNywtMT
 c5NzcwMjY0OCwtMTY1NDMwMDM1LDc4NjM4MzQ4NSwtNzMwMzYx
