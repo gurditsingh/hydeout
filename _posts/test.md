@@ -32,16 +32,16 @@ First thing is How do we start with parameter tuning or job optimization. Basica
 
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark-tuning-lifecycle.jpg?raw=true)
 
- - **Run the Job :** We can start the job with the default parameters and job can take hours to complete. Basically we can start from any point either if we have any knowledge than we can setup some of the **tuning parameters** or we can start with default.
+ - **Run the Job :** We can start the job with the default parameters and job can take hours to complete. Basically we can start from any point either if we have any knowledge than we can setup some of the tuning parameters or we can start with default.
  - **Analyze Logs :** Once the job completes and if it take longer time then we can further tune the job. To tune the job we need to analyze the job logs. you can find the job logs on spark UI, yarn logs, job history or per node matrix.
- - **Pick new Params :** After analysing the job logs we can then use some expertise or some intuition to figure out is this application running smoothly is it running fast enough and then maybe pick better parameters to improve the stability or improve the performance
+ - **Pick new Params :** After analysing the job logs we can then use some expertise or some intuition to figure out is this application running smoothly or we rune  fast enough and then maybe pick better parameters to improve the stability or improve the performance
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTI3NzY4MzksLTEzMzQyNzM1NTAsLT
-YwMTIzMjgwNCwtOTYwMjcyMDE2LDU1MjkyNTAxMywxNzMxNDkx
-ODI1LC0xMDkxMjQzOTIyLDE2MTkxMjcxOTgsMTk4ODM5MzMyOC
-wxODc3NzY5NDU1LDIwMTQwNTc3ODUsLTEwNTU4MTQ4MDcsLTE3
-NzY0MTUzNzQsMTYwNjkzNjA5Nyw1ODQ3NzM4MzksMTQzNzI5MT
-Y0NSwtMjA4ODc0NjYxMiwzOTA4Mjc2OTcsLTY0MDY4ODc2NSw0
-NTQwOTgyOTBdfQ==
+eyJoaXN0b3J5IjpbLTExNzc4OTgyMDAsLTE1OTI3NzY4MzksLT
+EzMzQyNzM1NTAsLTYwMTIzMjgwNCwtOTYwMjcyMDE2LDU1Mjky
+NTAxMywxNzMxNDkxODI1LC0xMDkxMjQzOTIyLDE2MTkxMjcxOT
+gsMTk4ODM5MzMyOCwxODc3NzY5NDU1LDIwMTQwNTc3ODUsLTEw
+NTU4MTQ4MDcsLTE3NzY0MTUzNzQsMTYwNjkzNjA5Nyw1ODQ3Nz
+M4MzksMTQzNzI5MTY0NSwtMjA4ODc0NjYxMiwzOTA4Mjc2OTcs
+LTY0MDY4ODc2NV19
 -->
