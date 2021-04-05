@@ -34,14 +34,14 @@ First thing is How do we start with parameter tuning or job optimization. Basica
 
  - **Run the Job :** We can start the job with the default parameters and job can take hours to complete. Basically we can start from any point either if we have any knowledge than we can setup some of the **tuning parameters** or we can start with default.
  - **Analyze Logs :** Once the job completes and if it take longer time then we can further tune the job. To tune the job we need to analyze the job logs. you can find the job logs on spark UI, yarn logs, job history or per node matrix.
- - **Pick new Params :** After 
+ - **Pick new Params :** After analysing the job 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NDk2MDIwNCwtNjAxMjMyODA0LC05Nj
-AyNzIwMTYsNTUyOTI1MDEzLDE3MzE0OTE4MjUsLTEwOTEyNDM5
-MjIsMTYxOTEyNzE5OCwxOTg4MzkzMzI4LDE4Nzc3Njk0NTUsMj
-AxNDA1Nzc4NSwtMTA1NTgxNDgwNywtMTc3NjQxNTM3NCwxNjA2
-OTM2MDk3LDU4NDc3MzgzOSwxNDM3MjkxNjQ1LC0yMDg4NzQ2Nj
-EyLDM5MDgyNzY5NywtNjQwNjg4NzY1LDQ1NDA5ODI5MCwtMTI0
-NTYxOTExNF19
+eyJoaXN0b3J5IjpbLTEzMzQyNzM1NTAsLTYwMTIzMjgwNCwtOT
+YwMjcyMDE2LDU1MjkyNTAxMywxNzMxNDkxODI1LC0xMDkxMjQz
+OTIyLDE2MTkxMjcxOTgsMTk4ODM5MzMyOCwxODc3NzY5NDU1LD
+IwMTQwNTc3ODUsLTEwNTU4MTQ4MDcsLTE3NzY0MTUzNzQsMTYw
+NjkzNjA5Nyw1ODQ3NzM4MzksMTQzNzI5MTY0NSwtMjA4ODc0Nj
+YxMiwzOTA4Mjc2OTcsLTY0MDY4ODc2NSw0NTQwOTgyOTAsLTEy
+NDU2MTkxMTRdfQ==
 -->
