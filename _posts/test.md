@@ -15,10 +15,11 @@ Spark Performance Tuning refers to the process of adjusting settings to record f
 
 ### Cluster Parameters:
 
- - To apply any parameters first we need to Cluster Size 
+ - To apply any parameters first we need the information regarding the Cluster Size accordingly we can supply the parameters.
+ - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyNTAxODgwMiwxNjA2OTM2MDk3LDU4ND
+eyJoaXN0b3J5IjpbMTY5NzIwMjY0OCwxNjA2OTM2MDk3LDU4ND
 c3MzgzOSwxNDM3MjkxNjQ1LC0yMDg4NzQ2NjEyLDM5MDgyNzY5
 NywtNjQwNjg4NzY1LDQ1NDA5ODI5MCwtMTI0NTYxOTExNCwxNj
 I3ODU0MDE3LC0xNzk3NzAyNjQ4LC0xNjU0MzAwMzUsNzg2Mzgz
