@@ -1,11 +1,15 @@
 ## What is Spark Performance Tuning?
+Spark Performance Tuning refers to the process of adjusting settings to record for memory, cores, and instances used by the system. This process guarantees that the Spark has a flawless performance and also prevents bottlenecking of resources in Spark.
+![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark-tuning.jpg?raw=true)
+
+ - List item
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNzI5MTY0NSwtMjA4ODc0NjYxMiwzOT
-A4Mjc2OTcsLTY0MDY4ODc2NSw0NTQwOTgyOTAsLTEyNDU2MTkx
-MTQsMTYyNzg1NDAxNywtMTc5NzcwMjY0OCwtMTY1NDMwMDM1LD
-c4NjM4MzQ4NSwtNzMwMzYxMzI3LC0yMDMwNzAyOTI2LDUzODg1
-Mjk4NiwyNzQ1NzEyMDcsMTA4MjkwMzYwOSwxNzAwNTk5NTUwLD
-E1OTc5MDY4MCwxMjcxNjE5NzYsMzExNTMzOTQ2LDM1ODA4ODYz
-NF19
+eyJoaXN0b3J5IjpbMjE4MjI5OTE5LDE0MzcyOTE2NDUsLTIwOD
+g3NDY2MTIsMzkwODI3Njk3LC02NDA2ODg3NjUsNDU0MDk4Mjkw
+LC0xMjQ1NjE5MTE0LDE2Mjc4NTQwMTcsLTE3OTc3MDI2NDgsLT
+E2NTQzMDAzNSw3ODYzODM0ODUsLTczMDM2MTMyNywtMjAzMDcw
+MjkyNiw1Mzg4NTI5ODYsMjc0NTcxMjA3LDEwODI5MDM2MDksMT
+cwMDU5OTU1MCwxNTk3OTA2ODAsMTI3MTYxOTc2LDMxMTUzMzk0
+Nl19
 -->
