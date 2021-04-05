@@ -34,14 +34,14 @@ First thing is How do we start with parameter tuning or job optimization. Basica
 
  - **Run the Job :** We can start the job with the default parameters and job can take hours to complete. Basically we can start from any point either if we have any knowledge than we can setup some of the **tuning parameters** or we can start with default.
  - **Analyze Logs :** Once the job completes and if it take longer time then we can further tune the job. To tune the job we need to analyze the job logs. you can find the job logs on spark UI, yarn logs, job history or per node matrix.
- - **Pick new Params :** After analysing the job logs 
+ - **Pick new Params :** After analysing the job logs we can then use some expertise or some intuition to figure out is this application running smoothly is it running fast enough and then maybe pick better parameters to improve the stability or improve the performance
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MDU5Njc4NywtMTMzNDI3MzU1MCwtNj
-AxMjMyODA0LC05NjAyNzIwMTYsNTUyOTI1MDEzLDE3MzE0OTE4
-MjUsLTEwOTEyNDM5MjIsMTYxOTEyNzE5OCwxOTg4MzkzMzI4LD
-E4Nzc3Njk0NTUsMjAxNDA1Nzc4NSwtMTA1NTgxNDgwNywtMTc3
-NjQxNTM3NCwxNjA2OTM2MDk3LDU4NDc3MzgzOSwxNDM3MjkxNj
-Q1LC0yMDg4NzQ2NjEyLDM5MDgyNzY5NywtNjQwNjg4NzY1LDQ1
-NDA5ODI5MF19
+eyJoaXN0b3J5IjpbLTE1OTI3NzY4MzksLTEzMzQyNzM1NTAsLT
+YwMTIzMjgwNCwtOTYwMjcyMDE2LDU1MjkyNTAxMywxNzMxNDkx
+ODI1LC0xMDkxMjQzOTIyLDE2MTkxMjcxOTgsMTk4ODM5MzMyOC
+wxODc3NzY5NDU1LDIwMTQwNTc3ODUsLTEwNTU4MTQ4MDcsLTE3
+NzY0MTUzNzQsMTYwNjkzNjA5Nyw1ODQ3NzM4MzksMTQzNzI5MT
+Y0NSwtMjA4ODc0NjYxMiwzOTA4Mjc2OTcsLTY0MDY4ODc2NSw0
+NTQwOTgyOTBdfQ==
 -->
