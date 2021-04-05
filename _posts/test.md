@@ -22,17 +22,15 @@ Spark Performance Tuning refers to the process of adjusting settings to record f
  - We need the information regarding the type of disk like SSD, RAM_DISK, HDD and etc. which can reduce the I/O operation and we can decide cache property like memory_only, memory_and_disk and etc.  
 
 ### Spark Configurations
-
- - Parallelism can be decided on number of cores and executors in your cluster or specified queue.
- - In your spark job you can avoid Shuffle or set shuffle partitions for parallelism or set other shuffle parameters.
+Because of the in-memory nature of most Spark computations, Spark programs can be bottlenecked by any resource in the cluster: CPU, network bandwidth, or memory. 
  - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3Nzc2OTQ1NSwyMDE0MDU3Nzg1LC0xMD
-U1ODE0ODA3LC0xNzc2NDE1Mzc0LDE2MDY5MzYwOTcsNTg0Nzcz
-ODM5LDE0MzcyOTE2NDUsLTIwODg3NDY2MTIsMzkwODI3Njk3LC
-02NDA2ODg3NjUsNDU0MDk4MjkwLC0xMjQ1NjE5MTE0LDE2Mjc4
-NTQwMTcsLTE3OTc3MDI2NDgsLTE2NTQzMDAzNSw3ODYzODM0OD
-UsLTczMDM2MTMyNywtMjAzMDcwMjkyNiw1Mzg4NTI5ODYsMjc0
-NTcxMjA3XX0=
+eyJoaXN0b3J5IjpbLTIwNzY5OTk1NjUsMTg3Nzc2OTQ1NSwyMD
+E0MDU3Nzg1LC0xMDU1ODE0ODA3LC0xNzc2NDE1Mzc0LDE2MDY5
+MzYwOTcsNTg0NzczODM5LDE0MzcyOTE2NDUsLTIwODg3NDY2MT
+IsMzkwODI3Njk3LC02NDA2ODg3NjUsNDU0MDk4MjkwLC0xMjQ1
+NjE5MTE0LDE2Mjc4NTQwMTcsLTE3OTc3MDI2NDgsLTE2NTQzMD
+AzNSw3ODYzODM0ODUsLTczMDM2MTMyNywtMjAzMDcwMjkyNiw1
+Mzg4NTI5ODZdfQ==
 -->
