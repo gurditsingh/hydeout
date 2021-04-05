@@ -26,12 +26,13 @@ Because of the in-memory nature of most Spark computations, Spark programs can b
 
 Spark configurations like parallelism, shuffle, storage, JVM tuning flags, feature flags and you know there are probably hundreds of configs you don't need to know or tune all of them but they exist they're hard-coded and it's up to you to configure them and by performance tuning.
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4ODM5MzMyOCwxODc3NzY5NDU1LDIwMT
-QwNTc3ODUsLTEwNTU4MTQ4MDcsLTE3NzY0MTUzNzQsMTYwNjkz
-NjA5Nyw1ODQ3NzM4MzksMTQzNzI5MTY0NSwtMjA4ODc0NjYxMi
-wzOTA4Mjc2OTcsLTY0MDY4ODc2NSw0NTQwOTgyOTAsLTEyNDU2
-MTkxMTQsMTYyNzg1NDAxNywtMTc5NzcwMjY0OCwtMTY1NDMwMD
-M1LDc4NjM4MzQ4NSwtNzMwMzYxMzI3LC0yMDMwNzAyOTI2LDUz
-ODg1Mjk4Nl19
+eyJoaXN0b3J5IjpbMTYxOTEyNzE5OCwxOTg4MzkzMzI4LDE4Nz
+c3Njk0NTUsMjAxNDA1Nzc4NSwtMTA1NTgxNDgwNywtMTc3NjQx
+NTM3NCwxNjA2OTM2MDk3LDU4NDc3MzgzOSwxNDM3MjkxNjQ1LC
+0yMDg4NzQ2NjEyLDM5MDgyNzY5NywtNjQwNjg4NzY1LDQ1NDA5
+ODI5MCwtMTI0NTYxOTExNCwxNjI3ODU0MDE3LC0xNzk3NzAyNj
+Q4LC0xNjU0MzAwMzUsNzg2MzgzNDg1LC03MzAzNjEzMjcsLTIw
+MzA3MDI5MjZdfQ==
 -->
