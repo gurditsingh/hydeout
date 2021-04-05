@@ -10,10 +10,9 @@ Spark Performance Tuning refers to the process of adjusting settings to record f
  -  **Memory Management** An efficient memory use is essential to good performance. Spark uses memory mainly for storage and execution. Storage memory is used to cache data that will be reused later. On the other hand, execution memory is used for computation in shuffles, sorts, joins, and aggregations.
 
 
-What we 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMTY3NTYwNCwxNjA2OTM2MDk3LDU4ND
+eyJoaXN0b3J5IjpbMTI0MDEzODk0MCwxNjA2OTM2MDk3LDU4ND
 c3MzgzOSwxNDM3MjkxNjQ1LC0yMDg4NzQ2NjEyLDM5MDgyNzY5
 NywtNjQwNjg4NzY1LDQ1NDA5ODI5MCwtMTI0NTYxOTExNCwxNj
 I3ODU0MDE3LC0xNzk3NzAyNjQ4LC0xNjU0MzAwMzUsNzg2Mzgz
