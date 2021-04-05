@@ -27,9 +27,13 @@ Because of the in-memory nature of most Spark computations, Spark programs can b
 Spark configurations like parallelism, shuffle, storage, JVM tuning flags, feature flags and you know there are probably hundreds of configs you don't need to know or tune all of them but they exist they're hard-coded and it's up to you to configure them and by performance tuning.
 
 ## Life Cycle of Parameters tuning
+![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark-tune-lifecycle.jpg?raw=true)
+
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMjAwMDU4OSwxNjE5MTI3MTk4LDE5OD
+eyJoaXN0b3J5IjpbMjEyMzQ5MDc3OCwxNjE5MTI3MTk4LDE5OD
 gzOTMzMjgsMTg3Nzc2OTQ1NSwyMDE0MDU3Nzg1LC0xMDU1ODE0
 ODA3LC0xNzc2NDE1Mzc0LDE2MDY5MzYwOTcsNTg0NzczODM5LD
 E0MzcyOTE2NDUsLTIwODg3NDY2MTIsMzkwODI3Njk3LC02NDA2
