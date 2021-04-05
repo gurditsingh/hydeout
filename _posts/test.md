@@ -3,14 +3,14 @@ Spark Performance Tuning refers to the process of adjusting settings to record f
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark-tuning.jpg?raw=true)
 
  - **Data serialization** also determines a good network performance. You will be able to obtain good results in Spark performance by serialization. Spark supports two serialization libraries Java Serialization, Kryo Serialization.
- - **Memory Tuning** is 
+ - **Memory Tuning** is necessary or important step in tuning. we need to give as much memory so that the entire dataset has to fit in memory.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg0NzczODM5LDE0MzcyOTE2NDUsLTIwOD
-g3NDY2MTIsMzkwODI3Njk3LC02NDA2ODg3NjUsNDU0MDk4Mjkw
-LC0xMjQ1NjE5MTE0LDE2Mjc4NTQwMTcsLTE3OTc3MDI2NDgsLT
-E2NTQzMDAzNSw3ODYzODM0ODUsLTczMDM2MTMyNywtMjAzMDcw
-MjkyNiw1Mzg4NTI5ODYsMjc0NTcxMjA3LDEwODI5MDM2MDksMT
-cwMDU5OTU1MCwxNTk3OTA2ODAsMTI3MTYxOTc2LDMxMTUzMzk0
-Nl19
+eyJoaXN0b3J5IjpbLTczMzk4NjkxMCw1ODQ3NzM4MzksMTQzNz
+I5MTY0NSwtMjA4ODc0NjYxMiwzOTA4Mjc2OTcsLTY0MDY4ODc2
+NSw0NTQwOTgyOTAsLTEyNDU2MTkxMTQsMTYyNzg1NDAxNywtMT
+c5NzcwMjY0OCwtMTY1NDMwMDM1LDc4NjM4MzQ4NSwtNzMwMzYx
+MzI3LC0yMDMwNzAyOTI2LDUzODg1Mjk4NiwyNzQ1NzEyMDcsMT
+A4MjkwMzYwOSwxNzAwNTk5NTUwLDE1OTc5MDY4MCwxMjcxNjE5
+NzZdfQ==
 -->
