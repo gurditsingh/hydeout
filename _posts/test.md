@@ -9,7 +9,7 @@ Spark Performance Tuning refers to the process of adjusting settings to record f
  -  **Garbage Collection Tuning** In order to avoid the large “churn” related to the RDDs that have been previously stored by the program, java will dismiss old objects in order to create space for new ones. However, by using data structures that feature fewer objects the cost is greatly reduced. One such example would be the employment an array of Ints instead of a linked list.
  -  **Memory Management** An efficient memory use is essential to good performance. Spark uses memory mainly for storage and execution. Storage memory is used to cache data that will be reused later. On the other hand, execution memory is used for computation in shuffles, sorts, joins, and aggregations.
 
-## What we can Tune
+## What We can Tune ?
 
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark-tuning2.png?raw=true)
 
@@ -26,13 +26,14 @@ Because of the in-memory nature of most Spark computations, Spark programs can b
 
 Spark configurations like parallelism, shuffle, storage, JVM tuning flags, feature flags and you know there are probably hundreds of configs you don't need to know or tune all of them but they exist they're hard-coded and it's up to you to configure them and by performance tuning.
 
+## Life Cycle of Parameters tuning
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxOTEyNzE5OCwxOTg4MzkzMzI4LDE4Nz
-c3Njk0NTUsMjAxNDA1Nzc4NSwtMTA1NTgxNDgwNywtMTc3NjQx
-NTM3NCwxNjA2OTM2MDk3LDU4NDc3MzgzOSwxNDM3MjkxNjQ1LC
-0yMDg4NzQ2NjEyLDM5MDgyNzY5NywtNjQwNjg4NzY1LDQ1NDA5
-ODI5MCwtMTI0NTYxOTExNCwxNjI3ODU0MDE3LC0xNzk3NzAyNj
-Q4LC0xNjU0MzAwMzUsNzg2MzgzNDg1LC03MzAzNjEzMjcsLTIw
-MzA3MDI5MjZdfQ==
+eyJoaXN0b3J5IjpbMTQyMjAwMDU4OSwxNjE5MTI3MTk4LDE5OD
+gzOTMzMjgsMTg3Nzc2OTQ1NSwyMDE0MDU3Nzg1LC0xMDU1ODE0
+ODA3LC0xNzc2NDE1Mzc0LDE2MDY5MzYwOTcsNTg0NzczODM5LD
+E0MzcyOTE2NDUsLTIwODg3NDY2MTIsMzkwODI3Njk3LC02NDA2
+ODg3NjUsNDU0MDk4MjkwLC0xMjQ1NjE5MTE0LDE2Mjc4NTQwMT
+csLTE3OTc3MDI2NDgsLTE2NTQzMDAzNSw3ODYzODM0ODUsLTcz
+MDM2MTMyN119
 -->
