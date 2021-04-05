@@ -32,19 +32,14 @@ First thing is How do we start with parameter tuning or job optimization. Basica
 
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark-tuning-lifecycle.jpg?raw=true)
 
-Run the Job 
-
-
-
-
-
+ - **Run the Job** We start with running the job with the default parameters and job can hours to complete. Bascially we can start from any 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE5ODIxNDIzLC0xMDkxMjQzOTIyLDE2MT
-kxMjcxOTgsMTk4ODM5MzMyOCwxODc3NzY5NDU1LDIwMTQwNTc3
-ODUsLTEwNTU4MTQ4MDcsLTE3NzY0MTUzNzQsMTYwNjkzNjA5Ny
-w1ODQ3NzM4MzksMTQzNzI5MTY0NSwtMjA4ODc0NjYxMiwzOTA4
-Mjc2OTcsLTY0MDY4ODc2NSw0NTQwOTgyOTAsLTEyNDU2MTkxMT
-QsMTYyNzg1NDAxNywtMTc5NzcwMjY0OCwtMTY1NDMwMDM1LDc4
-NjM4MzQ4NV19
+eyJoaXN0b3J5IjpbLTk2NTI1ODIsLTEwOTEyNDM5MjIsMTYxOT
+EyNzE5OCwxOTg4MzkzMzI4LDE4Nzc3Njk0NTUsMjAxNDA1Nzc4
+NSwtMTA1NTgxNDgwNywtMTc3NjQxNTM3NCwxNjA2OTM2MDk3LD
+U4NDc3MzgzOSwxNDM3MjkxNjQ1LC0yMDg4NzQ2NjEyLDM5MDgy
+NzY5NywtNjQwNjg4NzY1LDQ1NDA5ODI5MCwtMTI0NTYxOTExNC
+wxNjI3ODU0MDE3LC0xNzk3NzAyNjQ4LC0xNjU0MzAwMzUsNzg2
+MzgzNDg1XX0=
 -->
