@@ -23,10 +23,10 @@ Spark Performance Tuning refers to the process of adjusting settings to record f
 
 ### Spark Configurations
 
- - P
+ - Parallelism can be decided on number of cores in your
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1MTU1MjM5LDIwMTQwNTc3ODUsLTEwNT
+eyJoaXN0b3J5IjpbLTgxNjc2ODE5LDIwMTQwNTc3ODUsLTEwNT
 U4MTQ4MDcsLTE3NzY0MTUzNzQsMTYwNjkzNjA5Nyw1ODQ3NzM4
 MzksMTQzNzI5MTY0NSwtMjA4ODc0NjYxMiwzOTA4Mjc2OTcsLT
 Y0MDY4ODc2NSw0NTQwOTgyOTAsLTEyNDU2MTkxMTQsMTYyNzg1
