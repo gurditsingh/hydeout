@@ -33,14 +33,14 @@ First thing is How do we start with parameter tuning or job optimization. Basica
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark-tuning-lifecycle.jpg?raw=true)
 
  - **Run the Job :** We can start the job with the default parameters and job can take hours to complete. Basically we can start from any point either if we have any knowledge than we can setup some of the **tuning parameters** or we can start with default.
- - **Analyze Logs :** Once the job completes and if it take longer time then we can further tune the job. 
+ - **Analyze Logs :** Once the job completes and if it take longer time then we can further tune the job. analyze logs you know spark logs the spark you I maybe yarn or kubernetes logs maybe on per node matrix and then you will use some expertise or some intuition to figure out is this application running smoothly is it running fast enough
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2OTA1MTk2MywxNzMxNDkxODI1LC0xMD
-kxMjQzOTIyLDE2MTkxMjcxOTgsMTk4ODM5MzMyOCwxODc3NzY5
-NDU1LDIwMTQwNTc3ODUsLTEwNTU4MTQ4MDcsLTE3NzY0MTUzNz
-QsMTYwNjkzNjA5Nyw1ODQ3NzM4MzksMTQzNzI5MTY0NSwtMjA4
-ODc0NjYxMiwzOTA4Mjc2OTcsLTY0MDY4ODc2NSw0NTQwOTgyOT
-AsLTEyNDU2MTkxMTQsMTYyNzg1NDAxNywtMTc5NzcwMjY0OCwt
-MTY1NDMwMDM1XX0=
+eyJoaXN0b3J5IjpbNTUyOTI1MDEzLDE3MzE0OTE4MjUsLTEwOT
+EyNDM5MjIsMTYxOTEyNzE5OCwxOTg4MzkzMzI4LDE4Nzc3Njk0
+NTUsMjAxNDA1Nzc4NSwtMTA1NTgxNDgwNywtMTc3NjQxNTM3NC
+wxNjA2OTM2MDk3LDU4NDc3MzgzOSwxNDM3MjkxNjQ1LC0yMDg4
+NzQ2NjEyLDM5MDgyNzY5NywtNjQwNjg4NzY1LDQ1NDA5ODI5MC
+wtMTI0NTYxOTExNCwxNjI3ODU0MDE3LC0xNzk3NzAyNjQ4LC0x
+NjU0MzAwMzVdfQ==
 -->
