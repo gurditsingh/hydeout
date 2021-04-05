@@ -28,7 +28,11 @@ Spark configurations like parallelism, shuffle, storage, JVM tuning flags, featu
 
 ## Life Cycle of Parameters tuning
 
+First thing is How do we start d parameter tuning or job optimization. 
+
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark-tuning-lifecycle.jpg?raw=true)
+
+How we start doing job 
 
 
 
@@ -36,11 +40,11 @@ Spark configurations like parallelism, shuffle, storage, JVM tuning flags, featu
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NDI4NzcyNDEsMTYxOTEyNzE5OCwxOT
-g4MzkzMzI4LDE4Nzc3Njk0NTUsMjAxNDA1Nzc4NSwtMTA1NTgx
-NDgwNywtMTc3NjQxNTM3NCwxNjA2OTM2MDk3LDU4NDc3MzgzOS
-wxNDM3MjkxNjQ1LC0yMDg4NzQ2NjEyLDM5MDgyNzY5NywtNjQw
-Njg4NzY1LDQ1NDA5ODI5MCwtMTI0NTYxOTExNCwxNjI3ODU0MD
-E3LC0xNzk3NzAyNjQ4LC0xNjU0MzAwMzUsNzg2MzgzNDg1LC03
-MzAzNjEzMjddfQ==
+eyJoaXN0b3J5IjpbLTQwODQ1MTA3OSwxNjE5MTI3MTk4LDE5OD
+gzOTMzMjgsMTg3Nzc2OTQ1NSwyMDE0MDU3Nzg1LC0xMDU1ODE0
+ODA3LC0xNzc2NDE1Mzc0LDE2MDY5MzYwOTcsNTg0NzczODM5LD
+E0MzcyOTE2NDUsLTIwODg3NDY2MTIsMzkwODI3Njk3LC02NDA2
+ODg3NjUsNDU0MDk4MjkwLC0xMjQ1NjE5MTE0LDE2Mjc4NTQwMT
+csLTE3OTc3MDI2NDgsLTE2NTQzMDAzNSw3ODYzODM0ODUsLTcz
+MDM2MTMyN119
 -->
