@@ -24,14 +24,15 @@ Spark Performance Tuning refers to the process of adjusting settings to record f
 ### Spark Configurations
 
  - Parallelism can be decided on number of cores and executors in your cluster or specified queue.
- - In your spark job you can avoid Shuffle or set shuffle partitions for parallelism or 
+ - In your spark job you can avoid Shuffle or set shuffle partitions for parallelism or set other shuffle parameters.
+ - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzAxNjA4OTkzLDIwMTQwNTc3ODUsLTEwNT
-U4MTQ4MDcsLTE3NzY0MTUzNzQsMTYwNjkzNjA5Nyw1ODQ3NzM4
-MzksMTQzNzI5MTY0NSwtMjA4ODc0NjYxMiwzOTA4Mjc2OTcsLT
-Y0MDY4ODc2NSw0NTQwOTgyOTAsLTEyNDU2MTkxMTQsMTYyNzg1
-NDAxNywtMTc5NzcwMjY0OCwtMTY1NDMwMDM1LDc4NjM4MzQ4NS
-wtNzMwMzYxMzI3LC0yMDMwNzAyOTI2LDUzODg1Mjk4NiwyNzQ1
-NzEyMDddfQ==
+eyJoaXN0b3J5IjpbMTg3Nzc2OTQ1NSwyMDE0MDU3Nzg1LC0xMD
+U1ODE0ODA3LC0xNzc2NDE1Mzc0LDE2MDY5MzYwOTcsNTg0Nzcz
+ODM5LDE0MzcyOTE2NDUsLTIwODg3NDY2MTIsMzkwODI3Njk3LC
+02NDA2ODg3NjUsNDU0MDk4MjkwLC0xMjQ1NjE5MTE0LDE2Mjc4
+NTQwMTcsLTE3OTc3MDI2NDgsLTE2NTQzMDAzNSw3ODYzODM0OD
+UsLTczMDM2MTMyNywtMjAzMDcwMjkyNiw1Mzg4NTI5ODYsMjc0
+NTcxMjA3XX0=
 -->
