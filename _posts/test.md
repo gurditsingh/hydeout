@@ -47,14 +47,16 @@ First start the job with optimal tuning parameters. In spark we have some Rules 
  - Number of partitions are 3x the number of cores in the cluster
  - Number of cores per executor are 4-8. best setting for cores is 5 per executor.
  - Memory per executor calculated by total node memory divide by number of executor and then 85% of the memory we can use for memory per executor.
- - Set the  shuffle partispark.sql.shuffle.partitions
+ - Set the shuffle partition " spark.sql.shuffle.partitions" property because Shuffle is an expensive operation as it involves moving data across the nodes in your cluster.
+ - Use caching when the same operation is computed multiple times in the pipeline flow.
+ - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE4NjM3NjExLC0xMzA2NjM1MjU4LC01MT
-cwNzA2MjUsLTE4NTI2NTQxMDksLTE3ODE1MjMwNTIsODE5NDE2
-NTQ2LC0xMjEzNzc5MzA0LC0xMTc3ODk4MjAwLC0xNTkyNzc2OD
-M5LC0xMzM0MjczNTUwLC02MDEyMzI4MDQsLTk2MDI3MjAxNiw1
-NTI5MjUwMTMsMTczMTQ5MTgyNSwtMTA5MTI0MzkyMiwxNjE5MT
-I3MTk4LDE5ODgzOTMzMjgsMTg3Nzc2OTQ1NSwyMDE0MDU3Nzg1
-LC0xMDU1ODE0ODA3XX0=
+eyJoaXN0b3J5IjpbLTMyMzEzMzg5NywtMTMwNjYzNTI1OCwtNT
+E3MDcwNjI1LC0xODUyNjU0MTA5LC0xNzgxNTIzMDUyLDgxOTQx
+NjU0NiwtMTIxMzc3OTMwNCwtMTE3Nzg5ODIwMCwtMTU5Mjc3Nj
+gzOSwtMTMzNDI3MzU1MCwtNjAxMjMyODA0LC05NjAyNzIwMTYs
+NTUyOTI1MDEzLDE3MzE0OTE4MjUsLTEwOTEyNDM5MjIsMTYxOT
+EyNzE5OCwxOTg4MzkzMzI4LDE4Nzc3Njk0NTUsMjAxNDA1Nzc4
+NSwtMTA1NTgxNDgwN119
 -->
