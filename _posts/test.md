@@ -64,12 +64,16 @@ After make the job stable then we can improve the job performance. if the job is
 Once we solved all the inefficiencies. Then we can think of speed and cost perspective. Do we need more speed to complete the job in lesser time. Do we need to add more machine for better performance. basically it's a trade-off between speed and cost means if you try of make the job much faster at the expense of spending more cost on getting more machines.
 
 
+## Next ?
+
+Planning to create multiple blogs episodes on Spark Performance Tuning covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NzY1NDQ0LC01ODU0MjM2ODAsMjgyOT
-Y0ODkwLC0xMzA2NjM1MjU4LC01MTcwNzA2MjUsLTE4NTI2NTQx
-MDksLTE3ODE1MjMwNTIsODE5NDE2NTQ2LC0xMjEzNzc5MzA0LC
-0xMTc3ODk4MjAwLC0xNTkyNzc2ODM5LC0xMzM0MjczNTUwLC02
-MDEyMzI4MDQsLTk2MDI3MjAxNiw1NTI5MjUwMTMsMTczMTQ5MT
-gyNSwtMTA5MTI0MzkyMiwxNjE5MTI3MTk4LDE5ODgzOTMzMjgs
-MTg3Nzc2OTQ1NV19
+eyJoaXN0b3J5IjpbMTcxMDQ2MzQ0NiwyMDQ3NjU0NDQsLTU4NT
+QyMzY4MCwyODI5NjQ4OTAsLTEzMDY2MzUyNTgsLTUxNzA3MDYy
+NSwtMTg1MjY1NDEwOSwtMTc4MTUyMzA1Miw4MTk0MTY1NDYsLT
+EyMTM3NzkzMDQsLTExNzc4OTgyMDAsLTE1OTI3NzY4MzksLTEz
+MzQyNzM1NTAsLTYwMTIzMjgwNCwtOTYwMjcyMDE2LDU1MjkyNT
+AxMywxNzMxNDkxODI1LC0xMDkxMjQzOTIyLDE2MTkxMjcxOTgs
+MTk4ODM5MzMyOF19
 -->
