@@ -42,14 +42,17 @@ First thing is How do we start with parameter tuning or job optimization. Basica
 ## Performance Tuning is a iterative process
 
 ### Step 1:
-First start the job with the Bitwise optimal 
+First start the job with optimal tuning parameters. In spark we have some Rules of thumb for parameters.
+
+ - Number of partitions are 3x the number of cores in the cluster
+ - Number of cores per executor are 4-8. best setting for cores is 5 per executor.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDY2MzUyNTgsLTUxNzA3MDYyNSwtMT
-g1MjY1NDEwOSwtMTc4MTUyMzA1Miw4MTk0MTY1NDYsLTEyMTM3
-NzkzMDQsLTExNzc4OTgyMDAsLTE1OTI3NzY4MzksLTEzMzQyNz
-M1NTAsLTYwMTIzMjgwNCwtOTYwMjcyMDE2LDU1MjkyNTAxMywx
-NzMxNDkxODI1LC0xMDkxMjQzOTIyLDE2MTkxMjcxOTgsMTk4OD
-M5MzMyOCwxODc3NzY5NDU1LDIwMTQwNTc3ODUsLTEwNTU4MTQ4
-MDcsLTE3NzY0MTUzNzRdfQ==
+eyJoaXN0b3J5IjpbLTE4NjkzODQ4NzYsLTEzMDY2MzUyNTgsLT
+UxNzA3MDYyNSwtMTg1MjY1NDEwOSwtMTc4MTUyMzA1Miw4MTk0
+MTY1NDYsLTEyMTM3NzkzMDQsLTExNzc4OTgyMDAsLTE1OTI3Nz
+Y4MzksLTEzMzQyNzM1NTAsLTYwMTIzMjgwNCwtOTYwMjcyMDE2
+LDU1MjkyNTAxMywxNzMxNDkxODI1LC0xMDkxMjQzOTIyLDE2MT
+kxMjcxOTgsMTk4ODM5MzMyOCwxODc3NzY5NDU1LDIwMTQwNTc3
+ODUsLTEwNTU4MTQ4MDddfQ==
 -->
