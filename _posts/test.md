@@ -49,10 +49,10 @@ First start the job with optimal tuning parameters. In spark we have some Rules 
  - Memory per executor calculated by total node memory divide by number of executor and then 85% of the memory we can use for memory per executor.
  - Set the shuffle partition " spark.sql.shuffle.partitions" property because Shuffle is an expensive operation as it involves moving data across the nodes in your cluster.
  - Use caching when the same operation is computed multiple times in the pipeline flow.
- - 
+ - Broadcast  HashJoin  is most performant, but may not be applicable if both relations in join are large.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyMzEzMzg5NywtMTMwNjYzNTI1OCwtNT
+eyJoaXN0b3J5IjpbMjEyNjYwOTIwNSwtMTMwNjYzNTI1OCwtNT
 E3MDcwNjI1LC0xODUyNjU0MTA5LC0xNzgxNTIzMDUyLDgxOTQx
 NjU0NiwtMTIxMzc3OTMwNCwtMTE3Nzg5ODIwMCwtMTU5Mjc3Nj
 gzOSwtMTMzNDI3MzU1MCwtNjAxMjMyODA0LC05NjAyNzIwMTYs
