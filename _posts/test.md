@@ -66,14 +66,14 @@ Once we solved all the inefficiencies. Then we can think of speed and cost persp
 
 ## Next ?
 
-Planning to create multiple blogs episodes on Spark Performance Tuning covering various areas related to azure synapse and showing you the way of using these services for implementing your data warehouse solution.
+Planning to create multiple blogs episodes on Spark Performance Tuning. Understand the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMDQ2MzQ0NiwyMDQ3NjU0NDQsLTU4NT
-QyMzY4MCwyODI5NjQ4OTAsLTEzMDY2MzUyNTgsLTUxNzA3MDYy
-NSwtMTg1MjY1NDEwOSwtMTc4MTUyMzA1Miw4MTk0MTY1NDYsLT
-EyMTM3NzkzMDQsLTExNzc4OTgyMDAsLTE1OTI3NzY4MzksLTEz
-MzQyNzM1NTAsLTYwMTIzMjgwNCwtOTYwMjcyMDE2LDU1MjkyNT
-AxMywxNzMxNDkxODI1LC0xMDkxMjQzOTIyLDE2MTkxMjcxOTgs
-MTk4ODM5MzMyOF19
+eyJoaXN0b3J5IjpbNjk2OTMyNzM2LDIwNDc2NTQ0NCwtNTg1ND
+IzNjgwLDI4Mjk2NDg5MCwtMTMwNjYzNTI1OCwtNTE3MDcwNjI1
+LC0xODUyNjU0MTA5LC0xNzgxNTIzMDUyLDgxOTQxNjU0NiwtMT
+IxMzc3OTMwNCwtMTE3Nzg5ODIwMCwtMTU5Mjc3NjgzOSwtMTMz
+NDI3MzU1MCwtNjAxMjMyODA0LC05NjAyNzIwMTYsNTUyOTI1MD
+EzLDE3MzE0OTE4MjUsLTEwOTEyNDM5MjIsMTYxOTEyNzE5OCwx
+OTg4MzkzMzI4XX0=
 -->
