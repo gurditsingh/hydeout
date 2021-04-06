@@ -58,14 +58,17 @@ First start the job with optimal tuning parameters. In spark we have some Rules 
 After running the job either the job can crash/fail or it doesn't meet the SLA. There are several reasons for crash/fail. The pipeline/job can fail with out of memory exception. Pipeline/Job doesn't have sufficient memory to store the data in-memory. Failure reasons can be any so the first thing is to make the job stable and make it in running state.
 
 ### Step 3: Solve Performance Issues 
-After make the job stable then we can improve the job performance. if the job is running very slow then we can tune the job to complete within the time. solving performance issue is a critical aspect of the Tuning because pipeline/job can be slow due to spark operators, cluster resources, bad code or data quality. To fix the performace issue needs an ov  
+After make the job stable then we can improve the job performance. if the job is running very slow then we can tune the job to complete within the time. solving performance issue is a critical aspect of the Tuning because pipeline/job can be slow due to spark operators, cluster resources, bad code or data quality. To fix the performance issue needs an overall picture of the pipeline/job which includes everything. 
+
+### Step 4: Speed and Cost trade-off
+Once we solved all the issues. The
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwODc2MDYyOSwtNTg1NDIzNjgwLDI4Mj
-k2NDg5MCwtMTMwNjYzNTI1OCwtNTE3MDcwNjI1LC0xODUyNjU0
-MTA5LC0xNzgxNTIzMDUyLDgxOTQxNjU0NiwtMTIxMzc3OTMwNC
-wtMTE3Nzg5ODIwMCwtMTU5Mjc3NjgzOSwtMTMzNDI3MzU1MCwt
-NjAxMjMyODA0LC05NjAyNzIwMTYsNTUyOTI1MDEzLDE3MzE0OT
-E4MjUsLTEwOTEyNDM5MjIsMTYxOTEyNzE5OCwxOTg4MzkzMzI4
-LDE4Nzc3Njk0NTVdfQ==
+eyJoaXN0b3J5IjpbMjI5MDg3ODk3LC01ODU0MjM2ODAsMjgyOT
+Y0ODkwLC0xMzA2NjM1MjU4LC01MTcwNzA2MjUsLTE4NTI2NTQx
+MDksLTE3ODE1MjMwNTIsODE5NDE2NTQ2LC0xMjEzNzc5MzA0LC
+0xMTc3ODk4MjAwLC0xNTkyNzc2ODM5LC0xMzM0MjczNTUwLC02
+MDEyMzI4MDQsLTk2MDI3MjAxNiw1NTI5MjUwMTMsMTczMTQ5MT
+gyNSwtMTA5MTI0MzkyMiwxNjE5MTI3MTk4LDE5ODgzOTMzMjgs
+MTg3Nzc2OTQ1NV19
 -->
