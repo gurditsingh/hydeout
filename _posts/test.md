@@ -52,10 +52,12 @@ First start the job with optimal tuning parameters. In spark we have some Rules 
  - Broadcast  HashJoin  is most performant, but may not be applicable if both relations in join are large.
  - Use Kryo Serialization because kryo give you better performance over java serialization.
  
- For the other parameters use 
+ For the other parameters use some expertise or some intuition to figure out suitable parameters for your pipeline/job.
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3MzUxMzAwNCwtMTMwNjYzNTI1OCwtNT
+eyJoaXN0b3J5IjpbMTY5NDQ5MDQ5NSwtMTMwNjYzNTI1OCwtNT
 E3MDcwNjI1LC0xODUyNjU0MTA5LC0xNzgxNTIzMDUyLDgxOTQx
 NjU0NiwtMTIxMzc3OTMwNCwtMTE3Nzg5ODIwMCwtMTU5Mjc3Nj
 gzOSwtMTMzNDI3MzU1MCwtNjAxMjMyODA0LC05NjAyNzIwMTYs
