@@ -66,10 +66,10 @@ Once we solved all the inefficiencies. Then we can think of speed and cost persp
 
 ## Next ?
 
-Planning to create multiple blogs episodes on Spark Performance Tuning. Understand the various areas of spark where we can improve the pipeline/job.
+Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk2OTMyNzM2LDIwNDc2NTQ0NCwtNTg1ND
+eyJoaXN0b3J5IjpbMzI5NTg4MzU2LDIwNDc2NTQ0NCwtNTg1ND
 IzNjgwLDI4Mjk2NDg5MCwtMTMwNjYzNTI1OCwtNTE3MDcwNjI1
 LC0xODUyNjU0MTA5LC0xNzgxNTIzMDUyLDgxOTQxNjU0NiwtMT
 IxMzc3OTMwNCwtMTE3Nzg5ODIwMCwtMTU5Mjc3NjgzOSwtMTMz
