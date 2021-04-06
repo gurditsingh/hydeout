@@ -58,12 +58,13 @@ First start the job with optimal tuning parameters. In spark we have some Rules 
 After running the job either the job can crash/fail or it doesn't meet the SLA. There are several reasons for crash/fail below are the few:
  
 
- - The pipeline
+ - The pipeline/job can fail with out of memory exception. Pipeline/Job doesn't have sufficient memory to store the data in-memory.
+ - 
 
  So the first thing is to make the job stable and make it in running state.  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczNjA2Njk0MiwyODI5NjQ4OTAsLTEzMD
+eyJoaXN0b3J5IjpbMTY1NDA3NDcxNywyODI5NjQ4OTAsLTEzMD
 Y2MzUyNTgsLTUxNzA3MDYyNSwtMTg1MjY1NDEwOSwtMTc4MTUy
 MzA1Miw4MTk0MTY1NDYsLTEyMTM3NzkzMDQsLTExNzc4OTgyMD
 AsLTE1OTI3NzY4MzksLTEzMzQyNzM1NTAsLTYwMTIzMjgwNCwt
