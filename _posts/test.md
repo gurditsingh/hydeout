@@ -61,14 +61,14 @@ After running the job either the job can crash/fail or it doesn't meet the SLA. 
 After make the job stable then we can improve the job performance. if the job is running very slow then we can tune the job to complete within the time. solving performance issue is a critical aspect of the Tuning because pipeline/job can be slow due to spark operators, cluster resources, bad code or data quality. To fix the performance issue needs an overall picture of the pipeline/job which includes everything. 
 
 ### Step 4: Speed and Cost trade-off
-Once we solved all the issues. then 
+Once we solved all the inefficiencies. Then we can think of speed and cost perspective.  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4MzYxNzQxNSwtNTg1NDIzNjgwLDI4Mj
-k2NDg5MCwtMTMwNjYzNTI1OCwtNTE3MDcwNjI1LC0xODUyNjU0
-MTA5LC0xNzgxNTIzMDUyLDgxOTQxNjU0NiwtMTIxMzc3OTMwNC
-wtMTE3Nzg5ODIwMCwtMTU5Mjc3NjgzOSwtMTMzNDI3MzU1MCwt
-NjAxMjMyODA0LC05NjAyNzIwMTYsNTUyOTI1MDEzLDE3MzE0OT
-E4MjUsLTEwOTEyNDM5MjIsMTYxOTEyNzE5OCwxOTg4MzkzMzI4
-LDE4Nzc3Njk0NTVdfQ==
+eyJoaXN0b3J5IjpbLTIxMTEwNDExMDcsLTU4NTQyMzY4MCwyOD
+I5NjQ4OTAsLTEzMDY2MzUyNTgsLTUxNzA3MDYyNSwtMTg1MjY1
+NDEwOSwtMTc4MTUyMzA1Miw4MTk0MTY1NDYsLTEyMTM3NzkzMD
+QsLTExNzc4OTgyMDAsLTE1OTI3NzY4MzksLTEzMzQyNzM1NTAs
+LTYwMTIzMjgwNCwtOTYwMjcyMDE2LDU1MjkyNTAxMywxNzMxND
+kxODI1LC0xMDkxMjQzOTIyLDE2MTkxMjcxOTgsMTk4ODM5MzMy
+OCwxODc3NzY5NDU1XX0=
 -->
