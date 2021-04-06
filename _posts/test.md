@@ -50,9 +50,10 @@ First start the job with optimal tuning parameters. In spark we have some Rules 
  - Set the shuffle partition " spark.sql.shuffle.partitions" property because Shuffle is an expensive operation as it involves moving data across the nodes in your cluster.
  - Use caching when the same operation is computed multiple times in the pipeline flow.
  - Broadcast  HashJoin  is most performant, but may not be applicable if both relations in join are large.
+ - Use Kryo Serialization because kryo give you better performance over java serialization. Spark supports two serialization libraries Java Serialization, 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyNjYwOTIwNSwtMTMwNjYzNTI1OCwtNT
+eyJoaXN0b3J5IjpbMTQ2ODgzMTkwNSwtMTMwNjYzNTI1OCwtNT
 E3MDcwNjI1LC0xODUyNjU0MTA5LC0xNzgxNTIzMDUyLDgxOTQx
 NjU0NiwtMTIxMzc3OTMwNCwtMTE3Nzg5ODIwMCwtMTU5Mjc3Nj
 gzOSwtMTMzNDI3MzU1MCwtNjAxMjMyODA0LC05NjAyNzIwMTYs
