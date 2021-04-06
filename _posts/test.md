@@ -39,13 +39,15 @@ First thing is How do we start with parameter tuning or job optimization. Basica
 **Important :**  It is not you get it right on the first shot it's an iterative process it's not an exact science it's more of a trial and error loop. while this works really well when you have a handful of pipelines/jobs this manual process is hard to scale to thousands hundreds or thousands of pipelines/jobs.
 
 
+## Performance Tuning is a iterative process
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE5NDE2NTQ2LC0xMjEzNzc5MzA0LC0xMT
-c3ODk4MjAwLC0xNTkyNzc2ODM5LC0xMzM0MjczNTUwLC02MDEy
-MzI4MDQsLTk2MDI3MjAxNiw1NTI5MjUwMTMsMTczMTQ5MTgyNS
-wtMTA5MTI0MzkyMiwxNjE5MTI3MTk4LDE5ODgzOTMzMjgsMTg3
-Nzc2OTQ1NSwyMDE0MDU3Nzg1LC0xMDU1ODE0ODA3LC0xNzc2ND
-E1Mzc0LDE2MDY5MzYwOTcsNTg0NzczODM5LDE0MzcyOTE2NDUs
-LTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTk0NjQzMTIwNCw4MTk0MTY1NDYsLTEyMT
+M3NzkzMDQsLTExNzc4OTgyMDAsLTE1OTI3NzY4MzksLTEzMzQy
+NzM1NTAsLTYwMTIzMjgwNCwtOTYwMjcyMDE2LDU1MjkyNTAxMy
+wxNzMxNDkxODI1LC0xMDkxMjQzOTIyLDE2MTkxMjcxOTgsMTk4
+ODM5MzMyOCwxODc3NzY5NDU1LDIwMTQwNTc3ODUsLTEwNTU4MT
+Q4MDcsLTE3NzY0MTUzNzQsMTYwNjkzNjA5Nyw1ODQ3NzM4Mzks
+MTQzNzI5MTY0NV19
 -->
