@@ -42,14 +42,14 @@ First thing is How do we start with parameter tuning or job optimization. Basica
 ## Performance Tuning is a iterative process
 
 ### Step 1:
-First start the job with the Bitwise optimal 
+First start the job with Bitwise optimal 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDY2MzUyNTgsLTUxNzA3MDYyNSwtMT
-g1MjY1NDEwOSwtMTc4MTUyMzA1Miw4MTk0MTY1NDYsLTEyMTM3
-NzkzMDQsLTExNzc4OTgyMDAsLTE1OTI3NzY4MzksLTEzMzQyNz
-M1NTAsLTYwMTIzMjgwNCwtOTYwMjcyMDE2LDU1MjkyNTAxMywx
-NzMxNDkxODI1LC0xMDkxMjQzOTIyLDE2MTkxMjcxOTgsMTk4OD
-M5MzMyOCwxODc3NzY5NDU1LDIwMTQwNTc3ODUsLTEwNTU4MTQ4
-MDcsLTE3NzY0MTUzNzRdfQ==
+eyJoaXN0b3J5IjpbMTU3ODU5ODgzNywtMTMwNjYzNTI1OCwtNT
+E3MDcwNjI1LC0xODUyNjU0MTA5LC0xNzgxNTIzMDUyLDgxOTQx
+NjU0NiwtMTIxMzc3OTMwNCwtMTE3Nzg5ODIwMCwtMTU5Mjc3Nj
+gzOSwtMTMzNDI3MzU1MCwtNjAxMjMyODA0LC05NjAyNzIwMTYs
+NTUyOTI1MDEzLDE3MzE0OTE4MjUsLTEwOTEyNDM5MjIsMTYxOT
+EyNzE5OCwxOTg4MzkzMzI4LDE4Nzc3Njk0NTUsMjAxNDA1Nzc4
+NSwtMTA1NTgxNDgwN119
 -->
