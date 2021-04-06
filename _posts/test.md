@@ -46,13 +46,14 @@ First start the job with optimal tuning parameters. In spark we have some Rules 
 
  - Number of partitions are 3x the number of cores in the cluster
  - Number of cores per executor are 4-8. best setting for cores is 5 per executor.
+ - Memory per executor calculated by total node memory divide by number of executor and then 85% of the memory we can use for 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjkzODQ4NzYsLTEzMDY2MzUyNTgsLT
-UxNzA3MDYyNSwtMTg1MjY1NDEwOSwtMTc4MTUyMzA1Miw4MTk0
-MTY1NDYsLTEyMTM3NzkzMDQsLTExNzc4OTgyMDAsLTE1OTI3Nz
-Y4MzksLTEzMzQyNzM1NTAsLTYwMTIzMjgwNCwtOTYwMjcyMDE2
-LDU1MjkyNTAxMywxNzMxNDkxODI1LC0xMDkxMjQzOTIyLDE2MT
-kxMjcxOTgsMTk4ODM5MzMyOCwxODc3NzY5NDU1LDIwMTQwNTc3
-ODUsLTEwNTU4MTQ4MDddfQ==
+eyJoaXN0b3J5IjpbMTk4MDYyMzU0LC0xMzA2NjM1MjU4LC01MT
+cwNzA2MjUsLTE4NTI2NTQxMDksLTE3ODE1MjMwNTIsODE5NDE2
+NTQ2LC0xMjEzNzc5MzA0LC0xMTc3ODk4MjAwLC0xNTkyNzc2OD
+M5LC0xMzM0MjczNTUwLC02MDEyMzI4MDQsLTk2MDI3MjAxNiw1
+NTI5MjUwMTMsMTczMTQ5MTgyNSwtMTA5MTI0MzkyMiwxNjE5MT
+I3MTk4LDE5ODgzOTMzMjgsMTg3Nzc2OTQ1NSwyMDE0MDU3Nzg1
+LC0xMDU1ODE0ODA3XX0=
 -->
