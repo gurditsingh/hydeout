@@ -24,7 +24,7 @@ Spark Performance Tuning refers to the process of adjusting settings to record f
 ### Spark Configurations
 Because of the in-memory nature of most Spark computations, Spark programs can be bottlenecked by any resource in the cluster: CPU, network bandwidth, or memory. 
 
-Spark configurations like parallelism, shuffle, storage, JVM tuning flags, feature flags and you know there are probably hundreds of configs you don't need to know or tune all of them but they exist they're hard-coded and it's up to you to configure them and by performance tuning.
+Spark configurations like parallelism, shuffle, storage, JVM tuning flags, feature flags and you know there are probably hundreds of configs you don't need to know or tune all of them but they exist they're hard-coded and it's up to you to configure them by performance tuning.
 
 ## Life Cycle of Parameters tuning
 
@@ -41,11 +41,11 @@ First thing is How do we start with parameter tuning or job optimization. Basica
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNzQxMzc5OSwtMTIxMzc3OTMwNCwtMT
-E3Nzg5ODIwMCwtMTU5Mjc3NjgzOSwtMTMzNDI3MzU1MCwtNjAx
-MjMyODA0LC05NjAyNzIwMTYsNTUyOTI1MDEzLDE3MzE0OTE4Mj
-UsLTEwOTEyNDM5MjIsMTYxOTEyNzE5OCwxOTg4MzkzMzI4LDE4
-Nzc3Njk0NTUsMjAxNDA1Nzc4NSwtMTA1NTgxNDgwNywtMTc3Nj
-QxNTM3NCwxNjA2OTM2MDk3LDU4NDc3MzgzOSwxNDM3MjkxNjQ1
-LC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbODE5NDE2NTQ2LC0xMjEzNzc5MzA0LC0xMT
+c3ODk4MjAwLC0xNTkyNzc2ODM5LC0xMzM0MjczNTUwLC02MDEy
+MzI4MDQsLTk2MDI3MjAxNiw1NTI5MjUwMTMsMTczMTQ5MTgyNS
+wtMTA5MTI0MzkyMiwxNjE5MTI3MTk4LDE5ODgzOTMzMjgsMTg3
+Nzc2OTQ1NSwyMDE0MDU3Nzg1LC0xMDU1ODE0ODA3LC0xNzc2ND
+E1Mzc0LDE2MDY5MzYwOTcsNTg0NzczODM5LDE0MzcyOTE2NDUs
+LTIwODg3NDY2MTJdfQ==
 -->
