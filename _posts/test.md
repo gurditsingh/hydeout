@@ -41,7 +41,7 @@ First thing is How do we start with parameter tuning or job optimization. Basica
 
 ## Performance Tuning is a iterative process
 
-### Step 1:
+### Step 1: Run with Rules of thumb for parameters
 First start the job with optimal tuning parameters. In spark we have some Rules of thumb for parameters.
 
  - Number of partitions are 3x the number of cores in the cluster
@@ -57,7 +57,7 @@ First start the job with optimal tuning parameters. In spark we have some Rules 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NDQ5MDQ5NSwtMTMwNjYzNTI1OCwtNT
+eyJoaXN0b3J5IjpbLTgwNzE0ODk5MSwtMTMwNjYzNTI1OCwtNT
 E3MDcwNjI1LC0xODUyNjU0MTA5LC0xNzgxNTIzMDUyLDgxOTQx
 NjU0NiwtMTIxMzc3OTMwNCwtMTE3Nzg5ODIwMCwtMTU5Mjc3Nj
 gzOSwtMTMzNDI3MzU1MCwtNjAxMjMyODA0LC05NjAyNzIwMTYs
