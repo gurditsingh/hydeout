@@ -55,14 +55,14 @@ First start the job with optimal tuning parameters. In spark we have some Rules 
  For the other parameters use some expertise or some intuition to figure out suitable parameters for your pipeline/job.
 
 **Step 2: Ensure stability of the job**
-
+After running the job either the job can crasher
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjgyOTY0ODkwLC0xMzA2NjM1MjU4LC01MT
-cwNzA2MjUsLTE4NTI2NTQxMDksLTE3ODE1MjMwNTIsODE5NDE2
-NTQ2LC0xMjEzNzc5MzA0LC0xMTc3ODk4MjAwLC0xNTkyNzc2OD
-M5LC0xMzM0MjczNTUwLC02MDEyMzI4MDQsLTk2MDI3MjAxNiw1
-NTI5MjUwMTMsMTczMTQ5MTgyNSwtMTA5MTI0MzkyMiwxNjE5MT
-I3MTk4LDE5ODgzOTMzMjgsMTg3Nzc2OTQ1NSwyMDE0MDU3Nzg1
-LC0xMDU1ODE0ODA3XX0=
+eyJoaXN0b3J5IjpbLTEzNDA4NjM0MTIsMjgyOTY0ODkwLC0xMz
+A2NjM1MjU4LC01MTcwNzA2MjUsLTE4NTI2NTQxMDksLTE3ODE1
+MjMwNTIsODE5NDE2NTQ2LC0xMjEzNzc5MzA0LC0xMTc3ODk4Mj
+AwLC0xNTkyNzc2ODM5LC0xMzM0MjczNTUwLC02MDEyMzI4MDQs
+LTk2MDI3MjAxNiw1NTI5MjUwMTMsMTczMTQ5MTgyNSwtMTA5MT
+I0MzkyMiwxNjE5MTI3MTk4LDE5ODgzOTMzMjgsMTg3Nzc2OTQ1
+NSwyMDE0MDU3Nzg1XX0=
 -->
