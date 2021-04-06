@@ -36,14 +36,14 @@ First thing is How do we start with parameter tuning or job optimization. Basica
  - **Analyze Logs :** Once the job completes and if it take longer time then we can further tune the job. To tune the job we need to analyze the job logs. you can find the job logs on spark UI, yarn logs, job history or per node matrix.
  - **Pick new Params :** After analysing the job logs we can then use some expertise or some intuition to figure out is this application running smoothly or we rune  fast enough and then maybe pick better parameters to improve the stability or improve the performance.
 
-**Important :**  it's not you don't get it right on the first shot it's an iterative process it's not an exact science it's more of a trial and error loop but it's rated lis you get there now while this works really well when you have a handful of pipelines this manual process is hard to scale to thousands hundreds or thousands of pipelines
+**Important :**  It is not you don't get it right on the first shot it's an iterative process it's not an exact science it's more of a trial and error loop but it's rated lis you get there now while this works really well when you have a handful of pipelines this manual process is hard to scale to thousands hundreds or thousands of pipelines
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTM3NzkzMDQsLTExNzc4OTgyMDAsLT
-E1OTI3NzY4MzksLTEzMzQyNzM1NTAsLTYwMTIzMjgwNCwtOTYw
-MjcyMDE2LDU1MjkyNTAxMywxNzMxNDkxODI1LC0xMDkxMjQzOT
-IyLDE2MTkxMjcxOTgsMTk4ODM5MzMyOCwxODc3NzY5NDU1LDIw
-MTQwNTc3ODUsLTEwNTU4MTQ4MDcsLTE3NzY0MTUzNzQsMTYwNj
-kzNjA5Nyw1ODQ3NzM4MzksMTQzNzI5MTY0NSwtMjA4ODc0NjYx
-MiwzOTA4Mjc2OTddfQ==
+eyJoaXN0b3J5IjpbMTU3ODMzMjA3NiwtMTIxMzc3OTMwNCwtMT
+E3Nzg5ODIwMCwtMTU5Mjc3NjgzOSwtMTMzNDI3MzU1MCwtNjAx
+MjMyODA0LC05NjAyNzIwMTYsNTUyOTI1MDEzLDE3MzE0OTE4Mj
+UsLTEwOTEyNDM5MjIsMTYxOTEyNzE5OCwxOTg4MzkzMzI4LDE4
+Nzc3Njk0NTUsMjAxNDA1Nzc4NSwtMTA1NTgxNDgwNywtMTc3Nj
+QxNTM3NCwxNjA2OTM2MDk3LDU4NDc3MzgzOSwxNDM3MjkxNjQ1
+LC0yMDg4NzQ2NjEyXX0=
 -->
