@@ -66,14 +66,14 @@ Once we solved all the inefficiencies. Then we can think of speed and cost persp
 
 ## Next ?
 
-Planning to create multiple blogs episodes on Spark Performance Tuning. Understand the various areas of spark  where we can improve the pipeline/job.
+Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTIyMzQ5ODgsMjA0NzY1NDQ0LC01OD
-U0MjM2ODAsMjgyOTY0ODkwLC0xMzA2NjM1MjU4LC01MTcwNzA2
-MjUsLTE4NTI2NTQxMDksLTE3ODE1MjMwNTIsODE5NDE2NTQ2LC
-0xMjEzNzc5MzA0LC0xMTc3ODk4MjAwLC0xNTkyNzc2ODM5LC0x
-MzM0MjczNTUwLC02MDEyMzI4MDQsLTk2MDI3MjAxNiw1NTI5Mj
-UwMTMsMTczMTQ5MTgyNSwtMTA5MTI0MzkyMiwxNjE5MTI3MTk4
-LDE5ODgzOTMzMjhdfQ==
+eyJoaXN0b3J5IjpbMzI5NTg4MzU2LDIwNDc2NTQ0NCwtNTg1ND
+IzNjgwLDI4Mjk2NDg5MCwtMTMwNjYzNTI1OCwtNTE3MDcwNjI1
+LC0xODUyNjU0MTA5LC0xNzgxNTIzMDUyLDgxOTQxNjU0NiwtMT
+IxMzc3OTMwNCwtMTE3Nzg5ODIwMCwtMTU5Mjc3NjgzOSwtMTMz
+NDI3MzU1MCwtNjAxMjMyODA0LC05NjAyNzIwMTYsNTUyOTI1MD
+EzLDE3MzE0OTE4MjUsLTEwOTEyNDM5MjIsMTYxOTEyNzE5OCwx
+OTg4MzkzMzI4XX0=
 -->
