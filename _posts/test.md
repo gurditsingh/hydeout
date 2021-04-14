@@ -41,17 +41,19 @@ Memory usage is spark largely falls under the below categories:
 	**Calculation** : (**“_Java Heap_” – “_Reserved Memory_”) * _spark.memory.fraction_**
 	**Suppose** you have allocated 2GB memory then (2048 - 300) * 0.75 = **1311 is unified memory**
 	 
+## Off-Heap Memory in spark
+
 
 ## Next ?
 
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMTY4NjY2MiwtMTE0MDE5MjQ5NywtNT
-IzMDIxNzgzLC0yNTQxNjI2NSwtMTI5ODI5NjQ5Niw0MjE5MzA1
-ODAsLTIxNDU3MDYxNjIsMzg5MDE0MSwtMTk5OTk1Njg5MCwyMD
-g0ODM1NDg3LC0xNDE0ODA4Njg2LC03MzY0OTAyMzMsLTE3ODY2
-MzcyMjksMzI5NTg4MzU2LDIwNDc2NTQ0NCwtNTg1NDIzNjgwLD
-I4Mjk2NDg5MCwtMTMwNjYzNTI1OCwtNTE3MDcwNjI1LC0xODUy
-NjU0MTA5XX0=
+eyJoaXN0b3J5IjpbLTIwMjcxOTc5ODUsMTQwMTY4NjY2MiwtMT
+E0MDE5MjQ5NywtNTIzMDIxNzgzLC0yNTQxNjI2NSwtMTI5ODI5
+NjQ5Niw0MjE5MzA1ODAsLTIxNDU3MDYxNjIsMzg5MDE0MSwtMT
+k5OTk1Njg5MCwyMDg0ODM1NDg3LC0xNDE0ODA4Njg2LC03MzY0
+OTAyMzMsLTE3ODY2MzcyMjksMzI5NTg4MzU2LDIwNDc2NTQ0NC
+wtNTg1NDIzNjgwLDI4Mjk2NDg5MCwtMTMwNjYzNTI1OCwtNTE3
+MDcwNjI1XX0=
 -->
