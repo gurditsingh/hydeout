@@ -4,14 +4,12 @@ layout: post
 excerpt: "A Spark job can be optimized by many techniques so let’s dig deeper into those techniques. Apache Spark optimization helps with in-memory data computations. The bottleneck for these spark optimization computations can be CPU, memory or any resource in the cluster."
 last_modified_at: 2021-04-06T09:10:02-05:00
 tags:
-  - Azure
-  - Azure Synapse Analytics
-  - cloud
-  - Azure SQL Data Warehouse
-  - Azure Data Lake
-  - Cloud Lakehouse
-  - Azure Cloud services
-  - SQL Pool
+  - Spark
+  - Performance Tuning
+  - Bigdata
+  - Memory
+  - Spark Configurations
+  - Cluster Parameters
 ---
 
 ## What is Spark Performance Tuning?
