@@ -1,6 +1,7 @@
 ## Spark Hierarchy
 
-A Spark application consists of a single driver process and a set of executor processes scattered across nodes on the cluster. The driver is the process that is in charge of the high-level control flow of work that needs to be done. The executor processes are responsible for executing this work, in the form of  _tasks_, as well as for storing any data that the user chooses to cache. Both the driver and the executors typically stick around for the entire time the application is running
+A Spark application consists of a single driver process and a set of executor processes scattered across nodes on the cluster. The driver is the process that is in charge of the high-level control flow of work that needs to be done. The executor processes are responsible for executing this work, in the form of  _tasks_, as well as for storing any data that the user chooses to cache. Both the driver and the executors typically stick around for the entire time the application is running.
+
 
 
 
@@ -13,7 +14,7 @@ A Spark application consists of a single driver process and a set of executor pr
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDA3MjMwODQsLTczNjQ5MDIzMywtMT
+eyJoaXN0b3J5IjpbLTE0MTQ4MDg2ODYsLTczNjQ5MDIzMywtMT
 c4NjYzNzIyOSwzMjk1ODgzNTYsMjA0NzY1NDQ0LC01ODU0MjM2
 ODAsMjgyOTY0ODkwLC0xMzA2NjM1MjU4LC01MTcwNzA2MjUsLT
 E4NTI2NTQxMDksLTE3ODE1MjMwNTIsODE5NDE2NTQ2LC0xMjEz
