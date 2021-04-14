@@ -48,18 +48,18 @@ Off-heap refers to objects (serialised to byte array) that are managed by the op
 
 Although most of the operations in Spark happens inside the JVM and subsequently uses the JVM Heap for its memory, each executor has the ability to utilize an off-heap space for certain cases. This off-heap space lies outside the JVM space and is generally accessed via  `sun.misc.Unsafe`  APIs. The off-heap memory is outside the ambit of Garbage Collection, hence it provides more fine-grained control over the memory for the application developer.
 
-![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_memory_mg.png?raw=true)
+![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_off_heap.png?raw=true)
 
 ## Next ?
 
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA3NjY3NjA2LC0yMDI3MTk3OTg1LDE0MD
-E2ODY2NjIsLTExNDAxOTI0OTcsLTUyMzAyMTc4MywtMjU0MTYy
-NjUsLTEyOTgyOTY0OTYsNDIxOTMwNTgwLC0yMTQ1NzA2MTYyLD
-M4OTAxNDEsLTE5OTk5NTY4OTAsMjA4NDgzNTQ4NywtMTQxNDgw
-ODY4NiwtNzM2NDkwMjMzLC0xNzg2NjM3MjI5LDMyOTU4ODM1Ni
-wyMDQ3NjU0NDQsLTU4NTQyMzY4MCwyODI5NjQ4OTAsLTEzMDY2
-MzUyNThdfQ==
+eyJoaXN0b3J5IjpbMTE4NTc4MDk5NCwtMjAyNzE5Nzk4NSwxND
+AxNjg2NjYyLC0xMTQwMTkyNDk3LC01MjMwMjE3ODMsLTI1NDE2
+MjY1LC0xMjk4Mjk2NDk2LDQyMTkzMDU4MCwtMjE0NTcwNjE2Mi
+wzODkwMTQxLC0xOTk5OTU2ODkwLDIwODQ4MzU0ODcsLTE0MTQ4
+MDg2ODYsLTczNjQ5MDIzMywtMTc4NjYzNzIyOSwzMjk1ODgzNT
+YsMjA0NzY1NDQ0LC01ODU0MjM2ODAsMjgyOTY0ODkwLC0xMzA2
+NjM1MjU4XX0=
 -->
