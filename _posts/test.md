@@ -30,14 +30,14 @@ Memory usage is spark largely falls under the below categories:
 	**Calculation** : (**“_Java Heap_” – “_Reserved Memory_”) * (1.0 –  _spark.memory.fraction_)**
 	**Suppose** you have allocated 2GB memory then (2048 - 300) * (1.0 - 0.75) = **437 is user memory**
 
- - **Unified Memory (spark memory fraction) :**  
+ - **Unified Memory (spark memory fraction) :**  This is the memory pool managed by Apache Spark. This whole pool is split into 2 regions Storage Memory and Execution Memory, and the boundary between them is set by  _spark.memory.storageFraction_  parameter, which defaults to 0.5. The advantage of this new memory management scheme is that this boundary is not static, and in case of memory pressure the boundary would be moved, i.e. one region would grow by borrowing space from another one.
 
 ## Next ?
 
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzOTA1NjI1MCwtNTIzMDIxNzgzLC0yNT
+eyJoaXN0b3J5IjpbLTUyOTM3NjQ5OSwtNTIzMDIxNzgzLC0yNT
 QxNjI2NSwtMTI5ODI5NjQ5Niw0MjE5MzA1ODAsLTIxNDU3MDYx
 NjIsMzg5MDE0MSwtMTk5OTk1Njg5MCwyMDg0ODM1NDg3LC0xND
 E0ODA4Njg2LC03MzY0OTAyMzMsLTE3ODY2MzcyMjksMzI5NTg4
