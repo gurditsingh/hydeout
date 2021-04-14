@@ -25,18 +25,18 @@ Memory usage is spark largely falls under the below categories:
  
 
  - **Reserve Memory :** This is the memory reserved by the system, and its size is hardcoded in the spark code. Tts value is 300MB, which means that this 300MB of RAM does not participate in Spark memory region size calculations, and its size cannot be changed in any way without Spark code recompilation or setting  spark.testing.reservedMemory, which is not recommended as it is a testing parameter not intended to be used in production. Be aware, this memory is only called “reserved”, in fact it is not used by Spark in any way.
- - **User Memory :** 
+ - **User Memory :** This is the memory pool that remains after the allocation of _Spark Memory_, and it is completely up to you to use it in a way you like. You can store your own data structures there that would be used in RDD transformations. For example, you can rewrite Spark aggregation by using mapPartitions transformation maintaining hash table for this aggregation to run, which would consume so called **_User Memory_.** In Spark, the size of this memory pool can be calculated as (**“_Java Heap_” – “_Reserved Memory_”) * (1.0 –  _spark.memory.fraction_),** which is by default equal to (“_Java Heap_” – 300MB) * 0.40. For example, with 4GB heap you would have 1518 MB of _User Memory_. And again, this is the _User Memory_ and its completely up to you what would be stored in this RAM and how, Spark makes completely no accounting on what you do there and whether you respect this boundary or not. **Not respecting this boundary in your code might cause OOM error.**
 
 ## Next ?
 
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjEwODAxNjUsLTEyOTgyOTY0OTYsND
-IxOTMwNTgwLC0yMTQ1NzA2MTYyLDM4OTAxNDEsLTE5OTk5NTY4
-OTAsMjA4NDgzNTQ4NywtMTQxNDgwODY4NiwtNzM2NDkwMjMzLC
-0xNzg2NjM3MjI5LDMyOTU4ODM1NiwyMDQ3NjU0NDQsLTU4NTQy
-MzY4MCwyODI5NjQ4OTAsLTEzMDY2MzUyNTgsLTUxNzA3MDYyNS
-wtMTg1MjY1NDEwOSwtMTc4MTUyMzA1Miw4MTk0MTY1NDYsLTEy
-MTM3NzkzMDRdfQ==
+eyJoaXN0b3J5IjpbLTcyOTM0MTAyLC0xMjk4Mjk2NDk2LDQyMT
+kzMDU4MCwtMjE0NTcwNjE2MiwzODkwMTQxLC0xOTk5OTU2ODkw
+LDIwODQ4MzU0ODcsLTE0MTQ4MDg2ODYsLTczNjQ5MDIzMywtMT
+c4NjYzNzIyOSwzMjk1ODgzNTYsMjA0NzY1NDQ0LC01ODU0MjM2
+ODAsMjgyOTY0ODkwLC0xMzA2NjM1MjU4LC01MTcwNzA2MjUsLT
+E4NTI2NTQxMDksLTE3ODE1MjMwNTIsODE5NDE2NTQ2LC0xMjEz
+Nzc5MzA0XX0=
 -->
