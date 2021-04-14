@@ -36,6 +36,7 @@ Memory usage is spark largely falls under the below categories:
 	 - **Execution Memory :**  Execution memory is the memory used to the buffer intermediate results. Execution memory tends to be more short-lived than storage. It is evicted immediately after each operation, making space for the next ones. For example a task performing sort operation in that case we need some sort of collection to store the intermediate sorted value  that are stored on execution memory. some other examples are shuffles results, joins, aggregation and etc.
 	 - **Storage Memory :** The storage memory is more about reusing the data for future computation. Some time we need a data that i want to store in memory or disk that in future the same data i can use without re-executing the same tasks. The storage memory are for long lived memory in which cache or persist the data. suppose you have two targets and one source in your spark application which means you have called two action on same source flow in that case you can cache your data.
 
+	Important : This Unified memory doesn't have static boundary means it
 		**Calculation** : (**“_Java Heap_” – “_Reserved Memory_”) * _spark.memory.fraction_**
 		**Suppose** you have allocated 2GB memory then (2048 - 300) * 0.75 = **1311 is unified memory**
 	 
@@ -45,11 +46,11 @@ Memory usage is spark largely falls under the below categories:
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDAxOTI0OTcsLTUyMzAyMTc4MywtMj
-U0MTYyNjUsLTEyOTgyOTY0OTYsNDIxOTMwNTgwLC0yMTQ1NzA2
-MTYyLDM4OTAxNDEsLTE5OTk5NTY4OTAsMjA4NDgzNTQ4NywtMT
-QxNDgwODY4NiwtNzM2NDkwMjMzLC0xNzg2NjM3MjI5LDMyOTU4
-ODM1NiwyMDQ3NjU0NDQsLTU4NTQyMzY4MCwyODI5NjQ4OTAsLT
-EzMDY2MzUyNTgsLTUxNzA3MDYyNSwtMTg1MjY1NDEwOSwtMTc4
-MTUyMzA1Ml19
+eyJoaXN0b3J5IjpbNzc0Nzc5MTEzLC0xMTQwMTkyNDk3LC01Mj
+MwMjE3ODMsLTI1NDE2MjY1LC0xMjk4Mjk2NDk2LDQyMTkzMDU4
+MCwtMjE0NTcwNjE2MiwzODkwMTQxLC0xOTk5OTU2ODkwLDIwOD
+Q4MzU0ODcsLTE0MTQ4MDg2ODYsLTczNjQ5MDIzMywtMTc4NjYz
+NzIyOSwzMjk1ODgzNTYsMjA0NzY1NDQ0LC01ODU0MjM2ODAsMj
+gyOTY0ODkwLC0xMzA2NjM1MjU4LC01MTcwNzA2MjUsLTE4NTI2
+NTQxMDldfQ==
 -->
