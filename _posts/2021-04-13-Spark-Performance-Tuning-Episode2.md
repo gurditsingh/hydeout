@@ -51,7 +51,7 @@ Memory usage is spark largely falls under the below categories:
 	 - **Execution Memory :**  Execution memory is the memory used to the buffer intermediate results. Execution memory tends to be more short-lived than storage. It is evicted immediately after each operation, making space for the next ones. For example a task performing sort operation in that case we need some sort of collection to store the intermediate sorted value  that are stored on execution memory. some other examples are shuffles results, joins, aggregation and etc.
 	 - **Storage Memory :** The storage memory is more about reusing the data for future computation. Some time we need a data that i want to store in memory or disk that in future the same data i can use without re-executing the same tasks. The storage memory are for long lived memory in which cache or persist the data. suppose you have two targets and one source in your spark application which means you have called two action on same source flow in that case you can cache your data.
 
-	**Important** : This Unified memory doesn't have static boundary means it's not fixed execution memory take 50% and storage memory will take 50%. Spark manges this automatically if execution needs more memory then it will borrow from storage and vice versa.
+	**Important** : This Unified memory doesn't have static boundary means the memory is not fixed for execution memory and storage memory to take 50-50% memory. Spark manges this automatically if execution needs more memory then it will borrow from storage and vice versa.
 	
 	**Calculation** : (**“_Java Heap_” – “_Reserved Memory_”) * _spark.memory.fraction_**
 	
