@@ -14,6 +14,8 @@ A Spark application consists of a single driver process and a set of executor pr
 
 ## Spark Memory Management
 
+ - Spark is an in-memory processing engine spark takes data in memory and process it.
+
  
 
 
@@ -24,11 +26,11 @@ A Spark application consists of a single driver process and a set of executor pr
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyOTI5NzQyOSwtMjE0NTcwNjE2MiwzOD
-kwMTQxLC0xOTk5OTU2ODkwLDIwODQ4MzU0ODcsLTE0MTQ4MDg2
-ODYsLTczNjQ5MDIzMywtMTc4NjYzNzIyOSwzMjk1ODgzNTYsMj
-A0NzY1NDQ0LC01ODU0MjM2ODAsMjgyOTY0ODkwLC0xMzA2NjM1
-MjU4LC01MTcwNzA2MjUsLTE4NTI2NTQxMDksLTE3ODE1MjMwNT
-IsODE5NDE2NTQ2LC0xMjEzNzc5MzA0LC0xMTc3ODk4MjAwLC0x
-NTkyNzc2ODM5XX0=
+eyJoaXN0b3J5IjpbNDIxOTMwNTgwLC0yMTQ1NzA2MTYyLDM4OT
+AxNDEsLTE5OTk5NTY4OTAsMjA4NDgzNTQ4NywtMTQxNDgwODY4
+NiwtNzM2NDkwMjMzLC0xNzg2NjM3MjI5LDMyOTU4ODM1NiwyMD
+Q3NjU0NDQsLTU4NTQyMzY4MCwyODI5NjQ4OTAsLTEzMDY2MzUy
+NTgsLTUxNzA3MDYyNSwtMTg1MjY1NDEwOSwtMTc4MTUyMzA1Mi
+w4MTk0MTY1NDYsLTEyMTM3NzkzMDQsLTExNzc4OTgyMDAsLTE1
+OTI3NzY4MzldfQ==
 -->
