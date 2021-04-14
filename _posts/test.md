@@ -50,7 +50,7 @@ Although most of the operations in Spark happens inside the JVM and subsequently
 
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_off_heap_mm.png?raw=true)
 
-The total off-heap memory for a Spark executor is controlled by `spark.executor.memoryOverhead`. The default value for this is 10% of executor memory subject to a minimum of 384MB. This means, even if the user does not explicitly set this parameter, Spark would set aside 10% of executor memory(or 384MB whichever is higher) for VM overheads. The amount of off-heap memory used by Spark to store actual data frames is governed by `spark.memory.offHeap.size`. This is an optional feature, which can be enabled by setting `spark.memory.offHeap.use` to true.
+The total off-heap memory for a Spark executor is controlled by `spark.yarn.executor.memoryOverhead`. The default value for this is 10% of executor memory subject to a minimum of 384MB. This means, even if the user does not explicitly set this parameter, Spark would set aside 10% of executor memory(or 384MB whichever is higher) for VM overheads. The amount of off-heap memory used by Spark to store actual data frames is governed by `spark.memory.offHeap.size`. This is an optional feature, which can be enabled by setting `spark.memory.offHeap.use` to true.
 
  - **spark.memory.offHeap.enabled** – the option to use off-heap memory for certain operations (default false)
  - **spark.memory.offHeap.size** – the total amount of memory in bytes for off-heap allocation. It has no impact on heap memory usage, so
@@ -94,7 +94,7 @@ This total executor memory includes both heap memory and off heap in the ratio o
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMTY3ODY0MywtMjAyNzE5Nzk4NSwxND
+eyJoaXN0b3J5IjpbLTk5NjUzMDM5MSwtMjAyNzE5Nzk4NSwxND
 AxNjg2NjYyLC0xMTQwMTkyNDk3LC01MjMwMjE3ODMsLTI1NDE2
 MjY1LC0xMjk4Mjk2NDk2LDQyMTkzMDU4MCwtMjE0NTcwNjE2Mi
 wzODkwMTQxLC0xOTk5OTU2ODkwLDIwODQ4MzU0ODcsLTE0MTQ4
