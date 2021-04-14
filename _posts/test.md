@@ -82,7 +82,11 @@ Each **16VCores** and **64GB RAM**
 	 we have total 64 GB RAM and 1 GB is reserved for Hadoop. We have calculated 3 instances of executor per node.
 	 (63 / 3) => 21 which means we can give upto 21 GB memory per executor.
 	 
-This total executor memory includes both heap memory and ofheap in the ratio of 90% and 10%.
+This total executor memory includes both heap memory and off heap in the ratio of 90% and 10%.
+
+**spark.executor.memory**  = 21 * 0.90 =  **19GB**
+
+**spark.yarn.executor.memoryOverhead**  = 21 * 0.10 =  **2GB**
  
 
 ## Next ?
@@ -90,11 +94,11 @@ This total executor memory includes both heap memory and ofheap in the ratio of 
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODI3NDM3ODAzLC0yMDI3MTk3OTg1LDE0MD
-E2ODY2NjIsLTExNDAxOTI0OTcsLTUyMzAyMTc4MywtMjU0MTYy
-NjUsLTEyOTgyOTY0OTYsNDIxOTMwNTgwLC0yMTQ1NzA2MTYyLD
-M4OTAxNDEsLTE5OTk5NTY4OTAsMjA4NDgzNTQ4NywtMTQxNDgw
-ODY4NiwtNzM2NDkwMjMzLC0xNzg2NjM3MjI5LDMyOTU4ODM1Ni
-wyMDQ3NjU0NDQsLTU4NTQyMzY4MCwyODI5NjQ4OTAsLTEzMDY2
-MzUyNThdfQ==
+eyJoaXN0b3J5IjpbLTcxMTY3ODY0MywtMjAyNzE5Nzk4NSwxND
+AxNjg2NjYyLC0xMTQwMTkyNDk3LC01MjMwMjE3ODMsLTI1NDE2
+MjY1LC0xMjk4Mjk2NDk2LDQyMTkzMDU4MCwtMjE0NTcwNjE2Mi
+wzODkwMTQxLC0xOTk5OTU2ODkwLDIwODQ4MzU0ODcsLTE0MTQ4
+MDg2ODYsLTczNjQ5MDIzMywtMTc4NjYzNzIyOSwzMjk1ODgzNT
+YsMjA0NzY1NDQ0LC01ODU0MjM2ODAsMjgyOTY0ODkwLC0xMzA2
+NjM1MjU4XX0=
 -->
