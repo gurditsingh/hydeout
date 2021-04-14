@@ -7,7 +7,7 @@ A Spark application consists of a single driver process and a set of executor pr
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **"Task ==  slot  == core"**
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **"1 Task == 1 Partition == 1 slot == 1 core"**
 
- - **Executor Memory :**  Memory is divided into peak two types of memory primarily storage and the working memory. The working memory will be utilized for actual  smart workloads unless there's a persistent object that consumes this storage workspace up to the configured amount which by default is 50% so half of the memory will be allocated for working memory and half of the memory will be allocated for for storage like persisted objects
+ - **Executor Memory :**  Memory is divided into peak two types of memory primarily storage and the working memory. The working memory will be utilized for actual execution or smart workloads. The storage memory used for persistent objects. these memorys can be configured which by default is 50% so half of the memory will be allocated for working memory and half of the memory will be allocated for for storage like persisted objects
 
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_hierarchy.png?raw=true)
 
@@ -18,11 +18,11 @@ A Spark application consists of a single driver process and a set of executor pr
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMTY5MTIzOSwzODkwMTQxLC0xOTk5OT
-U2ODkwLDIwODQ4MzU0ODcsLTE0MTQ4MDg2ODYsLTczNjQ5MDIz
-MywtMTc4NjYzNzIyOSwzMjk1ODgzNTYsMjA0NzY1NDQ0LC01OD
-U0MjM2ODAsMjgyOTY0ODkwLC0xMzA2NjM1MjU4LC01MTcwNzA2
-MjUsLTE4NTI2NTQxMDksLTE3ODE1MjMwNTIsODE5NDE2NTQ2LC
-0xMjEzNzc5MzA0LC0xMTc3ODk4MjAwLC0xNTkyNzc2ODM5LC0x
-MzM0MjczNTUwXX0=
+eyJoaXN0b3J5IjpbNDY1MDUwNTgyLDM4OTAxNDEsLTE5OTk5NT
+Y4OTAsMjA4NDgzNTQ4NywtMTQxNDgwODY4NiwtNzM2NDkwMjMz
+LC0xNzg2NjM3MjI5LDMyOTU4ODM1NiwyMDQ3NjU0NDQsLTU4NT
+QyMzY4MCwyODI5NjQ4OTAsLTEzMDY2MzUyNTgsLTUxNzA3MDYy
+NSwtMTg1MjY1NDEwOSwtMTc4MTUyMzA1Miw4MTk0MTY1NDYsLT
+EyMTM3NzkzMDQsLTExNzc4OTgyMDAsLTE1OTI3NzY4MzksLTEz
+MzQyNzM1NTBdfQ==
 -->
