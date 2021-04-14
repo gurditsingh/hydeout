@@ -8,7 +8,8 @@ A Spark application consists of a single driver process and a set of executor pr
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **"1 Task == 1 Partition == 1 slot == 1 core"**
 
  - **Executor Memory :**  Memory is divided into peak two types of memory primarily storage and the working memory. The working memory will be utilized for actual execution or smart workloads. The storage memory used for persistent objects. these memory can be configured, which by default is 50% so half of the memory will be allocated for working memory and half of the memory will be allocated for for storage like persisted objects.
- - **Local Memory :** Every executor has disks. We know SPARK is an in-memory solution but we still have to have disks the disks are attached directly and those provide space for shuffle partitions for the shuffle stages and they also provide space for persistence to disk and spills from the executor from the execution of the workload the disks have attributes right we have fast disks we have slow disks we have remote and local the types of disks that are attached to your cluster
+ - **Local Memory :** Every executor has disks. We know SPARK is an in-memory solution but we still have to have disks. The disks provide space for shuffle partitions and shuffle stages and they also provide space for persistence to disk and spills from the executor. The disks have attributes right we have fast disks we have slow disks. we have remote and local the types of disks that are attached to your cluster.
+ - 
 
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_hierarchy.png?raw=true)
 
@@ -19,11 +20,11 @@ A Spark application consists of a single driver process and a set of executor pr
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzMzA2NzExMCwzODkwMTQxLC0xOTk5OT
-U2ODkwLDIwODQ4MzU0ODcsLTE0MTQ4MDg2ODYsLTczNjQ5MDIz
-MywtMTc4NjYzNzIyOSwzMjk1ODgzNTYsMjA0NzY1NDQ0LC01OD
-U0MjM2ODAsMjgyOTY0ODkwLC0xMzA2NjM1MjU4LC01MTcwNzA2
-MjUsLTE4NTI2NTQxMDksLTE3ODE1MjMwNTIsODE5NDE2NTQ2LC
-0xMjEzNzc5MzA0LC0xMTc3ODk4MjAwLC0xNTkyNzc2ODM5LC0x
-MzM0MjczNTUwXX0=
+eyJoaXN0b3J5IjpbMTIzMTI2MjcwLDM4OTAxNDEsLTE5OTk5NT
+Y4OTAsMjA4NDgzNTQ4NywtMTQxNDgwODY4NiwtNzM2NDkwMjMz
+LC0xNzg2NjM3MjI5LDMyOTU4ODM1NiwyMDQ3NjU0NDQsLTU4NT
+QyMzY4MCwyODI5NjQ4OTAsLTEzMDY2MzUyNTgsLTUxNzA3MDYy
+NSwtMTg1MjY1NDEwOSwtMTc4MTUyMzA1Miw4MTk0MTY1NDYsLT
+EyMTM3NzkzMDQsLTExNzc4OTgyMDAsLTE1OTI3NzY4MzksLTEz
+MzQyNzM1NTBdfQ==
 -->
