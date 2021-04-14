@@ -68,7 +68,8 @@ Each **16VCores** and **64GB RAM**
 	 spark.excutor.cores =  **5**
 	
  - **spark.executor.instances** 
-	 we have total 16 cores and 
+	 we have total 16 cores and 1 core is reserved for hadoop and we calculated number of cores are 5.
+		 (16 -1) / 5 => 3 
 
  
 
@@ -77,11 +78,11 @@ Each **16VCores** and **64GB RAM**
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NzA5OTE2NiwtMjAyNzE5Nzk4NSwxND
-AxNjg2NjYyLC0xMTQwMTkyNDk3LC01MjMwMjE3ODMsLTI1NDE2
-MjY1LC0xMjk4Mjk2NDk2LDQyMTkzMDU4MCwtMjE0NTcwNjE2Mi
-wzODkwMTQxLC0xOTk5OTU2ODkwLDIwODQ4MzU0ODcsLTE0MTQ4
-MDg2ODYsLTczNjQ5MDIzMywtMTc4NjYzNzIyOSwzMjk1ODgzNT
-YsMjA0NzY1NDQ0LC01ODU0MjM2ODAsMjgyOTY0ODkwLC0xMzA2
-NjM1MjU4XX0=
+eyJoaXN0b3J5IjpbOTk1NzI3NTcwLC0yMDI3MTk3OTg1LDE0MD
+E2ODY2NjIsLTExNDAxOTI0OTcsLTUyMzAyMTc4MywtMjU0MTYy
+NjUsLTEyOTgyOTY0OTYsNDIxOTMwNTgwLC0yMTQ1NzA2MTYyLD
+M4OTAxNDEsLTE5OTk5NTY4OTAsMjA4NDgzNTQ4NywtMTQxNDgw
+ODY4NiwtNzM2NDkwMjMzLC0xNzg2NjM3MjI5LDMyOTU4ODM1Ni
+wyMDQ3NjU0NDQsLTU4NTQyMzY4MCwyODI5NjQ4OTAsLTEzMDY2
+MzUyNThdfQ==
 -->
