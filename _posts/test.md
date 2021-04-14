@@ -24,18 +24,18 @@ Memory usage is spark largely falls under the below categories:
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_memory_mg.png?raw=true)
  
 
- - **Reserve Memory :** The reserve memory is 
+ - **Reserve Memory :** This is the memory reserved by the system, and its size is hardcoded in the spark code. Tts value is 300MB, which means that this 300MB of RAM does not participate in Spark memory region size calculations, and its size cannot be changed in any way without Spark code recompilation or setting  _spark.testing.reservedMemory_, which is not recommended as it is a testing parameter not intended to be used in production. Be aware, this memory is only called “reserved”, in fact it is not used by Spark in any way.
 
 ## Next ?
 
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTgyOTY0OTYsNDIxOTMwNTgwLC0yMT
-Q1NzA2MTYyLDM4OTAxNDEsLTE5OTk5NTY4OTAsMjA4NDgzNTQ4
-NywtMTQxNDgwODY4NiwtNzM2NDkwMjMzLC0xNzg2NjM3MjI5LD
-MyOTU4ODM1NiwyMDQ3NjU0NDQsLTU4NTQyMzY4MCwyODI5NjQ4
-OTAsLTEzMDY2MzUyNTgsLTUxNzA3MDYyNSwtMTg1MjY1NDEwOS
-wtMTc4MTUyMzA1Miw4MTk0MTY1NDYsLTEyMTM3NzkzMDQsLTEx
-Nzc4OTgyMDBdfQ==
+eyJoaXN0b3J5IjpbLTEyOTM1MjY4NjAsLTEyOTgyOTY0OTYsND
+IxOTMwNTgwLC0yMTQ1NzA2MTYyLDM4OTAxNDEsLTE5OTk5NTY4
+OTAsMjA4NDgzNTQ4NywtMTQxNDgwODY4NiwtNzM2NDkwMjMzLC
+0xNzg2NjM3MjI5LDMyOTU4ODM1NiwyMDQ3NjU0NDQsLTU4NTQy
+MzY4MCwyODI5NjQ4OTAsLTEzMDY2MzUyNTgsLTUxNzA3MDYyNS
+wtMTg1MjY1NDEwOSwtMTc4MTUyMzA1Miw4MTk0MTY1NDYsLTEy
+MTM3NzkzMDRdfQ==
 -->
