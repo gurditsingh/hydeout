@@ -42,6 +42,11 @@ Memory usage is spark largely falls under the below categories:
 	**Suppose** you have allocated 2GB memory then (2048 - 300) * 0.75 = **1311 is unified memory**
 	 
 ## Off-Heap Memory in spark
+Even though the best performance is obtained when operating solely in on-heap memory, Spark also makes it possible to use off-heap storage for certain operations.
+
+Off-heap refers to objects (serialised to byte array) that are managed by the operating system but stored outside the process heap in native memory (therefore, they are not processed by the garbage collector). Accessing this data is slightly slower than accessing the on-heap storage but still faster than reading/writing from a disk. The downside is that the user has to manually deal with managing the allocated memory.
+Although most of the operations in Spark happens inside the JVM and subsequently uses the JVM Heap for its memory, each executor has the ability to utilize an off-heap space for certain cases. This off-heap space lies outside the JVM space and is generally accessed via  `sun.misc.Unsafe`  APIs. The off-heap memory is outside the ambit of Garbage Collection, hence it provides more fine-grained control over the memory for the application developer.
+
 
 
 ## Next ?
@@ -49,11 +54,11 @@ Memory usage is spark largely falls under the below categories:
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjcxOTc5ODUsMTQwMTY4NjY2MiwtMT
-E0MDE5MjQ5NywtNTIzMDIxNzgzLC0yNTQxNjI2NSwtMTI5ODI5
-NjQ5Niw0MjE5MzA1ODAsLTIxNDU3MDYxNjIsMzg5MDE0MSwtMT
-k5OTk1Njg5MCwyMDg0ODM1NDg3LC0xNDE0ODA4Njg2LC03MzY0
-OTAyMzMsLTE3ODY2MzcyMjksMzI5NTg4MzU2LDIwNDc2NTQ0NC
-wtNTg1NDIzNjgwLDI4Mjk2NDg5MCwtMTMwNjYzNTI1OCwtNTE3
-MDcwNjI1XX0=
+eyJoaXN0b3J5IjpbLTM0ODgxNzYwMCwtMjAyNzE5Nzk4NSwxND
+AxNjg2NjYyLC0xMTQwMTkyNDk3LC01MjMwMjE3ODMsLTI1NDE2
+MjY1LC0xMjk4Mjk2NDk2LDQyMTkzMDU4MCwtMjE0NTcwNjE2Mi
+wzODkwMTQxLC0xOTk5OTU2ODkwLDIwODQ4MzU0ODcsLTE0MTQ4
+MDg2ODYsLTczNjQ5MDIzMywtMTc4NjYzNzIyOSwzMjk1ODgzNT
+YsMjA0NzY1NDQ0LC01ODU0MjM2ODAsMjgyOTY0ODkwLC0xMzA2
+NjM1MjU4XX0=
 -->
