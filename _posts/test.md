@@ -34,7 +34,7 @@ Memory usage is spark largely falls under the below categories:
 
 	Spark tasks operate in two main memory regions:
 	 - **Execution Memory :**  Execution memory is the memory used to the buffer intermediate results. Execution memory tends to be more short-lived than storage. It is evicted immediately after each operation, making space for the next ones. For example a task performing sort operation in that case we need some sort of collection to store the intermediate sorted value  that are stored on execution memory. some other examples are shuffles results, joins, aggregation and etc.
-	 - **Storage Memory :** The storage memory is more about reusing the data for future computation. Some time we need a data that i want to store in memory or disk that the same data i can use without re-executing the same tasks.
+	 - **Storage Memory :** The storage memory is more about reusing the data for future computation. Some time we need a data that i want to store in memory or disk that in future the same data i can use without re-executing the same tasks. The storage memory are for long li
 
 	 
 
@@ -43,7 +43,7 @@ Memory usage is spark largely falls under the below categories:
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwMzIyMjAyOSwtNTIzMDIxNzgzLC0yNT
+eyJoaXN0b3J5IjpbMTA2NTM2MDgxMiwtNTIzMDIxNzgzLC0yNT
 QxNjI2NSwtMTI5ODI5NjQ5Niw0MjE5MzA1ODAsLTIxNDU3MDYx
 NjIsMzg5MDE0MSwtMTk5OTk1Njg5MCwyMDg0ODM1NDg3LC0xND
 E0ODA4Njg2LC03MzY0OTAyMzMsLTE3ODY2MzcyMjksMzI5NTg4
