@@ -46,6 +46,7 @@ Even though the best performance is obtained when operating solely in on-heap me
 
 Off-heap refers to objects (serialised to byte array) that are managed by the operating system but stored outside the process heap in native memory (therefore, they are not processed by the garbage collector). Accessing this data is slightly slower than accessing the on-heap storage but still faster than reading/writing from a disk. The downside is that the user has to manually deal with managing the allocated memory.
 
+Although most of the operations in Spark happens inside the JVM and subsequently uses the JVM Heap for its memory, each executor has the ability to utilize an off-heap space for certain cases. This off-heap space lies outside the JVM space and is generally accessed via  `sun.misc.Unsafe`  APIs. The off-heap memory is outside the ambit of Garbage Collection, hence it provides more fine-grained control over the memory for the application developer.
 
 
 
@@ -54,11 +55,11 @@ Off-heap refers to objects (serialised to byte array) that are managed by the op
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyMDgyOTMzNCwtMjAyNzE5Nzk4NSwxND
-AxNjg2NjYyLC0xMTQwMTkyNDk3LC01MjMwMjE3ODMsLTI1NDE2
-MjY1LC0xMjk4Mjk2NDk2LDQyMTkzMDU4MCwtMjE0NTcwNjE2Mi
-wzODkwMTQxLC0xOTk5OTU2ODkwLDIwODQ4MzU0ODcsLTE0MTQ4
-MDg2ODYsLTczNjQ5MDIzMywtMTc4NjYzNzIyOSwzMjk1ODgzNT
-YsMjA0NzY1NDQ0LC01ODU0MjM2ODAsMjgyOTY0ODkwLC0xMzA2
-NjM1MjU4XX0=
+eyJoaXN0b3J5IjpbLTE5MzgxNzYwMTgsLTIwMjcxOTc5ODUsMT
+QwMTY4NjY2MiwtMTE0MDE5MjQ5NywtNTIzMDIxNzgzLC0yNTQx
+NjI2NSwtMTI5ODI5NjQ5Niw0MjE5MzA1ODAsLTIxNDU3MDYxNj
+IsMzg5MDE0MSwtMTk5OTk1Njg5MCwyMDg0ODM1NDg3LC0xNDE0
+ODA4Njg2LC03MzY0OTAyMzMsLTE3ODY2MzcyMjksMzI5NTg4Mz
+U2LDIwNDc2NTQ0NCwtNTg1NDIzNjgwLDI4Mjk2NDg5MCwtMTMw
+NjYzNTI1OF19
 -->
