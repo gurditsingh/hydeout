@@ -67,7 +67,8 @@ Each **16VCores** and **64GB RAM**
  
 	 spark.excutor.cores =  **5**
 	
- - List item
+ - **spark.executor.instances** 
+	 we have total 16 cores and 
 
  
 
@@ -76,11 +77,11 @@ Each **16VCores** and **64GB RAM**
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODg1MTg4OTMsLTIwMjcxOTc5ODUsMT
-QwMTY4NjY2MiwtMTE0MDE5MjQ5NywtNTIzMDIxNzgzLC0yNTQx
-NjI2NSwtMTI5ODI5NjQ5Niw0MjE5MzA1ODAsLTIxNDU3MDYxNj
-IsMzg5MDE0MSwtMTk5OTk1Njg5MCwyMDg0ODM1NDg3LC0xNDE0
-ODA4Njg2LC03MzY0OTAyMzMsLTE3ODY2MzcyMjksMzI5NTg4Mz
-U2LDIwNDc2NTQ0NCwtNTg1NDIzNjgwLDI4Mjk2NDg5MCwtMTMw
-NjYzNTI1OF19
+eyJoaXN0b3J5IjpbLTY4NzA5OTE2NiwtMjAyNzE5Nzk4NSwxND
+AxNjg2NjYyLC0xMTQwMTkyNDk3LC01MjMwMjE3ODMsLTI1NDE2
+MjY1LC0xMjk4Mjk2NDk2LDQyMTkzMDU4MCwtMjE0NTcwNjE2Mi
+wzODkwMTQxLC0xOTk5OTU2ODkwLDIwODQ4MzU0ODcsLTE0MTQ4
+MDg2ODYsLTczNjQ5MDIzMywtMTc4NjYzNzIyOSwzMjk1ODgzNT
+YsMjA0NzY1NDQ0LC01ODU0MjM2ODAsMjgyOTY0ODkwLC0xMzA2
+NjM1MjU4XX0=
 -->
