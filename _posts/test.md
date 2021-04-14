@@ -70,7 +70,8 @@ Each **16VCores** and **64GB RAM**
  - **spark.executor.instances** 
 	 we have total 16 cores and 1 core is reserved for hadoop and we calculated number of cores are 5.
 	(16 -1) / 5 => 3 which means we can run 3 instances of executors per node.
-	
+	we have total 9 worker nodes.
+	(3 * 9) -1 =26 
 		 
 		  
 
@@ -81,11 +82,11 @@ Each **16VCores** and **64GB RAM**
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEyODU4NDM5LC0yMDI3MTk3OTg1LDE0MD
-E2ODY2NjIsLTExNDAxOTI0OTcsLTUyMzAyMTc4MywtMjU0MTYy
-NjUsLTEyOTgyOTY0OTYsNDIxOTMwNTgwLC0yMTQ1NzA2MTYyLD
-M4OTAxNDEsLTE5OTk5NTY4OTAsMjA4NDgzNTQ4NywtMTQxNDgw
-ODY4NiwtNzM2NDkwMjMzLC0xNzg2NjM3MjI5LDMyOTU4ODM1Ni
-wyMDQ3NjU0NDQsLTU4NTQyMzY4MCwyODI5NjQ4OTAsLTEzMDY2
-MzUyNThdfQ==
+eyJoaXN0b3J5IjpbLTE1MjQ4MTI1NTksLTIwMjcxOTc5ODUsMT
+QwMTY4NjY2MiwtMTE0MDE5MjQ5NywtNTIzMDIxNzgzLC0yNTQx
+NjI2NSwtMTI5ODI5NjQ5Niw0MjE5MzA1ODAsLTIxNDU3MDYxNj
+IsMzg5MDE0MSwtMTk5OTk1Njg5MCwyMDg0ODM1NDg3LC0xNDE0
+ODA4Njg2LC03MzY0OTAyMzMsLTE3ODY2MzcyMjksMzI5NTg4Mz
+U2LDIwNDc2NTQ0NCwtNTg1NDIzNjgwLDI4Mjk2NDg5MCwtMTMw
+NjYzNTI1OF19
 -->
