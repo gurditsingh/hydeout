@@ -56,18 +56,29 @@ The total off-heap memory for a Spark executor is controlled by `spark.executor.
  - **spark.memory.offHeap.size** – the total amount of memory in bytes for off-heap allocation. It has no impact on heap memory usage, so
    make sure not to exceed your executor’s total limits (default 0)
 
-# Calculations for Spark Memory Management
+## Calculations for Spark Memory
+**Consider:**
+
+**10 Node** Cluster ( 1 Master Node, 9 Worker Nodes)
+
+Each **16VCores** and **64GB RAM**
+
+ - List item
+
+**spark.executor.cores**
+
+
 
 ## Next ?
 
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNjYyMzc3MjcsLTIwMjcxOTc5ODUsMT
-QwMTY4NjY2MiwtMTE0MDE5MjQ5NywtNTIzMDIxNzgzLC0yNTQx
-NjI2NSwtMTI5ODI5NjQ5Niw0MjE5MzA1ODAsLTIxNDU3MDYxNj
-IsMzg5MDE0MSwtMTk5OTk1Njg5MCwyMDg0ODM1NDg3LC0xNDE0
-ODA4Njg2LC03MzY0OTAyMzMsLTE3ODY2MzcyMjksMzI5NTg4Mz
-U2LDIwNDc2NTQ0NCwtNTg1NDIzNjgwLDI4Mjk2NDg5MCwtMTMw
-NjYzNTI1OF19
+eyJoaXN0b3J5IjpbNzg2MTAwNTcxLC0yMDI3MTk3OTg1LDE0MD
+E2ODY2NjIsLTExNDAxOTI0OTcsLTUyMzAyMTc4MywtMjU0MTYy
+NjUsLTEyOTgyOTY0OTYsNDIxOTMwNTgwLC0yMTQ1NzA2MTYyLD
+M4OTAxNDEsLTE5OTk5NTY4OTAsMjA4NDgzNTQ4NywtMTQxNDgw
+ODY4NiwtNzM2NDkwMjMzLC0xNzg2NjM3MjI5LDMyOTU4ODM1Ni
+wyMDQ3NjU0NDQsLTU4NTQyMzY4MCwyODI5NjQ4OTAsLTEzMDY2
+MzUyNThdfQ==
 -->
