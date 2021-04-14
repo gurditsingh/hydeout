@@ -26,7 +26,7 @@ Memory usage is spark largely falls under the below categories:
 
  - **Reserve Memory :** This is the memory reserved by the system, and its size is hardcoded in the spark code. Tts value is 300MB, which means that this 300MB of RAM does not participate in Spark memory region size calculations, and its size cannot be changed in any way without Spark code recompilation or setting  spark.testing.reservedMemory, which is not recommended as it is a testing parameter not intended to be used in production. Be aware, this memory is only called “reserved”, in fact it is not used by Spark in any way.
  - **User Memory :** This is the memory pool that remains after the allocation of Spark Memory, and it is completely up to you to use it in a way you like. You can store your own data structures there that would be used in RDD transformations. For example, you can rewrite Spark aggregation by using mapPartitions transformation maintaining hash table for this aggregation to run, which would consume so called User Memory. And again, this is the User Memory and its completely up to you what would be stored in this RAM and how, Spark makes completely no accounting on what you do there and whether you respect this boundary or not. Not respecting this boundary in your code might cause OOM error.
- - **Execution Memory :**  Execution memory is the memory used to the buffer intermediate results. Execution memory tends to be more short-lived than storage. It is evicted immediately after each operation, making space for the next ones. For example a task performing sort operation in that case we need some sort of collec 
+ - **Execution Memory :**  Execution memory is the memory used to the buffer intermediate results. Execution memory tends to be more short-lived than storage. It is evicted immediately after each operation, making space for the next ones. For example a task performing sort operation in that case we need some sort of collection to store the intermediate sorted value  that are stored on execution memory. some other examples are shuffles results, joins, aggregation and etc.
  - 
 
 	**Calculation** : (**“_Java Heap_” – “_Reserved Memory_”) * (1.0 –  _spark.memory.fraction_)**
@@ -37,7 +37,7 @@ Memory usage is spark largely falls under the below categories:
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMDAwMDI4MiwtMjU0MTYyNjUsLTEyOT
+eyJoaXN0b3J5IjpbLTUyMzAyMTc4MywtMjU0MTYyNjUsLTEyOT
 gyOTY0OTYsNDIxOTMwNTgwLC0yMTQ1NzA2MTYyLDM4OTAxNDEs
 LTE5OTk5NTY4OTAsMjA4NDgzNTQ4NywtMTQxNDgwODY4NiwtNz
 M2NDkwMjMzLC0xNzg2NjM3MjI5LDMyOTU4ODM1NiwyMDQ3NjU0
