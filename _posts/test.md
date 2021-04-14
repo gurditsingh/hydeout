@@ -26,7 +26,7 @@ Memory usage is spark largely falls under the below categories:
 
  - **Reserve Memory :** This is the memory reserved by the system, and its size is hardcoded in the spark code. Tts value is 300MB, which means that this 300MB of RAM does not participate in Spark memory region size calculations, and its size cannot be changed in any way without Spark code recompilation or setting  spark.testing.reservedMemory, which is not recommended as it is a testing parameter not intended to be used in production. Be aware, this memory is only called “reserved”, in fact it is not used by Spark in any way.
  - **User Memory :** This is the memory pool that remains after the allocation of Spark Memory, and it is completely up to you to use it in a way you like. You can store your own data structures there that would be used in RDD transformations. For example, you can rewrite Spark aggregation by using mapPartitions transformation maintaining hash table for this aggregation to run, which would consume so called User Memory. And again, this is the User Memory and its completely up to you what would be stored in this RAM and how, Spark makes completely no accounting on what you do there and whether you respect this boundary or not. Not respecting this boundary in your code might cause OOM error.
- - Ex
+ - **Execution Memory :**  
  - 
 
 	**Calculation** : (**“_Java Heap_” – “_Reserved Memory_”) * (1.0 –  _spark.memory.fraction_)**
@@ -37,11 +37,11 @@ Memory usage is spark largely falls under the below categories:
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTcwNTQyODAsLTI1NDE2MjY1LC0xMj
-k4Mjk2NDk2LDQyMTkzMDU4MCwtMjE0NTcwNjE2MiwzODkwMTQx
-LC0xOTk5OTU2ODkwLDIwODQ4MzU0ODcsLTE0MTQ4MDg2ODYsLT
-czNjQ5MDIzMywtMTc4NjYzNzIyOSwzMjk1ODgzNTYsMjA0NzY1
-NDQ0LC01ODU0MjM2ODAsMjgyOTY0ODkwLC0xMzA2NjM1MjU4LC
-01MTcwNzA2MjUsLTE4NTI2NTQxMDksLTE3ODE1MjMwNTIsODE5
-NDE2NTQ2XX0=
+eyJoaXN0b3J5IjpbMTQzMzUxOTEyLC0yNTQxNjI2NSwtMTI5OD
+I5NjQ5Niw0MjE5MzA1ODAsLTIxNDU3MDYxNjIsMzg5MDE0MSwt
+MTk5OTk1Njg5MCwyMDg0ODM1NDg3LC0xNDE0ODA4Njg2LC03Mz
+Y0OTAyMzMsLTE3ODY2MzcyMjksMzI5NTg4MzU2LDIwNDc2NTQ0
+NCwtNTg1NDIzNjgwLDI4Mjk2NDg5MCwtMTMwNjYzNTI1OCwtNT
+E3MDcwNjI1LC0xODUyNjU0MTA5LC0xNzgxNTIzMDUyLDgxOTQx
+NjU0Nl19
 -->
