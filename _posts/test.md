@@ -68,7 +68,7 @@ Each **16VCores** and **64GB RAM**
 
  - **spark.executor.cores** Balanced approach is 5 virtual cores for each executor is ideal to achieve optimal results in any sized cluster. (Recommended)
  
-	 **--executor-cores** = **5**
+	 Parameter : **--executor-cores** = **5**
 	
 	
  - **spark.executor.instances** 
@@ -76,20 +76,20 @@ Each **16VCores** and **64GB RAM**
 	**Calculation :** (16 -1) / 5 => 3 which means we can run 3 instances of executors per node.
 	
 	we have total 9 worker nodes.
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(3 * 9) -1 => 26 which means we can spawn upto 26 executors.
+	**Calculation :** (3 * 9) -1 => 26 which means we can spawn upto 26 executors.
   
-	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**--num-executors** = **26**
+	  Parameter : **--num-executors** = **26**
 		 
 		 
  - **spark.executor.memory**
 	we have total 64 GB RAM and 1 GB is reserved for Hadoop. We have calculated 3 instances of executor per node.
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (63 / 3) => 21 which means we can give upto 21 GB memory per executor.
+	**Calculation :**(63 / 3) => 21 which means we can give upto 21 GB memory per executor.
 	 
 	This total executor memory includes both heap memory and off heap in the ratio of 90% and 10%.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**spark.executor.memory**  = 21 * 0.90 =  **19GB**
+**spark.executor.memory**  = 21 * 0.90 =  **19GB**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**spark.yarn.executor.memoryOverhead**  = 21 * 0.10 =  **2GB**
+**spark.yarn.executor.memoryOverhead**  = 21 * 0.10 =  **2GB**
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**--executor-memory** = **19GB**
 
@@ -98,7 +98,7 @@ Each **16VCores** and **64GB RAM**
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzUwOTI2NzEsMTI3Njg1NjI2LC0yMD
+eyJoaXN0b3J5IjpbLTE0NDcwMTk5NjcsMTI3Njg1NjI2LC0yMD
 I3MTk3OTg1LDE0MDE2ODY2NjIsLTExNDAxOTI0OTcsLTUyMzAy
 MTc4MywtMjU0MTYyNjUsLTEyOTgyOTY0OTYsNDIxOTMwNTgwLC
 0yMTQ1NzA2MTYyLDM4OTAxNDEsLTE5OTk5NTY4OTAsMjA4NDgz
