@@ -7,7 +7,7 @@ A Spark application consists of a single driver process and a set of executor pr
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **"Task ==  slot  == core"**
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; **"1 Task == 1 Partition == 1 slot == 1 core"**
 
- - **Executor Memory :**  
+ - **Executor Memory :**  Memory is divided into peak two types of memory primarily storage and the working memory. The Working memoy  can be utilized and will be utilized by smart workloads unless there's a persistent object that consumes this storage workspace up to the configured amount which by default is 50% so half of the memory will be allocated for working memory and half of the memory will be allocated for for storage like persisted objects
 
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_hierarchy.png?raw=true)
 
@@ -18,11 +18,11 @@ A Spark application consists of a single driver process and a set of executor pr
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NjkyNzc2OTcsLTE5OTk5NTY4OTAsMj
-A4NDgzNTQ4NywtMTQxNDgwODY4NiwtNzM2NDkwMjMzLC0xNzg2
-NjM3MjI5LDMyOTU4ODM1NiwyMDQ3NjU0NDQsLTU4NTQyMzY4MC
-wyODI5NjQ4OTAsLTEzMDY2MzUyNTgsLTUxNzA3MDYyNSwtMTg1
-MjY1NDEwOSwtMTc4MTUyMzA1Miw4MTk0MTY1NDYsLTEyMTM3Nz
-kzMDQsLTExNzc4OTgyMDAsLTE1OTI3NzY4MzksLTEzMzQyNzM1
-NTAsLTYwMTIzMjgwNF19
+eyJoaXN0b3J5IjpbLTUzNjMzMzUwNywtMTk5OTk1Njg5MCwyMD
+g0ODM1NDg3LC0xNDE0ODA4Njg2LC03MzY0OTAyMzMsLTE3ODY2
+MzcyMjksMzI5NTg4MzU2LDIwNDc2NTQ0NCwtNTg1NDIzNjgwLD
+I4Mjk2NDg5MCwtMTMwNjYzNTI1OCwtNTE3MDcwNjI1LC0xODUy
+NjU0MTA5LC0xNzgxNTIzMDUyLDgxOTQxNjU0NiwtMTIxMzc3OT
+MwNCwtMTE3Nzg5ODIwMCwtMTU5Mjc3NjgzOSwtMTMzNDI3MzU1
+MCwtNjAxMjMyODA0XX0=
 -->
