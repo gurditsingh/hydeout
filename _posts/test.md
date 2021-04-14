@@ -36,10 +36,10 @@ Memory usage is spark largely falls under the below categories:
 	 - **Execution Memory :**  Execution memory is the memory used to the buffer intermediate results. Execution memory tends to be more short-lived than storage. It is evicted immediately after each operation, making space for the next ones. For example a task performing sort operation in that case we need some sort of collection to store the intermediate sorted value  that are stored on execution memory. some other examples are shuffles results, joins, aggregation and etc.
 	 - **Storage Memory :** The storage memory is more about reusing the data for future computation. Some time we need a data that i want to store in memory or disk that in future the same data i can use without re-executing the same tasks. The storage memory are for long lived memory in which cache or persist the data. suppose you have two targets and one source in your spark application which means you have called two action on same source flow in that case you can cache your data.
 
-	Important : This Unified memory doesn't have static boundary means it's not fixed execution memory take 50% and storage memory will take 50%. Spark manges this automatically if execution needs more memory then it will borrow from storage and vice versa.
+	**Important** : This Unified memory doesn't have static boundary means it's not fixed execution memory take 50% and storage memory will take 50%. Spark manges this automatically if execution needs more memory then it will borrow from storage and vice versa.
 	
-		**Calculation** : (**“_Java Heap_” – “_Reserved Memory_”) * _spark.memory.fraction_**
-		**Suppose** you have allocated 2GB memory then (2048 - 300) * 0.75 = **1311 is unified memory**
+	**Calculation** : (**“_Java Heap_” – “_Reserved Memory_”) * _spark.memory.fraction_**
+	**Suppose** you have allocated 2GB memory then (2048 - 300) * 0.75 = **1311 is unified memory**
 	 
 
 ## Next ?
@@ -47,11 +47,11 @@ Memory usage is spark largely falls under the below categories:
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTI1OTIyNTAsLTExNDAxOTI0OTcsLT
-UyMzAyMTc4MywtMjU0MTYyNjUsLTEyOTgyOTY0OTYsNDIxOTMw
-NTgwLC0yMTQ1NzA2MTYyLDM4OTAxNDEsLTE5OTk5NTY4OTAsMj
-A4NDgzNTQ4NywtMTQxNDgwODY4NiwtNzM2NDkwMjMzLC0xNzg2
-NjM3MjI5LDMyOTU4ODM1NiwyMDQ3NjU0NDQsLTU4NTQyMzY4MC
-wyODI5NjQ4OTAsLTEzMDY2MzUyNTgsLTUxNzA3MDYyNSwtMTg1
-MjY1NDEwOV19
+eyJoaXN0b3J5IjpbMTQwMTY4NjY2MiwtMTE0MDE5MjQ5NywtNT
+IzMDIxNzgzLC0yNTQxNjI2NSwtMTI5ODI5NjQ5Niw0MjE5MzA1
+ODAsLTIxNDU3MDYxNjIsMzg5MDE0MSwtMTk5OTk1Njg5MCwyMD
+g0ODM1NDg3LC0xNDE0ODA4Njg2LC03MzY0OTAyMzMsLTE3ODY2
+MzcyMjksMzI5NTg4MzU2LDIwNDc2NTQ0NCwtNTg1NDIzNjgwLD
+I4Mjk2NDg5MCwtMTMwNjYzNTI1OCwtNTE3MDcwNjI1LC0xODUy
+NjU0MTA5XX0=
 -->
