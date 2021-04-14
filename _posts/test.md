@@ -73,13 +73,14 @@ Each **16VCores** and **64GB RAM**
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(16 -1) / 5 => 3 which means we can run 3 instances of executors per node.
 	
 	we have total 9 worker nodes.
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(3 * 9) -1 = 26 which means we can spawn upto 26 executors.
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(3 * 9) -1 => 26 which means we can spawn upto 26 executors.
   
 	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**--num-executors** = **26**
 		 
 		 
  - **spark.executor.memory**
-	 we have total 64 GB RAM and 1 GB is reserved for Hadoop. We have calculated 
+	 we have total 64 GB RAM and 1 GB is reserved for Hadoop. We have calculated 3 instances of executor per node.
+	 (63 / 3) => 21
 
  
 
@@ -88,7 +89,7 @@ Each **16VCores** and **64GB RAM**
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNzY5NzIxNiwtMjAyNzE5Nzk4NSwxND
+eyJoaXN0b3J5IjpbLTI3MzQ2MDk2NiwtMjAyNzE5Nzk4NSwxND
 AxNjg2NjYyLC0xMTQwMTkyNDk3LC01MjMwMjE3ODMsLTI1NDE2
 MjY1LC0xMjk4Mjk2NDk2LDQyMTkzMDU4MCwtMjE0NTcwNjE2Mi
 wzODkwMTQxLC0xOTk5OTU2ODkwLDIwODQ4MzU0ODcsLTE0MTQ4
