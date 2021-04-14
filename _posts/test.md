@@ -87,22 +87,22 @@ Each **16VCores** and **64GB RAM**
 	 
 	This total executor memory includes both heap memory and off heap in the ratio of 90% and 10%.
 
-**spark.executor.memory**  = 21 * 0.90 =  **19GB**
+	**spark.executor.memory**  = 21 * 0.90 =  **19GB**
 
-**spark.yarn.executor.memoryOverhead**  = 21 * 0.10 =  **2GB**
+	**spark.yarn.executor.memoryOverhead**  = 21 * 0.10 =  **2GB**
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**--executor-memory** = **19GB**
+	Parameter : **--executor-memory** = **19GB**
 
 ## Next ?
 
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDcwMTk5NjcsMTI3Njg1NjI2LC0yMD
-I3MTk3OTg1LDE0MDE2ODY2NjIsLTExNDAxOTI0OTcsLTUyMzAy
-MTc4MywtMjU0MTYyNjUsLTEyOTgyOTY0OTYsNDIxOTMwNTgwLC
-0yMTQ1NzA2MTYyLDM4OTAxNDEsLTE5OTk5NTY4OTAsMjA4NDgz
-NTQ4NywtMTQxNDgwODY4NiwtNzM2NDkwMjMzLC0xNzg2NjM3Mj
-I5LDMyOTU4ODM1NiwyMDQ3NjU0NDQsLTU4NTQyMzY4MCwyODI5
-NjQ4OTBdfQ==
+eyJoaXN0b3J5IjpbMTUxMjQ4NTMwOCwxMjc2ODU2MjYsLTIwMj
+cxOTc5ODUsMTQwMTY4NjY2MiwtMTE0MDE5MjQ5NywtNTIzMDIx
+NzgzLC0yNTQxNjI2NSwtMTI5ODI5NjQ5Niw0MjE5MzA1ODAsLT
+IxNDU3MDYxNjIsMzg5MDE0MSwtMTk5OTk1Njg5MCwyMDg0ODM1
+NDg3LC0xNDE0ODA4Njg2LC03MzY0OTAyMzMsLTE3ODY2MzcyMj
+ksMzI5NTg4MzU2LDIwNDc2NTQ0NCwtNTg1NDIzNjgwLDI4Mjk2
+NDg5MF19
 -->
