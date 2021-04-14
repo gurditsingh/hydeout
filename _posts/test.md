@@ -8,7 +8,7 @@ A Spark application consists of a single driver process and a set of executor pr
 
 	 **"Task ==  slot  == core"**
 	 
-	**"1 Task == 1 Partition == 1 slot == 1 core"**
+	 **"1 Task == 1 Partition == 1 slot == 1 core"**
 
  - **Executor Memory :**  Memory is divided into peak two types of memory primarily storage and the working memory. The working memory will be utilized for actual execution or smart workloads. The storage memory used for persistent objects. these memory can be configured, which by default is 50% so half of the memory will be allocated for working memory and half of the memory will be allocated for for storage like persisted objects.
  - **Local Memory :** Every executor has disks. We know SPARK is an in-memory solution but we still have to have disks. The disks provide space for shuffle partitions and shuffle stages and they also provide space for persistence to disk and spills from the executor. The disks have attributes right we have fast disks we have slow disks. We have remote and local the types of disks that are attached to your cluster.
@@ -29,6 +29,7 @@ Memory usage is spark largely falls under the below categories:
  - **User Memory :** This is the memory pool that remains after the allocation of Spark Memory, and it is completely up to you to use it in a way you like. You can store your own data structures there that would be used in RDD transformations. For example, you can rewrite Spark aggregation by using mapPartitions transformation maintaining hash table for this aggregation to run, which would consume so called User Memory. And again, this is the User Memory and its completely up to you what would be stored in this RAM and how, Spark makes completely no accounting on what you do there and whether you respect this boundary or not. Not respecting this boundary in your code might cause OOM error.
 
 	**Calculation** : (**“_Java Heap_” – “_Reserved Memory_”) * (1.0 –  _spark.memory.fraction_)**
+	
 	**Suppose** you have allocated 2GB memory then (2048 - 300) * (1.0 - 0.75) = **437 is user memory**
 
  - **Unified Memory (spark memory fraction) :**  This is the memory pool managed by Apache Spark. This whole pool is split into 2 regions Storage Memory and Execution Memory, and the boundary between them is set by  _spark.memory.storageFraction_  parameter, which defaults to 0.5. The advantage of this new memory management scheme is that this boundary is not static, and in case of memory pressure the boundary would be moved, i.e. one region would grow by borrowing space from another one.
@@ -40,6 +41,7 @@ Memory usage is spark largely falls under the below categories:
 	**Important** : This Unified memory doesn't have static boundary means it's not fixed execution memory take 50% and storage memory will take 50%. Spark manges this automatically if execution needs more memory then it will borrow from storage and vice versa.
 	
 	**Calculation** : (**“_Java Heap_” – “_Reserved Memory_”) * _spark.memory.fraction_**
+	
 	**Suppose** you have allocated 2GB memory then (2048 - 300) * 0.75 = **1311 is unified memory**
 	 
 ## Off-Heap Memory in spark
@@ -66,12 +68,12 @@ Each **16VCores** and **64GB RAM**
 
  - **spark.executor.cores** Balanced approach is 5 virtual cores for each executor is ideal to achieve optimal results in any sized cluster. (Recommended)
  
-	  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**--executor-cores** = **5**
+	 **--executor-cores** = **5**
 	
 	
  - **spark.executor.instances** 
 	 we have total 16 cores and 1 core is reserved for hadoop and we calculated number of cores are 5.
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(16 -1) / 5 => 3 which means we can run 3 instances of executors per node.
+	**Calculation :** (16 -1) / 5 => 3 which means we can run 3 instances of executors per node.
 	
 	we have total 9 worker nodes.
 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(3 * 9) -1 => 26 which means we can spawn upto 26 executors.
@@ -96,11 +98,11 @@ Each **16VCores** and **64GB RAM**
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNDMxMzIzMiwxMjc2ODU2MjYsLTIwMj
-cxOTc5ODUsMTQwMTY4NjY2MiwtMTE0MDE5MjQ5NywtNTIzMDIx
-NzgzLC0yNTQxNjI2NSwtMTI5ODI5NjQ5Niw0MjE5MzA1ODAsLT
-IxNDU3MDYxNjIsMzg5MDE0MSwtMTk5OTk1Njg5MCwyMDg0ODM1
-NDg3LC0xNDE0ODA4Njg2LC03MzY0OTAyMzMsLTE3ODY2MzcyMj
-ksMzI5NTg4MzU2LDIwNDc2NTQ0NCwtNTg1NDIzNjgwLDI4Mjk2
-NDg5MF19
+eyJoaXN0b3J5IjpbLTE5NzUwOTI2NzEsMTI3Njg1NjI2LC0yMD
+I3MTk3OTg1LDE0MDE2ODY2NjIsLTExNDAxOTI0OTcsLTUyMzAy
+MTc4MywtMjU0MTYyNjUsLTEyOTgyOTY0OTYsNDIxOTMwNTgwLC
+0yMTQ1NzA2MTYyLDM4OTAxNDEsLTE5OTk5NTY4OTAsMjA4NDgz
+NTQ4NywtMTQxNDgwODY4NiwtNzM2NDkwMjMzLC0xNzg2NjM3Mj
+I5LDMyOTU4ODM1NiwyMDQ3NjU0NDQsLTU4NTQyMzY4MCwyODI5
+NjQ4OTBdfQ==
 -->
