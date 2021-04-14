@@ -16,7 +16,8 @@ A Spark application consists of a single driver process and a set of executor pr
 
  - Spark is an in-memory processing engine spark takes data in-memory and process it.
  - Allocation and usage of the memory plays a vital role in your spark application. suppose you write a good spark application but you haven't provide and allocate the required memory to your application. The application may got delayed or failed due to OOM.
- - E
+ - Efficient memory use is critical for good performance because of that your application may not meet the SLA's.
+ - 
 
  
 
@@ -28,11 +29,11 @@ A Spark application consists of a single driver process and a set of executor pr
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4NzM4ODY3MSw0MjE5MzA1ODAsLTIxND
-U3MDYxNjIsMzg5MDE0MSwtMTk5OTk1Njg5MCwyMDg0ODM1NDg3
-LC0xNDE0ODA4Njg2LC03MzY0OTAyMzMsLTE3ODY2MzcyMjksMz
-I5NTg4MzU2LDIwNDc2NTQ0NCwtNTg1NDIzNjgwLDI4Mjk2NDg5
-MCwtMTMwNjYzNTI1OCwtNTE3MDcwNjI1LC0xODUyNjU0MTA5LC
-0xNzgxNTIzMDUyLDgxOTQxNjU0NiwtMTIxMzc3OTMwNCwtMTE3
-Nzg5ODIwMF19
+eyJoaXN0b3J5IjpbMzY5Mjg2MzMyLDQyMTkzMDU4MCwtMjE0NT
+cwNjE2MiwzODkwMTQxLC0xOTk5OTU2ODkwLDIwODQ4MzU0ODcs
+LTE0MTQ4MDg2ODYsLTczNjQ5MDIzMywtMTc4NjYzNzIyOSwzMj
+k1ODgzNTYsMjA0NzY1NDQ0LC01ODU0MjM2ODAsMjgyOTY0ODkw
+LC0xMzA2NjM1MjU4LC01MTcwNzA2MjUsLTE4NTI2NTQxMDksLT
+E3ODE1MjMwNTIsODE5NDE2NTQ2LC0xMjEzNzc5MzA0LC0xMTc3
+ODk4MjAwXX0=
 -->
