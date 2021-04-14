@@ -48,14 +48,20 @@ Off-heap refers to objects (serialised to byte array) that are managed by the op
 
 Although most of the operations in Spark happens inside the JVM and subsequently uses the JVM Heap for its memory, each executor has the ability to utilize an off-heap space for certain cases. This off-heap space lies outside the JVM space and is generally accessed via  `sun.misc.Unsafe`  APIs. The off-heap memory is outside the ambit of Garbage Collection, hence it provides more fine-grained control over the memory for the application developer.
 
-![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_off_heap.png?raw=true)
+![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_off_heap_mm.png?raw=true)
+
+The total off-heap memory for a Spark executor is controlled by `spark.executor.memoryOverhead`. The default value for this is 10% of executor memory subject to a minimum of 384MB. This means, even if the user does not explicitly set this parameter, Spark would set aside 10% of executor memory(or 384MB whichever is higher) for VM overheads. The amount of off-heap memory used by Spark to store actual data frames is governed by `spark.memory.offHeap.size`. This is an optional feature, which can be enabled by setting `spark.memory.offHeap.use` to true.
+
+ - **spark.memory.offHeap.enabled** – the option to use off-heap memory for certain operations (default false)
+ - **spark.memory.offHeap.size** – the total amount of memory in bytes for off-heap allocation. It has no impact on heap memory usage, so
+   make sure not to exceed your executor’s total limits (default 0)
 
 ## Next ?
 
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NTc4MDk5NCwtMjAyNzE5Nzk4NSwxND
+eyJoaXN0b3J5IjpbLTMwMDMxODQ0NCwtMjAyNzE5Nzk4NSwxND
 AxNjg2NjYyLC0xMTQwMTkyNDk3LC01MjMwMjE3ODMsLTI1NDE2
 MjY1LC0xMjk4Mjk2NDk2LDQyMTkzMDU4MCwtMjE0NTcwNjE2Mi
 wzODkwMTQxLC0xOTk5OTU2ODkwLDIwODQ4MzU0ODcsLTE0MTQ4
