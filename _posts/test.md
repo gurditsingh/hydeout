@@ -72,7 +72,8 @@ Each **16VCores** and **64GB RAM**
 	(16 -1) / 5 => 3 which means we can run 3 instances of executors per node.
 	
 	we have total 9 worker nodes.
-	(3 * 9) -1 = 26 which means we can spawn upto 26 executors  
+	(3 * 9) -1 = 26 which means we can spawn upto 26 executors.
+  
 		 
 		  
 
@@ -83,7 +84,7 @@ Each **16VCores** and **64GB RAM**
 Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2MDY1OTQ5LC0yMDI3MTk3OTg1LDE0MD
+eyJoaXN0b3J5IjpbNzE3NTU5NDgzLC0yMDI3MTk3OTg1LDE0MD
 E2ODY2NjIsLTExNDAxOTI0OTcsLTUyMzAyMTc4MywtMjU0MTYy
 NjUsLTEyOTgyOTY0OTYsNDIxOTMwNTgwLC0yMTQ1NzA2MTYyLD
 M4OTAxNDEsLTE5OTk5NTY4OTAsMjA4NDgzNTQ4NywtMTQxNDgw
