@@ -4,15 +4,15 @@ In functional programming, **Immutability** is a must. Whenever it is needed to 
 
 In functional programming, **Referential Transparency** is a must. It means An expression is referentially transparent if it can be replaced with its value without changing the program’s behavior. Every small composable functions yielding the same output for the same input. It gives the ability to better understand and reason about the code, know exactly what function does just by looking at its signature.
 
-In functional programming, we follow DRY(don't repeat yourself) principle. is a principle of software development aimed at reducing repetition of software patterns, replacing it with abstractions or using data normalization to avoid redundancy. 
+In functional programming, we follow **DRY(don't repeat yourself)** principle. DRY is a principle of software development aimed at reducing repetition of software patterns, replacing it with abstractions or using data normalization to avoid redundancy. 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI3OTY1NjI4LC0zNjY4MDQ1MDMsLTE3MD
-A0MjgzMDEsMTUxMjQ4NTMwOCwxMjc2ODU2MjYsLTIwMjcxOTc5
-ODUsMTQwMTY4NjY2MiwtMTE0MDE5MjQ5NywtNTIzMDIxNzgzLC
-0yNTQxNjI2NSwtMTI5ODI5NjQ5Niw0MjE5MzA1ODAsLTIxNDU3
-MDYxNjIsMzg5MDE0MSwtMTk5OTk1Njg5MCwyMDg0ODM1NDg3LC
-0xNDE0ODA4Njg2LC03MzY0OTAyMzMsLTE3ODY2MzcyMjksMzI5
-NTg4MzU2XX0=
+eyJoaXN0b3J5IjpbMTMwMTIyNjkxOSwtMzY2ODA0NTAzLC0xNz
+AwNDI4MzAxLDE1MTI0ODUzMDgsMTI3Njg1NjI2LC0yMDI3MTk3
+OTg1LDE0MDE2ODY2NjIsLTExNDAxOTI0OTcsLTUyMzAyMTc4My
+wtMjU0MTYyNjUsLTEyOTgyOTY0OTYsNDIxOTMwNTgwLC0yMTQ1
+NzA2MTYyLDM4OTAxNDEsLTE5OTk5NTY4OTAsMjA4NDgzNTQ4Ny
+wtMTQxNDgwODY4NiwtNzM2NDkwMjMzLC0xNzg2NjM3MjI5LDMy
+OTU4ODM1Nl19
 -->
