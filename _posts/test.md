@@ -7,12 +7,13 @@ In functional programming, **Referential Transparency** is a must. It means An e
 In functional programming, we follow **DRY(don't repeat yourself)** principle. DRY is a principle of software development aimed at reducing repetition of software patterns, replacing it with abstractions or using data normalization to avoid redundancy. 
 
 
+In this post I will try to present some of them and to give some intuition what are possible applications for them. This article is focused more on the applications rather than on mathematical foundations. Moreover, it attempts to highlight that idea of Optics goes much, much further than manipulation of nested records.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMTIyNjkxOSwtMzY2ODA0NTAzLC0xNz
-AwNDI4MzAxLDE1MTI0ODUzMDgsMTI3Njg1NjI2LC0yMDI3MTk3
-OTg1LDE0MDE2ODY2NjIsLTExNDAxOTI0OTcsLTUyMzAyMTc4My
-wtMjU0MTYyNjUsLTEyOTgyOTY0OTYsNDIxOTMwNTgwLC0yMTQ1
-NzA2MTYyLDM4OTAxNDEsLTE5OTk5NTY4OTAsMjA4NDgzNTQ4Ny
-wtMTQxNDgwODY4NiwtNzM2NDkwMjMzLC0xNzg2NjM3MjI5LDMy
-OTU4ODM1Nl19
+eyJoaXN0b3J5IjpbLTE1MTE0MTIwMzcsLTM2NjgwNDUwMywtMT
+cwMDQyODMwMSwxNTEyNDg1MzA4LDEyNzY4NTYyNiwtMjAyNzE5
+Nzk4NSwxNDAxNjg2NjYyLC0xMTQwMTkyNDk3LC01MjMwMjE3OD
+MsLTI1NDE2MjY1LC0xMjk4Mjk2NDk2LDQyMTkzMDU4MCwtMjE0
+NTcwNjE2MiwzODkwMTQxLC0xOTk5OTU2ODkwLDIwODQ4MzU0OD
+csLTE0MTQ4MDg2ODYsLTczNjQ5MDIzMywtMTc4NjYzNzIyOSwz
+Mjk1ODgzNTZdfQ==
 -->
