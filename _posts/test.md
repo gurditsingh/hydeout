@@ -27,6 +27,7 @@ But let’s suppose that we have to change a deeply nested object. Scala offers 
 
 ```scala
   def updateUserSiteRating(user: User): User = {
+  
     user.copy(
       generalInfo = user.generalInfo.copy(
         siteInfo = user.generalInfo.siteInfo.copy(
@@ -34,11 +35,11 @@ But let’s suppose that we have to change a deeply nested object. Scala offers 
   }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1ODA0MDYxOCw0MDE3OTI5MTEsNzE2NT
-IwMDg4LC0zNjY4MDQ1MDMsLTE3MDA0MjgzMDEsMTUxMjQ4NTMw
-OCwxMjc2ODU2MjYsLTIwMjcxOTc5ODUsMTQwMTY4NjY2MiwtMT
-E0MDE5MjQ5NywtNTIzMDIxNzgzLC0yNTQxNjI2NSwtMTI5ODI5
-NjQ5Niw0MjE5MzA1ODAsLTIxNDU3MDYxNjIsMzg5MDE0MSwtMT
-k5OTk1Njg5MCwyMDg0ODM1NDg3LC0xNDE0ODA4Njg2LC03MzY0
-OTAyMzNdfQ==
+eyJoaXN0b3J5IjpbNDExOTMzNzAwLDQwMTc5MjkxMSw3MTY1Mj
+AwODgsLTM2NjgwNDUwMywtMTcwMDQyODMwMSwxNTEyNDg1MzA4
+LDEyNzY4NTYyNiwtMjAyNzE5Nzk4NSwxNDAxNjg2NjYyLC0xMT
+QwMTkyNDk3LC01MjMwMjE3ODMsLTI1NDE2MjY1LC0xMjk4Mjk2
+NDk2LDQyMTkzMDU4MCwtMjE0NTcwNjE2MiwzODkwMTQxLC0xOT
+k5OTU2ODkwLDIwODQ4MzU0ODcsLTE0MTQ4MDg2ODYsLTczNjQ5
+MDIzM119
 -->
