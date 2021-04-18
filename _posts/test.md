@@ -25,6 +25,7 @@ case class User(id:String,generalInfo: GeneralInfo,billInfo: BillInfo)
 ```
 But let’s suppose that we have to change a deeply nested object. Scala offers a function called `copy` to modify the parameters value inside a `case class`. This function doesn’t mutate the referred value, instead it creates a new object :
 
+First 1: Increase the User Rating
 ```scala
   def updateUserSiteRating(user: User): User = {
   
@@ -35,7 +36,7 @@ But let’s suppose that we have to change a deeply nested object. Scala offers 
   }
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDExOTMzNzAwLDQwMTc5MjkxMSw3MTY1Mj
+eyJoaXN0b3J5IjpbNDYxODQxODc4LDQwMTc5MjkxMSw3MTY1Mj
 AwODgsLTM2NjgwNDUwMywtMTcwMDQyODMwMSwxNTEyNDg1MzA4
 LDEyNzY4NTYyNiwtMjAyNzE5Nzk4NSwxNDAxNjg2NjYyLC0xMT
 QwMTkyNDk3LC01MjMwMjE3ODMsLTI1NDE2MjY1LC0xMjk4Mjk2
