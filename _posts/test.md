@@ -25,22 +25,25 @@ case class User(id:String,generalInfo: GeneralInfo,billInfo: BillInfo)
 ```
 But let’s suppose that we have to change a deeply nested object. Scala offers a function called `copy` to modify the parameters value inside a `case class`. This function doesn’t mutate the referred value, instead it creates a new object :
 
-First 1 : Increase the User Rating
-```scala
-  def updateUserSiteRating(user: User): User = {
-  
-    user.copy(
-      generalInfo = user.generalInfo.copy(
-        siteInfo = user.generalInfo.siteInfo.copy(
-          rating = user.generalInfo.siteInfo.rating + 1)))
-  }
-```
+ - **Increase the User Rating**
+
+	```scala
+	  def updateUserSiteRating(user: User): User = {
+	  
+	    user.copy(
+	      generalInfo = user.generalInfo.copy(
+	        siteInfo = user.generalInfo.siteInfo.copy(
+	          rating = user.generalInfo.siteInfo.rating + 1)))
+	  }
+	```
+
+ - Confirm 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTQ4MTAxNiw0MDE3OTI5MTEsNzE2NT
-IwMDg4LC0zNjY4MDQ1MDMsLTE3MDA0MjgzMDEsMTUxMjQ4NTMw
-OCwxMjc2ODU2MjYsLTIwMjcxOTc5ODUsMTQwMTY4NjY2MiwtMT
-E0MDE5MjQ5NywtNTIzMDIxNzgzLC0yNTQxNjI2NSwtMTI5ODI5
-NjQ5Niw0MjE5MzA1ODAsLTIxNDU3MDYxNjIsMzg5MDE0MSwtMT
-k5OTk1Njg5MCwyMDg0ODM1NDg3LC0xNDE0ODA4Njg2LC03MzY0
-OTAyMzNdfQ==
+eyJoaXN0b3J5IjpbLTIxMzc4Nzg1MzksNDAxNzkyOTExLDcxNj
+UyMDA4OCwtMzY2ODA0NTAzLC0xNzAwNDI4MzAxLDE1MTI0ODUz
+MDgsMTI3Njg1NjI2LC0yMDI3MTk3OTg1LDE0MDE2ODY2NjIsLT
+ExNDAxOTI0OTcsLTUyMzAyMTc4MywtMjU0MTYyNjUsLTEyOTgy
+OTY0OTYsNDIxOTMwNTgwLC0yMTQ1NzA2MTYyLDM4OTAxNDEsLT
+E5OTk5NTY4OTAsMjA4NDgzNTQ4NywtMTQxNDgwODY4NiwtNzM2
+NDkwMjMzXX0=
 -->
