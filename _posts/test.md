@@ -8,15 +8,27 @@ In functional programming, we follow **DRY(don't repeat yourself)** principle. D
 
 ## Problem Statement
 Let’s suppose we have to design a system to store addresses:
+```scala
+case class Street(name: String, code: String)
+case class Address(country: String, city: String, street: Street)
+case class Name(firstName:String,middelName:String,lastName:String)
 
+case class BillInfo(addresses:Seq[Address],name: Name)
+
+case class SiteInfo(url:String,alias:String,rating:Int)
+case class GeneralInfo(email:String,password:String,siteInfo:SiteInfo)
+
+case class User(id:String,generalInfo: GeneralInfo,billInfo: BillInfo)
+
+```
 
 In this post I will try to present some of them and to give some intuition what are possible applications for them. This article is focused more on the applications rather than on mathematical foundations. Moreover, it attempts to highlight that idea of Optics goes much, much further than manipulation of nested records.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE2NTIwMDg4LC0zNjY4MDQ1MDMsLTE3MD
-A0MjgzMDEsMTUxMjQ4NTMwOCwxMjc2ODU2MjYsLTIwMjcxOTc5
-ODUsMTQwMTY4NjY2MiwtMTE0MDE5MjQ5NywtNTIzMDIxNzgzLC
-0yNTQxNjI2NSwtMTI5ODI5NjQ5Niw0MjE5MzA1ODAsLTIxNDU3
-MDYxNjIsMzg5MDE0MSwtMTk5OTk1Njg5MCwyMDg0ODM1NDg3LC
-0xNDE0ODA4Njg2LC03MzY0OTAyMzMsLTE3ODY2MzcyMjksMzI5
-NTg4MzU2XX0=
+eyJoaXN0b3J5IjpbMTMzMDIzMzYzMSw3MTY1MjAwODgsLTM2Nj
+gwNDUwMywtMTcwMDQyODMwMSwxNTEyNDg1MzA4LDEyNzY4NTYy
+NiwtMjAyNzE5Nzk4NSwxNDAxNjg2NjYyLC0xMTQwMTkyNDk3LC
+01MjMwMjE3ODMsLTI1NDE2MjY1LC0xMjk4Mjk2NDk2LDQyMTkz
+MDU4MCwtMjE0NTcwNjE2MiwzODkwMTQxLC0xOTk5OTU2ODkwLD
+IwODQ4MzU0ODcsLTE0MTQ4MDg2ODYsLTczNjQ5MDIzMywtMTc4
+NjYzNzIyOV19
 -->
