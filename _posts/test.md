@@ -1,12 +1,16 @@
-Functional programming languages, like Scala, we make it possible to ensure immutability and referential transparency.
+Functional programming languages, like Scala, we make it possible to ensure immutability, referential transparency and DRY.
  
-In functional programming, **immutability** is a must. As a consequence, whenever it is needed to modify the content of a data structure, a new instance with updated values is created.
+In functional programming, **immutability** is a must. Whenever it is needed to modify the content of a data structure, a new instance with updated values is created. Immutable objects and data structures are first-class citizens in Scala. This is because they prevent mistakes in distributed systems and provide thread-safe data.
+
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NjgwNDUwMywtMTcwMDQyODMwMSwxNT
-EyNDg1MzA4LDEyNzY4NTYyNiwtMjAyNzE5Nzk4NSwxNDAxNjg2
-NjYyLC0xMTQwMTkyNDk3LC01MjMwMjE3ODMsLTI1NDE2MjY1LC
-0xMjk4Mjk2NDk2LDQyMTkzMDU4MCwtMjE0NTcwNjE2MiwzODkw
-MTQxLC0xOTk5OTU2ODkwLDIwODQ4MzU0ODcsLTE0MTQ4MDg2OD
-YsLTczNjQ5MDIzMywtMTc4NjYzNzIyOSwzMjk1ODgzNTYsMjA0
-NzY1NDQ0XX0=
+eyJoaXN0b3J5IjpbNDIwOTc5ODU1LC0zNjY4MDQ1MDMsLTE3MD
+A0MjgzMDEsMTUxMjQ4NTMwOCwxMjc2ODU2MjYsLTIwMjcxOTc5
+ODUsMTQwMTY4NjY2MiwtMTE0MDE5MjQ5NywtNTIzMDIxNzgzLC
+0yNTQxNjI2NSwtMTI5ODI5NjQ5Niw0MjE5MzA1ODAsLTIxNDU3
+MDYxNjIsMzg5MDE0MSwtMTk5OTk1Njg5MCwyMDg0ODM1NDg3LC
+0xNDE0ODA4Njg2LC03MzY0OTAyMzMsLTE3ODY2MzcyMjksMzI5
+NTg4MzU2XX0=
 -->
