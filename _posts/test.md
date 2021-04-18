@@ -1,4 +1,4 @@
-In this post I will try to present some of them and to give some intuition what are possible applications for them. This article is focused more on the applications rather than on mathematical foundations. Moreover, it attempts to highlight that idea of Optics goes much, much further than manipulation of nested records.
+**In this post I will try to present some of them and to give some intuition what are possible applications for them. This article is focused more on the applications rather than on mathematical foundations. Moreover, it attempts to highlight that idea of Optics goes much, much further than manipulation of nested records.**
 
 Functional programming languages, like Scala, we make it possible to ensure immutability, referential transparency and DRY.
  
@@ -23,16 +23,16 @@ case class GeneralInfo(email:String,password:String,siteInfo:SiteInfo)
 case class User(id:String,generalInfo: GeneralInfo,billInfo: BillInfo)
 
 ```
-
+But let’s suppose that we have to change a more deeply nested object. Scala though offers a function called `copy` to modify the parameters value inside a `case class`. This function doesn’t mutate the referred value, instead it creates a new object :
 
 
 In this post I will try to present some of them and to give some intuition what are possible applications for them. This article is focused more on the applications rather than on mathematical foundations. Moreover, it attempts to highlight that idea of Optics goes much, much further than manipulation of nested records.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NDI2OTgwLDQwMTc5MjkxMSw3MTY1Mj
-AwODgsLTM2NjgwNDUwMywtMTcwMDQyODMwMSwxNTEyNDg1MzA4
-LDEyNzY4NTYyNiwtMjAyNzE5Nzk4NSwxNDAxNjg2NjYyLC0xMT
-QwMTkyNDk3LC01MjMwMjE3ODMsLTI1NDE2MjY1LC0xMjk4Mjk2
-NDk2LDQyMTkzMDU4MCwtMjE0NTcwNjE2MiwzODkwMTQxLC0xOT
-k5OTU2ODkwLDIwODQ4MzU0ODcsLTE0MTQ4MDg2ODYsLTczNjQ5
-MDIzM119
+eyJoaXN0b3J5IjpbMTgwNTkwMjMwNCw0MDE3OTI5MTEsNzE2NT
+IwMDg4LC0zNjY4MDQ1MDMsLTE3MDA0MjgzMDEsMTUxMjQ4NTMw
+OCwxMjc2ODU2MjYsLTIwMjcxOTc5ODUsMTQwMTY4NjY2MiwtMT
+E0MDE5MjQ5NywtNTIzMDIxNzgzLC0yNTQxNjI2NSwtMTI5ODI5
+NjQ5Niw0MjE5MzA1ODAsLTIxNDU3MDYxNjIsMzg5MDE0MSwtMT
+k5OTk1Njg5MCwyMDg0ODM1NDg3LC0xNDE0ODA4Njg2LC03MzY0
+OTAyMzNdfQ==
 -->
