@@ -38,12 +38,19 @@ But let’s suppose that we have to change a deeply nested object. Scala offers 
 	```
 
  - **Confirm All Billing Address**
+	 ```scala
+	  def confirmAddresses(user: User): User ={
+
+	    val updatedAddresses = user.billInfo.addresses.map(_.copy(isConfirmed = true))
+	    user.copy(billInfo = user.billInfo.copy(addresses = updatedAddresses))
+	  }
+	```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzAyMzM4NjYsNDAxNzkyOTExLDcxNj
-UyMDA4OCwtMzY2ODA0NTAzLC0xNzAwNDI4MzAxLDE1MTI0ODUz
-MDgsMTI3Njg1NjI2LC0yMDI3MTk3OTg1LDE0MDE2ODY2NjIsLT
-ExNDAxOTI0OTcsLTUyMzAyMTc4MywtMjU0MTYyNjUsLTEyOTgy
-OTY0OTYsNDIxOTMwNTgwLC0yMTQ1NzA2MTYyLDM4OTAxNDEsLT
-E5OTk5NTY4OTAsMjA4NDgzNTQ4NywtMTQxNDgwODY4NiwtNzM2
-NDkwMjMzXX0=
+eyJoaXN0b3J5IjpbMTUzODIzMzMyNCwtMjA3MDIzMzg2Niw0MD
+E3OTI5MTEsNzE2NTIwMDg4LC0zNjY4MDQ1MDMsLTE3MDA0Mjgz
+MDEsMTUxMjQ4NTMwOCwxMjc2ODU2MjYsLTIwMjcxOTc5ODUsMT
+QwMTY4NjY2MiwtMTE0MDE5MjQ5NywtNTIzMDIxNzgzLC0yNTQx
+NjI2NSwtMTI5ODI5NjQ5Niw0MjE5MzA1ODAsLTIxNDU3MDYxNj
+IsMzg5MDE0MSwtMTk5OTk1Njg5MCwyMDg0ODM1NDg3LC0xNDE0
+ODA4Njg2XX0=
 -->
