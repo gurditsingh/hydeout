@@ -2,15 +2,17 @@ Functional programming languages, like Scala, we make it possible to ensure immu
  
 In functional programming, **Immutability** is a must. Whenever it is needed to modify the content of a data structure, a new instance with updated values is created. Immutable objects and data structures are first-class citizens in Scala. This is because they prevent mistakes in distributed systems and provide thread-safe data.
 
-In functional programming, **Referential Transparency** is a must. It means An expression is referentially transparent if it can be replaced with its value without changing the program’s behavior.
+In functional programming, **Referential Transparency** is a must. It means An expression is referentially transparent if it can be replaced with its value without changing the program’s behavior. Every small composable functions yielding the same output for the same input. It gives the ability to better understand and reason about the code, know exactly what function does just by looking at its signature.
+
+In 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTIzMzA1NzcsLTM2NjgwNDUwMywtMT
-cwMDQyODMwMSwxNTEyNDg1MzA4LDEyNzY4NTYyNiwtMjAyNzE5
-Nzk4NSwxNDAxNjg2NjYyLC0xMTQwMTkyNDk3LC01MjMwMjE3OD
-MsLTI1NDE2MjY1LC0xMjk4Mjk2NDk2LDQyMTkzMDU4MCwtMjE0
-NTcwNjE2MiwzODkwMTQxLC0xOTk5OTU2ODkwLDIwODQ4MzU0OD
-csLTE0MTQ4MDg2ODYsLTczNjQ5MDIzMywtMTc4NjYzNzIyOSwz
-Mjk1ODgzNTZdfQ==
+eyJoaXN0b3J5IjpbLTk4NzEzMzQzNSwtMzY2ODA0NTAzLC0xNz
+AwNDI4MzAxLDE1MTI0ODUzMDgsMTI3Njg1NjI2LC0yMDI3MTk3
+OTg1LDE0MDE2ODY2NjIsLTExNDAxOTI0OTcsLTUyMzAyMTc4My
+wtMjU0MTYyNjUsLTEyOTgyOTY0OTYsNDIxOTMwNTgwLC0yMTQ1
+NzA2MTYyLDM4OTAxNDEsLTE5OTk5NTY4OTAsMjA4NDgzNTQ4Ny
+wtMTQxNDgwODY4NiwtNzM2NDkwMjMzLC0xNzg2NjM3MjI5LDMy
+OTU4ODM1Nl19
 -->
