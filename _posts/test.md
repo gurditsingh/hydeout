@@ -23,7 +23,7 @@ case class GeneralInfo(email:String,password:String,siteInfo:SiteInfo)
 case class User(id:String,generalInfo: GeneralInfo,billInfo: BillInfo)
 
 ```
-But let’s suppose that we have to change a deeply nested object. Scala offers a function called `copy` to modify the parameters value inside a `case class`. This function doesn’t mutate the referred value, instead it creates a new object :
+let’s suppose that we have to change a deeply nested object. Scala offers a function called `copy` to modify the parameters value inside a `case class`. This function doesn’t mutate the referred value, instead it creates a new object :
 
  - **Increase the User Rating**
 
@@ -66,23 +66,16 @@ Let’s suppose we have the same below nested data structure:
 ```scala
 case class Street(name: String, code: String)
 case class Address(country: String, city: String, street: Street)
-case class Name(firstName:String,middelName:String,lastName:String)
-
-case class BillInfo(addresses:Seq[Address],name: Name)
-
-case class SiteInfo(url:String,alias:String,rating:Int)
-case class GeneralInfo(email:String,password:String,siteInfo:SiteInfo)
-
-case class User(id:String,generalInfo: GeneralInfo,billInfo: BillInfo)
 
 ```
 
+let’s suppose that we have to change a deeply nested object. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjQzMTU2MDgsMTEyOTc5MDgyNiwxNT
-M4MjMzMzI0LC0yMDcwMjMzODY2LDQwMTc5MjkxMSw3MTY1MjAw
-ODgsLTM2NjgwNDUwMywtMTcwMDQyODMwMSwxNTEyNDg1MzA4LD
-EyNzY4NTYyNiwtMjAyNzE5Nzk4NSwxNDAxNjg2NjYyLC0xMTQw
-MTkyNDk3LC01MjMwMjE3ODMsLTI1NDE2MjY1LC0xMjk4Mjk2ND
-k2LDQyMTkzMDU4MCwtMjE0NTcwNjE2MiwzODkwMTQxLC0xOTk5
-OTU2ODkwXX0=
+eyJoaXN0b3J5IjpbMTUzOTc5MjgwLDExMjk3OTA4MjYsMTUzOD
+IzMzMyNCwtMjA3MDIzMzg2Niw0MDE3OTI5MTEsNzE2NTIwMDg4
+LC0zNjY4MDQ1MDMsLTE3MDA0MjgzMDEsMTUxMjQ4NTMwOCwxMj
+c2ODU2MjYsLTIwMjcxOTc5ODUsMTQwMTY4NjY2MiwtMTE0MDE5
+MjQ5NywtNTIzMDIxNzgzLC0yNTQxNjI2NSwtMTI5ODI5NjQ5Ni
+w0MjE5MzA1ODAsLTIxNDU3MDYxNjIsMzg5MDE0MSwtMTk5OTk1
+Njg5MF19
 -->
