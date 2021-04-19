@@ -23,7 +23,7 @@ case class GeneralInfo(email:String,password:String,siteInfo:SiteInfo)
 case class User(id:String,generalInfo: GeneralInfo,billInfo: BillInfo)
 
 ```
-But let’s suppose that we have to change a deeply nested object. Scala offers a function called `copy` to modify the parameters value inside a `case class`. This function doesn’t mutate the referred value, instead it creates a new object :
+let’s suppose that we have to change a deeply nested object. Scala offers a function called `copy` to modify the parameters value inside a `case class`. This function doesn’t mutate the referred value, instead it creates a new object :
 
  - **Increase the User Rating**
 
@@ -62,27 +62,20 @@ Lens in essence is a pair of functions:
 
 	In a nutshell – by having `get` Lens allows to “zoom in” into a specific part of `Product` and by having `set` lets you construct new “whole part” with updated “specific part”. After zooming in we lose some information and that’s why `set`needs `S` as an argument – to be able to reconstruct whole Product.
 
-Let’s suppose we have the same below nested data structure:
+Let’s suppose we have the below nested data structure:
 ```scala
 case class Street(name: String, code: String)
 case class Address(country: String, city: String, street: Street)
-case class Name(firstName:String,middelName:String,lastName:String)
-
-case class BillInfo(addresses:Seq[Address],name: Name)
-
-case class SiteInfo(url:String,alias:String,rating:Int)
-case class GeneralInfo(email:String,password:String,siteInfo:SiteInfo)
-
-case class User(id:String,generalInfo: GeneralInfo,billInfo: BillInfo)
 
 ```
 
+let’s suppose that we have to change a deeply nested object. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjQzMTU2MDgsMTEyOTc5MDgyNiwxNT
-M4MjMzMzI0LC0yMDcwMjMzODY2LDQwMTc5MjkxMSw3MTY1MjAw
-ODgsLTM2NjgwNDUwMywtMTcwMDQyODMwMSwxNTEyNDg1MzA4LD
-EyNzY4NTYyNiwtMjAyNzE5Nzk4NSwxNDAxNjg2NjYyLC0xMTQw
-MTkyNDk3LC01MjMwMjE3ODMsLTI1NDE2MjY1LC0xMjk4Mjk2ND
-k2LDQyMTkzMDU4MCwtMjE0NTcwNjE2MiwzODkwMTQxLC0xOTk5
-OTU2ODkwXX0=
+eyJoaXN0b3J5IjpbMTYzMDQ2ODc4OCwxMTI5NzkwODI2LDE1Mz
+gyMzMzMjQsLTIwNzAyMzM4NjYsNDAxNzkyOTExLDcxNjUyMDA4
+OCwtMzY2ODA0NTAzLC0xNzAwNDI4MzAxLDE1MTI0ODUzMDgsMT
+I3Njg1NjI2LC0yMDI3MTk3OTg1LDE0MDE2ODY2NjIsLTExNDAx
+OTI0OTcsLTUyMzAyMTc4MywtMjU0MTYyNjUsLTEyOTgyOTY0OT
+YsNDIxOTMwNTgwLC0yMTQ1NzA2MTYyLDM4OTAxNDEsLTE5OTk5
+NTY4OTBdfQ==
 -->
