@@ -62,22 +62,20 @@ Lens in essence is a pair of functions:
 
 	In a nutshell – by having `get` Lens allows to “zoom in” into a specific part of `Product` and by having `set` lets you construct new “whole part” with updated “specific part”. After zooming in we lose some information and that’s why `set`needs `S` as an argument – to be able to reconstruct whole Product.
 
-Let’s suppose we have the below nested data structure:
+Let’s suppose we have the below Street data structure:
 ```scala
 case class Street(name: String, code: String)
-case class Address(country: String, city: String, street: Street)
-
 ```
 
 let’s suppose that we have to change the nested Address object. 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyNDcwNjYwNSwxMTI5NzkwODI2LDE1Mz
-gyMzMzMjQsLTIwNzAyMzM4NjYsNDAxNzkyOTExLDcxNjUyMDA4
-OCwtMzY2ODA0NTAzLC0xNzAwNDI4MzAxLDE1MTI0ODUzMDgsMT
-I3Njg1NjI2LC0yMDI3MTk3OTg1LDE0MDE2ODY2NjIsLTExNDAx
-OTI0OTcsLTUyMzAyMTc4MywtMjU0MTYyNjUsLTEyOTgyOTY0OT
-YsNDIxOTMwNTgwLC0yMTQ1NzA2MTYyLDM4OTAxNDEsLTE5OTk5
-NTY4OTBdfQ==
+eyJoaXN0b3J5IjpbLTE2NzMyNjA4NTUsMTEyOTc5MDgyNiwxNT
+M4MjMzMzI0LC0yMDcwMjMzODY2LDQwMTc5MjkxMSw3MTY1MjAw
+ODgsLTM2NjgwNDUwMywtMTcwMDQyODMwMSwxNTEyNDg1MzA4LD
+EyNzY4NTYyNiwtMjAyNzE5Nzk4NSwxNDAxNjg2NjYyLC0xMTQw
+MTkyNDk3LC01MjMwMjE3ODMsLTI1NDE2MjY1LC0xMjk4Mjk2ND
+k2LDQyMTkzMDU4MCwtMjE0NTcwNjE2MiwzODkwMTQxLC0xOTk5
+OTU2ODkwXX0=
 -->
