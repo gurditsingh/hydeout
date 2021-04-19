@@ -64,18 +64,26 @@ Lens in essence is a pair of functions:
 
 Let’s suppose we have the below Street data structure:
 ```scala
-case class Street(name: String, code: String)
+	case class Street(name: String, code: String)
 ```
 
 let’s suppose that we have to change the Street object. 
+```scala
+    val street = Street("Stone Hill","H 349-7")
+    val streetLens = GenLens[Street](_.code)
+    
+    streetLens.get(street)
+    streetLens.modify(_.replace(" ","#"))(street)
+    streetLens.set(" B 333")(street)
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyOTQzODc4NSwxMTI5NzkwODI2LDE1Mz
-gyMzMzMjQsLTIwNzAyMzM4NjYsNDAxNzkyOTExLDcxNjUyMDA4
-OCwtMzY2ODA0NTAzLC0xNzAwNDI4MzAxLDE1MTI0ODUzMDgsMT
-I3Njg1NjI2LC0yMDI3MTk3OTg1LDE0MDE2ODY2NjIsLTExNDAx
-OTI0OTcsLTUyMzAyMTc4MywtMjU0MTYyNjUsLTEyOTgyOTY0OT
-YsNDIxOTMwNTgwLC0yMTQ1NzA2MTYyLDM4OTAxNDEsLTE5OTk5
-NTY4OTBdfQ==
+eyJoaXN0b3J5IjpbMTg3MTM1NDkwNCwxMTI5NDM4Nzg1LDExMj
+k3OTA4MjYsMTUzODIzMzMyNCwtMjA3MDIzMzg2Niw0MDE3OTI5
+MTEsNzE2NTIwMDg4LC0zNjY4MDQ1MDMsLTE3MDA0MjgzMDEsMT
+UxMjQ4NTMwOCwxMjc2ODU2MjYsLTIwMjcxOTc5ODUsMTQwMTY4
+NjY2MiwtMTE0MDE5MjQ5NywtNTIzMDIxNzgzLC0yNTQxNjI2NS
+wtMTI5ODI5NjQ5Niw0MjE5MzA1ODAsLTIxNDU3MDYxNjIsMzg5
+MDE0MV19
 -->
