@@ -49,12 +49,14 @@ But let’s suppose that we have to change a deeply nested object. Scala offers 
 The greater the level of nesting of the objects, the less readable the syntax becomes. If we increase a level of nesting in our structures then we will considerably increase amount of a code. In such cases lens give a cleaner way to make changes in nested structures.
 
 ## Introducing Lenses
+A Lens is an abstraction from functional programming which helps to deal with a problem of updating complex immutable nested objects.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyOTc5MDgyNiwxNTM4MjMzMzI0LC0yMD
-cwMjMzODY2LDQwMTc5MjkxMSw3MTY1MjAwODgsLTM2NjgwNDUw
-MywtMTcwMDQyODMwMSwxNTEyNDg1MzA4LDEyNzY4NTYyNiwtMj
-AyNzE5Nzk4NSwxNDAxNjg2NjYyLC0xMTQwMTkyNDk3LC01MjMw
-MjE3ODMsLTI1NDE2MjY1LC0xMjk4Mjk2NDk2LDQyMTkzMDU4MC
-wtMjE0NTcwNjE2MiwzODkwMTQxLC0xOTk5OTU2ODkwLDIwODQ4
-MzU0ODddfQ==
+eyJoaXN0b3J5IjpbMjA2OTA2MTk0NCwxMTI5NzkwODI2LDE1Mz
+gyMzMzMjQsLTIwNzAyMzM4NjYsNDAxNzkyOTExLDcxNjUyMDA4
+OCwtMzY2ODA0NTAzLC0xNzAwNDI4MzAxLDE1MTI0ODUzMDgsMT
+I3Njg1NjI2LC0yMDI3MTk3OTg1LDE0MDE2ODY2NjIsLTExNDAx
+OTI0OTcsLTUyMzAyMTc4MywtMjU0MTYyNjUsLTEyOTgyOTY0OT
+YsNDIxOTMwNTgwLC0yMTQ1NzA2MTYyLDM4OTAxNDEsLTE5OTk5
+NTY4OTBdfQ==
 -->
