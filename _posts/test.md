@@ -69,9 +69,11 @@ case class Address(country: String, city: String, street: Street)
 
 ```
 
-let’s suppose that we have to change a deeply nested object. 
+let’s suppose that we have to change the nested Address object. 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMDQ2ODc4OCwxMTI5NzkwODI2LDE1Mz
+eyJoaXN0b3J5IjpbLTkyNDcwNjYwNSwxMTI5NzkwODI2LDE1Mz
 gyMzMzMjQsLTIwNzAyMzM4NjYsNDAxNzkyOTExLDcxNjUyMDA4
 OCwtMzY2ODA0NTAzLC0xNzAwNDI4MzAxLDE1MTI0ODUzMDgsMT
 I3Njg1NjI2LC0yMDI3MTk3OTg1LDE0MDE2ODY2NjIsLTExNDAx
