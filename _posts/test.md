@@ -67,15 +67,15 @@ Let’s suppose we have the below Street data structure:
 case class Street(name: String, code: String)
 ```
 
-let’s suppose that we have to change the nested Street object. 
+let’s suppose that we have to change the Street object. 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ5MDQ1MzM2LDExMjk3OTA4MjYsMTUzOD
-IzMzMyNCwtMjA3MDIzMzg2Niw0MDE3OTI5MTEsNzE2NTIwMDg4
-LC0zNjY4MDQ1MDMsLTE3MDA0MjgzMDEsMTUxMjQ4NTMwOCwxMj
-c2ODU2MjYsLTIwMjcxOTc5ODUsMTQwMTY4NjY2MiwtMTE0MDE5
-MjQ5NywtNTIzMDIxNzgzLC0yNTQxNjI2NSwtMTI5ODI5NjQ5Ni
-w0MjE5MzA1ODAsLTIxNDU3MDYxNjIsMzg5MDE0MSwtMTk5OTk1
-Njg5MF19
+eyJoaXN0b3J5IjpbMTEyOTQzODc4NSwxMTI5NzkwODI2LDE1Mz
+gyMzMzMjQsLTIwNzAyMzM4NjYsNDAxNzkyOTExLDcxNjUyMDA4
+OCwtMzY2ODA0NTAzLC0xNzAwNDI4MzAxLDE1MTI0ODUzMDgsMT
+I3Njg1NjI2LC0yMDI3MTk3OTg1LDE0MDE2ODY2NjIsLTExNDAx
+OTI0OTcsLTUyMzAyMTc4MywtMjU0MTYyNjUsLTEyOTgyOTY0OT
+YsNDIxOTMwNTgwLC0yMTQ1NzA2MTYyLDM4OTAxNDEsLTE5OTk5
+NTY4OTBdfQ==
 -->
