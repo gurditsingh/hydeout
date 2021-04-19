@@ -53,9 +53,17 @@ In this post I will use code and terminology taken from [Monocle](https://julien
 ## Introducing Lenses
 A Lens is an abstraction from functional programming which helps to deal with a problem of updating complex immutable nested objects.
 
+Lens in essence is a pair of functions:
+
+-   `get(s: S): A`
+-   `set(a: A): S => S`
+
+	What are `S` and `A`? `S` represents the `Product` (or in other words “the whole part”, or container) and `A` some element inside of `S` (or in other words “the specific part”).
+
+	In a nutshell – by having `get` Lens allows to “zoom in” into a specific part of `Product` and by having `set` lets you construct new “whole part” with updated “specific part”. After zooming in we lose some information and that’s why `set`needs `S` as an argument – to be able to reconstruct whole Product.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTYxNjg3MTYsMTEyOTc5MDgyNiwxNT
+eyJoaXN0b3J5IjpbLTEyNTMxODc1MTksMTEyOTc5MDgyNiwxNT
 M4MjMzMzI0LC0yMDcwMjMzODY2LDQwMTc5MjkxMSw3MTY1MjAw
 ODgsLTM2NjgwNDUwMywtMTcwMDQyODMwMSwxNTEyNDg1MzA4LD
 EyNzY4NTYyNiwtMjAyNzE5Nzk4NSwxNDAxNjg2NjYyLC0xMTQw
