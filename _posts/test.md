@@ -46,9 +46,9 @@ But let’s suppose that we have to change a deeply nested object. Scala offers 
 	  }
 	```
 
-The greater the level of nesting of the objects, the less readable the syntax becomes. If we 
+The greater the level of nesting of the objects, the less readable the syntax becomes. If we increase a level of nesting in our structures then we will considerably increase amount of a code.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NTg2NDY0NiwxNTM4MjMzMzI0LC0yMD
+eyJoaXN0b3J5IjpbLTIwODkyMTIzMCwxNTM4MjMzMzI0LC0yMD
 cwMjMzODY2LDQwMTc5MjkxMSw3MTY1MjAwODgsLTM2NjgwNDUw
 MywtMTcwMDQyODMwMSwxNTEyNDg1MzA4LDEyNzY4NTYyNiwtMj
 AyNzE5Nzk4NSwxNDAxNjg2NjYyLC0xMTQwMTkyNDk3LC01MjMw
