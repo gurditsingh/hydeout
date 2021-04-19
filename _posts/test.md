@@ -45,12 +45,14 @@ But let’s suppose that we have to change a deeply nested object. Scala offers 
 	    user.copy(billInfo = user.billInfo.copy(addresses = updatedAddresses))
 	  }
 	```
+
+The greater the level of nesting of the objects, the less readable the syntax becomes.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzODIzMzMyNCwtMjA3MDIzMzg2Niw0MD
-E3OTI5MTEsNzE2NTIwMDg4LC0zNjY4MDQ1MDMsLTE3MDA0Mjgz
-MDEsMTUxMjQ4NTMwOCwxMjc2ODU2MjYsLTIwMjcxOTc5ODUsMT
-QwMTY4NjY2MiwtMTE0MDE5MjQ5NywtNTIzMDIxNzgzLC0yNTQx
-NjI2NSwtMTI5ODI5NjQ5Niw0MjE5MzA1ODAsLTIxNDU3MDYxNj
-IsMzg5MDE0MSwtMTk5OTk1Njg5MCwyMDg0ODM1NDg3LC0xNDE0
-ODA4Njg2XX0=
+eyJoaXN0b3J5IjpbMjI3OTM3NDcxLDE1MzgyMzMzMjQsLTIwNz
+AyMzM4NjYsNDAxNzkyOTExLDcxNjUyMDA4OCwtMzY2ODA0NTAz
+LC0xNzAwNDI4MzAxLDE1MTI0ODUzMDgsMTI3Njg1NjI2LC0yMD
+I3MTk3OTg1LDE0MDE2ODY2NjIsLTExNDAxOTI0OTcsLTUyMzAy
+MTc4MywtMjU0MTYyNjUsLTEyOTgyOTY0OTYsNDIxOTMwNTgwLC
+0yMTQ1NzA2MTYyLDM4OTAxNDEsLTE5OTk5NTY4OTAsMjA4NDgz
+NTQ4N119
 -->
