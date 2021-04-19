@@ -46,9 +46,11 @@ But let’s suppose that we have to change a deeply nested object. Scala offers 
 	  }
 	```
 
-The greater the level of nesting of the objects, the less readable the syntax becomes. If we increase a level of nesting in our structures then we will considerably increase amount of a code.
+The greater the level of nesting of the objects, the less readable the syntax becomes. If we increase a level of nesting in our structures then we will considerably increase amount of a code. In such cases lens give a cleaner way to make changes in nested structures.
+
+## Introducing Lenses
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODkyMTIzMCwxNTM4MjMzMzI0LC0yMD
+eyJoaXN0b3J5IjpbMTEyOTc5MDgyNiwxNTM4MjMzMzI0LC0yMD
 cwMjMzODY2LDQwMTc5MjkxMSw3MTY1MjAwODgsLTM2NjgwNDUw
 MywtMTcwMDQyODMwMSwxNTEyNDg1MzA4LDEyNzY4NTYyNiwtMj
 AyNzE5Nzk4NSwxNDAxNjg2NjYyLC0xMTQwMTkyNDk3LC01MjMw
