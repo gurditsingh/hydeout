@@ -46,13 +46,13 @@ But let’s suppose that we have to change a deeply nested object. Scala offers 
 	  }
 	```
 
-The greater the level of nesting of the objects, the less readable the syntax becomes.
+The greater the level of nesting of the objects, the less readable the syntax becomes. If we 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjI3OTM3NDcxLDE1MzgyMzMzMjQsLTIwNz
-AyMzM4NjYsNDAxNzkyOTExLDcxNjUyMDA4OCwtMzY2ODA0NTAz
-LC0xNzAwNDI4MzAxLDE1MTI0ODUzMDgsMTI3Njg1NjI2LC0yMD
-I3MTk3OTg1LDE0MDE2ODY2NjIsLTExNDAxOTI0OTcsLTUyMzAy
-MTc4MywtMjU0MTYyNjUsLTEyOTgyOTY0OTYsNDIxOTMwNTgwLC
-0yMTQ1NzA2MTYyLDM4OTAxNDEsLTE5OTk5NTY4OTAsMjA4NDgz
-NTQ4N119
+eyJoaXN0b3J5IjpbMjA0NTg2NDY0NiwxNTM4MjMzMzI0LC0yMD
+cwMjMzODY2LDQwMTc5MjkxMSw3MTY1MjAwODgsLTM2NjgwNDUw
+MywtMTcwMDQyODMwMSwxNTEyNDg1MzA4LDEyNzY4NTYyNiwtMj
+AyNzE5Nzk4NSwxNDAxNjg2NjYyLC0xMTQwMTkyNDk3LC01MjMw
+MjE3ODMsLTI1NDE2MjY1LC0xMjk4Mjk2NDk2LDQyMTkzMDU4MC
+wtMjE0NTcwNjE2MiwzODkwMTQxLC0xOTk5OTU2ODkwLDIwODQ4
+MzU0ODddfQ==
 -->
