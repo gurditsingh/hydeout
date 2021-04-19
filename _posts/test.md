@@ -62,8 +62,23 @@ Lens in essence is a pair of functions:
 
 	In a nutshell – by having `get` Lens allows to “zoom in” into a specific part of `Product` and by having `set` lets you construct new “whole part” with updated “specific part”. After zooming in we lose some information and that’s why `set`needs `S` as an argument – to be able to reconstruct whole Product.
 
+Let’s suppose we have the same below nested data structure:
+```scala
+case class Street(name: String, code: String)
+case class Address(country: String, city: String, street: Street)
+case class Name(firstName:String,middelName:String,lastName:String)
+
+case class BillInfo(addresses:Seq[Address],name: Name)
+
+case class SiteInfo(url:String,alias:String,rating:Int)
+case class GeneralInfo(email:String,password:String,siteInfo:SiteInfo)
+
+case class User(id:String,generalInfo: GeneralInfo,billInfo: BillInfo)
+
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTMxODc1MTksMTEyOTc5MDgyNiwxNT
+eyJoaXN0b3J5IjpbLTE4MjQzMTU2MDgsMTEyOTc5MDgyNiwxNT
 M4MjMzMzI0LC0yMDcwMjMzODY2LDQwMTc5MjkxMSw3MTY1MjAw
 ODgsLTM2NjgwNDUwMywtMTcwMDQyODMwMSwxNTEyNDg1MzA4LD
 EyNzY4NTYyNiwtMjAyNzE5Nzk4NSwxNDAxNjg2NjYyLC0xMTQw
