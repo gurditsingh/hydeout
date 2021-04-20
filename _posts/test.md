@@ -33,9 +33,9 @@ Let's assume one task is taking the maximum amount of data like 70-80 percent to
 	df.repartition(col("pk"))
 	```
 	- Increase the number of partitions using repartition on RDD or DataFrame.
-	- When deciding the number of partition of 
+	- The out 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU2ODMyNzY0OSwxMzQ5MDMyMjg4LDE5Nj
+eyJoaXN0b3J5IjpbLTYxMjM0MTgzNSwxMzQ5MDMyMjg4LDE5Nj
 cwODkyODksLTUzOTY4MDQxNCw4Mzk4MzQyOTEsMTg3MTM1NDkw
 NCwxMTI5NDM4Nzg1LDExMjk3OTA4MjYsMTUzODIzMzMyNCwtMj
 A3MDIzMzg2Niw0MDE3OTI5MTEsNzE2NTIwMDg4LC0zNjY4MDQ1
