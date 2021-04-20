@@ -3,13 +3,15 @@ Data skew is not an issue with Spark, rather it is a data problem. The cause of 
 
 Data skew happens when a small percentage of partitions get most of the data being processed. In normal usage, Spark will generally make sure that the data is evenly split across all tasks, so there isn't a big risk of skew. When you do a join or aggregation, however, Spark distributes the data by key, so that data the same keys goes to the same Node or task. If you have a lot of rows with the same key, then you have some tasks with those keys taking much longer than the others.
 
+### For Example :
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzOTY4MDQxNCw4Mzk4MzQyOTEsMTgxMD
-gwMzM1NywxODcxMzU0OTA0LDExMjk0Mzg3ODUsMTEyOTc5MDgy
-NiwxNTM4MjMzMzI0LC0yMDcwMjMzODY2LDQwMTc5MjkxMSw3MT
-Y1MjAwODgsLTM2NjgwNDUwMywtMTcwMDQyODMwMSwxNTEyNDg1
-MzA4LDEyNzY4NTYyNiwtMjAyNzE5Nzk4NSwxNDAxNjg2NjYyLC
-0xMTQwMTkyNDk3LC01MjMwMjE3ODMsLTI1NDE2MjY1LC0xMjk4
-Mjk2NDk2XX0=
+eyJoaXN0b3J5IjpbMTQ4Njk2OTk4MiwtNTM5NjgwNDE0LDgzOT
+gzNDI5MSwxODEwODAzMzU3LDE4NzEzNTQ5MDQsMTEyOTQzODc4
+NSwxMTI5NzkwODI2LDE1MzgyMzMzMjQsLTIwNzAyMzM4NjYsND
+AxNzkyOTExLDcxNjUyMDA4OCwtMzY2ODA0NTAzLC0xNzAwNDI4
+MzAxLDE1MTI0ODUzMDgsMTI3Njg1NjI2LC0yMDI3MTk3OTg1LD
+E0MDE2ODY2NjIsLTExNDAxOTI0OTcsLTUyMzAyMTc4MywtMjU0
+MTYyNjVdfQ==
 -->
