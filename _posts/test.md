@@ -8,14 +8,15 @@ Suppose we have four partitions of data as below and when they come in at 128 MB
 
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark-data-skew.png?raw=true)
 
- - The skewed partition will 
+ - The skewed partition/task (City D) will take more time as compared to other cities.
+ - The skewed task take more memory as compared to other 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzQ3OTg0MDIsLTUzOTY4MDQxNCw4Mz
-k4MzQyOTEsMTg3MTM1NDkwNCwxMTI5NDM4Nzg1LDExMjk3OTA4
-MjYsMTUzODIzMzMyNCwtMjA3MDIzMzg2Niw0MDE3OTI5MTEsNz
-E2NTIwMDg4LC0zNjY4MDQ1MDMsLTE3MDA0MjgzMDEsMTUxMjQ4
-NTMwOCwxMjc2ODU2MjYsLTIwMjcxOTc5ODUsMTQwMTY4NjY2Mi
-wtMTE0MDE5MjQ5NywtNTIzMDIxNzgzLC0yNTQxNjI2NSwtMTI5
-ODI5NjQ5Nl19
+eyJoaXN0b3J5IjpbLTc4MTU5Mzg5MywtNTM5NjgwNDE0LDgzOT
+gzNDI5MSwxODcxMzU0OTA0LDExMjk0Mzg3ODUsMTEyOTc5MDgy
+NiwxNTM4MjMzMzI0LC0yMDcwMjMzODY2LDQwMTc5MjkxMSw3MT
+Y1MjAwODgsLTM2NjgwNDUwMywtMTcwMDQyODMwMSwxNTEyNDg1
+MzA4LDEyNzY4NTYyNiwtMjAyNzE5Nzk4NSwxNDAxNjg2NjYyLC
+0xMTQwMTkyNDk3LC01MjMwMjE3ODMsLTI1NDE2MjY1LC0xMjk4
+Mjk2NDk2XX0=
 -->
