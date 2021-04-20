@@ -15,15 +15,16 @@ Suppose we have four partitions of data as below and when they come in at 128 MB
 ### challenge :
 Let's assume one task is taking the maximum amount of data like 70-80 percent to the entire data.
 
- - In that situation you actually don't get any benefit to increase the number of tasks.
- - In that situation you take larger machines in terms of resources memory, CPU cores and etc but still not benefit
+ - In that situation you actually don't get any benefit if you increase the number of tasks.
+ - In that situation if you take larger machines in terms of resources memory, CPU cores and etc but still not get any benefit
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTU0MDAzMjMsLTUzOTY4MDQxNCw4Mz
-k4MzQyOTEsMTg3MTM1NDkwNCwxMTI5NDM4Nzg1LDExMjk3OTA4
-MjYsMTUzODIzMzMyNCwtMjA3MDIzMzg2Niw0MDE3OTI5MTEsNz
-E2NTIwMDg4LC0zNjY4MDQ1MDMsLTE3MDA0MjgzMDEsMTUxMjQ4
-NTMwOCwxMjc2ODU2MjYsLTIwMjcxOTc5ODUsMTQwMTY4NjY2Mi
-wtMTE0MDE5MjQ5NywtNTIzMDIxNzgzLC0yNTQxNjI2NSwtMTI5
-ODI5NjQ5Nl19
+eyJoaXN0b3J5IjpbMTU4OTY4NzcwMywtNTM5NjgwNDE0LDgzOT
+gzNDI5MSwxODcxMzU0OTA0LDExMjk0Mzg3ODUsMTEyOTc5MDgy
+NiwxNTM4MjMzMzI0LC0yMDcwMjMzODY2LDQwMTc5MjkxMSw3MT
+Y1MjAwODgsLTM2NjgwNDUwMywtMTcwMDQyODMwMSwxNTEyNDg1
+MzA4LDEyNzY4NTYyNiwtMjAyNzE5Nzk4NSwxNDAxNjg2NjYyLC
+0xMTQwMTkyNDk3LC01MjMwMjE3ODMsLTI1NDE2MjY1LC0xMjk4
+Mjk2NDk2XX0=
 -->
