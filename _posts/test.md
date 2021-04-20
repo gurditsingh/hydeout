@@ -4,15 +4,18 @@ Data skew is not an issue with Spark, rather it is a data problem. The cause of 
 Data skew happens when a small percentage of partitions get most of the data being processed. In normal usage, Spark will generally make sure that the data is evenly split across all tasks, so there isn't a big risk of skew. When you do a join or aggregation, however, Spark distributes the data by key, so that data the same keys goes to the same Node or task. If you have a lot of rows with the same key, then you have some tasks with those keys taking much longer than the others.
 
 ### For Example :
-Suppose we have four partitions of data as below and when they come in at 128 MB each they are roughly the same size in terms of number of records and number of MBs. However, once we perform a group by city, the first 3 cities are roughly uniform but the last city is significantly larger than other cities which results in a skew. (uneven distribution of records in partitions)
+Suppose we have four partitions of data as below and when they come in at 128 MB each they are roughly the same size in terms of number of records and number of MBs. However, once we perform a group by city, the first 3 cities are roughly uniform but the last city is significantly larger than other cities which results in a data skewness (uneven distribution of records in partitions)
+
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark-data-skew.png?raw=true)
 
+ - List item
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2NzIzMjYyMCwtNTM5NjgwNDE0LDgzOT
-gzNDI5MSwxODEwODAzMzU3LDE4NzEzNTQ5MDQsMTEyOTQzODc4
-NSwxMTI5NzkwODI2LDE1MzgyMzMzMjQsLTIwNzAyMzM4NjYsND
-AxNzkyOTExLDcxNjUyMDA4OCwtMzY2ODA0NTAzLC0xNzAwNDI4
-MzAxLDE1MTI0ODUzMDgsMTI3Njg1NjI2LC0yMDI3MTk3OTg1LD
-E0MDE2ODY2NjIsLTExNDAxOTI0OTcsLTUyMzAyMTc4MywtMjU0
-MTYyNjVdfQ==
+eyJoaXN0b3J5IjpbLTE0NzA0NjM5ODcsLTUzOTY4MDQxNCw4Mz
+k4MzQyOTEsMTgxMDgwMzM1NywxODcxMzU0OTA0LDExMjk0Mzg3
+ODUsMTEyOTc5MDgyNiwxNTM4MjMzMzI0LC0yMDcwMjMzODY2LD
+QwMTc5MjkxMSw3MTY1MjAwODgsLTM2NjgwNDUwMywtMTcwMDQy
+ODMwMSwxNTEyNDg1MzA4LDEyNzY4NTYyNiwtMjAyNzE5Nzk4NS
+wxNDAxNjg2NjYyLC0xMTQwMTkyNDk3LC01MjMwMjE3ODMsLTI1
+NDE2MjY1XX0=
 -->
