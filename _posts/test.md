@@ -22,13 +22,23 @@ Let's assume one task is taking the maximum amount of data like 70-80 percent to
 
  - **Repartitioning** Blinding repartition your data always naïve and effective approach. In which you increase the number of partitions spark RDD or DataFrame. In spark partitions are mapped to tasks. One partition runs on one task. Repartitioning can be done either by number of partitions or provide different keys.
 	 - Increase the number of partitions using repartition on RDD or DataFrame.
+```scala
+val spark = SparkSession
+...
+val df=spark.read.csv("path")
+...
+// you can pass in any interger value to increase the partition
+df.repartition(1)
+// you can pass multiple columns to increase the partition
+df.repartition(col("pk"))
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0OTAzMjI4OCwxOTY3MDg5Mjg5LC01Mz
-k2ODA0MTQsODM5ODM0MjkxLDE4NzEzNTQ5MDQsMTEyOTQzODc4
-NSwxMTI5NzkwODI2LDE1MzgyMzMzMjQsLTIwNzAyMzM4NjYsND
-AxNzkyOTExLDcxNjUyMDA4OCwtMzY2ODA0NTAzLC0xNzAwNDI4
-MzAxLDE1MTI0ODUzMDgsMTI3Njg1NjI2LC0yMDI3MTk3OTg1LD
-E0MDE2ODY2NjIsLTExNDAxOTI0OTcsLTUyMzAyMTc4MywtMjU0
-MTYyNjVdfQ==
+eyJoaXN0b3J5IjpbMTgxNDc5MzA5LDEzNDkwMzIyODgsMTk2Nz
+A4OTI4OSwtNTM5NjgwNDE0LDgzOTgzNDI5MSwxODcxMzU0OTA0
+LDExMjk0Mzg3ODUsMTEyOTc5MDgyNiwxNTM4MjMzMzI0LC0yMD
+cwMjMzODY2LDQwMTc5MjkxMSw3MTY1MjAwODgsLTM2NjgwNDUw
+MywtMTcwMDQyODMwMSwxNTEyNDg1MzA4LDEyNzY4NTYyNiwtMj
+AyNzE5Nzk4NSwxNDAxNjg2NjYyLC0xMTQwMTkyNDk3LC01MjMw
+MjE3ODNdfQ==
 -->
