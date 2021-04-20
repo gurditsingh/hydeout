@@ -33,13 +33,13 @@ Let's assume one task is taking the maximum amount of data like 70-80 percent to
 	df.repartition(col("pk"))
 	```
 	- Increase the number of partitions using repartition on RDD or DataFrame.
-	- The out 
+	- The output size of the shuffle data produced by the repartition always be either 128MB or 256MB.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxMjM0MTgzNSwxMzQ5MDMyMjg4LDE5Nj
-cwODkyODksLTUzOTY4MDQxNCw4Mzk4MzQyOTEsMTg3MTM1NDkw
-NCwxMTI5NDM4Nzg1LDExMjk3OTA4MjYsMTUzODIzMzMyNCwtMj
-A3MDIzMzg2Niw0MDE3OTI5MTEsNzE2NTIwMDg4LC0zNjY4MDQ1
-MDMsLTE3MDA0MjgzMDEsMTUxMjQ4NTMwOCwxMjc2ODU2MjYsLT
-IwMjcxOTc5ODUsMTQwMTY4NjY2MiwtMTE0MDE5MjQ5NywtNTIz
-MDIxNzgzXX0=
+eyJoaXN0b3J5IjpbOTY1OTc1NzIzLDEzNDkwMzIyODgsMTk2Nz
+A4OTI4OSwtNTM5NjgwNDE0LDgzOTgzNDI5MSwxODcxMzU0OTA0
+LDExMjk0Mzg3ODUsMTEyOTc5MDgyNiwxNTM4MjMzMzI0LC0yMD
+cwMjMzODY2LDQwMTc5MjkxMSw3MTY1MjAwODgsLTM2NjgwNDUw
+MywtMTcwMDQyODMwMSwxNTEyNDg1MzA4LDEyNzY4NTYyNiwtMj
+AyNzE5Nzk4NSwxNDAxNjg2NjYyLC0xMTQwMTkyNDk3LC01MjMw
+MjE3ODNdfQ==
 -->
