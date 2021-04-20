@@ -18,9 +18,10 @@ Let's assume one task is taking the maximum amount of data like 70-80 percent to
  - In that situation you actually don't get any benefit if you increase the number of tasks.
  - In that situation if you take larger machines in terms of resources memory, CPU cores and etc but still not get any benefit
 
+## Handling Skewness
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4OTY4NzcwMywtNTM5NjgwNDE0LDgzOT
+eyJoaXN0b3J5IjpbMTk2NzA4OTI4OSwtNTM5NjgwNDE0LDgzOT
 gzNDI5MSwxODEwODAzMzU3LDE4NzEzNTQ5MDQsMTEyOTQzODc4
 NSwxMTI5NzkwODI2LDE1MzgyMzMzMjQsLTIwNzAyMzM4NjYsND
 AxNzkyOTExLDcxNjUyMDA4OCwtMzY2ODA0NTAzLC0xNzAwNDI4
