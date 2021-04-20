@@ -15,14 +15,15 @@ Suppose we have four partitions of data as below and when they come in at 128 MB
 ### challenge :
 Let's assume one task is taking the maximun amount of data like 70-80 percent to the entire data.
 
- - In that situtaion 
+ - In that situtaion you actually don't get any benefit to increase the number of tasks.
+ - In that situiton you take larger machines in t
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODcxMDQ3Mzk0LC01Mzk2ODA0MTQsODM5OD
-M0MjkxLDE4MTA4MDMzNTcsMTg3MTM1NDkwNCwxMTI5NDM4Nzg1
-LDExMjk3OTA4MjYsMTUzODIzMzMyNCwtMjA3MDIzMzg2Niw0MD
-E3OTI5MTEsNzE2NTIwMDg4LC0zNjY4MDQ1MDMsLTE3MDA0Mjgz
-MDEsMTUxMjQ4NTMwOCwxMjc2ODU2MjYsLTIwMjcxOTc5ODUsMT
-QwMTY4NjY2MiwtMTE0MDE5MjQ5NywtNTIzMDIxNzgzLC0yNTQx
-NjI2NV19
+eyJoaXN0b3J5IjpbLTE3OTgxNjUxNywtNTM5NjgwNDE0LDgzOT
+gzNDI5MSwxODEwODAzMzU3LDE4NzEzNTQ5MDQsMTEyOTQzODc4
+NSwxMTI5NzkwODI2LDE1MzgyMzMzMjQsLTIwNzAyMzM4NjYsND
+AxNzkyOTExLDcxNjUyMDA4OCwtMzY2ODA0NTAzLC0xNzAwNDI4
+MzAxLDE1MTI0ODUzMDgsMTI3Njg1NjI2LC0yMDI3MTk3OTg1LD
+E0MDE2ODY2NjIsLTExNDAxOTI0OTcsLTUyMzAyMTc4MywtMjU0
+MTYyNjVdfQ==
 -->
