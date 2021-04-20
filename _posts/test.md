@@ -1,6 +1,7 @@
-# What is Data Skew?
+## What is Data Skew?
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MjAyODg3NCwxODcxMzU0OTA0LDExMj
+eyJoaXN0b3J5IjpbMTgxMDgwMzM1NywxODcxMzU0OTA0LDExMj
 k0Mzg3ODUsMTEyOTc5MDgyNiwxNTM4MjMzMzI0LC0yMDcwMjMz
 ODY2LDQwMTc5MjkxMSw3MTY1MjAwODgsLTM2NjgwNDUwMywtMT
 cwMDQyODMwMSwxNTEyNDg1MzA4LDEyNzY4NTYyNiwtMjAyNzE5
