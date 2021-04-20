@@ -13,14 +13,16 @@ Suppose we have four partitions of data as below and when they come in at 128 MB
  - The single skewed task will impact the whole stage. because spark execute 4 partitions/task simultaneously and wait to complete the whole stage.
 
 ### challenge :
-Let's assume one task is taking 70-80 
+Let's assume one task is taking the maximun amount of data like 70-80 percent to the entire data.
+
+ - In that situtaion 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MzIzMjI1NSwtNTM5NjgwNDE0LDgzOT
-gzNDI5MSwxODcxMzU0OTA0LDExMjk0Mzg3ODUsMTEyOTc5MDgy
-NiwxNTM4MjMzMzI0LC0yMDcwMjMzODY2LDQwMTc5MjkxMSw3MT
-Y1MjAwODgsLTM2NjgwNDUwMywtMTcwMDQyODMwMSwxNTEyNDg1
-MzA4LDEyNzY4NTYyNiwtMjAyNzE5Nzk4NSwxNDAxNjg2NjYyLC
-0xMTQwMTkyNDk3LC01MjMwMjE3ODMsLTI1NDE2MjY1LC0xMjk4
-Mjk2NDk2XX0=
+eyJoaXN0b3J5IjpbODcxMDQ3Mzk0LC01Mzk2ODA0MTQsODM5OD
+M0MjkxLDE4NzEzNTQ5MDQsMTEyOTQzODc4NSwxMTI5NzkwODI2
+LDE1MzgyMzMzMjQsLTIwNzAyMzM4NjYsNDAxNzkyOTExLDcxNj
+UyMDA4OCwtMzY2ODA0NTAzLC0xNzAwNDI4MzAxLDE1MTI0ODUz
+MDgsMTI3Njg1NjI2LC0yMDI3MTk3OTg1LDE0MDE2ODY2NjIsLT
+ExNDAxOTI0OTcsLTUyMzAyMTc4MywtMjU0MTYyNjUsLTEyOTgy
+OTY0OTZdfQ==
 -->
