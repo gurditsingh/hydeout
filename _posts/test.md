@@ -10,14 +10,14 @@ Suppose we have four partitions of data as below and when they come in at 128 MB
 
  - The skewed partition/task (City D) will take more time as compared to other cities.
  - The skewed task take more memory as compared to other cities.
- - The single skewed task will impact the whole stage. beacause spark excute4 partitions simultaneously will take as long
+ - The single skewed task will impact the whole stage. because spark execute 4 partitions/task simultaneously and wait to complete the whole stage.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyODU4NDA0LC01Mzk2ODA0MTQsODM5OD
-M0MjkxLDE4MTA4MDMzNTcsMTg3MTM1NDkwNCwxMTI5NDM4Nzg1
-LDExMjk3OTA4MjYsMTUzODIzMzMyNCwtMjA3MDIzMzg2Niw0MD
-E3OTI5MTEsNzE2NTIwMDg4LC0zNjY4MDQ1MDMsLTE3MDA0Mjgz
-MDEsMTUxMjQ4NTMwOCwxMjc2ODU2MjYsLTIwMjcxOTc5ODUsMT
-QwMTY4NjY2MiwtMTE0MDE5MjQ5NywtNTIzMDIxNzgzLC0yNTQx
-NjI2NV19
+eyJoaXN0b3J5IjpbLTU1OTQ3NjczMywtNTM5NjgwNDE0LDgzOT
+gzNDI5MSwxODEwODAzMzU3LDE4NzEzNTQ5MDQsMTEyOTQzODc4
+NSwxMTI5NzkwODI2LDE1MzgyMzMzMjQsLTIwNzAyMzM4NjYsND
+AxNzkyOTExLDcxNjUyMDA4OCwtMzY2ODA0NTAzLC0xNzAwNDI4
+MzAxLDE1MTI0ODUzMDgsMTI3Njg1NjI2LC0yMDI3MTk3OTg1LD
+E0MDE2ODY2NjIsLTExNDAxOTI0OTcsLTUyMzAyMTc4MywtMjU0
+MTYyNjVdfQ==
 -->
