@@ -20,10 +20,11 @@ Let's assume one task is taking the maximum amount of data like 70-80 percent to
 
 ## Handling Skewness
 
- - **Repartitioning** Blinding repartition your data always naïve and effective approach. In which you increase the number of partitions spark RDD or DataFrame. In spark partitions are mapped to tasks. One partition runs on one task. Repartitioning can be done either by number of partitions or provide differert keys.
+ - **Repartitioning** Blinding repartition your data always naïve and effective approach. In which you increase the number of partitions spark RDD or DataFrame. In spark partitions are mapped to tasks. One partition runs on one task. Repartitioning can be done either by number of partitions or provide different keys.
+ - Increase the number of partitions using repartition on RDD or DataFrame
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzY3MzA0NDMsMTk2NzA4OTI4OSwtNT
+eyJoaXN0b3J5IjpbLTE3NTA3NzAzNzQsMTk2NzA4OTI4OSwtNT
 M5NjgwNDE0LDgzOTgzNDI5MSwxODcxMzU0OTA0LDExMjk0Mzg3
 ODUsMTEyOTc5MDgyNiwxNTM4MjMzMzI0LC0yMDcwMjMzODY2LD
 QwMTc5MjkxMSw3MTY1MjAwODgsLTM2NjgwNDUwMywtMTcwMDQy
