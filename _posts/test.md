@@ -8,10 +8,10 @@ Suppose we have four partitions of data as below and when they come in at 128 MB
 
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark-data-skew.png?raw=true)
 
- - List item
+ - The skewed partition will 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzA0NjM5ODcsLTUzOTY4MDQxNCw4Mz
+eyJoaXN0b3J5IjpbLTEzNzQ3OTg0MDIsLTUzOTY4MDQxNCw4Mz
 k4MzQyOTEsMTg3MTM1NDkwNCwxMTI5NDM4Nzg1LDExMjk3OTA4
 MjYsMTUzODIzMzMyNCwtMjA3MDIzMzg2Niw0MDE3OTI5MTEsNz
 E2NTIwMDg4LC0zNjY4MDQ1MDMsLTE3MDA0MjgzMDEsMTUxMjQ4
