@@ -19,13 +19,13 @@ Let's assume one task is taking the maximum amount of data like 70-80 percent to
  - In that situation if you take larger machines in terms of resources memory, CPU cores and etc but still not get any benefit
 
 ## Handling Skewness
-
+**Repartition**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2NzA4OTI4OSwtNTM5NjgwNDE0LDgzOT
-gzNDI5MSwxODcxMzU0OTA0LDExMjk0Mzg3ODUsMTEyOTc5MDgy
-NiwxNTM4MjMzMzI0LC0yMDcwMjMzODY2LDQwMTc5MjkxMSw3MT
-Y1MjAwODgsLTM2NjgwNDUwMywtMTcwMDQyODMwMSwxNTEyNDg1
-MzA4LDEyNzY4NTYyNiwtMjAyNzE5Nzk4NSwxNDAxNjg2NjYyLC
-0xMTQwMTkyNDk3LC01MjMwMjE3ODMsLTI1NDE2MjY1LC0xMjk4
-Mjk2NDk2XX0=
+eyJoaXN0b3J5IjpbLTUwMDk5MDEyNCwxOTY3MDg5Mjg5LC01Mz
+k2ODA0MTQsODM5ODM0MjkxLDE4NzEzNTQ5MDQsMTEyOTQzODc4
+NSwxMTI5NzkwODI2LDE1MzgyMzMzMjQsLTIwNzAyMzM4NjYsND
+AxNzkyOTExLDcxNjUyMDA4OCwtMzY2ODA0NTAzLC0xNzAwNDI4
+MzAxLDE1MTI0ODUzMDgsMTI3Njg1NjI2LC0yMDI3MTk3OTg1LD
+E0MDE2ODY2NjIsLTExNDAxOTI0OTcsLTUyMzAyMTc4MywtMjU0
+MTYyNjVdfQ==
 -->
