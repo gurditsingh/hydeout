@@ -25,8 +25,9 @@ In spark we have partition types called input, output and shuffle. The input and
 
 **1) Input Partition Sizing** For input partition spark generally do a great job of taking care of these input partitions(Spark Defaults input partition size is 128MB) but sometimes it doesn't work properly and there's a lot of reasons.
 
-for example let's say I have a big cluster having 100 CPU cores. but I only have 100 megabytes of data for processing. In spark we have 128 megabytes input partition size which will wind up to generate only two partitions. The spark will take only two cores out of 200 cores.
-
+ - **Increase Parallelism** Sometimes we need to increase the parallelism of the job. for example let's say I have a big cluster having 100 CPU cores. but I only have 100 megabytes of data for processing. In spark we have 128 megabytes input partition size which will wind up to generate only two partitions. The spark will take only two cores out of 200 cores.
+ 
+ 
 
 Blinding repartition your data always naïve and effective approach. In which you increase the number of partitions spark RDD or DataFrame. In spark partitions are mapped to tasks. One partition runs on one task. Repartitioning can be done either by number of partitions or provide different keys.
 
@@ -50,11 +51,11 @@ Blinding repartition your data always naïve and effective approach. In which yo
 	- Increase the number of partitions using repartition on RDD or DataFrame.
 	- The output size of the shuffle data produced by the repartition always be either 128MB or 256MB.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3MTU0MDQyNywtNjAyOTc3MDU5LDQ0Nz
-U5NzA1Niw5NjU5NzU3MjMsMTM0OTAzMjI4OCwxOTY3MDg5Mjg5
-LC01Mzk2ODA0MTQsODM5ODM0MjkxLDE4NzEzNTQ5MDQsMTEyOT
-QzODc4NSwxMTI5NzkwODI2LDE1MzgyMzMzMjQsLTIwNzAyMzM4
-NjYsNDAxNzkyOTExLDcxNjUyMDA4OCwtMzY2ODA0NTAzLC0xNz
-AwNDI4MzAxLDE1MTI0ODUzMDgsMTI3Njg1NjI2LC0yMDI3MTk3
-OTg1XX0=
+eyJoaXN0b3J5IjpbNTI5NDUwNzUzLC02MDI5NzcwNTksNDQ3NT
+k3MDU2LDk2NTk3NTcyMywxMzQ5MDMyMjg4LDE5NjcwODkyODks
+LTUzOTY4MDQxNCw4Mzk4MzQyOTEsMTg3MTM1NDkwNCwxMTI5ND
+M4Nzg1LDExMjk3OTA4MjYsMTUzODIzMzMyNCwtMjA3MDIzMzg2
+Niw0MDE3OTI5MTEsNzE2NTIwMDg4LC0zNjY4MDQ1MDMsLTE3MD
+A0MjgzMDEsMTUxMjQ4NTMwOCwxMjc2ODU2MjYsLTIwMjcxOTc5
+ODVdfQ==
 -->
