@@ -22,7 +22,12 @@ Let's assume one task is taking the maximum amount of data like 70-80 percent to
 
  - **Repartitioning** Blinding repartition your data always naïve and effective approach. In which you increase the number of partitions spark RDD or DataFrame. In spark partitions are mapped to tasks. One partition runs on one task. Repartitioning can be done either by number of partitions or provide different keys.
 
-	Spark Partition Types	 
+	**Spark Partition Types**
+	
+
+	 - Input
+
+		 
 
 	```scala
 	val spark = SparkSession
@@ -37,11 +42,11 @@ Let's assume one task is taking the maximum amount of data like 70-80 percent to
 	- Increase the number of partitions using repartition on RDD or DataFrame.
 	- The output size of the shuffle data produced by the repartition always be either 128MB or 256MB.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mzc3NDYwMjMsOTY1OTc1NzIzLDEzND
-kwMzIyODgsMTk2NzA4OTI4OSwtNTM5NjgwNDE0LDgzOTgzNDI5
-MSwxODEwODAzMzU3LDE4NzEzNTQ5MDQsMTEyOTQzODc4NSwxMT
-I5NzkwODI2LDE1MzgyMzMzMjQsLTIwNzAyMzM4NjYsNDAxNzky
-OTExLDcxNjUyMDA4OCwtMzY2ODA0NTAzLC0xNzAwNDI4MzAxLD
-E1MTI0ODUzMDgsMTI3Njg1NjI2LC0yMDI3MTk3OTg1LDE0MDE2
-ODY2NjJdfQ==
+eyJoaXN0b3J5IjpbNDQ3NTk3MDU2LDk2NTk3NTcyMywxMzQ5MD
+MyMjg4LDE5NjcwODkyODksLTUzOTY4MDQxNCw4Mzk4MzQyOTEs
+MTgxMDgwMzM1NywxODcxMzU0OTA0LDExMjk0Mzg3ODUsMTEyOT
+c5MDgyNiwxNTM4MjMzMzI0LC0yMDcwMjMzODY2LDQwMTc5Mjkx
+MSw3MTY1MjAwODgsLTM2NjgwNDUwMywtMTcwMDQyODMwMSwxNT
+EyNDg1MzA4LDEyNzY4NTYyNiwtMjAyNzE5Nzk4NSwxNDAxNjg2
+NjYyXX0=
 -->
