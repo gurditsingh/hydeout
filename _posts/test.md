@@ -21,7 +21,9 @@ Let's assume one task is taking the maximum amount of data like 70-80 percent to
 ## Handling Skewness
 
  - **Repartitioning** Blinding repartition your data always naïve and effective approach. In which you increase the number of partitions spark RDD or DataFrame. In spark partitions are mapped to tasks. One partition runs on one task. Repartitioning can be done either by number of partitions or provide different keys.
-	 
+
+	Spark Partition Types	 
+
 	```scala
 	val spark = SparkSession
 	...
@@ -35,11 +37,11 @@ Let's assume one task is taking the maximum amount of data like 70-80 percent to
 	- Increase the number of partitions using repartition on RDD or DataFrame.
 	- The output size of the shuffle data produced by the repartition always be either 128MB or 256MB.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTY1OTc1NzIzLDEzNDkwMzIyODgsMTk2Nz
-A4OTI4OSwtNTM5NjgwNDE0LDgzOTgzNDI5MSwxODEwODAzMzU3
-LDE4NzEzNTQ5MDQsMTEyOTQzODc4NSwxMTI5NzkwODI2LDE1Mz
-gyMzMzMjQsLTIwNzAyMzM4NjYsNDAxNzkyOTExLDcxNjUyMDA4
-OCwtMzY2ODA0NTAzLC0xNzAwNDI4MzAxLDE1MTI0ODUzMDgsMT
-I3Njg1NjI2LC0yMDI3MTk3OTg1LDE0MDE2ODY2NjIsLTExNDAx
-OTI0OTddfQ==
+eyJoaXN0b3J5IjpbLTE0Mzc3NDYwMjMsOTY1OTc1NzIzLDEzND
+kwMzIyODgsMTk2NzA4OTI4OSwtNTM5NjgwNDE0LDgzOTgzNDI5
+MSwxODEwODAzMzU3LDE4NzEzNTQ5MDQsMTEyOTQzODc4NSwxMT
+I5NzkwODI2LDE1MzgyMzMzMjQsLTIwNzAyMzM4NjYsNDAxNzky
+OTExLDcxNjUyMDA4OCwtMzY2ODA0NTAzLC0xNzAwNDI4MzAxLD
+E1MTI0ODUzMDgsMTI3Njg1NjI2LC0yMDI3MTk3OTg1LDE0MDE2
+ODY2NjJdfQ==
 -->
