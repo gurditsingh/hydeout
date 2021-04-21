@@ -28,6 +28,8 @@ In spark we have partition types called input, output and shuffle. The input and
  - **Increase Parallelism** Sometimes we need to increase the parallelism of the job. for example let's say I have a big cluster having 100 CPU cores. but I only have 100 megabytes of data for processing. In spark we have 128 megabytes input partition size which will wind up to generate only two partitions. The spark will take only two cores out of 100 cores.
  
 	 In that case we can down the partition size to one megabyte(Property to change the partition size **`spark.sql.files.maxPartitionBytes`**) so that we can utilize the whole cluster CPU cores.
+	 
+	**spark.conf.set("spark.sql.files.maxPartitionBytes","16777216") -> 16MB**
 	
  - **Heavily Nested/Repetitive Data** heavily nested repetitive data can blow out a lot in memory because data can really big in memory so you might want to scale back your your input partition  size.
  - 
@@ -54,11 +56,11 @@ Blinding repartition your data always naïve and effective approach. In which yo
 	- Increase the number of partitions using repartition on RDD or DataFrame.
 	- The output size of the shuffle data produced by the repartition always be either 128MB or 256MB.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MDEzNjU5LDE0ODM1MzQ2OTMsMTc2Mj
-k1OTE1OCwtNjAyOTc3MDU5LDQ0NzU5NzA1Niw5NjU5NzU3MjMs
-MTM0OTAzMjI4OCwxOTY3MDg5Mjg5LC01Mzk2ODA0MTQsODM5OD
-M0MjkxLDE4NzEzNTQ5MDQsMTEyOTQzODc4NSwxMTI5NzkwODI2
-LDE1MzgyMzMzMjQsLTIwNzAyMzM4NjYsNDAxNzkyOTExLDcxNj
-UyMDA4OCwtMzY2ODA0NTAzLC0xNzAwNDI4MzAxLDE1MTI0ODUz
-MDhdfQ==
+eyJoaXN0b3J5IjpbLTY5MDI4MjYxNiwtMzYwMTM2NTksMTQ4Mz
+UzNDY5MywxNzYyOTU5MTU4LC02MDI5NzcwNTksNDQ3NTk3MDU2
+LDk2NTk3NTcyMywxMzQ5MDMyMjg4LDE5NjcwODkyODksLTUzOT
+Y4MDQxNCw4Mzk4MzQyOTEsMTg3MTM1NDkwNCwxMTI5NDM4Nzg1
+LDExMjk3OTA4MjYsMTUzODIzMzMyNCwtMjA3MDIzMzg2Niw0MD
+E3OTI5MTEsNzE2NTIwMDg4LC0zNjY4MDQ1MDMsLTE3MDA0Mjgz
+MDFdfQ==
 -->
