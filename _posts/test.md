@@ -23,7 +23,8 @@ Let's assume one task is taking the maximum amount of data like 70-80 percent to
 ### Repartitioning
 In spark we have partition types called input, output and shuffle. The input and output partition size are controlled by the partition size of the input data but the shuffle partition is based on the count so naturally and unfortunately we have to do little math to figure out.
 
-Input Partition Sizing
+**1) Input Partition Sizing**
+
 
 Blinding repartition your data always naïve and effective approach. In which you increase the number of partitions spark RDD or DataFrame. In spark partitions are mapped to tasks. One partition runs on one task. Repartitioning can be done either by number of partitions or provide different keys.
 
@@ -47,11 +48,11 @@ Blinding repartition your data always naïve and effective approach. In which yo
 	- Increase the number of partitions using repartition on RDD or DataFrame.
 	- The output size of the shuffle data produced by the repartition always be either 128MB or 256MB.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg1OTEwMzgzLDQ0NzU5NzA1Niw5NjU5Nz
-U3MjMsMTM0OTAzMjI4OCwxOTY3MDg5Mjg5LC01Mzk2ODA0MTQs
-ODM5ODM0MjkxLDE4MTA4MDMzNTcsMTg3MTM1NDkwNCwxMTI5ND
-M4Nzg1LDExMjk3OTA4MjYsMTUzODIzMzMyNCwtMjA3MDIzMzg2
-Niw0MDE3OTI5MTEsNzE2NTIwMDg4LC0zNjY4MDQ1MDMsLTE3MD
-A0MjgzMDEsMTUxMjQ4NTMwOCwxMjc2ODU2MjYsLTIwMjcxOTc5
-ODVdfQ==
+eyJoaXN0b3J5IjpbLTYwMjk3NzA1OSw0NDc1OTcwNTYsOTY1OT
+c1NzIzLDEzNDkwMzIyODgsMTk2NzA4OTI4OSwtNTM5NjgwNDE0
+LDgzOTgzNDI5MSwxODEwODAzMzU3LDE4NzEzNTQ5MDQsMTEyOT
+QzODc4NSwxMTI5NzkwODI2LDE1MzgyMzMzMjQsLTIwNzAyMzM4
+NjYsNDAxNzkyOTExLDcxNjUyMDA4OCwtMzY2ODA0NTAzLC0xNz
+AwNDI4MzAxLDE1MTI0ODUzMDgsMTI3Njg1NjI2LC0yMDI3MTk3
+OTg1XX0=
 -->
