@@ -62,6 +62,9 @@ The  `groupByKey`  call makes no attempt at merging/combining values, so it’s 
 
 ----
 
+## Salting
+
+
 
 
 
@@ -96,7 +99,7 @@ Blinding repartition your data always naïve and effective approach. In which yo
 	- Increase the number of partitions using repartition on RDD or DataFrame.
 	- The output size of the shuffle data produced by the repartition always be either 128MB or 256MB.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjA5ODA1NzYsLTEwMjczMjE4MDcsMT
+eyJoaXN0b3J5IjpbLTExNzM2MjM2MTQsLTEwMjczMjE4MDcsMT
 IzNDI4NDQxMiwxNTE1NDk3MTQ1LC04ODQzMTkwOTQsLTE4NDM1
 NjY5NjcsLTE0NDMwMTY1ODAsLTcwNDc2NjYwMiwtNjkwMjgyNj
 E2LC0zNjAxMzY1OSwxNDgzNTM0NjkzLDE3NjI5NTkxNTgsLTYw
