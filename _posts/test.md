@@ -79,9 +79,9 @@ Fixing the data skew problem required salting the data sets — meaning adding r
       StructField("sales", DataTypes.IntegerType)
 	    ))
 	    
-	val df=spark.read.schema(sch).csv("path")
+	 val df=spark.read.schema(sch).csv("path")
 
-	val addSalt=df.withColumn("salted_pk",concat(col("pk") , lit("_"),substring_index((rand() * 100).cast("String"),".",1)  ))
+	 val addSalt=df.withColumn("salted_pk", concat(col("pk") , lit("_"), floor(rand()*100)))
 	 val firstPhase=addSalt.groupBy("salted_pk").agg(sum("sales").as("sum_sales"))
 
 
@@ -90,11 +90,11 @@ Fixing the data skew problem required salting the data sets — meaning adding r
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2MjMzODU0MCw4NDM0OTU4NTAsLTExNz
-M2MjM2MTQsLTEwMjczMjE4MDcsMTIzNDI4NDQxMiwxNTE1NDk3
-MTQ1LC04ODQzMTkwOTQsLTE4NDM1NjY5NjcsLTE0NDMwMTY1OD
-AsLTcwNDc2NjYwMiwtNjkwMjgyNjE2LC0zNjAxMzY1OSwxNDgz
-NTM0NjkzLDE3NjI5NTkxNTgsLTYwMjk3NzA1OSw0NDc1OTcwNT
-YsOTY1OTc1NzIzLDEzNDkwMzIyODgsMTk2NzA4OTI4OSwtNTM5
-NjgwNDE0XX0=
+eyJoaXN0b3J5IjpbLTg4OTM1MDc4MywyMDYyMzM4NTQwLDg0Mz
+Q5NTg1MCwtMTE3MzYyMzYxNCwtMTAyNzMyMTgwNywxMjM0Mjg0
+NDEyLDE1MTU0OTcxNDUsLTg4NDMxOTA5NCwtMTg0MzU2Njk2Ny
+wtMTQ0MzAxNjU4MCwtNzA0NzY2NjAyLC02OTAyODI2MTYsLTM2
+MDEzNjU5LDE0ODM1MzQ2OTMsMTc2Mjk1OTE1OCwtNjAyOTc3MD
+U5LDQ0NzU5NzA1Niw5NjU5NzU3MjMsMTM0OTAzMjI4OCwxOTY3
+MDg5Mjg5XX0=
 -->
