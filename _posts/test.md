@@ -66,7 +66,8 @@ The  `groupByKey`  call makes no attempt at merging/combining values, so it’s 
 Fixing the data skew problem required salting the data sets — meaning adding randomization to the data to allow it to be distributed more evenly. It also required two-stages of aggregation.
 
  - Salting is adding some random prefix or suffix in the original key.
- - Let's assume we have a skewed key called `StockBrandFoo`
+ - Let's assume we have a skewed key called `StockBrandFoo` with the randommess of 10 intergers, we can create keys like StockBrandFoo_0, StockBrandFoo_1 ... StockBrandFoo_9 here _0,_1 are the salts.
+ - Once we adde
 
 Blinding repartition your data always naïve and effective approach. In which you increase the number of partitions spark RDD or DataFrame. In spark partitions are mapped to tasks. One partition runs on one task. Repartitioning can be done either by number of partitions or provide different keys.
 
@@ -90,7 +91,7 @@ Blinding repartition your data always naïve and effective approach. In which yo
 	- Increase the number of partitions using repartition on RDD or DataFrame.
 	- The output size of the shuffle data produced by the repartition always be either 128MB or 256MB.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIxODQzMDUxLC0xMTczNjIzNjE0LC0xMD
+eyJoaXN0b3J5IjpbODcwNjAxODE2LC0xMTczNjIzNjE0LC0xMD
 I3MzIxODA3LDEyMzQyODQ0MTIsMTUxNTQ5NzE0NSwtODg0MzE5
 MDk0LC0xODQzNTY2OTY3LC0xNDQzMDE2NTgwLC03MDQ3NjY2MD
 IsLTY5MDI4MjYxNiwtMzYwMTM2NTksMTQ4MzUzNDY5MywxNzYy
