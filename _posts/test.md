@@ -64,9 +64,9 @@ The  `groupByKey`  call makes no attempt at merging/combining values, so it’s 
 
 ## Salting
 
-**Salting with Two-Phase aggreatio**
+**Salting with Two-Phase aggregation**
 
-Fixing the data skew proble required salting the data sets — meaning adding randomization to the data to allow it to be distributed more evenly. It also required two-stages of aggregation.
+Fixing the data skew problem required salting the data sets — meaning adding randomization to the data to allow it to be distributed more evenly. It also required two-stages of aggregation.
 
  - Salting is adding some random prefix or suffix in the original key.
  - Let's assume we have a skewed key called `StockBrandFoo` with the randomness of 10 integers, we can create keys like StockBrandFoo_0, StockBrandFoo_1 ... StockBrandFoo_9 here _0,_1 are the salts.
@@ -92,12 +92,14 @@ Fixing the data skew proble required salting the data sets — meaning adding ra
 	val secondPhase=removeSalt.groupBy("pk").sum("sum_sales")
 
 ```
+
+**Salting without Two-Phase aggregation**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NTcxNDgxMSwtODg5MzUwNzgzLDIwNj
-IzMzg1NDAsODQzNDk1ODUwLC0xMTczNjIzNjE0LC0xMDI3MzIx
-ODA3LDEyMzQyODQ0MTIsMTUxNTQ5NzE0NSwtODg0MzE5MDk0LC
-0xODQzNTY2OTY3LC0xNDQzMDE2NTgwLC03MDQ3NjY2MDIsLTY5
-MDI4MjYxNiwtMzYwMTM2NTksMTQ4MzUzNDY5MywxNzYyOTU5MT
-U4LC02MDI5NzcwNTksNDQ3NTk3MDU2LDk2NTk3NTcyMywxMzQ5
-MDMyMjg4XX0=
+eyJoaXN0b3J5IjpbMjQ4NTAxNTU1LC04ODkzNTA3ODMsMjA2Mj
+MzODU0MCw4NDM0OTU4NTAsLTExNzM2MjM2MTQsLTEwMjczMjE4
+MDcsMTIzNDI4NDQxMiwxNTE1NDk3MTQ1LC04ODQzMTkwOTQsLT
+E4NDM1NjY5NjcsLTE0NDMwMTY1ODAsLTcwNDc2NjYwMiwtNjkw
+MjgyNjE2LC0zNjAxMzY1OSwxNDgzNTM0NjkzLDE3NjI5NTkxNT
+gsLTYwMjk3NzA1OSw0NDc1OTcwNTYsOTY1OTc1NzIzLDEzNDkw
+MzIyODhdfQ==
 -->
