@@ -68,14 +68,14 @@ Fixing the data skew problem required salting the data sets — meaning adding r
  - Salting is adding some random prefix or suffix in the original key.
  - Let's assume we have a skewed key called `StockBrandFoo` with the randomness of 10 integers, we can create keys like StockBrandFoo_0, StockBrandFoo_1 ... StockBrandFoo_9 here _0,_1 are the salts.
  - Once we created the salted key then we can use in aggregation and key can get spread across multiple nodes due to salting.
- - Next we can do the Two-Phase aggregation. In the first phase we can do the aggregation(partital ) 
+ - Next we can do the Two-Phase aggregation. In the first phase we can do the aggregation(we can say partial aggregation) on salted keys. In the second phase we can remove the salt and do the final aggregation on the original keys.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1NDgzNDA4NSwtMTE3MzYyMzYxNCwtMT
-AyNzMyMTgwNywxMjM0Mjg0NDEyLDE1MTU0OTcxNDUsLTg4NDMx
-OTA5NCwtMTg0MzU2Njk2NywtMTQ0MzAxNjU4MCwtNzA0NzY2Nj
-AyLC02OTAyODI2MTYsLTM2MDEzNjU5LDE0ODM1MzQ2OTMsMTc2
-Mjk1OTE1OCwtNjAyOTc3MDU5LDQ0NzU5NzA1Niw5NjU5NzU3Mj
-MsMTM0OTAzMjI4OCwxOTY3MDg5Mjg5LC01Mzk2ODA0MTQsODM5
-ODM0MjkxXX0=
+eyJoaXN0b3J5IjpbODQzNDk1ODUwLC0xMTczNjIzNjE0LC0xMD
+I3MzIxODA3LDEyMzQyODQ0MTIsMTUxNTQ5NzE0NSwtODg0MzE5
+MDk0LC0xODQzNTY2OTY3LC0xNDQzMDE2NTgwLC03MDQ3NjY2MD
+IsLTY5MDI4MjYxNiwtMzYwMTM2NTksMTQ4MzUzNDY5MywxNzYy
+OTU5MTU4LC02MDI5NzcwNTksNDQ3NTk3MDU2LDk2NTk3NTcyMy
+wxMzQ5MDMyMjg4LDE5NjcwODkyODksLTUzOTY4MDQxNCw4Mzk4
+MzQyOTFdfQ==
 -->
