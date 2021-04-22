@@ -49,15 +49,19 @@ In spark we have partition types called input, output and shuffle. The input and
 
  ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark-shuffle.png?raw=true)
  
-
+-----
 ## Use of Combiner
 A **Combiner**, also known as a semi-reducer, is an optional class that operates by accepting the inputs from the Map class and thereafter passing the output key-value pairs to the Reducer class. The main function of a **Combiner** is to summarize the map output records with the same key.
 
 The  `groupByKey`  call makes no attempt at merging/combining values, so it’s an expensive operation. Thus the  `combineByKey`  call is just such an optimization. When using  `combineByKey`  values are merged into one value at each partition then each partition value is merged into a single value.
 
-No matters if your data is skewed or not always good to have combiner.  If there are many records of the same key then repartition does not help you out then combiner will be a good option.
+ - If there are many records of the same key then repartition does not help you out then combiner will be a good option.
+ - Combiner decrease the size of the shuffle data and reduces the load during aggregation phase.
 
-Combiner decrease the sixe of the shuffle data and reduces the loa
+**Important :** No matters if your data is skewed or not always good to have combiner. 
+
+----
+
 
 
 
@@ -93,7 +97,7 @@ Blinding repartition your data always naïve and effective approach. In which yo
 	- Increase the number of partitions using repartition on RDD or DataFrame.
 	- The output size of the shuffle data produced by the repartition always be either 128MB or 256MB.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMzEwMDQyMSwtMTAyNzMyMTgwNywxMj
+eyJoaXN0b3J5IjpbLTQ1NTgwNjIyMiwtMTAyNzMyMTgwNywxMj
 M0Mjg0NDEyLDE1MTU0OTcxNDUsLTg4NDMxOTA5NCwtMTg0MzU2
 Njk2NywtMTQ0MzAxNjU4MCwtNzA0NzY2NjAyLC02OTAyODI2MT
 YsLTM2MDEzNjU5LDE0ODM1MzQ2OTMsMTc2Mjk1OTE1OCwtNjAy
