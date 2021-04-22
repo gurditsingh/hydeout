@@ -63,7 +63,10 @@ The  `groupByKey`  call makes no attempt at merging/combining values, so it’s 
 ----
 
 ## Salting
-Fixing the data skew problem required salting the data sets — meaning adding randomization to the data to allow it to be distributed more evenly. It also required two-stages of aggregation.
+
+**Salting with Two-Phase aggreatio**
+
+Fixing the data skew proble required salting the data sets — meaning adding randomization to the data to allow it to be distributed more evenly. It also required two-stages of aggregation.
 
  - Salting is adding some random prefix or suffix in the original key.
  - Let's assume we have a skewed key called `StockBrandFoo` with the randomness of 10 integers, we can create keys like StockBrandFoo_0, StockBrandFoo_1 ... StockBrandFoo_9 here _0,_1 are the salts.
@@ -90,11 +93,11 @@ Fixing the data skew problem required salting the data sets — meaning adding r
 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4OTM1MDc4MywyMDYyMzM4NTQwLDg0Mz
-Q5NTg1MCwtMTE3MzYyMzYxNCwtMTAyNzMyMTgwNywxMjM0Mjg0
-NDEyLDE1MTU0OTcxNDUsLTg4NDMxOTA5NCwtMTg0MzU2Njk2Ny
-wtMTQ0MzAxNjU4MCwtNzA0NzY2NjAyLC02OTAyODI2MTYsLTM2
-MDEzNjU5LDE0ODM1MzQ2OTMsMTc2Mjk1OTE1OCwtNjAyOTc3MD
-U5LDQ0NzU5NzA1Niw5NjU5NzU3MjMsMTM0OTAzMjI4OCwxOTY3
-MDg5Mjg5XX0=
+eyJoaXN0b3J5IjpbMTg5NTcxNDgxMSwtODg5MzUwNzgzLDIwNj
+IzMzg1NDAsODQzNDk1ODUwLC0xMTczNjIzNjE0LC0xMDI3MzIx
+ODA3LDEyMzQyODQ0MTIsMTUxNTQ5NzE0NSwtODg0MzE5MDk0LC
+0xODQzNTY2OTY3LC0xNDQzMDE2NTgwLC03MDQ3NjY2MDIsLTY5
+MDI4MjYxNiwtMzYwMTM2NTksMTQ4MzUzNDY5MywxNzYyOTU5MT
+U4LC02MDI5NzcwNTksNDQ3NTk3MDU2LDk2NTk3NTcyMywxMzQ5
+MDMyMjg4XX0=
 -->
