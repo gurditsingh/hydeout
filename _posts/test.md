@@ -43,7 +43,7 @@ In spark we have partition types called input, output and shuffle. The input and
 	// you can pass multiple columns to increase the partition
 	df.repartition(col("pk"))
 ```
-**3) Shuffle Partition Sizing :** 
+**3) Shuffle Partition Sizing :** The default for a shuffle is changed by a count and it's controlled with the flag. The default count is 200. 
 
 
 Blinding repartition your data always naïve and effective approach. In which you increase the number of partitions spark RDD or DataFrame. In spark partitions are mapped to tasks. One partition runs on one task. Repartitioning can be done either by number of partitions or provide different keys.
@@ -68,11 +68,11 @@ Blinding repartition your data always naïve and effective approach. In which yo
 	- Increase the number of partitions using repartition on RDD or DataFrame.
 	- The output size of the shuffle data produced by the repartition always be either 128MB or 256MB.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4NDMxOTA5NCwtMTg0MzU2Njk2NywtMT
-Q0MzAxNjU4MCwtNzA0NzY2NjAyLC02OTAyODI2MTYsLTM2MDEz
-NjU5LDE0ODM1MzQ2OTMsMTc2Mjk1OTE1OCwtNjAyOTc3MDU5LD
-Q0NzU5NzA1Niw5NjU5NzU3MjMsMTM0OTAzMjI4OCwxOTY3MDg5
-Mjg5LC01Mzk2ODA0MTQsODM5ODM0MjkxLDE4NzEzNTQ5MDQsMT
-EyOTQzODc4NSwxMTI5NzkwODI2LDE1MzgyMzMzMjQsLTIwNzAy
-MzM4NjZdfQ==
+eyJoaXN0b3J5IjpbLTU4NzQ2NDQ4OCwtODg0MzE5MDk0LC0xOD
+QzNTY2OTY3LC0xNDQzMDE2NTgwLC03MDQ3NjY2MDIsLTY5MDI4
+MjYxNiwtMzYwMTM2NTksMTQ4MzUzNDY5MywxNzYyOTU5MTU4LC
+02MDI5NzcwNTksNDQ3NTk3MDU2LDk2NTk3NTcyMywxMzQ5MDMy
+Mjg4LDE5NjcwODkyODksLTUzOTY4MDQxNCw4Mzk4MzQyOTEsMT
+g3MTM1NDkwNCwxMTI5NDM4Nzg1LDExMjk3OTA4MjYsMTUzODIz
+MzMyNF19
 -->
