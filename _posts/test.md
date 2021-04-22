@@ -66,12 +66,12 @@ The  `groupByKey`  call makes no attempt at merging/combining values, so it’s 
 Fixing the data skew problem required salting the data sets — meaning adding randomization to the data to allow it to be distributed more evenly. It also required two-stages of aggregation.
 
  - Salting is adding some random prefix or suffix in the original key.
- - Let's assume we have a skewed key called `StockBrandFoo` with the randommess of 10 intergers, we can create keys like StockBrandFoo_0, StockBrandFoo_1 ... StockBrandFoo_9 here _0,_1 are the salts.
+ - Let's assume we have a skewed key called `StockBrandFoo` with the randomness of 10 integers, we can create keys like StockBrandFoo_0, StockBrandFoo_1 ... StockBrandFoo_9 here _0,_1 are the salts.
  - Once we created the salted key then we can use in aggregation and key can get spread across multiple nodes due to salting.
- - 
+ - Next we can do the Two-Phase aggregation. In the first phase we can do the aggregation(pa) 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNzM5NjUwMCwtMTE3MzYyMzYxNCwtMT
+eyJoaXN0b3J5IjpbLTEwMzUyMDg2NSwtMTE3MzYyMzYxNCwtMT
 AyNzMyMTgwNywxMjM0Mjg0NDEyLDE1MTU0OTcxNDUsLTg4NDMx
 OTA5NCwtMTg0MzU2Njk2NywtMTQ0MzAxNjU4MCwtNzA0NzY2Nj
 AyLC02OTAyODI2MTYsLTM2MDEzNjU5LDE0ODM1MzQ2OTMsMTc2
