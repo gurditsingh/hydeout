@@ -50,6 +50,7 @@ In spark we have partition types called input, output and shuffle. The input and
  ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark-shuffle.png?raw=true)
  
 
+## Use of Combiner
 
 
 
@@ -86,11 +87,11 @@ Blinding repartition your data always naïve and effective approach. In which yo
 	- Increase the number of partitions using repartition on RDD or DataFrame.
 	- The output size of the shuffle data produced by the repartition always be either 128MB or 256MB.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzNDI4NDQxMiwxNTE1NDk3MTQ1LC04OD
-QzMTkwOTQsLTE4NDM1NjY5NjcsLTE0NDMwMTY1ODAsLTcwNDc2
-NjYwMiwtNjkwMjgyNjE2LC0zNjAxMzY1OSwxNDgzNTM0NjkzLD
-E3NjI5NTkxNTgsLTYwMjk3NzA1OSw0NDc1OTcwNTYsOTY1OTc1
-NzIzLDEzNDkwMzIyODgsMTk2NzA4OTI4OSwtNTM5NjgwNDE0LD
-gzOTgzNDI5MSwxODEwODAzMzU3LDE4NzEzNTQ5MDQsMTEyOTQz
-ODc4NV19
+eyJoaXN0b3J5IjpbLTEwMjczMjE4MDcsMTIzNDI4NDQxMiwxNT
+E1NDk3MTQ1LC04ODQzMTkwOTQsLTE4NDM1NjY5NjcsLTE0NDMw
+MTY1ODAsLTcwNDc2NjYwMiwtNjkwMjgyNjE2LC0zNjAxMzY1OS
+wxNDgzNTM0NjkzLDE3NjI5NTkxNTgsLTYwMjk3NzA1OSw0NDc1
+OTcwNTYsOTY1OTc1NzIzLDEzNDkwMzIyODgsMTk2NzA4OTI4OS
+wtNTM5NjgwNDE0LDgzOTgzNDI5MSwxODEwODAzMzU3LDE4NzEz
+NTQ5MDRdfQ==
 -->
