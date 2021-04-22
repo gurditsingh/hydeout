@@ -51,7 +51,7 @@ In spark we have partition types called input, output and shuffle. The input and
  
 
 ## Use of Combiner
-
+A **Combiner**, also known as a semi-reducer, is an optional class that operates by accepting the inputs from the Map class and thereafter passing the output key-value pairs to the Reducer class. The main function of a **Combiner** is to summarize the map output records with the same key.
 
 
 
@@ -87,11 +87,11 @@ Blinding repartition your data always naïve and effective approach. In which yo
 	- Increase the number of partitions using repartition on RDD or DataFrame.
 	- The output size of the shuffle data produced by the repartition always be either 128MB or 256MB.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjczMjE4MDcsMTIzNDI4NDQxMiwxNT
-E1NDk3MTQ1LC04ODQzMTkwOTQsLTE4NDM1NjY5NjcsLTE0NDMw
-MTY1ODAsLTcwNDc2NjYwMiwtNjkwMjgyNjE2LC0zNjAxMzY1OS
-wxNDgzNTM0NjkzLDE3NjI5NTkxNTgsLTYwMjk3NzA1OSw0NDc1
-OTcwNTYsOTY1OTc1NzIzLDEzNDkwMzIyODgsMTk2NzA4OTI4OS
-wtNTM5NjgwNDE0LDgzOTgzNDI5MSwxODcxMzU0OTA0LDExMjk0
-Mzg3ODVdfQ==
+eyJoaXN0b3J5IjpbLTQ2NTg3NzQ5NSwtMTAyNzMyMTgwNywxMj
+M0Mjg0NDEyLDE1MTU0OTcxNDUsLTg4NDMxOTA5NCwtMTg0MzU2
+Njk2NywtMTQ0MzAxNjU4MCwtNzA0NzY2NjAyLC02OTAyODI2MT
+YsLTM2MDEzNjU5LDE0ODM1MzQ2OTMsMTc2Mjk1OTE1OCwtNjAy
+OTc3MDU5LDQ0NzU5NzA1Niw5NjU5NzU3MjMsMTM0OTAzMjI4OC
+wxOTY3MDg5Mjg5LC01Mzk2ODA0MTQsODM5ODM0MjkxLDE4NzEz
+NTQ5MDRdfQ==
 -->
