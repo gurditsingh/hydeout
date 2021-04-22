@@ -70,12 +70,31 @@ Fixing the data skew problem required salting the data sets — meaning adding r
  - Once we created the salted key then we can use in aggregation and key can get spread across multiple nodes due to salting.
  - Next we can do the Two-Phase aggregation. In the first phase we can do the aggregation(we can say partial aggregation) on salted keys. In the second phase we can remove the salt and do the final aggregation on the original keys.
 
+```scala
+	val spark = SparkSession
+	...
+
+	val sch = StructType(List(
+      StructField("pk", DataTypes.StringType),
+      StructField("sales", DataTypes.IntegerType)
+	    ))
+	    
+	val df=spark.read.schema(sch).csv("path")
+
+	val addSalt=df.withColumn("salted_pk",concat(col("pk") , lit("_"),substring_index((rand() * 100).cast("String"),".",1)  ))
+	 val firstPhase=addSalt.groupBy("salted_pk").agg(sum("sales").as("sum_sales"))
+
+
+	val removeSalt=firstPhase.withColumn("pk", substring_index(col("salted_pk"),"_",1))
+	val secondPhase=removeSalt.groupBy("pk").sum("sum_sales")
+
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQzNDk1ODUwLC0xMTczNjIzNjE0LC0xMD
-I3MzIxODA3LDEyMzQyODQ0MTIsMTUxNTQ5NzE0NSwtODg0MzE5
-MDk0LC0xODQzNTY2OTY3LC0xNDQzMDE2NTgwLC03MDQ3NjY2MD
-IsLTY5MDI4MjYxNiwtMzYwMTM2NTksMTQ4MzUzNDY5MywxNzYy
-OTU5MTU4LC02MDI5NzcwNTksNDQ3NTk3MDU2LDk2NTk3NTcyMy
-wxMzQ5MDMyMjg4LDE5NjcwODkyODksLTUzOTY4MDQxNCw4Mzk4
-MzQyOTFdfQ==
+eyJoaXN0b3J5IjpbMjA2MjMzODU0MCw4NDM0OTU4NTAsLTExNz
+M2MjM2MTQsLTEwMjczMjE4MDcsMTIzNDI4NDQxMiwxNTE1NDk3
+MTQ1LC04ODQzMTkwOTQsLTE4NDM1NjY5NjcsLTE0NDMwMTY1OD
+AsLTcwNDc2NjYwMiwtNjkwMjgyNjE2LC0zNjAxMzY1OSwxNDgz
+NTM0NjkzLDE3NjI5NTkxNTgsLTYwMjk3NzA1OSw0NDc1OTcwNT
+YsOTY1OTc1NzIzLDEzNDkwMzIyODgsMTk2NzA4OTI4OSwtNTM5
+NjgwNDE0XX0=
 -->
