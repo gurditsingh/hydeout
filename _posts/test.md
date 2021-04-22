@@ -23,7 +23,7 @@ Let's assume one task is taking the maximum amount of data like 70-80 percent to
 ### Repartitioning
 In spark we have partition types called input, output and shuffle. The input and output partition size are controlled by the partition size of the input data but the shuffle partition is based on the count so naturally and unfortunately we have to do little math to figure out.
 
-**1) Input Partition Sizing** For input partition spark generally do a great job of taking care of these input partitions(Spark Defaults input partition size is 128MB) but sometimes it doesn't work properly and there's a lot of reasons.
+**1) Input Partition Sizing :** For input partition spark generally do a great job of taking care of these input partitions(Spark Defaults input partition size is 128MB) but sometimes it doesn't work properly and there's a lot of reasons.
 
  **Increase Parallelism** Sometimes we need to increase the parallelism of the job. for example let's say I have a big cluster having 100 CPU cores. but I only have 100 megabytes of data for processing. In spark we have 128 megabytes input partition size which will wind up to generate only two partitions. The spark will take only two cores out of 100 cores.
  
@@ -31,8 +31,17 @@ In spark we have partition types called input, output and shuffle. The input and
 	 
 **spark.conf.set("spark.sql.files.maxPartitionBytes","16777216") -> 16MB**
 	
-**2) Output Partition Sizing** The output partition can be used either for change the size of the files or you want to change the composition of the files. The size of the files you have a couple different ways either coalesced or repartition
-
+**2) Output Partition Sizing :** The output partition can be used either for change the size of the files or you want to change the composition of the files. To change the size of the files you have a couple different ways either coalesced or repartition.
+```scala
+	val spark = SparkSession
+	...
+	val df=spark.read.csv("path")
+	...
+	// you can pass in any interger value to increase the partition
+	df.repartition(1)
+	// you can pass multiple columns to increase the partition
+	df.repartition(col("pk"))
+```
 
 Blinding repartition your data always naïve and effective approach. In which you increase the number of partitions spark RDD or DataFrame. In spark partitions are mapped to tasks. One partition runs on one task. Repartitioning can be done either by number of partitions or provide different keys.
 
@@ -56,11 +65,11 @@ Blinding repartition your data always naïve and effective approach. In which yo
 	- Increase the number of partitions using repartition on RDD or DataFrame.
 	- The output size of the shuffle data produced by the repartition always be either 128MB or 256MB.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0MDg2MzQxMCwtNzA0NzY2NjAyLC02OT
-AyODI2MTYsLTM2MDEzNjU5LDE0ODM1MzQ2OTMsMTc2Mjk1OTE1
-OCwtNjAyOTc3MDU5LDQ0NzU5NzA1Niw5NjU5NzU3MjMsMTM0OT
-AzMjI4OCwxOTY3MDg5Mjg5LC01Mzk2ODA0MTQsODM5ODM0Mjkx
-LDE4NzEzNTQ5MDQsMTEyOTQzODc4NSwxMTI5NzkwODI2LDE1Mz
-gyMzMzMjQsLTIwNzAyMzM4NjYsNDAxNzkyOTExLDcxNjUyMDA4
-OF19
+eyJoaXN0b3J5IjpbLTE0NDMwMTY1ODAsLTcwNDc2NjYwMiwtNj
+kwMjgyNjE2LC0zNjAxMzY1OSwxNDgzNTM0NjkzLDE3NjI5NTkx
+NTgsLTYwMjk3NzA1OSw0NDc1OTcwNTYsOTY1OTc1NzIzLDEzND
+kwMzIyODgsMTk2NzA4OTI4OSwtNTM5NjgwNDE0LDgzOTgzNDI5
+MSwxODcxMzU0OTA0LDExMjk0Mzg3ODUsMTEyOTc5MDgyNiwxNT
+M4MjMzMzI0LC0yMDcwMjMzODY2LDQwMTc5MjkxMSw3MTY1MjAw
+ODhdfQ==
 -->
