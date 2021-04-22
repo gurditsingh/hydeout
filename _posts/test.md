@@ -18,9 +18,9 @@ Let's assume one task is taking the maximum amount of data like 70-80 percent to
  - In that situation you actually don't get any benefit if you increase the number of tasks.
  - In that situation if you take larger machines in terms of resources memory, CPU cores and etc but still not get any benefit
 
-## Handling Skewness
+## Handling Skewness in spark
 
-### Repartitioning
+## Repartitioning
 In spark we have partition types called input, output and shuffle. The input and output partition size are controlled by the partition size of the input data but the shuffle partition is based on the count so naturally and unfortunately we have to do little math to figure out.
 
 **1) Input Partition Sizing :** For input partition spark generally do a great job of taking care of these input partitions(Spark Defaults input partition size is 128MB) but sometimes it doesn't work properly and there's a lot of reasons.
@@ -48,7 +48,21 @@ In spark we have partition types called input, output and shuffle. The input and
 **Basic formula to calculate the shuffle count :**
 
  ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark-shuffle.png?raw=true)
- - 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Blinding repartition your data always naïve and effective approach. In which you increase the number of partitions spark RDD or DataFrame. In spark partitions are mapped to tasks. One partition runs on one task. Repartitioning can be done either by number of partitions or provide different keys.
 
@@ -72,7 +86,7 @@ Blinding repartition your data always naïve and effective approach. In which yo
 	- Increase the number of partitions using repartition on RDD or DataFrame.
 	- The output size of the shuffle data produced by the repartition always be either 128MB or 256MB.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4MTgyOTE2NCwxNTE1NDk3MTQ1LC04OD
+eyJoaXN0b3J5IjpbMTIzNDI4NDQxMiwxNTE1NDk3MTQ1LC04OD
 QzMTkwOTQsLTE4NDM1NjY5NjcsLTE0NDMwMTY1ODAsLTcwNDc2
 NjYwMiwtNjkwMjgyNjE2LC0zNjAxMzY1OSwxNDgzNTM0NjkzLD
 E3NjI5NTkxNTgsLTYwMjk3NzA1OSw0NDc1OTcwNTYsOTY1OTc1
