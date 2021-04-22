@@ -29,10 +29,9 @@ In spark we have partition types called input, output and shuffle. The input and
  
  In that case we can down the partition size to one megabyte(Property to change the partition size **`spark.sql.files.maxPartitionBytes`**) so that we can utilize the whole cluster CPU cores.
 	 
-	**spark.conf.set("spark.sql.files.maxPartitionBytes","16777216") -> 16MB**
+**spark.conf.set("spark.sql.files.maxPartitionBytes","16777216") -> 16MB**
 	
- - **Heavily Nested/Repetitive Data** heavily nested repetitive data can blow out a lot in memory because data can really big in memory so you might want to scale back your your input partition  size.
- - 
+
 
 Blinding repartition your data always naïve and effective approach. In which you increase the number of partitions spark RDD or DataFrame. In spark partitions are mapped to tasks. One partition runs on one task. Repartitioning can be done either by number of partitions or provide different keys.
 
@@ -56,7 +55,7 @@ Blinding repartition your data always naïve and effective approach. In which yo
 	- Increase the number of partitions using repartition on RDD or DataFrame.
 	- The output size of the shuffle data produced by the repartition always be either 128MB or 256MB.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0OTkyOTEzOSwtNjkwMjgyNjE2LC0zNj
+eyJoaXN0b3J5IjpbLTcwNDc2NjYwMiwtNjkwMjgyNjE2LC0zNj
 AxMzY1OSwxNDgzNTM0NjkzLDE3NjI5NTkxNTgsLTYwMjk3NzA1
 OSw0NDc1OTcwNTYsOTY1OTc1NzIzLDEzNDkwMzIyODgsMTk2Nz
 A4OTI4OSwtNTM5NjgwNDE0LDgzOTgzNDI5MSwxODEwODAzMzU3
