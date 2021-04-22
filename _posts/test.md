@@ -47,7 +47,8 @@ In spark we have partition types called input, output and shuffle. The input and
 
 **Basic formula to calculate the shuffle count :**
 
- - The size of the shuffle data produced by the repartition always be either 128MB or 256MB
+ - The size of the shuffle data produced by the repartition always in between 128MB to 256MB
+ - 
 
 Blinding repartition your data always naïve and effective approach. In which you increase the number of partitions spark RDD or DataFrame. In spark partitions are mapped to tasks. One partition runs on one task. Repartitioning can be done either by number of partitions or provide different keys.
 
@@ -71,11 +72,11 @@ Blinding repartition your data always naïve and effective approach. In which yo
 	- Increase the number of partitions using repartition on RDD or DataFrame.
 	- The output size of the shuffle data produced by the repartition always be either 128MB or 256MB.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTU3NDM4OTc1LC04ODQzMTkwOTQsLTE4ND
-M1NjY5NjcsLTE0NDMwMTY1ODAsLTcwNDc2NjYwMiwtNjkwMjgy
-NjE2LC0zNjAxMzY1OSwxNDgzNTM0NjkzLDE3NjI5NTkxNTgsLT
-YwMjk3NzA1OSw0NDc1OTcwNTYsOTY1OTc1NzIzLDEzNDkwMzIy
-ODgsMTk2NzA4OTI4OSwtNTM5NjgwNDE0LDgzOTgzNDI5MSwxOD
-cxMzU0OTA0LDExMjk0Mzg3ODUsMTEyOTc5MDgyNiwxNTM4MjMz
-MzI0XX0=
+eyJoaXN0b3J5IjpbMTUxNTQ5NzE0NSwtODg0MzE5MDk0LC0xOD
+QzNTY2OTY3LC0xNDQzMDE2NTgwLC03MDQ3NjY2MDIsLTY5MDI4
+MjYxNiwtMzYwMTM2NTksMTQ4MzUzNDY5MywxNzYyOTU5MTU4LC
+02MDI5NzcwNTksNDQ3NTk3MDU2LDk2NTk3NTcyMywxMzQ5MDMy
+Mjg4LDE5NjcwODkyODksLTUzOTY4MDQxNCw4Mzk4MzQyOTEsMT
+g3MTM1NDkwNCwxMTI5NDM4Nzg1LDExMjk3OTA4MjYsMTUzODIz
+MzMyNF19
 -->
