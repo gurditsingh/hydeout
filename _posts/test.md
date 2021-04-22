@@ -38,10 +38,13 @@ In spark we have partition types called input, output and shuffle. The input and
 	val df=spark.read.csv("path")
 	...
 	// you can pass in any interger value to increase the partition
+	df.coalesce(1)
 	df.repartition(1)
 	// you can pass multiple columns to increase the partition
 	df.repartition(col("pk"))
 ```
+
+
 
 Blinding repartition your data always naïve and effective approach. In which you increase the number of partitions spark RDD or DataFrame. In spark partitions are mapped to tasks. One partition runs on one task. Repartitioning can be done either by number of partitions or provide different keys.
 
@@ -65,11 +68,11 @@ Blinding repartition your data always naïve and effective approach. In which yo
 	- Increase the number of partitions using repartition on RDD or DataFrame.
 	- The output size of the shuffle data produced by the repartition always be either 128MB or 256MB.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDMwMTY1ODAsLTcwNDc2NjYwMiwtNj
-kwMjgyNjE2LC0zNjAxMzY1OSwxNDgzNTM0NjkzLDE3NjI5NTkx
-NTgsLTYwMjk3NzA1OSw0NDc1OTcwNTYsOTY1OTc1NzIzLDEzND
-kwMzIyODgsMTk2NzA4OTI4OSwtNTM5NjgwNDE0LDgzOTgzNDI5
-MSwxODcxMzU0OTA0LDExMjk0Mzg3ODUsMTEyOTc5MDgyNiwxNT
-M4MjMzMzI0LC0yMDcwMjMzODY2LDQwMTc5MjkxMSw3MTY1MjAw
-ODhdfQ==
+eyJoaXN0b3J5IjpbLTE4NDM1NjY5NjcsLTE0NDMwMTY1ODAsLT
+cwNDc2NjYwMiwtNjkwMjgyNjE2LC0zNjAxMzY1OSwxNDgzNTM0
+NjkzLDE3NjI5NTkxNTgsLTYwMjk3NzA1OSw0NDc1OTcwNTYsOT
+Y1OTc1NzIzLDEzNDkwMzIyODgsMTk2NzA4OTI4OSwtNTM5Njgw
+NDE0LDgzOTgzNDI5MSwxODcxMzU0OTA0LDExMjk0Mzg3ODUsMT
+EyOTc5MDgyNiwxNTM4MjMzMzI0LC0yMDcwMjMzODY2LDQwMTc5
+MjkxMV19
 -->
