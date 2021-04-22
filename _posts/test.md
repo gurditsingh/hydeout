@@ -25,9 +25,9 @@ In spark we have partition types called input, output and shuffle. The input and
 
 **1) Input Partition Sizing** For input partition spark generally do a great job of taking care of these input partitions(Spark Defaults input partition size is 128MB) but sometimes it doesn't work properly and there's a lot of reasons.
 
- - **Increase Parallelism** Sometimes we need to increase the parallelism of the job. for example let's say I have a big cluster having 100 CPU cores. but I only have 100 megabytes of data for processing. In spark we have 128 megabytes input partition size which will wind up to generate only two partitions. The spark will take only two cores out of 100 cores.
+ **Increase Parallelism** Sometimes we need to increase the parallelism of the job. for example let's say I have a big cluster having 100 CPU cores. but I only have 100 megabytes of data for processing. In spark we have 128 megabytes input partition size which will wind up to generate only two partitions. The spark will take only two cores out of 100 cores.
  
-	 In that case we can down the partition size to one megabyte(Property to change the partition size **`spark.sql.files.maxPartitionBytes`**) so that we can utilize the whole cluster CPU cores.
+ In that case we can down the partition size to one megabyte(Property to change the partition size **`spark.sql.files.maxPartitionBytes`**) so that we can utilize the whole cluster CPU cores.
 	 
 	**spark.conf.set("spark.sql.files.maxPartitionBytes","16777216") -> 16MB**
 	
@@ -56,11 +56,11 @@ Blinding repartition your data always naïve and effective approach. In which yo
 	- Increase the number of partitions using repartition on RDD or DataFrame.
 	- The output size of the shuffle data produced by the repartition always be either 128MB or 256MB.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5MDI4MjYxNiwtMzYwMTM2NTksMTQ4Mz
-UzNDY5MywxNzYyOTU5MTU4LC02MDI5NzcwNTksNDQ3NTk3MDU2
-LDk2NTk3NTcyMywxMzQ5MDMyMjg4LDE5NjcwODkyODksLTUzOT
-Y4MDQxNCw4Mzk4MzQyOTEsMTg3MTM1NDkwNCwxMTI5NDM4Nzg1
-LDExMjk3OTA4MjYsMTUzODIzMzMyNCwtMjA3MDIzMzg2Niw0MD
-E3OTI5MTEsNzE2NTIwMDg4LC0zNjY4MDQ1MDMsLTE3MDA0Mjgz
-MDFdfQ==
+eyJoaXN0b3J5IjpbLTk0OTkyOTEzOSwtNjkwMjgyNjE2LC0zNj
+AxMzY1OSwxNDgzNTM0NjkzLDE3NjI5NTkxNTgsLTYwMjk3NzA1
+OSw0NDc1OTcwNTYsOTY1OTc1NzIzLDEzNDkwMzIyODgsMTk2Nz
+A4OTI4OSwtNTM5NjgwNDE0LDgzOTgzNDI5MSwxODcxMzU0OTA0
+LDExMjk0Mzg3ODUsMTEyOTc5MDgyNiwxNTM4MjMzMzI0LC0yMD
+cwMjMzODY2LDQwMTc5MjkxMSw3MTY1MjAwODgsLTM2NjgwNDUw
+M119
 -->
