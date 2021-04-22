@@ -77,6 +77,7 @@ Fixing the data skew problem required salting the data sets — meaning adding r
 
 
 
+
 Blinding repartition your data always naïve and effective approach. In which you increase the number of partitions spark RDD or DataFrame. In spark partitions are mapped to tasks. One partition runs on one task. Repartitioning can be done either by number of partitions or provide different keys.
 
 	**Spark Partition Types**
@@ -99,7 +100,7 @@ Blinding repartition your data always naïve and effective approach. In which yo
 	- Increase the number of partitions using repartition on RDD or DataFrame.
 	- The output size of the shuffle data produced by the repartition always be either 128MB or 256MB.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzg1NzE0MzUsLTExNzM2MjM2MTQsLT
+eyJoaXN0b3J5IjpbLTE1NzU5MTIzNDUsLTExNzM2MjM2MTQsLT
 EwMjczMjE4MDcsMTIzNDI4NDQxMiwxNTE1NDk3MTQ1LC04ODQz
 MTkwOTQsLTE4NDM1NjY5NjcsLTE0NDMwMTY1ODAsLTcwNDc2Nj
 YwMiwtNjkwMjgyNjE2LC0zNjAxMzY1OSwxNDgzNTM0NjkzLDE3
