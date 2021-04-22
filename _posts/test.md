@@ -31,6 +31,7 @@ In spark we have partition types called input, output and shuffle. The input and
 	 
 **spark.conf.set("spark.sql.files.maxPartitionBytes","16777216") -> 16MB**
 	
+**2) Output Partition Sizing** For input partition spark generally do a great job of taking care of these input partitions(Spark Defaults input partition size is 128MB) but sometimes it doesn't work properly and there's a lot of reasons.
 
 
 Blinding repartition your data always naïve and effective approach. In which you increase the number of partitions spark RDD or DataFrame. In spark partitions are mapped to tasks. One partition runs on one task. Repartitioning can be done either by number of partitions or provide different keys.
@@ -55,11 +56,11 @@ Blinding repartition your data always naïve and effective approach. In which yo
 	- Increase the number of partitions using repartition on RDD or DataFrame.
 	- The output size of the shuffle data produced by the repartition always be either 128MB or 256MB.  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwNDc2NjYwMiwtNjkwMjgyNjE2LC0zNj
-AxMzY1OSwxNDgzNTM0NjkzLDE3NjI5NTkxNTgsLTYwMjk3NzA1
-OSw0NDc1OTcwNTYsOTY1OTc1NzIzLDEzNDkwMzIyODgsMTk2Nz
-A4OTI4OSwtNTM5NjgwNDE0LDgzOTgzNDI5MSwxODcxMzU0OTA0
-LDExMjk0Mzg3ODUsMTEyOTc5MDgyNiwxNTM4MjMzMzI0LC0yMD
-cwMjMzODY2LDQwMTc5MjkxMSw3MTY1MjAwODgsLTM2NjgwNDUw
-M119
+eyJoaXN0b3J5IjpbMTQ3Mzg1ODE5NCwtNzA0NzY2NjAyLC02OT
+AyODI2MTYsLTM2MDEzNjU5LDE0ODM1MzQ2OTMsMTc2Mjk1OTE1
+OCwtNjAyOTc3MDU5LDQ0NzU5NzA1Niw5NjU5NzU3MjMsMTM0OT
+AzMjI4OCwxOTY3MDg5Mjg5LC01Mzk2ODA0MTQsODM5ODM0Mjkx
+LDE4NzEzNTQ5MDQsMTEyOTQzODc4NSwxMTI5NzkwODI2LDE1Mz
+gyMzMzMjQsLTIwNzAyMzM4NjYsNDAxNzkyOTExLDcxNjUyMDA4
+OF19
 -->
