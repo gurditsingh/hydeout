@@ -133,26 +133,25 @@ To handle skewness in join one option is perform `mapside` Join. but the constra
  - Last we can merge the results of both the joins.
 
 ```scala
-
+	val spark = SparkSession
+	 ...
     val sch = StructType(List(
       StructField("pk", DataTypes.StringType),
       StructField("sales", DataTypes.IntegerType)
     ))
-    val df=spark.read.schema(sch).csv("in.txt")
+    val df=spark.read.schema(sch).csv("path1")
 
-    val df2=spark.read.schema(sch).csv("in2.txt")
+    val df2=spark.read.schema(sch).csv("path2")
 
     val skewedDataDF1=df.filter(col("pk")==="p2")
     val skewedDataDF2=df2.filter(col("pk")==="p2")
 
     val mapSideJoin=broadcast(skewedDataDF1).join(broadcast(skewedDataDF2),df("pk")===df2("pk"),"inner")
 
-
     val nonSkewedDataDF1=df.filter(col("pk")=!="p2")
     val nonSkewedDataDF2=df2.filter(col("pk")=!="p2")
 
     val hashJoin=nonSkewedDataDF1.join(nonSkewedDataDF2,df("pk")===df2("pk"),"inner")
-
 
     mapSideJoin.union(hashJoin).show()
 ```
@@ -161,7 +160,7 @@ To handle skewness in join one option is perform `mapside` Join. but the constra
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDg1ODQ3MTAsLTM1Nzk1OTc1OSwtNz
+eyJoaXN0b3J5IjpbLTE5NzU3NDQ0MjcsLTM1Nzk1OTc1OSwtNz
 M2OTQ2MDAwLC0xODg4ODgxODIwLDE5NjA1MzM0NzcsLTgxNzc4
 OTAyLC0xODEyMjM5MzczLDI0ODUwMTU1NSwtODg5MzUwNzgzLD
 IwNjIzMzg1NDAsODQzNDk1ODUwLC0xMTczNjIzNjE0LC0xMDI3
