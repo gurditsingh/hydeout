@@ -97,15 +97,16 @@ Fixing the data skew problem required salting the data sets — meaning adding r
 
 Fixing the data skew problem required salting the data sets. If we already know the skewed keys then we can add  salting(randomization to the data to allow it to be distributed more evenly) and do two-stages of aggregation. for the rest of the fields we can do direct aggregation and after that union whole the data.
 
- - Instread of saling all the keys, construct two Data frames one with non skewed keys and one with skewed keys..
- - Perform two-phase aggregation only for
+ - Instead of salting all the keys, construct two Data frames one with non skewed keys and one with skewed keys..
+ - Perform two-phase aggregation only for the slated keys and for non skewed keys perform direct aggregation and merge the results.
+ - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3MzQ0NzcyNSwtMTgxMjIzOTM3MywyND
-g1MDE1NTUsLTg4OTM1MDc4MywyMDYyMzM4NTQwLDg0MzQ5NTg1
-MCwtMTE3MzYyMzYxNCwtMTAyNzMyMTgwNywxMjM0Mjg0NDEyLD
-E1MTU0OTcxNDUsLTg4NDMxOTA5NCwtMTg0MzU2Njk2NywtMTQ0
-MzAxNjU4MCwtNzA0NzY2NjAyLC02OTAyODI2MTYsLTM2MDEzNj
-U5LDE0ODM1MzQ2OTMsMTc2Mjk1OTE1OCwtNjAyOTc3MDU5LDQ0
-NzU5NzA1Nl19
+eyJoaXN0b3J5IjpbLTgxNzc4OTAyLC0xODEyMjM5MzczLDI0OD
+UwMTU1NSwtODg5MzUwNzgzLDIwNjIzMzg1NDAsODQzNDk1ODUw
+LC0xMTczNjIzNjE0LC0xMDI3MzIxODA3LDEyMzQyODQ0MTIsMT
+UxNTQ5NzE0NSwtODg0MzE5MDk0LC0xODQzNTY2OTY3LC0xNDQz
+MDE2NTgwLC03MDQ3NjY2MDIsLTY5MDI4MjYxNiwtMzYwMTM2NT
+ksMTQ4MzUzNDY5MywxNzYyOTU5MTU4LC02MDI5NzcwNTksNDQ3
+NTk3MDU2XX0=
 -->
