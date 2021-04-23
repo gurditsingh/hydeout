@@ -93,13 +93,14 @@ Fixing the data skew problem required salting the data sets — meaning adding r
 
 ```
 
-**Salting with Two-Phase aggregation only required fields**
+**Salting with Two-Phase aggregation only for required fields**
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTIyMzkzNzMsMjQ4NTAxNTU1LC04OD
-kzNTA3ODMsMjA2MjMzODU0MCw4NDM0OTU4NTAsLTExNzM2MjM2
-MTQsLTEwMjczMjE4MDcsMTIzNDI4NDQxMiwxNTE1NDk3MTQ1LC
-04ODQzMTkwOTQsLTE4NDM1NjY5NjcsLTE0NDMwMTY1ODAsLTcw
-NDc2NjYwMiwtNjkwMjgyNjE2LC0zNjAxMzY1OSwxNDgzNTM0Nj
-kzLDE3NjI5NTkxNTgsLTYwMjk3NzA1OSw0NDc1OTcwNTYsOTY1
-OTc1NzIzXX0=
+eyJoaXN0b3J5IjpbLTY1ODczNjgwOCwtMTgxMjIzOTM3MywyND
+g1MDE1NTUsLTg4OTM1MDc4MywyMDYyMzM4NTQwLDg0MzQ5NTg1
+MCwtMTE3MzYyMzYxNCwtMTAyNzMyMTgwNywxMjM0Mjg0NDEyLD
+E1MTU0OTcxNDUsLTg4NDMxOTA5NCwtMTg0MzU2Njk2NywtMTQ0
+MzAxNjU4MCwtNzA0NzY2NjAyLC02OTAyODI2MTYsLTM2MDEzNj
+U5LDE0ODM1MzQ2OTMsMTc2Mjk1OTE1OCwtNjAyOTc3MDU5LDQ0
+NzU5NzA1Nl19
 -->
