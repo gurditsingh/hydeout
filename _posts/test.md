@@ -129,14 +129,14 @@ To handle skewness in join one option is perform `mapside` Join. but the constra
 
  - We need to filter out the skewed keys from both the data frames which will be joined later and create separate skewed and nonSkewed data frames .
  - On skewed data frames, broadcast both the skewed data frames which having skewed keys.
- - On skewed data frames, we can simple per
+ - On skewed data frames, we can simple perform the hash
  - 
 
  
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjQ4NzM2NzcsLTM1Nzk1OTc1OSwtNz
+eyJoaXN0b3J5IjpbLTE3NTg0MzA1ODIsLTM1Nzk1OTc1OSwtNz
 M2OTQ2MDAwLC0xODg4ODgxODIwLDE5NjA1MzM0NzcsLTgxNzc4
 OTAyLC0xODEyMjM5MzczLDI0ODUwMTU1NSwtODg5MzUwNzgzLD
 IwNjIzMzg1NDAsODQzNDk1ODUwLC0xMTczNjIzNjE0LC0xMDI3
