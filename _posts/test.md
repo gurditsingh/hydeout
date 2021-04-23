@@ -15,7 +15,7 @@ Suppose we have four partitions of data as below and when they come in at 128 MB
 ### challenge :
 Let's assume one task is taking the maximum amount of data like 70-80 percent to the entire data.
 
- - In that situation you actually don't get any benefit if you increase the number of tasks.
+ - In that situation you actually don't get any benefit if you increase the number of tasks. because one of the task taking most of the data.
  - In that situation if you take larger machines in terms of resources memory, CPU cores and etc but still not get any benefit
 
 ## Handling Skewness in spark
@@ -187,11 +187,11 @@ To handle skewness in join one option is perform `mapside` Join. but the constra
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc1Mzk5MDM2LDE2NTQ0NTU3MjIsLTE5Nz
-U3NDQ0MjcsLTM1Nzk1OTc1OSwtNzM2OTQ2MDAwLC0xODg4ODgx
-ODIwLDE5NjA1MzM0NzcsLTgxNzc4OTAyLC0xODEyMjM5MzczLD
-I0ODUwMTU1NSwtODg5MzUwNzgzLDIwNjIzMzg1NDAsODQzNDk1
-ODUwLC0xMTczNjIzNjE0LC0xMDI3MzIxODA3LDEyMzQyODQ0MT
-IsMTUxNTQ5NzE0NSwtODg0MzE5MDk0LC0xODQzNTY2OTY3LC0x
-NDQzMDE2NTgwXX0=
+eyJoaXN0b3J5IjpbMTA5NjIxMDk1OCwxNjU0NDU1NzIyLC0xOT
+c1NzQ0NDI3LC0zNTc5NTk3NTksLTczNjk0NjAwMCwtMTg4ODg4
+MTgyMCwxOTYwNTMzNDc3LC04MTc3ODkwMiwtMTgxMjIzOTM3My
+wyNDg1MDE1NTUsLTg4OTM1MDc4MywyMDYyMzM4NTQwLDg0MzQ5
+NTg1MCwtMTE3MzYyMzYxNCwtMTAyNzMyMTgwNywxMjM0Mjg0ND
+EyLDE1MTU0OTcxNDUsLTg4NDMxOTA5NCwtMTg0MzU2Njk2Nywt
+MTQ0MzAxNjU4MF19
 -->
