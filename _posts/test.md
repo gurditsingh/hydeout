@@ -74,8 +74,8 @@ Fixing the data skew problem required salting the data sets — meaning adding r
  - Next we can do the Two-Phase aggregation. In the first phase we can do the aggregation(we can say partial aggregation) on salted keys. In the second phase we can remove the salt and do the final aggregation on the original keys.
 
 ```scala
-	val spark = SparkSession
-	...
+	 val spark = SparkSession
+	 ...
 
 	val sch = StructType(List(
       StructField("pk", DataTypes.StringType),
@@ -102,11 +102,11 @@ Fixing the data skew problem required salting the data sets. If we already know 
  - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNzc4OTAyLC0xODEyMjM5MzczLDI0OD
-UwMTU1NSwtODg5MzUwNzgzLDIwNjIzMzg1NDAsODQzNDk1ODUw
-LC0xMTczNjIzNjE0LC0xMDI3MzIxODA3LDEyMzQyODQ0MTIsMT
-UxNTQ5NzE0NSwtODg0MzE5MDk0LC0xODQzNTY2OTY3LC0xNDQz
-MDE2NTgwLC03MDQ3NjY2MDIsLTY5MDI4MjYxNiwtMzYwMTM2NT
-ksMTQ4MzUzNDY5MywxNzYyOTU5MTU4LC02MDI5NzcwNTksNDQ3
-NTk3MDU2XX0=
+eyJoaXN0b3J5IjpbLTEyNDI3NjQxMzQsLTgxNzc4OTAyLC0xOD
+EyMjM5MzczLDI0ODUwMTU1NSwtODg5MzUwNzgzLDIwNjIzMzg1
+NDAsODQzNDk1ODUwLC0xMTczNjIzNjE0LC0xMDI3MzIxODA3LD
+EyMzQyODQ0MTIsMTUxNTQ5NzE0NSwtODg0MzE5MDk0LC0xODQz
+NTY2OTY3LC0xNDQzMDE2NTgwLC03MDQ3NjY2MDIsLTY5MDI4Mj
+YxNiwtMzYwMTM2NTksMTQ4MzUzNDY5MywxNzYyOTU5MTU4LC02
+MDI5NzcwNTldfQ==
 -->
