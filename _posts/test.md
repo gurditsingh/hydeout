@@ -20,7 +20,7 @@ Let's assume one task is taking the maximum amount of data like 70-80 percent to
 
 ## Handling Skewness in spark
 
-## Repartitioning
+## 1. Repartitioning
 In spark we have partition types called input, output and shuffle. The input and output partition size are controlled by the partition size of the input data but the shuffle partition is based on the count so naturally and unfortunately we have to do little math to figure out.
 
 **1) Input Partition Sizing :** For input partition spark generally do a great job of taking care of these input partitions(Spark Defaults input partition size is 128MB) but sometimes it doesn't work properly and there's a lot of reasons.
@@ -50,7 +50,7 @@ In spark we have partition types called input, output and shuffle. The input and
  ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark-shuffle.png?raw=true)
  
 -----
-## Use of Combiner
+## 2. Use of Combiner
 A **Combiner**, also known as a semi-reducer, is an optional class that operates by accepting the inputs from the Map class and thereafter passing the output key-value pairs to the Reducer class. The main function of a **Combiner** is to summarize the map output records with the same key.
 
 The  `groupByKey`  call makes no attempt at merging/combining values, so it’s an expensive operation. Thus the  `combineByKey`  call is just such an optimization. When using  `combineByKey`  values are merged into one value at each partition then each partition value is merged into a single value.
@@ -62,7 +62,7 @@ The  `groupByKey`  call makes no attempt at merging/combining values, so it’s 
 
 ----
 
-## Salting
+## 3. Salting
 
 **Salting with Two-Phase aggregation**
 
@@ -124,13 +124,16 @@ Fixing the data skew problem required salting the data sets. If we already know 
     val merged=nonSkewedSum.union(secondPhase)
 ```
 
+## 4. MapSide Join
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MDUzMzQ3NywtODE3Nzg5MDIsLTE4MT
-IyMzkzNzMsMjQ4NTAxNTU1LC04ODkzNTA3ODMsMjA2MjMzODU0
-MCw4NDM0OTU4NTAsLTExNzM2MjM2MTQsLTEwMjczMjE4MDcsMT
-IzNDI4NDQxMiwxNTE1NDk3MTQ1LC04ODQzMTkwOTQsLTE4NDM1
-NjY5NjcsLTE0NDMwMTY1ODAsLTcwNDc2NjYwMiwtNjkwMjgyNj
-E2LC0zNjAxMzY1OSwxNDgzNTM0NjkzLDE3NjI5NTkxNTgsLTYw
-Mjk3NzA1OV19
+eyJoaXN0b3J5IjpbLTE4ODg4ODE4MjAsMTk2MDUzMzQ3NywtOD
+E3Nzg5MDIsLTE4MTIyMzkzNzMsMjQ4NTAxNTU1LC04ODkzNTA3
+ODMsMjA2MjMzODU0MCw4NDM0OTU4NTAsLTExNzM2MjM2MTQsLT
+EwMjczMjE4MDcsMTIzNDI4NDQxMiwxNTE1NDk3MTQ1LC04ODQz
+MTkwOTQsLTE4NDM1NjY5NjcsLTE0NDMwMTY1ODAsLTcwNDc2Nj
+YwMiwtNjkwMjgyNjE2LC0zNjAxMzY1OSwxNDgzNTM0NjkzLDE3
+NjI5NTkxNThdfQ==
 -->
