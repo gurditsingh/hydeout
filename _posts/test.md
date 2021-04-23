@@ -123,12 +123,31 @@ Fixing the data skew problem required salting the data sets. If we already know 
 
     val merged=nonSkewedSum.union(secondPhase)
 ```
-**Salting in Join**
+**Salting while Joining**
+
 Fixing the data skew problem required salting the data sets. Suppose we have two data frames and one with large data and skewed on particular key. second data frame is medium in size but we can't fit in-memory or perform broadcast join.
 
  - For Large data frame we can add salting in the particular join key within a range and distribute the keys more evenly.
  - For second data frame we need to explode the values within the same range of first data frame.
- 
+```scala
+   val spark = SparkSession
+	 ...
+   val sch = StructType(List(
+      StructField("pk", DataTypes.StringType),
+      StructField("sales", DataTypes.IntegerType)
+    ))
+    val df=spark.read.schema(sch).csv("in.txt")
+
+    val df2=spark.read.schema(sch).csv("in2.txt")
+
+
+    val skewedDF1=df.withColumn("salt_pk", concat(col("pk") , lit("_"),floor(rand()*3)))
+
+    val skewedDF2=df2.withColumn("salt_pk", explode(array( (0 to 3).map(lit(_)): _*)))
+
+    skewedDF1.join(skewedDF2,skewedDF1("salt_pk") === concat(skewedDF2("pk"),lit("_"),skewedDF2("salt_pk")) ).drop("salt_pk")
+
+```
  
 
 ## 4. MapSide Join
@@ -167,11 +186,11 @@ To handle skewness in join one option is perform `mapside` Join. but the constra
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjUyOTM1MzUsLTE5NzU3NDQ0MjcsLT
-M1Nzk1OTc1OSwtNzM2OTQ2MDAwLC0xODg4ODgxODIwLDE5NjA1
-MzM0NzcsLTgxNzc4OTAyLC0xODEyMjM5MzczLDI0ODUwMTU1NS
-wtODg5MzUwNzgzLDIwNjIzMzg1NDAsODQzNDk1ODUwLC0xMTcz
-NjIzNjE0LC0xMDI3MzIxODA3LDEyMzQyODQ0MTIsMTUxNTQ5Nz
-E0NSwtODg0MzE5MDk0LC0xODQzNTY2OTY3LC0xNDQzMDE2NTgw
-LC03MDQ3NjY2MDJdfQ==
+eyJoaXN0b3J5IjpbMTY1NDQ1NTcyMiwtMTk3NTc0NDQyNywtMz
+U3OTU5NzU5LC03MzY5NDYwMDAsLTE4ODg4ODE4MjAsMTk2MDUz
+MzQ3NywtODE3Nzg5MDIsLTE4MTIyMzkzNzMsMjQ4NTAxNTU1LC
+04ODkzNTA3ODMsMjA2MjMzODU0MCw4NDM0OTU4NTAsLTExNzM2
+MjM2MTQsLTEwMjczMjE4MDcsMTIzNDI4NDQxMiwxNTE1NDk3MT
+Q1LC04ODQzMTkwOTQsLTE4NDM1NjY5NjcsLTE0NDMwMTY1ODAs
+LTcwNDc2NjYwMl19
 -->
