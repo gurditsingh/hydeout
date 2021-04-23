@@ -124,7 +124,9 @@ Fixing the data skew problem required salting the data sets. If we already know 
     val merged=nonSkewedSum.union(secondPhase)
 ```
 **Salting in Join**
-Fixing the data skew problem required salting the data sets. Suppose we have two data frames and one with large data and skewed on particular key. second data frame is mediam in size but we can't fit in-memory or perform broadcast join
+Fixing the data skew problem required salting the data sets. Suppose we have two data frames and one with large data and skewed on particular key. second data frame is medium in size but we can't fit in-memory or perform broadcast join.
+
+ - For Large data frame we can add salting in the particular join key and  
 
 ## 4. MapSide Join
 To handle skewness in join one option is perform `mapside` Join. but the constraint is in advance we know the skewed keys and skewed data will be fit in memory for `mapside` join. 
@@ -162,11 +164,11 @@ To handle skewness in join one option is perform `mapside` Join. but the constra
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNTU1OTQxNywtMTk3NTc0NDQyNywtMz
-U3OTU5NzU5LC03MzY5NDYwMDAsLTE4ODg4ODE4MjAsMTk2MDUz
-MzQ3NywtODE3Nzg5MDIsLTE4MTIyMzkzNzMsMjQ4NTAxNTU1LC
-04ODkzNTA3ODMsMjA2MjMzODU0MCw4NDM0OTU4NTAsLTExNzM2
-MjM2MTQsLTEwMjczMjE4MDcsMTIzNDI4NDQxMiwxNTE1NDk3MT
-Q1LC04ODQzMTkwOTQsLTE4NDM1NjY5NjcsLTE0NDMwMTY1ODAs
-LTcwNDc2NjYwMl19
+eyJoaXN0b3J5IjpbMTM1MTY1NjIzLC0xOTc1NzQ0NDI3LC0zNT
+c5NTk3NTksLTczNjk0NjAwMCwtMTg4ODg4MTgyMCwxOTYwNTMz
+NDc3LC04MTc3ODkwMiwtMTgxMjIzOTM3MywyNDg1MDE1NTUsLT
+g4OTM1MDc4MywyMDYyMzM4NTQwLDg0MzQ5NTg1MCwtMTE3MzYy
+MzYxNCwtMTAyNzMyMTgwNywxMjM0Mjg0NDEyLDE1MTU0OTcxND
+UsLTg4NDMxOTA5NCwtMTg0MzU2Njk2NywtMTQ0MzAxNjU4MCwt
+NzA0NzY2NjAyXX0=
 -->
