@@ -125,20 +125,21 @@ Fixing the data skew problem required salting the data sets. If we already know 
 ```
 
 ## 4. MapSide Join
-To handle skewness in join one option is perform mapSide Join. but the constraint is in advance we know the skewed keys and skewed data will be  
+To handle skewness in join one option is perform `mapside` Join. but the constraint is in advance we know the skewed keys and skewed data will be fit in memory for `mapside` join. 
 
- - First we need to filter out the skewed keys from both the data frames which will be joined later.
- - Next we need to broadcast the filtered data frames which having skewed keys.
+ - we need to filter out the skewed keys from both the data frames which will be joined later.
+ -  we need to broadcast the filtered data frames which having skewed keys.
+ - 
 
  
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczNjk0NjAwMCwtMTg4ODg4MTgyMCwxOT
-YwNTMzNDc3LC04MTc3ODkwMiwtMTgxMjIzOTM3MywyNDg1MDE1
-NTUsLTg4OTM1MDc4MywyMDYyMzM4NTQwLDg0MzQ5NTg1MCwtMT
-E3MzYyMzYxNCwtMTAyNzMyMTgwNywxMjM0Mjg0NDEyLDE1MTU0
-OTcxNDUsLTg4NDMxOTA5NCwtMTg0MzU2Njk2NywtMTQ0MzAxNj
-U4MCwtNzA0NzY2NjAyLC02OTAyODI2MTYsLTM2MDEzNjU5LDE0
-ODM1MzQ2OTNdfQ==
+eyJoaXN0b3J5IjpbLTcwOTMwMjQyOSwtNzM2OTQ2MDAwLC0xOD
+g4ODgxODIwLDE5NjA1MzM0NzcsLTgxNzc4OTAyLC0xODEyMjM5
+MzczLDI0ODUwMTU1NSwtODg5MzUwNzgzLDIwNjIzMzg1NDAsOD
+QzNDk1ODUwLC0xMTczNjIzNjE0LC0xMDI3MzIxODA3LDEyMzQy
+ODQ0MTIsMTUxNTQ5NzE0NSwtODg0MzE5MDk0LC0xODQzNTY2OT
+Y3LC0xNDQzMDE2NTgwLC03MDQ3NjY2MDIsLTY5MDI4MjYxNiwt
+MzYwMTM2NTldfQ==
 -->
