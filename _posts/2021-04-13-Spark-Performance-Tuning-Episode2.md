@@ -108,4 +108,4 @@ Each **16VCores** and **64GB RAM**
 
 ## Next ?
 
-Planning to create multiple blogs episodes on Spark Performance Tuning. Understand and covering the various areas of spark where we can improve the pipeline/job.
+Planning to create multiple blogs episodes on Spark Performance Tuning. Covering the various areas of spark where we can improve the pipeline/job.
