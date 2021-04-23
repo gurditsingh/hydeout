@@ -198,4 +198,6 @@ To handle skewness in join one option is perform `mapside` Join. but the constra
 ```
 
  
+## Next ?
 
+Planning to create multiple blogs episodes on Spark Performance Tuning. Covering the various areas of spark where we can improve the pipeline/job.
