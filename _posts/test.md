@@ -126,7 +126,8 @@ Fixing the data skew problem required salting the data sets. If we already know 
 **Salting in Join**
 Fixing the data skew problem required salting the data sets. Suppose we have two data frames and one with large data and skewed on particular key. second data frame is medium in size but we can't fit in-memory or perform broadcast join.
 
- - For Large data frame we can add salting in the particular join key and  
+ - For Large data frame we can add salting in the particular join key within a range and distribute the keys more evenly.
+ - For second data frame we need to  
 
 ## 4. MapSide Join
 To handle skewness in join one option is perform `mapside` Join. but the constraint is in advance we know the skewed keys and skewed data will be fit in memory for `mapside` join. 
@@ -164,11 +165,11 @@ To handle skewness in join one option is perform `mapside` Join. but the constra
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1MTY1NjIzLC0xOTc1NzQ0NDI3LC0zNT
-c5NTk3NTksLTczNjk0NjAwMCwtMTg4ODg4MTgyMCwxOTYwNTMz
-NDc3LC04MTc3ODkwMiwtMTgxMjIzOTM3MywyNDg1MDE1NTUsLT
-g4OTM1MDc4MywyMDYyMzM4NTQwLDg0MzQ5NTg1MCwtMTE3MzYy
-MzYxNCwtMTAyNzMyMTgwNywxMjM0Mjg0NDEyLDE1MTU0OTcxND
-UsLTg4NDMxOTA5NCwtMTg0MzU2Njk2NywtMTQ0MzAxNjU4MCwt
-NzA0NzY2NjAyXX0=
+eyJoaXN0b3J5IjpbLTEzMTM0MTg4MjIsLTE5NzU3NDQ0MjcsLT
+M1Nzk1OTc1OSwtNzM2OTQ2MDAwLC0xODg4ODgxODIwLDE5NjA1
+MzM0NzcsLTgxNzc4OTAyLC0xODEyMjM5MzczLDI0ODUwMTU1NS
+wtODg5MzUwNzgzLDIwNjIzMzg1NDAsODQzNDk1ODUwLC0xMTcz
+NjIzNjE0LC0xMDI3MzIxODA3LDEyMzQyODQ0MTIsMTUxNTQ5Nz
+E0NSwtODg0MzE5MDk0LC0xODQzNTY2OTY3LC0xNDQzMDE2NTgw
+LC03MDQ3NjY2MDJdfQ==
 -->
