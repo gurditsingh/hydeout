@@ -95,9 +95,13 @@ Fixing the data skew problem required salting the data sets — meaning adding r
 
 **Salting with Two-Phase aggregation only for required fields**
 
-Fixing the data skew problem required salting the data sets. If we already know the skewed keys then we can add  salting(randomization to the data to allow it to be distributed more evenly) and do two-stages of aggregation.
+Fixing the data skew problem required salting the data sets. If we already know the skewed keys then we can add  salting(randomization to the data to allow it to be distributed more evenly) and do two-stages of aggregation. for the rest of the fields we can do direct aggregation and after that union whole the data.
+
+ - Instread of saling all the keys, construct two Data frames one with non skewed keys and one with skewed keys..
+ - Perform two-phase aggregation only for
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3NTAxMzQ2OSwtMTgxMjIzOTM3MywyND
+eyJoaXN0b3J5IjpbMTA3MzQ0NzcyNSwtMTgxMjIzOTM3MywyND
 g1MDE1NTUsLTg4OTM1MDc4MywyMDYyMzM4NTQwLDg0MzQ5NTg1
 MCwtMTE3MzYyMzYxNCwtMTAyNzMyMTgwNywxMjM0Mjg0NDEyLD
 E1MTU0OTcxNDUsLTg4NDMxOTA5NCwtMTg0MzU2Njk2NywtMTQ0
