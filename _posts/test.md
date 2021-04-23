@@ -125,15 +125,19 @@ Fixing the data skew problem required salting the data sets. If we already know 
 ```
 
 ## 4. MapSide Join
+To handle skewness in join one option is perform mapSide Join. but the constraint is in advance we know the skew
 
+ - List item
+
+ 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4ODg4ODE4MjAsMTk2MDUzMzQ3NywtOD
-E3Nzg5MDIsLTE4MTIyMzkzNzMsMjQ4NTAxNTU1LC04ODkzNTA3
-ODMsMjA2MjMzODU0MCw4NDM0OTU4NTAsLTExNzM2MjM2MTQsLT
-EwMjczMjE4MDcsMTIzNDI4NDQxMiwxNTE1NDk3MTQ1LC04ODQz
-MTkwOTQsLTE4NDM1NjY5NjcsLTE0NDMwMTY1ODAsLTcwNDc2Nj
-YwMiwtNjkwMjgyNjE2LC0zNjAxMzY1OSwxNDgzNTM0NjkzLDE3
-NjI5NTkxNThdfQ==
+eyJoaXN0b3J5IjpbLTEwMDQxODk3MTAsLTE4ODg4ODE4MjAsMT
+k2MDUzMzQ3NywtODE3Nzg5MDIsLTE4MTIyMzkzNzMsMjQ4NTAx
+NTU1LC04ODkzNTA3ODMsMjA2MjMzODU0MCw4NDM0OTU4NTAsLT
+ExNzM2MjM2MTQsLTEwMjczMjE4MDcsMTIzNDI4NDQxMiwxNTE1
+NDk3MTQ1LC04ODQzMTkwOTQsLTE4NDM1NjY5NjcsLTE0NDMwMT
+Y1ODAsLTcwNDc2NjYwMiwtNjkwMjgyNjE2LC0zNjAxMzY1OSwx
+NDgzNTM0NjkzXX0=
 -->
