@@ -99,14 +99,38 @@ Fixing the data skew problem required salting the data sets. If we already know 
 
  - Instead of salting all the keys, construct two Data frames one with non skewed keys and one with skewed keys..
  - Perform two-phase aggregation only for the slated keys and for non skewed keys perform direct aggregation and merge the results.
- - 
+ 
+```scala
+    val spark = SparkSession
+	 ...
+    val sch = StructType(List(
+      StructField("pk", DataTypes.StringType),
+      StructField("sales", DataTypes.IntegerType)
+    ))
+    val df=spark.read.schema(sch).csv("in.txt")
+
+    val skewedKeys=df.filter(col("pk") === "p2")
+
+    val nonSkewedKeys=df.filter(col("pk") =!= "p2")
+
+    val addSalt=skewedKeys.withColumn("salted_pk", concat(col("pk") , lit("_"),floor(rand()*100)))
+    val firstPhase=addSalt.groupBy("salted_pk").agg(sum("sales").as("sum_sales"))
+
+    val removeSalt=firstPhase.withColumn("pk", substring_index(col("salted_pk"),"_",1))
+    val secondPhase=removeSalt.groupBy("pk").agg(sum("sum_sales").as("sumOfSales"))
+
+    val nonSkewedSum=nonSkewedKeys.groupBy("pk").agg(sum("sales").as("sumOfSales"))
+
+    val merged=nonSkewedSum.union(secondPhase)
+```
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNDI3NjQxMzQsLTgxNzc4OTAyLC0xOD
-EyMjM5MzczLDI0ODUwMTU1NSwtODg5MzUwNzgzLDIwNjIzMzg1
-NDAsODQzNDk1ODUwLC0xMTczNjIzNjE0LC0xMDI3MzIxODA3LD
-EyMzQyODQ0MTIsMTUxNTQ5NzE0NSwtODg0MzE5MDk0LC0xODQz
-NTY2OTY3LC0xNDQzMDE2NTgwLC03MDQ3NjY2MDIsLTY5MDI4Mj
-YxNiwtMzYwMTM2NTksMTQ4MzUzNDY5MywxNzYyOTU5MTU4LC02
-MDI5NzcwNTldfQ==
+eyJoaXN0b3J5IjpbMTk2MDUzMzQ3NywtODE3Nzg5MDIsLTE4MT
+IyMzkzNzMsMjQ4NTAxNTU1LC04ODkzNTA3ODMsMjA2MjMzODU0
+MCw4NDM0OTU4NTAsLTExNzM2MjM2MTQsLTEwMjczMjE4MDcsMT
+IzNDI4NDQxMiwxNTE1NDk3MTQ1LC04ODQzMTkwOTQsLTE4NDM1
+NjY5NjcsLTE0NDMwMTY1ODAsLTcwNDc2NjYwMiwtNjkwMjgyNj
+E2LC0zNjAxMzY1OSwxNDgzNTM0NjkzLDE3NjI5NTkxNTgsLTYw
+Mjk3NzA1OV19
 -->
