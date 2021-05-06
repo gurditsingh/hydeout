@@ -16,9 +16,10 @@ Benefits of choosing an appropriate file format:
 ## Different types of file formats
 Some file formats are designed for general use, others are designed for more specific use cases, and some are designed with specific data characteristics in mind. So there really is quite a lot of  user choice.
 
-![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_ep4_fileformat_types.png?raw=true)
+![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_ep4_fileformats_types.png?raw=true)
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2NzgwMDY4NCw5NTI5NDk5NzQsLTExMj
-M5NTA3MzYsLTIwODg3NDY2MTIsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbOTIxMDk5MjYzLDk1Mjk0OTk3NCwtMTEyMz
+k1MDczNiwtMjA4ODc0NjYxMiwtMjA4ODc0NjYxMl19
 -->
