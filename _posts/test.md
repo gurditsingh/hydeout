@@ -18,10 +18,10 @@ Some file formats are designed for general use, others are designed for more spe
 
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_ep4_fileformats_types.png?raw=true)
 
- - **Unstructured**
+ - **Unstructured :** The Text files are mostly unstructured as you can get
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3NjE5MzYwNiw5MjEwOTkyNjMsOTUyOT
+eyJoaXN0b3J5IjpbLTY1MzkyNjY5OCw5MjEwOTkyNjMsOTUyOT
 Q5OTc0LC0xMTIzOTUwNzM2LC0yMDg4NzQ2NjEyLC0yMDg4NzQ2
 NjEyXX0=
 -->
