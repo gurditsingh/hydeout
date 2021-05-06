@@ -18,10 +18,11 @@ Some file formats are designed for general use, others are designed for more spe
 
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_ep4_fileformats_types.png?raw=true)
 
- - **Unstructured :** The Text files like CSV, TSV are mostly unstructured because text files are raw data and may contain more and less fields. But 
+ - **Unstructured :** The text files like CSV, TSV are mostly unstructured because text files are raw data and may contain more and less fields. But text files are also come under structured data as well.
+ - Semi-Structured 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5ODAzMTQ2LDkyMTA5OTI2Myw5NTI5ND
-k5NzQsLTExMjM5NTA3MzYsLTIwODg3NDY2MTIsLTIwODg3NDY2
-MTJdfQ==
+eyJoaXN0b3J5IjpbLTM1MjkyNjg5NSw5MjEwOTkyNjMsOTUyOT
+Q5OTc0LC0xMTIzOTUwNzM2LC0yMDg4NzQ2NjEyLC0yMDg4NzQ2
+NjEyXX0=
 -->
