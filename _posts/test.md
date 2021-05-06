@@ -1,4 +1,4 @@
-## What is File Format
+## Need of File Formats
 
 A file format is the definition of how information is stored in HDFS. Hadoop does not have a default file format and the choice of a format depends on its use case. File format should be well-defined and expressive. It should be able to handle variety of data structures specifically structs, records, maps, arrays along with strings, numbers etc.
 
@@ -14,6 +14,6 @@ Benefits of choosing an appropriate file format:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjM5NTA3MzYsLTIwODg3NDY2MTIsLT
-IwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbOTUyOTQ5OTc0LC0xMTIzOTUwNzM2LC0yMD
+g4NzQ2NjEyLC0yMDg4NzQ2NjEyXX0=
 -->
