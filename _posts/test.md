@@ -18,8 +18,10 @@ Some file formats are designed for general use, others are designed for more spe
 
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_ep4_fileformats_types.png?raw=true)
 
+ - **Unstructured**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTIxMDk5MjYzLDk1Mjk0OTk3NCwtMTEyMz
-k1MDczNiwtMjA4ODc0NjYxMiwtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbMTQ3NjE5MzYwNiw5MjEwOTkyNjMsOTUyOT
+Q5OTc0LC0xMTIzOTUwNzM2LC0yMDg4NzQ2NjEyLC0yMDg4NzQ2
+NjEyXX0=
 -->
