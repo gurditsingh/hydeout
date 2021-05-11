@@ -44,8 +44,9 @@ In a C-Store, columnar, or Column-oriented database, the data is stored column w
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_ep4_columnwise.png?raw=true)
 
 **Challenges in Row Oriented Storage:** 
+if you want to 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMDYxMDk2NiwtMTMwMDQwMjYzNCwtOD
+eyJoaXN0b3J5IjpbLTgxNjk0MjEwOSwtMTMwMDQwMjYzNCwtOD
 QyMjcwMDc2LDE5MDA5ODMzNTYsLTE1MTA3NDM0NTMsMTU4NTIw
 NTg0MywtNzczNjUwMDc1LDkyMTA5OTI2Myw5NTI5NDk5NzQsLT
 ExMjM5NTA3MzYsLTIwODg3NDY2MTIsLTIwODg3NDY2MTJdfQ==
