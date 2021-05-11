@@ -32,9 +32,10 @@ In a row store, or row oriented database, the data is stored row by row, such th
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_ep4_rowwise.png?raw=true)
 
 **Challenges in Row Oriented Storage:** 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwMDk4MzM1NiwtMTUxMDc0MzQ1MywxNT
-g1MjA1ODQzLC03NzM2NTAwNzUsOTIxMDk5MjYzLDk1Mjk0OTk3
-NCwtMTEyMzk1MDczNiwtMjA4ODc0NjYxMiwtMjA4ODc0NjYxMl
-19
+eyJoaXN0b3J5IjpbLTc3NzQ3NzI3MCwxOTAwOTgzMzU2LC0xNT
+EwNzQzNDUzLDE1ODUyMDU4NDMsLTc3MzY1MDA3NSw5MjEwOTky
+NjMsOTUyOTQ5OTc0LC0xMTIzOTUwNzM2LC0yMDg4NzQ2NjEyLC
+0yMDg4NzQ2NjEyXX0=
 -->
