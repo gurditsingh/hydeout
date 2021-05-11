@@ -41,9 +41,13 @@ In a row store, or row oriented database, the data is stored row by row, such th
 ### 2. Column oriented Storage
 In a C-Store, columnar, or Column-oriented database, the data is stored column wise such that each row of a column will be next to other rows from that same column. In the columnar storage methodology, columns are stored contiguously On-disk. These types of Storage are read optimized.
 
+![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_ep4_columnwise.png?raw=true)
+
+**Challenges in Row Oriented Storage:** 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDA0MDI2MzQsLTg0MjI3MDA3NiwxOT
-AwOTgzMzU2LC0xNTEwNzQzNDUzLDE1ODUyMDU4NDMsLTc3MzY1
-MDA3NSw5MjEwOTkyNjMsOTUyOTQ5OTc0LC0xMTIzOTUwNzM2LC
-0yMDg4NzQ2NjEyLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTcxMDYxMDk2NiwtMTMwMDQwMjYzNCwtOD
+QyMjcwMDc2LDE5MDA5ODMzNTYsLTE1MTA3NDM0NTMsMTU4NTIw
+NTg0MywtNzczNjUwMDc1LDkyMTA5OTI2Myw5NTI5NDk5NzQsLT
+ExMjM5NTA3MzYsLTIwODg3NDY2MTIsLTIwODg3NDY2MTJdfQ==
+
 -->
