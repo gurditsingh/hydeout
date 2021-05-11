@@ -36,10 +36,12 @@ In a row store, or row oriented database, the data is stored row by row, such th
  - if you want to read data from third row of data, A2, B2, C2 is a pretty trivial operation in the row oriented model.
  - if you want to reconstruct the second column then this would require a linear scan of the entire data set.
  - if you want to update the second column values then this model would read the whole data that we don't require for the operation.
+ - if you want to do aggregation then it brings extra data (columns) into memory which is slower than only selecting the columns that you are performing the aggregation on it.
+ - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTc0MDMxNTgsMTkwMDk4MzM1NiwtMT
-UxMDc0MzQ1MywxNTg1MjA1ODQzLC03NzM2NTAwNzUsOTIxMDk5
-MjYzLDk1Mjk0OTk3NCwtMTEyMzk1MDczNiwtMjA4ODc0NjYxMi
-wtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbLTU0NTMzNjQ2NCwxOTAwOTgzMzU2LC0xNT
+EwNzQzNDUzLDE1ODUyMDU4NDMsLTc3MzY1MDA3NSw5MjEwOTky
+NjMsOTUyOTQ5OTc0LC0xMTIzOTUwNzM2LC0yMDg4NzQ2NjEyLC
+0yMDg4NzQ2NjEyXX0=
 -->
