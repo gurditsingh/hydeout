@@ -44,13 +44,16 @@ In a C-Store, columnar, or Column-oriented database, the data is stored column w
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_ep4_columnwise.png?raw=true)
 
 **Challenges in Row Oriented Storage:** 
-if you want to add a new row then it become the fairly intensive process.
-if you have a workflow which requires heavy write then this model become a lot more expensive.
-Most of the column wise models are not ACID compliance.
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0NDY3NTk3NCwtMTMwMDQwMjYzNCwtOD
-QyMjcwMDc2LDE5MDA5ODMzNTYsLTE1MTA3NDM0NTMsMTU4NTIw
-NTg0MywtNzczNjUwMDc1LDkyMTA5OTI2Myw5NTI5NDk5NzQsLT
-ExMjM5NTA3MzYsLTIwODg3NDY2MTIsLTIwODg3NDY2MTJdfQ==
 
+ - if you want to add a new row then it become the fairly intensive process.
+ - if you have a workflow which requires heavy write then this model become a lot more expensive.
+ - Most of the column wise models are not ACID compliance.
+
+### 3. Hybrid Storage
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTk1NjIyNDAxNiwtODQ0Njc1OTc0LC0xMz
+AwNDAyNjM0LC04NDIyNzAwNzYsMTkwMDk4MzM1NiwtMTUxMDc0
+MzQ1MywxNTg1MjA1ODQzLC03NzM2NTAwNzUsOTIxMDk5MjYzLD
+k1Mjk0OTk3NCwtMTEyMzk1MDczNiwtMjA4ODc0NjYxMiwtMjA4
+ODc0NjYxMl19
 -->
