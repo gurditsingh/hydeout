@@ -24,16 +24,16 @@ Some file formats are designed for general use, others are designed for more spe
 
 ## How data stored on Internally
 
-### 1. Row oriented
+### 1. Row oriented Storage
 Row oriented databases are databases that organize data by record, keeping all of the data associated with a record next to each other in memory. A row wise stored methodology, rows are stored contiguously on disk. The data stored one after another inside of block. This type of storage methodology can be great if your goal is to access full rows at a time.
 
 In a row store, or row oriented database, the data is stored row by row, such that the first column of a row will be next to the last column of the previous row. This allows the database write a row quickly because, all that needs to be done to write to it is to tack on another row to the end of the data.
 
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_ep4_rowwise.png?raw=true)
 
-
+**Challenges in Row Oriented Storage:** 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwNTM5ODQ4NywtMTUxMDc0MzQ1MywxNT
+eyJoaXN0b3J5IjpbMTkwMDk4MzM1NiwtMTUxMDc0MzQ1MywxNT
 g1MjA1ODQzLC03NzM2NTAwNzUsOTIxMDk5MjYzLDk1Mjk0OTk3
 NCwtMTEyMzk1MDczNiwtMjA4ODc0NjYxMiwtMjA4ODc0NjYxMl
 19
