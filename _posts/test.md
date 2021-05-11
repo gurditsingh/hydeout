@@ -45,10 +45,11 @@ In a C-Store, columnar, or Column-oriented database, the data is stored column w
 
 **Challenges in Row Oriented Storage:** 
 if you want to add a new row then it become the fairly intensive process.
-if you have a workflow which requires heavy write then this model become a lot more 
+if you have a workflow which requires heavy write then this model become a lot more expensive.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4OTMyMTksLTEzMDA0MDI2MzQsLTg0Mj
-I3MDA3NiwxOTAwOTgzMzU2LC0xNTEwNzQzNDUzLDE1ODUyMDU4
-NDMsLTc3MzY1MDA3NSw5MjEwOTkyNjMsOTUyOTQ5OTc0LC0xMT
-IzOTUwNzM2LC0yMDg4NzQ2NjEyLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbMTY2NjExOTIyNiwtMTMwMDQwMjYzNCwtOD
+QyMjcwMDc2LDE5MDA5ODMzNTYsLTE1MTA3NDM0NTMsMTU4NTIw
+NTg0MywtNzczNjUwMDc1LDkyMTA5OTI2Myw5NTI5NDk5NzQsLT
+ExMjM5NTA3MzYsLTIwODg3NDY2MTIsLTIwODg3NDY2MTJdfQ==
+
 -->
