@@ -24,10 +24,11 @@ Some file formats are designed for general use, others are designed for more spe
 
 ## How data stored on Internally
 
-### **Row oriented**
+### 1. Row oriented
+Row oriented databases are databases that organize data by record, keeping all of the data associated with a record next to each other in memory. 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MjU5NTQsMTU4NTIwNTg0MywtNzczNj
+eyJoaXN0b3J5IjpbNDg3NDQzOTYsMTU4NTIwNTg0MywtNzczNj
 UwMDc1LDkyMTA5OTI2Myw5NTI5NDk5NzQsLTExMjM5NTA3MzYs
 LTIwODg3NDY2MTIsLTIwODg3NDY2MTJdfQ==
 -->
