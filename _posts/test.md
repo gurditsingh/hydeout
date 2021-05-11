@@ -22,9 +22,12 @@ Some file formats are designed for general use, others are designed for more spe
  - **Semi-Structured :** The semi structured data may contains different fields per row and different kinds of fields. Semi structured data that contains tags or markers as an semantic elements, but they aren't as rigid as structured data. Typical examples of semi-structured data are XML and JSON.
  - **Structured :** Structured data formats, rigidly enforce schema and data type rules. Many leverages this knowledge about the data to provide optimizations at query time right out of the box. Typical examples of structured data are Apache Avro, Apache ORC and Apache Parquet.
 
+## How data stored on Internally
+
+### **Row oriented**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NTIwNTg0MywtNzczNjUwMDc1LDkyMT
-A5OTI2Myw5NTI5NDk5NzQsLTExMjM5NTA3MzYsLTIwODg3NDY2
-MTIsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbMTk2MjU5NTQsMTU4NTIwNTg0MywtNzczNj
+UwMDc1LDkyMTA5OTI2Myw5NTI5NDk5NzQsLTExMjM5NTA3MzYs
+LTIwODg3NDY2MTIsLTIwODg3NDY2MTJdfQ==
 -->
