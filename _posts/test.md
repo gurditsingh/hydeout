@@ -27,9 +27,12 @@ Some file formats are designed for general use, others are designed for more spe
 ### 1. Row oriented
 Row oriented databases are databases that organize data by record, keeping all of the data associated with a record next to each other in memory. A row wise stored methodology, rows are stored contiguously on disk. The data stored one after another inside of block. This type of storage methodology can be great if your goal is to access full rows at a time.
 
+![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_ep4_rowwise.png?raw=true)
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTA3NDM0NTMsMTU4NTIwNTg0MywtNz
-czNjUwMDc1LDkyMTA5OTI2Myw5NTI5NDk5NzQsLTExMjM5NTA3
-MzYsLTIwODg3NDY2MTIsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTEwMzczMDczNDMsLTE1MTA3NDM0NTMsMT
+U4NTIwNTg0MywtNzczNjUwMDc1LDkyMTA5OTI2Myw5NTI5NDk5
+NzQsLTExMjM5NTA3MzYsLTIwODg3NDY2MTIsLTIwODg3NDY2MT
+JdfQ==
 -->
