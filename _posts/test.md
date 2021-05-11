@@ -32,11 +32,14 @@ In a row store, or row oriented database, the data is stored row by row, such th
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_ep4_rowwise.png?raw=true)
 
 **Challenges in Row Oriented Storage:** 
-if you want to read data from third row of data, A2, B2, C2 is a pretty trivial operation in the row oriented model.
+
+ - if you want to read data from third row of data, A2, B2, C2 is a pretty trivial operation in the row oriented model.
+ - if you want to reconstruct the second column then this would require a linear scan of the entire data set.
+ - if y
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzE4MzU5MTksMTkwMDk4MzM1NiwtMT
-UxMDc0MzQ1MywxNTg1MjA1ODQzLC03NzM2NTAwNzUsOTIxMDk5
-MjYzLDk1Mjk0OTk3NCwtMTEyMzk1MDczNiwtMjA4ODc0NjYxMi
-wtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbMTQ4NTEyMjcxMSwxOTAwOTgzMzU2LC0xNT
+EwNzQzNDUzLDE1ODUyMDU4NDMsLTc3MzY1MDA3NSw5MjEwOTky
+NjMsOTUyOTQ5OTc0LC0xMTIzOTUwNzM2LC0yMDg4NzQ2NjEyLC
+0yMDg4NzQ2NjEyXX0=
 -->
