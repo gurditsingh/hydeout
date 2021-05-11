@@ -37,10 +37,12 @@ In a row store, or row oriented database, the data is stored row by row, such th
  - if you want to reconstruct the second column then this would require a linear scan of the entire data set.
  - if you want to update the second column values then this model would read the whole data that we don't require for the operation.
  - if you want to do aggregation then it brings extra data (columns) into memory which is slower than only selecting the columns that you are performing the aggregation on it.
- - 
+
+### 2. Column oriented Storage
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0NTMzNjQ2NCwxOTAwOTgzMzU2LC0xNT
+eyJoaXN0b3J5IjpbMTE2OTQyNTM1MSwxOTAwOTgzMzU2LC0xNT
 EwNzQzNDUzLDE1ODUyMDU4NDMsLTc3MzY1MDA3NSw5MjEwOTky
 NjMsOTUyOTQ5OTc0LC0xMTIzOTUwNzM2LC0yMDg4NzQ2NjEyLC
 0yMDg4NzQ2NjEyXX0=
