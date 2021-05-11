@@ -39,10 +39,10 @@ In a row store, or row oriented database, the data is stored row by row, such th
  - if you want to do aggregation then it brings extra data (columns) into memory which is slower than only selecting the columns that you are performing the aggregation on it.
 
 ### 2. Column oriented Storage
-
+In a C-Store, columnar, or Column-oriented database, the data is stored such that each row of a column will be next to other rows from that same column. In the columnar storage methodology, columns are stored contiguously On-disk. These types of Storage are read optimized.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2OTQyNTM1MSwxOTAwOTgzMzU2LC0xNT
+eyJoaXN0b3J5IjpbLTg0MjI3MDA3NiwxOTAwOTgzMzU2LC0xNT
 EwNzQzNDUzLDE1ODUyMDU4NDMsLTc3MzY1MDA3NSw5MjEwOTky
 NjMsOTUyOTQ5OTc0LC0xMTIzOTUwNzM2LC0yMDg4NzQ2NjEyLC
 0yMDg4NzQ2NjEyXX0=
