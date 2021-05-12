@@ -126,13 +126,15 @@ It is a **Hybrid based format** and ORC(Optimized Row Columnar) file format prov
 **Index data** include min and max values for each column and the row’s positions within each column. ORC indexes are used only for the selection of stripes and row groups and not for answering queries.
 **Postscript** contains compression parameters and the size of the compressed footer.
 
+### 4. Parquet
+Parquet is optimized for the paradigm Write Once Read Many (WORM). It writes slowly but reads incredibly quickly, especially when you only access a subset of columns. Parquet is **good choice for heavy workloads when reading portions of data**. For cases where you need to work with whole rows of data, you should use a format like CSV or AVRO. Parquet files are **binary** files that contain **metadata** about their contents. Therefore, without reading/parsing the contents of the file(s), metadata to determine column names, compression/encoding, data types, and even some basic statistical characteristics. Column metadata for a Parquet file is stored at the end of the file, which allows for fast, single-pass writing.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3Mzg4NTA3NywtMzY2NTA5NTE4LC0xNT
-E3MTA1MTY2LC01Njc4MTA3NDYsMTMzMDExMTc1LC0xNjU4MTc4
-ODM4LDE4NTEyMjg4NDMsMTE4NTYxNDk1OSwtOTU2MjI0MDE2LC
-04NDQ2NzU5NzQsLTEzMDA0MDI2MzQsLTg0MjI3MDA3NiwxOTAw
-OTgzMzU2LC0xNTEwNzQzNDUzLDE1ODUyMDU4NDMsLTc3MzY1MD
-A3NSw5MjEwOTkyNjMsOTUyOTQ5OTc0LC0xMTIzOTUwNzM2LC0y
-MDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTE0Njg4NDgwNDIsMTY3Mzg4NTA3NywtMz
+Y2NTA5NTE4LC0xNTE3MTA1MTY2LC01Njc4MTA3NDYsMTMzMDEx
+MTc1LC0xNjU4MTc4ODM4LDE4NTEyMjg4NDMsMTE4NTYxNDk1OS
+wtOTU2MjI0MDE2LC04NDQ2NzU5NzQsLTEzMDA0MDI2MzQsLTg0
+MjI3MDA3NiwxOTAwOTgzMzU2LC0xNTEwNzQzNDUzLDE1ODUyMD
+U4NDMsLTc3MzY1MDA3NSw5MjEwOTkyNjMsOTUyOTQ5OTc0LC0x
+MTIzOTUwNzM2XX0=
 -->
