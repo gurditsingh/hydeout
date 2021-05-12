@@ -57,11 +57,12 @@ The hybrid storage model is a combination of both the row-wise and the columnar-
 ## Types of Workflows
 
 ### OLTP(Online Transaction Processing workflow)
+An OLTP system captures and maintains transaction data. Each transaction involves individual data records made up of multiple fields or columns. Examples include banking and credit card activity or retail checkout scanning. In OLTP, the emphasis is on fast processing, because OLTP databases are read, written, and updated frequently. If a transaction fails, built-in system logic ensures data integrity.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NTYxNDk1OSwtOTU2MjI0MDE2LC04ND
-Q2NzU5NzQsLTEzMDA0MDI2MzQsLTg0MjI3MDA3NiwxOTAwOTgz
-MzU2LC0xNTEwNzQzNDUzLDE1ODUyMDU4NDMsLTc3MzY1MDA3NS
-w5MjEwOTkyNjMsOTUyOTQ5OTc0LC0xMTIzOTUwNzM2LC0yMDg4
-NzQ2NjEyLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbODM1MzgzNDQxLDExODU2MTQ5NTksLTk1Nj
+IyNDAxNiwtODQ0Njc1OTc0LC0xMzAwNDAyNjM0LC04NDIyNzAw
+NzYsMTkwMDk4MzM1NiwtMTUxMDc0MzQ1MywxNTg1MjA1ODQzLC
+03NzM2NTAwNzUsOTIxMDk5MjYzLDk1Mjk0OTk3NCwtMTEyMzk1
+MDczNiwtMjA4ODc0NjYxMiwtMjA4ODc0NjYxMl19
 -->
