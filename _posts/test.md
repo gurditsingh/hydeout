@@ -112,12 +112,15 @@ It is a **Row-based format** that has a high degree of splitting. It is also des
 
 It is a **Hybrid based format** and ORC(Optimized Row Columnar) file format provides a highly efficient way to store data. It was designed to overcome the limitations of other file formats. It ideally stores data compact and enables skipping over irrelevant parts without the need for large, complex, or manually maintained indices.
 
+![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_ep4_orc.png?raw=true)
+
+Working
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NjUwOTUxOCwtMTUxNzEwNTE2NiwtNT
-Y3ODEwNzQ2LDEzMzAxMTE3NSwtMTY1ODE3ODgzOCwxODUxMjI4
-ODQzLDExODU2MTQ5NTksLTk1NjIyNDAxNiwtODQ0Njc1OTc0LC
-0xMzAwNDAyNjM0LC04NDIyNzAwNzYsMTkwMDk4MzM1NiwtMTUx
-MDc0MzQ1MywxNTg1MjA1ODQzLC03NzM2NTAwNzUsOTIxMDk5Mj
-YzLDk1Mjk0OTk3NCwtMTEyMzk1MDczNiwtMjA4ODc0NjYxMiwt
-MjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbMTYwNDY0MTg0MSwtMzY2NTA5NTE4LC0xNT
+E3MTA1MTY2LC01Njc4MTA3NDYsMTMzMDExMTc1LC0xNjU4MTc4
+ODM4LDE4NTEyMjg4NDMsMTE4NTYxNDk1OSwtOTU2MjI0MDE2LC
+04NDQ2NzU5NzQsLTEzMDA0MDI2MzQsLTg0MjI3MDA3NiwxOTAw
+OTgzMzU2LC0xNTEwNzQzNDUzLDE1ODUyMDU4NDMsLTc3MzY1MD
+A3NSw5MjEwOTkyNjMsOTUyOTQ5OTc0LC0xMTIzOTUwNzM2LC0y
+MDg4NzQ2NjEyXX0=
 -->
