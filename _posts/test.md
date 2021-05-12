@@ -154,9 +154,10 @@ When reading data from the data storage, only those columns that are required wi
 ## Final Words
 
 Think about the organizations workload and see the workflow needs OLTP or OLAP. which further you can decide the file format according to the workflow(Row, Columnar or Hybrid).
+File format selection can have a large performance implications.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1NjcyOTMwMywtODAwMzY3ODcsMTU0MD
+eyJoaXN0b3J5IjpbMTU2NTgxMTc2MiwtODAwMzY3ODcsMTU0MD
 I3NjU0OSwxNjczODg1MDc3LC0zNjY1MDk1MTgsLTE1MTcxMDUx
 NjYsLTU2NzgxMDc0NiwxMzMwMTExNzUsLTE2NTgxNzg4MzgsMT
 g1MTIyODg0MywxMTg1NjE0OTU5LC05NTYyMjQwMTYsLTg0NDY3
