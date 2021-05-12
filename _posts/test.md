@@ -97,8 +97,17 @@ It is a **row-based format** and JSON (JavaScript object notation) data are pres
 
 ### 3. Avro
 It is a **row-based format** that has a high degree of splitting. It is also described as a data serialization system similar to Java Serialization. The schema is stored in JSON format, while the data is stored in _binary format_, which minimizes file size and maximizes efficiency. Avro has reliable support for schema evolution by managing added, missing, and changed fields. Since Avro is a row-based format, it is the preferred format for handling large amounts of records as it is easy to add new rows.
+
+ - Data format and Data Serialization
+ - Schema stored in a file header
+ - Row-based
+ - binary format
+ - Compressible
+ - Splittable
+ - Supports complex type
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg1MTgwOTk3LC01Njc4MTA3NDYsMTMzMD
+eyJoaXN0b3J5IjpbNDA1OTY3NzUzLC01Njc4MTA3NDYsMTMzMD
 ExMTc1LC0xNjU4MTc4ODM4LDE4NTEyMjg4NDMsMTE4NTYxNDk1
 OSwtOTU2MjI0MDE2LC04NDQ2NzU5NzQsLTEzMDA0MDI2MzQsLT
 g0MjI3MDA3NiwxOTAwOTgzMzU2LC0xNTEwNzQzNDUzLDE1ODUy
