@@ -128,7 +128,7 @@ It is a **Hybrid based format** and ORC(Optimized Row Columnar) file format prov
 
 ### 5. Parquet
 
-Parquet is optimized for the paradigm Write Once Read Many (WORM). It writes slowly but reads incredibly quickly, especially when you only access a subset of columns. Parquet is **good choice for heavy workloads when reading portions of data**. For cases where you need to work with whole rows of data, you should use a format like CSV or AVRO. Parquet files are **binary** files that contain **metadata** about their contents. Therefore, without reading/parsing the contents of the file(s), metadata is used to determine column names, compression/encoding, data types, and even some basic statistical characteristics. Column metadata for a Parquet file is stored at the end of the file, which allows for fast, single-pass writing.
+It is a **Hybrid based format** and Parquet is optimized for the paradigm Write Once Read Many (WORM). It writes slowly but reads incredibly quickly, especially when you only access a subset of columns. Parquet is **good choice for heavy workloads when reading portions of data**. For cases where you need to work with whole rows of data, you should use a format like CSV or AVRO. Parquet files are **binary** files that contain **metadata** about their contents. Therefore, without reading/parsing the contents of the file(s), metadata is used to determine column names, compression/encoding, data types, and even some basic statistical characteristics. Column metadata for a Parquet file is stored at the end of the file, which allows for fast, single-pass writing.
 
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_ep4_parquet.png?raw=true)
 
@@ -155,13 +155,17 @@ When reading data from the data storage, only those columns that are required wi
 
 Think about the organizations workload and see the workflow needs OLTP or OLAP. which further you can decide the file format according to the workflow(Row, Columnar or Hybrid). File format selection can have a large performance gain. Organizations workflow can decide the file format so that better results can be gathered.
 
+## Next ?
+
+Planning to create multiple blogs episodes on Spark Performance Tuning. Covering the various areas of spark where we can improve the pipeline/job.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3NTgwMjIxOCwtODAwMzY3ODcsMTU0MD
-I3NjU0OSwxNjczODg1MDc3LC0zNjY1MDk1MTgsLTE1MTcxMDUx
-NjYsLTU2NzgxMDc0NiwxMzMwMTExNzUsLTE2NTgxNzg4MzgsMT
-g1MTIyODg0MywxMTg1NjE0OTU5LC05NTYyMjQwMTYsLTg0NDY3
-NTk3NCwtMTMwMDQwMjYzNCwtODQyMjcwMDc2LDE5MDA5ODMzNT
-YsLTE1MTA3NDM0NTMsMTU4NTIwNTg0MywtNzczNjUwMDc1LDky
-MTA5OTI2M119
+eyJoaXN0b3J5IjpbMjY5NTM1MzM2LC04MDAzNjc4NywxNTQwMj
+c2NTQ5LDE2NzM4ODUwNzcsLTM2NjUwOTUxOCwtMTUxNzEwNTE2
+NiwtNTY3ODEwNzQ2LDEzMzAxMTE3NSwtMTY1ODE3ODgzOCwxOD
+UxMjI4ODQzLDExODU2MTQ5NTksLTk1NjIyNDAxNiwtODQ0Njc1
+OTc0LC0xMzAwNDAyNjM0LC04NDIyNzAwNzYsMTkwMDk4MzM1Ni
+wtMTUxMDc0MzQ1MywxNTg1MjA1ODQzLC03NzM2NTAwNzUsOTIx
+MDk5MjYzXX0=
 -->
