@@ -62,12 +62,13 @@ An OLTP system captures and maintains transaction data. Each transaction involve
  - It operates with short lived transactions or queries.
  - More processing focused rather than analysis focused.
  - It focused towards row based processing rather than column based processing.
- - 
+ - In this data is generally updated and deleted on a per record basis or transaction basis.
+ - It is Normalized databases for efficiency.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4ODE3NDQ1NywxMTg1NjE0OTU5LC05NT
-YyMjQwMTYsLTg0NDY3NTk3NCwtMTMwMDQwMjYzNCwtODQyMjcw
-MDc2LDE5MDA5ODMzNTYsLTE1MTA3NDM0NTMsMTU4NTIwNTg0My
-wtNzczNjUwMDc1LDkyMTA5OTI2Myw5NTI5NDk5NzQsLTExMjM5
-NTA3MzYsLTIwODg3NDY2MTIsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbLTEyNDgwMjg4NjIsMTE4NTYxNDk1OSwtOT
+U2MjI0MDE2LC04NDQ2NzU5NzQsLTEzMDA0MDI2MzQsLTg0MjI3
+MDA3NiwxOTAwOTgzMzU2LC0xNTEwNzQzNDUzLDE1ODUyMDU4ND
+MsLTc3MzY1MDA3NSw5MjEwOTkyNjMsOTUyOTQ5OTc0LC0xMTIz
+OTUwNzM2LC0yMDg4NzQ2NjEyLC0yMDg4NzQ2NjEyXX0=
 -->
