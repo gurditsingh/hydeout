@@ -127,14 +127,16 @@ It is a **Hybrid based format** and ORC(Optimized Row Columnar) file format prov
 **Postscript** contains compression parameters and the size of the compressed footer.
 
 ### 4. Parquet
-Parquet is optimized for the paradigm Write Once Read Many (WORM). It writes slowly but reads incredibly quickly, especially when you only access a subset of columns. Parquet is **good choice for heavy workloads when reading portions of data**. For cases where you need to work with whole rows of data, you should use a format like CSV or AVRO. Parquet files are **binary** files that contain **metadata** about their contents. Therefore, without reading/parsing the contents of the file(s), metadata to determine column names, compression/encoding, data types, and even some basic statistical characteristics. Column metadata for a Parquet file is stored at the end of the file, which allows for fast, single-pass writing.
+Parquet is optimized for the paradigm Write Once Read Many (WORM). It writes slowly but reads incredibly quickly, especially when you only access a subset of columns. Parquet is **good choice for heavy workloads when reading portions of data**. For cases where you need to work with whole rows of data, you should use a format like CSV or AVRO. Parquet files are **binary** files that contain **metadata** about their contents. Therefore, without reading/parsing the contents of the file(s), metadata is used to determine column names, compression/encoding, data types, and even some basic statistical characteristics. Column metadata for a Parquet file is stored at the end of the file, which allows for fast, single-pass writing.
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Njg4NDgwNDIsMTY3Mzg4NTA3NywtMz
-Y2NTA5NTE4LC0xNTE3MTA1MTY2LC01Njc4MTA3NDYsMTMzMDEx
-MTc1LC0xNjU4MTc4ODM4LDE4NTEyMjg4NDMsMTE4NTYxNDk1OS
-wtOTU2MjI0MDE2LC04NDQ2NzU5NzQsLTEzMDA0MDI2MzQsLTg0
-MjI3MDA3NiwxOTAwOTgzMzU2LC0xNTEwNzQzNDUzLDE1ODUyMD
-U4NDMsLTc3MzY1MDA3NSw5MjEwOTkyNjMsOTUyOTQ5OTc0LC0x
-MTIzOTUwNzM2XX0=
+eyJoaXN0b3J5IjpbMTU0MDI3NjU0OSwxNjczODg1MDc3LC0zNj
+Y1MDk1MTgsLTE1MTcxMDUxNjYsLTU2NzgxMDc0NiwxMzMwMTEx
+NzUsLTE2NTgxNzg4MzgsMTg1MTIyODg0MywxMTg1NjE0OTU5LC
+05NTYyMjQwMTYsLTg0NDY3NTk3NCwtMTMwMDQwMjYzNCwtODQy
+MjcwMDc2LDE5MDA5ODMzNTYsLTE1MTA3NDM0NTMsMTU4NTIwNT
+g0MywtNzczNjUwMDc1LDkyMTA5OTI2Myw5NTI5NDk5NzQsLTEx
+MjM5NTA3MzZdfQ==
 -->
