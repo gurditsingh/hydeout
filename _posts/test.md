@@ -127,16 +127,20 @@ It is a **Hybrid based format** and ORC(Optimized Row Columnar) file format prov
 **Postscript** contains compression parameters and the size of the compressed footer.
 
 ### 4. Parquet
+
 Parquet is optimized for the paradigm Write Once Read Many (WORM). It writes slowly but reads incredibly quickly, especially when you only access a subset of columns. Parquet is **good choice for heavy workloads when reading portions of data**. For cases where you need to work with whole rows of data, you should use a format like CSV or AVRO. Parquet files are **binary** files that contain **metadata** about their contents. Therefore, without reading/parsing the contents of the file(s), metadata is used to determine column names, compression/encoding, data types, and even some basic statistical characteristics. Column metadata for a Parquet file is stored at the end of the file, which allows for fast, single-pass writing.
 
+![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_ep4_parquet.png?raw=true)
 
-
+-   **Row group**: A logical horizontal partitioning of the data into rows. A row group consists of a column chunk for each column in the dataset.
+-   **Column chunk**: A chunk of the data for a particular column. These column chunks live in a particular row group and are guaranteed to be contiguous in the file.
+-   **Page**: Column chunks are divided up into pages written back to back. The pages share a common header and readers can skip the page they are not interested in.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0MDI3NjU0OSwxNjczODg1MDc3LC0zNj
-Y1MDk1MTgsLTE1MTcxMDUxNjYsLTU2NzgxMDc0NiwxMzMwMTEx
-NzUsLTE2NTgxNzg4MzgsMTg1MTIyODg0MywxMTg1NjE0OTU5LC
-05NTYyMjQwMTYsLTg0NDY3NTk3NCwtMTMwMDQwMjYzNCwtODQy
-MjcwMDc2LDE5MDA5ODMzNTYsLTE1MTA3NDM0NTMsMTU4NTIwNT
-g0MywtNzczNjUwMDc1LDkyMTA5OTI2Myw5NTI5NDk5NzQsLTEx
-MjM5NTA3MzZdfQ==
+eyJoaXN0b3J5IjpbLTU4Nzk2Mjk0NCwxNTQwMjc2NTQ5LDE2Nz
+M4ODUwNzcsLTM2NjUwOTUxOCwtMTUxNzEwNTE2NiwtNTY3ODEw
+NzQ2LDEzMzAxMTE3NSwtMTY1ODE3ODgzOCwxODUxMjI4ODQzLD
+ExODU2MTQ5NTksLTk1NjIyNDAxNiwtODQ0Njc1OTc0LC0xMzAw
+NDAyNjM0LC04NDIyNzAwNzYsMTkwMDk4MzM1NiwtMTUxMDc0Mz
+Q1MywxNTg1MjA1ODQzLC03NzM2NTAwNzUsOTIxMDk5MjYzLDk1
+Mjk0OTk3NF19
 -->
