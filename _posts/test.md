@@ -135,12 +135,19 @@ Parquet is optimized for the paradigm Write Once Read Many (WORM). It writes slo
 -   **Row group**: A logical horizontal partitioning of the data into rows. A row group consists of a column chunk for each column in the dataset.
 -   **Column chunk**: A chunk of the data for a particular column. These column chunks live in a particular row group and are guaranteed to be contiguous in the file.
 -   **Page**: Column chunks are divided up into pages written back to back. The pages share a common header and readers can skip the page they are not interested in.
+
+
+**Footer contains the following**
+
+-   File metadata- The file metadata contains the locations of all the column metadata start locations. Readers are expected to first read the file metadata to find all the column chunks they are interested in. The column chunks should then be read sequentially. It also includes the format version, the schema, and any extra key-value pairs.
+-   length of file metadata (4-byte)
+-   magic number “PAR1” (4-byte)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4Nzk2Mjk0NCwxNTQwMjc2NTQ5LDE2Nz
-M4ODUwNzcsLTM2NjUwOTUxOCwtMTUxNzEwNTE2NiwtNTY3ODEw
-NzQ2LDEzMzAxMTE3NSwtMTY1ODE3ODgzOCwxODUxMjI4ODQzLD
-ExODU2MTQ5NTksLTk1NjIyNDAxNiwtODQ0Njc1OTc0LC0xMzAw
-NDAyNjM0LC04NDIyNzAwNzYsMTkwMDk4MzM1NiwtMTUxMDc0Mz
-Q1MywxNTg1MjA1ODQzLC03NzM2NTAwNzUsOTIxMDk5MjYzLDk1
-Mjk0OTk3NF19
+eyJoaXN0b3J5IjpbLTE2NTgyNDE4MzEsMTU0MDI3NjU0OSwxNj
+czODg1MDc3LC0zNjY1MDk1MTgsLTE1MTcxMDUxNjYsLTU2Nzgx
+MDc0NiwxMzMwMTExNzUsLTE2NTgxNzg4MzgsMTg1MTIyODg0My
+wxMTg1NjE0OTU5LC05NTYyMjQwMTYsLTg0NDY3NTk3NCwtMTMw
+MDQwMjYzNCwtODQyMjcwMDc2LDE5MDA5ODMzNTYsLTE1MTA3ND
+M0NTMsMTU4NTIwNTg0MywtNzczNjUwMDc1LDkyMTA5OTI2Myw5
+NTI5NDk5NzRdfQ==
 -->
