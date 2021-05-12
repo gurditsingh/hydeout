@@ -124,9 +124,11 @@ It is a **Hybrid based format** and ORC(Optimized Row Columnar) file format prov
 **Stripe footer**  contains a directory of stream locations.
 **Row data** is used in table scans.
 **Index data** include min and max values for each column and the row’s positions within each column. ORC indexes are used only for the selection of stripes and row groups and not for answering queries.
+**Postscript** contains compression parameters and the size of the compressed footer.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU1NDIyMDUwNiwtMzY2NTA5NTE4LC0xNT
+eyJoaXN0b3J5IjpbMTY3Mzg4NTA3NywtMzY2NTA5NTE4LC0xNT
 E3MTA1MTY2LC01Njc4MTA3NDYsMTMzMDExMTc1LC0xNjU4MTc4
 ODM4LDE4NTEyMjg4NDMsMTE4NTYxNDk1OSwtOTU2MjI0MDE2LC
 04NDQ2NzU5NzQsLTEzMDA0MDI2MzQsLTg0MjI3MDA3NiwxOTAw
