@@ -153,14 +153,14 @@ When reading data from the data storage, only those columns that are required wi
 
 ## Final Words
 
-Think about the organizations workload and see the workflow needs OLTP or OLAP. which further you can decide the file format according to the workflow(Row, Colu).
+Think about the organizations workload and see the workflow needs OLTP or OLAP. which further you can decide the file format according to the workflow(Row, Columnar or Hybrid).
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODk1MDY2NTQsLTgwMDM2Nzg3LDE1ND
-AyNzY1NDksMTY3Mzg4NTA3NywtMzY2NTA5NTE4LC0xNTE3MTA1
-MTY2LC01Njc4MTA3NDYsMTMzMDExMTc1LC0xNjU4MTc4ODM4LD
-E4NTEyMjg4NDMsMTE4NTYxNDk1OSwtOTU2MjI0MDE2LC04NDQ2
-NzU5NzQsLTEzMDA0MDI2MzQsLTg0MjI3MDA3NiwxOTAwOTgzMz
-U2LC0xNTEwNzQzNDUzLDE1ODUyMDU4NDMsLTc3MzY1MDA3NSw5
-MjEwOTkyNjNdfQ==
+eyJoaXN0b3J5IjpbMTg1NjcyOTMwMywtODAwMzY3ODcsMTU0MD
+I3NjU0OSwxNjczODg1MDc3LC0zNjY1MDk1MTgsLTE1MTcxMDUx
+NjYsLTU2NzgxMDc0NiwxMzMwMTExNzUsLTE2NTgxNzg4MzgsMT
+g1MTIyODg0MywxMTg1NjE0OTU5LC05NTYyMjQwMTYsLTg0NDY3
+NTk3NCwtMTMwMDQwMjYzNCwtODQyMjcwMDc2LDE5MDA5ODMzNT
+YsLTE1MTA3NDM0NTMsMTU4NTIwNTg0MywtNzczNjUwMDc1LDky
+MTA5OTI2M119
 -->
