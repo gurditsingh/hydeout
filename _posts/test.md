@@ -147,9 +147,11 @@ Parquet is optimized for the paradigm Write Once Read Many (WORM). It writes slo
 
 The basic idea of predicate pushdown is that certain parts of queries (predicates) can be "pushed" to where the data is stored. For example, when we give some filtering criteria, the data storage tries to filter out the records at the time of reading. The advantage of predicate pushdown is that there are fewer disk i/o operations and therefore overall performance is better. Otherwise, all data will be written to memory, and then filtering will have to be performed, resulting in higher memory requirements.
 
-This optimization can significantly reduce the request/processing time by filtering the data earlier than later. Depending on the processing framework, the predicate pushdown may optimize the query by performing such actions as filtering data before it is transferred over the network, filtering data before it is loaded into memory, or skipping reading entire files or pieces of files
+This optimization can significantly reduce the request/processing time by filtering the data earlier than later. Depending on the processing framework, the predicate pushdown may optimize the query by performing such actions as filtering data before it is transferred over the network, filtering data before it is loaded into memory, or skipping reading entire files or pieces of files.
+
+When reading data from the data storage, only those columns that are required will be read, not all fields will be read. Typically, column formats such as Parquets follow this concept, resulting in better I/O performance.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc1Mzk0NTExLDE1NDAyNzY1NDksMTY3Mz
+eyJoaXN0b3J5IjpbLTgwMDM2Nzg3LDE1NDAyNzY1NDksMTY3Mz
 g4NTA3NywtMzY2NTA5NTE4LC0xNTE3MTA1MTY2LC01Njc4MTA3
 NDYsMTMzMDExMTc1LC0xNjU4MTc4ODM4LDE4NTEyMjg4NDMsMT
 E4NTYxNDk1OSwtOTU2MjI0MDE2LC04NDQ2NzU5NzQsLTEzMDA0
