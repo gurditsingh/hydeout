@@ -126,7 +126,7 @@ It is a **Hybrid based format** and ORC(Optimized Row Columnar) file format prov
 **Index data** include min and max values for each column and the row’s positions within each column. ORC indexes are used only for the selection of stripes and row groups and not for answering queries.
 **Postscript** contains compression parameters and the size of the compressed footer.
 
-### 4. Parquet
+### 5. Parquet
 
 Parquet is optimized for the paradigm Write Once Read Many (WORM). It writes slowly but reads incredibly quickly, especially when you only access a subset of columns. Parquet is **good choice for heavy workloads when reading portions of data**. For cases where you need to work with whole rows of data, you should use a format like CSV or AVRO. Parquet files are **binary** files that contain **metadata** about their contents. Therefore, without reading/parsing the contents of the file(s), metadata is used to determine column names, compression/encoding, data types, and even some basic statistical characteristics. Column metadata for a Parquet file is stored at the end of the file, which allows for fast, single-pass writing.
 
@@ -150,12 +150,17 @@ The basic idea of predicate pushdown is that certain parts of queries (predicate
 This optimization can significantly reduce the request/processing time by filtering the data earlier than later. Depending on the processing framework, the predicate pushdown may optimize the query by performing such actions as filtering data before it is transferred over the network, filtering data before it is loaded into memory, or skipping reading entire files or pieces of files.
 
 When reading data from the data storage, only those columns that are required will be read, not all fields will be read. Typically, column formats such as Parquets follow this concept, resulting in better I/O performance.
+
+## Final Words
+
+Think about the organizations workload 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMDM2Nzg3LDE1NDAyNzY1NDksMTY3Mz
-g4NTA3NywtMzY2NTA5NTE4LC0xNTE3MTA1MTY2LC01Njc4MTA3
-NDYsMTMzMDExMTc1LC0xNjU4MTc4ODM4LDE4NTEyMjg4NDMsMT
-E4NTYxNDk1OSwtOTU2MjI0MDE2LC04NDQ2NzU5NzQsLTEzMDA0
-MDI2MzQsLTg0MjI3MDA3NiwxOTAwOTgzMzU2LC0xNTEwNzQzND
-UzLDE1ODUyMDU4NDMsLTc3MzY1MDA3NSw5MjEwOTkyNjMsOTUy
-OTQ5OTc0XX0=
+eyJoaXN0b3J5IjpbLTEwNDc5Nzc1NjYsLTgwMDM2Nzg3LDE1ND
+AyNzY1NDksMTY3Mzg4NTA3NywtMzY2NTA5NTE4LC0xNTE3MTA1
+MTY2LC01Njc4MTA3NDYsMTMzMDExMTc1LC0xNjU4MTc4ODM4LD
+E4NTEyMjg4NDMsMTE4NTYxNDk1OSwtOTU2MjI0MDE2LC04NDQ2
+NzU5NzQsLTEzMDA0MDI2MzQsLTg0MjI3MDA3NiwxOTAwOTgzMz
+U2LC0xNTEwNzQzNDUzLDE1ODUyMDU4NDMsLTc3MzY1MDA3NSw5
+MjEwOTkyNjNdfQ==
 -->
