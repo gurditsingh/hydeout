@@ -54,11 +54,11 @@ The hybrid storage model is a combination of both the row-wise and the columnar-
 
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_ep4_hybrid.png?raw=true)
 
-Types of workflows:
+Types of Workflows  :
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3MzU5ODk1LC05NTYyMjQwMTYsLTg0ND
-Y3NTk3NCwtMTMwMDQwMjYzNCwtODQyMjcwMDc2LDE5MDA5ODMz
-NTYsLTE1MTA3NDM0NTMsMTU4NTIwNTg0MywtNzczNjUwMDc1LD
-kyMTA5OTI2Myw5NTI5NDk5NzQsLTExMjM5NTA3MzYsLTIwODg3
-NDY2MTIsLTIwODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbMTU1ODkxNjM2MSwtOTU2MjI0MDE2LC04ND
+Q2NzU5NzQsLTEzMDA0MDI2MzQsLTg0MjI3MDA3NiwxOTAwOTgz
+MzU2LC0xNTEwNzQzNDUzLDE1ODUyMDU4NDMsLTc3MzY1MDA3NS
+w5MjEwOTkyNjMsOTUyOTQ5OTc0LC0xMTIzOTUwNzM2LC0yMDg4
+NzQ2NjEyLC0yMDg4NzQ2NjEyXX0=
 -->
