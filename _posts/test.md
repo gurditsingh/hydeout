@@ -22,7 +22,7 @@ Some file formats are designed for general use, others are designed for more spe
  - **Semi-Structured :** The semi structured data may contains different fields per row and different kinds of fields. Semi structured data that contains tags or markers as an semantic elements, but they aren't as rigid as structured data. Typical examples of semi-structured data are XML and JSON.
  - **Structured :** Structured data formats, rigidly enforce schema and data type rules. Many leverages this knowledge about the data to provide optimizations at query time right out of the box. Typical examples of structured data are Apache Avro, Apache ORC and Apache Parquet.
 
-## How data stored Internally
+## Physical Layout of  stored Internally
 
 ### 1. Row oriented Storage
 Row oriented databases are databases that organize data by record, keeping all of the data associated with a record next to each other in memory. A row wise stored methodology, rows are stored contiguously on disk. The data stored one after another inside of block. This type of storage methodology can be great if your goal is to access full rows at a time.
@@ -54,7 +54,7 @@ The hybrid storage model is a combination of both the row-wise and the columnar-
 
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_ep4_hybrid.png?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4OTE2NjY4MCwtOTU2MjI0MDE2LC04ND
+eyJoaXN0b3J5IjpbMjA5MDgzNDEzNiwtOTU2MjI0MDE2LC04ND
 Q2NzU5NzQsLTEzMDA0MDI2MzQsLTg0MjI3MDA3NiwxOTAwOTgz
 MzU2LC0xNTEwNzQzNDUzLDE1ODUyMDU4NDMsLTc3MzY1MDA3NS
 w5MjEwOTkyNjMsOTUyOTQ5OTc0LC0xMTIzOTUwNzM2LC0yMDg4
