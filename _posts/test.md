@@ -88,8 +88,16 @@ CSV files (comma-separated values) are usually used to exchange tabular data bet
 ### 1. JSON
 JSON (JavaScript object notation) data are presented as key-value pairs in a partially structured format. JSON is often compared to XML because it can store data in a hierarchical format. Both formats are user-readable, but JSON documents are typically much smaller than XML.
 
+ - Self describing schema
+ - Row-based
+ - Compressible
+ - Splittable
+ - Supports complex type
+ - Supports hierarchical structures
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2OTY1ODgzOCwtNTY3ODEwNzQ2LDEzMz
+eyJoaXN0b3J5IjpbLTc2OTQzOTc0NCwtNTY3ODEwNzQ2LDEzMz
 AxMTE3NSwtMTY1ODE3ODgzOCwxODUxMjI4ODQzLDExODU2MTQ5
 NTksLTk1NjIyNDAxNiwtODQ0Njc1OTc0LC0xMzAwNDAyNjM0LC
 04NDIyNzAwNzYsMTkwMDk4MzM1NiwtMTUxMDc0MzQ1MywxNTg1
