@@ -76,7 +76,7 @@ An OLTP system captures and maintains transaction data. Each transaction involve
 ## Let's examine the different file formats
 
 ### 1. CSV
-CSV files (comma-separated values) are usually used to exchange tabular data between systems using plain text. CSV is a row-based file format, which means that each row of the file is a row in the table. Essentially, CSV contains a header row that contains column names for the data, otherwise, files are considered partially structured. CSV files may not initially contain hierarchical or relational data. Data connections are usually established using multiple CSV files. Foreign keys are stored in columns of one or more files, but connections between these files are not expressed by the format itself.
+It is a **row-based format** and CSV files (comma-separated values) are usually used to exchange tabular data between systems using plain text. CSV is a row-based file format, which means that each row of the file is a row in the table. Essentially, CSV contains a header row that contains column names for the data, otherwise, files are considered partially structured. CSV files may not initially contain hierarchical or relational data. Data connections are usually established using multiple CSV files. Foreign keys are stored in columns of one or more files, but connections between these files are not expressed by the format itself.
 
  - Flexible
  - Row-based
@@ -86,7 +86,7 @@ CSV files (comma-separated values) are usually used to exchange tabular data bet
  - Fast write
 
 ### 2. JSON
-JSON (JavaScript object notation) data are presented as key-value pairs in a partially structured format. JSON is often compared to XML because it can store data in a hierarchical format. Both formats are user-readable, but JSON documents are typically much smaller than XML.
+It is a **row-based format** and JSON (JavaScript object notation) data are presented as key-value pairs in a partially structured format. JSON is often compared to XML because it can store data in a hierarchical format. Both formats are user-readable, but JSON documents are typically much smaller than XML.
 
  - Self describing schema
  - Row-based
@@ -96,9 +96,9 @@ JSON (JavaScript object notation) data are presented as key-value pairs in a par
  - Supports hierarchical structures
 
 ### 3. Avro
-It is a **row-based format** that has a high degree of splitting. It is also described as a data serialization system similar to Java Serialization. The schema is stored in JSON format, while the data is stored in _binary format_, which minimizes file size and maximizes efficiency. Avro has reliable support for schema evolution by managing added, missing, and changed fields.
+It is a **row-based format** that has a high degree of splitting. It is also described as a data serialization system similar to Java Serialization. The schema is stored in JSON format, while the data is stored in _binary format_, which minimizes file size and maximizes efficiency. Avro has reliable support for schema evolution by managing added, missing, and changed fields. Since Avro is a row-based format, it is the preferred format for handling large amounts of records as it is easy to add new rows.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjcyNjcwNjg0LC01Njc4MTA3NDYsMTMzMD
+eyJoaXN0b3J5IjpbNzg1MTgwOTk3LC01Njc4MTA3NDYsMTMzMD
 ExMTc1LC0xNjU4MTc4ODM4LDE4NTEyMjg4NDMsMTE4NTYxNDk1
 OSwtOTU2MjI0MDE2LC04NDQ2NzU5NzQsLTEzMDA0MDI2MzQsLT
 g0MjI3MDA3NiwxOTAwOTgzMzU2LC0xNTEwNzQzNDUzLDE1ODUy
