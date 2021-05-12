@@ -78,12 +78,16 @@ An OLTP system captures and maintains transaction data. Each transaction involve
 ### 1. CSV
 CSV files (comma-separated values) are usually used to exchange tabular data between systems using plain text. CSV is a row-based file format, which means that each row of the file is a row in the table. Essentially, CSV contains a header row that contains column names for the data, otherwise, files are considered partially structured. CSV files may not initially contain hierarchical or relational data. Data connections are usually established using multiple CSV files. Foreign keys are stored in columns of one or more files, but connections between these files are not expressed by the format itself.
 
+ - Flexible
+ - Row-based
+ - Human Readable
+ - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMDExMTc1LC0xNjU4MTc4ODM4LDE4NT
-EyMjg4NDMsMTE4NTYxNDk1OSwtOTU2MjI0MDE2LC04NDQ2NzU5
-NzQsLTEzMDA0MDI2MzQsLTg0MjI3MDA3NiwxOTAwOTgzMzU2LC
-0xNTEwNzQzNDUzLDE1ODUyMDU4NDMsLTc3MzY1MDA3NSw5MjEw
-OTkyNjMsOTUyOTQ5OTc0LC0xMTIzOTUwNzM2LC0yMDg4NzQ2Nj
-EyLC0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbODUwOTE5NDg5LDEzMzAxMTE3NSwtMTY1OD
+E3ODgzOCwxODUxMjI4ODQzLDExODU2MTQ5NTksLTk1NjIyNDAx
+NiwtODQ0Njc1OTc0LC0xMzAwNDAyNjM0LC04NDIyNzAwNzYsMT
+kwMDk4MzM1NiwtMTUxMDc0MzQ1MywxNTg1MjA1ODQzLC03NzM2
+NTAwNzUsOTIxMDk5MjYzLDk1Mjk0OTk3NCwtMTEyMzk1MDczNi
+wtMjA4ODc0NjYxMiwtMjA4ODc0NjYxMl19
 -->
