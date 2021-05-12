@@ -15,7 +15,7 @@ tags:
   - Parquet
 ---
 
-## Need of File Formats
+## Need of File Format
 
 A file format is the definition of how information is stored in HDFS. Hadoop does not have a default file format and the choice of a format depends on its use case. File format should be well-defined and expressive. It should be able to handle variety of data structures specifically structs, records, maps, arrays along with strings, numbers etc.
 
@@ -82,8 +82,8 @@ An OLTP system captures and maintains transaction data. Each transaction involve
  - In this data is generally updated and deleted on a per record basis or transaction basis.
  - It is Normalized workflow for efficiency.
  
- ### OLAP(Online Analytical Processing Workflow)
- OLAP applies complex queries to large amounts of historical data, aggregated from OLTP databases and other sources, for data mining, analytics, and business intelligence projects. In OLAP, the emphasis is on response time to these complex queries. Each query involves one or more columns of data aggregated from many rows.
+### OLAP(Online Analytical Processing Workflow)
+OLAP applies complex queries to large amounts of historical data, aggregated from OLTP databases and other sources, for data mining, analytics, and business intelligence projects. In OLAP, the emphasis is on response time to these complex queries. Each query involves one or more columns of data aggregated from many rows.
  - These are generally workflows that involve column based analytics.
  - It operates with the more complex queries.
  - These types of workflows are best stored by columnar storage formats.
