@@ -71,13 +71,16 @@ An OLTP system captures and maintains transaction data. Each transaction involve
  - It operates with the more complex queries.
  - These types of workflows are best stored by columnar storage formats.
  - Handles large volumes of data with complex queries
- - 
+ 
+
+## Let's examine the different file formats
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTgxNzg4MzgsMTg1MTIyODg0MywxMT
-g1NjE0OTU5LC05NTYyMjQwMTYsLTg0NDY3NTk3NCwtMTMwMDQw
-MjYzNCwtODQyMjcwMDc2LDE5MDA5ODMzNTYsLTE1MTA3NDM0NT
-MsMTU4NTIwNTg0MywtNzczNjUwMDc1LDkyMTA5OTI2Myw5NTI5
-NDk5NzQsLTExMjM5NTA3MzYsLTIwODg3NDY2MTIsLTIwODg3ND
-Y2MTJdfQ==
+eyJoaXN0b3J5IjpbMjczOTY2MDcsLTE2NTgxNzg4MzgsMTg1MT
+IyODg0MywxMTg1NjE0OTU5LC05NTYyMjQwMTYsLTg0NDY3NTk3
+NCwtMTMwMDQwMjYzNCwtODQyMjcwMDc2LDE5MDA5ODMzNTYsLT
+E1MTA3NDM0NTMsMTU4NTIwNTg0MywtNzczNjUwMDc1LDkyMTA5
+OTI2Myw5NTI5NDk5NzQsLTExMjM5NTA3MzYsLTIwODg3NDY2MT
+IsLTIwODg3NDY2MTJdfQ==
 -->
