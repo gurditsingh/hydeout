@@ -142,12 +142,18 @@ Parquet is optimized for the paradigm Write Once Read Many (WORM). It writes slo
 -   File metadata- The file metadata contains the locations of all the column metadata start locations. Readers are expected to first read the file metadata to find all the column chunks they are interested in. The column chunks should then be read sequentially. It also includes the format version, the schema, and any extra key-value pairs.
 -   length of file metadata (4-byte)
 -   magic number “PAR1” (4-byte)
+
+#### Predicate Pushdown / Filter Pushdown
+
+The basic idea of predicate pushdown is that certain parts of queries (predicates) can be "pushed" to where the data is stored. For example, when we give some filtering criteria, the data storage tries to filter out the records at the time of reading. The advantage of predicate pushdown is that there are fewer disk i/o operations and therefore overall performance is better. Otherwise, all data will be written to memory, and then filtering will have to be performed, resulting in higher memory requirements.
+
+This optimization can significantly reduce the request/processing time by filtering the data earlier than later. Depending on the processing framework, the predicate pushdown may optimize the query by performing such actions as filtering data before it is transferred over the network, filtering data before it is loaded into memory, or skipping reading entire files or pieces of files
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTgyNDE4MzEsMTU0MDI3NjU0OSwxNj
-czODg1MDc3LC0zNjY1MDk1MTgsLTE1MTcxMDUxNjYsLTU2Nzgx
-MDc0NiwxMzMwMTExNzUsLTE2NTgxNzg4MzgsMTg1MTIyODg0My
-wxMTg1NjE0OTU5LC05NTYyMjQwMTYsLTg0NDY3NTk3NCwtMTMw
-MDQwMjYzNCwtODQyMjcwMDc2LDE5MDA5ODMzNTYsLTE1MTA3ND
-M0NTMsMTU4NTIwNTg0MywtNzczNjUwMDc1LDkyMTA5OTI2Myw5
-NTI5NDk5NzRdfQ==
+eyJoaXN0b3J5IjpbODc1Mzk0NTExLDE1NDAyNzY1NDksMTY3Mz
+g4NTA3NywtMzY2NTA5NTE4LC0xNTE3MTA1MTY2LC01Njc4MTA3
+NDYsMTMzMDExMTc1LC0xNjU4MTc4ODM4LDE4NTEyMjg4NDMsMT
+E4NTYxNDk1OSwtOTU2MjI0MDE2LC04NDQ2NzU5NzQsLTEzMDA0
+MDI2MzQsLTg0MjI3MDA3NiwxOTAwOTgzMzU2LC0xNTEwNzQzND
+UzLDE1ODUyMDU4NDMsLTc3MzY1MDA3NSw5MjEwOTkyNjMsOTUy
+OTQ5OTc0XX0=
 -->
