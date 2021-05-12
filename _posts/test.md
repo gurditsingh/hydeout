@@ -76,7 +76,7 @@ An OLTP system captures and maintains transaction data. Each transaction involve
 ## Let's examine the different file formats
 
 ### 1. CSV
-It is a **row-based format** and CSV files (comma-separated values) are usually used to exchange tabular data between systems using plain text. CSV is a row-based file format, which means that each row of the file is a row in the table. Essentially, CSV contains a header row that contains column names for the data, otherwise, files are considered partially structured. CSV files may not initially contain hierarchical or relational data. Data connections are usually established using multiple CSV files. Foreign keys are stored in columns of one or more files, but connections between these files are not expressed by the format itself.
+It is a **Row-based format** and CSV files (comma-separated values) are usually used to exchange tabular data between systems using plain text. CSV is a row-based file format, which means that each row of the file is a row in the table. Essentially, CSV contains a header row that contains column names for the data, otherwise, files are considered partially structured. CSV files may not initially contain hierarchical or relational data. Data connections are usually established using multiple CSV files. Foreign keys are stored in columns of one or more files, but connections between these files are not expressed by the format itself.
 
  - Flexible
  - Row-based
@@ -86,7 +86,7 @@ It is a **row-based format** and CSV files (comma-separated values) are usually 
  - Fast write
 
 ### 2. JSON
-It is a **row-based format** and JSON (JavaScript object notation) data are presented as key-value pairs in a partially structured format. JSON is often compared to XML because it can store data in a hierarchical format. Both formats are user-readable, but JSON documents are typically much smaller than XML.
+It is a **Row-based format** and JSON (JavaScript object notation) data are presented as key-value pairs in a partially structured format. JSON is often compared to XML because it can store data in a hierarchical format. Both formats are user-readable, but JSON documents are typically much smaller than XML.
 
  - Self describing schema
  - Row-based
@@ -96,7 +96,7 @@ It is a **row-based format** and JSON (JavaScript object notation) data are pres
  - Supports hierarchical structures
 
 ### 3. Avro
-It is a **row-based format** that has a high degree of splitting. It is also described as a data serialization system similar to Java Serialization. The schema is stored in JSON format, while the data is stored in _binary format_, which minimizes file size and maximizes efficiency. Avro has reliable support for schema evolution by managing added, missing, and changed fields. Since Avro is a row-based format, it is the preferred format for handling large amounts of records as it is easy to add new rows.
+It is a **Row-based format** that has a high degree of splitting. It is also described as a data serialization system similar to Java Serialization. The schema is stored in JSON format, while the data is stored in _binary format_, which minimizes file size and maximizes efficiency. Avro has reliable support for schema evolution by managing added, missing, and changed fields. Since Avro is a row-based format, it is the preferred format for handling large amounts of records as it is easy to add new rows.
 
  - Data format and Data Serialization
  - Schema stored in a file header
@@ -107,13 +107,13 @@ It is a **row-based format** that has a high degree of splitting. It is also des
  - Supports complex type
 
 ### 4. ORC
-The ORC(Optimized Row Columnar) file format provides a highly efficient way to store data. It was designed to overcome the limitations of other file formats. It ideally stores data compact and enables skipping over irrelevant parts without the need for large, complex, or manually maintained indices.
+It is a **Hybrid based format** and ORC(Optimized Row Columnar) file format provides a highly efficient way to store data. It was designed to overcome the limitations of other file formats. It ideally stores data compact and enables skipping over irrelevant parts without the need for large, complex, or manually maintained indices.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3NTE0MDA2OCwtNTY3ODEwNzQ2LDEzMz
-AxMTE3NSwtMTY1ODE3ODgzOCwxODUxMjI4ODQzLDExODU2MTQ5
-NTksLTk1NjIyNDAxNiwtODQ0Njc1OTc0LC0xMzAwNDAyNjM0LC
-04NDIyNzAwNzYsMTkwMDk4MzM1NiwtMTUxMDc0MzQ1MywxNTg1
-MjA1ODQzLC03NzM2NTAwNzUsOTIxMDk5MjYzLDk1Mjk0OTk3NC
-wtMTEyMzk1MDczNiwtMjA4ODc0NjYxMiwtMjA4ODc0NjYxMl19
-
+eyJoaXN0b3J5IjpbLTE1MTcxMDUxNjYsLTU2NzgxMDc0NiwxMz
+MwMTExNzUsLTE2NTgxNzg4MzgsMTg1MTIyODg0MywxMTg1NjE0
+OTU5LC05NTYyMjQwMTYsLTg0NDY3NTk3NCwtMTMwMDQwMjYzNC
+wtODQyMjcwMDc2LDE5MDA5ODMzNTYsLTE1MTA3NDM0NTMsMTU4
+NTIwNTg0MywtNzczNjUwMDc1LDkyMTA5OTI2Myw5NTI5NDk5Nz
+QsLTExMjM5NTA3MzYsLTIwODg3NDY2MTIsLTIwODg3NDY2MTJd
+fQ==
 -->
