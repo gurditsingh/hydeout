@@ -106,12 +106,14 @@ It is a **row-based format** that has a high degree of splitting. It is also des
  - Splittable
  - Supports complex type
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA1OTY3NzUzLC01Njc4MTA3NDYsMTMzMD
-ExMTc1LC0xNjU4MTc4ODM4LDE4NTEyMjg4NDMsMTE4NTYxNDk1
-OSwtOTU2MjI0MDE2LC04NDQ2NzU5NzQsLTEzMDA0MDI2MzQsLT
-g0MjI3MDA3NiwxOTAwOTgzMzU2LC0xNTEwNzQzNDUzLDE1ODUy
-MDU4NDMsLTc3MzY1MDA3NSw5MjEwOTkyNjMsOTUyOTQ5OTc0LC
-0xMTIzOTUwNzM2LC0yMDg4NzQ2NjEyLC0yMDg4NzQ2NjEyXX0=
 
+The _Optimized Row Columnar_ ([ORC](https://orc.apache.org/)) file format provides a highly efficient way to store data. It was designed to overcome the limitations of other file formats. It ideally stores data compact and enables skipping over irrelevant parts without the need for large, complex, or manually maintained indices.
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbLTIxMzE1NjM5NDAsLTU2NzgxMDc0NiwxMz
+MwMTExNzUsLTE2NTgxNzg4MzgsMTg1MTIyODg0MywxMTg1NjE0
+OTU5LC05NTYyMjQwMTYsLTg0NDY3NTk3NCwtMTMwMDQwMjYzNC
+wtODQyMjcwMDc2LDE5MDA5ODMzNTYsLTE1MTA3NDM0NTMsMTU4
+NTIwNTg0MywtNzczNjUwMDc1LDkyMTA5OTI2Myw5NTI5NDk5Nz
+QsLTExMjM5NTA3MzYsLTIwODg3NDY2MTIsLTIwODg3NDY2MTJd
+fQ==
 -->
