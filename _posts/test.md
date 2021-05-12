@@ -50,9 +50,9 @@ In a C-Store, columnar, or Column-oriented database, the data is stored column w
  - Most of the column wise models are not ACID compliance.
 
 ### 3. Hybrid Storage
-The hybrid storage model is a combination of both the row-wise and the columnar-wise model. In this model, we first select the groups of rows that we intend to store. In this model we create row groups and we will apply the columnar layout inside each of t
+The hybrid storage model is a combination of both the row-wise and the columnar-wise model. In this model, we first select the groups of rows that we intend to store. In this model we create row groups and we will apply the columnar layout inside each of the row groups. In this we've logically grouped together the rows of the table with the help of implemented a columnar partitioning scheme inside of the group.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3MDUzMjg3LC05NTYyMjQwMTYsLTg0ND
+eyJoaXN0b3J5IjpbNTM3OTA5MTMwLC05NTYyMjQwMTYsLTg0ND
 Y3NTk3NCwtMTMwMDQwMjYzNCwtODQyMjcwMDc2LDE5MDA5ODMz
 NTYsLTE1MTA3NDM0NTMsMTU4NTIwNTg0MywtNzczNjUwMDc1LD
 kyMTA5OTI2Myw5NTI5NDk5NzQsLTExMjM5NTA3MzYsLTIwODg3
