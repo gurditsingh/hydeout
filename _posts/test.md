@@ -98,6 +98,8 @@ It is a **Row-based format** and JSON (JavaScript object notation) data are pres
 ### 3. Avro
 It is a **Row-based format** that has a high degree of splitting. It is also described as a data serialization system similar to Java Serialization. The schema is stored in JSON format, while the data is stored in _binary format_, which minimizes file size and maximizes efficiency. Avro has reliable support for schema evolution by managing added, missing, and changed fields. Since Avro is a row-based format, it is the preferred format for handling large amounts of records as it is easy to add new rows.
 
+![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_ep4_hybrid.png?raw=true)
+
  - Data format and Data Serialization
  - Schema stored in a file header
  - Row-based
@@ -109,11 +111,11 @@ It is a **Row-based format** that has a high degree of splitting. It is also des
 ### 4. ORC
 It is a **Hybrid based format** and ORC(Optimized Row Columnar) file format provides a highly efficient way to store data. It was designed to overcome the limitations of other file formats. It ideally stores data compact and enables skipping over irrelevant parts without the need for large, complex, or manually maintained indices.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTcxMDUxNjYsLTU2NzgxMDc0NiwxMz
-MwMTExNzUsLTE2NTgxNzg4MzgsMTg1MTIyODg0MywxMTg1NjE0
-OTU5LC05NTYyMjQwMTYsLTg0NDY3NTk3NCwtMTMwMDQwMjYzNC
-wtODQyMjcwMDc2LDE5MDA5ODMzNTYsLTE1MTA3NDM0NTMsMTU4
-NTIwNTg0MywtNzczNjUwMDc1LDkyMTA5OTI2Myw5NTI5NDk5Nz
-QsLTExMjM5NTA3MzYsLTIwODg3NDY2MTIsLTIwODg3NDY2MTJd
-fQ==
+eyJoaXN0b3J5IjpbLTE2NDg3MDQyNDQsLTE1MTcxMDUxNjYsLT
+U2NzgxMDc0NiwxMzMwMTExNzUsLTE2NTgxNzg4MzgsMTg1MTIy
+ODg0MywxMTg1NjE0OTU5LC05NTYyMjQwMTYsLTg0NDY3NTk3NC
+wtMTMwMDQwMjYzNCwtODQyMjcwMDc2LDE5MDA5ODMzNTYsLTE1
+MTA3NDM0NTMsMTU4NTIwNTg0MywtNzczNjUwMDc1LDkyMTA5OT
+I2Myw5NTI5NDk5NzQsLTExMjM5NTA3MzYsLTIwODg3NDY2MTIs
+LTIwODg3NDY2MTJdfQ==
 -->
