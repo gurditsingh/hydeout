@@ -96,13 +96,13 @@ JSON (JavaScript object notation) data are presented as key-value pairs in a par
  - Supports hierarchical structures
 
 ### 3. Avro
-
+It is a **row-based format** that has a high degree of splitting. It is also described as a data serialization system similar to Java Serialization. The schema is stored in JSON format, while the data is stored in _binary format_, which minimizes file size and maximizes efficiency. Avro has reliable support for schema evolution by managing added, missing, and changed fields.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxMTY5NTQ4MSwtNTY3ODEwNzQ2LDEzMz
-AxMTE3NSwtMTY1ODE3ODgzOCwxODUxMjI4ODQzLDExODU2MTQ5
-NTksLTk1NjIyNDAxNiwtODQ0Njc1OTc0LC0xMzAwNDAyNjM0LC
-04NDIyNzAwNzYsMTkwMDk4MzM1NiwtMTUxMDc0MzQ1MywxNTg1
-MjA1ODQzLC03NzM2NTAwNzUsOTIxMDk5MjYzLDk1Mjk0OTk3NC
-wtMTEyMzk1MDczNiwtMjA4ODc0NjYxMiwtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbMjcyNjcwNjg0LC01Njc4MTA3NDYsMTMzMD
+ExMTc1LC0xNjU4MTc4ODM4LDE4NTEyMjg4NDMsMTE4NTYxNDk1
+OSwtOTU2MjI0MDE2LC04NDQ2NzU5NzQsLTEzMDA0MDI2MzQsLT
+g0MjI3MDA3NiwxOTAwOTgzMzU2LC0xNTEwNzQzNDUzLDE1ODUy
+MDU4NDMsLTc3MzY1MDA3NSw5MjEwOTkyNjMsOTUyOTQ5OTc0LC
+0xMTIzOTUwNzM2LC0yMDg4NzQ2NjEyLC0yMDg4NzQ2NjEyXX0=
 
 -->
