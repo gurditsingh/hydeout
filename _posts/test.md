@@ -54,9 +54,12 @@ The hybrid storage model is a combination of both the row-wise and the columnar-
 
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_ep4_hybrid.png?raw=true)
 
-Types of Workflows  :
+## Types of Workflows
+
+### OLTP(Online Transaction Processing workflow)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1ODkxNjM2MSwtOTU2MjI0MDE2LC04ND
+eyJoaXN0b3J5IjpbMTE4NTYxNDk1OSwtOTU2MjI0MDE2LC04ND
 Q2NzU5NzQsLTEzMDA0MDI2MzQsLTg0MjI3MDA3NiwxOTAwOTgz
 MzU2LC0xNTEwNzQzNDUzLDE1ODUyMDU4NDMsLTc3MzY1MDA3NS
 w5MjEwOTkyNjMsOTUyOTQ5OTc0LC0xMTIzOTUwNzM2LC0yMDg4
