@@ -114,9 +114,18 @@ It is a **Hybrid based format** and ORC(Optimized Row Columnar) file format prov
 
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_ep4_orc.png?raw=true)
 
-Working
+**ORC file working :**
+
+ - ORC stores collections of rows in one file and within the collection the row data is stored in a columnar format.
+ - An ORC file contains groups of row data called  **stripes**, along with auxiliary information in a file  **footer**. At the end of the file a  **postscript** holds compression parameters and the size of the compressed footer.
+ - The default stripe size is  **250 MB**. Large stripe sizes enable
+   large, efficient reads from HDFS.
+ - The file footer contains a list of stripes in the file, the number of
+   rows per stripe, and each column’s data type. It also contains
+   column-level aggregates count, min, max, and sum.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwNDY0MTg0MSwtMzY2NTA5NTE4LC0xNT
+eyJoaXN0b3J5IjpbLTMxODcxNjYyNSwtMzY2NTA5NTE4LC0xNT
 E3MTA1MTY2LC01Njc4MTA3NDYsMTMzMDExMTc1LC0xNjU4MTc4
 ODM4LDE4NTEyMjg4NDMsMTE4NTYxNDk1OSwtOTU2MjI0MDE2LC
 04NDQ2NzU5NzQsLTEzMDA0MDI2MzQsLTg0MjI3MDA3NiwxOTAw
