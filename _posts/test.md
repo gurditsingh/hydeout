@@ -66,10 +66,10 @@ An OLTP system captures and maintains transaction data. Each transaction involve
  - It is Normalized workflow for efficiency.
  
  ### OLAP(Online Analytical Processing Workflow)
- 
+ OLAP applies complex queries to large amounts of historical data, aggregated from OLTP databases and other sources, for data mining, analytics, and business intelligence projects. In OLAP, the emphasis is on response time to these complex queries. Each query involves one or more columns of data aggregated from many rows.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMzcyMTYwNCwxMTg1NjE0OTU5LC05NT
+eyJoaXN0b3J5IjpbMTE1MTQyNTYyMywxMTg1NjE0OTU5LC05NT
 YyMjQwMTYsLTg0NDY3NTk3NCwtMTMwMDQwMjYzNCwtODQyMjcw
 MDc2LDE5MDA5ODMzNTYsLTE1MTA3NDM0NTMsMTU4NTIwNTg0My
 wtNzczNjUwMDc1LDkyMTA5OTI2Myw5NTI5NDk5NzQsLTExMjM5
