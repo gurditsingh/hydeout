@@ -22,7 +22,7 @@ Some file formats are designed for general use, others are designed for more spe
  - **Semi-Structured :** The semi structured data may contains different fields per row and different kinds of fields. Semi structured data that contains tags or markers as an semantic elements, but they aren't as rigid as structured data. Typical examples of semi-structured data are XML and JSON.
  - **Structured :** Structured data formats, rigidly enforce schema and data type rules. Many leverages this knowledge about the data to provide optimizations at query time right out of the box. Typical examples of structured data are Apache Avro, Apache ORC and Apache Parquet.
 
-## How data stored on Internally
+## How data stored Internally
 
 ### 1. Row oriented Storage
 Row oriented databases are databases that organize data by record, keeping all of the data associated with a record next to each other in memory. A row wise stored methodology, rows are stored contiguously on disk. The data stored one after another inside of block. This type of storage methodology can be great if your goal is to access full rows at a time.
@@ -52,11 +52,11 @@ In a C-Store, columnar, or Column-oriented database, the data is stored column w
 ### 3. Hybrid Storage
 The hybrid storage model is a combination of both the row-wise and the columnar-wise model. In this model, we first select the groups of rows that we intend to store. In this model we create row groups and we will apply the columnar layout inside each of the row groups. In this we've logically grouped together the rows of the table with the help of columnar partitioning scheme inside of the group.
 
-![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_ep4_columnwise.png?raw=true)
+![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_ep4_hybrid.png?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTIwODg0NzEsLTk1NjIyNDAxNiwtOD
-Q0Njc1OTc0LC0xMzAwNDAyNjM0LC04NDIyNzAwNzYsMTkwMDk4
-MzM1NiwtMTUxMDc0MzQ1MywxNTg1MjA1ODQzLC03NzM2NTAwNz
-UsOTIxMDk5MjYzLDk1Mjk0OTk3NCwtMTEyMzk1MDczNiwtMjA4
-ODc0NjYxMiwtMjA4ODc0NjYxMl19
+eyJoaXN0b3J5IjpbLTg4OTE2NjY4MCwtOTU2MjI0MDE2LC04ND
+Q2NzU5NzQsLTEzMDA0MDI2MzQsLTg0MjI3MDA3NiwxOTAwOTgz
+MzU2LC0xNTEwNzQzNDUzLDE1ODUyMDU4NDMsLTc3MzY1MDA3NS
+w5MjEwOTkyNjMsOTUyOTQ5OTc0LC0xMTIzOTUwNzM2LC0yMDg4
+NzQ2NjEyLC0yMDg4NzQ2NjEyXX0=
 -->
