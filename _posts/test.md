@@ -60,10 +60,12 @@ The hybrid storage model is a combination of both the row-wise and the columnar-
 An OLTP system captures and maintains transaction data. Each transaction involves individual data records made up of multiple fields or columns. Examples include banking and credit card activity or retail checkout scanning. In OLTP, the emphasis is on fast processing, because OLTP databases are read, written, and updated frequently. If a transaction fails, built-in system logic ensures data integrity.
 
  - It operates with short lived transactions or queries.
+ - More processing focused rather than analysis focused.
+ - It focused towards row based processing rather than column based processing.
  - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzc0NTkwMSwxMTg1NjE0OTU5LC05NT
+eyJoaXN0b3J5IjpbLTc4ODE3NDQ1NywxMTg1NjE0OTU5LC05NT
 YyMjQwMTYsLTg0NDY3NTk3NCwtMTMwMDQwMjYzNCwtODQyMjcw
 MDc2LDE5MDA5ODMzNTYsLTE1MTA3NDM0NTMsMTU4NTIwNTg0My
 wtNzczNjUwMDc1LDkyMTA5OTI2Myw5NTI5NDk5NzQsLTExMjM5
