@@ -33,6 +33,7 @@ Benefits of choosing an appropriate file format:
 ## Different types of file formats
 Some file formats are designed for general use, others are designed for more specific use cases, and some are designed with specific data characteristics in mind. So there really is quite a lot of  user choice.
 
+![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spt_ep4_FileFormat.jpg?raw=true)
  - **Unstructured :** The text files like CSV, TSV are mostly unstructured because text files are raw data and may contain more and less fields. But text files are also come under structured data as well.
  - **Semi-Structured :** The semi structured data may contains different fields per row and different kinds of fields. Semi structured data that contains tags or markers as an semantic elements, but they aren't as rigid as structured data. Typical examples of semi-structured data are XML and JSON.
  - **Structured :** Structured data formats, rigidly enforce schema and data type rules. Many leverages this knowledge about the data to provide optimizations at query time right out of the box. Typical examples of structured data are Apache Avro, Apache ORC and Apache Parquet.
@@ -44,7 +45,7 @@ Row oriented databases are databases that organize data by record, keeping all o
 
 In a row store, or row oriented database, the data is stored row by row, such that the first column of a row will be next to the last column of the previous row. This allows the database write a row quickly because, all that needs to be done to write to it is to tack on another row to the end of the data.
 
-![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_ep4_rowwise.png?raw=true)
+![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spt_ep4_rowbased.jpg?raw=true)
 
 **Challenges in Row Oriented Storage:** 
 
@@ -56,7 +57,7 @@ In a row store, or row oriented database, the data is stored row by row, such th
 ### 2. Column oriented Storage
 In a C-Store, columnar, or Column-oriented database, the data is stored column wise such that each row of a column will be next to other rows from that same column. In the columnar storage methodology, columns are stored contiguously On-disk. These types of Storage are read optimized.
 
-![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_ep4_columnwise.png?raw=true)
+![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spt_ep4_columnbased.jpg?raw=true)
 
 **Challenges in Row Oriented Storage:** 
 
@@ -67,7 +68,7 @@ In a C-Store, columnar, or Column-oriented database, the data is stored column w
 ### 3. Hybrid Storage
 The hybrid storage model is a combination of both the row-wise and the columnar-wise model. In this model, we first select the groups of rows that we intend to store. In this model we create row groups and we will apply the columnar layout inside each of the row groups. In this we've logically grouped together the rows of the table with the help of columnar partitioning scheme inside of the group.
 
-![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spark_ep4_hybrid.png?raw=true)
+![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spt_ep4_hybridbased.jpg?raw=true)
 
 ## Types of Workflows
 
