@@ -1,13 +1,15 @@
 Spark framework provides spark-submit command to submit Spark batch jobs and spark-shell for interactive jobs.  Apache Livy Server is provides similar functionality via REST API call to run Spark jobs.
 
+In this blog we will examine how spark-submit works and how to use Livy Spark Service to submit batch job, monitor the progress of the job.
+
 What is SparkContext ?
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2NDE4NjY2MywyNjk1MzUzMzYsLTgwMD
-M2Nzg3LDE1NDAyNzY1NDksMTY3Mzg4NTA3NywtMzY2NTA5NTE4
-LC0xNTE3MTA1MTY2LC01Njc4MTA3NDYsMTMzMDExMTc1LC0xNj
-U4MTc4ODM4LDE4NTEyMjg4NDMsMTE4NTYxNDk1OSwtOTU2MjI0
-MDE2LC04NDQ2NzU5NzQsLTEzMDA0MDI2MzQsLTg0MjI3MDA3Ni
-wxOTAwOTgzMzU2LC0xNTEwNzQzNDUzLDE1ODUyMDU4NDMsLTc3
-MzY1MDA3NV19
+eyJoaXN0b3J5IjpbOTQyODk0NDcxLC03NjQxODY2NjMsMjY5NT
+M1MzM2LC04MDAzNjc4NywxNTQwMjc2NTQ5LDE2NzM4ODUwNzcs
+LTM2NjUwOTUxOCwtMTUxNzEwNTE2NiwtNTY3ODEwNzQ2LDEzMz
+AxMTE3NSwtMTY1ODE3ODgzOCwxODUxMjI4ODQzLDExODU2MTQ5
+NTksLTk1NjIyNDAxNiwtODQ0Njc1OTc0LC0xMzAwNDAyNjM0LC
+04NDIyNzAwNzYsMTkwMDk4MzM1NiwtMTUxMDc0MzQ1MywxNTg1
+MjA1ODQzXX0=
 -->
