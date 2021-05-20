@@ -7,10 +7,11 @@ SparkContext is the entry point of Apache Spark functionality. The most importan
 
  - We can access a cluster by using this SparkContext. The SparkContext will be used to run anything on Executors.
  - The SparkContext contains the configuration information of the application.
+ - The SparkContext can be used to create RDDs, accumulators and broadcast variables.
  - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NTgyMDQ2MywtNjM4MTQ2NDMsLTc2ND
+eyJoaXN0b3J5IjpbMTQ0MjA1MTE3NywtNjM4MTQ2NDMsLTc2ND
 E4NjY2MywyNjk1MzUzMzYsLTgwMDM2Nzg3LDE1NDAyNzY1NDks
 MTY3Mzg4NTA3NywtMzY2NTA5NTE4LC0xNTE3MTA1MTY2LC01Nj
 c4MTA3NDYsMTMzMDExMTc1LC0xNjU4MTc4ODM4LDE4NTEyMjg4
