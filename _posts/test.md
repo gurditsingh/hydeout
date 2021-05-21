@@ -52,13 +52,14 @@ res2: org.apache.spark.SparkContext = org.apache.spark.SparkContext@e073b56
 newSession.sparkContext
 res3: org.apache.spark.SparkContext = org.apache.spark.SparkContext@e073b56
 ```
-But if we check sparkContext under both the sessions(oldSession, newSession) have the same hashcode. so if we create temp table under the oldSessionand newSession they will be not shared with each other.
+But if we check sparkContext under both the sessions(oldSession, newSession) have the same hashcode. so if we create temp table under the oldSessionand newSession they will be not shared with each other. checkout the complete [Source code](https://github.com/gurditsingh/blog/blob/gh-pages/files/TestSparkSession.html "Source code").
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzMwNzI1NTk2LDE5MTQxNDUwOTksLTEwOD
-A3NDU5MzIsLTE3MDk3OTg4NzYsLTEyNTIxMTU0MDIsLTE4Njkz
-NDgyNTIsLTI4MDEwMDA1NiwtMTI0MzUzMDg1NiwtMjY3OTM1OD
-MxLDExMTEzNDM4NzgsMTQ0MjA1MTE3NywtNjM4MTQ2NDMsLTc2
-NDE4NjY2MywyNjk1MzUzMzYsLTgwMDM2Nzg3LDE1NDAyNzY1ND
-ksMTY3Mzg4NTA3NywtMzY2NTA5NTE4LC0xNTE3MTA1MTY2LC01
-Njc4MTA3NDZdfQ==
+eyJoaXN0b3J5IjpbLTYyOTUyNDAyOCwzMzA3MjU1OTYsMTkxND
+E0NTA5OSwtMTA4MDc0NTkzMiwtMTcwOTc5ODg3NiwtMTI1MjEx
+NTQwMiwtMTg2OTM0ODI1MiwtMjgwMTAwMDU2LC0xMjQzNTMwOD
+U2LC0yNjc5MzU4MzEsMTExMTM0Mzg3OCwxNDQyMDUxMTc3LC02
+MzgxNDY0MywtNzY0MTg2NjYzLDI2OTUzNTMzNiwtODAwMzY3OD
+csMTU0MDI3NjU0OSwxNjczODg1MDc3LC0zNjY1MDk1MTgsLTE1
+MTcxMDUxNjZdfQ==
 -->
