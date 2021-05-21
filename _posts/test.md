@@ -30,7 +30,9 @@ Its a combination of SQLContext, HiveContext and StreamingContext. All the APIâ€
  - Spark session helps when we have multiple users and they want to share the same spark context.
 
 **lets understand by code:**
-Suppose we have multiple users and they want to share the Notebook() but they all have their own private tables. how can we share the spark context without knowing each other private tables.
+Suppose we have multiple users and they want to share the Notebook
+
+ - all
 
 ```scala
 val oldSession=spark
@@ -51,11 +53,11 @@ res3: org.apache.spark.SparkContext = org.apache.spark.SparkContext@e073b56
 ```
 But if we check sparkContext under both the sessions(oldSession, newSession) have the same hashcode. so if we create temp table under the oldSessionand newSession they will be not shared with each other.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNDE0NTA5OSwtMTA4MDc0NTkzMiwtMT
-cwOTc5ODg3NiwtMTI1MjExNTQwMiwtMTg2OTM0ODI1MiwtMjgw
-MTAwMDU2LC0xMjQzNTMwODU2LC0yNjc5MzU4MzEsMTExMTM0Mz
-g3OCwxNDQyMDUxMTc3LC02MzgxNDY0MywtNzY0MTg2NjYzLDI2
-OTUzNTMzNiwtODAwMzY3ODcsMTU0MDI3NjU0OSwxNjczODg1MD
-c3LC0zNjY1MDk1MTgsLTE1MTcxMDUxNjYsLTU2NzgxMDc0Niwx
-MzMwMTExNzVdfQ==
+eyJoaXN0b3J5IjpbMjEyNDI4OTE0OCwxOTE0MTQ1MDk5LC0xMD
+gwNzQ1OTMyLC0xNzA5Nzk4ODc2LC0xMjUyMTE1NDAyLC0xODY5
+MzQ4MjUyLC0yODAxMDAwNTYsLTEyNDM1MzA4NTYsLTI2NzkzNT
+gzMSwxMTExMzQzODc4LDE0NDIwNTExNzcsLTYzODE0NjQzLC03
+NjQxODY2NjMsMjY5NTM1MzM2LC04MDAzNjc4NywxNTQwMjc2NT
+Q5LDE2NzM4ODUwNzcsLTM2NjUwOTUxOCwtMTUxNzEwNTE2Niwt
+NTY3ODEwNzQ2XX0=
 -->
