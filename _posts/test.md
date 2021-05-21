@@ -11,9 +11,11 @@ SparkContext provides various functions in Spark such as get the current status 
  - The SparkContext contains the configuration information of the application.
  - The SparkContext can be used to create RDDs, accumulators and broadcast variables.
 
-![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spt_ep4_FileFormat.jpg?raw=true)
+![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/sep5_sparkcontext.jpg?raw=true)
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA2MDkxNzkxLDExMTEzNDM4NzgsMTQ0Mj
+eyJoaXN0b3J5IjpbMzQ1NTg1NzYyLDExMTEzNDM4NzgsMTQ0Mj
 A1MTE3NywtNjM4MTQ2NDMsLTc2NDE4NjY2MywyNjk1MzUzMzYs
 LTgwMDM2Nzg3LDE1NDAyNzY1NDksMTY3Mzg4NTA3NywtMzY2NT
 A5NTE4LC0xNTE3MTA1MTY2LC01Njc4MTA3NDYsMTMzMDExMTc1
