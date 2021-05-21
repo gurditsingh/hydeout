@@ -27,14 +27,16 @@ Its a combination of SQLContext, HiveContext and StreamingContext. All the APIâ€
 ### Need of Spark session when Spark already have Spark context?
 
  - Spark session unifies all the different contexts in spark and avoids the developer to worry about creating difference contexts.
- - Spark session helps when we have multiple 
+ - Spark session helps when we have multiple users and they want to share the same spark context.
+
+lets understand by 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjIyNjc3NDQ4LC0xNzA5Nzk4ODc2LC0xMj
-UyMTE1NDAyLC0xODY5MzQ4MjUyLC0yODAxMDAwNTYsLTEyNDM1
-MzA4NTYsLTI2NzkzNTgzMSwxMTExMzQzODc4LDE0NDIwNTExNz
-csLTYzODE0NjQzLC03NjQxODY2NjMsMjY5NTM1MzM2LC04MDAz
-Njc4NywxNTQwMjc2NTQ5LDE2NzM4ODUwNzcsLTM2NjUwOTUxOC
-wtMTUxNzEwNTE2NiwtNTY3ODEwNzQ2LDEzMzAxMTE3NSwtMTY1
-ODE3ODgzOF19
+eyJoaXN0b3J5IjpbLTEwMzE4OTAxNzksLTE3MDk3OTg4NzYsLT
+EyNTIxMTU0MDIsLTE4NjkzNDgyNTIsLTI4MDEwMDA1NiwtMTI0
+MzUzMDg1NiwtMjY3OTM1ODMxLDExMTEzNDM4NzgsMTQ0MjA1MT
+E3NywtNjM4MTQ2NDMsLTc2NDE4NjY2MywyNjk1MzUzMzYsLTgw
+MDM2Nzg3LDE1NDAyNzY1NDksMTY3Mzg4NTA3NywtMzY2NTA5NT
+E4LC0xNTE3MTA1MTY2LC01Njc4MTA3NDYsMTMzMDExMTc1LC0x
+NjU4MTc4ODM4XX0=
 -->
