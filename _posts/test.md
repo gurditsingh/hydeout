@@ -2,7 +2,7 @@ Spark framework provides spark-submit command to submit Spark batch jobs and spa
 
 In this blog we will examine how spark-submit works and how Apache Livy as REST API works to submit jobs, monitor the progress of the job and kill the job. First lets look the terms(functionalities) around the spark-submit and Livy.
 
-## What is SparkContext ?
+## What is Spark Context ?
 SparkContext is the entry point of Apache Spark functionality. The most important phase of any Spark driver application is to generate SparkContext. It allows your Spark Application to access the Spark Cluster with the help of Resource Managers such as (YARN/Mesos).
 
 SparkContext provides various functions in Spark such as get the current status of Spark Application, set the configuration, Cancel a stage, cancel a job, and much more. Thus, it acts as a backbone.
@@ -14,9 +14,9 @@ SparkContext provides various functions in Spark such as get the current status 
  - The SparkContext can be used to create RDDs, accumulators and broadcast variables.
  - The SparkContext is used to create the tables and run sql on top of that.
 
-## What is SparkContext ?
+## What is Spark Session?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTMyNDUzNTksLTI2NzkzNTgzMSwxMT
+eyJoaXN0b3J5IjpbLTEyNDM1MzA4NTYsLTI2NzkzNTgzMSwxMT
 ExMzQzODc4LDE0NDIwNTExNzcsLTYzODE0NjQzLC03NjQxODY2
 NjMsMjY5NTM1MzM2LC04MDAzNjc4NywxNTQwMjc2NTQ5LDE2Nz
 M4ODUwNzcsLTM2NjUwOTUxOCwtMTUxNzEwNTE2NiwtNTY3ODEw
