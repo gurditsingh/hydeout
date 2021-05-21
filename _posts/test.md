@@ -29,10 +29,11 @@ Its a combination of SQLContext, HiveContext and StreamingContext. All the APIâ€
  - Spark session unifies all the different contexts in spark and avoids the developer to worry about creating difference contexts.
  - Spark session helps when we have multiple users and they want to share the same spark context.
 
-lets understand by 
+**lets understand by code:**
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzE4OTAxNzksLTE3MDk3OTg4NzYsLT
+eyJoaXN0b3J5IjpbLTEwODA3NDU5MzIsLTE3MDk3OTg4NzYsLT
 EyNTIxMTU0MDIsLTE4NjkzNDgyNTIsLTI4MDEwMDA1NiwtMTI0
 MzUzMDg1NiwtMjY3OTM1ODMxLDExMTEzNDM4NzgsMTQ0MjA1MT
 E3NywtNjM4MTQ2NDMsLTc2NDE4NjY2MywyNjk1MzUzMzYsLTgw
