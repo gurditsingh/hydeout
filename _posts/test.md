@@ -7,19 +7,18 @@ SparkContext is the entry point of Apache Spark functionality. The most importan
 
 SparkContext provides various functions in Spark such as get the current status of Spark Application, set the configuration, Cancel a stage, cancel a job, and much more. Thus, it acts as a backbone.
 
+![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/sep5_sparkcontext.jpg?raw=true)
+
  - We can access a cluster by using this SparkContext. The SparkContext will be used to run anything on Executors.
  - The SparkContext contains the configuration information of the application.
  - The SparkContext can be used to create RDDs, accumulators and broadcast variables.
-
-![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/sep5_sparkcontext.jpg?raw=true)
-
-
+ - The SparkContext 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ1NTg1NzYyLDExMTEzNDM4NzgsMTQ0Mj
-A1MTE3NywtNjM4MTQ2NDMsLTc2NDE4NjY2MywyNjk1MzUzMzYs
-LTgwMDM2Nzg3LDE1NDAyNzY1NDksMTY3Mzg4NTA3NywtMzY2NT
-A5NTE4LC0xNTE3MTA1MTY2LC01Njc4MTA3NDYsMTMzMDExMTc1
-LC0xNjU4MTc4ODM4LDE4NTEyMjg4NDMsMTE4NTYxNDk1OSwtOT
-U2MjI0MDE2LC04NDQ2NzU5NzQsLTEzMDA0MDI2MzQsLTg0MjI3
-MDA3Nl19
+eyJoaXN0b3J5IjpbLTE3NjQzMzM4MDIsMTExMTM0Mzg3OCwxND
+QyMDUxMTc3LC02MzgxNDY0MywtNzY0MTg2NjYzLDI2OTUzNTMz
+NiwtODAwMzY3ODcsMTU0MDI3NjU0OSwxNjczODg1MDc3LC0zNj
+Y1MDk1MTgsLTE1MTcxMDUxNjYsLTU2NzgxMDc0NiwxMzMwMTEx
+NzUsLTE2NTgxNzg4MzgsMTg1MTIyODg0MywxMTg1NjE0OTU5LC
+05NTYyMjQwMTYsLTg0NDY3NTk3NCwtMTMwMDQwMjYzNCwtODQy
+MjcwMDc2XX0=
 -->
