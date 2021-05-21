@@ -23,12 +23,14 @@ In spark 2.0, we have a new entry point build for DataSet and DataFrame API’s 
 Its a combination of SQLContext, HiveContext and StreamingContext. All the API’s available on those contexts are available on SparkSession also SparkSession has a SparkContext for actual computation and also all the above-mentioned contexts can be accessed using the SparkSession object.
 
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/sep5_spark_session.jpg?raw=true)
+
+### Need of Spark Session when Spark already have Spark context?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDk3OTg4NzYsLTEyNTIxMTU0MDIsLT
-E4NjkzNDgyNTIsLTI4MDEwMDA1NiwtMTI0MzUzMDg1NiwtMjY3
-OTM1ODMxLDExMTEzNDM4NzgsMTQ0MjA1MTE3NywtNjM4MTQ2ND
-MsLTc2NDE4NjY2MywyNjk1MzUzMzYsLTgwMDM2Nzg3LDE1NDAy
-NzY1NDksMTY3Mzg4NTA3NywtMzY2NTA5NTE4LC0xNTE3MTA1MT
-Y2LC01Njc4MTA3NDYsMTMzMDExMTc1LC0xNjU4MTc4ODM4LDE4
-NTEyMjg4NDNdfQ==
+eyJoaXN0b3J5IjpbMjA4NTM2OTI0NSwtMTcwOTc5ODg3NiwtMT
+I1MjExNTQwMiwtMTg2OTM0ODI1MiwtMjgwMTAwMDU2LC0xMjQz
+NTMwODU2LC0yNjc5MzU4MzEsMTExMTM0Mzg3OCwxNDQyMDUxMT
+c3LC02MzgxNDY0MywtNzY0MTg2NjYzLDI2OTUzNTMzNiwtODAw
+MzY3ODcsMTU0MDI3NjU0OSwxNjczODg1MDc3LC0zNjY1MDk1MT
+gsLTE1MTcxMDUxNjYsLTU2NzgxMDc0NiwxMzMwMTExNzUsLTE2
+NTgxNzg4MzhdfQ==
 -->
