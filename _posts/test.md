@@ -32,7 +32,8 @@ Its a combination of SQLContext, HiveContext and StreamingContext. All the APIâ€
 **lets understand by code:**
 Suppose we have multiple users and they want to share the Notebook
 
- - all
+ - All have there own set of Configurations.
+ - All have there own set of Tables.
 
 ```scala
 val oldSession=spark
@@ -53,11 +54,11 @@ res3: org.apache.spark.SparkContext = org.apache.spark.SparkContext@e073b56
 ```
 But if we check sparkContext under both the sessions(oldSession, newSession) have the same hashcode. so if we create temp table under the oldSessionand newSession they will be not shared with each other.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyNDI4OTE0OCwxOTE0MTQ1MDk5LC0xMD
-gwNzQ1OTMyLC0xNzA5Nzk4ODc2LC0xMjUyMTE1NDAyLC0xODY5
-MzQ4MjUyLC0yODAxMDAwNTYsLTEyNDM1MzA4NTYsLTI2NzkzNT
-gzMSwxMTExMzQzODc4LDE0NDIwNTExNzcsLTYzODE0NjQzLC03
-NjQxODY2NjMsMjY5NTM1MzM2LC04MDAzNjc4NywxNTQwMjc2NT
-Q5LDE2NzM4ODUwNzcsLTM2NjUwOTUxOCwtMTUxNzEwNTE2Niwt
-NTY3ODEwNzQ2XX0=
+eyJoaXN0b3J5IjpbMzMwNzI1NTk2LDE5MTQxNDUwOTksLTEwOD
+A3NDU5MzIsLTE3MDk3OTg4NzYsLTEyNTIxMTU0MDIsLTE4Njkz
+NDgyNTIsLTI4MDEwMDA1NiwtMTI0MzUzMDg1NiwtMjY3OTM1OD
+MxLDExMTEzNDM4NzgsMTQ0MjA1MTE3NywtNjM4MTQ2NDMsLTc2
+NDE4NjY2MywyNjk1MzUzMzYsLTgwMDM2Nzg3LDE1NDAyNzY1ND
+ksMTY3Mzg4NTA3NywtMzY2NTA5NTE4LC0xNTE3MTA1MTY2LC01
+Njc4MTA3NDZdfQ==
 -->
