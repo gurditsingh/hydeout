@@ -17,12 +17,13 @@ SparkContext provides various functions in Spark such as get the current status 
  - The SparkContext is used to register the Spark-Listeners.
 
 ## What is Spark Session?
+In spark 2.0, we have a new entry point build for DataSet and DataFrame API’s called as Spark-Session which will provides a single point of entry to interact with underlying Spark functionality.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4MDEwMDA1NiwtMTI0MzUzMDg1NiwtMj
-Y3OTM1ODMxLDExMTEzNDM4NzgsMTQ0MjA1MTE3NywtNjM4MTQ2
-NDMsLTc2NDE4NjY2MywyNjk1MzUzMzYsLTgwMDM2Nzg3LDE1ND
-AyNzY1NDksMTY3Mzg4NTA3NywtMzY2NTA5NTE4LC0xNTE3MTA1
-MTY2LC01Njc4MTA3NDYsMTMzMDExMTc1LC0xNjU4MTc4ODM4LD
-E4NTEyMjg4NDMsMTE4NTYxNDk1OSwtOTU2MjI0MDE2LC04NDQ2
-NzU5NzRdfQ==
+eyJoaXN0b3J5IjpbMTEzMjg5OTkwMCwtMjgwMTAwMDU2LC0xMj
+QzNTMwODU2LC0yNjc5MzU4MzEsMTExMTM0Mzg3OCwxNDQyMDUx
+MTc3LC02MzgxNDY0MywtNzY0MTg2NjYzLDI2OTUzNTMzNiwtOD
+AwMzY3ODcsMTU0MDI3NjU0OSwxNjczODg1MDc3LC0zNjY1MDk1
+MTgsLTE1MTcxMDUxNjYsLTU2NzgxMDc0NiwxMzMwMTExNzUsLT
+E2NTgxNzg4MzgsMTg1MTIyODg0MywxMTg1NjE0OTU5LC05NTYy
+MjQwMTZdfQ==
 -->
