@@ -34,22 +34,28 @@ Suppose we have multiple users and they want to share the Notebook() but they al
 
 ```scala
 val oldSession=spark
-
 oldSession: org.apache.spark.sql.SparkSession = org.apache.spark.sql.SparkSession@3b0994ad
 
 val newSession=spark.newSession
-
 newSession: org.apache.spark.sql.SparkSession = org.apache.spark.sql.SparkSession@46d15164
 ```
 
 Spark gives a straight forward API to create a new session which shares the same spark context.`spark.newSession()` creates a new spark session object. if you check oldSession and newSession they have different hashcodes.
 
+```scala
+oldSession.sparkContext
+res2: org.apache.spark.SparkContext = org.apache.spark.SparkContext@e073b56
+
+newSession.sparkContext
+res3: org.apache.spark.SparkContext = org.apache.spark.SparkContext@e073b56
+```
+But if we check 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODA1MjE1NTQwLC0xMDgwNzQ1OTMyLC0xNz
-A5Nzk4ODc2LC0xMjUyMTE1NDAyLC0xODY5MzQ4MjUyLC0yODAx
-MDAwNTYsLTEyNDM1MzA4NTYsLTI2NzkzNTgzMSwxMTExMzQzOD
-c4LDE0NDIwNTExNzcsLTYzODE0NjQzLC03NjQxODY2NjMsMjY5
-NTM1MzM2LC04MDAzNjc4NywxNTQwMjc2NTQ5LDE2NzM4ODUwNz
-csLTM2NjUwOTUxOCwtMTUxNzEwNTE2NiwtNTY3ODEwNzQ2LDEz
-MzAxMTE3NV19
+eyJoaXN0b3J5IjpbLTEzNzcyODc1MzgsLTEwODA3NDU5MzIsLT
+E3MDk3OTg4NzYsLTEyNTIxMTU0MDIsLTE4NjkzNDgyNTIsLTI4
+MDEwMDA1NiwtMTI0MzUzMDg1NiwtMjY3OTM1ODMxLDExMTEzND
+M4NzgsMTQ0MjA1MTE3NywtNjM4MTQ2NDMsLTc2NDE4NjY2Mywy
+Njk1MzUzMzYsLTgwMDM2Nzg3LDE1NDAyNzY1NDksMTY3Mzg4NT
+A3NywtMzY2NTA5NTE4LC0xNTE3MTA1MTY2LC01Njc4MTA3NDYs
+MTMzMDExMTc1XX0=
 -->
