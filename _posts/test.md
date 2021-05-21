@@ -32,11 +32,15 @@ Its a combination of SQLContext, HiveContext and StreamingContext. All the APIâ€
 **lets understand by code:**
 Suppose we have multiple users and they want to share the Notebook() but they all have their own private tables. how can we share the spark context without knowing each other private tables.
 
+```scala
+val oldSession=spark
 
+oldSession: org.apache.spark.sql.SparkSession = org.apache.spark.sql.SparkSession@3b0994ad
+```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MzIxMzQ1NSwtMTA4MDc0NTkzMiwtMT
+eyJoaXN0b3J5IjpbLTg0MTkwNTk3NywtMTA4MDc0NTkzMiwtMT
 cwOTc5ODg3NiwtMTI1MjExNTQwMiwtMTg2OTM0ODI1MiwtMjgw
 MTAwMDU2LC0xMjQzNTMwODU2LC0yNjc5MzU4MzEsMTExMTM0Mz
 g3OCwxNDQyMDUxMTc3LC02MzgxNDY0MywtNzY0MTg2NjYzLDI2
