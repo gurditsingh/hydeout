@@ -18,8 +18,10 @@ SparkContext provides various functions in Spark such as get the current status 
 
 ## What is Spark Session?
 In spark 2.0, we have a new entry point build for DataSet and DataFrame API’s called as Spark-Session which will provides a single point of entry to interact with underlying Spark functionality.
+
+Its a combination of SQLContext, HiveContext and StreamingContext. All the API’s available on those contexts are available on SparkSession also SparkSession has a SparkContext for actual computation.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMjg5OTkwMCwtMjgwMTAwMDU2LC0xMj
+eyJoaXN0b3J5IjpbMTU2MTc2NjU4MCwtMjgwMTAwMDU2LC0xMj
 QzNTMwODU2LC0yNjc5MzU4MzEsMTExMTM0Mzg3OCwxNDQyMDUx
 MTc3LC02MzgxNDY0MywtNzY0MTg2NjYzLDI2OTUzNTMzNiwtOD
 AwMzY3ODcsMTU0MDI3NjU0OSwxNjczODg1MDc3LC0zNjY1MDk1
