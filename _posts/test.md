@@ -12,13 +12,13 @@ SparkContext provides various functions in Spark such as get the current status 
  - We can access a cluster by using this SparkContext. The SparkContext will be used to run anything on Executors.
  - The SparkContext contains the configuration information of the application.
  - The SparkContext can be used to create RDDs, accumulators and broadcast variables.
- - The SparkContext is used 
+ - The SparkContext is used to create the tables 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI2NzkzNTgzMSwxMTExMzQzODc4LDE0ND
-IwNTExNzcsLTYzODE0NjQzLC03NjQxODY2NjMsMjY5NTM1MzM2
-LC04MDAzNjc4NywxNTQwMjc2NTQ5LDE2NzM4ODUwNzcsLTM2Nj
-UwOTUxOCwtMTUxNzEwNTE2NiwtNTY3ODEwNzQ2LDEzMzAxMTE3
-NSwtMTY1ODE3ODgzOCwxODUxMjI4ODQzLDExODU2MTQ5NTksLT
-k1NjIyNDAxNiwtODQ0Njc1OTc0LC0xMzAwNDAyNjM0LC04NDIy
-NzAwNzZdfQ==
+eyJoaXN0b3J5IjpbMTQ3MzY3ODYyMiwtMjY3OTM1ODMxLDExMT
+EzNDM4NzgsMTQ0MjA1MTE3NywtNjM4MTQ2NDMsLTc2NDE4NjY2
+MywyNjk1MzUzMzYsLTgwMDM2Nzg3LDE1NDAyNzY1NDksMTY3Mz
+g4NTA3NywtMzY2NTA5NTE4LC0xNTE3MTA1MTY2LC01Njc4MTA3
+NDYsMTMzMDExMTc1LC0xNjU4MTc4ODM4LDE4NTEyMjg4NDMsMT
+E4NTYxNDk1OSwtOTU2MjI0MDE2LC04NDQ2NzU5NzQsLTEzMDA0
+MDI2MzRdfQ==
 -->
