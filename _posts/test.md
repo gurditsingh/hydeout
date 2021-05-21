@@ -49,13 +49,13 @@ res2: org.apache.spark.SparkContext = org.apache.spark.SparkContext@e073b56
 newSession.sparkContext
 res3: org.apache.spark.SparkContext = org.apache.spark.SparkContext@e073b56
 ```
-But if we check sparkContext under both the sessions(oldSession, newSession) have the same hashcode.
+But if we check sparkContext under both the sessions(oldSession, newSession) have the same hashcode. so if we create temp table under the old
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzk4OTM3NzUsLTEwODA3NDU5MzIsLT
-E3MDk3OTg4NzYsLTEyNTIxMTU0MDIsLTE4NjkzNDgyNTIsLTI4
-MDEwMDA1NiwtMTI0MzUzMDg1NiwtMjY3OTM1ODMxLDExMTEzND
-M4NzgsMTQ0MjA1MTE3NywtNjM4MTQ2NDMsLTc2NDE4NjY2Mywy
-Njk1MzUzMzYsLTgwMDM2Nzg3LDE1NDAyNzY1NDksMTY3Mzg4NT
-A3NywtMzY2NTA5NTE4LC0xNTE3MTA1MTY2LC01Njc4MTA3NDYs
-MTMzMDExMTc1XX0=
+eyJoaXN0b3J5IjpbNDcwMTc5MTM2LC0xMDgwNzQ1OTMyLC0xNz
+A5Nzk4ODc2LC0xMjUyMTE1NDAyLC0xODY5MzQ4MjUyLC0yODAx
+MDAwNTYsLTEyNDM1MzA4NTYsLTI2NzkzNTgzMSwxMTExMzQzOD
+c4LDE0NDIwNTExNzcsLTYzODE0NjQzLC03NjQxODY2NjMsMjY5
+NTM1MzM2LC04MDAzNjc4NywxNTQwMjc2NTQ5LDE2NzM4ODUwNz
+csLTM2NjUwOTUxOCwtMTUxNzEwNTE2NiwtNTY3ODEwNzQ2LDEz
+MzAxMTE3NV19
 -->
