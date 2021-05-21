@@ -6,6 +6,7 @@ In this blog we will examine how spark-submit works and how Apache Livy as REST 
 SparkContext is the entry point of Apache Spark functionality. The most important phase of any Spark driver application is to generate SparkContext. It allows your Spark Application to access the Spark Cluster with the help of Resource Managers such as (YARN/Mesos).
 
 SparkContext provides various functions in Spark such as get the current status of Spark Application, set the configuration, Cancel a stage, cancel a job, and much more. Thus, it acts as a backbone.
+
 ### Functions of SparkContext in Spark
 
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/sep5_sparkcontext.jpg?raw=true)
@@ -23,11 +24,11 @@ Its a combination of SQLContext, HiveContext and StreamingContext. All the APIâ€
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjkzNDgyNTIsLTI4MDEwMDA1NiwtMT
-I0MzUzMDg1NiwtMjY3OTM1ODMxLDExMTEzNDM4NzgsMTQ0MjA1
-MTE3NywtNjM4MTQ2NDMsLTc2NDE4NjY2MywyNjk1MzUzMzYsLT
-gwMDM2Nzg3LDE1NDAyNzY1NDksMTY3Mzg4NTA3NywtMzY2NTA5
-NTE4LC0xNTE3MTA1MTY2LC01Njc4MTA3NDYsMTMzMDExMTc1LC
-0xNjU4MTc4ODM4LDE4NTEyMjg4NDMsMTE4NTYxNDk1OSwtOTU2
-MjI0MDE2XX0=
+eyJoaXN0b3J5IjpbLTEyNTIxMTU0MDIsLTE4NjkzNDgyNTIsLT
+I4MDEwMDA1NiwtMTI0MzUzMDg1NiwtMjY3OTM1ODMxLDExMTEz
+NDM4NzgsMTQ0MjA1MTE3NywtNjM4MTQ2NDMsLTc2NDE4NjY2My
+wyNjk1MzUzMzYsLTgwMDM2Nzg3LDE1NDAyNzY1NDksMTY3Mzg4
+NTA3NywtMzY2NTA5NTE4LC0xNTE3MTA1MTY2LC01Njc4MTA3ND
+YsMTMzMDExMTc1LC0xNjU4MTc4ODM4LDE4NTEyMjg4NDMsMTE4
+NTYxNDk1OV19
 -->
