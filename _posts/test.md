@@ -49,9 +49,9 @@ res2: org.apache.spark.SparkContext = org.apache.spark.SparkContext@e073b56
 newSession.sparkContext
 res3: org.apache.spark.SparkContext = org.apache.spark.SparkContext@e073b56
 ```
-But if we check 
+But if we check sparkContext under both the sessions(oldSession, newSession) have the same hashcode.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzcyODc1MzgsLTEwODA3NDU5MzIsLT
+eyJoaXN0b3J5IjpbLTExNzk4OTM3NzUsLTEwODA3NDU5MzIsLT
 E3MDk3OTg4NzYsLTEyNTIxMTU0MDIsLTE4NjkzNDgyNTIsLTI4
 MDEwMDA1NiwtMTI0MzUzMDg1NiwtMjY3OTM1ODMxLDExMTEzND
 M4NzgsMTQ0MjA1MTE3NywtNjM4MTQ2NDMsLTc2NDE4NjY2Mywy
