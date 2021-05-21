@@ -30,14 +30,15 @@ Its a combination of SQLContext, HiveContext and StreamingContext. All the APIâ€
  - Spark session helps when we have multiple users and they want to share the same spark context.
 
 **lets understand by code:**
-Suppose we have multiple users and they want to share the Notebook() but they all have their own private tables. how 
+Suppose we have multiple users and they want to share the Notebook() but they all have their own private tables. how can we share the spark context without knowing each other private tables.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzEyNjA2MzMsLTEwODA3NDU5MzIsLT
-E3MDk3OTg4NzYsLTEyNTIxMTU0MDIsLTE4NjkzNDgyNTIsLTI4
-MDEwMDA1NiwtMTI0MzUzMDg1NiwtMjY3OTM1ODMxLDExMTEzND
-M4NzgsMTQ0MjA1MTE3NywtNjM4MTQ2NDMsLTc2NDE4NjY2Mywy
-Njk1MzUzMzYsLTgwMDM2Nzg3LDE1NDAyNzY1NDksMTY3Mzg4NT
-A3NywtMzY2NTA5NTE4LC0xNTE3MTA1MTY2LC01Njc4MTA3NDYs
-MTMzMDExMTc1XX0=
+eyJoaXN0b3J5IjpbMTgzMzA0NTkzOSwtMTA4MDc0NTkzMiwtMT
+cwOTc5ODg3NiwtMTI1MjExNTQwMiwtMTg2OTM0ODI1MiwtMjgw
+MTAwMDU2LC0xMjQzNTMwODU2LC0yNjc5MzU4MzEsMTExMTM0Mz
+g3OCwxNDQyMDUxMTc3LC02MzgxNDY0MywtNzY0MTg2NjYzLDI2
+OTUzNTMzNiwtODAwMzY3ODcsMTU0MDI3NjU0OSwxNjczODg1MD
+c3LC0zNjY1MDk1MTgsLTE1MTcxMDUxNjYsLTU2NzgxMDc0Niwx
+MzMwMTExNzVdfQ==
 -->
