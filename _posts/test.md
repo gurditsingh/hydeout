@@ -24,9 +24,9 @@ Its a combination of SQLContext, HiveContext and StreamingContext. All the APIâ€
 
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/sep5_spark_session.jpg?raw=true)
 
-### Need of Spark Session when Spark already have Spark context?
+### Need of Spark session when Spark already have Spark context?
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4NTM2OTI0NSwtMTcwOTc5ODg3NiwtMT
+eyJoaXN0b3J5IjpbLTE5MzIyMTE4NywtMTcwOTc5ODg3NiwtMT
 I1MjExNTQwMiwtMTg2OTM0ODI1MiwtMjgwMTAwMDU2LC0xMjQz
 NTMwODU2LC0yNjc5MzU4MzEsMTExMTM0Mzg3OCwxNDQyMDUxMT
 c3LC02MzgxNDY0MywtNzY0MTg2NjYzLDI2OTUzNTMzNiwtODAw
