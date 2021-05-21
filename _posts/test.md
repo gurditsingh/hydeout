@@ -36,15 +36,19 @@ Suppose we have multiple users and they want to share the Notebook() but they al
 val oldSession=spark
 
 oldSession: org.apache.spark.sql.SparkSession = org.apache.spark.sql.SparkSession@3b0994ad
+
+val newSession=spark.newSession
+
+newSession: org.apache.spark.sql.SparkSession = org.apache.spark.sql.SparkSession@46d15164
 ```
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MTkwNTk3NywtMTA4MDc0NTkzMiwtMT
-cwOTc5ODg3NiwtMTI1MjExNTQwMiwtMTg2OTM0ODI1MiwtMjgw
-MTAwMDU2LC0xMjQzNTMwODU2LC0yNjc5MzU4MzEsMTExMTM0Mz
-g3OCwxNDQyMDUxMTc3LC02MzgxNDY0MywtNzY0MTg2NjYzLDI2
-OTUzNTMzNiwtODAwMzY3ODcsMTU0MDI3NjU0OSwxNjczODg1MD
-c3LC0zNjY1MDk1MTgsLTE1MTcxMDUxNjYsLTU2NzgxMDc0Niwx
-MzMwMTExNzVdfQ==
+eyJoaXN0b3J5IjpbNDMxNzMzODI0LC0xMDgwNzQ1OTMyLC0xNz
+A5Nzk4ODc2LC0xMjUyMTE1NDAyLC0xODY5MzQ4MjUyLC0yODAx
+MDAwNTYsLTEyNDM1MzA4NTYsLTI2NzkzNTgzMSwxMTExMzQzOD
+c4LDE0NDIwNTExNzcsLTYzODE0NjQzLC03NjQxODY2NjMsMjY5
+NTM1MzM2LC04MDAzNjc4NywxNTQwMjc2NTQ5LDE2NzM4ODUwNz
+csLTM2NjUwOTUxOCwtMTUxNzEwNTE2NiwtNTY3ODEwNzQ2LDEz
+MzAxMTE3NV19
 -->
