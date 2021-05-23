@@ -129,13 +129,14 @@ Livy manages Spark Contexts running on the cluster managed by a Resource Manager
 -   Jobs can be submitted as precompiled jars, snippets of code or via java/scala client API
 -   Ensure security via secure authenticated communication
 
-
+The following image, taken from the official website, to show the livy arc what happens when submitting Spark jobs/code through the Livy REST APIs:
+![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spt-e04-livy-architecture.png?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNTEwODg5MCwxOTk5NDQxNTQ3LDE0Mj
-UxMDMxOTIsLTQ3ODI1MTU0MSwxMzgyMzcwNjAxLDEzMzk5OTE4
-MjUsLTEwODAwNTAyODUsLTIxMTczNDQyMTAsLTIxNjc4NTY1LD
-MzMDcyNTU5NiwxOTE0MTQ1MDk5LC0xMDgwNzQ1OTMyLC0xNzA5
-Nzk4ODc2LC0xMjUyMTE1NDAyLC0xODY5MzQ4MjUyLC0yODAxMD
-AwNTYsLTEyNDM1MzA4NTYsLTI2NzkzNTgzMSwxMTExMzQzODc4
-LDE0NDIwNTExNzddfQ==
+eyJoaXN0b3J5IjpbLTIxMzA4MTkxNTcsMTYzNTEwODg5MCwxOT
+k5NDQxNTQ3LDE0MjUxMDMxOTIsLTQ3ODI1MTU0MSwxMzgyMzcw
+NjAxLDEzMzk5OTE4MjUsLTEwODAwNTAyODUsLTIxMTczNDQyMT
+AsLTIxNjc4NTY1LDMzMDcyNTU5NiwxOTE0MTQ1MDk5LC0xMDgw
+NzQ1OTMyLC0xNzA5Nzk4ODc2LC0xMjUyMTE1NDAyLC0xODY5Mz
+Q4MjUyLC0yODAxMDAwNTYsLTEyNDM1MzA4NTYsLTI2NzkzNTgz
+MSwxMTExMzQzODc4XX0=
 -->
