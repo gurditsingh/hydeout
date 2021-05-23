@@ -63,6 +63,7 @@ The **spark-submit** command is a utility to run or submit a Spark application p
 **where is spark-submit :**
 Spark binary comes with **spark-submit.sh** script file for Linux, Mac, and `spark-submit.cmd` command file for windows, these scripts are available at **$SPARK_HOME/bin** directory.
 
+Below is a spark-submit command with the commonly used options.
 ```bash
 ./bin/spark-submit \
   --master <master-url> \
@@ -76,8 +77,10 @@ Spark binary comes with **spark-submit.sh** script file for Linux, Mac, and `spa
   <application-jar> \
   [application-arguments]
 ```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMTAwMjE5NzksLTIxNjc4NTY1LDMzMD
+eyJoaXN0b3J5IjpbLTIxMTczNDQyMTAsLTIxNjc4NTY1LDMzMD
 cyNTU5NiwxOTE0MTQ1MDk5LC0xMDgwNzQ1OTMyLC0xNzA5Nzk4
 ODc2LC0xMjUyMTE1NDAyLC0xODY5MzQ4MjUyLC0yODAxMDAwNT
 YsLTEyNDM1MzA4NTYsLTI2NzkzNTgzMSwxMTExMzQzODc4LDE0
