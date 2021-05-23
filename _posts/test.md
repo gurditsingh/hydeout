@@ -133,13 +133,13 @@ The following image, taken from the official website, to show the Livy architect
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spt-e04-livy-architecture.png?raw=true)
 
 ### How to use Livy to submit the Job
-
+![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spt_e04_livy.jpg?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDk0NTE5NzEsMTI1NDgwNzkwNywxNj
-M1MTA4ODkwLDE5OTk0NDE1NDcsMTQyNTEwMzE5MiwtNDc4MjUx
-NTQxLDEzODIzNzA2MDEsMTMzOTk5MTgyNSwtMTA4MDA1MDI4NS
-wtMjExNzM0NDIxMCwtMjE2Nzg1NjUsMzMwNzI1NTk2LDE5MTQx
-NDUwOTksLTEwODA3NDU5MzIsLTE3MDk3OTg4NzYsLTEyNTIxMT
-U0MDIsLTE4NjkzNDgyNTIsLTI4MDEwMDA1NiwtMTI0MzUzMDg1
-NiwtMjY3OTM1ODMxXX0=
+eyJoaXN0b3J5IjpbMTQxNzY0ODM0NSwtMTU0OTQ1MTk3MSwxMj
+U0ODA3OTA3LDE2MzUxMDg4OTAsMTk5OTQ0MTU0NywxNDI1MTAz
+MTkyLC00NzgyNTE1NDEsMTM4MjM3MDYwMSwxMzM5OTkxODI1LC
+0xMDgwMDUwMjg1LC0yMTE3MzQ0MjEwLC0yMTY3ODU2NSwzMzA3
+MjU1OTYsMTkxNDE0NTA5OSwtMTA4MDc0NTkzMiwtMTcwOTc5OD
+g3NiwtMTI1MjExNTQwMiwtMTg2OTM0ODI1MiwtMjgwMTAwMDU2
+LC0xMjQzNTMwODU2XX0=
 -->
