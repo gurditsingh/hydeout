@@ -56,9 +56,9 @@ But if we check sparkContext under both the sessions(oldSession, newSession) hav
 
 
 ## Spark Submit
-The `spark-submit` script in Spark’s `bin` directory is used to launch applications on a cluster. It can use all of Spark’s supported [cluster managers](https://spark.apache.org/docs/latest/cluster-overview.html#cluster-manager-types) through a uniform interface so you don’t have to configure your application especially for each one.
+The spark-submit script in Spark’s bin directory is used to launch applications on a cluster. It can use all of Spark’s supported cluster managers through a uniform interface to configure and run the applications on cluster.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg2MDE1NDAzLC0yMTY3ODU2NSwzMzA3Mj
+eyJoaXN0b3J5IjpbMjU5MTUyMzUzLC0yMTY3ODU2NSwzMzA3Mj
 U1OTYsMTkxNDE0NTA5OSwtMTA4MDc0NTkzMiwtMTcwOTc5ODg3
 NiwtMTI1MjExNTQwMiwtMTg2OTM0ODI1MiwtMjgwMTAwMDU2LC
 0xMjQzNTMwODU2LC0yNjc5MzU4MzEsMTExMTM0Mzg3OCwxNDQy
