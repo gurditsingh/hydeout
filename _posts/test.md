@@ -122,7 +122,7 @@ Apache Livy is a service that enables easy interaction with a Spark cluster over
 Livy manages Spark Contexts running on the cluster managed by a Resource Manager like YARN. This enables proper fault-tolerance, high availability, session isolation, scalability and security. Livy also provides multiple modes of interaction: REST based jar submission, a thin java client for fine grained job submission and result retrieval, as well as submission of code snippets in string form. Thus Livy enables interactive Applications as well as interactive Notebooks like Jupyter, to leverage a remote Spark cluster.
 
 ### Features of Livy:
-
+ -   Jobs can be submitted from anywhere, using the REST API.
 -   Long running Spark Contexts that can be used for multiple Spark jobs, by multiple clients
 -   Share cached RDDs or DataSets across multiple jobs and clients
 -   Multiple Spark Contexts can be managed simultaneously, and the Spark Contexts run on the cluster (YARN/Mesos) instead of the Livy Server, for good fault tolerance and concurrency
@@ -134,7 +134,7 @@ The following image, taken from the official website, to show the Livy architect
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3NzgyMDIwMiwxNjM1MTA4ODkwLDE5OT
+eyJoaXN0b3J5IjpbMTI1NDgwNzkwNywxNjM1MTA4ODkwLDE5OT
 k0NDE1NDcsMTQyNTEwMzE5MiwtNDc4MjUxNTQxLDEzODIzNzA2
 MDEsMTMzOTk5MTgyNSwtMTA4MDA1MDI4NSwtMjExNzM0NDIxMC
 wtMjE2Nzg1NjUsMzMwNzI1NTk2LDE5MTQxNDUwOTksLTEwODA3
