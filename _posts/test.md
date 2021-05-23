@@ -81,10 +81,13 @@ Below is a spark-submit command with the commonly used options.
 ### How we use spark-submit
 In the below diagram we have edge node and cluster. The Edge node is used by user to run the application on the cluster.
 
+**Edge Node :**
+
+ - The Edge node can be the system used by the 
 
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spt_ep4_sparksubmit.jpg?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTUyMTQ0MzEsLTIxMTczNDQyMTAsLT
+eyJoaXN0b3J5IjpbLTEzNzIxMDk0NDksLTIxMTczNDQyMTAsLT
 IxNjc4NTY1LDMzMDcyNTU5NiwxOTE0MTQ1MDk5LC0xMDgwNzQ1
 OTMyLC0xNzA5Nzk4ODc2LC0xMjUyMTE1NDAyLC0xODY5MzQ4Mj
 UyLC0yODAxMDAwNTYsLTEyNDM1MzA4NTYsLTI2NzkzNTgzMSwx
