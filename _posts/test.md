@@ -54,7 +54,7 @@ res3: org.apache.spark.SparkContext = org.apache.spark.SparkContext@e073b56
 ```
 But if we check sparkContext under both the sessions(oldSession, newSession) have the same hashcode. so if we create temp table under the oldSessionand newSession they will be not shared with each other. Check out the complete [Source code](https://github.com/gurditsingh/blog/blob/gh-pages/files/TestSparkSession.html "Source code").
 
-## Ways to run the job
+# Ways to run the job
 
 ## Spark Submit
 The **spark-submit** script in Spark’s bin directory is used to launch applications on a cluster. It can use all of Spark’s supported cluster managers through a uniform interface to configure and run the applications on cluster.
@@ -103,11 +103,11 @@ In the below diagram we have edge node and cluster. The Edge node is used by the
  
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzOTk5MTgyNSwtMTA4MDA1MDI4NSwtMj
-ExNzM0NDIxMCwtMjE2Nzg1NjUsMzMwNzI1NTk2LDE5MTQxNDUw
-OTksLTEwODA3NDU5MzIsLTE3MDk3OTg4NzYsLTEyNTIxMTU0MD
-IsLTE4NjkzNDgyNTIsLTI4MDEwMDA1NiwtMTI0MzUzMDg1Niwt
-MjY3OTM1ODMxLDExMTEzNDM4NzgsMTQ0MjA1MTE3NywtNjM4MT
-Q2NDMsLTc2NDE4NjY2MywyNjk1MzUzMzYsLTgwMDM2Nzg3LDE1
-NDAyNzY1NDldfQ==
+eyJoaXN0b3J5IjpbLTc1MDc0MTI0MiwxMzM5OTkxODI1LC0xMD
+gwMDUwMjg1LC0yMTE3MzQ0MjEwLC0yMTY3ODU2NSwzMzA3MjU1
+OTYsMTkxNDE0NTA5OSwtMTA4MDc0NTkzMiwtMTcwOTc5ODg3Ni
+wtMTI1MjExNTQwMiwtMTg2OTM0ODI1MiwtMjgwMTAwMDU2LC0x
+MjQzNTMwODU2LC0yNjc5MzU4MzEsMTExMTM0Mzg3OCwxNDQyMD
+UxMTc3LC02MzgxNDY0MywtNzY0MTg2NjYzLDI2OTUzNTMzNiwt
+ODAwMzY3ODddfQ==
 -->
