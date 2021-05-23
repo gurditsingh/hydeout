@@ -121,6 +121,10 @@ Apache Livy is a service that enables easy interaction with a Spark cluster over
 
 Livy manages Spark Contexts running on the cluster managed by a Resource Manager like YARN. This enables proper fault-tolerance, high availability, session isolation, scalability and security. Livy also provides multiple modes of interaction: REST based jar submission, a thin java client for fine grained job submission and result retrieval, as well as submission of code snippets in string form. Thus Livy enables interactive Applications as well as interactive Notebooks like Jupyter, to leverage a remote Spark cluster.
 
+The following image, taken from the official website, to show the Livy architecture what happens when submitting Spark jobs/code through the Livy REST APIs:
+
+![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spt-e04-livy-architecture.png?raw=true)
+
 ### Features of Livy:
  -   Jobs can be submitted from anywhere, using the REST API.
 -   Long running Spark Contexts that can be used for multiple Spark jobs, by multiple clients
@@ -129,13 +133,16 @@ Livy manages Spark Contexts running on the cluster managed by a Resource Manager
 -   Jobs can be submitted as precompiled jars, snippets of code or via java/scala client API
 -   Ensure security via secure authenticated communication
 
-The following image, taken from the official website, to show the Livy architecture what happens when submitting Spark jobs/code through the Livy REST APIs:
-![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spt-e04-livy-architecture.png?raw=true)
+
+
 
 ### How to use Livy to submit the Job
+
+In this section we will look at examples with how to use Livy Spark Service to submit batch job, monitor the progress of the job.
+
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spt_e04_livy.jpg?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNzY0ODM0NSwtMTU0OTQ1MTk3MSwxMj
+eyJoaXN0b3J5IjpbMjEzODk3MzEwNywtMTU0OTQ1MTk3MSwxMj
 U0ODA3OTA3LDE2MzUxMDg4OTAsMTk5OTQ0MTU0NywxNDI1MTAz
 MTkyLC00NzgyNTE1NDEsMTM4MjM3MDYwMSwxMzM5OTkxODI1LC
 0xMDgwMDUwMjg1LC0yMTE3MzQ0MjEwLC0yMTY3ODU2NSwzMzA3
