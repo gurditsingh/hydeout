@@ -171,13 +171,15 @@ In this section we will look at examples with how to use Livy Spark Service to s
 	{"id":0,"state":"starting","appId":null,"appInfo":{"driverLogUrl":null,"sparkUiUrl":null},"log":["stdout: ","\nstderr: ","\nYARN Diagnostics: "]}
 	```
 
-please Check out the complete [Source code](https://github.com/gurditsingh/blog/blob/gh-pages/files/TestSparkSession.html "Source code").
+please Check out the complete [documentation](https://github.com/gurditsingh/blog/blob/gh-pages/files/TestSparkSession.html "Source code").
+
+How 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE5MDEzODI4LDExMjM5MzE2NjAsLTc5NT
-U0OTA2NywyMTM4OTczMTA3LC0xNTQ5NDUxOTcxLDEyNTQ4MDc5
-MDcsMTYzNTEwODg5MCwxOTk5NDQxNTQ3LDE0MjUxMDMxOTIsLT
-Q3ODI1MTU0MSwxMzgyMzcwNjAxLDEzMzk5OTE4MjUsLTEwODAw
-NTAyODUsLTIxMTczNDQyMTAsLTIxNjc4NTY1LDMzMDcyNTU5Ni
-wxOTE0MTQ1MDk5LC0xMDgwNzQ1OTMyLC0xNzA5Nzk4ODc2LC0x
-MjUyMTE1NDAyXX0=
+eyJoaXN0b3J5IjpbLTE3Nzc2MDE4MDAsMTEyMzkzMTY2MCwtNz
+k1NTQ5MDY3LDIxMzg5NzMxMDcsLTE1NDk0NTE5NzEsMTI1NDgw
+NzkwNywxNjM1MTA4ODkwLDE5OTk0NDE1NDcsMTQyNTEwMzE5Mi
+wtNDc4MjUxNTQxLDEzODIzNzA2MDEsMTMzOTk5MTgyNSwtMTA4
+MDA1MDI4NSwtMjExNzM0NDIxMCwtMjE2Nzg1NjUsMzMwNzI1NT
+k2LDE5MTQxNDUwOTksLTEwODA3NDU5MzIsLTE3MDk3OTg4NzYs
+LTEyNTIxMTU0MDJdfQ==
 -->
