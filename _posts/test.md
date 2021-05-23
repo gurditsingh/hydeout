@@ -106,17 +106,17 @@ In the below diagram we have edge node and cluster. The Edge node is used by the
 ./bin/spark-submit \
 --master yarn \
 --deploy-mode cluster \
---conf "spark.sql.shuffle.partitions=20000" \
+--conf "spark.sql.shuffle.partitions=1000" \
 --jars "dependency1.jar,dependency2.jar"
---class com.sparkbyexamples.WordCountExample \
-spark-by-examples.jar 
+--class com.test.WordCountExample \
+spark-example.jar 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NjY3NDQyOCwxMzM5OTkxODI1LC0xMD
-gwMDUwMjg1LC0yMTE3MzQ0MjEwLC0yMTY3ODU2NSwzMzA3MjU1
-OTYsMTkxNDE0NTA5OSwtMTA4MDc0NTkzMiwtMTcwOTc5ODg3Ni
-wtMTI1MjExNTQwMiwtMTg2OTM0ODI1MiwtMjgwMTAwMDU2LC0x
-MjQzNTMwODU2LC0yNjc5MzU4MzEsMTExMTM0Mzg3OCwxNDQyMD
-UxMTc3LC02MzgxNDY0MywtNzY0MTg2NjYzLDI2OTUzNTMzNiwt
-ODAwMzY3ODddfQ==
+eyJoaXN0b3J5IjpbLTIxMTEyMTE4MDcsMTMzOTk5MTgyNSwtMT
+A4MDA1MDI4NSwtMjExNzM0NDIxMCwtMjE2Nzg1NjUsMzMwNzI1
+NTk2LDE5MTQxNDUwOTksLTEwODA3NDU5MzIsLTE3MDk3OTg4Nz
+YsLTEyNTIxMTU0MDIsLTE4NjkzNDgyNTIsLTI4MDEwMDA1Niwt
+MTI0MzUzMDg1NiwtMjY3OTM1ODMxLDExMTEzNDM4NzgsMTQ0Mj
+A1MTE3NywtNjM4MTQ2NDMsLTc2NDE4NjY2MywyNjk1MzUzMzYs
+LTgwMDM2Nzg3XX0=
 -->
