@@ -117,13 +117,15 @@ spark-example.jar
 
 ## 2. REST API Apache Livy
 
+Apache Livy is a service that enables easy interaction with a Spark cluster over a REST interface. It enables easy submission of Spark jobs or snippets of Spark code, synchronous or asynchronous result retrieval, as well as Spark Context management, all via a simple REST interface.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4MTcwOTMyLDE0MjUxMDMxOTIsLTQ3OD
-I1MTU0MSwxMzgyMzcwNjAxLDEzMzk5OTE4MjUsLTEwODAwNTAy
-ODUsLTIxMTczNDQyMTAsLTIxNjc4NTY1LDMzMDcyNTU5NiwxOT
-E0MTQ1MDk5LC0xMDgwNzQ1OTMyLC0xNzA5Nzk4ODc2LC0xMjUy
-MTE1NDAyLC0xODY5MzQ4MjUyLC0yODAxMDAwNTYsLTEyNDM1Mz
-A4NTYsLTI2NzkzNTgzMSwxMTExMzQzODc4LDE0NDIwNTExNzcs
-LTYzODE0NjQzXX0=
+eyJoaXN0b3J5IjpbMTk5OTQ0MTU0NywxNDI1MTAzMTkyLC00Nz
+gyNTE1NDEsMTM4MjM3MDYwMSwxMzM5OTkxODI1LC0xMDgwMDUw
+Mjg1LC0yMTE3MzQ0MjEwLC0yMTY3ODU2NSwzMzA3MjU1OTYsMT
+kxNDE0NTA5OSwtMTA4MDc0NTkzMiwtMTcwOTc5ODg3NiwtMTI1
+MjExNTQwMiwtMTg2OTM0ODI1MiwtMjgwMTAwMDU2LC0xMjQzNT
+MwODU2LC0yNjc5MzU4MzEsMTExMTM0Mzg3OCwxNDQyMDUxMTc3
+LC02MzgxNDY0M119
 -->
