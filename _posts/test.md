@@ -148,19 +148,20 @@ In this section we will look at examples with how to use Livy Spark Service to s
 	{
 	  "name" : "spark-example",
 	  "className" :  "com.test.WordCountExample",
-	  "file"  : "/user/e/spark-example.jar",
+	  "file"  : "/user/example/spark-example.jar",
 	  "proxyUser" : "hadoop",
 	  "driverMemory" : "3g",
 	  "driverCores" : "3",
-	  "args" : ["group", "3" ]
+	  "args" : ["sample", "10" ]
 	}
 	```
+ - Next submit the batch job with REST POST call to http://<livy-server>:8998/batches request
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE3NjkyMzMsLTc5NTU0OTA2NywyMTM4OT
-czMTA3LC0xNTQ5NDUxOTcxLDEyNTQ4MDc5MDcsMTYzNTEwODg5
-MCwxOTk5NDQxNTQ3LDE0MjUxMDMxOTIsLTQ3ODI1MTU0MSwxMz
-gyMzcwNjAxLDEzMzk5OTE4MjUsLTEwODAwNTAyODUsLTIxMTcz
-NDQyMTAsLTIxNjc4NTY1LDMzMDcyNTU5NiwxOTE0MTQ1MDk5LC
-0xMDgwNzQ1OTMyLC0xNzA5Nzk4ODc2LC0xMjUyMTE1NDAyLC0x
-ODY5MzQ4MjUyXX0=
+eyJoaXN0b3J5IjpbMzQzNTA5ODA4LC03OTU1NDkwNjcsMjEzOD
+k3MzEwNywtMTU0OTQ1MTk3MSwxMjU0ODA3OTA3LDE2MzUxMDg4
+OTAsMTk5OTQ0MTU0NywxNDI1MTAzMTkyLC00NzgyNTE1NDEsMT
+M4MjM3MDYwMSwxMzM5OTkxODI1LC0xMDgwMDUwMjg1LC0yMTE3
+MzQ0MjEwLC0yMTY3ODU2NSwzMzA3MjU1OTYsMTkxNDE0NTA5OS
+wtMTA4MDc0NTkzMiwtMTcwOTc5ODg3NiwtMTI1MjExNTQwMiwt
+MTg2OTM0ODI1Ml19
 -->
