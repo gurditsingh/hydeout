@@ -119,13 +119,13 @@ spark-example.jar
 
 Apache Livy is a service that enables easy interaction with a Spark cluster over a REST interface. It enables easy submission of Spark jobs or snippets of Spark code, synchronous or asynchronous result retrieval, as well as Spark Context management, all via a simple REST interface.
 
-
+Livy manages Contexts running on the cluster managed by a Resource Manager like YARN. This enables proper fault-tolerance, high availability, session isolation, scalability and security. Livy also provides multiple modes of interaction: REST based jar submission, a thin java client for fine grained job submission and result retrieval, as well as submission of code snippets in string form. Thus Livy enables interactive Applications as well as interactive Notebooks like Jupyter, to leverage a remote Spark cluster. In fact, Livy already powers a Spark backend for Jupyter notebooks on HDIInsight Service on Microsoft Azure, which we will demo during our talk. In addition to the demo, in our talk we will describe Livy’s API, architecture and future roadmap.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5OTQ0MTU0NywxNDI1MTAzMTkyLC00Nz
-gyNTE1NDEsMTM4MjM3MDYwMSwxMzM5OTkxODI1LC0xMDgwMDUw
-Mjg1LC0yMTE3MzQ0MjEwLC0yMTY3ODU2NSwzMzA3MjU1OTYsMT
-kxNDE0NTA5OSwtMTA4MDc0NTkzMiwtMTcwOTc5ODg3NiwtMTI1
-MjExNTQwMiwtMTg2OTM0ODI1MiwtMjgwMTAwMDU2LC0xMjQzNT
-MwODU2LC0yNjc5MzU4MzEsMTExMTM0Mzg3OCwxNDQyMDUxMTc3
-LC02MzgxNDY0M119
+eyJoaXN0b3J5IjpbOTI0MTEwNjcyLDE5OTk0NDE1NDcsMTQyNT
+EwMzE5MiwtNDc4MjUxNTQxLDEzODIzNzA2MDEsMTMzOTk5MTgy
+NSwtMTA4MDA1MDI4NSwtMjExNzM0NDIxMCwtMjE2Nzg1NjUsMz
+MwNzI1NTk2LDE5MTQxNDUwOTksLTEwODA3NDU5MzIsLTE3MDk3
+OTg4NzYsLTEyNTIxMTU0MDIsLTE4NjkzNDgyNTIsLTI4MDEwMD
+A1NiwtMTI0MzUzMDg1NiwtMjY3OTM1ODMxLDExMTEzNDM4Nzgs
+MTQ0MjA1MTE3N119
 -->
