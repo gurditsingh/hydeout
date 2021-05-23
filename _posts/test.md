@@ -96,6 +96,7 @@ In the below diagram we have edge node and cluster. The Edge node is used by the
  - In cluster we have configuration of each node: number of cores per node, RAM and
    Disk Volume.
 
+### How to use spark-submit
 
 
  - In dev/qa/prod environment we have edge node and one big cluster which can be on-prem or cloud.
@@ -114,7 +115,7 @@ In the below diagram we have edge node and cluster. The Edge node is used by the
 spark-example.jar 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyMzI1MzIwOCwxMzgyMzcwNjAxLDEzMz
+eyJoaXN0b3J5IjpbLTQ3ODI1MTU0MSwxMzgyMzcwNjAxLDEzMz
 k5OTE4MjUsLTEwODAwNTAyODUsLTIxMTczNDQyMTAsLTIxNjc4
 NTY1LDMzMDcyNTU5NiwxOTE0MTQ1MDk5LC0xMDgwNzQ1OTMyLC
 0xNzA5Nzk4ODc2LC0xMjUyMTE1NDAyLC0xODY5MzQ4MjUyLC0y
