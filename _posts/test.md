@@ -96,7 +96,7 @@ In the below diagram we have edge node and cluster. The Edge node is used by the
  - In cluster we have configuration of each node: number of cores per node, RAM and
    Disk Volume.
 
-### How to use spark-submit
+### How to use spark-submit to run the job
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spt_ep4_deploysparksubmit.jpg?raw=true)
 
  - In dev/qa/prod environment we have edge node and one big cluster which can be on-prem or cloud.
@@ -132,13 +132,14 @@ Livy manages Spark Contexts running on the cluster managed by a Resource Manager
 The following image, taken from the official website, to show the Livy architecture what happens when submitting Spark jobs/code through the Livy REST APIs:
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spt-e04-livy-architecture.png?raw=true)
 
+### How to use Livy to submit the Job
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1NDgwNzkwNywxNjM1MTA4ODkwLDE5OT
-k0NDE1NDcsMTQyNTEwMzE5MiwtNDc4MjUxNTQxLDEzODIzNzA2
-MDEsMTMzOTk5MTgyNSwtMTA4MDA1MDI4NSwtMjExNzM0NDIxMC
-wtMjE2Nzg1NjUsMzMwNzI1NTk2LDE5MTQxNDUwOTksLTEwODA3
-NDU5MzIsLTE3MDk3OTg4NzYsLTEyNTIxMTU0MDIsLTE4NjkzND
-gyNTIsLTI4MDEwMDA1NiwtMTI0MzUzMDg1NiwtMjY3OTM1ODMx
-LDExMTEzNDM4NzhdfQ==
+eyJoaXN0b3J5IjpbLTE1NDk0NTE5NzEsMTI1NDgwNzkwNywxNj
+M1MTA4ODkwLDE5OTk0NDE1NDcsMTQyNTEwMzE5MiwtNDc4MjUx
+NTQxLDEzODIzNzA2MDEsMTMzOTk5MTgyNSwtMTA4MDA1MDI4NS
+wtMjExNzM0NDIxMCwtMjE2Nzg1NjUsMzMwNzI1NTk2LDE5MTQx
+NDUwOTksLTEwODA3NDU5MzIsLTE3MDk3OTg4NzYsLTEyNTIxMT
+U0MDIsLTE4NjkzNDgyNTIsLTI4MDEwMDA1NiwtMTI0MzUzMDg1
+NiwtMjY3OTM1ODMxXX0=
 -->
