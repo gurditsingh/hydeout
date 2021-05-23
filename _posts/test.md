@@ -95,15 +95,15 @@ In the below diagram we have edge node and cluster. The Edge node is used by the
 
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spt_ep4_sparksubmit.jpg?raw=true)
 
- - In dev/qa/prod we have edge node and one big cluster and 
+ - In dev/qa/prod we have edge node and one big cluster which can be on-prem or cloud.
  - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUzOTg2ODcyLC0yMTE3MzQ0MjEwLC0yMT
-Y3ODU2NSwzMzA3MjU1OTYsMTkxNDE0NTA5OSwtMTA4MDc0NTkz
-MiwtMTcwOTc5ODg3NiwtMTI1MjExNTQwMiwtMTg2OTM0ODI1Mi
-wtMjgwMTAwMDU2LC0xMjQzNTMwODU2LC0yNjc5MzU4MzEsMTEx
-MTM0Mzg3OCwxNDQyMDUxMTc3LC02MzgxNDY0MywtNzY0MTg2Nj
-YzLDI2OTUzNTMzNiwtODAwMzY3ODcsMTU0MDI3NjU0OSwxNjcz
-ODg1MDc3XX0=
+eyJoaXN0b3J5IjpbLTEwODAwNTAyODUsLTIxMTczNDQyMTAsLT
+IxNjc4NTY1LDMzMDcyNTU5NiwxOTE0MTQ1MDk5LC0xMDgwNzQ1
+OTMyLC0xNzA5Nzk4ODc2LC0xMjUyMTE1NDAyLC0xODY5MzQ4Mj
+UyLC0yODAxMDAwNTYsLTEyNDM1MzA4NTYsLTI2NzkzNTgzMSwx
+MTExMzQzODc4LDE0NDIwNTExNzcsLTYzODE0NjQzLC03NjQxOD
+Y2NjMsMjY5NTM1MzM2LC04MDAzNjc4NywxNTQwMjc2NTQ5LDE2
+NzM4ODUwNzddfQ==
 -->
