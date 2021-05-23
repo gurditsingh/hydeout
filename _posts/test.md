@@ -97,10 +97,9 @@ In the below diagram we have edge node and cluster. The Edge node is used by the
 
  - In dev/qa/prod environment we have edge node and one big cluster which can be on-prem or cloud.
  - First user need to copy all the artifacts like **job**(means java, scala jar ), **files** (can be input files or config files), third party **library** to cluster or edge node.
- - Next from edge node we can run the job by spark submit
-
+ - Next from edge node run the job 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MTAzODkyNywtMTA4MDA1MDI4NSwtMj
+eyJoaXN0b3J5IjpbMTc1OTU4NjgzOSwtMTA4MDA1MDI4NSwtMj
 ExNzM0NDIxMCwtMjE2Nzg1NjUsMzMwNzI1NTk2LDE5MTQxNDUw
 OTksLTEwODA3NDU5MzIsLTE3MDk3OTg4NzYsLTEyNTIxMTU0MD
 IsLTE4NjkzNDgyNTIsLTI4MDEwMDA1NiwtMTI0MzUzMDg1Niwt
