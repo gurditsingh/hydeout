@@ -56,13 +56,16 @@ But if we check sparkContext under both the sessions(oldSession, newSession) hav
 
 
 ## Spark Submit
-The spark-submit script in Spark’s bin directory is used to launch applications on a cluster. It can use all of Spark’s supported cluster managers through a uniform interface to configure and run the applications on cluster.
+The **spark-submit** script in Spark’s bin directory is used to launch applications on a cluster. It can use all of Spark’s supported cluster managers through a uniform interface to configure and run the applications on cluster.
+
+The **spark-submit** command is a utility to run or submit a Spark application program (or job) to the cluster by specifying options and configurations. The application you are submitting can be written in Scala, Java, or Python (PySpark).
+spark-submit command supports the following
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU5MTUyMzUzLC0yMTY3ODU2NSwzMzA3Mj
-U1OTYsMTkxNDE0NTA5OSwtMTA4MDc0NTkzMiwtMTcwOTc5ODg3
-NiwtMTI1MjExNTQwMiwtMTg2OTM0ODI1MiwtMjgwMTAwMDU2LC
-0xMjQzNTMwODU2LC0yNjc5MzU4MzEsMTExMTM0Mzg3OCwxNDQy
-MDUxMTc3LC02MzgxNDY0MywtNzY0MTg2NjYzLDI2OTUzNTMzNi
-wtODAwMzY3ODcsMTU0MDI3NjU0OSwxNjczODg1MDc3LC0zNjY1
-MDk1MThdfQ==
+eyJoaXN0b3J5IjpbLTUxMDU3NzY5MiwtMjE2Nzg1NjUsMzMwNz
+I1NTk2LDE5MTQxNDUwOTksLTEwODA3NDU5MzIsLTE3MDk3OTg4
+NzYsLTEyNTIxMTU0MDIsLTE4NjkzNDgyNTIsLTI4MDEwMDA1Ni
+wtMTI0MzUzMDg1NiwtMjY3OTM1ODMxLDExMTEzNDM4NzgsMTQ0
+MjA1MTE3NywtNjM4MTQ2NDMsLTc2NDE4NjY2MywyNjk1MzUzMz
+YsLTgwMDM2Nzg3LDE1NDAyNzY1NDksMTY3Mzg4NTA3NywtMzY2
+NTA5NTE4XX0=
 -->
