@@ -90,18 +90,20 @@ In the below diagram we have edge node and cluster. The Edge node is used by the
 
  - Cluster is consist of number of nodes : number of Master nodes, number of Edge Nodes,
    number of Worker Nodes.
- - In cluster we haveConfiguration of each type node: number of cores per node, RAM and
+ - In cluster we have configuration of each node: number of cores per node, RAM and
    Disk Volume.
 
-   
-
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spt_ep4_sparksubmit.jpg?raw=true)
+
+ - In dev/qa/prod we have edge node and one big cluster and 
+ - 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1MTgyNTc1NiwtMjExNzM0NDIxMCwtMj
-E2Nzg1NjUsMzMwNzI1NTk2LDE5MTQxNDUwOTksLTEwODA3NDU5
-MzIsLTE3MDk3OTg4NzYsLTEyNTIxMTU0MDIsLTE4NjkzNDgyNT
-IsLTI4MDEwMDA1NiwtMTI0MzUzMDg1NiwtMjY3OTM1ODMxLDEx
-MTEzNDM4NzgsMTQ0MjA1MTE3NywtNjM4MTQ2NDMsLTc2NDE4Nj
-Y2MywyNjk1MzUzMzYsLTgwMDM2Nzg3LDE1NDAyNzY1NDksMTY3
-Mzg4NTA3N119
+eyJoaXN0b3J5IjpbODUzOTg2ODcyLC0yMTE3MzQ0MjEwLC0yMT
+Y3ODU2NSwzMzA3MjU1OTYsMTkxNDE0NTA5OSwtMTA4MDc0NTkz
+MiwtMTcwOTc5ODg3NiwtMTI1MjExNTQwMiwtMTg2OTM0ODI1Mi
+wtMjgwMTAwMDU2LC0xMjQzNTMwODU2LC0yNjc5MzU4MzEsMTEx
+MTM0Mzg3OCwxNDQyMDUxMTc3LC02MzgxNDY0MywtNzY0MTg2Nj
+YzLDI2OTUzNTMzNiwtODAwMzY3ODcsMTU0MDI3NjU0OSwxNjcz
+ODg1MDc3XX0=
 -->
