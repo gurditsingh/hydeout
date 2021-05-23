@@ -86,11 +86,14 @@ In the below diagram we have edge node and cluster. The Edge node is used by the
  - The Edge node can be the system used by the user and which is outside of the cluster but have connectivity to the cluster.
  - The Edge node can be system used by the user which is one of the node in the cluster. Generally the driver node can be the edge node.
 
-**Cluster :** Cluster is consist of nodes 
+**Cluster :** 
+
+ - Number of nodes : number of Master nodes, number of Edge Nodes,
+   number of Worker Nodes.
 
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spt_ep4_sparksubmit.jpg?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NzcwODcyNiwtMjExNzM0NDIxMCwtMj
+eyJoaXN0b3J5IjpbMTc5MDk3MTYyMSwtMjExNzM0NDIxMCwtMj
 E2Nzg1NjUsMzMwNzI1NTk2LDE5MTQxNDUwOTksLTEwODA3NDU5
 MzIsLTE3MDk3OTg4NzYsLTEyNTIxMTU0MDIsLTE4NjkzNDgyNT
 IsLTI4MDEwMDA1NiwtMTI0MzUzMDg1NiwtMjY3OTM1ODMxLDEx
