@@ -96,14 +96,15 @@ In the below diagram we have edge node and cluster. The Edge node is used by the
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spt_ep4_sparksubmit.jpg?raw=true)
 
  - In dev/qa/prod environment we have edge node and one big cluster which can be on-prem or cloud.
- - First user need to copy all the artifacts like job(spark job me), files
+ - First user need to copy all the artifacts like **job**(means java, scala jar ), **files** (can be input files or config files), third party **library** to .
+ - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0ODExMTQ4NCwtMTA4MDA1MDI4NSwtMj
-ExNzM0NDIxMCwtMjE2Nzg1NjUsMzMwNzI1NTk2LDE5MTQxNDUw
-OTksLTEwODA3NDU5MzIsLTE3MDk3OTg4NzYsLTEyNTIxMTU0MD
-IsLTE4NjkzNDgyNTIsLTI4MDEwMDA1NiwtMTI0MzUzMDg1Niwt
-MjY3OTM1ODMxLDExMTEzNDM4NzgsMTQ0MjA1MTE3NywtNjM4MT
-Q2NDMsLTc2NDE4NjY2MywyNjk1MzUzMzYsLTgwMDM2Nzg3LDE1
-NDAyNzY1NDldfQ==
+eyJoaXN0b3J5IjpbNjk4MjIzNDIyLC0xMDgwMDUwMjg1LC0yMT
+E3MzQ0MjEwLC0yMTY3ODU2NSwzMzA3MjU1OTYsMTkxNDE0NTA5
+OSwtMTA4MDc0NTkzMiwtMTcwOTc5ODg3NiwtMTI1MjExNTQwMi
+wtMTg2OTM0ODI1MiwtMjgwMTAwMDU2LC0xMjQzNTMwODU2LC0y
+Njc5MzU4MzEsMTExMTM0Mzg3OCwxNDQyMDUxMTc3LC02MzgxND
+Y0MywtNzY0MTg2NjYzLDI2OTUzNTMzNiwtODAwMzY3ODcsMTU0
+MDI3NjU0OV19
 -->
