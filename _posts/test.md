@@ -157,19 +157,20 @@ In this section we will look at examples with how to use Livy Spark Service to s
 	```
  - Next submit the batch job with REST POST call to http://<livy-server>:8998/batches request.
 	```shell
-	curl -H "Content-Type: application/json" http://ec2-127-0-0-1.us-west-2.compute.amazonaws.com:8998/batches
+	curl -H "Content-Type: application/json" localhost:8998/batches
 	 -X POST --data '{
-	  "name" : "LivyREST",
-	  "className" :  "com.ravi.spark.analytics.SparkLivyTest",
-	  "file"  : "/user/hadoop/parking/stream-analytics.jar",
+	  "name" : "spark-example",
+	  "className" :  "com.test.WordCountExample",
+	  "file"  : "/user/example/spark-example.jar",
 	  "proxyUser" : "hadoop",
 	  "driverMemory" : "3g",
 	  "driverCores" : "3",
-	  "args" : ["group", "3" ]
+	  "args" : ["sample", "10" ]
 	}'
 	```
+	Next 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNDUzNjI3OSwtNzk1NTQ5MDY3LDIxMz
+eyJoaXN0b3J5IjpbMTk0NDc2Mzk4MSwtNzk1NTQ5MDY3LDIxMz
 g5NzMxMDcsLTE1NDk0NTE5NzEsMTI1NDgwNzkwNywxNjM1MTA4
 ODkwLDE5OTk0NDE1NDcsMTQyNTEwMzE5MiwtNDc4MjUxNTQxLD
 EzODIzNzA2MDEsMTMzOTk5MTgyNSwtMTA4MDA1MDI4NSwtMjEx
