@@ -119,13 +119,23 @@ spark-example.jar
 
 Apache Livy is a service that enables easy interaction with a Spark cluster over a REST interface. It enables easy submission of Spark jobs or snippets of Spark code, synchronous or asynchronous result retrieval, as well as Spark Context management, all via a simple REST interface.
 
-Livy manages Contexts running on the cluster managed by a Resource Manager like YARN. This enables proper fault-tolerance, high availability, session isolation, scalability and security. Livy also provides multiple modes of interaction: REST based jar submission, a thin java client for fine grained job submission and result retrieval, as well as submission of code snippets in string form. Thus Livy enables interactive Applications as well as interactive Notebooks like Jupyter, to leverage a remote Spark cluster. In fact, Livy already powers a Spark backend for Jupyter notebooks on HDIInsight Service on Microsoft Azure, which we will demo during our talk. In addition to the demo, in our talk we will describe Livy’s API, architecture and future roadmap.
+Livy manages Spark Contexts running on the cluster managed by a Resource Manager like YARN. This enables proper fault-tolerance, high availability, session isolation, scalability and security. Livy also provides multiple modes of interaction: REST based jar submission, a thin java client for fine grained job submission and result retrieval, as well as submission of code snippets in string form. Thus Livy enables interactive Applications as well as interactive Notebooks like Jupyter, to leverage a remote Spark cluster.
+
+### Features of Livy:
+
+-   Long running Spark Contexts that can be used for multiple Spark jobs, by multiple clients
+-   Share cached RDDs or DataSets across multiple jobs and clients
+-   Multiple Spark Contexts can be managed simultaneously, and the Spark Contexts run on the cluster (YARN/Mesos) instead of the Livy Server, for good fault tolerance and concurrency
+-   Jobs can be submitted as precompiled jars, snippets of code or via java/scala client API
+-   Ensure security via secure authenticated communication
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI0MTEwNjcyLDE5OTk0NDE1NDcsMTQyNT
-EwMzE5MiwtNDc4MjUxNTQxLDEzODIzNzA2MDEsMTMzOTk5MTgy
-NSwtMTA4MDA1MDI4NSwtMjExNzM0NDIxMCwtMjE2Nzg1NjUsMz
-MwNzI1NTk2LDE5MTQxNDUwOTksLTEwODA3NDU5MzIsLTE3MDk3
-OTg4NzYsLTEyNTIxMTU0MDIsLTE4NjkzNDgyNTIsLTI4MDEwMD
-A1NiwtMTI0MzUzMDg1NiwtMjY3OTM1ODMxLDExMTEzNDM4Nzgs
-MTQ0MjA1MTE3N119
+eyJoaXN0b3J5IjpbMTYzNTEwODg5MCwxOTk5NDQxNTQ3LDE0Mj
+UxMDMxOTIsLTQ3ODI1MTU0MSwxMzgyMzcwNjAxLDEzMzk5OTE4
+MjUsLTEwODAwNTAyODUsLTIxMTczNDQyMTAsLTIxNjc4NTY1LD
+MzMDcyNTU5NiwxOTE0MTQ1MDk5LC0xMDgwNzQ1OTMyLC0xNzA5
+Nzk4ODc2LC0xMjUyMTE1NDAyLC0xODY5MzQ4MjUyLC0yODAxMD
+AwNTYsLTEyNDM1MzA4NTYsLTI2NzkzNTgzMSwxMTExMzQzODc4
+LDE0NDIwNTExNzddfQ==
 -->
