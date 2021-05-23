@@ -168,9 +168,9 @@ In this section we will look at examples with how to use Livy Spark Service to s
 	  "args" : ["sample", "10" ]
 	}'
 	```
-	Next 
+	Next livy server return the batch job response.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NDc2Mzk4MSwtNzk1NTQ5MDY3LDIxMz
+eyJoaXN0b3J5IjpbLTE2NzcyNTQyOSwtNzk1NTQ5MDY3LDIxMz
 g5NzMxMDcsLTE1NDk0NTE5NzEsMTI1NDgwNzkwNywxNjM1MTA4
 ODkwLDE5OTk0NDE1NDcsMTQyNTEwMzE5MiwtNDc4MjUxNTQxLD
 EzODIzNzA2MDEsMTMzOTk5MTgyNSwtMTA4MDA1MDI4NSwtMjEx
