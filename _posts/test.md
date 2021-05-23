@@ -173,13 +173,13 @@ In this section we will look at examples with how to use Livy Spark Service to s
 
 please Check out the complete [documentation](https://github.com/gurditsingh/blog/blob/gh-pages/files/TestSparkSession.html "Source code").
 
-How 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Nzc2MDE4MDAsMTEyMzkzMTY2MCwtNz
-k1NTQ5MDY3LDIxMzg5NzMxMDcsLTE1NDk0NTE5NzEsMTI1NDgw
-NzkwNywxNjM1MTA4ODkwLDE5OTk0NDE1NDcsMTQyNTEwMzE5Mi
-wtNDc4MjUxNTQxLDEzODIzNzA2MDEsMTMzOTk5MTgyNSwtMTA4
-MDA1MDI4NSwtMjExNzM0NDIxMCwtMjE2Nzg1NjUsMzMwNzI1NT
-k2LDE5MTQxNDUwOTksLTEwODA3NDU5MzIsLTE3MDk3OTg4NzYs
-LTEyNTIxMTU0MDJdfQ==
+eyJoaXN0b3J5IjpbLTIwOTc2NzQ3NzYsLTE3Nzc2MDE4MDAsMT
+EyMzkzMTY2MCwtNzk1NTQ5MDY3LDIxMzg5NzMxMDcsLTE1NDk0
+NTE5NzEsMTI1NDgwNzkwNywxNjM1MTA4ODkwLDE5OTk0NDE1ND
+csMTQyNTEwMzE5MiwtNDc4MjUxNTQxLDEzODIzNzA2MDEsMTMz
+OTk5MTgyNSwtMTA4MDA1MDI4NSwtMjExNzM0NDIxMCwtMjE2Nz
+g1NjUsMzMwNzI1NTk2LDE5MTQxNDUwOTksLTEwODA3NDU5MzIs
+LTE3MDk3OTg4NzZdfQ==
 -->
