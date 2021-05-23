@@ -54,9 +54,9 @@ res3: org.apache.spark.SparkContext = org.apache.spark.SparkContext@e073b56
 ```
 But if we check sparkContext under both the sessions(oldSession, newSession) have the same hashcode. so if we create temp table under the oldSessionand newSession they will be not shared with each other. Check out the complete [Source code](https://github.com/gurditsingh/blog/blob/gh-pages/files/TestSparkSession.html "Source code").
 
-# Ways to run the job
+# Ways to run the job on cluster
 
-## Spark Submit
+## 1. Spark Submit
 The **spark-submit** script in Spark’s bin directory is used to launch applications on a cluster. It can use all of Spark’s supported cluster managers through a uniform interface to configure and run the applications on cluster.
 
 The **spark-submit** command is a utility to run or submit a Spark application program (or job) to the cluster by specifying options and configurations. The application you are submitting can be written in Scala, Java, or Python (PySpark).
@@ -100,10 +100,19 @@ In the below diagram we have edge node and cluster. The Edge node is used by the
  - First user need to copy all the artifacts like **job**(means java, scala jar ), **files** (can be input files or config files), third party **library** to cluster or edge node.
  - Next from edge node run the job by spark submit. By using spark submit parameters user can submit or the job on cluster
  - Spark provides the common utility like spark-submit to run the job/application on cluster.
- 
- 
+  
+ **Example :**
+ ```bash
+./bin/spark-submit \
+--master yarn \
+--deploy-mode cluster \
+--conf "spark.sql.shuffle.partitions=20000" \
+--jars "dependency1.jar,dependency2.jar"
+--class com.sparkbyexamples.WordCountExample \
+spark-by-examples.jar 
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MDc0MTI0MiwxMzM5OTkxODI1LC0xMD
+eyJoaXN0b3J5IjpbMTk0NjY3NDQyOCwxMzM5OTkxODI1LC0xMD
 gwMDUwMjg1LC0yMTE3MzQ0MjEwLC0yMTY3ODU2NSwzMzA3MjU1
 OTYsMTkxNDE0NTA5OSwtMTA4MDc0NTkzMiwtMTcwOTc5ODg3Ni
 wtMTI1MjExNTQwMiwtMTg2OTM0ODI1MiwtMjgwMTAwMDU2LC0x
