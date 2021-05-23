@@ -79,11 +79,11 @@ Below is a spark-submit command with the commonly used options.
 ```
 
 ### How we use spark-submit
-In the below diagram we have 
+In the below diagram we have edge node and cluster. The Edge node is used by user
 
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spt_ep4_sparksubmit.jpg?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3ODY5Nzg0OSwtMjExNzM0NDIxMCwtMj
+eyJoaXN0b3J5IjpbMTQ2NTEzNzI2MiwtMjExNzM0NDIxMCwtMj
 E2Nzg1NjUsMzMwNzI1NTk2LDE5MTQxNDUwOTksLTEwODA3NDU5
 MzIsLTE3MDk3OTg4NzYsLTEyNTIxMTU0MDIsLTE4NjkzNDgyNT
 IsLTI4MDEwMDA1NiwtMTI0MzUzMDg1NiwtMjY3OTM1ODMxLDEx
