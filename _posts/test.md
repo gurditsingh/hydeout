@@ -60,14 +60,28 @@ The **spark-submit** script in Spark’s bin directory is used to launch applica
 
 The **spark-submit** command is a utility to run or submit a Spark application program (or job) to the cluster by specifying options and configurations. The application you are submitting can be written in Scala, Java, or Python (PySpark).
 
-### **where is spark-submit :**
+**where is spark-submit :**
 Spark binary comes with **spark-submit.sh** script file for Linux, Mac, and `spark-submit.cmd` command file for windows, these scripts are available at **$SPARK_HOME/bin** directory.
+
+```bash
+./bin/spark-submit \
+  --master <master-url> \
+  --deploy-mode <deploy-mode> \
+  --conf <key<=<value> \
+  --driver-memory <value>g \
+  --executor-memory <value>g \
+  --executor-cores <number of cores>  \
+  --jars  <comma separated dependencies>
+  --class <main-class> \
+  <application-jar> \
+  [application-arguments]
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwODYwNjkzOSwtMjE2Nzg1NjUsMzMwNz
-I1NTk2LDE5MTQxNDUwOTksLTEwODA3NDU5MzIsLTE3MDk3OTg4
-NzYsLTEyNTIxMTU0MDIsLTE4NjkzNDgyNTIsLTI4MDEwMDA1Ni
-wtMTI0MzUzMDg1NiwtMjY3OTM1ODMxLDExMTEzNDM4NzgsMTQ0
-MjA1MTE3NywtNjM4MTQ2NDMsLTc2NDE4NjY2MywyNjk1MzUzMz
-YsLTgwMDM2Nzg3LDE1NDAyNzY1NDksMTY3Mzg4NTA3NywtMzY2
-NTA5NTE4XX0=
+eyJoaXN0b3J5IjpbLTIxMTAwMjE5NzksLTIxNjc4NTY1LDMzMD
+cyNTU5NiwxOTE0MTQ1MDk5LC0xMDgwNzQ1OTMyLC0xNzA5Nzk4
+ODc2LC0xMjUyMTE1NDAyLC0xODY5MzQ4MjUyLC0yODAxMDAwNT
+YsLTEyNDM1MzA4NTYsLTI2NzkzNTgzMSwxMTExMzQzODc4LDE0
+NDIwNTExNzcsLTYzODE0NjQzLC03NjQxODY2NjMsMjY5NTM1Mz
+M2LC04MDAzNjc4NywxNTQwMjc2NTQ5LDE2NzM4ODUwNzcsLTM2
+NjUwOTUxOF19
 -->
