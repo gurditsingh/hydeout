@@ -54,6 +54,7 @@ res3: org.apache.spark.SparkContext = org.apache.spark.SparkContext@e073b56
 ```
 But if we check sparkContext under both the sessions(oldSession, newSession) have the same hashcode. so if we create temp table under the oldSessionand newSession they will be not shared with each other. Check out the complete [Source code](https://github.com/gurditsingh/blog/blob/gh-pages/files/TestSparkSession.html "Source code").
 
+## Ways to run the job
 
 ## Spark Submit
 The **spark-submit** script in Spark’s bin directory is used to launch applications on a cluster. It can use all of Spark’s supported cluster managers through a uniform interface to configure and run the applications on cluster.
@@ -98,9 +99,11 @@ In the below diagram we have edge node and cluster. The Edge node is used by the
  - In dev/qa/prod environment we have edge node and one big cluster which can be on-prem or cloud.
  - First user need to copy all the artifacts like **job**(means java, scala jar ), **files** (can be input files or config files), third party **library** to cluster or edge node.
  - Next from edge node run the job by spark submit. By using spark submit parameters user can submit or the job on cluster
- - Spark provides the common utility like spark-submit to ru
+ - Spark provides the common utility like spark-submit to run the job/application on cluster.
+ 
+ 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0NjUzNzQyMywtMTA4MDA1MDI4NSwtMj
+eyJoaXN0b3J5IjpbMTMzOTk5MTgyNSwtMTA4MDA1MDI4NSwtMj
 ExNzM0NDIxMCwtMjE2Nzg1NjUsMzMwNzI1NTk2LDE5MTQxNDUw
 OTksLTEwODA3NDU5MzIsLTE3MDk3OTg4NzYsLTEyNTIxMTU0MD
 IsLTE4NjkzNDgyNTIsLTI4MDEwMDA1NiwtMTI0MzUzMDg1Niwt
