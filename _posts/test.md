@@ -79,8 +79,10 @@ Below is a spark-submit command with the commonly used options.
   [application-arguments]
 ```
 
-### How to use spark-submit
+### Basic terminology
 In the below diagram we have edge node and cluster. The Edge node is used by the user (which run the application/job) to run the application on the cluster.
+
+![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spt_ep4_sparksubmit.jpg?raw=true)
 
 **Edge Node :**
 
@@ -94,7 +96,7 @@ In the below diagram we have edge node and cluster. The Edge node is used by the
  - In cluster we have configuration of each node: number of cores per node, RAM and
    Disk Volume.
 
-![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spt_ep4_sparksubmit.jpg?raw=true)
+
 
  - In dev/qa/prod environment we have edge node and one big cluster which can be on-prem or cloud.
  - First user need to copy all the artifacts like **job**(means java, scala jar ), **files** (can be input files or config files), third party **library** to cluster or edge node.
@@ -112,11 +114,11 @@ In the below diagram we have edge node and cluster. The Edge node is used by the
 spark-example.jar 
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4MjM3MDYwMSwxMzM5OTkxODI1LC0xMD
-gwMDUwMjg1LC0yMTE3MzQ0MjEwLC0yMTY3ODU2NSwzMzA3MjU1
-OTYsMTkxNDE0NTA5OSwtMTA4MDc0NTkzMiwtMTcwOTc5ODg3Ni
-wtMTI1MjExNTQwMiwtMTg2OTM0ODI1MiwtMjgwMTAwMDU2LC0x
-MjQzNTMwODU2LC0yNjc5MzU4MzEsMTExMTM0Mzg3OCwxNDQyMD
-UxMTc3LC02MzgxNDY0MywtNzY0MTg2NjYzLDI2OTUzNTMzNiwt
-ODAwMzY3ODddfQ==
+eyJoaXN0b3J5IjpbMTAyMzI1MzIwOCwxMzgyMzcwNjAxLDEzMz
+k5OTE4MjUsLTEwODAwNTAyODUsLTIxMTczNDQyMTAsLTIxNjc4
+NTY1LDMzMDcyNTU5NiwxOTE0MTQ1MDk5LC0xMDgwNzQ1OTMyLC
+0xNzA5Nzk4ODc2LC0xMjUyMTE1NDAyLC0xODY5MzQ4MjUyLC0y
+ODAxMDAwNTYsLTEyNDM1MzA4NTYsLTI2NzkzNTgzMSwxMTExMz
+QzODc4LDE0NDIwNTExNzcsLTYzODE0NjQzLC03NjQxODY2NjMs
+MjY5NTM1MzM2XX0=
 -->
