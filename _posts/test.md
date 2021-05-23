@@ -143,14 +143,24 @@ In this section we will look at examples with how to use Livy Spark Service to s
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spt_e04_livy.jpg?raw=true)
 
  - Before submit a batch job, first build spark application and create the assembly jar. You must upload the application jar on the cluster storage (HDFS) of the hadoop cluster. The main difference between submitting job through spark-submit and REST API is that jar to be uploaded into the cluster.
- - Next job can be submitted through REST API from remote server. The spark job parameters is in JSON format.
-
+ - Next job can be submitted through REST API from remote server. The spark job parameters is in JSON format. below are the sample job parameters.
+	```shell
+	{
+	  "name" : "SampleSpark",
+	  "className" :  "com.ravi.spark.analytics.SparkLivyTest",
+	  "file"  : "/user/hadoop/parking/stream-analytics.jar",
+	  "proxyUser" : "hadoop",
+	  "driverMemory" : "3g",
+	  "driverCores" : "3",
+	  "args" : ["group", "3" ]
+	}
+	```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5NTU0OTA2NywyMTM4OTczMTA3LC0xNT
-Q5NDUxOTcxLDEyNTQ4MDc5MDcsMTYzNTEwODg5MCwxOTk5NDQx
-NTQ3LDE0MjUxMDMxOTIsLTQ3ODI1MTU0MSwxMzgyMzcwNjAxLD
-EzMzk5OTE4MjUsLTEwODAwNTAyODUsLTIxMTczNDQyMTAsLTIx
-Njc4NTY1LDMzMDcyNTU5NiwxOTE0MTQ1MDk5LC0xMDgwNzQ1OT
-MyLC0xNzA5Nzk4ODc2LC0xMjUyMTE1NDAyLC0xODY5MzQ4MjUy
-LC0yODAxMDAwNTZdfQ==
+eyJoaXN0b3J5IjpbNDE3MjQzNjEzLC03OTU1NDkwNjcsMjEzOD
+k3MzEwNywtMTU0OTQ1MTk3MSwxMjU0ODA3OTA3LDE2MzUxMDg4
+OTAsMTk5OTQ0MTU0NywxNDI1MTAzMTkyLC00NzgyNTE1NDEsMT
+M4MjM3MDYwMSwxMzM5OTkxODI1LC0xMDgwMDUwMjg1LC0yMTE3
+MzQ0MjEwLC0yMTY3ODU2NSwzMzA3MjU1OTYsMTkxNDE0NTA5OS
+wtMTA4MDc0NTkzMiwtMTcwOTc5ODg3NiwtMTI1MjExNTQwMiwt
+MTg2OTM0ODI1Ml19
 -->
