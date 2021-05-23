@@ -134,8 +134,6 @@ The following image, taken from the official website, to show the Livy architect
 -   Ensure security via secure authenticated communication
 
 
-
-
 ### How to use Livy to submit the Job
 
 In this section we will look at examples with how to use Livy Spark Service to submit batch job, monitor the progress of the job.
@@ -172,12 +170,14 @@ In this section we will look at examples with how to use Livy Spark Service to s
 	 ```shell
 	{"id":0,"state":"starting","appId":null,"appInfo":{"driverLogUrl":null,"sparkUiUrl":null},"log":["stdout: ","\nstderr: ","\nYARN Diagnostics: "]}
 	```
+
+please Check out the complete [Source code](https://github.com/gurditsingh/blog/blob/gh-pages/files/TestSparkSession.html "Source code").
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyMzkzMTY2MCwtNzk1NTQ5MDY3LDIxMz
-g5NzMxMDcsLTE1NDk0NTE5NzEsMTI1NDgwNzkwNywxNjM1MTA4
-ODkwLDE5OTk0NDE1NDcsMTQyNTEwMzE5MiwtNDc4MjUxNTQxLD
-EzODIzNzA2MDEsMTMzOTk5MTgyNSwtMTA4MDA1MDI4NSwtMjEx
-NzM0NDIxMCwtMjE2Nzg1NjUsMzMwNzI1NTk2LDE5MTQxNDUwOT
-ksLTEwODA3NDU5MzIsLTE3MDk3OTg4NzYsLTEyNTIxMTU0MDIs
-LTE4NjkzNDgyNTJdfQ==
+eyJoaXN0b3J5IjpbOTE5MDEzODI4LDExMjM5MzE2NjAsLTc5NT
+U0OTA2NywyMTM4OTczMTA3LC0xNTQ5NDUxOTcxLDEyNTQ4MDc5
+MDcsMTYzNTEwODg5MCwxOTk5NDQxNTQ3LDE0MjUxMDMxOTIsLT
+Q3ODI1MTU0MSwxMzgyMzcwNjAxLDEzMzk5OTE4MjUsLTEwODAw
+NTAyODUsLTIxMTczNDQyMTAsLTIxNjc4NTY1LDMzMDcyNTU5Ni
+wxOTE0MTQ1MDk5LC0xMDgwNzQ1OTMyLC0xNzA5Nzk4ODc2LC0x
+MjUyMTE1NDAyXX0=
 -->
