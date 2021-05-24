@@ -208,13 +208,15 @@ Below are the points which creates a difference:
 	  "code" : "spark.range(10).count()"
 	}'
 	```
- - After running the statement livy will return a statement id which will be used t
+ - After running the statement livy will return a statement id which will be used to get the result of the statement.
+
+Likewise
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzEzODE5MTE2LDE0MTc3MjUyMzEsLTUzOD
-MwNzQzNSwtMTYzMzI2MDQyMiwtMTc3NzYwMTgwMCwxMTIzOTMx
-NjYwLC03OTU1NDkwNjcsMjEzODk3MzEwNywtMTU0OTQ1MTk3MS
-wxMjU0ODA3OTA3LDE2MzUxMDg4OTAsMTk5OTQ0MTU0NywxNDI1
-MTAzMTkyLC00NzgyNTE1NDEsMTM4MjM3MDYwMSwxMzM5OTkxOD
-I1LC0xMDgwMDUwMjg1LC0yMTE3MzQ0MjEwLC0yMTY3ODU2NSwz
-MzA3MjU1OTZdfQ==
+eyJoaXN0b3J5IjpbLTIwNjEwNTIwODEsMTQxNzcyNTIzMSwtNT
+M4MzA3NDM1LC0xNjMzMjYwNDIyLC0xNzc3NjAxODAwLDExMjM5
+MzE2NjAsLTc5NTU0OTA2NywyMTM4OTczMTA3LC0xNTQ5NDUxOT
+cxLDEyNTQ4MDc5MDcsMTYzNTEwODg5MCwxOTk5NDQxNTQ3LDE0
+MjUxMDMxOTIsLTQ3ODI1MTU0MSwxMzgyMzcwNjAxLDEzMzk5OT
+E4MjUsLTEwODAwNTAyODUsLTIxMTczNDQyMTAsLTIxNjc4NTY1
+LDMzMDcyNTU5Nl19
 -->
