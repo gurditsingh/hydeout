@@ -195,21 +195,15 @@ Below are the points which creates a difference:
 ### Lets understand by code to share context and dataframes.
 
  - User need to create a session first and choose the kind to session.
- 
 	```shell
-	curl -H "Content-Type: application/json" localhost:8998/livy/batches
+	curl -H "Content-Type: application/json" localhost:8998/livy/sessions
 	 -X POST --data '{
-	  "name" : "spark-example",
-	  "className" :  "com.test.WordCountExample",
-	  "file"  : "/user/example/spark-example.jar",
-	  "proxyUser" : "hadoop",
-	  "driverMemory" : "3g",
-	  "driverCores" : "3",
-	  "args" : ["sample", "10" ]
+	  "kind" : "spark"
 	}'
 	```
+After creating the session livy will return a session id 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5MDM0NzQzNSwxNDE3NzI1MjMxLC01Mz
+eyJoaXN0b3J5IjpbMjA1MDcyMjE3OCwxNDE3NzI1MjMxLC01Mz
 gzMDc0MzUsLTE2MzMyNjA0MjIsLTE3Nzc2MDE4MDAsMTEyMzkz
 MTY2MCwtNzk1NTQ5MDY3LDIxMzg5NzMxMDcsLTE1NDk0NTE5Nz
 EsMTI1NDgwNzkwNywxNjM1MTA4ODkwLDE5OTk0NDE1NDcsMTQy
