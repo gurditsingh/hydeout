@@ -175,15 +175,17 @@ please Check out the complete [documentation](https://github.com/gurditsingh/blo
 
 ## Why would you choose Apache Livy when we already have spark-submit?
 
+Livy is a REST web service for submitting Spark Jobs or accessing – and thus sharing – long-running Spark Sessions from a remote place. Instead of tedious configuration and installation of your Spark client, Livy takes over the work and provides you with a simple and convenient interface.
 
+Another great aspect of Livy, namely, is that you can choose from a range of scripting languages: Java, Scala, Python, R.
 
 ![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spt_e04_livy_spark.jpg?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNzcyNTIzMSwtNTM4MzA3NDM1LC0xNj
-MzMjYwNDIyLC0xNzc3NjAxODAwLDExMjM5MzE2NjAsLTc5NTU0
-OTA2NywyMTM4OTczMTA3LC0xNTQ5NDUxOTcxLDEyNTQ4MDc5MD
-csMTYzNTEwODg5MCwxOTk5NDQxNTQ3LDE0MjUxMDMxOTIsLTQ3
-ODI1MTU0MSwxMzgyMzcwNjAxLDEzMzk5OTE4MjUsLTEwODAwNT
-AyODUsLTIxMTczNDQyMTAsLTIxNjc4NTY1LDMzMDcyNTU5Niwx
-OTE0MTQ1MDk5XX0=
+eyJoaXN0b3J5IjpbMTM3NTA3ODg2NSwxNDE3NzI1MjMxLC01Mz
+gzMDc0MzUsLTE2MzMyNjA0MjIsLTE3Nzc2MDE4MDAsMTEyMzkz
+MTY2MCwtNzk1NTQ5MDY3LDIxMzg5NzMxMDcsLTE1NDk0NTE5Nz
+EsMTI1NDgwNzkwNywxNjM1MTA4ODkwLDE5OTk0NDE1NDcsMTQy
+NTEwMzE5MiwtNDc4MjUxNTQxLDEzODIzNzA2MDEsMTMzOTk5MT
+gyNSwtMTA4MDA1MDI4NSwtMjExNzM0NDIxMCwtMjE2Nzg1NjUs
+MzMwNzI1NTk2XX0=
 -->
