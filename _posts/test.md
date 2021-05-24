@@ -194,14 +194,26 @@ Below are the points which creates a difference:
 
 ### Lets understand by code to share context and dataframes.
 
- - User need to create a session fi
-
+ - User need to create a session first and choose the kind to session.
+ 
+	```shell
+	curl -H "Content-Type: application/json" localhost:8998/livy/batches
+	 -X POST --data '{
+	  "name" : "spark-example",
+	  "className" :  "com.test.WordCountExample",
+	  "file"  : "/user/example/spark-example.jar",
+	  "proxyUser" : "hadoop",
+	  "driverMemory" : "3g",
+	  "driverCores" : "3",
+	  "args" : ["sample", "10" ]
+	}'
+	```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYxNDA4MDc5LDE0MTc3MjUyMzEsLTUzOD
-MwNzQzNSwtMTYzMzI2MDQyMiwtMTc3NzYwMTgwMCwxMTIzOTMx
-NjYwLC03OTU1NDkwNjcsMjEzODk3MzEwNywtMTU0OTQ1MTk3MS
-wxMjU0ODA3OTA3LDE2MzUxMDg4OTAsMTk5OTQ0MTU0NywxNDI1
-MTAzMTkyLC00NzgyNTE1NDEsMTM4MjM3MDYwMSwxMzM5OTkxOD
-I1LC0xMDgwMDUwMjg1LC0yMTE3MzQ0MjEwLC0yMTY3ODU2NSwz
-MzA3MjU1OTZdfQ==
+eyJoaXN0b3J5IjpbLTQ5MDM0NzQzNSwxNDE3NzI1MjMxLC01Mz
+gzMDc0MzUsLTE2MzMyNjA0MjIsLTE3Nzc2MDE4MDAsMTEyMzkz
+MTY2MCwtNzk1NTQ5MDY3LDIxMzg5NzMxMDcsLTE1NDk0NTE5Nz
+EsMTI1NDgwNzkwNywxNjM1MTA4ODkwLDE5OTk0NDE1NDcsMTQy
+NTEwMzE5MiwtNDc4MjUxNTQxLDEzODIzNzA2MDEsMTMzOTk5MT
+gyNSwtMTA4MDA1MDI4NSwtMjExNzM0NDIxMCwtMjE2Nzg1NjUs
+MzMwNzI1NTk2XX0=
 -->
