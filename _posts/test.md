@@ -211,10 +211,10 @@ Below are the points which creates a difference:
  - After running the statement livy will return a statement id which will be used to get the result of the statement.
 
 **Share Dataframe :** Likewise user can cache or create temp view of dataframe which can be used by other users. 
- - First user can run the statement and create temp view of the data frame on the session 1 (assume you select session id 1 for the statements).
- - Other users can y
+ - First user can run the statement and create temp view of the data frame on the session id:1 (assume you select session id 1 for the statements).
+ - Other users can use the same session id (suppose session id:1) and they will be able to use the already created tables.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNzU1NjA0MSwxNDE3NzI1MjMxLC01Mz
+eyJoaXN0b3J5IjpbLTM4MzkyNjg2OCwxNDE3NzI1MjMxLC01Mz
 gzMDc0MzUsLTE2MzMyNjA0MjIsLTE3Nzc2MDE4MDAsMTEyMzkz
 MTY2MCwtNzk1NTQ5MDY3LDIxMzg5NzMxMDcsLTE1NDk0NTE5Nz
 EsMTI1NDgwNzkwNywxNjM1MTA4ODkwLDE5OTk0NDE1NDcsMTQy
