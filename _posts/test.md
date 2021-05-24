@@ -173,14 +173,15 @@ In this section we will look at examples with how to use Livy Spark Service to s
 
 please Check out the complete [documentation](https://github.com/gurditsingh/blog/blob/gh-pages/files/TestSparkSession.html "Source code").
 
-Why would you choose Apof Spark session when Spark already have Spark context?
+## Why would you choose Apache Livy when we already have spark-submit?
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDQ4Mjc1OTksLTE2MzMyNjA0MjIsLT
-E3Nzc2MDE4MDAsMTEyMzkzMTY2MCwtNzk1NTQ5MDY3LDIxMzg5
-NzMxMDcsLTE1NDk0NTE5NzEsMTI1NDgwNzkwNywxNjM1MTA4OD
-kwLDE5OTk0NDE1NDcsMTQyNTEwMzE5MiwtNDc4MjUxNTQxLDEz
-ODIzNzA2MDEsMTMzOTk5MTgyNSwtMTA4MDA1MDI4NSwtMjExNz
-M0NDIxMCwtMjE2Nzg1NjUsMzMwNzI1NTk2LDE5MTQxNDUwOTks
-LTEwODA3NDU5MzJdfQ==
+eyJoaXN0b3J5IjpbLTUzODMwNzQzNSwtMTYzMzI2MDQyMiwtMT
+c3NzYwMTgwMCwxMTIzOTMxNjYwLC03OTU1NDkwNjcsMjEzODk3
+MzEwNywtMTU0OTQ1MTk3MSwxMjU0ODA3OTA3LDE2MzUxMDg4OT
+AsMTk5OTQ0MTU0NywxNDI1MTAzMTkyLC00NzgyNTE1NDEsMTM4
+MjM3MDYwMSwxMzM5OTkxODI1LC0xMDgwMDUwMjg1LC0yMTE3Mz
+Q0MjEwLC0yMTY3ODU2NSwzMzA3MjU1OTYsMTkxNDE0NTA5OSwt
+MTA4MDc0NTkzMl19
 -->
