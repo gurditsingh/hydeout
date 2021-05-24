@@ -217,9 +217,9 @@ Below are the points which creates a difference:
 ## ETL use case for apache Livy
 Suppose you have to create a functionality in which user can preview the input data or intermediate data. In traditional ETL tools like ABI initio, Informatica and etc have the functionality user can preview the input data as well as intermediate data between the components. The traditional tools not only give the preview functionality as well as user can apply transformation function on that. 
 
-So if we have any ETL tool and we need to add the functionality of preview data then we can use apache livy for faster execution with the help of spark context sharing. In the spark sharing context we can save the time to only one time to create the yarn application no need for every preview 
+So if we have any ETL tool and we need to add the functionality of preview data then we can use apache livy for faster execution with the help of spark context sharing. In the spark sharing context we can save the time to only one time to create the yarn application no need for every preview create an new yarn application (new yarn application needs some time to launch)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU2MDc2NzA1NiwxNDE3NzI1MjMxLC01Mz
+eyJoaXN0b3J5IjpbLTczODY5OTA5NiwxNDE3NzI1MjMxLC01Mz
 gzMDc0MzUsLTE2MzMyNjA0MjIsLTE3Nzc2MDE4MDAsMTEyMzkz
 MTY2MCwtNzk1NTQ5MDY3LDIxMzg5NzMxMDcsLTE1NDk0NTE5Nz
 EsMTI1NDgwNzkwNywxNjM1MTA4ODkwLDE5OTk0NDE1NDcsMTQy
