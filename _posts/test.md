@@ -210,9 +210,11 @@ Below are the points which creates a difference:
 	```
  - After running the statement livy will return a statement id which will be used to get the result of the statement.
 
-**Likewise user can cache or create temp view of dataframe which can be used by other users on the same session.**
+**Share Dataframe** *Likewise user can cache or create temp view of dataframe which can be used by other users. 
+
+first user cna run the statement and create temp view of the data frame  to  on the same session.**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTY0ODIyMDYsMTQxNzcyNTIzMSwtNT
+eyJoaXN0b3J5IjpbLTEzNDMyMTY0NzIsMTQxNzcyNTIzMSwtNT
 M4MzA3NDM1LC0xNjMzMjYwNDIyLC0xNzc3NjAxODAwLDExMjM5
 MzE2NjAsLTc5NTU0OTA2NywyMTM4OTczMTA3LC0xNTQ5NDUxOT
 cxLDEyNTQ4MDc5MDcsMTYzNTEwODg5MCwxOTk5NDQxNTQ3LDE0
