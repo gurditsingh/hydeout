@@ -201,9 +201,15 @@ Below are the points which creates a difference:
 	  "kind" : "spark"
 	}'
 	```
-After creating the session livy will return a session id 
+ - After creating the session livy will return a session id which will be used to run the subsequent statements.
+	```shell
+	curl -H "Content-Type: application/json" localhost:8998/livy/sessions/0/ste
+	 -X POST --data '{
+	  "kind" : "spark"
+	}'
+	```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MDcyMjE3OCwxNDE3NzI1MjMxLC01Mz
+eyJoaXN0b3J5IjpbMTU4NTUyMzUyOCwxNDE3NzI1MjMxLC01Mz
 gzMDc0MzUsLTE2MzMyNjA0MjIsLTE3Nzc2MDE4MDAsMTEyMzkz
 MTY2MCwtNzk1NTQ5MDY3LDIxMzg5NzMxMDcsLTE1NDk0NTE5Nz
 EsMTI1NDgwNzkwNywxNjM1MTA4ODkwLDE5OTk0NDE1NDcsMTQy
