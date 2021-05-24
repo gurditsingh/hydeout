@@ -215,15 +215,15 @@ Below are the points which creates a difference:
  - Other users can use the same session id (suppose session id:1) and they will be able to use the already created tables.
 
 ## ETL use case for apache Livy
-Suppose you have to create a functionality in which user can preview the input data or intermediate data. In the traditional ETL tools like **AB initio**, **Informatica** and etc have the functionality user can preview the input data as well as intermediate data between the components. The traditional tools not only give the preview functionality they willas well as user can apply transformation function on that. 
+Suppose you have to create a functionality in which user can preview the input data or intermediate data. In the traditional ETL tools like **AB initio**, **Informatica** and etc have the functionality user can preview the input data as well as intermediate data between the components. The traditional tools not only give the preview functionality they will give transformation functionality (apply functions or filter the data) as well.
 
-So if we have any ETL tool and we need to add the functionality of preview data then we can use apache livy for faster execution with the help of spark context sharing. In the spark sharing context we can save the time to only one time to create the yarn application no need to create for every preview. Create an new yarn application (new yarn application needs some time to launch).
+So if we have any ETL tool and we need to add the functionality of preview data then we can use apache Livy for faster execution with the help of spark context sharing. In the spark sharing context we can save the time to only one time to create the yarn application no need to create for every preview. Create an new yarn application (new yarn application needs some time to launch).
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NzYyOTQwNywxNDE3NzI1MjMxLC01Mz
+eyJoaXN0b3J5IjpbLTI3MjMwMTM0NCwxNDE3NzI1MjMxLC01Mz
 gzMDc0MzUsLTE2MzMyNjA0MjIsLTE3Nzc2MDE4MDAsMTEyMzkz
 MTY2MCwtNzk1NTQ5MDY3LDIxMzg5NzMxMDcsLTE1NDk0NTE5Nz
 EsMTI1NDgwNzkwNywxNjM1MTA4ODkwLDE5OTk0NDE1NDcsMTQy
