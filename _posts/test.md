@@ -188,11 +188,16 @@ Below are the points which creates a difference:
 - when multiple users want to share a Spark Session.
 - when user wants to run low-latency queries.
 - when user wants to share the rdd or dataframes. 
--   when user need a quick setup to access your Spark cluster.
--   when you want to Integrate Spark into an app on your mobile device.
--   when need a remote workflow tool for submits spark jobs.
+- when user need a quick setup to access your Spark cluster.
+- when you want to Integrate Spark into an app on your mobile device.
+- when need a remote workflow tool for submits spark jobs.
+
+### Lets understand by code to share context and dataframes.
+
+ - User need to create a session fi
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4NTE1Mzg3LDE0MTc3MjUyMzEsLTUzOD
+eyJoaXN0b3J5IjpbLTYxNDA4MDc5LDE0MTc3MjUyMzEsLTUzOD
 MwNzQzNSwtMTYzMzI2MDQyMiwtMTc3NzYwMTgwMCwxMTIzOTMx
 NjYwLC03OTU1NDkwNjcsMjEzODk3MzEwNywtMTU0OTQ1MTk3MS
 wxMjU0ODA3OTA3LDE2MzUxMDg4OTAsMTk5OTQ0MTU0NywxNDI1
