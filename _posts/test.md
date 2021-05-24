@@ -219,15 +219,16 @@ Suppose you have to create a functionality in which user can preview the input d
 
 So if we have any ETL tool and we need to add the functionality of preview data then we can use apache Livy for faster execution with the help of spark context sharing. In the spark context sharing we can save the time to only one time to create the yarn application no need to create for every preview. Create an new yarn application (new yarn application needs some time to launch).
 
+## Next ?
 
-
+Planning to create multiple blogs episodes on Spark Performance Tuning. Covering the various areas of spark where we can improve the pipeline/job.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MzExOTE3MiwxNDE3NzI1MjMxLC01Mz
-gzMDc0MzUsLTE2MzMyNjA0MjIsLTE3Nzc2MDE4MDAsMTEyMzkz
-MTY2MCwtNzk1NTQ5MDY3LDIxMzg5NzMxMDcsLTE1NDk0NTE5Nz
-EsMTI1NDgwNzkwNywxNjM1MTA4ODkwLDE5OTk0NDE1NDcsMTQy
-NTEwMzE5MiwtNDc4MjUxNTQxLDEzODIzNzA2MDEsMTMzOTk5MT
-gyNSwtMTA4MDA1MDI4NSwtMjExNzM0NDIxMCwtMjE2Nzg1NjUs
-MzMwNzI1NTk2XX0=
+eyJoaXN0b3J5IjpbLTY3OTYwODM1NSwxNDczMTE5MTcyLDE0MT
+c3MjUyMzEsLTUzODMwNzQzNSwtMTYzMzI2MDQyMiwtMTc3NzYw
+MTgwMCwxMTIzOTMxNjYwLC03OTU1NDkwNjcsMjEzODk3MzEwNy
+wtMTU0OTQ1MTk3MSwxMjU0ODA3OTA3LDE2MzUxMDg4OTAsMTk5
+OTQ0MTU0NywxNDI1MTAzMTkyLC00NzgyNTE1NDEsMTM4MjM3MD
+YwMSwxMzM5OTkxODI1LC0xMDgwMDUwMjg1LC0yMTE3MzQ0MjEw
+LC0yMTY3ODU2NV19
 -->
