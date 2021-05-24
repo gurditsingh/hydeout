@@ -185,16 +185,18 @@ Below are the points which creates a difference:
 
 ### When you should use Apache Livy
 
--   when multiple users want to share a Spark Session.
+- when multiple users want to share a Spark Session.
+- when user wants to run low-latency queries.
+- when user wants to share the rdd or dataframes. 
 -   when user need a quick setup to access your Spark cluster.
 -   when you want to Integrate Spark into an app on your mobile device.
 -   when need a remote workflow tool for submits spark jobs.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzU0NzY2MzAsMTQxNzcyNTIzMSwtNT
-M4MzA3NDM1LC0xNjMzMjYwNDIyLC0xNzc3NjAxODAwLDExMjM5
-MzE2NjAsLTc5NTU0OTA2NywyMTM4OTczMTA3LC0xNTQ5NDUxOT
-cxLDEyNTQ4MDc5MDcsMTYzNTEwODg5MCwxOTk5NDQxNTQ3LDE0
-MjUxMDMxOTIsLTQ3ODI1MTU0MSwxMzgyMzcwNjAxLDEzMzk5OT
-E4MjUsLTEwODAwNTAyODUsLTIxMTczNDQyMTAsLTIxNjc4NTY1
-LDMzMDcyNTU5Nl19
+eyJoaXN0b3J5IjpbLTU4NTE1Mzg3LDE0MTc3MjUyMzEsLTUzOD
+MwNzQzNSwtMTYzMzI2MDQyMiwtMTc3NzYwMTgwMCwxMTIzOTMx
+NjYwLC03OTU1NDkwNjcsMjEzODk3MzEwNywtMTU0OTQ1MTk3MS
+wxMjU0ODA3OTA3LDE2MzUxMDg4OTAsMTk5OTQ0MTU0NywxNDI1
+MTAzMTkyLC00NzgyNTE1NDEsMTM4MjM3MDYwMSwxMzM5OTkxOD
+I1LC0xMDgwMDUwMjg1LC0yMTE3MzQ0MjEwLC0yMTY3ODU2NSwz
+MzA3MjU1OTZdfQ==
 -->
