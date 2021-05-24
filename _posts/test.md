@@ -214,13 +214,15 @@ Below are the points which creates a difference:
  - First user can run the statement and create temp view(create temp table in spark) of the data frame on the session id:1 (assume you select session id 1 for the statements).
  - Other users can use the same session id (suppose session id:1) and they will be able to use the already created tables.
 
+## ETL use case for apache Livy
+Suppose you have to create a functionality in which user can 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEzODkyMzk4MSwxNDE3NzI1MjMxLC01Mz
-gzMDc0MzUsLTE2MzMyNjA0MjIsLTE3Nzc2MDE4MDAsMTEyMzkz
-MTY2MCwtNzk1NTQ5MDY3LDIxMzg5NzMxMDcsLTE1NDk0NTE5Nz
-EsMTI1NDgwNzkwNywxNjM1MTA4ODkwLDE5OTk0NDE1NDcsMTQy
-NTEwMzE5MiwtNDc4MjUxNTQxLDEzODIzNzA2MDEsMTMzOTk5MT
-gyNSwtMTA4MDA1MDI4NSwtMjExNzM0NDIxMCwtMjE2Nzg1NjUs
-MzMwNzI1NTk2XX0=
+eyJoaXN0b3J5IjpbNzQyNTExMjM2LDE0MTc3MjUyMzEsLTUzOD
+MwNzQzNSwtMTYzMzI2MDQyMiwtMTc3NzYwMTgwMCwxMTIzOTMx
+NjYwLC03OTU1NDkwNjcsMjEzODk3MzEwNywtMTU0OTQ1MTk3MS
+wxMjU0ODA3OTA3LDE2MzUxMDg4OTAsMTk5OTQ0MTU0NywxNDI1
+MTAzMTkyLC00NzgyNTE1NDEsMTM4MjM3MDYwMSwxMzM5OTkxOD
+I1LC0xMDgwMDUwMjg1LC0yMTE3MzQ0MjEwLC0yMTY3ODU2NSwz
+MzA3MjU1OTZdfQ==
 -->
