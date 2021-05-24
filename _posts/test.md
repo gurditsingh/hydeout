@@ -176,12 +176,14 @@ please Check out the complete [documentation](https://github.com/gurditsingh/blo
 ## Why would you choose Apache Livy when we already have spark-submit?
 
 
+
+![Spark](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/spt_e04_livy_spark.jpg?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzODMwNzQzNSwtMTYzMzI2MDQyMiwtMT
-c3NzYwMTgwMCwxMTIzOTMxNjYwLC03OTU1NDkwNjcsMjEzODk3
-MzEwNywtMTU0OTQ1MTk3MSwxMjU0ODA3OTA3LDE2MzUxMDg4OT
-AsMTk5OTQ0MTU0NywxNDI1MTAzMTkyLC00NzgyNTE1NDEsMTM4
-MjM3MDYwMSwxMzM5OTkxODI1LC0xMDgwMDUwMjg1LC0yMTE3Mz
-Q0MjEwLC0yMTY3ODU2NSwzMzA3MjU1OTYsMTkxNDE0NTA5OSwt
-MTA4MDc0NTkzMl19
+eyJoaXN0b3J5IjpbMTQxNzcyNTIzMSwtNTM4MzA3NDM1LC0xNj
+MzMjYwNDIyLC0xNzc3NjAxODAwLDExMjM5MzE2NjAsLTc5NTU0
+OTA2NywyMTM4OTczMTA3LC0xNTQ5NDUxOTcxLDEyNTQ4MDc5MD
+csMTYzNTEwODg5MCwxOTk5NDQxNTQ3LDE0MjUxMDMxOTIsLTQ3
+ODI1MTU0MSwxMzgyMzcwNjAxLDEzMzk5OTE4MjUsLTEwODAwNT
+AyODUsLTIxMTczNDQyMTAsLTIxNjc4NTY1LDMzMDcyNTU5Niwx
+OTE0MTQ1MDk5XX0=
 -->
