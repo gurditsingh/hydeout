@@ -190,7 +190,7 @@ In this section we will look at examples with how to use Livy Spark Service to s
 
 please Check out the complete [documentation](https://github.com/gurditsingh/blog/blob/gh-pages/files/TestSparkSession.html "Source code").
 
-## Why would you choose Apache Livy when we already have spark-submit?
+## Need of Apache Livy when we already have spark-submit?
 
 Livy is a REST web service for submitting Spark Jobs or accessing – and thus sharing – long-running Spark Sessions from a remote place. Instead of tedious configuration and installation of your Spark client, Livy takes over the work and provides you with a simple and convenient interface.
 
