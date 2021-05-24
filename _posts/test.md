@@ -203,17 +203,18 @@ Below are the points which creates a difference:
 	```
  - After creating the session livy will return a session id which will be used to run the subsequent statements.
 	```shell
-	curl -H "Content-Type: application/json" localhost:8998/livy/sessions/0/ste
+	curl -H "Content-Type: application/json" localhost:8998/livy/sessions/0/stetements
 	 -X POST --data '{
-	  "kind" : "spark"
+	  "code" : "spark.range(10).count()"
 	}'
 	```
+ - After running the statement livy will return a statement id which will be used t
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4NTUyMzUyOCwxNDE3NzI1MjMxLC01Mz
-gzMDc0MzUsLTE2MzMyNjA0MjIsLTE3Nzc2MDE4MDAsMTEyMzkz
-MTY2MCwtNzk1NTQ5MDY3LDIxMzg5NzMxMDcsLTE1NDk0NTE5Nz
-EsMTI1NDgwNzkwNywxNjM1MTA4ODkwLDE5OTk0NDE1NDcsMTQy
-NTEwMzE5MiwtNDc4MjUxNTQxLDEzODIzNzA2MDEsMTMzOTk5MT
-gyNSwtMTA4MDA1MDI4NSwtMjExNzM0NDIxMCwtMjE2Nzg1NjUs
-MzMwNzI1NTk2XX0=
+eyJoaXN0b3J5IjpbNzEzODE5MTE2LDE0MTc3MjUyMzEsLTUzOD
+MwNzQzNSwtMTYzMzI2MDQyMiwtMTc3NzYwMTgwMCwxMTIzOTMx
+NjYwLC03OTU1NDkwNjcsMjEzODk3MzEwNywtMTU0OTQ1MTk3MS
+wxMjU0ODA3OTA3LDE2MzUxMDg4OTAsMTk5OTQ0MTU0NywxNDI1
+MTAzMTkyLC00NzgyNTE1NDEsMTM4MjM3MDYwMSwxMzM5OTkxOD
+I1LC0xMDgwMDUwMjg1LC0yMTE3MzQ0MjEwLC0yMTY3ODU2NSwz
+MzA3MjU1OTZdfQ==
 -->
