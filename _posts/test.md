@@ -173,9 +173,10 @@ In this section we will look at examples with how to use Livy Spark Service to s
 
 please Check out the complete [documentation](https://github.com/gurditsingh/blog/blob/gh-pages/files/TestSparkSession.html "Source code").
 
-REST API 
+Why would you choose Apof Spark session when Spark already have Spark context?
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2Nzc3NjIyNjksLTE2MzMyNjA0MjIsLT
+eyJoaXN0b3J5IjpbLTEwMDQ4Mjc1OTksLTE2MzMyNjA0MjIsLT
 E3Nzc2MDE4MDAsMTEyMzkzMTY2MCwtNzk1NTQ5MDY3LDIxMzg5
 NzMxMDcsLTE1NDk0NTE5NzEsMTI1NDgwNzkwNywxNjM1MTA4OD
 kwLDE5OTk0NDE1NDcsMTQyNTEwMzE5MiwtNDc4MjUxNTQxLDEz
