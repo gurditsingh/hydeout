@@ -1,4 +1,4 @@
-Spark framework provides spark-submit command to submit Spark batch jobs and spark-shell for interactive jobs.  Apache Livy Server is provides similar functionality via REST API call to run Spark jobs.
+Spark framework provides spark-submit command to submit Spark batch jobs.  Apache Livy Server provides the similar functionality via REST API call to run the Spark jobs.
 
 In this blog we will examine how spark-submit works and how Apache Livy as REST API works to submit jobs, monitor the progress of the job and kill the job. First lets look the terms(functionalities) around the spark-submit and Livy.
 
@@ -217,13 +217,13 @@ Below are the points which creates a difference:
 ## ETL use case for apache Livy
 Suppose you have to create a functionality in which user can preview the input data or intermediate data. In the traditional ETL tools like **AB initio**, **Informatica** and etc have the functionality user can preview the input data as well as intermediate data between the components. The traditional tools not only give the preview functionality they will give transformation functionality (apply functions or filter the data) as well.
 
-So if we have any ETL tool and we need to add the functionality of preview data then we can use apache Livy for faster execution with the help of spark context sharing. In the spark sharing context we can save the time to only one time to create the yarn application no need to create for every preview. Create an new yarn application (new yarn application needs some time to launch).
+So if we have any ETL tool and we need to add the functionality of preview data then we can use apache Livy for faster execution with the help of spark context sharing. In the spark context sharing we can save the time to only one time to create the yarn application no need to create for every preview. Create an new yarn application (new yarn application needs some time to launch).
 
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3MjMwMTM0NCwxNDE3NzI1MjMxLC01Mz
+eyJoaXN0b3J5IjpbMTkyNDM0MTE1MiwxNDE3NzI1MjMxLC01Mz
 gzMDc0MzUsLTE2MzMyNjA0MjIsLTE3Nzc2MDE4MDAsMTEyMzkz
 MTY2MCwtNzk1NTQ5MDY3LDIxMzg5NzMxMDcsLTE1NDk0NTE5Nz
 EsMTI1NDgwNzkwNywxNjM1MTA4ODkwLDE5OTk0NDE1NDcsMTQy
