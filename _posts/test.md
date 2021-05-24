@@ -155,7 +155,7 @@ In this section we will look at examples with how to use Livy Spark Service to s
 	```
  - Next submit the batch job with REST POST call to http://<livy-server>:8998/batches request.
 	```shell
-	curl -H "Content-Type: application/json" localhost:8998/batches
+	curl -H "Content-Type: application/json" localhost:8998/livy/batches
 	 -X POST --data '{
 	  "name" : "spark-example",
 	  "className" :  "com.test.WordCountExample",
@@ -175,11 +175,11 @@ please Check out the complete [documentation](https://github.com/gurditsingh/blo
 
 REST API 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MzMyNjA0MjIsLTE3Nzc2MDE4MDAsMT
-EyMzkzMTY2MCwtNzk1NTQ5MDY3LDIxMzg5NzMxMDcsLTE1NDk0
-NTE5NzEsMTI1NDgwNzkwNywxNjM1MTA4ODkwLDE5OTk0NDE1ND
-csMTQyNTEwMzE5MiwtNDc4MjUxNTQxLDEzODIzNzA2MDEsMTMz
-OTk5MTgyNSwtMTA4MDA1MDI4NSwtMjExNzM0NDIxMCwtMjE2Nz
-g1NjUsMzMwNzI1NTk2LDE5MTQxNDUwOTksLTEwODA3NDU5MzIs
-LTE3MDk3OTg4NzZdfQ==
+eyJoaXN0b3J5IjpbLTE2Nzc3NjIyNjksLTE2MzMyNjA0MjIsLT
+E3Nzc2MDE4MDAsMTEyMzkzMTY2MCwtNzk1NTQ5MDY3LDIxMzg5
+NzMxMDcsLTE1NDk0NTE5NzEsMTI1NDgwNzkwNywxNjM1MTA4OD
+kwLDE5OTk0NDE1NDcsMTQyNTEwMzE5MiwtNDc4MjUxNTQxLDEz
+ODIzNzA2MDEsMTMzOTk5MTgyNSwtMTA4MDA1MDI4NSwtMjExNz
+M0NDIxMCwtMjE2Nzg1NjUsMzMwNzI1NTk2LDE5MTQxNDUwOTks
+LTEwODA3NDU5MzJdfQ==
 -->
