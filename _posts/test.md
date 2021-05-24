@@ -186,17 +186,15 @@ Below are the points which creates a difference:
 ### When you should use Apache Livy
 
 -   when multiple users want to share a Spark Session.
--   the clients are lean and should not be overloaded with installation and configuration.
--   you need a quick setup to access your Spark cluster.
--   you want to Integrate Spark into an app on your mobile device.
--   you have volatile clusters, and you do not want to adapt configuration every time.
--   a remote workflow tool submits spark jobs.
+-   when user need a quick setup to access your Spark cluster.
+-   when you want to Integrate Spark into an app on your mobile device.
+-   when need a remote workflow tool for submits spark jobs.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1MzM3MjcyMywxNDE3NzI1MjMxLC01Mz
-gzMDc0MzUsLTE2MzMyNjA0MjIsLTE3Nzc2MDE4MDAsMTEyMzkz
-MTY2MCwtNzk1NTQ5MDY3LDIxMzg5NzMxMDcsLTE1NDk0NTE5Nz
-EsMTI1NDgwNzkwNywxNjM1MTA4ODkwLDE5OTk0NDE1NDcsMTQy
-NTEwMzE5MiwtNDc4MjUxNTQxLDEzODIzNzA2MDEsMTMzOTk5MT
-gyNSwtMTA4MDA1MDI4NSwtMjExNzM0NDIxMCwtMjE2Nzg1NjUs
-MzMwNzI1NTk2XX0=
+eyJoaXN0b3J5IjpbLTExMzU0NzY2MzAsMTQxNzcyNTIzMSwtNT
+M4MzA3NDM1LC0xNjMzMjYwNDIyLC0xNzc3NjAxODAwLDExMjM5
+MzE2NjAsLTc5NTU0OTA2NywyMTM4OTczMTA3LC0xNTQ5NDUxOT
+cxLDEyNTQ4MDc5MDcsMTYzNTEwODg5MCwxOTk5NDQxNTQ3LDE0
+MjUxMDMxOTIsLTQ3ODI1MTU0MSwxMzgyMzcwNjAxLDEzMzk5OT
+E4MjUsLTEwODAwNTAyODUsLTIxMTczNDQyMTAsLTIxNjc4NTY1
+LDMzMDcyNTU5Nl19
 -->
