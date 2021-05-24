@@ -215,13 +215,13 @@ Below are the points which creates a difference:
  - Other users can use the same session id (suppose session id:1) and they will be able to use the already created tables.
 
 ## ETL use case for apache Livy
-Suppose you have to create a functionality in which user can preview the input data or intermediate data. In traditional ETL tools like ABI initio, Informatica and etc have the functionality user can preview the input data as well as intermediate data between the components. The traditional tools not only give the preview functionality as well as user can apply transformation function on that. So if we have any ETL tool and we need to add the functi
+Suppose you have to create a functionality in which user can preview the input data or intermediate data. In traditional ETL tools like ABI initio, Informatica and etc have the functionality user can preview the input data as well as intermediate data between the components. The traditional tools not only give the preview functionality as well as user can apply transformation function on that. So if we have any ETL tool and we need to add the functionalty of preview data then we can use apache livy for faster execution with the help of spark context sharing( )
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NDM4MTc1NiwxNDE3NzI1MjMxLC01Mz
-gzMDc0MzUsLTE2MzMyNjA0MjIsLTE3Nzc2MDE4MDAsMTEyMzkz
-MTY2MCwtNzk1NTQ5MDY3LDIxMzg5NzMxMDcsLTE1NDk0NTE5Nz
-EsMTI1NDgwNzkwNywxNjM1MTA4ODkwLDE5OTk0NDE1NDcsMTQy
-NTEwMzE5MiwtNDc4MjUxNTQxLDEzODIzNzA2MDEsMTMzOTk5MT
-gyNSwtMTA4MDA1MDI4NSwtMjExNzM0NDIxMCwtMjE2Nzg1NjUs
-MzMwNzI1NTk2XX0=
+eyJoaXN0b3J5IjpbLTEzNDA1NjE2NDAsMTQxNzcyNTIzMSwtNT
+M4MzA3NDM1LC0xNjMzMjYwNDIyLC0xNzc3NjAxODAwLDExMjM5
+MzE2NjAsLTc5NTU0OTA2NywyMTM4OTczMTA3LC0xNTQ5NDUxOT
+cxLDEyNTQ4MDc5MDcsMTYzNTEwODg5MCwxOTk5NDQxNTQ3LDE0
+MjUxMDMxOTIsLTQ3ODI1MTU0MSwxMzgyMzcwNjAxLDEzMzk5OT
+E4MjUsLTEwODAwNTAyODUsLTIxMTczNDQyMTAsLTIxNjc4NTY1
+LDMzMDcyNTU5Nl19
 -->
