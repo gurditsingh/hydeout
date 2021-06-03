@@ -13,7 +13,7 @@ tags:
 
 # The Situation: Data on Data Lakes
 
-Enterprises started collecting their data into the data lakes and they were collecting clickstream data images videos and oftentimes they were actually doing this with Apache spark and the promise was that once they have all this data in their data lakes they can get to do all kinds of use cases on top of those they can do data science they can do machine learning they can even do real-time streaming with it so they're kept collecting this data into data lakes.
+Enterprises started collecting their data into the data lakes and they were collecting log data, transaction data, clickstream data, images, and etc. oftentimes they were actually doing this with Apache spark and the promise was that once they have all this data in their data lakes they can get to do all kinds of use cases on top of those they can do data science they can do machine learning they can even do real-time streaming with it so they're kept collecting this data into data lakes.
 
 # The problem with Data Lakes:
 
@@ -71,4 +71,4 @@ Now we have clear data in the data lake. The next request is we have to go throu
 **Update framework save our life** So I'll build another spark job and it will read that data in update/remove it and write it back out. it doesn't crash in the middle because of huge data. you don't want to run this thing at the wrong time because if somebody is querying the data lake while I'm modifying it they'll see inconsistent results.
 
 
-**Great! So now we understand the main problems that delta lake is there to address. And by solving these problems, they also provide some additional capabilities out of the box. We will learn more about delta lake in the next blog and try to understand how delta lake address all these problems. See you in the blog.**
+**Great! So now we understand the main problems that delta lake is there to address. And by solving these problems, they also provide some additional capabilities out of the box. We will learn more about delta lake in the next blog and try to understand how delta lake address all these problems. See you in the next blog.**
