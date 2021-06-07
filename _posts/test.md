@@ -51,12 +51,12 @@ While creating a Delta table you have to provide the location, which means you a
 	spark.read.format("delta").load("delta_store").show()
 	```
 
- - **Create Delta table in metastore :** Instead 
+ - **Create Delta table in metastore :** You can create a Delta table and store  into the metastore so
 
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMDU5MDYyMTcsMTY0MTk2MTc4NiwtMT
-cyNzk4ODY0OSwxOTM1NzQwNjEsMTQyMjE1NTExOSwtMTcxNjgz
-NTQ1NSw0NzI3Mjg3MTYsNTUwNTQzOTA2LDMxMTE4NjY0OCwtNz
-gyMDY0MjUwLC0yMDg4NzQ2NjEyLC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbODY5NDczOTI2LDE2NDE5NjE3ODYsLTE3Mj
+c5ODg2NDksMTkzNTc0MDYxLDE0MjIxNTUxMTksLTE3MTY4MzU0
+NTUsNDcyNzI4NzE2LDU1MDU0MzkwNiwzMTExODY2NDgsLTc4Mj
+A2NDI1MCwtMjA4ODc0NjYxMiwtMzMyNDU1MzYzXX0=
 -->
