@@ -33,30 +33,33 @@ While creating a Delta table you have to provide the location, which means you a
 	```scala
 	//Write the Spark DataFrame to Delta table
 	val df = spark.range(10)
-	df.write.format("delta").save("delta_store")
+	df.write.format("delta").save("/delta_store")
 
 	// Write the Spark DataFrame to Delta table partitioned by date
 	val added_date = df.withColumn("date",current_date())
-	added_date.write.partitionBy("date").format("delta").save("delta_store")
+	added_date.write.partitionBy("date").format("delta").save("/delta_store")
 
 	// Append new data to your Delta table
-	df.write.format("delta").mode(SaveMode.Append).save("delta_store")
+	df.write.format("delta").mode(SaveMode.Append).save("/delta_store")
 	// Overwrite your Delta table
-	df.write.format("delta").mode(SaveMode.Overwrite).save("delta_store")
+	df.write.format("delta").mode(SaveMode.Overwrite).save("/delta_store")
 
 	```
-	
+ 
  - **Reading from Delta Table :** Like writing your Delta table, you can use the DataFrame API to read the same files from your Delta table.
 	```scala
 	// Read the data from the Delta table location
-	spark.read.format("delta").load("delta_store").show()
+	spark.read.format("delta").load("/delta_store").show()
 	```
-
+	```sql
+	%sql
+	SELECT * FROM delta.`/delta_store`
+	```
  - **Create Delta table in metastore :** we can save the Delta table files into a location managed by the metastore (e.g. /user/warehouse/myTable). If you want to use SQL or control the location of your Delta table.
 
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3NTg2NjAxMywxNjM4NjM2ODA3LDE2ND
+eyJoaXN0b3J5IjpbMTA0MDY4MDE4MCwxNjM4NjM2ODA3LDE2ND
 E5NjE3ODYsLTE3Mjc5ODg2NDksMTkzNTc0MDYxLDE0MjIxNTUx
 MTksLTE3MTY4MzU0NTUsNDcyNzI4NzE2LDU1MDU0MzkwNiwzMT
 ExODY2NDgsLTc4MjA2NDI1MCwtMjA4ODc0NjYxMiwtMzMyNDU1
