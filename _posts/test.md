@@ -45,9 +45,9 @@ While creating a Delta table you have to provide the location, which means you a
 	df.write.format("delta").mode(SaveMode.Overwrite).save("delta_store")
 
 	```
-
+ - **Reading from Delta Table :**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0NDg5OTQzMywtMTcyNzk4ODY0OSwxOT
+eyJoaXN0b3J5IjpbMTY0MTk2MTc4NiwtMTcyNzk4ODY0OSwxOT
 M1NzQwNjEsMTQyMjE1NTExOSwtMTcxNjgzNTQ1NSw0NzI3Mjg3
 MTYsNTUwNTQzOTA2LDMxMTE4NjY0OCwtNzgyMDY0MjUwLC0yMD
 g4NzQ2NjEyLC0zMzI0NTUzNjNdfQ==
