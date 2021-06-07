@@ -6,8 +6,8 @@ Delta Lake is a file-based, open-source storage format that provides ACID transa
 
  - **ACID transactions :** It is really important that the data integrity is maintained in data lake means no more partial or corrupted data. Delta Lake ensures that all data changes written to storage are committed for durability and made visible to readers atomically.
  - **Unified Batch and Stream Processing :** In a Data lake, if we have an use case of both Stream processing and Batch processing it is normal to follow _Lamdba architecture_. But Delta Lake table has the ability to work both in batch and as a streaming source and sink all just work out of the box.
- - 
+ - **Scalable data and metadata handling :** Delta Lake is built on data lakes, all reads and writes using Spark or other distributed processing engines are inherently scalable to petabyte-scale. However, unlike most other storage formats and query engines, Delta Lake leverages Spark to scale out all the metadata processing, thus efficiently handling metadata of bil‐ lions of files for petabyte-scale tables.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzOTY2MzI5NSwzMTExODY2NDgsLTc4Mj
-A2NDI1MCwtMjA4ODc0NjYxMiwtMzMyNDU1MzYzXX0=
+eyJoaXN0b3J5IjpbNDM3NzYyNDk3LDMxMTE4NjY0OCwtNzgyMD
+Y0MjUwLC0yMDg4NzQ2NjEyLC0zMzI0NTUzNjNdfQ==
 -->
