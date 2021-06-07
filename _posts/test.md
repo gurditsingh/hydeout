@@ -23,8 +23,13 @@ Delta Lake is a file-based, open-source storage format that provides ACID transa
 	</dependency>
 
 	```
+
+## Creating your first Delta table
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDcyNzI4NzE2LDU1MDU0MzkwNiwzMTExOD
-Y2NDgsLTc4MjA2NDI1MCwtMjA4ODc0NjYxMiwtMzMyNDU1MzYz
-XX0=
+eyJoaXN0b3J5IjpbLTEzNzE0ODA2Miw0NzI3Mjg3MTYsNTUwNT
+QzOTA2LDMxMTE4NjY0OCwtNzgyMDY0MjUwLC0yMDg4NzQ2NjEy
+LC0zMzI0NTUzNjNdfQ==
 -->
