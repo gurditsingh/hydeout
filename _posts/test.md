@@ -45,6 +45,7 @@ While creating a Delta table you have to provide the location, which means you a
 	df.write.format("delta").mode(SaveMode.Overwrite).save("delta_store")
 
 	```
+	
  - **Reading from Delta Table :** Like writing your Delta table, you can use the DataFrame API to read the same files from your Delta table.
 	```scala
 	// Read the data from the Delta table location
@@ -55,8 +56,9 @@ While creating a Delta table you have to provide the location, which means you a
 
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzODYzNjgwNywxNjQxOTYxNzg2LC0xNz
-I3OTg4NjQ5LDE5MzU3NDA2MSwxNDIyMTU1MTE5LC0xNzE2ODM1
-NDU1LDQ3MjcyODcxNiw1NTA1NDM5MDYsMzExMTg2NjQ4LC03OD
-IwNjQyNTAsLTIwODg3NDY2MTIsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbMTU3NTg2NjAxMywxNjM4NjM2ODA3LDE2ND
+E5NjE3ODYsLTE3Mjc5ODg2NDksMTkzNTc0MDYxLDE0MjIxNTUx
+MTksLTE3MTY4MzU0NTUsNDcyNzI4NzE2LDU1MDU0MzkwNiwzMT
+ExODY2NDgsLTc4MjA2NDI1MCwtMjA4ODc0NjYxMiwtMzMyNDU1
+MzYzXX0=
 -->
