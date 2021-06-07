@@ -51,12 +51,12 @@ While creating a Delta table you have to provide the location, which means you a
 	spark.read.format("delta").load("delta_store").show()
 	```
 
- - **Create Delta table in metastore :** You can create a Delta table and store  into the metastore so
+ - **Create Delta table in metastore :** we can save the Delta table files into a location managed by the metastore (e.g. /user/warehouse/myTable). If you want to use SQL or control the location of your Delta table.
 
    
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY5NDczOTI2LDE2NDE5NjE3ODYsLTE3Mj
-c5ODg2NDksMTkzNTc0MDYxLDE0MjIxNTUxMTksLTE3MTY4MzU0
-NTUsNDcyNzI4NzE2LDU1MDU0MzkwNiwzMTExODY2NDgsLTc4Mj
-A2NDI1MCwtMjA4ODc0NjYxMiwtMzMyNDU1MzYzXX0=
+eyJoaXN0b3J5IjpbMTYzODYzNjgwNywxNjQxOTYxNzg2LC0xNz
+I3OTg4NjQ5LDE5MzU3NDA2MSwxNDIyMTU1MTE5LC0xNzE2ODM1
+NDU1LDQ3MjcyODcxNiw1NTA1NDM5MDYsMzExMTg2NjQ4LC03OD
+IwNjQyNTAsLTIwODg3NDY2MTIsLTMzMjQ1NTM2M119
 -->
