@@ -57,11 +57,20 @@ While creating a Delta table you have to provide the location, which means you a
 	```
  - **Create Delta table in metastore :** we can save the Delta table files into a location managed by the metastore (e.g. /user/warehouse/myTable). If you want to use SQL or control the location of your Delta table.
 
-   
+	```scala
+	// Write the data to the metastore defined table as delta_table
+	val df = spark.range(10)
+	df.write.format("delta").saveAsTable("delta_table")
+	```
+
+	```sql
+	%sql
+	select * from delta_table
+	```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0MDY4MDE4MCwxNjM4NjM2ODA3LDE2ND
-E5NjE3ODYsLTE3Mjc5ODg2NDksMTkzNTc0MDYxLDE0MjIxNTUx
-MTksLTE3MTY4MzU0NTUsNDcyNzI4NzE2LDU1MDU0MzkwNiwzMT
-ExODY2NDgsLTc4MjA2NDI1MCwtMjA4ODc0NjYxMiwtMzMyNDU1
-MzYzXX0=
+eyJoaXN0b3J5IjpbLTIwNDI4NzgxOTAsMTA0MDY4MDE4MCwxNj
+M4NjM2ODA3LDE2NDE5NjE3ODYsLTE3Mjc5ODg2NDksMTkzNTc0
+MDYxLDE0MjIxNTUxMTksLTE3MTY4MzU0NTUsNDcyNzI4NzE2LD
+U1MDU0MzkwNiwzMTExODY2NDgsLTc4MjA2NDI1MCwtMjA4ODc0
+NjYxMiwtMzMyNDU1MzYzXX0=
 -->
