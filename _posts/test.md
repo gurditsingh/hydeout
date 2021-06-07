@@ -13,9 +13,9 @@ Delta Lake is a file-based, open-source storage format that provides ACID transa
 
 ## How to start with Delta Lake
 
- - **Using Databricks Community Edition** : 
+ - **Databricks Community Edition** : The Databricks Community Edition is the free version of our cloud-based big data platform. Users can access a micro-cluster as well as a cluster manager and notebook environment.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMzQ5MzI0MywzMTExODY2NDgsLTc4Mj
+eyJoaXN0b3J5IjpbMTcwNDU4NTgzMCwzMTExODY2NDgsLTc4Mj
 A2NDI1MCwtMjA4ODc0NjYxMiwtMzMyNDU1MzYzXX0=
 -->
