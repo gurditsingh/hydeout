@@ -13,10 +13,10 @@ Delta Lake is a file-based, open-source storage format that provides ACID transa
 
 ## How to start with Delta Lake
 
- - **Databricks Community Edition** : The Databricks Community Edition is the free version of our cloud-based big data platform. Users can access a micro-cluster as well as a cluster manager and notebook environment. You can start with the Databricks environment in which the delta lake packages are pre-installed. 
- - 
+ - **Databricks Community Edition :** The Databricks Community Edition is the free version of our cloud-based big data platform. Users can access a micro-cluster as well as a cluster manager and notebook environment. You can start with the Databricks environment in which the delta lake packages are pre-installed. 
+ - **Set up project :** If you want to build a project using Delta Lake binaries from Maven Central Repository, you can use the following Maven coordinates.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3ODIzNTAzNSwzMTExODY2NDgsLTc4Mj
-A2NDI1MCwtMjA4ODc0NjYxMiwtMzMyNDU1MzYzXX0=
+eyJoaXN0b3J5IjpbNTUwNTQzOTA2LDMxMTE4NjY0OCwtNzgyMD
+Y0MjUwLC0yMDg4NzQ2NjEyLC0zMzI0NTUzNjNdfQ==
 -->
