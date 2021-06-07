@@ -68,11 +68,24 @@ While creating a Delta table you have to provide the location, which means you a
 	select * from delta_table
 	```
  - **Create Delta table using SQL :** user can create the delta table by sql and load the data by sql commands.
- 
+ ```sql
+%sql
+-- Create a table in the metastore
+CREATE TABLE delta_table (
+ id INTEGER)
+USING DELTA
+LOCATION "/delta_store"
+```
+
+```scala
+// Create temp table of the DataFrame
+val df = spark.range(10)
+df.createOrReplaceTempView("tmp_view")
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4MDMwMjk2OSwxMDQwNjgwMTgwLDE2Mz
-g2MzY4MDcsMTY0MTk2MTc4NiwtMTcyNzk4ODY0OSwxOTM1NzQw
-NjEsMTQyMjE1NTExOSwtMTcxNjgzNTQ1NSw0NzI3Mjg3MTYsNT
-UwNTQzOTA2LDMxMTE4NjY0OCwtNzgyMDY0MjUwLC0yMDg4NzQ2
-NjEyLC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbLTI3MTQ1MDQ1NSwtNjgwMzAyOTY5LDEwND
+A2ODAxODAsMTYzODYzNjgwNywxNjQxOTYxNzg2LC0xNzI3OTg4
+NjQ5LDE5MzU3NDA2MSwxNDIyMTU1MTE5LC0xNzE2ODM1NDU1LD
+Q3MjcyODcxNiw1NTA1NDM5MDYsMzExMTg2NjQ4LC03ODIwNjQy
+NTAsLTIwODg3NDY2MTIsLTMzMjQ1NTM2M119
 -->
