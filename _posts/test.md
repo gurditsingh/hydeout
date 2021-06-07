@@ -24,14 +24,19 @@ Delta Lake is a file-based, open-source storage format that provides ACID transa
 
 	```
 
-## Creating your first Delta table
+## Creating your first Delta Table
 
 While creating a Delta table you have to provide the location, which means you are writing files to some storage. All of the files together stored in a directory of a particular structure which make up your table. Which means when we create a Delta table, we are in fact writing files to some storage location.
 
+ - Writing to Delta Table
 
+```scala
+val df = spark.range(10)
+df.write.format("delta").save("delta_store")
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyMjE1NTExOSwtMTcxNjgzNTQ1NSw0Nz
-I3Mjg3MTYsNTUwNTQzOTA2LDMxMTE4NjY0OCwtNzgyMDY0MjUw
-LC0yMDg4NzQ2NjEyLC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbMTkyNTA1NDQwNiwxNDIyMTU1MTE5LC0xNz
+E2ODM1NDU1LDQ3MjcyODcxNiw1NTA1NDM5MDYsMzExMTg2NjQ4
+LC03ODIwNjQyNTAsLTIwODg3NDY2MTIsLTMzMjQ1NTM2M119
 -->
