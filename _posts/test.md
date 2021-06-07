@@ -67,8 +67,9 @@ While creating a Delta table you have to provide the location, which means you a
 	%sql
 	select * from delta_table
 	```
+ - **Create Delta table using SQL :** user can create and 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDI4NzgxOTAsMTA0MDY4MDE4MCwxNj
+eyJoaXN0b3J5IjpbLTEzODE3ODA4NzEsMTA0MDY4MDE4MCwxNj
 M4NjM2ODA3LDE2NDE5NjE3ODYsLTE3Mjc5ODg2NDksMTkzNTc0
 MDYxLDE0MjIxNTUxMTksLTE3MTY4MzU0NTUsNDcyNzI4NzE2LD
 U1MDU0MzkwNiwzMTExODY2NDgsLTc4MjA2NDI1MCwtMjA4ODc0
