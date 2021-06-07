@@ -4,9 +4,8 @@ In the past there are different storage solutions build to solve the common prob
 
 Delta Lake is a file-based, open-source storage format that provides ACID transactions, scalable metadata handling, and unifies streaming and batch data processing. It runs on top of your existing data lakes and is compatible with Apache Spark and other processing engines. Delta Lake combine the both worlds OLAP(Online Analytical Processing) and OLTP(Online Transactional Processing) with the horizontal scalability of data lakes.
 
- - **ACID transactions :** Delta Lake ensures that all data changes written to storage are committed for durability and made visible to readers atomically. In other words, no more partial or corrupted files!
-
+ - **ACID transactions :** It is really important that the data integrity is maintained in data lake means no more partial or corrupted data. Delta Lake ensures that all data changes written to storage are committed for durability and made visible to readers atomically.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzExMTg2NjQ4LC03ODIwNjQyNTAsLTIwOD
-g3NDY2MTIsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbNDM5OTcwMDMxLDMxMTE4NjY0OCwtNzgyMD
+Y0MjUwLC0yMDg4NzQ2NjEyLC0zMzI0NTUzNjNdfQ==
 -->
