@@ -11,8 +11,11 @@ Delta Lake is a file-based, open-source storage format that provides ACID transa
  - **Schema Enforcement :** Delta Lake automatically prevents the insertion of data with an incorrect schema, i.e. not matching the table schema. It prevents data corruption by preventing the bad data get into the system.
  - **Support for updates, merge and deletes :** Delta Lake supports merge, delete , and update operations to do complex operations. Most of the distributed processing frameworks do not support atomic data modification operations on data lakes.
 
-How to start using Delta Lake
+## How to start with Delta Lake
+
+ - **Using Databricks Community Edition** : 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzODI0MTkxNywzMTExODY2NDgsLTc4Mj
+eyJoaXN0b3J5IjpbMTgwMzQ5MzI0MywzMTExODY2NDgsLTc4Mj
 A2NDI1MCwtMjA4ODc0NjYxMiwtMzMyNDU1MzYzXX0=
 -->
