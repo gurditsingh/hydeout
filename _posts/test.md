@@ -45,10 +45,16 @@ While creating a Delta table you have to provide the location, which means you a
 	df.write.format("delta").mode(SaveMode.Overwrite).save("delta_store")
 
 	```
- - **Reading from Delta Table :**
+ - **Reading from Delta Table :** Like writing your Delta table, you can use the DataFrame API to read the same files from your Delta table.
+	```scala
+	// Read the data from the Delta table location
+	spark.read.format("delta").load("delta_store").show()
+	```
+
+Create metadata 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MTk2MTc4NiwtMTcyNzk4ODY0OSwxOT
-M1NzQwNjEsMTQyMjE1NTExOSwtMTcxNjgzNTQ1NSw0NzI3Mjg3
-MTYsNTUwNTQzOTA2LDMxMTE4NjY0OCwtNzgyMDY0MjUwLC0yMD
-g4NzQ2NjEyLC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbMTM0MjU4ODg0NiwxNjQxOTYxNzg2LC0xNz
+I3OTg4NjQ5LDE5MzU3NDA2MSwxNDIyMTU1MTE5LC0xNzE2ODM1
+NDU1LDQ3MjcyODcxNiw1NTA1NDM5MDYsMzExMTg2NjQ4LC03OD
+IwNjQyNTAsLTIwODg3NDY2MTIsLTMzMjQ1NTM2M119
 -->
