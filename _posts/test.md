@@ -31,13 +31,14 @@ While creating a Delta table you have to provide the location, which means you a
  - Writing to Delta Table
 
 	```scala
-	//Write sample data to Delta location
+	//Write sample data to delta location
 	val df = spark.range(10)
 	df.write.format("delta").save("delta_store")
+
 	```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NjEwNTU5NSwxNDIyMTU1MTE5LC0xNz
-E2ODM1NDU1LDQ3MjcyODcxNiw1NTA1NDM5MDYsMzExMTg2NjQ4
-LC03ODIwNjQyNTAsLTIwODg3NDY2MTIsLTMzMjQ1NTM2M119
+eyJoaXN0b3J5IjpbMTkzNTc0MDYxLDE0MjIxNTUxMTksLTE3MT
+Y4MzU0NTUsNDcyNzI4NzE2LDU1MDU0MzkwNiwzMTExODY2NDgs
+LTc4MjA2NDI1MCwtMjA4ODc0NjYxMiwtMzMyNDU1MzYzXX0=
 -->
