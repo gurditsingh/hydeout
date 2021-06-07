@@ -26,10 +26,11 @@ Delta Lake is a file-based, open-source storage format that provides ACID transa
 
 ## Creating your first Delta table
 
-When creating a Delta table, you are writing files to some storage (e.g. file system, cloud object stores). All of the files together stored in a directory of a particular struc‐ ture (more on this later) make up your table. Therefore, when we create a Delta table, we are in fact writing files to some storage location.
+While creating a Delta table you have to provide the location, which means you are writing files to some storage. All of the files together stored in a directory of a particular structure which make up your table. Which means when we create a Delta table, we are in fact writing files to some storage location.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA1NTkxMzQ0MSw0NzI3Mjg3MTYsNTUwNT
-QzOTA2LDMxMTE4NjY0OCwtNzgyMDY0MjUwLC0yMDg4NzQ2NjEy
-LC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbLTE3MTY4MzU0NTUsNDcyNzI4NzE2LDU1MD
+U0MzkwNiwzMTExODY2NDgsLTc4MjA2NDI1MCwtMjA4ODc0NjYx
+MiwtMzMyNDU1MzYzXX0=
 -->
