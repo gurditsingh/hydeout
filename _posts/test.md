@@ -35,10 +35,12 @@ While creating a Delta table you have to provide the location, which means you a
 	val df = spark.range(10)
 	df.write.format("delta").save("delta_store")
 
+	
 	```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzNTc0MDYxLDE0MjIxNTUxMTksLTE3MT
-Y4MzU0NTUsNDcyNzI4NzE2LDU1MDU0MzkwNiwzMTExODY2NDgs
-LTc4MjA2NDI1MCwtMjA4ODc0NjYxMiwtMzMyNDU1MzYzXX0=
+eyJoaXN0b3J5IjpbLTE3Mjc5ODg2NDksMTkzNTc0MDYxLDE0Mj
+IxNTUxMTksLTE3MTY4MzU0NTUsNDcyNzI4NzE2LDU1MDU0Mzkw
+NiwzMTExODY2NDgsLTc4MjA2NDI1MCwtMjA4ODc0NjYxMiwtMz
+MyNDU1MzYzXX0=
 -->
