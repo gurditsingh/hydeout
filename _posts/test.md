@@ -90,7 +90,7 @@ While creating a Delta table you have to provide the location, which means you a
 	```
 
 ## What files are kept under the Delta table location
-In Delta table creation the LOCATION property that points to the underlying files and one swhich make the Delta table special.
+In Delta table creation the LOCATION property that points to the underlying files which make the Delta table special.
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1.JPG?raw=true)
 
@@ -108,7 +108,7 @@ If we see in the above results of ls command we have bunch of output files in pa
  - If your table is partitioned then underneath the partition directory it will create the data files which are simple parquet files. And if the table is not partitioned then the data files will create under the table root directory in parquet format.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc4MzMwNDkxLC0xMDI5MzYyMTM3LC0zNT
+eyJoaXN0b3J5IjpbNTg5MTIwMTg1LC0xMDI5MzYyMTM3LC0zNT
 Y2MTkyMDgsLTIyNDY0NDkxOCwxOTkxMjA1MTQ3LC0xMTU0MTM1
 ODk3LC0yMDI0MzEwNTI1LC02ODAzMDI5NjksMTA0MDY4MDE4MC
 wxNjM4NjM2ODA3LDE2NDE5NjE3ODYsLTE3Mjc5ODg2NDksMTkz
