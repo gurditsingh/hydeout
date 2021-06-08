@@ -1,5 +1,4 @@
 ## What is Delta Lake?
-
 In the past there are different storage solutions build to solve the common problem of data quality. Many architecture/tools are build to solve the problem. These tools provides many benefits like decoupling the business logic from storage and compute. It means user can scale the compute and storage power up and down but in between this data reliability lost. To provide the data reliability and quality  Delta Lake come into the picture.
 
 Delta Lake is a file-based, open-source storage format that provides ACID transactions, scalable metadata handling, and unifies streaming and batch data processing. It runs on top of your existing data lakes and is compatible with Apache Spark and other processing engines. Delta Lake combine the both worlds OLAP(Online Analytical Processing) and OLTP(Online Transactional Processing) with the horizontal scalability of data lakes.
@@ -102,10 +101,11 @@ If we see in the above results of ls command we have bunch of output files in pa
 The Delta Lake transaction log (also known as the Delta Log) is an ordered record of every change that has ever been performed on a Delta Lake table since its inception
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNDY0NDkxOCwxOTkxMjA1MTQ3LC0xMT
-U0MTM1ODk3LC0yMDI0MzEwNTI1LC02ODAzMDI5NjksMTA0MDY4
-MDE4MCwxNjM4NjM2ODA3LDE2NDE5NjE3ODYsLTE3Mjc5ODg2ND
-ksMTkzNTc0MDYxLDE0MjIxNTUxMTksLTE3MTY4MzU0NTUsNDcy
-NzI4NzE2LDU1MDU0MzkwNiwzMTExODY2NDgsLTc4MjA2NDI1MC
-wtMjA4ODc0NjYxMiwtMzMyNDU1MzYzXX0=
+eyJoaXN0b3J5IjpbLTM1NjYxOTIwOCwtMjI0NjQ0OTE4LDE5OT
+EyMDUxNDcsLTExNTQxMzU4OTcsLTIwMjQzMTA1MjUsLTY4MDMw
+Mjk2OSwxMDQwNjgwMTgwLDE2Mzg2MzY4MDcsMTY0MTk2MTc4Ni
+wtMTcyNzk4ODY0OSwxOTM1NzQwNjEsMTQyMjE1NTExOSwtMTcx
+NjgzNTQ1NSw0NzI3Mjg3MTYsNTUwNTQzOTA2LDMxMTE4NjY0OC
+wtNzgyMDY0MjUwLC0yMDg4NzQ2NjEyLC0zMzI0NTUzNjNdfQ==
+
 -->
