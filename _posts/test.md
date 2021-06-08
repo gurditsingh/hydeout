@@ -96,11 +96,14 @@ In Delta table creation the LOCATION property that points to the underlying file
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1.JPG?raw=true)
 
 If we see in the above results of ls command we have bunch of output files in parquet (that we will discuss later) and one directory called **_delta_log**. As we know Delta lake provides number of features like ACID transactions, scalable metadata handling, time travel and others. The Delta lake have achieved these functionalities with the help of _delta_log also known as Delta transaction log.
+
+## What Is the Delta Transaction Log?
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTUzOTk4LDE5OTEyMDUxNDcsLTExNT
-QxMzU4OTcsLTIwMjQzMTA1MjUsLTY4MDMwMjk2OSwxMDQwNjgw
-MTgwLDE2Mzg2MzY4MDcsMTY0MTk2MTc4NiwtMTcyNzk4ODY0OS
-wxOTM1NzQwNjEsMTQyMjE1NTExOSwtMTcxNjgzNTQ1NSw0NzI3
-Mjg3MTYsNTUwNTQzOTA2LDMxMTE4NjY0OCwtNzgyMDY0MjUwLC
-0yMDg4NzQ2NjEyLC0zMzI0NTUzNjNdfQ==
+eyJoaXN0b3J5IjpbLTE2MTM2Njk2OTAsMTk5MTIwNTE0NywtMT
+E1NDEzNTg5NywtMjAyNDMxMDUyNSwtNjgwMzAyOTY5LDEwNDA2
+ODAxODAsMTYzODYzNjgwNywxNjQxOTYxNzg2LC0xNzI3OTg4Nj
+Q5LDE5MzU3NDA2MSwxNDIyMTU1MTE5LC0xNzE2ODM1NDU1LDQ3
+MjcyODcxNiw1NTA1NDM5MDYsMzExMTg2NjQ4LC03ODIwNjQyNT
+AsLTIwODg3NDY2MTIsLTMzMjQ1NTM2M119
 -->
