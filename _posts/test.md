@@ -142,18 +142,19 @@ Lets run the insert query on the same table and see what happen under the storag
 %sql
 insert into my_table values ('dummy2','dummy2')
 ```
-Once the values are inserted into the table. we can see in the below diagram we have the same _delta_log directory and another one is data file in parquet format.
+Once the values are inserted into the table. we can see in the below diagram we have the same _delta_log directory and one more data file is created in parquet format.
+
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1_tlog_3.JPG?raw=true)
 
-
+If we again check under the _delta_log directory we can some common filessee bunch of files but the only 0000000.json file is used by delta lake to maintain the history and versions.
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1_tlog_4.JPG?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTEwNDA5NzI5LDIxMTU0MzI3MzAsNjg1Nj
-E1Mjk1LC03OTg1NDQ3MzgsMTUwMjQyNzk2MywxNTMzODcxMjg5
-LDYxOTYxNDkyMyw3OTE2MzU3NTgsLTEwMjkzNjIxMzcsLTM1Nj
-YxOTIwOCwtMjI0NjQ0OTE4LDE5OTEyMDUxNDcsLTExNTQxMzU4
-OTcsLTIwMjQzMTA1MjUsLTY4MDMwMjk2OSwxMDQwNjgwMTgwLD
-E2Mzg2MzY4MDcsMTY0MTk2MTc4NiwtMTcyNzk4ODY0OSwxOTM1
-NzQwNjFdfQ==
+eyJoaXN0b3J5IjpbLTExNTgxMTczNjUsMjExNTQzMjczMCw2OD
+U2MTUyOTUsLTc5ODU0NDczOCwxNTAyNDI3OTYzLDE1MzM4NzEy
+ODksNjE5NjE0OTIzLDc5MTYzNTc1OCwtMTAyOTM2MjEzNywtMz
+U2NjE5MjA4LC0yMjQ2NDQ5MTgsMTk5MTIwNTE0NywtMTE1NDEz
+NTg5NywtMjAyNDMxMDUyNSwtNjgwMzAyOTY5LDEwNDA2ODAxOD
+AsMTYzODYzNjgwNywxNjQxOTYxNzg2LC0xNzI3OTg4NjQ5LDE5
+MzU3NDA2MV19
 -->
