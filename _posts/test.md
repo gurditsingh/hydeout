@@ -117,6 +117,8 @@ The Delta Lake transaction log (also known as the Delta Log) is an ordered recor
  - No partial or corrupted files because delta lake either the commit the state or abort the state. which means if job fails in between there will be no entry in the transaction log.
 
 ### Lets understand by code
+
+Lets
 ```sql
 %sql
 
@@ -127,12 +129,17 @@ USING DELTA
 LOCATION "/my_table"
 AS SELECT 'dummy1' as f1, 'dummy2' as f2 ;
 ```
+
+
+![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1_tlog_1.JPG?raw=true)
+
+![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1_tlog_2.JPG?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjg1NjE1Mjk1LC03OTg1NDQ3MzgsMTUwMj
-QyNzk2MywxNTMzODcxMjg5LDYxOTYxNDkyMyw3OTE2MzU3NTgs
-LTEwMjkzNjIxMzcsLTM1NjYxOTIwOCwtMjI0NjQ0OTE4LDE5OT
-EyMDUxNDcsLTExNTQxMzU4OTcsLTIwMjQzMTA1MjUsLTY4MDMw
-Mjk2OSwxMDQwNjgwMTgwLDE2Mzg2MzY4MDcsMTY0MTk2MTc4Ni
-wtMTcyNzk4ODY0OSwxOTM1NzQwNjEsMTQyMjE1NTExOSwtMTcx
-NjgzNTQ1NV19
+eyJoaXN0b3J5IjpbLTE2NjQ0MzE4OTIsNjg1NjE1Mjk1LC03OT
+g1NDQ3MzgsMTUwMjQyNzk2MywxNTMzODcxMjg5LDYxOTYxNDky
+Myw3OTE2MzU3NTgsLTEwMjkzNjIxMzcsLTM1NjYxOTIwOCwtMj
+I0NjQ0OTE4LDE5OTEyMDUxNDcsLTExNTQxMzU4OTcsLTIwMjQz
+MTA1MjUsLTY4MDMwMjk2OSwxMDQwNjgwMTgwLDE2Mzg2MzY4MD
+csMTY0MTk2MTc4NiwtMTcyNzk4ODY0OSwxOTM1NzQwNjEsMTQy
+MjE1NTExOV19
 -->
