@@ -90,15 +90,14 @@ While creating a Delta table you have to provide the location, which means you a
 	```
 
 ## What files are kept under the Delta table location
-In Delta table creation the LOCATION property that points to the underlying files which make the Delta table special.
+In Delta table creation the LOCATION property that points to the underlying files and one swhich make the Delta table special.
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1.JPG?raw=true)
 
 If we see in the above results of ls command we have bunch of output files in parquet (that we will discuss later) and one directory called **_delta_log**. As we know Delta lake provides number of features like ACID transactions, scalable metadata handling, time travel and others. The Delta lake have achieved these functionalities with the help of _delta_log also known as Delta transaction log.
 
-## What Is the Delta Transaction Log?
+## How Delta table physically store ?
 
-The Delta Lake transaction log (also known as the Delta Log) is an ordered record of every change that has been performed on a Delta Lake table.
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1_tlog.jpg?raw=true)
 
@@ -109,11 +108,11 @@ The Delta Lake transaction log (also known as the Delta Log) is an ordered recor
  - If your table is partitioned then underneath the partition directory it will create the data files which are simple parquet files. And if the table is not partitioned then the data files will create under the table root directory in parquet format.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0NzYxOTEyMiwtMTAyOTM2MjEzNywtMz
-U2NjE5MjA4LC0yMjQ2NDQ5MTgsMTk5MTIwNTE0NywtMTE1NDEz
-NTg5NywtMjAyNDMxMDUyNSwtNjgwMzAyOTY5LDEwNDA2ODAxOD
-AsMTYzODYzNjgwNywxNjQxOTYxNzg2LC0xNzI3OTg4NjQ5LDE5
-MzU3NDA2MSwxNDIyMTU1MTE5LC0xNzE2ODM1NDU1LDQ3MjcyOD
-cxNiw1NTA1NDM5MDYsMzExMTg2NjQ4LC03ODIwNjQyNTAsLTIw
-ODg3NDY2MTJdfQ==
+eyJoaXN0b3J5IjpbOTc4MzMwNDkxLC0xMDI5MzYyMTM3LC0zNT
+Y2MTkyMDgsLTIyNDY0NDkxOCwxOTkxMjA1MTQ3LC0xMTU0MTM1
+ODk3LC0yMDI0MzEwNTI1LC02ODAzMDI5NjksMTA0MDY4MDE4MC
+wxNjM4NjM2ODA3LDE2NDE5NjE3ODYsLTE3Mjc5ODg2NDksMTkz
+NTc0MDYxLDE0MjIxNTUxMTksLTE3MTY4MzU0NTUsNDcyNzI4Nz
+E2LDU1MDU0MzkwNiwzMTExODY2NDgsLTc4MjA2NDI1MCwtMjA4
+ODc0NjYxMl19
 -->
