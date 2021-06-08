@@ -98,11 +98,14 @@ If we see in the above results of ls command we have bunch of output files in pa
 
 ## What Is the Delta Transaction Log?
 
-The Delta Lake transaction log (also known as the Delta Log) is an ordered record of every change that has ever been performed on a Delta Lake table.
+The Delta Lake transaction log (also known as the Delta Log) is an ordered record of every change that has been performed on a Delta Lake table.
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1_tlog.jpg?raw=true)
+
+ - List item
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMDMwNjk0MSwtMTAyOTM2MjEzNywtMz
+eyJoaXN0b3J5IjpbMTU4ODQwNDg3MSwtMTAyOTM2MjEzNywtMz
 U2NjE5MjA4LC0yMjQ2NDQ5MTgsMTk5MTIwNTE0NywtMTE1NDEz
 NTg5NywtMjAyNDMxMDUyNSwtNjgwMzAyOTY5LDEwNDA2ODAxOD
 AsMTYzODYzNjgwNywxNjQxOTYxNzg2LC0xNzI3OTg4NjQ5LDE5
