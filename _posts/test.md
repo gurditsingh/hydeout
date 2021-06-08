@@ -133,15 +133,17 @@ After the table is created and loaded with dummy data. we can see in the below d
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1_tlog_1.JPG?raw=true)
 
-If we check under the _delta_log directory we can see bunch of files but the only .json file is used by delta lake to maintain the history and versions.
+If we check under the _delta_log directory we can see bunch of files but the only 0000000.json file is used by delta lake to maintain the history and versions.
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1_tlog_2.JPG?raw=true)
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NzIzMTY3MjUsNjg1NjE1Mjk1LC03OT
-g1NDQ3MzgsMTUwMjQyNzk2MywxNTMzODcxMjg5LDYxOTYxNDky
-Myw3OTE2MzU3NTgsLTEwMjkzNjIxMzcsLTM1NjYxOTIwOCwtMj
-I0NjQ0OTE4LDE5OTEyMDUxNDcsLTExNTQxMzU4OTcsLTIwMjQz
-MTA1MjUsLTY4MDMwMjk2OSwxMDQwNjgwMTgwLDE2Mzg2MzY4MD
-csMTY0MTk2MTc4NiwtMTcyNzk4ODY0OSwxOTM1NzQwNjEsMTQy
-MjE1NTExOV19
+eyJoaXN0b3J5IjpbLTIzNDczMDE0NSw2ODU2MTUyOTUsLTc5OD
+U0NDczOCwxNTAyNDI3OTYzLDE1MzM4NzEyODksNjE5NjE0OTIz
+LDc5MTYzNTc1OCwtMTAyOTM2MjEzNywtMzU2NjE5MjA4LC0yMj
+Q2NDQ5MTgsMTk5MTIwNTE0NywtMTE1NDEzNTg5NywtMjAyNDMx
+MDUyNSwtNjgwMzAyOTY5LDEwNDA2ODAxODAsMTYzODYzNjgwNy
+wxNjQxOTYxNzg2LC0xNzI3OTg4NjQ5LDE5MzU3NDA2MSwxNDIy
+MTU1MTE5XX0=
 -->
