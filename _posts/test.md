@@ -137,13 +137,13 @@ If we check under the _delta_log directory we can see bunch of files but the onl
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1_tlog_2.JPG?raw=true)
 
-
+Lets run the insert query on the same table and see what happen under the storage location.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNDczMDE0NSw2ODU2MTUyOTUsLTc5OD
-U0NDczOCwxNTAyNDI3OTYzLDE1MzM4NzEyODksNjE5NjE0OTIz
-LDc5MTYzNTc1OCwtMTAyOTM2MjEzNywtMzU2NjE5MjA4LC0yMj
-Q2NDQ5MTgsMTk5MTIwNTE0NywtMTE1NDEzNTg5NywtMjAyNDMx
-MDUyNSwtNjgwMzAyOTY5LDEwNDA2ODAxODAsMTYzODYzNjgwNy
-wxNjQxOTYxNzg2LC0xNzI3OTg4NjQ5LDE5MzU3NDA2MSwxNDIy
-MTU1MTE5XX0=
+eyJoaXN0b3J5IjpbLTE5MTYxNTkxMzcsNjg1NjE1Mjk1LC03OT
+g1NDQ3MzgsMTUwMjQyNzk2MywxNTMzODcxMjg5LDYxOTYxNDky
+Myw3OTE2MzU3NTgsLTEwMjkzNjIxMzcsLTM1NjYxOTIwOCwtMj
+I0NjQ0OTE4LDE5OTEyMDUxNDcsLTExNTQxMzU4OTcsLTIwMjQz
+MTA1MjUsLTY4MDMwMjk2OSwxMDQwNjgwMTgwLDE2Mzg2MzY4MD
+csMTY0MTk2MTc4NiwtMTcyNzk4ODY0OSwxOTM1NzQwNjEsMTQy
+MjE1NTExOV19
 -->
