@@ -129,17 +129,18 @@ USING DELTA
 LOCATION "/my_table"
 AS SELECT 'dummy1' as f1, 'dummy2' as f2 ;
 ```
-After the table is created and loaded with dummy data. we can see in the below diagram having 
+After the table is created and loaded with dummy data. we can see in the below diagram having one _delta_log directory and another one is data file in parquet format.
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1_tlog_1.JPG?raw=true)
 
+If we check under the _delta_log directory we can see bunch of files but .json file is 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1_tlog_2.JPG?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQxNDUzODQ0NCw2ODU2MTUyOTUsLTc5OD
-U0NDczOCwxNTAyNDI3OTYzLDE1MzM4NzEyODksNjE5NjE0OTIz
-LDc5MTYzNTc1OCwtMTAyOTM2MjEzNywtMzU2NjE5MjA4LC0yMj
-Q2NDQ5MTgsMTk5MTIwNTE0NywtMTE1NDEzNTg5NywtMjAyNDMx
-MDUyNSwtNjgwMzAyOTY5LDEwNDA2ODAxODAsMTYzODYzNjgwNy
-wxNjQxOTYxNzg2LC0xNzI3OTg4NjQ5LDE5MzU3NDA2MSwxNDIy
-MTU1MTE5XX0=
+eyJoaXN0b3J5IjpbMTI3MDE1MjI4LDY4NTYxNTI5NSwtNzk4NT
+Q0NzM4LDE1MDI0Mjc5NjMsMTUzMzg3MTI4OSw2MTk2MTQ5MjMs
+NzkxNjM1NzU4LC0xMDI5MzYyMTM3LC0zNTY2MTkyMDgsLTIyND
+Y0NDkxOCwxOTkxMjA1MTQ3LC0xMTU0MTM1ODk3LC0yMDI0MzEw
+NTI1LC02ODAzMDI5NjksMTA0MDY4MDE4MCwxNjM4NjM2ODA3LD
+E2NDE5NjE3ODYsLTE3Mjc5ODg2NDksMTkzNTc0MDYxLDE0MjIx
+NTUxMTldfQ==
 -->
