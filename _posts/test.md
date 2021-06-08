@@ -116,12 +116,23 @@ The Delta Lake transaction log (also known as the Delta Log) is an ordered recor
  - The Delta Lake transaction log serves the single source of truth like a central repository that tracks all changes that users make to the table.
  - No partial or corrupted files because delta lake either the commit the state or abort the state. which means if job fails in between there will be no entry in the transaction log.
 
+### Lets understand by code
+```sql
+%sql
+
+DROP TABLE IF EXISTS my_table;
+
+CREATE TABLE my_table 
+USING DELTA
+LOCATION "/my_table"
+AS SELECT 'dummy1' as f1, 'dummy2' as f2 ;
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5ODU0NDczOCwxNTAyNDI3OTYzLDE1Mz
-M4NzEyODksNjE5NjE0OTIzLDc5MTYzNTc1OCwtMTAyOTM2MjEz
-NywtMzU2NjE5MjA4LC0yMjQ2NDQ5MTgsMTk5MTIwNTE0NywtMT
-E1NDEzNTg5NywtMjAyNDMxMDUyNSwtNjgwMzAyOTY5LDEwNDA2
-ODAxODAsMTYzODYzNjgwNywxNjQxOTYxNzg2LC0xNzI3OTg4Nj
-Q5LDE5MzU3NDA2MSwxNDIyMTU1MTE5LC0xNzE2ODM1NDU1LDQ3
-MjcyODcxNl19
+eyJoaXN0b3J5IjpbNjg1NjE1Mjk1LC03OTg1NDQ3MzgsMTUwMj
+QyNzk2MywxNTMzODcxMjg5LDYxOTYxNDkyMyw3OTE2MzU3NTgs
+LTEwMjkzNjIxMzcsLTM1NjYxOTIwOCwtMjI0NjQ0OTE4LDE5OT
+EyMDUxNDcsLTExNTQxMzU4OTcsLTIwMjQzMTA1MjUsLTY4MDMw
+Mjk2OSwxMDQwNjgwMTgwLDE2Mzg2MzY4MDcsMTY0MTk2MTc4Ni
+wtMTcyNzk4ODY0OSwxOTM1NzQwNjEsMTQyMjE1NTExOSwtMTcx
+NjgzNTQ1NV19
 -->
