@@ -104,13 +104,15 @@ The Delta Lake transaction log (also known as the Delta Log) is an ordered recor
 
  - Suppose you have a table called **my_table** underneath table contain the  above shown directory structure on disk.
  - In in table root directory we have the transaction log directory, which is called _delta_log.
+ -  Within the _delta_log directory we have multiple versions of json files. These are numbered zero to long max value. And these contain all the changes that you make to your Delta table
+ - 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzI1Njk2MjQsLTEwMjkzNjIxMzcsLT
-M1NjYxOTIwOCwtMjI0NjQ0OTE4LDE5OTEyMDUxNDcsLTExNTQx
-MzU4OTcsLTIwMjQzMTA1MjUsLTY4MDMwMjk2OSwxMDQwNjgwMT
-gwLDE2Mzg2MzY4MDcsMTY0MTk2MTc4NiwtMTcyNzk4ODY0OSwx
-OTM1NzQwNjEsMTQyMjE1NTExOSwtMTcxNjgzNTQ1NSw0NzI3Mj
-g3MTYsNTUwNTQzOTA2LDMxMTE4NjY0OCwtNzgyMDY0MjUwLC0y
-MDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTgwNjUyMjY4OCwtMTAyOTM2MjEzNywtMz
+U2NjE5MjA4LC0yMjQ2NDQ5MTgsMTk5MTIwNTE0NywtMTE1NDEz
+NTg5NywtMjAyNDMxMDUyNSwtNjgwMzAyOTY5LDEwNDA2ODAxOD
+AsMTYzODYzNjgwNywxNjQxOTYxNzg2LC0xNzI3OTg4NjQ5LDE5
+MzU3NDA2MSwxNDIyMTU1MTE5LC0xNzE2ODM1NDU1LDQ3MjcyOD
+cxNiw1NTA1NDM5MDYsMzExMTg2NjQ4LC03ODIwNjQyNTAsLTIw
+ODg3NDY2MTJdfQ==
 -->
