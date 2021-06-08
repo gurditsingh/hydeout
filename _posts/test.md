@@ -91,9 +91,10 @@ While creating a Delta table you have to provide the location, which means you a
 	```
 
 ## What files are kept under the Delta table location
+In Delta table creation the LOCATION property that points to the underlying files which make up your Delta table.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAxNzQwMjY4LC0yMDI0MzEwNTI1LC02OD
+eyJoaXN0b3J5IjpbMjA0MzUyMjcwLC0yMDI0MzEwNTI1LC02OD
 AzMDI5NjksMTA0MDY4MDE4MCwxNjM4NjM2ODA3LDE2NDE5NjE3
 ODYsLTE3Mjc5ODg2NDksMTkzNTc0MDYxLDE0MjIxNTUxMTksLT
 E3MTY4MzU0NTUsNDcyNzI4NzE2LDU1MDU0MzkwNiwzMTExODY2
