@@ -106,14 +106,14 @@ The Delta Lake transaction log (also known as the Delta Log) is an ordered recor
  - In in table root directory we have the transaction log directory, which is called _delta_log.
  -  Within the _delta_log directory we have multiple versions of json files. These are numbered zero to long max value. these files contain all the transactions or changes that you make to your Delta table.
  - Next we have optional partition directory. if your Delta table is partitioned on some particular column then it will create the directory accordingly like above we have a partition on year column it will create directories year wise.
- - 
+ - If your table is partitioned then underneath the partition diectory it will create the data files 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODQzOTg1MjcsLTEwMjkzNjIxMzcsLT
-M1NjYxOTIwOCwtMjI0NjQ0OTE4LDE5OTEyMDUxNDcsLTExNTQx
-MzU4OTcsLTIwMjQzMTA1MjUsLTY4MDMwMjk2OSwxMDQwNjgwMT
-gwLDE2Mzg2MzY4MDcsMTY0MTk2MTc4NiwtMTcyNzk4ODY0OSwx
-OTM1NzQwNjEsMTQyMjE1NTExOSwtMTcxNjgzNTQ1NSw0NzI3Mj
-g3MTYsNTUwNTQzOTA2LDMxMTE4NjY0OCwtNzgyMDY0MjUwLC0y
-MDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbMzQ3ODExMDg2LC0xMDI5MzYyMTM3LC0zNT
+Y2MTkyMDgsLTIyNDY0NDkxOCwxOTkxMjA1MTQ3LC0xMTU0MTM1
+ODk3LC0yMDI0MzEwNTI1LC02ODAzMDI5NjksMTA0MDY4MDE4MC
+wxNjM4NjM2ODA3LDE2NDE5NjE3ODYsLTE3Mjc5ODg2NDksMTkz
+NTc0MDYxLDE0MjIxNTUxMTksLTE3MTY4MzU0NTUsNDcyNzI4Nz
+E2LDU1MDU0MzkwNiwzMTExODY2NDgsLTc4MjA2NDI1MCwtMjA4
+ODc0NjYxMl19
 -->
