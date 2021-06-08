@@ -133,7 +133,7 @@ After the table is created and loaded with dummy data. we can see in the below d
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1_tlog_1.JPG?raw=true)
 
-If we check under the _delta_log directory we can see bunch of files but the only 0000000.json file is used by delta lake to maintain the history and versions.
+If we check under the _delta_log directory we can see bunch of files but the only 0000000.json file (later we see what is under the .json file) is used by delta lake to maintain the history and versions.
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1_tlog_2.JPG?raw=true)
 
@@ -146,15 +146,17 @@ Once the values are inserted into the table. we can see in the below diagram we 
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1_tlog_3.JPG?raw=true)
 
-If we again check under the _delta_log directory we can some common files and one more file is created with 0000001.json. This file contain all the information is used by delta lake to maintain the history and versions.
+If we again check under the _delta_log directory we can some common files and one more file is created with 0000001.json (later we see what is under the .json file). This file is used by delta lake to maintain the history and versions.
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1_tlog_4.JPG?raw=true)
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMzAwNjkzMywyMTE1NDMyNzMwLDY4NT
-YxNTI5NSwtNzk4NTQ0NzM4LDE1MDI0Mjc5NjMsMTUzMzg3MTI4
-OSw2MTk2MTQ5MjMsNzkxNjM1NzU4LC0xMDI5MzYyMTM3LC0zNT
-Y2MTkyMDgsLTIyNDY0NDkxOCwxOTkxMjA1MTQ3LC0xMTU0MTM1
-ODk3LC0yMDI0MzEwNTI1LC02ODAzMDI5NjksMTA0MDY4MDE4MC
-wxNjM4NjM2ODA3LDE2NDE5NjE3ODYsLTE3Mjc5ODg2NDksMTkz
-NTc0MDYxXX0=
+eyJoaXN0b3J5IjpbLTYwNjI2Mzk5LDIxMTU0MzI3MzAsNjg1Nj
+E1Mjk1LC03OTg1NDQ3MzgsMTUwMjQyNzk2MywxNTMzODcxMjg5
+LDYxOTYxNDkyMyw3OTE2MzU3NTgsLTEwMjkzNjIxMzcsLTM1Nj
+YxOTIwOCwtMjI0NjQ0OTE4LDE5OTEyMDUxNDcsLTExNTQxMzU4
+OTcsLTIwMjQzMTA1MjUsLTY4MDMwMjk2OSwxMDQwNjgwMTgwLD
+E2Mzg2MzY4MDcsMTY0MTk2MTc4NiwtMTcyNzk4ODY0OSwxOTM1
+NzQwNjFdfQ==
 -->
