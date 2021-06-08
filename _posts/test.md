@@ -110,12 +110,15 @@ If we see in the above results of ls command we have bunch of output files in pa
 ## What is Delta Transaction Log?
 
 The Delta Lake transaction log (also known as the Delta Log) is an ordered record of every change that has been performed on a Delta Lake table.
+
+ - Delta Lake is built on top of Apache Spark so that at the same time in order to allow multiple readers and writers of a given table to all work on the table at the same time.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE5NjE0OTIzLDc5MTYzNTc1OCwtMTAyOT
-M2MjEzNywtMzU2NjE5MjA4LC0yMjQ2NDQ5MTgsMTk5MTIwNTE0
-NywtMTE1NDEzNTg5NywtMjAyNDMxMDUyNSwtNjgwMzAyOTY5LD
-EwNDA2ODAxODAsMTYzODYzNjgwNywxNjQxOTYxNzg2LC0xNzI3
-OTg4NjQ5LDE5MzU3NDA2MSwxNDIyMTU1MTE5LC0xNzE2ODM1ND
-U1LDQ3MjcyODcxNiw1NTA1NDM5MDYsMzExMTg2NjQ4LC03ODIw
-NjQyNTBdfQ==
+eyJoaXN0b3J5IjpbLTI0MjUzMzUwMiw2MTk2MTQ5MjMsNzkxNj
+M1NzU4LC0xMDI5MzYyMTM3LC0zNTY2MTkyMDgsLTIyNDY0NDkx
+OCwxOTkxMjA1MTQ3LC0xMTU0MTM1ODk3LC0yMDI0MzEwNTI1LC
+02ODAzMDI5NjksMTA0MDY4MDE4MCwxNjM4NjM2ODA3LDE2NDE5
+NjE3ODYsLTE3Mjc5ODg2NDksMTkzNTc0MDYxLDE0MjIxNTUxMT
+ksLTE3MTY4MzU0NTUsNDcyNzI4NzE2LDU1MDU0MzkwNiwzMTEx
+ODY2NDhdfQ==
 -->
