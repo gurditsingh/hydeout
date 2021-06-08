@@ -92,12 +92,12 @@ While creating a Delta table you have to provide the location, which means you a
 
 ## What files are kept under the Delta table location
 In Delta table creation the LOCATION property that points to the underlying files which make up your Delta table special.
-
+![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1.JPG?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTQxMzU4OTcsLTIwMjQzMTA1MjUsLT
-Y4MDMwMjk2OSwxMDQwNjgwMTgwLDE2Mzg2MzY4MDcsMTY0MTk2
-MTc4NiwtMTcyNzk4ODY0OSwxOTM1NzQwNjEsMTQyMjE1NTExOS
-wtMTcxNjgzNTQ1NSw0NzI3Mjg3MTYsNTUwNTQzOTA2LDMxMTE4
-NjY0OCwtNzgyMDY0MjUwLC0yMDg4NzQ2NjEyLC0zMzI0NTUzNj
-NdfQ==
+eyJoaXN0b3J5IjpbLTc4NjUwOTcyMiwtMTE1NDEzNTg5NywtMj
+AyNDMxMDUyNSwtNjgwMzAyOTY5LDEwNDA2ODAxODAsMTYzODYz
+NjgwNywxNjQxOTYxNzg2LC0xNzI3OTg4NjQ5LDE5MzU3NDA2MS
+wxNDIyMTU1MTE5LC0xNzE2ODM1NDU1LDQ3MjcyODcxNiw1NTA1
+NDM5MDYsMzExMTg2NjQ4LC03ODIwNjQyNTAsLTIwODg3NDY2MT
+IsLTMzMjQ1NTM2M119
 -->
