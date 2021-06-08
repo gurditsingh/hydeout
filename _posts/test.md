@@ -102,10 +102,11 @@ The Delta Lake transaction log (also known as the Delta Log) is an ordered recor
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1_tlog.jpg?raw=true)
 
- - Suppose you have a table called **my_table** underneath 
+ - Suppose you have a table called **my_table** underneath table contain the  above shown directory structure on disk.
+ - You have the transaction log directory, which is called _delta_log within the root of the table
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyMDg4OTAyNywtMTAyOTM2MjEzNywtMz
+eyJoaXN0b3J5IjpbLTUxODA4MTkwMCwtMTAyOTM2MjEzNywtMz
 U2NjE5MjA4LC0yMjQ2NDQ5MTgsMTk5MTIwNTE0NywtMTE1NDEz
 NTg5NywtMjAyNDMxMDUyNSwtNjgwMzAyOTY5LDEwNDA2ODAxOD
 AsMTYzODYzNjgwNywxNjQxOTYxNzg2LC0xNzI3OTg4NjQ5LDE5
