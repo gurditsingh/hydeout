@@ -89,12 +89,14 @@ While creating a Delta table you have to provide the location, which means you a
 	LOCATION "/delta_store"
 	AS SELECT * FROM tmp_view;
 	```
-What is 
+
+## What files are kept under the Delta table location
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzY4OTgzNzcsLTIwMjQzMTA1MjUsLT
-Y4MDMwMjk2OSwxMDQwNjgwMTgwLDE2Mzg2MzY4MDcsMTY0MTk2
-MTc4NiwtMTcyNzk4ODY0OSwxOTM1NzQwNjEsMTQyMjE1NTExOS
-wtMTcxNjgzNTQ1NSw0NzI3Mjg3MTYsNTUwNTQzOTA2LDMxMTE4
-NjY0OCwtNzgyMDY0MjUwLC0yMDg4NzQ2NjEyLC0zMzI0NTUzNj
-NdfQ==
+eyJoaXN0b3J5IjpbMzAxNzQwMjY4LC0yMDI0MzEwNTI1LC02OD
+AzMDI5NjksMTA0MDY4MDE4MCwxNjM4NjM2ODA3LDE2NDE5NjE3
+ODYsLTE3Mjc5ODg2NDksMTkzNTc0MDYxLDE0MjIxNTUxMTksLT
+E3MTY4MzU0NTUsNDcyNzI4NzE2LDU1MDU0MzkwNiwzMTExODY2
+NDgsLTc4MjA2NDI1MCwtMjA4ODc0NjYxMiwtMzMyNDU1MzYzXX
+0=
 -->
