@@ -96,7 +96,7 @@ In Delta table creation the LOCATION property that points to the underlying file
 
 If we see in the above results of ls command we have bunch of output files in parquet (that we will discuss later) and one directory called **_delta_log**. As we know Delta lake provides number of features like ACID transactions, scalable metadata handling, time travel and others. The Delta lake have achieved these functionalities with the help of _delta_log also known as Delta transaction log.
 
-## How Delta table physically store ?
+### How Delta table physically store ?
 
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1_tlog.jpg?raw=true)
@@ -107,12 +107,15 @@ If we see in the above results of ls command we have bunch of output files in pa
  - Next we have optional partition directory. if your Delta table is partitioned on some particular column then it will create the directory accordingly like above we have a partition on year column it will create directories year wise.
  - If your table is partitioned then underneath the partition directory it will create the data files which are simple parquet files. And if the table is not partitioned then the data files will create under the table root directory in parquet format.
 
+## What is Delta Transaction Log?
+
+The Delta Lake transaction log (also known as the Delta Log) is an ordered record of every change that has been performed on a Delta Lake table.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkxNjM1NzU4LC0xMDI5MzYyMTM3LC0zNT
-Y2MTkyMDgsLTIyNDY0NDkxOCwxOTkxMjA1MTQ3LC0xMTU0MTM1
-ODk3LC0yMDI0MzEwNTI1LC02ODAzMDI5NjksMTA0MDY4MDE4MC
-wxNjM4NjM2ODA3LDE2NDE5NjE3ODYsLTE3Mjc5ODg2NDksMTkz
-NTc0MDYxLDE0MjIxNTUxMTksLTE3MTY4MzU0NTUsNDcyNzI4Nz
-E2LDU1MDU0MzkwNiwzMTExODY2NDgsLTc4MjA2NDI1MCwtMjA4
-ODc0NjYxMl19
+eyJoaXN0b3J5IjpbNjE5NjE0OTIzLDc5MTYzNTc1OCwtMTAyOT
+M2MjEzNywtMzU2NjE5MjA4LC0yMjQ2NDQ5MTgsMTk5MTIwNTE0
+NywtMTE1NDEzNTg5NywtMjAyNDMxMDUyNSwtNjgwMzAyOTY5LD
+EwNDA2ODAxODAsMTYzODYzNjgwNywxNjQxOTYxNzg2LC0xNzI3
+OTg4NjQ5LDE5MzU3NDA2MSwxNDIyMTU1MTE5LC0xNzE2ODM1ND
+U1LDQ3MjcyODcxNiw1NTA1NDM5MDYsMzExMTg2NjQ4LC03ODIw
+NjQyNTBdfQ==
 -->
