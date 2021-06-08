@@ -146,15 +146,15 @@ Once the values are inserted into the table. we can see in the below diagram we 
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1_tlog_3.JPG?raw=true)
 
-If we again check under the _delta_log directory we can some common filessee bunch of files but the only 0000000.json file is used by delta lake to maintain the history and versions.
+If we again check under the _delta_log directory we can some common files and one more file is created with 0000001.json. This file contain all the information is used by delta lake to maintain the history and versions.
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1_tlog_4.JPG?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNTgxMTczNjUsMjExNTQzMjczMCw2OD
-U2MTUyOTUsLTc5ODU0NDczOCwxNTAyNDI3OTYzLDE1MzM4NzEy
-ODksNjE5NjE0OTIzLDc5MTYzNTc1OCwtMTAyOTM2MjEzNywtMz
-U2NjE5MjA4LC0yMjQ2NDQ5MTgsMTk5MTIwNTE0NywtMTE1NDEz
-NTg5NywtMjAyNDMxMDUyNSwtNjgwMzAyOTY5LDEwNDA2ODAxOD
-AsMTYzODYzNjgwNywxNjQxOTYxNzg2LC0xNzI3OTg4NjQ5LDE5
-MzU3NDA2MV19
+eyJoaXN0b3J5IjpbMTUxMzAwNjkzMywyMTE1NDMyNzMwLDY4NT
+YxNTI5NSwtNzk4NTQ0NzM4LDE1MDI0Mjc5NjMsMTUzMzg3MTI4
+OSw2MTk2MTQ5MjMsNzkxNjM1NzU4LC0xMDI5MzYyMTM3LC0zNT
+Y2MTkyMDgsLTIyNDY0NDkxOCwxOTkxMjA1MTQ3LC0xMTU0MTM1
+ODk3LC0yMDI0MzEwNTI1LC02ODAzMDI5NjksMTA0MDY4MDE4MC
+wxNjM4NjM2ODA3LDE2NDE5NjE3ODYsLTE3Mjc5ODg2NDksMTkz
+NTc0MDYxXX0=
 -->
