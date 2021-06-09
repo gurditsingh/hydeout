@@ -1,3 +1,5 @@
+
+
 ## What is Delta Lake?
 In the past there are different storage solutions build to solve the common problem of data quality. Many architecture/tools are build to solve the problem. These tools provides many benefits like decoupling the business logic from storage and compute. It means user can scale the compute and storage power up and down but in between this data reliability lost. To provide the data reliability and quality  Delta Lake come into the picture.
 
@@ -178,11 +180,11 @@ If we again check under the _delta_log directory we can see some common files an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTY3NDMyNzgsLTMyMTg1Nzg1OSwtMT
-U0ODE5MTA0NiwtNjA2MjYzOTksMjExNTQzMjczMCw2ODU2MTUy
-OTUsLTc5ODU0NDczOCwxNTAyNDI3OTYzLDE1MzM4NzEyODksNj
-E5NjE0OTIzLDc5MTYzNTc1OCwtMTAyOTM2MjEzNywtMzU2NjE5
-MjA4LC0yMjQ2NDQ5MTgsMTk5MTIwNTE0NywtMTE1NDEzNTg5Ny
-wtMjAyNDMxMDUyNSwtNjgwMzAyOTY5LDEwNDA2ODAxODAsMTYz
-ODYzNjgwN119
+eyJoaXN0b3J5IjpbMjcwODQwNjg2LC0yMDU2NzQzMjc4LC0zMj
+E4NTc4NTksLTE1NDgxOTEwNDYsLTYwNjI2Mzk5LDIxMTU0MzI3
+MzAsNjg1NjE1Mjk1LC03OTg1NDQ3MzgsMTUwMjQyNzk2MywxNT
+MzODcxMjg5LDYxOTYxNDkyMyw3OTE2MzU3NTgsLTEwMjkzNjIx
+MzcsLTM1NjYxOTIwOCwtMjI0NjQ0OTE4LDE5OTEyMDUxNDcsLT
+ExNTQxMzU4OTcsLTIwMjQzMTA1MjUsLTY4MDMwMjk2OSwxMDQw
+NjgwMTgwXX0=
 -->
