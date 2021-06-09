@@ -3,7 +3,7 @@
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1_delta_lake.jpg?raw=true)
 
  - At earlier when people started storing or creating files they just had CSV files and took some straight data to data lake. The problem with CSV is csv doesn't know the structure of the file means how many columns in it and second compression in csv doesn't really help.
- - CSV has couple of problems then parquet format come into existence. The parquet file format is columnar storage it store the data in columns wise and that means we can compress it really well. It has a structure so we try and queries in part a we don't need to say this is the structure
+ - CSV has couple of problems then parquet format come into existence. The parquet file format is columnar storage it store the data in columns wise and that means we can compress it really well. It has a structure so don't need to mentioned separately.
 
 ## What is Delta Lake?
 In the past there are different storage solutions build to solve the common problem of data quality. Many architecture/tools are build to solve the problem. These tools provides many benefits like decoupling the business logic from storage and compute. It means user can scale the compute and storage power up and down but in between this data reliability lost. To provide the data reliability and quality  Delta Lake come into the picture.
@@ -185,11 +185,11 @@ If we again check under the _delta_log directory we can see some common files an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ1ODY3MDk2LC0yNjQ0NzY4MjAsMjcwOD
-QwNjg2LC0yMDU2NzQzMjc4LC0zMjE4NTc4NTksLTE1NDgxOTEw
-NDYsLTYwNjI2Mzk5LDIxMTU0MzI3MzAsNjg1NjE1Mjk1LC03OT
-g1NDQ3MzgsMTUwMjQyNzk2MywxNTMzODcxMjg5LDYxOTYxNDky
-Myw3OTE2MzU3NTgsLTEwMjkzNjIxMzcsLTM1NjYxOTIwOCwtMj
-I0NjQ0OTE4LDE5OTEyMDUxNDcsLTExNTQxMzU4OTcsLTIwMjQz
-MTA1MjVdfQ==
+eyJoaXN0b3J5IjpbMTE2MjcxMjgzNywtMjY0NDc2ODIwLDI3MD
+g0MDY4NiwtMjA1Njc0MzI3OCwtMzIxODU3ODU5LC0xNTQ4MTkx
+MDQ2LC02MDYyNjM5OSwyMTE1NDMyNzMwLDY4NTYxNTI5NSwtNz
+k4NTQ0NzM4LDE1MDI0Mjc5NjMsMTUzMzg3MTI4OSw2MTk2MTQ5
+MjMsNzkxNjM1NzU4LC0xMDI5MzYyMTM3LC0zNTY2MTkyMDgsLT
+IyNDY0NDkxOCwxOTkxMjA1MTQ3LC0xMTU0MTM1ODk3LC0yMDI0
+MzEwNTI1XX0=
 -->
