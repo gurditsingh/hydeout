@@ -23,6 +23,20 @@ Delta Lake is a file-based, open-source storage format that provides ACID transa
 
 	```
 
+	```scala
+	def main(args: Array[String]): Unit = {
+	  
+	  val spark = SparkSession
+	    .builder()
+	    .master("local")
+	    .getOrCreate()
+	  
+	  val df = spark.range(10)
+
+	  df.write.format("delta").save("/table_location")
+
+	}
+	```
 ## Creating your first Delta Table
 
 While creating a Delta table you have to provide the location, which means you are writing files to some storage. All of the files together stored in a directory of a particular structure which make up your table. Which means when we create a Delta table, we are in fact writing files to some storage location.
@@ -152,11 +166,11 @@ If we again check under the _delta_log directory we can see some common files an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1OTMzMTkzMSwtNjA2MjYzOTksMjExNT
-QzMjczMCw2ODU2MTUyOTUsLTc5ODU0NDczOCwxNTAyNDI3OTYz
-LDE1MzM4NzEyODksNjE5NjE0OTIzLDc5MTYzNTc1OCwtMTAyOT
-M2MjEzNywtMzU2NjE5MjA4LC0yMjQ2NDQ5MTgsMTk5MTIwNTE0
-NywtMTE1NDEzNTg5NywtMjAyNDMxMDUyNSwtNjgwMzAyOTY5LD
-EwNDA2ODAxODAsMTYzODYzNjgwNywxNjQxOTYxNzg2LC0xNzI3
-OTg4NjQ5XX0=
+eyJoaXN0b3J5IjpbLTE1NDgxOTEwNDYsLTYwNjI2Mzk5LDIxMT
+U0MzI3MzAsNjg1NjE1Mjk1LC03OTg1NDQ3MzgsMTUwMjQyNzk2
+MywxNTMzODcxMjg5LDYxOTYxNDkyMyw3OTE2MzU3NTgsLTEwMj
+kzNjIxMzcsLTM1NjYxOTIwOCwtMjI0NjQ0OTE4LDE5OTEyMDUx
+NDcsLTExNTQxMzU4OTcsLTIwMjQzMTA1MjUsLTY4MDMwMjk2OS
+wxMDQwNjgwMTgwLDE2Mzg2MzY4MDcsMTY0MTk2MTc4NiwtMTcy
+Nzk4ODY0OV19
 -->
