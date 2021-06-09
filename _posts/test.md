@@ -2,7 +2,7 @@
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1_delta_lake.jpg?raw=true)
 
- - When people started they just had like csvs they just took some straight data copper separated through it into a lay 
+ - At eWhen people started storing files they just had csvs they just took some straight data copper separated through it into a lay 
 
 ## What is Delta Lake?
 In the past there are different storage solutions build to solve the common problem of data quality. Many architecture/tools are build to solve the problem. These tools provides many benefits like decoupling the business logic from storage and compute. It means user can scale the compute and storage power up and down but in between this data reliability lost. To provide the data reliability and quality  Delta Lake come into the picture.
@@ -184,7 +184,7 @@ If we again check under the _delta_log directory we can see some common files an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyODYxNTczNSwtMjY0NDc2ODIwLDI3MD
+eyJoaXN0b3J5IjpbLTgxMjY1MDI2MSwtMjY0NDc2ODIwLDI3MD
 g0MDY4NiwtMjA1Njc0MzI3OCwtMzIxODU3ODU5LC0xNTQ4MTkx
 MDQ2LC02MDYyNjM5OSwyMTE1NDMyNzMwLDY4NTYxNTI5NSwtNz
 k4NTQ0NzM4LDE1MDI0Mjc5NjMsMTUzMzg3MTI4OSw2MTk2MTQ5
