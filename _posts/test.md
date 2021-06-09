@@ -2,7 +2,7 @@
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1_delta_lake.jpg?raw=true)
 
- - At earlier when people started storing or creating files they just had CSV files and took some straight data to data lake. The problem with CSV is csv doesn't know the structure of the file menhow many columns are 
+ - At earlier when people started storing or creating files they just had CSV files and took some straight data to data lake. The problem with CSV is csv doesn't know the structure of the file means how many columns in it and second compression in csvs it doesn't really work 
 
 ## What is Delta Lake?
 In the past there are different storage solutions build to solve the common problem of data quality. Many architecture/tools are build to solve the problem. These tools provides many benefits like decoupling the business logic from storage and compute. It means user can scale the compute and storage power up and down but in between this data reliability lost. To provide the data reliability and quality  Delta Lake come into the picture.
@@ -184,11 +184,11 @@ If we again check under the _delta_log directory we can see some common files an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjc4MzIzNTMsLTI2NDQ3NjgyMCwyNz
-A4NDA2ODYsLTIwNTY3NDMyNzgsLTMyMTg1Nzg1OSwtMTU0ODE5
-MTA0NiwtNjA2MjYzOTksMjExNTQzMjczMCw2ODU2MTUyOTUsLT
-c5ODU0NDczOCwxNTAyNDI3OTYzLDE1MzM4NzEyODksNjE5NjE0
-OTIzLDc5MTYzNTc1OCwtMTAyOTM2MjEzNywtMzU2NjE5MjA4LC
-0yMjQ2NDQ5MTgsMTk5MTIwNTE0NywtMTE1NDEzNTg5NywtMjAy
-NDMxMDUyNV19
+eyJoaXN0b3J5IjpbNDM2NTgwMzc5LC0yNjQ0NzY4MjAsMjcwOD
+QwNjg2LC0yMDU2NzQzMjc4LC0zMjE4NTc4NTksLTE1NDgxOTEw
+NDYsLTYwNjI2Mzk5LDIxMTU0MzI3MzAsNjg1NjE1Mjk1LC03OT
+g1NDQ3MzgsMTUwMjQyNzk2MywxNTMzODcxMjg5LDYxOTYxNDky
+Myw3OTE2MzU3NTgsLTEwMjkzNjIxMzcsLTM1NjYxOTIwOCwtMj
+I0NjQ0OTE4LDE5OTEyMDUxNDcsLTExNTQxMzU4OTcsLTIwMjQz
+MTA1MjVdfQ==
 -->
