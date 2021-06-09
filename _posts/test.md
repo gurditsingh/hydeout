@@ -1,3 +1,5 @@
+File Formats
+
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1_delta_lake.jpg?raw=true)
 
 
@@ -182,7 +184,7 @@ If we again check under the _delta_log directory we can see some common files an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4NTg2NjgyNCwtMjY0NDc2ODIwLDI3MD
+eyJoaXN0b3J5IjpbLTcwMjA2MDE4MCwtMjY0NDc2ODIwLDI3MD
 g0MDY4NiwtMjA1Njc0MzI3OCwtMzIxODU3ODU5LC0xNTQ4MTkx
 MDQ2LC02MDYyNjM5OSwyMTE1NDMyNzMwLDY4NTYxNTI5NSwtNz
 k4NTQ0NzM4LDE1MDI0Mjc5NjMsMTUzMzg3MTI4OSw2MTk2MTQ5
