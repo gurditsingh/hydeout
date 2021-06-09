@@ -163,7 +163,7 @@ If we check under the _delta_log directory we can see bunch of files but the onl
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1_tlog_2.JPG?raw=true)
 
-Lets run the insert query on the same table and see what happen under the storage location ("/my_table").
+Lets run the insert query on the same table and add some more dummy data to the table.
 ```sql
 %sql
 insert into my_table values ('dummy2','dummy2')
@@ -178,11 +178,11 @@ If we again check under the _delta_log directory we can see some common files an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyMTg1Nzg1OSwtMTU0ODE5MTA0NiwtNj
-A2MjYzOTksMjExNTQzMjczMCw2ODU2MTUyOTUsLTc5ODU0NDcz
-OCwxNTAyNDI3OTYzLDE1MzM4NzEyODksNjE5NjE0OTIzLDc5MT
-YzNTc1OCwtMTAyOTM2MjEzNywtMzU2NjE5MjA4LC0yMjQ2NDQ5
-MTgsMTk5MTIwNTE0NywtMTE1NDEzNTg5NywtMjAyNDMxMDUyNS
-wtNjgwMzAyOTY5LDEwNDA2ODAxODAsMTYzODYzNjgwNywxNjQx
-OTYxNzg2XX0=
+eyJoaXN0b3J5IjpbLTIwNTY3NDMyNzgsLTMyMTg1Nzg1OSwtMT
+U0ODE5MTA0NiwtNjA2MjYzOTksMjExNTQzMjczMCw2ODU2MTUy
+OTUsLTc5ODU0NDczOCwxNTAyNDI3OTYzLDE1MzM4NzEyODksNj
+E5NjE0OTIzLDc5MTYzNTc1OCwtMTAyOTM2MjEzNywtMzU2NjE5
+MjA4LC0yMjQ2NDQ5MTgsMTk5MTIwNTE0NywtMTE1NDEzNTg5Ny
+wtMjAyNDMxMDUyNSwtNjgwMzAyOTY5LDEwNDA2ODAxODAsMTYz
+ODYzNjgwN119
 -->
