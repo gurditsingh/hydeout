@@ -24,16 +24,28 @@ Delta Lake is a file-based, open-source storage format that provides ACID transa
 	```
 
 	```scala
+	def writeToDelta(spark: SparkSession,path:String): Unit ={
+
+	  val df = spark.range(10)
+	  df.write.format("delta").save(path)
+	}
+
+	def readFromDelta(spark: SparkSession,path:String): Unit ={
+
+	  spark.read.format("delta").load(path).show()
+	}
+
 	def main(args: Array[String]): Unit = {
-	  
+
 	  val spark = SparkSession
 	    .builder()
 	    .master("local")
 	    .getOrCreate()
-	  
-	  val df = spark.range(10)
 
-	  df.write.format("delta").save("/table_location")
+	  //Write to delta table
+	  writeToDelta(spark,"/delta_path")
+	  //Read from delta table
+	  readFromDelta(spark,"/delta_path")
 
 	}
 	```
@@ -166,11 +178,11 @@ If we again check under the _delta_log directory we can see some common files an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDgxOTEwNDYsLTYwNjI2Mzk5LDIxMT
-U0MzI3MzAsNjg1NjE1Mjk1LC03OTg1NDQ3MzgsMTUwMjQyNzk2
-MywxNTMzODcxMjg5LDYxOTYxNDkyMyw3OTE2MzU3NTgsLTEwMj
-kzNjIxMzcsLTM1NjYxOTIwOCwtMjI0NjQ0OTE4LDE5OTEyMDUx
-NDcsLTExNTQxMzU4OTcsLTIwMjQzMTA1MjUsLTY4MDMwMjk2OS
-wxMDQwNjgwMTgwLDE2Mzg2MzY4MDcsMTY0MTk2MTc4NiwtMTcy
-Nzk4ODY0OV19
+eyJoaXN0b3J5IjpbLTMyMTg1Nzg1OSwtMTU0ODE5MTA0NiwtNj
+A2MjYzOTksMjExNTQzMjczMCw2ODU2MTUyOTUsLTc5ODU0NDcz
+OCwxNTAyNDI3OTYzLDE1MzM4NzEyODksNjE5NjE0OTIzLDc5MT
+YzNTc1OCwtMTAyOTM2MjEzNywtMzU2NjE5MjA4LC0yMjQ2NDQ5
+MTgsMTk5MTIwNTE0NywtMTE1NDEzNTg5NywtMjAyNDMxMDUyNS
+wtNjgwMzAyOTY5LDEwNDA2ODAxODAsMTYzODYzNjgwNywxNjQx
+OTYxNzg2XX0=
 -->
