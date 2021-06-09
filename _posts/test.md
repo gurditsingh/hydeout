@@ -4,7 +4,7 @@
 
  - At earlier when people started storing or creating files they just had CSV files and took some straight data to data lake. The problem with CSV is csv doesn't know the structure of the file means how many columns in it and second compression in csv doesn't really help.
  - CSV has couple of problems then parquet format come into existence. The parquet file format is columnar storage it store the data in columns wise and that means we can compress it really well. It has a structure so don't need to mentioned separately just read the data. Parquet also has some drawbacks like ACID transactions, versioning, handling metadata and etc.
- - Then Delta Lake come into the picture to solve all the problems. The Delta lake is a file format the same as csv and parquet except it's kind of a wrapper means the data lives is park
+ - Then Delta Lake come into the picture to solve all the problems. The Delta lake is a file format the same as csv and parquet except it's kind of a wrapper means the data lives in parquet format inside it and it gives us a transaction log and many more fearound the top.
 
 ## What is Delta Lake?
 In the past there are different storage solutions build to solve the common problem of data quality. Many architecture/tools are build to solve the problem. These tools provides many benefits like decoupling the business logic from storage and compute. It means user can scale the compute and storage power up and down but in between this data reliability lost. To provide the data reliability and quality  Delta Lake come into the picture.
@@ -186,11 +186,11 @@ If we again check under the _delta_log directory we can see some common files an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwNjQyOTMwNiwtMjY0NDc2ODIwLDI3MD
-g0MDY4NiwtMjA1Njc0MzI3OCwtMzIxODU3ODU5LC0xNTQ4MTkx
-MDQ2LC02MDYyNjM5OSwyMTE1NDMyNzMwLDY4NTYxNTI5NSwtNz
-k4NTQ0NzM4LDE1MDI0Mjc5NjMsMTUzMzg3MTI4OSw2MTk2MTQ5
-MjMsNzkxNjM1NzU4LC0xMDI5MzYyMTM3LC0zNTY2MTkyMDgsLT
-IyNDY0NDkxOCwxOTkxMjA1MTQ3LC0xMTU0MTM1ODk3LC0yMDI0
-MzEwNTI1XX0=
+eyJoaXN0b3J5IjpbLTE0OTM5OTU3MTksMTkwNjQyOTMwNiwtMj
+Y0NDc2ODIwLDI3MDg0MDY4NiwtMjA1Njc0MzI3OCwtMzIxODU3
+ODU5LC0xNTQ4MTkxMDQ2LC02MDYyNjM5OSwyMTE1NDMyNzMwLD
+Y4NTYxNTI5NSwtNzk4NTQ0NzM4LDE1MDI0Mjc5NjMsMTUzMzg3
+MTI4OSw2MTk2MTQ5MjMsNzkxNjM1NzU4LC0xMDI5MzYyMTM3LC
+0zNTY2MTkyMDgsLTIyNDY0NDkxOCwxOTkxMjA1MTQ3LC0xMTU0
+MTM1ODk3XX0=
 -->
