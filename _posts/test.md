@@ -2,9 +2,9 @@
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1_delta_lake.jpg?raw=true)
 
- - At earlier when people started storing or creating files they just had CSV files and took some straight data to data lake. The problem with CSV is csv doesn't know the structure of the file means how many columns in it and second compression in csv doesn't really help.
- - Then Parquet format come into existence and solve couple of CSV problems then Parquet format come into existence. The parquet file format is columnar storage it store the data in columns wise and that means we can compress it really well. It has a structure so don't need to mentioned separately just read the data. Parquet also has some drawbacks like ACID transactions, versioning, handling metadata and etc.
- - Then Delta Lake come into the picture to solve all the problems. The Delta lake is a file format the same as csv and parquet except it's kind of a wrapper means the data lives in parquet format inside it and it gives us a transaction log and many more features around the top.
+ - At earlier when people started storing files they just had CSV files and took some straight data to data lake. The problem with CSV is csv doesn't know the structure of the file means how many columns in it and second compression in csv doesn't really help.
+ - Then Parquet format come into existence and solve couple of CSV problems. The parquet file format is columnar storage it store the data in columns wise and that means we can compress it really well. It has a structure so don't need to mentioned separately just read the data. Parquet also has some drawbacks like ACID transactions, versioning, handling metadata and etc.
+ - Then Delta Lake come into the picture to solve all of the problems. The Delta lake is a file format the same as csv and parquet except it's kind of a wrapper means the data lives in parquet format inside it and it gives us a transaction log and many more features around the top.
 
 ## What is Delta Lake?
 In the past there are different storage solutions build to solve the common problem of data quality. Many architecture/tools are build to solve the problem. These tools provides many benefits like decoupling the business logic from storage and compute. It means user can scale the compute and storage power up and down but in between this data reliability lost. To provide the data reliability and quality  Delta Lake come into the picture.
@@ -186,11 +186,11 @@ If we again check under the _delta_log directory we can see some common files an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTY5MDI2MTMsMTkwNjQyOTMwNiwtMj
-Y0NDc2ODIwLDI3MDg0MDY4NiwtMjA1Njc0MzI3OCwtMzIxODU3
-ODU5LC0xNTQ4MTkxMDQ2LC02MDYyNjM5OSwyMTE1NDMyNzMwLD
-Y4NTYxNTI5NSwtNzk4NTQ0NzM4LDE1MDI0Mjc5NjMsMTUzMzg3
-MTI4OSw2MTk2MTQ5MjMsNzkxNjM1NzU4LC0xMDI5MzYyMTM3LC
-0zNTY2MTkyMDgsLTIyNDY0NDkxOCwxOTkxMjA1MTQ3LC0xMTU0
-MTM1ODk3XX0=
+eyJoaXN0b3J5IjpbMTkxMzQ0NzczMCwxOTA2NDI5MzA2LC0yNj
+Q0NzY4MjAsMjcwODQwNjg2LC0yMDU2NzQzMjc4LC0zMjE4NTc4
+NTksLTE1NDgxOTEwNDYsLTYwNjI2Mzk5LDIxMTU0MzI3MzAsNj
+g1NjE1Mjk1LC03OTg1NDQ3MzgsMTUwMjQyNzk2MywxNTMzODcx
+Mjg5LDYxOTYxNDkyMyw3OTE2MzU3NTgsLTEwMjkzNjIxMzcsLT
+M1NjYxOTIwOCwtMjI0NjQ0OTE4LDE5OTEyMDUxNDcsLTExNTQx
+MzU4OTddfQ==
 -->
