@@ -4,7 +4,7 @@
 
  - At earlier when people started storing or creating files they just had CSV files and took some straight data to data lake. The problem with CSV is csv doesn't know the structure of the file means how many columns in it and second compression in csv doesn't really help.
  - CSV has couple of problems then parquet format come into existence. The parquet file format is columnar storage it store the data in columns wise and that means we can compress it really well. It has a structure so don't need to mentioned separately just read the data. Parquet also has some drawbacks like ACID transactions, versioning, handling metadata and etc.
- - Then Delta Lake come into the picture to solve all the problems. The delta is a file format the same as csv and parquet except it's kind of a wrapper so the data lives is park
+ - Then Delta Lake come into the picture to solve all the problems. The Delta lake is a file format the same as csv and parquet except it's kind of a wrapper means the data lives is park
 
 ## What is Delta Lake?
 In the past there are different storage solutions build to solve the common problem of data quality. Many architecture/tools are build to solve the problem. These tools provides many benefits like decoupling the business logic from storage and compute. It means user can scale the compute and storage power up and down but in between this data reliability lost. To provide the data reliability and quality  Delta Lake come into the picture.
@@ -186,7 +186,7 @@ If we again check under the _delta_log directory we can see some common files an
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0MzQ2NDE5NywtMjY0NDc2ODIwLDI3MD
+eyJoaXN0b3J5IjpbMTkwNjQyOTMwNiwtMjY0NDc2ODIwLDI3MD
 g0MDY4NiwtMjA1Njc0MzI3OCwtMzIxODU3ODU5LC0xNTQ4MTkx
 MDQ2LC02MDYyNjM5OSwyMTE1NDMyNzMwLDY4NTYxNTI5NSwtNz
 k4NTQ0NzM4LDE1MDI0Mjc5NjMsMTUzMzg3MTI4OSw2MTk2MTQ5
