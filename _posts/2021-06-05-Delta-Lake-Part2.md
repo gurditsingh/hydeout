@@ -15,7 +15,7 @@ tags:
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1_delta_lake.jpg?raw=true)
 
- - At earlier when people started storing files they just had CSV files and took some straight data to data lake. The problem with CSV is csv doesn't know the structure of the file means how many columns in it and second compression in csv doesn't really help.
+ - when people started storing files at that time they just had CSV files and they took some straight data to data lake. The problem with CSV was csv doesn't know the structure of the file means how many columns in it and second compression in csv doesn't really help.
  - Then Parquet format come into existence and solve couple of CSV problems. The parquet file format is columnar storage it store the data in columns wise and that means we can compress it really well. It has a structure so don't need to mentioned separately just read the data. Parquet also has some drawbacks like ACID transactions, versioning, handling metadata and etc.
  - Then Delta Lake come into the picture to solve all of the problems. The Delta lake is a file format the same as csv and parquet except it's kind of a wrapper means the data lives in parquet format inside it and it gives us a transaction log and many more features around the top.
 
