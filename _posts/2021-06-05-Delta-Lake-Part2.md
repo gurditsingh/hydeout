@@ -197,3 +197,5 @@ If we again check under the _delta_log directory we can see some common files an
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep1_tlog_4.JPG?raw=true)
 
+
+Great! In this blog we learn the basic of delta lake like setup a project and basic commands. In next blog we will deep dive into Transaction Log in delta lake. See you in the next blog.
