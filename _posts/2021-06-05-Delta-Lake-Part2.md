@@ -1,5 +1,5 @@
 ---
-title: "Part-2 'Create First Delta Table' : Delta Lake"
+title: "Part-2 'First Delta Table' : Delta Lake"
 layout: post
 excerpt: "Let’s create our first Delta table! Like in databases, to define table definition and schema, and store in Delta format."
 last_modified_at: 2021-06-05T11:02:01-05:00
