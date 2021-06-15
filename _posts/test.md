@@ -13,14 +13,16 @@ Each log record object contains an array of actions. Whenever a user performs an
  - **Remove file :** The remove actions is used to remove the file path from the log data structure. The remove action includes a timestamp that indicates when the removal occurred. Physical deletion of the data object can happen lazily after a user-specified retention time threshold.
  - **Set transaction :** To record own data inside log records, which can be useful for implementing end-to-end transactional application like structured streaming job has committed a micro-batch with the given ID and store appId and version fields in txn action.
  - **Change protocol :** The protocol action is used to increase the version of the Delta protocol that is required to read or write a given table.
- - **Commit info :** The commit info data strucContains information around the commit, which operation was made, from where, and at what time.
+ - **Commit info :** The commit info data structure contains the information of user commit means which operation was made, where, what time and etc.
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NzYxMzgxMTgsNTI1MjAxMTc3LDEyMj
-gyNzk2NDIsMTc5MDYzNTA1NSwxNDAxMzY4NzQzLC0xODcwNzM1
-OTkzLC0xNTY0MTU4OTc4LDE5MTM0NDc3MzAsMTkwNjQyOTMwNi
-wtMjY0NDc2ODIwLDI3MDg0MDY4NiwtMjA1Njc0MzI3OCwtMzIx
-ODU3ODU5LC0xNTQ4MTkxMDQ2LC02MDYyNjM5OSwyMTE1NDMyNz
-MwLDY4NTYxNTI5NSwtNzk4NTQ0NzM4LDE1MDI0Mjc5NjMsMTUz
-Mzg3MTI4OV19
+eyJoaXN0b3J5IjpbMTM2MjM1ODExMiw1MjUyMDExNzcsMTIyOD
+I3OTY0MiwxNzkwNjM1MDU1LDE0MDEzNjg3NDMsLTE4NzA3MzU5
+OTMsLTE1NjQxNTg5NzgsMTkxMzQ0NzczMCwxOTA2NDI5MzA2LC
+0yNjQ0NzY4MjAsMjcwODQwNjg2LC0yMDU2NzQzMjc4LC0zMjE4
+NTc4NTksLTE1NDgxOTEwNDYsLTYwNjI2Mzk5LDIxMTU0MzI3Mz
+AsNjg1NjE1Mjk1LC03OTg1NDQ3MzgsMTUwMjQyNzk2MywxNTMz
+ODcxMjg5XX0=
 -->
