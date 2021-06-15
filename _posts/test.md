@@ -11,14 +11,14 @@ Each log record object contains an array of actions. Whenever a user performs an
  - **Update Metadata :** The metadata action changes the current metadata of the table. The metadata is a data structure containing the schema, partition column names and other configuration options, such as marking a table as append-only.
  - **Add File :** The add actions is used to add the file path into the log data structure. The add record for a data object can also include data statistics, such as the total record count and per-column min/max values and null counts.
  - **Remove File :** The remove actions is used to remove the file path from the log data structure. The remove action includes a timestamp that indicates when the removal occurred. Physical deletion of the data object can happen lazily after a user-specified retention time threshold.
- - **Set transaction :** 
+ - **Set transaction :** To record own data inside log records, which can be useful for implementing end-to-end transactional application like structured streaming job has committed a micro-batch with the given ID.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyODI3OTY0MiwxNzkwNjM1MDU1LDE0MD
-EzNjg3NDMsLTE4NzA3MzU5OTMsLTE1NjQxNTg5NzgsMTkxMzQ0
-NzczMCwxOTA2NDI5MzA2LC0yNjQ0NzY4MjAsMjcwODQwNjg2LC
-0yMDU2NzQzMjc4LC0zMjE4NTc4NTksLTE1NDgxOTEwNDYsLTYw
-NjI2Mzk5LDIxMTU0MzI3MzAsNjg1NjE1Mjk1LC03OTg1NDQ3Mz
-gsMTUwMjQyNzk2MywxNTMzODcxMjg5LDYxOTYxNDkyMyw3OTE2
-MzU3NThdfQ==
+eyJoaXN0b3J5IjpbLTIyOTMwMDIxOCwxMjI4Mjc5NjQyLDE3OT
+A2MzUwNTUsMTQwMTM2ODc0MywtMTg3MDczNTk5MywtMTU2NDE1
+ODk3OCwxOTEzNDQ3NzMwLDE5MDY0MjkzMDYsLTI2NDQ3NjgyMC
+wyNzA4NDA2ODYsLTIwNTY3NDMyNzgsLTMyMTg1Nzg1OSwtMTU0
+ODE5MTA0NiwtNjA2MjYzOTksMjExNTQzMjczMCw2ODU2MTUyOT
+UsLTc5ODU0NDczOCwxNTAyNDI3OTYzLDE1MzM4NzEyODksNjE5
+NjE0OTIzXX0=
 -->
