@@ -8,14 +8,15 @@ log up to that point in Parquet format.
 
 Each log record object contains an array of actions. Whenever a user performs an action like INSERT, DELETE, UPDATE or MERGE the Delta Lake breaks that operation down into series of below steps :
 
- - Update metadata
+ - **Update Metadata :** The metadata action changes the current metadata of the table. The metadata is a data structure containing the schema, partition column names and other configuration options, such as marking a table as append-only.
+ - Add file
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MDYzNTA1NSwxNDAxMzY4NzQzLC0xOD
-cwNzM1OTkzLC0xNTY0MTU4OTc4LDE5MTM0NDc3MzAsMTkwNjQy
-OTMwNiwtMjY0NDc2ODIwLDI3MDg0MDY4NiwtMjA1Njc0MzI3OC
-wtMzIxODU3ODU5LC0xNTQ4MTkxMDQ2LC02MDYyNjM5OSwyMTE1
-NDMyNzMwLDY4NTYxNTI5NSwtNzk4NTQ0NzM4LDE1MDI0Mjc5Nj
-MsMTUzMzg3MTI4OSw2MTk2MTQ5MjMsNzkxNjM1NzU4LC0xMDI5
-MzYyMTM3XX0=
+eyJoaXN0b3J5IjpbMjEzMDYyMzA3MCwxNzkwNjM1MDU1LDE0MD
+EzNjg3NDMsLTE4NzA3MzU5OTMsLTE1NjQxNTg5NzgsMTkxMzQ0
+NzczMCwxOTA2NDI5MzA2LC0yNjQ0NzY4MjAsMjcwODQwNjg2LC
+0yMDU2NzQzMjc4LC0zMjE4NTc4NTksLTE1NDgxOTEwNDYsLTYw
+NjI2Mzk5LDIxMTU0MzI3MzAsNjg1NjE1Mjk1LC03OTg1NDQ3Mz
+gsMTUwMjQyNzk2MywxNTMzODcxMjg5LDYxOTYxNDkyMyw3OTE2
+MzU3NThdfQ==
 -->
