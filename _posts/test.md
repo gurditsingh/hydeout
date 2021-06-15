@@ -1,5 +1,5 @@
 
-## What is Transaction Log or Delta Log?
+## How Transaction Log Works ?
 
 A Delta Lake table is a directory on file system that holds data files with the table contents and a log of transaction operations. The Delta Lake’s approach is to store a transaction log and metadata directly on file system no need to maintain separate service for metadata and log handling.
 
@@ -11,11 +11,11 @@ Each log record object contains an array of actions:
  - Update metadata
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0ODI3NjI0OTYsMTQwMTM2ODc0MywtMT
-g3MDczNTk5MywtMTU2NDE1ODk3OCwxOTEzNDQ3NzMwLDE5MDY0
-MjkzMDYsLTI2NDQ3NjgyMCwyNzA4NDA2ODYsLTIwNTY3NDMyNz
-gsLTMyMTg1Nzg1OSwtMTU0ODE5MTA0NiwtNjA2MjYzOTksMjEx
-NTQzMjczMCw2ODU2MTUyOTUsLTc5ODU0NDczOCwxNTAyNDI3OT
-YzLDE1MzM4NzEyODksNjE5NjE0OTIzLDc5MTYzNTc1OCwtMTAy
-OTM2MjEzN119
+eyJoaXN0b3J5IjpbMTIzMDgxODMxNSwxNDAxMzY4NzQzLC0xOD
+cwNzM1OTkzLC0xNTY0MTU4OTc4LDE5MTM0NDc3MzAsMTkwNjQy
+OTMwNiwtMjY0NDc2ODIwLDI3MDg0MDY4NiwtMjA1Njc0MzI3OC
+wtMzIxODU3ODU5LC0xNTQ4MTkxMDQ2LC02MDYyNjM5OSwyMTE1
+NDMyNzMwLDY4NTYxNTI5NSwtNzk4NTQ0NzM4LDE1MDI0Mjc5Nj
+MsMTUzMzg3MTI4OSw2MTk2MTQ5MjMsNzkxNjM1NzU4LC0xMDI5
+MzYyMTM3XX0=
 -->
