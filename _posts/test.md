@@ -15,14 +15,20 @@ Each log record object contains an array of actions. Whenever a user performs an
  - **Change protocol :** The protocol action is used to increase the version of the Delta protocol that is required to read or write a given table.
  - **Commit info :** The commit info data structure contains the information of user commit means which operation was made, where, what time and etc.
 
-
+	**Sample Log file :**
+	```json
+	{"commitInfo":{"timestamp":1623662581422,"userId":"4377377090523225","userName":"gurdit.singh","operation":"CREATE TABLE AS SELECT","operationParameters":{"isManaged":"false","description":null,"partitionBy":"[]","properties":"{}"},"notebook":{"notebookId":"2238652198370632"},"clusterId":"0614-080750-tipi733","isolationLevel":"WriteSerializable","isBlindAppend":true}}
+	{"protocol":{"minReaderVersion":1,"minWriterVersion":2}}
+	{"metaData":{"id":"f63544f8-4e82-451b-ad40-1345322ed8ab","format":{"provider":"parquet","options":{}},"schemaString":"{\"type\":\"struct\",\"fields\":[{\"name\":\"addr_state\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"sum\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}}]}","partitionColumns":[],"configuration":{},"createdTime":1623662574380}}
+	{"add":{"path":"part-00000-0e287e04-fc6d-43c0-8415-a2341a543f8f-c000.snappy.parquet","partitionValues":{},"size":873,"modificationTime":1623662581000,"dataChange":true,"stats":"{\"numRecords\":52,\"minValues\":{\"addr_state\":\"AK\",\"sum\":1},\"maxValues\":{\"addr_state\":\"WY\",\"sum\":1},\"nullCount\":{\"addr_state\":1,\"sum\":0}}"}}
+	```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MjM1ODExMiw1MjUyMDExNzcsMTIyOD
-I3OTY0MiwxNzkwNjM1MDU1LDE0MDEzNjg3NDMsLTE4NzA3MzU5
-OTMsLTE1NjQxNTg5NzgsMTkxMzQ0NzczMCwxOTA2NDI5MzA2LC
-0yNjQ0NzY4MjAsMjcwODQwNjg2LC0yMDU2NzQzMjc4LC0zMjE4
-NTc4NTksLTE1NDgxOTEwNDYsLTYwNjI2Mzk5LDIxMTU0MzI3Mz
-AsNjg1NjE1Mjk1LC03OTg1NDQ3MzgsMTUwMjQyNzk2MywxNTMz
-ODcxMjg5XX0=
+eyJoaXN0b3J5IjpbLTQ3Njk5NjU4MCwxMzYyMzU4MTEyLDUyNT
+IwMTE3NywxMjI4Mjc5NjQyLDE3OTA2MzUwNTUsMTQwMTM2ODc0
+MywtMTg3MDczNTk5MywtMTU2NDE1ODk3OCwxOTEzNDQ3NzMwLD
+E5MDY0MjkzMDYsLTI2NDQ3NjgyMCwyNzA4NDA2ODYsLTIwNTY3
+NDMyNzgsLTMyMTg1Nzg1OSwtMTU0ODE5MTA0NiwtNjA2MjYzOT
+ksMjExNTQzMjczMCw2ODU2MTUyOTUsLTc5ODU0NDczOCwxNTAy
+NDI3OTYzXX0=
 -->
