@@ -8,19 +8,19 @@ log up to that point in Parquet format.
 
 Each log record object contains an array of actions. Whenever a user performs an action like INSERT, DELETE, UPDATE or MERGE the Delta Lake breaks that operation down into series of below steps :
 
- - **Update Metadata :** The metadata action changes the current metadata of the table. The metadata is a data structure containing the schema, partition column names and other configuration options, such as marking a table as append-only.
- - **Add File :** The add actions is used to add the file path into the log data structure. The add record for a data object can also include data statistics, such as the total record count and per-column min/max values and null counts.
- - **Remove File :** The remove actions is used to remove the file path from the log data structure. The remove action includes a timestamp that indicates when the removal occurred. Physical deletion of the data object can happen lazily after a user-specified retention time threshold.
+ - **Update metadata :** The metadata action changes the current metadata of the table. The metadata is a data structure containing the schema, partition column names and other configuration options, such as marking a table as append-only.
+ - **Add file :** The add actions is used to add the file path into the log data structure. The add record for a data object can also include data statistics, such as the total record count and per-column min/max values and null counts.
+ - **Remove file :** The remove actions is used to remove the file path from the log data structure. The remove action includes a timestamp that indicates when the removal occurred. Physical deletion of the data object can happen lazily after a user-specified retention time threshold.
  - **Set transaction :** To record own data inside log records, which can be useful for implementing end-to-end transactional application like structured streaming job has committed a micro-batch with the given ID and store appId and version fields in txn action.
  - **Change protocol :** The protocol action is used to increase the version of the Delta protocol that is required to read or write a given table.
- - Commit info
+ - **Commit info :** The commit info data strucContains information around the commit, which operation was made, from where, and at what time.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNzM3OTk3MSw1MjUyMDExNzcsMTIyOD
-I3OTY0MiwxNzkwNjM1MDU1LDE0MDEzNjg3NDMsLTE4NzA3MzU5
-OTMsLTE1NjQxNTg5NzgsMTkxMzQ0NzczMCwxOTA2NDI5MzA2LC
-0yNjQ0NzY4MjAsMjcwODQwNjg2LC0yMDU2NzQzMjc4LC0zMjE4
-NTc4NTksLTE1NDgxOTEwNDYsLTYwNjI2Mzk5LDIxMTU0MzI3Mz
-AsNjg1NjE1Mjk1LC03OTg1NDQ3MzgsMTUwMjQyNzk2MywxNTMz
-ODcxMjg5XX0=
+eyJoaXN0b3J5IjpbLTE3NzYxMzgxMTgsNTI1MjAxMTc3LDEyMj
+gyNzk2NDIsMTc5MDYzNTA1NSwxNDAxMzY4NzQzLC0xODcwNzM1
+OTkzLC0xNTY0MTU4OTc4LDE5MTM0NDc3MzAsMTkwNjQyOTMwNi
+wtMjY0NDc2ODIwLDI3MDg0MDY4NiwtMjA1Njc0MzI3OCwtMzIx
+ODU3ODU5LC0xNTQ4MTkxMDQ2LC02MDYyNjM5OSwyMTE1NDMyNz
+MwLDY4NTYxNTI5NSwtNzk4NTQ0NzM4LDE1MDI0Mjc5NjMsMTUz
+Mzg3MTI4OV19
 -->
