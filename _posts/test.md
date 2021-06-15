@@ -3,13 +3,13 @@
 
 A Delta Lake table is a directory on file system that holds data files with the table contents and a log of transaction operations. The Delta Lake’s approach is to store a transaction log and metadata directly on file system no need to maintain separate service for metadata and log handling.
 
-The transaction log is stored in the _delta_log subdirectory within the table. It contains a sequence of JSON objects with increasing, zero-padded numerical IDs to store the log records
+The transaction log is stored in the _delta_log subdirectory within the table. It contains a sequence of JSON objects with increasing numerical IDs. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMTM2ODc0MywtMTg3MDczNTk5MywtMT
-U2NDE1ODk3OCwxOTEzNDQ3NzMwLDE5MDY0MjkzMDYsLTI2NDQ3
-NjgyMCwyNzA4NDA2ODYsLTIwNTY3NDMyNzgsLTMyMTg1Nzg1OS
-wtMTU0ODE5MTA0NiwtNjA2MjYzOTksMjExNTQzMjczMCw2ODU2
-MTUyOTUsLTc5ODU0NDczOCwxNTAyNDI3OTYzLDE1MzM4NzEyOD
-ksNjE5NjE0OTIzLDc5MTYzNTc1OCwtMTAyOTM2MjEzNywtMzU2
-NjE5MjA4XX0=
+eyJoaXN0b3J5IjpbLTMxNjU4MTgxNywxNDAxMzY4NzQzLC0xOD
+cwNzM1OTkzLC0xNTY0MTU4OTc4LDE5MTM0NDc3MzAsMTkwNjQy
+OTMwNiwtMjY0NDc2ODIwLDI3MDg0MDY4NiwtMjA1Njc0MzI3OC
+wtMzIxODU3ODU5LC0xNTQ4MTkxMDQ2LC02MDYyNjM5OSwyMTE1
+NDMyNzMwLDY4NTYxNTI5NSwtNzk4NTQ0NzM4LDE1MDI0Mjc5Nj
+MsMTUzMzg3MTI4OSw2MTk2MTQ5MjMsNzkxNjM1NzU4LC0xMDI5
+MzYyMTM3XX0=
 -->
