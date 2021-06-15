@@ -23,8 +23,10 @@ Each log record object contains an array of actions. Whenever a user performs an
 	{"add":{"path":"part-00000-0e287e04-fc6d-43c0-8415-a2341a543f8f-c000.snappy.parquet","partitionValues":{},"size":873,"modificationTime":1623662581000,"dataChange":true,"stats":"{\"numRecords\":52,\"minValues\":{\"addr_state\":\"AK\",\"sum\":1},\"maxValues\":{\"addr_state\":\"WY\",\"sum\":1},\"nullCount\":{\"addr_state\":1,\"sum\":0}}"}}
 	```
 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ3Njk5NjU4MCwxMzYyMzU4MTEyLDUyNT
+eyJoaXN0b3J5IjpbLTkzODUxMDYwMCwxMzYyMzU4MTEyLDUyNT
 IwMTE3NywxMjI4Mjc5NjQyLDE3OTA2MzUwNTUsMTQwMTM2ODc0
 MywtMTg3MDczNTk5MywtMTU2NDE1ODk3OCwxOTEzNDQ3NzMwLD
 E5MDY0MjkzMDYsLTI2NDQ3NjgyMCwyNzA4NDA2ODYsLTIwNTY3
