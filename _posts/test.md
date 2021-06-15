@@ -12,10 +12,10 @@ Each log record object contains an array of actions. Whenever a user performs an
  - **Add File :** The add actions is used to add the file path into the log data structure. The add record for a data object can also include data statistics, such as the total record count and per-column min/max values and null counts.
  - **Remove File :** The remove actions is used to remove the file path from the log data structure. The remove action includes a timestamp that indicates when the removal occurred. Physical deletion of the data object can happen lazily after a user-specified retention time threshold.
  - **Set transaction :** To record own data inside log records, which can be useful for implementing end-to-end transactional application like structured streaming job has committed a micro-batch with the given ID and store appId and version fields in txn action.
- - Change protocol
+ - **Change protocol :** The protocol action is used to increase the version of the Delta protocol that is required to read or write a given table.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ1NTkwNzg4LDEyMjgyNzk2NDIsMTc5MD
+eyJoaXN0b3J5IjpbNTI1MjAxMTc3LDEyMjgyNzk2NDIsMTc5MD
 YzNTA1NSwxNDAxMzY4NzQzLC0xODcwNzM1OTkzLC0xNTY0MTU4
 OTc4LDE5MTM0NDc3MzAsMTkwNjQyOTMwNiwtMjY0NDc2ODIwLD
 I3MDg0MDY4NiwtMjA1Njc0MzI3OCwtMzIxODU3ODU5LC0xNTQ4
