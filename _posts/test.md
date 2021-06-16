@@ -30,16 +30,18 @@ In Delta lake generate the transaction log files and they must exist somewhere l
  - **Mutual exclusion :** Only one writer must be able to create a file at the final destination.
  - **Consistent listing :** Once a file has been written in a directory, it should offers ACID consistent listing of files.
 
-Because storage systems do not necessarily provide all of these guarantees out-of-the-box. For that Delta Lake used the Log store API to provide the ACID guarantees for different storage systems, you may have to use different `LogStore` implementations.
+Because storage systems do not necessarily provide all of these guarantees out-of-the-box. For that Delta Lake used the Log store API to provide the ACID guarantees for different storage systems, user can use different `LogStore` implementations.
+
+[LogStore API code](https://github.com/delta-io/delta/blob/b76e2314583b0e2081a01163cea628031384b987/core/src/main/scala/io/delta/storage/LogStore.java#L69 "LogStore API code")
 
 Think about the existence of the delta files for a second. The logs, versions, and files that are being generated must exist somewhere, some system or store for files. Log‐ Store is the general interface for all critical file system operations required to read and write the Delta transaction log. Because most storage systems do not provide atomic‐ ity guarantees out-of-the-box, Delta Lake transactional operations go through the LogStore API instead of accessing the storage system directly.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzM0MzEwNzUsLTE0NTk5Mjc1NzUsLTkzOD
-UxMDYwMCwxMzYyMzU4MTEyLDUyNTIwMTE3NywxMjI4Mjc5NjQy
-LDE3OTA2MzUwNTUsMTQwMTM2ODc0MywtMTg3MDczNTk5MywtMT
-U2NDE1ODk3OCwxOTEzNDQ3NzMwLDE5MDY0MjkzMDYsLTI2NDQ3
-NjgyMCwyNzA4NDA2ODYsLTIwNTY3NDMyNzgsLTMyMTg1Nzg1OS
-wtMTU0ODE5MTA0NiwtNjA2MjYzOTksMjExNTQzMjczMCw2ODU2
-MTUyOTVdfQ==
+eyJoaXN0b3J5IjpbOTAyNTc1Njg3LC0xNDU5OTI3NTc1LC05Mz
+g1MTA2MDAsMTM2MjM1ODExMiw1MjUyMDExNzcsMTIyODI3OTY0
+MiwxNzkwNjM1MDU1LDE0MDEzNjg3NDMsLTE4NzA3MzU5OTMsLT
+E1NjQxNTg5NzgsMTkxMzQ0NzczMCwxOTA2NDI5MzA2LC0yNjQ0
+NzY4MjAsMjcwODQwNjg2LC0yMDU2NzQzMjc4LC0zMjE4NTc4NT
+ksLTE1NDgxOTEwNDYsLTYwNjI2Mzk5LDIxMTU0MzI3MzAsNjg1
+NjE1Mjk1XX0=
 -->
