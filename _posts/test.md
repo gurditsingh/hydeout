@@ -1,4 +1,17 @@
 
+## LogStore Implementation
+In Delta lake generate the transaction log files and they must exist somewhere like some storage systems to store the files. Delta Lake ACID guarantees the atomicity and durability of the storage system. Delta lake relies on the following when interacting with storage systems.
+
+ - **Atomic visibility :** Any file written through this store must be made visible, atomically means be visible entirely or not visible at all.
+ - **Mutual exclusion :** Only one writer must be able to create a file at the final destination.
+ - **Consistent listing :** Once a file has been written in a directory, it should offers ACID consistent listing of files.
+
+Because storage systems do not necessarily provide all of these guarantees out-of-the-box. For that Delta Lake used the Log store API to provide the ACID guarantees for different storage systems, user can use different `LogStore` implementations.
+
+[LogStore API code](https://github.com/delta-io/delta/blob/b76e2314583b0e2081a01163cea628031384b987/core/src/main/scala/io/delta/storage/LogStore.java#L69 "LogStore API code")
+
+The `LogStore`, similar to Apache Spark, uses Hadoop FileSystem API to perform reads and writes. So Delta Lake supports concurrent reads on any storage system that provides an implementation of FileSystem API.
+
 ## How Transaction Log Works ?
 
 A Delta Lake table is a directory on file system that holds data files with the table contents and a log of transaction operations. The Delta Lake’s approach is to store a transaction log and metadata directly on file system no need to maintain separate service for metadata and log handling.
@@ -56,26 +69,14 @@ root
 
 ```
 
-## LogStore Implementation
-In Delta lake generate the transaction log files and they must exist somewhere like some storage systems to store the files. Delta Lake ACID guarantees the atomicity and durability of the storage system. Delta lake relies on the following when interacting with storage systems.
-
- - **Atomic visibility :** Any file written through this store must be made visible, atomically means be visible entirely or not visible at all.
- - **Mutual exclusion :** Only one writer must be able to create a file at the final destination.
- - **Consistent listing :** Once a file has been written in a directory, it should offers ACID consistent listing of files.
-
-Because storage systems do not necessarily provide all of these guarantees out-of-the-box. For that Delta Lake used the Log store API to provide the ACID guarantees for different storage systems, user can use different `LogStore` implementations.
-
-[LogStore API code](https://github.com/delta-io/delta/blob/b76e2314583b0e2081a01163cea628031384b987/core/src/main/scala/io/delta/storage/LogStore.java#L69 "LogStore API code")
-
-The `LogStore`, similar to Apache Spark, uses Hadoop FileSystem API to perform reads and writes. So Delta Lake supports concurrent reads on any storage system that provides an implementation of FileSystem API.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0NjYyMTQsLTEzMDU1MjM1NjcsLTE0NT
-k5Mjc1NzUsLTkzODUxMDYwMCwxMzYyMzU4MTEyLDUyNTIwMTE3
-NywxMjI4Mjc5NjQyLDE3OTA2MzUwNTUsMTQwMTM2ODc0MywtMT
-g3MDczNTk5MywtMTU2NDE1ODk3OCwxOTEzNDQ3NzMwLDE5MDY0
-MjkzMDYsLTI2NDQ3NjgyMCwyNzA4NDA2ODYsLTIwNTY3NDMyNz
-gsLTMyMTg1Nzg1OSwtMTU0ODE5MTA0NiwtNjA2MjYzOTksMjEx
-NTQzMjczMF19
+eyJoaXN0b3J5IjpbMjExNDIxNTU5NCwxMDQ2NjIxNCwtMTMwNT
+UyMzU2NywtMTQ1OTkyNzU3NSwtOTM4NTEwNjAwLDEzNjIzNTgx
+MTIsNTI1MjAxMTc3LDEyMjgyNzk2NDIsMTc5MDYzNTA1NSwxND
+AxMzY4NzQzLC0xODcwNzM1OTkzLC0xNTY0MTU4OTc4LDE5MTM0
+NDc3MzAsMTkwNjQyOTMwNiwtMjY0NDc2ODIwLDI3MDg0MDY4Ni
+wtMjA1Njc0MzI3OCwtMzIxODU3ODU5LC0xNTQ4MTkxMDQ2LC02
+MDYyNjM5OV19
 -->
