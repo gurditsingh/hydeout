@@ -15,12 +15,9 @@ Each log record object contains an array of actions. Whenever a user performs an
  - **Change protocol :** The protocol action is used to increase the version of the Delta protocol that is required to read or write a given table.
  - **Commit info :** The commit info data structure contains the information of user commit means which operation was made, where, what time and etc.
 
-	**Sample Log file :**
-	```json
-	{"commitInfo":{"timestamp":1623662581422,"userId":"4377377090523225","userName":"gurdit.singh","operation":"CREATE TABLE AS SELECT","operationParameters":{"isManaged":"false","description":null,"partitionBy":"[]","properties":"{}"},"notebook":{"notebookId":"2238652198370632"},"clusterId":"0614-080750-tipi733","isolationLevel":"WriteSerializable","isBlindAppend":true}}
-	{"protocol":{"minReaderVersion":1,"minWriterVersion":2}}
-	{"metaData":{"id":"f63544f8-4e82-451b-ad40-1345322ed8ab","format":{"provider":"parquet","options":{}},"schemaString":"{\"type\":\"struct\",\"fields\":[{\"name\":\"addr_state\",\"type\":\"string\",\"nullable\":true,\"metadata\":{}},{\"name\":\"sum\",\"type\":\"integer\",\"nullable\":true,\"metadata\":{}}]}","partitionColumns":[],"configuration":{},"createdTime":1623662574380}}
-	{"add":{"path":"part-00000-0e287e04-fc6d-43c0-8415-a2341a543f8f-c000.snappy.parquet","partitionValues":{},"size":873,"modificationTime":1623662581000,"dataChange":true,"stats":"{\"numRecords\":52,\"minValues\":{\"addr_state\":\"AK\",\"sum\":1},\"maxValues\":{\"addr_state\":\"WY\",\"sum\":1},\"nullCount\":{\"addr_state\":1,\"sum\":0}}"}}
+	**Let's read the first transaction log of version and see the schema **
+	```scala
+	spark.read.json("delta_load_table/_delta_log/00000000000000000000.json").printSchema()
 	```
 
 ## LogStore Implementation
@@ -38,11 +35,11 @@ The `LogStore`, similar to Apache Spark, uses Hadoop FileSystem API to perform r
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDU1MjM1NjcsLTE0NTk5Mjc1NzUsLT
-kzODUxMDYwMCwxMzYyMzU4MTEyLDUyNTIwMTE3NywxMjI4Mjc5
-NjQyLDE3OTA2MzUwNTUsMTQwMTM2ODc0MywtMTg3MDczNTk5My
-wtMTU2NDE1ODk3OCwxOTEzNDQ3NzMwLDE5MDY0MjkzMDYsLTI2
-NDQ3NjgyMCwyNzA4NDA2ODYsLTIwNTY3NDMyNzgsLTMyMTg1Nz
-g1OSwtMTU0ODE5MTA0NiwtNjA2MjYzOTksMjExNTQzMjczMCw2
-ODU2MTUyOTVdfQ==
+eyJoaXN0b3J5IjpbLTg3MDA3MDA4MSwtMTMwNTUyMzU2NywtMT
+Q1OTkyNzU3NSwtOTM4NTEwNjAwLDEzNjIzNTgxMTIsNTI1MjAx
+MTc3LDEyMjgyNzk2NDIsMTc5MDYzNTA1NSwxNDAxMzY4NzQzLC
+0xODcwNzM1OTkzLC0xNTY0MTU4OTc4LDE5MTM0NDc3MzAsMTkw
+NjQyOTMwNiwtMjY0NDc2ODIwLDI3MDg0MDY4NiwtMjA1Njc0Mz
+I3OCwtMzIxODU3ODU5LC0xNTQ4MTkxMDQ2LC02MDYyNjM5OSwy
+MTE1NDMyNzMwXX0=
 -->
