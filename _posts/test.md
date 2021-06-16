@@ -24,11 +24,12 @@ Each log record object contains an array of actions. Whenever a user performs an
 	```
 
 ## LogStore Implementation
-In Delta lake 
+In Delta lake generate the transcation log files 
+
 Think about the existence of the delta files for a second. The logs, versions, and files that are being generated must exist somewhere, some system or store for files. Log‐ Store is the general interface for all critical file system operations required to read and write the Delta transaction log. Because most storage systems do not provide atomic‐ ity guarantees out-of-the-box, Delta Lake transactional operations go through the LogStore API instead of accessing the storage system directly.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzUxMzM5NzYyLC05Mzg1MTA2MDAsMTM2Mj
+eyJoaXN0b3J5IjpbODE5ODEzNDQ1LC05Mzg1MTA2MDAsMTM2Mj
 M1ODExMiw1MjUyMDExNzcsMTIyODI3OTY0MiwxNzkwNjM1MDU1
 LDE0MDEzNjg3NDMsLTE4NzA3MzU5OTMsLTE1NjQxNTg5NzgsMT
 kxMzQ0NzczMCwxOTA2NDI5MzA2LC0yNjQ0NzY4MjAsMjcwODQw
