@@ -24,20 +24,20 @@ Each log record object contains an array of actions. Whenever a user performs an
 	```
 
 ## LogStore Implementation
-In Delta lake generate the transaction log files and they must exist somewhere like some storage systems to store the files. Delta Lake ACID guarantees the atomicity and durability of the storage system .
+In Delta lake generate the transaction log files and they must exist somewhere like some storage systems to store the files. Delta Lake ACID guarantees the atomicity and durability of the storage system. Delta lake relies on the following when interacting with storage systems.
 
-
+ - **Atomic visibility :** Any file written through this store must be made visible, atomically. In other words, it should be visible in its entirety or not visible at all. It should not gener‐ ate partial files.
 
 Because storage systems do not necessarily provide the guarantees of ACID, Atomic visibility, out-of-the-box
 
 Think about the existence of the delta files for a second. The logs, versions, and files that are being generated must exist somewhere, some system or store for files. Log‐ Store is the general interface for all critical file system operations required to read and write the Delta transaction log. Because most storage systems do not provide atomic‐ ity guarantees out-of-the-box, Delta Lake transactional operations go through the LogStore API instead of accessing the storage system directly.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDY4ODkxNTksLTE0NTk5Mjc1NzUsLT
-kzODUxMDYwMCwxMzYyMzU4MTEyLDUyNTIwMTE3NywxMjI4Mjc5
-NjQyLDE3OTA2MzUwNTUsMTQwMTM2ODc0MywtMTg3MDczNTk5My
-wtMTU2NDE1ODk3OCwxOTEzNDQ3NzMwLDE5MDY0MjkzMDYsLTI2
-NDQ3NjgyMCwyNzA4NDA2ODYsLTIwNTY3NDMyNzgsLTMyMTg1Nz
-g1OSwtMTU0ODE5MTA0NiwtNjA2MjYzOTksMjExNTQzMjczMCw2
-ODU2MTUyOTVdfQ==
+eyJoaXN0b3J5IjpbLTc2OTYxOTU5NSwtMTQ1OTkyNzU3NSwtOT
+M4NTEwNjAwLDEzNjIzNTgxMTIsNTI1MjAxMTc3LDEyMjgyNzk2
+NDIsMTc5MDYzNTA1NSwxNDAxMzY4NzQzLC0xODcwNzM1OTkzLC
+0xNTY0MTU4OTc4LDE5MTM0NDc3MzAsMTkwNjQyOTMwNiwtMjY0
+NDc2ODIwLDI3MDg0MDY4NiwtMjA1Njc0MzI3OCwtMzIxODU3OD
+U5LC0xNTQ4MTkxMDQ2LC02MDYyNjM5OSwyMTE1NDMyNzMwLDY4
+NTYxNTI5NV19
 -->
