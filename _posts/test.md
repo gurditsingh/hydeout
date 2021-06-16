@@ -68,12 +68,15 @@ root
  |    |-- minWriterVersion: long (nullable = true)
 
 ```
+
+
+A computer is a programmable electonic device that accepts raw data as input and processes it with a set of instructions to produce the result as output. it enders output
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNjI3ODA0OCwyMTE0MjE1NTk0LDEwND
-Y2MjE0LC0xMzA1NTIzNTY3LC0xNDU5OTI3NTc1LC05Mzg1MTA2
-MDAsMTM2MjM1ODExMiw1MjUyMDExNzcsMTIyODI3OTY0MiwxNz
-kwNjM1MDU1LDE0MDEzNjg3NDMsLTE4NzA3MzU5OTMsLTE1NjQx
-NTg5NzgsMTkxMzQ0NzczMCwxOTA2NDI5MzA2LC0yNjQ0NzY4Mj
-AsMjcwODQwNjg2LC0yMDU2NzQzMjc4LC0zMjE4NTc4NTksLTE1
-NDgxOTEwNDZdfQ==
+eyJoaXN0b3J5IjpbNzc2NDEzOTkxLDIxMTQyMTU1OTQsMTA0Nj
+YyMTQsLTEzMDU1MjM1NjcsLTE0NTk5Mjc1NzUsLTkzODUxMDYw
+MCwxMzYyMzU4MTEyLDUyNTIwMTE3NywxMjI4Mjc5NjQyLDE3OT
+A2MzUwNTUsMTQwMTM2ODc0MywtMTg3MDczNTk5MywtMTU2NDE1
+ODk3OCwxOTEzNDQ3NzMwLDE5MDY0MjkzMDYsLTI2NDQ3NjgyMC
+wyNzA4NDA2ODYsLTIwNTY3NDMyNzgsLTMyMTg1Nzg1OSwtMTU0
+ODE5MTA0Nl19
 -->
