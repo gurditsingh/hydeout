@@ -15,10 +15,10 @@ Each log record object contains an array of actions. Whenever a user performs an
  - **Change protocol :** The protocol action is used to increase the version of the Delta protocol that is required to read or write a given table.
  - **Commit info :** The commit info data structure contains the information of user commit means which operation was made, where, what time and etc.
 
-	**Let's read the first transaction log of version and explore the schema**
-	```scala
+**Let's read the first transaction log of version 0 and explore the schema**
+```scala
 	spark.read.json("delta_load_table/_delta_log/00000000000000000000.json").printSchema()
-	```
+```
 ```json
 root
  |-- add: struct (nullable = true)
@@ -71,11 +71,11 @@ The `LogStore`, similar to Apache Spark, uses Hadoop FileSystem API to perform r
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NDI1NjIwNiwtMTMwNTUyMzU2NywtMT
-Q1OTkyNzU3NSwtOTM4NTEwNjAwLDEzNjIzNTgxMTIsNTI1MjAx
-MTc3LDEyMjgyNzk2NDIsMTc5MDYzNTA1NSwxNDAxMzY4NzQzLC
-0xODcwNzM1OTkzLC0xNTY0MTU4OTc4LDE5MTM0NDc3MzAsMTkw
-NjQyOTMwNiwtMjY0NDc2ODIwLDI3MDg0MDY4NiwtMjA1Njc0Mz
-I3OCwtMzIxODU3ODU5LC0xNTQ4MTkxMDQ2LC02MDYyNjM5OSwy
-MTE1NDMyNzMwXX0=
+eyJoaXN0b3J5IjpbMTA0NjYyMTQsLTEzMDU1MjM1NjcsLTE0NT
+k5Mjc1NzUsLTkzODUxMDYwMCwxMzYyMzU4MTEyLDUyNTIwMTE3
+NywxMjI4Mjc5NjQyLDE3OTA2MzUwNTUsMTQwMTM2ODc0MywtMT
+g3MDczNTk5MywtMTU2NDE1ODk3OCwxOTEzNDQ3NzMwLDE5MDY0
+MjkzMDYsLTI2NDQ3NjgyMCwyNzA4NDA2ODYsLTIwNTY3NDMyNz
+gsLTMyMTg1Nzg1OSwtMTU0ODE5MTA0NiwtNjA2MjYzOTksMjEx
+NTQzMjczMF19
 -->
