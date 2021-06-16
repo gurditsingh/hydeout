@@ -27,18 +27,19 @@ Each log record object contains an array of actions. Whenever a user performs an
 In Delta lake generate the transaction log files and they must exist somewhere like some storage systems to store the files. Delta Lake ACID guarantees the atomicity and durability of the storage system. Delta lake relies on the following when interacting with storage systems.
 
  - **Atomic visibility :** Any file written through this store must be made visible, atomically means be visible entirely or not visible at all.
- - **Mutual exclusion**
+ - **Mutual exclusion :** Only one writer must be able to create a file at the final destination.
+ - **Consistent listing :** 
 
 Because storage systems do not necessarily provide the guarantees of ACID, Atomic visibility, out-of-the-box
 
 Think about the existence of the delta files for a second. The logs, versions, and files that are being generated must exist somewhere, some system or store for files. Log‐ Store is the general interface for all critical file system operations required to read and write the Delta transaction log. Because most storage systems do not provide atomic‐ ity guarantees out-of-the-box, Delta Lake transactional operations go through the LogStore API instead of accessing the storage system directly.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3ODE1NjQwNywtMTQ1OTkyNzU3NSwtOT
-M4NTEwNjAwLDEzNjIzNTgxMTIsNTI1MjAxMTc3LDEyMjgyNzk2
-NDIsMTc5MDYzNTA1NSwxNDAxMzY4NzQzLC0xODcwNzM1OTkzLC
-0xNTY0MTU4OTc4LDE5MTM0NDc3MzAsMTkwNjQyOTMwNiwtMjY0
-NDc2ODIwLDI3MDg0MDY4NiwtMjA1Njc0MzI3OCwtMzIxODU3OD
-U5LC0xNTQ4MTkxMDQ2LC02MDYyNjM5OSwyMTE1NDMyNzMwLDY4
-NTYxNTI5NV19
+eyJoaXN0b3J5IjpbLTgzNTA0MTksLTE0NTk5Mjc1NzUsLTkzOD
+UxMDYwMCwxMzYyMzU4MTEyLDUyNTIwMTE3NywxMjI4Mjc5NjQy
+LDE3OTA2MzUwNTUsMTQwMTM2ODc0MywtMTg3MDczNTk5MywtMT
+U2NDE1ODk3OCwxOTEzNDQ3NzMwLDE5MDY0MjkzMDYsLTI2NDQ3
+NjgyMCwyNzA4NDA2ODYsLTIwNTY3NDMyNzgsLTMyMTg1Nzg1OS
+wtMTU0ODE5MTA0NiwtNjA2MjYzOTksMjExNTQzMjczMCw2ODU2
+MTUyOTVdfQ==
 -->
