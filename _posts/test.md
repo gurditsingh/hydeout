@@ -15,10 +15,46 @@ Each log record object contains an array of actions. Whenever a user performs an
  - **Change protocol :** The protocol action is used to increase the version of the Delta protocol that is required to read or write a given table.
  - **Commit info :** The commit info data structure contains the information of user commit means which operation was made, where, what time and etc.
 
-	**Let's read the first transaction log of version and see the schema **
+	**Let's read the first transaction log of version and explore the schema**
 	```scala
 	spark.read.json("delta_load_table/_delta_log/00000000000000000000.json").printSchema()
 	```
+```json
+root
+ |-- add: struct (nullable = true)
+ |    |-- dataChange: boolean (nullable = true)
+ |    |-- modificationTime: long (nullable = true)
+ |    |-- path: string (nullable = true)
+ |    |-- size: long (nullable = true)
+ |    |-- stats: string (nullable = true)
+ |-- commitInfo: struct (nullable = true)
+ |    |-- clusterId: string (nullable = true)
+ |    |-- isBlindAppend: boolean (nullable = true)
+ |    |-- isolationLevel: string (nullable = true)
+ |    |-- notebook: struct (nullable = true)
+ |    |    |-- notebookId: string (nullable = true)
+ |    |-- operation: string (nullable = true)
+ |    |-- operationParameters: struct (nullable = true)
+ |    |    |-- description: string (nullable = true)
+ |    |    |-- isManaged: string (nullable = true)
+ |    |    |-- partitionBy: string (nullable = true)
+ |    |    |-- properties: string (nullable = true)
+ |    |-- timestamp: long (nullable = true)
+ |    |-- userId: string (nullable = true)
+ |    |-- userName: string (nullable = true)
+ |-- metaData: struct (nullable = true)
+ |    |-- createdTime: long (nullable = true)
+ |    |-- format: struct (nullable = true)
+ |    |    |-- provider: string (nullable = true)
+ |    |-- id: string (nullable = true)
+ |    |-- partitionColumns: array (nullable = true)
+ |    |    |-- element: string (containsNull = true)
+ |    |-- schemaString: string (nullable = true)
+ |-- protocol: struct (nullable = true)
+ |    |-- minReaderVersion: long (nullable = true)
+ |    |-- minWriterVersion: long (nullable = true)
+
+```
 
 ## LogStore Implementation
 In Delta lake generate the transaction log files and they must exist somewhere like some storage systems to store the files. Delta Lake ACID guarantees the atomicity and durability of the storage system. Delta lake relies on the following when interacting with storage systems.
@@ -35,7 +71,7 @@ The `LogStore`, similar to Apache Spark, uses Hadoop FileSystem API to perform r
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3MDA3MDA4MSwtMTMwNTUyMzU2NywtMT
+eyJoaXN0b3J5IjpbMTM2NDI1NjIwNiwtMTMwNTUyMzU2NywtMT
 Q1OTkyNzU3NSwtOTM4NTEwNjAwLDEzNjIzNTgxMTIsNTI1MjAx
 MTc3LDEyMjgyNzk2NDIsMTc5MDYzNTA1NSwxNDAxMzY4NzQzLC
 0xODcwNzM1OTkzLC0xNTY0MTU4OTc4LDE5MTM0NDc3MzAsMTkw
