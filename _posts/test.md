@@ -1,3 +1,4 @@
+## How Delta Lake guarantee ACID transactions?
 
 ## LogStore Implementation
 In Delta lake generate the transaction log files and they must exist somewhere like some storage systems to store the files. Delta Lake ACID guarantees the atomicity and durability of the storage system. Delta lake relies on the following when interacting with storage systems.
@@ -74,11 +75,11 @@ root
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTc0MjM0NDYsLTE4MTcyMTk0LDIxMT
-QyMTU1OTQsMTA0NjYyMTQsLTEzMDU1MjM1NjcsLTE0NTk5Mjc1
-NzUsLTkzODUxMDYwMCwxMzYyMzU4MTEyLDUyNTIwMTE3NywxMj
-I4Mjc5NjQyLDE3OTA2MzUwNTUsMTQwMTM2ODc0MywtMTg3MDcz
-NTk5MywtMTU2NDE1ODk3OCwxOTEzNDQ3NzMwLDE5MDY0MjkzMD
-YsLTI2NDQ3NjgyMCwyNzA4NDA2ODYsLTIwNTY3NDMyNzgsLTMy
-MTg1Nzg1OV19
+eyJoaXN0b3J5IjpbNjE5ODYyNTkyLC0xNzU3NDIzNDQ2LC0xOD
+E3MjE5NCwyMTE0MjE1NTk0LDEwNDY2MjE0LC0xMzA1NTIzNTY3
+LC0xNDU5OTI3NTc1LC05Mzg1MTA2MDAsMTM2MjM1ODExMiw1Mj
+UyMDExNzcsMTIyODI3OTY0MiwxNzkwNjM1MDU1LDE0MDEzNjg3
+NDMsLTE4NzA3MzU5OTMsLTE1NjQxNTg5NzgsMTkxMzQ0NzczMC
+wxOTA2NDI5MzA2LC0yNjQ0NzY4MjAsMjcwODQwNjg2LC0yMDU2
+NzQzMjc4XX0=
 -->
