@@ -18,7 +18,7 @@ A Delta Lake table is a directory on file system that holds data files with the 
 
 The transaction log is stored in the _delta_log subdirectory within the table. It contains a sequence of JSON objects with increasing numerical IDs. It also contain occasional checkpoints for specific log objects that summarize the
 log up to that point in Parquet format. 
-
+Action performed on each transcation
 Each log record object contains an array of actions. Whenever a user performs an action like INSERT, DELETE, UPDATE or MERGE the Delta Lake breaks that operation down into series of below steps :
 
  - **Update metadata :** The metadata action changes the current metadata of the table. The metadata is a data structure containing the schema, partition column names and other configuration options, such as marking a table as append-only.
@@ -72,11 +72,11 @@ root
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTcyMTk0LDIxMTQyMTU1OTQsMTA0Nj
-YyMTQsLTEzMDU1MjM1NjcsLTE0NTk5Mjc1NzUsLTkzODUxMDYw
-MCwxMzYyMzU4MTEyLDUyNTIwMTE3NywxMjI4Mjc5NjQyLDE3OT
-A2MzUwNTUsMTQwMTM2ODc0MywtMTg3MDczNTk5MywtMTU2NDE1
-ODk3OCwxOTEzNDQ3NzMwLDE5MDY0MjkzMDYsLTI2NDQ3NjgyMC
-wyNzA4NDA2ODYsLTIwNTY3NDMyNzgsLTMyMTg1Nzg1OSwtMTU0
-ODE5MTA0Nl19
+eyJoaXN0b3J5IjpbMTA1MDExMjQyOCwtMTgxNzIxOTQsMjExND
+IxNTU5NCwxMDQ2NjIxNCwtMTMwNTUyMzU2NywtMTQ1OTkyNzU3
+NSwtOTM4NTEwNjAwLDEzNjIzNTgxMTIsNTI1MjAxMTc3LDEyMj
+gyNzk2NDIsMTc5MDYzNTA1NSwxNDAxMzY4NzQzLC0xODcwNzM1
+OTkzLC0xNTY0MTU4OTc4LDE5MTM0NDc3MzAsMTkwNjQyOTMwNi
+wtMjY0NDc2ODIwLDI3MDg0MDY4NiwtMjA1Njc0MzI3OCwtMzIx
+ODU3ODU5XX0=
 -->
