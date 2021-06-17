@@ -71,15 +71,13 @@ root
 
 
 ## ACID Transaction with Delta Lake
-Delta Lake_'s transaction log.
-
-The deltalog is a collection of ordered json files. It acts as a single source of truth giving to users access to the last version of a  `DeltaTable`'s state.
+Delta Lake provides transaction logs. The transaction log is a collection of ordered json files acts as a single source of truth. By using transaction log it always give the latest version of a  `DeltaTable` state.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NDE2NTE4NSw2MTk4NjI1OTIsLTE3NT
-c0MjM0NDYsLTE4MTcyMTk0LDIxMTQyMTU1OTQsMTA0NjYyMTQs
-LTEzMDU1MjM1NjcsLTE0NTk5Mjc1NzUsLTkzODUxMDYwMCwxMz
-YyMzU4MTEyLDUyNTIwMTE3NywxMjI4Mjc5NjQyLDE3OTA2MzUw
-NTUsMTQwMTM2ODc0MywtMTg3MDczNTk5MywtMTU2NDE1ODk3OC
-wxOTEzNDQ3NzMwLDE5MDY0MjkzMDYsLTI2NDQ3NjgyMCwyNzA4
-NDA2ODZdfQ==
+eyJoaXN0b3J5IjpbNTIxNTY4NDM5LDYxOTg2MjU5MiwtMTc1Nz
+QyMzQ0NiwtMTgxNzIxOTQsMjExNDIxNTU5NCwxMDQ2NjIxNCwt
+MTMwNTUyMzU2NywtMTQ1OTkyNzU3NSwtOTM4NTEwNjAwLDEzNj
+IzNTgxMTIsNTI1MjAxMTc3LDEyMjgyNzk2NDIsMTc5MDYzNTA1
+NSwxNDAxMzY4NzQzLC0xODcwNzM1OTkzLC0xNTY0MTU4OTc4LD
+E5MTM0NDc3MzAsMTkwNjQyOTMwNiwtMjY0NDc2ODIwLDI3MDg0
+MDY4Nl19
 -->
