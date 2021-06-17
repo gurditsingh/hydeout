@@ -17,7 +17,7 @@ Because storage systems do not necessarily provide all of these guarantees out-o
 
 The `LogStore`, similar to Apache Spark, uses Hadoop FileSystem API to perform reads and writes. So Delta Lake supports concurrent reads on any storage system that provides an implementation of FileSystem API.
 
-### Action performed on each transaction :**
+### Action performed on each transaction 
 
 Each log record object contains an array of actions. Whenever a user performs an action like INSERT, DELETE, UPDATE or MERGE the Delta Lake breaks that operation down into series of below steps :
 
@@ -67,16 +67,19 @@ root
  |    |-- minReaderVersion: long (nullable = true)
  |    |-- minWriterVersion: long (nullable = true)
 
-``
+```
 
 
+## ACID Transaction with Delta Lake
+Delta Lake_'s transaction log.
 
+The deltalog is a collection of ordered json files. It acts as a single source of truth giving to users access to the last version of a  `DeltaTable`'s state.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ5MTA3NDIwLDYxOTg2MjU5MiwtMTc1Nz
-QyMzQ0NiwtMTgxNzIxOTQsMjExNDIxNTU5NCwxMDQ2NjIxNCwt
-MTMwNTUyMzU2NywtMTQ1OTkyNzU3NSwtOTM4NTEwNjAwLDEzNj
-IzNTgxMTIsNTI1MjAxMTc3LDEyMjgyNzk2NDIsMTc5MDYzNTA1
-NSwxNDAxMzY4NzQzLC0xODcwNzM1OTkzLC0xNTY0MTU4OTc4LD
-E5MTM0NDc3MzAsMTkwNjQyOTMwNiwtMjY0NDc2ODIwLDI3MDg0
-MDY4Nl19
+eyJoaXN0b3J5IjpbMTc5NDE2NTE4NSw2MTk4NjI1OTIsLTE3NT
+c0MjM0NDYsLTE4MTcyMTk0LDIxMTQyMTU1OTQsMTA0NjYyMTQs
+LTEzMDU1MjM1NjcsLTE0NTk5Mjc1NzUsLTkzODUxMDYwMCwxMz
+YyMzU4MTEyLDUyNTIwMTE3NywxMjI4Mjc5NjQyLDE3OTA2MzUw
+NTUsMTQwMTM2ODc0MywtMTg3MDczNTk5MywtMTU2NDE1ODk3OC
+wxOTEzNDQ3NzMwLDE5MDY0MjkzMDYsLTI2NDQ3NjgyMCwyNzA4
+NDA2ODZdfQ==
 -->
