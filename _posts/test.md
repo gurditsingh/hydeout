@@ -1,6 +1,10 @@
-## How Delta Lake guarantee ACID transactions?
+## How Transaction Log Works ?
 
-## LogStore Implementation
+A Delta Lake table is a directory on file system that holds data files with the table contents and a log of transaction operations. The Delta Lake’s approach is to store a transaction log and metadata directly on file system no need to maintain separate service for metadata and log handling.
+
+The transaction log is stored in the _delta_log subdirectory within the table. It contains a sequence of JSON objects with increasing numerical IDs. It also contain occasional checkpoints for specific log objects that summarize the log up to that point in Parquet format. 
+
+### LogStore Implementation
 In Delta lake generate the transaction log files and they must exist somewhere like some storage systems to store the files. Delta Lake ACID guarantees the atomicity and durability of the storage system. Delta lake relies on the following when interacting with storage systems.
 
  - **Atomic visibility :** Any file written through this store must be made visible, atomically means be visible entirely or not visible at all.
@@ -13,14 +17,7 @@ Because storage systems do not necessarily provide all of these guarantees out-o
 
 The `LogStore`, similar to Apache Spark, uses Hadoop FileSystem API to perform reads and writes. So Delta Lake supports concurrent reads on any storage system that provides an implementation of FileSystem API.
 
-## How Transaction Log Works ?
-
-A Delta Lake table is a directory on file system that holds data files with the table contents and a log of transaction operations. The Delta Lake’s approach is to store a transaction log and metadata directly on file system no need to maintain separate service for metadata and log handling.
-
-The transaction log is stored in the _delta_log subdirectory within the table. It contains a sequence of JSON objects with increasing numerical IDs. It also contain occasional checkpoints for specific log objects that summarize the
-log up to that point in Parquet format. 
-
-**Action performed on each transaction :**
+### Action performed on each transaction :**
 
 Each log record object contains an array of actions. Whenever a user performs an action like INSERT, DELETE, UPDATE or MERGE the Delta Lake breaks that operation down into series of below steps :
 
@@ -75,11 +72,11 @@ root
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE5ODYyNTkyLC0xNzU3NDIzNDQ2LC0xOD
-E3MjE5NCwyMTE0MjE1NTk0LDEwNDY2MjE0LC0xMzA1NTIzNTY3
-LC0xNDU5OTI3NTc1LC05Mzg1MTA2MDAsMTM2MjM1ODExMiw1Mj
-UyMDExNzcsMTIyODI3OTY0MiwxNzkwNjM1MDU1LDE0MDEzNjg3
-NDMsLTE4NzA3MzU5OTMsLTE1NjQxNTg5NzgsMTkxMzQ0NzczMC
-wxOTA2NDI5MzA2LC0yNjQ0NzY4MjAsMjcwODQwNjg2LC0yMDU2
-NzQzMjc4XX0=
+eyJoaXN0b3J5IjpbMzQ5MTA3NDIwLDYxOTg2MjU5MiwtMTc1Nz
+QyMzQ0NiwtMTgxNzIxOTQsMjExNDIxNTU5NCwxMDQ2NjIxNCwt
+MTMwNTUyMzU2NywtMTQ1OTkyNzU3NSwtOTM4NTEwNjAwLDEzNj
+IzNTgxMTIsNTI1MjAxMTc3LDEyMjgyNzk2NDIsMTc5MDYzNTA1
+NSwxNDAxMzY4NzQzLC0xODcwNzM1OTkzLC0xNTY0MTU4OTc4LD
+E5MTM0NDc3MzAsMTkwNjQyOTMwNiwtMjY0NDc2ODIwLDI3MDg0
+MDY4Nl19
 -->
