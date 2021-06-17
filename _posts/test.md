@@ -72,12 +72,15 @@ root
 
 ## ACID Transaction with Delta Lake
 Delta Lake provides transaction logs. The transaction log is a collection of ordered json files acts as a single source of truth. By using transaction log it always give the latest version of a  `DeltaTable` state.
+
+ - **Atomicity** Delta Lake breaks down every operation performed by a user into atomic commits, themselves composed of actions. Successful completion of all actions of a commit ensures that DeltaLog records that commit. In case of any failed job, the commit is not recorded in the DeltaLog.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIxNTY4NDM5LDYxOTg2MjU5MiwtMTc1Nz
-QyMzQ0NiwtMTgxNzIxOTQsMjExNDIxNTU5NCwxMDQ2NjIxNCwt
-MTMwNTUyMzU2NywtMTQ1OTkyNzU3NSwtOTM4NTEwNjAwLDEzNj
-IzNTgxMTIsNTI1MjAxMTc3LDEyMjgyNzk2NDIsMTc5MDYzNTA1
-NSwxNDAxMzY4NzQzLC0xODcwNzM1OTkzLC0xNTY0MTU4OTc4LD
-E5MTM0NDc3MzAsMTkwNjQyOTMwNiwtMjY0NDc2ODIwLDI3MDg0
-MDY4Nl19
+eyJoaXN0b3J5IjpbLTYwNjQwNjk4NSw2MTk4NjI1OTIsLTE3NT
+c0MjM0NDYsLTE4MTcyMTk0LDIxMTQyMTU1OTQsMTA0NjYyMTQs
+LTEzMDU1MjM1NjcsLTE0NTk5Mjc1NzUsLTkzODUxMDYwMCwxMz
+YyMzU4MTEyLDUyNTIwMTE3NywxMjI4Mjc5NjQyLDE3OTA2MzUw
+NTUsMTQwMTM2ODc0MywtMTg3MDczNTk5MywtMTU2NDE1ODk3OC
+wxOTEzNDQ3NzMwLDE5MDY0MjkzMDYsLTI2NDQ3NjgyMCwyNzA4
+NDA2ODZdfQ==
 -->
