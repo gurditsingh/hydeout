@@ -104,7 +104,7 @@ Checkpoint is just an optimization technique that allows to quickly access metad
 retained until the retention period has expired, other records such as txn, protocol and changeMetadata.
 
 ### Let's understand by example:
-In small scale application which has limited transactions on that scenario reading from the small set of transaction log files (JSON format) is easy. But in large scale applications like streaming applications which creates multiple small files ()
+In small scale application which has limited transactions on that scenario reading from the small set of transaction log files (JSON format) is easy. But in large scale applications like streaming applications which creates multiple small files (due to micro batching) the problem where it become inefficient to read the whole bunch of transaction log files (JSON format) to know the state of the DeltaTabl
 
 
 
@@ -119,11 +119,11 @@ In small scale application which has limited transactions on that scenario readi
 Reffercnce
 https://docs.delta.io/0.3.0/delta-concurrency.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcwNDU1MzcxNSwtMzAyMjEzNTY5LC02Nj
-c1MTg1MDMsLTE2NzAyODUzNzIsMjA5NTk0NzU3OCwxMjYwMDEy
-MjIzLDEyNTA1NTY4NTAsNjE5ODYyNTkyLC0xNzU3NDIzNDQ2LC
-0xODE3MjE5NCwyMTE0MjE1NTk0LDEwNDY2MjE0LC0xMzA1NTIz
-NTY3LC0xNDU5OTI3NTc1LC05Mzg1MTA2MDAsMTM2MjM1ODExMi
-w1MjUyMDExNzcsMTIyODI3OTY0MiwxNzkwNjM1MDU1LDE0MDEz
-Njg3NDNdfQ==
+eyJoaXN0b3J5IjpbLTIwOTU0MDYwMjcsLTMwMjIxMzU2OSwtNj
+Y3NTE4NTAzLC0xNjcwMjg1MzcyLDIwOTU5NDc1NzgsMTI2MDAx
+MjIyMywxMjUwNTU2ODUwLDYxOTg2MjU5MiwtMTc1NzQyMzQ0Ni
+wtMTgxNzIxOTQsMjExNDIxNTU5NCwxMDQ2NjIxNCwtMTMwNTUy
+MzU2NywtMTQ1OTkyNzU3NSwtOTM4NTEwNjAwLDEzNjIzNTgxMT
+IsNTI1MjAxMTc3LDEyMjgyNzk2NDIsMTc5MDYzNTA1NSwxNDAx
+MzY4NzQzXX0=
 -->
