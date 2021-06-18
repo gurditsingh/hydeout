@@ -94,7 +94,8 @@ Delta Lake uses optimistic concurrency control to provide transactional guarante
 3.  **Validate and commit**: Before committing the changes, checks whether the proposed changes conflict with any other changes that may have been concurrently committed since the snapshot that was read. If there are no conflicts, all the staged changes are committed as a new versioned snapshot, and the write operation succeeds. However, if there are conflicts, the write operation fails with a concurrent modification exception rather than corrupting the table as would happen with open source Spark.
 
 
-Checkpointing in 
+## How to recomputing the state with Checkpointing.
+
 
 
 
@@ -109,11 +110,11 @@ Checkpointing in
 Reffercnce
 https://docs.delta.io/0.3.0/delta-concurrency.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTMwMjI5MDg1LDIwOTU5NDc1NzgsMTI2MD
-AxMjIyMywxMjUwNTU2ODUwLDYxOTg2MjU5MiwtMTc1NzQyMzQ0
-NiwtMTgxNzIxOTQsMjExNDIxNTU5NCwxMDQ2NjIxNCwtMTMwNT
-UyMzU2NywtMTQ1OTkyNzU3NSwtOTM4NTEwNjAwLDEzNjIzNTgx
-MTIsNTI1MjAxMTc3LDEyMjgyNzk2NDIsMTc5MDYzNTA1NSwxND
-AxMzY4NzQzLC0xODcwNzM1OTkzLC0xNTY0MTU4OTc4LDE5MTM0
-NDc3MzBdfQ==
+eyJoaXN0b3J5IjpbLTE2NzAyODUzNzIsMjA5NTk0NzU3OCwxMj
+YwMDEyMjIzLDEyNTA1NTY4NTAsNjE5ODYyNTkyLC0xNzU3NDIz
+NDQ2LC0xODE3MjE5NCwyMTE0MjE1NTk0LDEwNDY2MjE0LC0xMz
+A1NTIzNTY3LC0xNDU5OTI3NTc1LC05Mzg1MTA2MDAsMTM2MjM1
+ODExMiw1MjUyMDExNzcsMTIyODI3OTY0MiwxNzkwNjM1MDU1LD
+E0MDEzNjg3NDMsLTE4NzA3MzU5OTMsLTE1NjQxNTg5NzgsMTkx
+MzQ0NzczMF19
 -->
