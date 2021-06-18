@@ -103,6 +103,8 @@ Checkpoint is just an optimization technique that allows to quickly access metad
  - The result of the checkpointing process is an Parquet file that contains an add record for each object still in the table, remove records for objects that were deleted but need to be
 retained until the retention period has expired, other records such as txn, protocol and changeMetadata.
 
+![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep03.jpg?raw=true)
+
 ### Let's understand by example:
 In small scale application which has limited transactions on that scenario reading from the small set of transaction log files (JSON format) is easy. But in large scale applications like streaming applications which creates multiple small files (due to micro batching) the problem where it become inefficient to read the whole bunch of transaction log files (JSON format) to know the state of the DeltaTable.
 
@@ -115,11 +117,11 @@ In small scale application which has limited transactions on that scenario readi
 Reffercnce
 https://docs.delta.io/0.3.0/delta-concurrency.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5MTgxNzg0NCwxMjU1MTA4NiwtMzAyMj
-EzNTY5LC02Njc1MTg1MDMsLTE2NzAyODUzNzIsMjA5NTk0NzU3
-OCwxMjYwMDEyMjIzLDEyNTA1NTY4NTAsNjE5ODYyNTkyLC0xNz
-U3NDIzNDQ2LC0xODE3MjE5NCwyMTE0MjE1NTk0LDEwNDY2MjE0
-LC0xMzA1NTIzNTY3LC0xNDU5OTI3NTc1LC05Mzg1MTA2MDAsMT
-M2MjM1ODExMiw1MjUyMDExNzcsMTIyODI3OTY0MiwxNzkwNjM1
-MDU1XX0=
+eyJoaXN0b3J5IjpbLTIwODEyNTk3MDUsLTY5MTgxNzg0NCwxMj
+U1MTA4NiwtMzAyMjEzNTY5LC02Njc1MTg1MDMsLTE2NzAyODUz
+NzIsMjA5NTk0NzU3OCwxMjYwMDEyMjIzLDEyNTA1NTY4NTAsNj
+E5ODYyNTkyLC0xNzU3NDIzNDQ2LC0xODE3MjE5NCwyMTE0MjE1
+NTk0LDEwNDY2MjE0LC0xMzA1NTIzNTY3LC0xNDU5OTI3NTc1LC
+05Mzg1MTA2MDAsMTM2MjM1ODExMiw1MjUyMDExNzcsMTIyODI3
+OTY0Ml19
 -->
