@@ -107,16 +107,15 @@ retained until the retention period has expired, other records such as txn, prot
 In small scale application which has limited transactions on that scenario reading from the small set of transaction log files (JSON format) is easy. But in large scale applications like streaming applications which creates multiple small files (due to micro batching) the problem where it become inefficient to read the whole bunch of transaction log files (JSON format) to know the state of the DeltaTable.
 
  - The delta lake solve the problem with checkpointing. Delta Lake creates a checkpoint file in Parquet format after it creates the 10th commits. This parquet file is easy for spark to read and compute the state.
- - When recompute the state of the DeltaTable, Spark will read and cache the availableJSON files that make up the transaction log. For example, if there have been only
-four commits to the table
-Spark will read all four files and cache the results into memory (like cache version 4).
+ - When recompute the state of the DeltaTable, Spark will read and cache the available JSON files that make up the transaction log. For example, if there have been only four commits to the table Spark will read all four files and cache the results into memory (like cache version 4).
+ - 
  - The clients accessing the Delta Lake table they just need to find the last checkpoint without Listing all the objects in the _delta_log directory.
  - Checkpoint writers write their new checkpoint ID in the _delta_log/_last_checkpoint file this ID will be used to create next checkpointing file.
 
 Reffercnce
 https://docs.delta.io/0.3.0/delta-concurrency.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0ODE0NTM4MiwxMjU1MTA4NiwtMzAyMj
+eyJoaXN0b3J5IjpbMTQwMTQxODI3MywxMjU1MTA4NiwtMzAyMj
 EzNTY5LC02Njc1MTg1MDMsLTE2NzAyODUzNzIsMjA5NTk0NzU3
 OCwxMjYwMDEyMjIzLDEyNTA1NTY4NTAsNjE5ODYyNTkyLC0xNz
 U3NDIzNDQ2LC0xODE3MjE5NCwyMTE0MjE1NTk0LDEwNDY2MjE0
