@@ -117,10 +117,10 @@ In small scale application which has limited transactions on that scenario readi
  - Checkpoint writers write their new checkpoint ID in the _delta_log/_last_checkpoint file this ID will be used to create next checkpointing file.
 
 
-Great! In this blog we learn how Transaction Log works and delta lake maintain the table state in the form of log files. In next blog we will deep dive into Transaction Log in delta lake. See you in the next blog.
+Great! In this blog we learn how Transaction Log works and delta lake maintain the table state in the form of log files. In next blog we will deep dive into other features of delta lake. See you in the next blog.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODg1MDkzMTIsNzQ3MDU5MDc5LDY3MT
+eyJoaXN0b3J5IjpbLTE5MjgwMDc0ODksNzQ3MDU5MDc5LDY3MT
 UyODUxNSwtNjkxODE3ODQ0LDEyNTUxMDg2LC0zMDIyMTM1Njks
 LTY2NzUxODUwMywtMTY3MDI4NTM3MiwyMDk1OTQ3NTc4LDEyNj
 AwMTIyMjMsMTI1MDU1Njg1MCw2MTk4NjI1OTIsLTE3NTc0MjM0
