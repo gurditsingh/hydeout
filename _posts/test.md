@@ -96,7 +96,9 @@ Delta Lake uses optimistic concurrency control to provide transactional guarante
 
 ## How to recomputing the state with Checkpointing.
 
-Checkpoint is just an optimization that allows to quickly access metadata as Parquet file without need to scan individual transaction log files.
+Checkpoint is just an optimization technique that allows to quickly access metadata as Parquet file without need to scan individual transaction log files.
+
+checkpoint writes a checkpoint of the current state of the delta table (Snapshot). That produces a checkpoint metadata with the version. Checkpoint requests the LogStore to overwrite the _last_checkpoint file with the JSON-encoded checkpoint metadata.
 
 Checkpoints store all the non-redundant actions in the table’s log up to a certain log record ID, in Parquet format. Some sets of actions are redundant and can be removed.
 
@@ -112,11 +114,11 @@ Checkpoints store all the non-redundant actions in the table’s log up to a cer
 Reffercnce
 https://docs.delta.io/0.3.0/delta-concurrency.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NzA1MDIyNTgsLTE2NzAyODUzNzIsMj
-A5NTk0NzU3OCwxMjYwMDEyMjIzLDEyNTA1NTY4NTAsNjE5ODYy
-NTkyLC0xNzU3NDIzNDQ2LC0xODE3MjE5NCwyMTE0MjE1NTk0LD
-EwNDY2MjE0LC0xMzA1NTIzNTY3LC0xNDU5OTI3NTc1LC05Mzg1
-MTA2MDAsMTM2MjM1ODExMiw1MjUyMDExNzcsMTIyODI3OTY0Mi
-wxNzkwNjM1MDU1LDE0MDEzNjg3NDMsLTE4NzA3MzU5OTMsLTE1
-NjQxNTg5NzhdfQ==
+eyJoaXN0b3J5IjpbNjU1MjExMDM5LC0xNjcwMjg1MzcyLDIwOT
+U5NDc1NzgsMTI2MDAxMjIyMywxMjUwNTU2ODUwLDYxOTg2MjU5
+MiwtMTc1NzQyMzQ0NiwtMTgxNzIxOTQsMjExNDIxNTU5NCwxMD
+Q2NjIxNCwtMTMwNTUyMzU2NywtMTQ1OTkyNzU3NSwtOTM4NTEw
+NjAwLDEzNjIzNTgxMTIsNTI1MjAxMTc3LDEyMjgyNzk2NDIsMT
+c5MDYzNTA1NSwxNDAxMzY4NzQzLC0xODcwNzM1OTkzLC0xNTY0
+MTU4OTc4XX0=
 -->
