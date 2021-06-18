@@ -32,42 +32,40 @@ Each log record object contains an array of actions. Whenever a user performs an
 ```scala
 	spark.read.json("delta_load_table/_delta_log/00000000000000000000.json").printSchema()
 ```
-```json
-root
- |-- add: struct (nullable = true)
- |    |-- dataChange: boolean (nullable = true)
- |    |-- modificationTime: long (nullable = true)
- |    |-- path: string (nullable = true)
- |    |-- size: long (nullable = true)
- |    |-- stats: string (nullable = true)
- |-- commitInfo: struct (nullable = true)
- |    |-- clusterId: string (nullable = true)
- |    |-- isBlindAppend: boolean (nullable = true)
- |    |-- isolationLevel: string (nullable = true)
- |    |-- notebook: struct (nullable = true)
- |    |    |-- notebookId: string (nullable = true)
- |    |-- operation: string (nullable = true)
- |    |-- operationParameters: struct (nullable = true)
- |    |    |-- description: string (nullable = true)
- |    |    |-- isManaged: string (nullable = true)
- |    |    |-- partitionBy: string (nullable = true)
- |    |    |-- properties: string (nullable = true)
- |    |-- timestamp: long (nullable = true)
- |    |-- userId: string (nullable = true)
- |    |-- userName: string (nullable = true)
- |-- metaData: struct (nullable = true)
- |    |-- createdTime: long (nullable = true)
- |    |-- format: struct (nullable = true)
- |    |    |-- provider: string (nullable = true)
- |    |-- id: string (nullable = true)
- |    |-- partitionColumns: array (nullable = true)
- |    |    |-- element: string (containsNull = true)
- |    |-- schemaString: string (nullable = true)
- |-- protocol: struct (nullable = true)
- |    |-- minReaderVersion: long (nullable = true)
- |    |-- minWriterVersion: long (nullable = true)
-
-```
+    root
+     |-- add: struct (nullable = true)
+     |    |-- dataChange: boolean (nullable = true)
+     |    |-- modificationTime: long (nullable = true)
+     |    |-- path: string (nullable = true)
+     |    |-- size: long (nullable = true)
+     |    |-- stats: string (nullable = true)
+     |-- commitInfo: struct (nullable = true)
+     |    |-- clusterId: string (nullable = true)
+     |    |-- isBlindAppend: boolean (nullable = true)
+     |    |-- isolationLevel: string (nullable = true)
+     |    |-- notebook: struct (nullable = true)
+     |    |    |-- notebookId: string (nullable = true)
+     |    |-- operation: string (nullable = true)
+     |    |-- operationParameters: struct (nullable = true)
+     |    |    |-- description: string (nullable = true)
+     |    |    |-- isManaged: string (nullable = true)
+     |    |    |-- partitionBy: string (nullable = true)
+     |    |    |-- properties: string (nullable = true)
+     |    |-- timestamp: long (nullable = true)
+     |    |-- userId: string (nullable = true)
+     |    |-- userName: string (nullable = true)
+     |-- metaData: struct (nullable = true)
+     |    |-- createdTime: long (nullable = true)
+     |    |-- format: struct (nullable = true)
+     |    |    |-- provider: string (nullable = true)
+     |    |-- id: string (nullable = true)
+     |    |-- partitionColumns: array (nullable = true)
+     |    |    |-- element: string (containsNull = true)
+     |    |-- schemaString: string (nullable = true)
+     |-- protocol: struct (nullable = true)
+     |    |-- minReaderVersion: long (nullable = true)
+     |    |-- minWriterVersion: long (nullable = true)
+    
 
 
 ## ACID Transaction with Delta Lake
@@ -120,11 +118,11 @@ In small scale application which has limited transactions on that scenario readi
 Great! In this blog we learn how Transaction Log works and delta lake maintain the table state in the form of log files. In next blog we will deep dive into other features of delta lake. See you in the next blog.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MjgwMDc0ODksNzQ3MDU5MDc5LDY3MT
-UyODUxNSwtNjkxODE3ODQ0LDEyNTUxMDg2LC0zMDIyMTM1Njks
-LTY2NzUxODUwMywtMTY3MDI4NTM3MiwyMDk1OTQ3NTc4LDEyNj
-AwMTIyMjMsMTI1MDU1Njg1MCw2MTk4NjI1OTIsLTE3NTc0MjM0
-NDYsLTE4MTcyMTk0LDIxMTQyMTU1OTQsMTA0NjYyMTQsLTEzMD
-U1MjM1NjcsLTE0NTk5Mjc1NzUsLTkzODUxMDYwMCwxMzYyMzU4
-MTEyXX0=
+eyJoaXN0b3J5IjpbLTE2NDMyNjE2NDMsLTE5MjgwMDc0ODksNz
+Q3MDU5MDc5LDY3MTUyODUxNSwtNjkxODE3ODQ0LDEyNTUxMDg2
+LC0zMDIyMTM1NjksLTY2NzUxODUwMywtMTY3MDI4NTM3MiwyMD
+k1OTQ3NTc4LDEyNjAwMTIyMjMsMTI1MDU1Njg1MCw2MTk4NjI1
+OTIsLTE3NTc0MjM0NDYsLTE4MTcyMTk0LDIxMTQyMTU1OTQsMT
+A0NjYyMTQsLTEzMDU1MjM1NjcsLTE0NTk5Mjc1NzUsLTkzODUx
+MDYwMF19
 -->
