@@ -116,12 +116,15 @@ In small scale application which has limited transactions on that scenario readi
  - Suppose in DeltaTable have 11 commits then next spark will directly read from the last checkpoint file instead of going back to version 0 (read all the log files to compute the state).
  - Checkpoint writers write their new checkpoint ID in the _delta_log/_last_checkpoint file this ID will be used to create next checkpointing file.
 
+
+Great! In this blog we learn how Transaction Log works and delta lake maintain the table state in the form of log files. In next blog we will deep dive into Transaction Log in delta lake. See you in the next blog.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ3MDU5MDc5LDY3MTUyODUxNSwtNjkxOD
-E3ODQ0LDEyNTUxMDg2LC0zMDIyMTM1NjksLTY2NzUxODUwMywt
-MTY3MDI4NTM3MiwyMDk1OTQ3NTc4LDEyNjAwMTIyMjMsMTI1MD
-U1Njg1MCw2MTk4NjI1OTIsLTE3NTc0MjM0NDYsLTE4MTcyMTk0
-LDIxMTQyMTU1OTQsMTA0NjYyMTQsLTEzMDU1MjM1NjcsLTE0NT
-k5Mjc1NzUsLTkzODUxMDYwMCwxMzYyMzU4MTEyLDUyNTIwMTE3
-N119
+eyJoaXN0b3J5IjpbLTEwODg1MDkzMTIsNzQ3MDU5MDc5LDY3MT
+UyODUxNSwtNjkxODE3ODQ0LDEyNTUxMDg2LC0zMDIyMTM1Njks
+LTY2NzUxODUwMywtMTY3MDI4NTM3MiwyMDk1OTQ3NTc4LDEyNj
+AwMTIyMjMsMTI1MDU1Njg1MCw2MTk4NjI1OTIsLTE3NTc0MjM0
+NDYsLTE4MTcyMTk0LDIxMTQyMTU1OTQsMTA0NjYyMTQsLTEzMD
+U1MjM1NjcsLTE0NTk5Mjc1NzUsLTkzODUxMDYwMCwxMzYyMzU4
+MTEyXX0=
 -->
