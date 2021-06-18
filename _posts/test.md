@@ -103,7 +103,7 @@ Checkpoint is just an optimization technique that allows to quickly access metad
  - The result of the checkpointing process is an Parquet file that contains an add record for each object still in the table, remove records for objects that were deleted but need to be
 retained until the retention period has expired, other records such as txn, protocol and changeMetadata.
 
-Let's understand by 
+Let's understand by exam
 
 
 
@@ -119,11 +119,11 @@ Let's understand by
 Reffercnce
 https://docs.delta.io/0.3.0/delta-concurrency.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwMjIxMzU2OSwtNjY3NTE4NTAzLC0xNj
-cwMjg1MzcyLDIwOTU5NDc1NzgsMTI2MDAxMjIyMywxMjUwNTU2
-ODUwLDYxOTg2MjU5MiwtMTc1NzQyMzQ0NiwtMTgxNzIxOTQsMj
-ExNDIxNTU5NCwxMDQ2NjIxNCwtMTMwNTUyMzU2NywtMTQ1OTky
-NzU3NSwtOTM4NTEwNjAwLDEzNjIzNTgxMTIsNTI1MjAxMTc3LD
-EyMjgyNzk2NDIsMTc5MDYzNTA1NSwxNDAxMzY4NzQzLC0xODcw
-NzM1OTkzXX0=
+eyJoaXN0b3J5IjpbOTYwMDYwNTQ0LC0zMDIyMTM1NjksLTY2Nz
+UxODUwMywtMTY3MDI4NTM3MiwyMDk1OTQ3NTc4LDEyNjAwMTIy
+MjMsMTI1MDU1Njg1MCw2MTk4NjI1OTIsLTE3NTc0MjM0NDYsLT
+E4MTcyMTk0LDIxMTQyMTU1OTQsMTA0NjYyMTQsLTEzMDU1MjM1
+NjcsLTE0NTk5Mjc1NzUsLTkzODUxMDYwMCwxMzYyMzU4MTEyLD
+UyNTIwMTE3NywxMjI4Mjc5NjQyLDE3OTA2MzUwNTUsMTQwMTM2
+ODc0M119
 -->
