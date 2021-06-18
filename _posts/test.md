@@ -106,7 +106,7 @@ retained until the retention period has expired, other records such as txn, prot
 ### Let's understand by example:
 In small scale application which has limited transactions on that scenario reading from the small set of transaction log files (JSON format) is easy. But in large scale applications like streaming applications which creates multiple small files (due to micro batching) the problem where it become inefficient to read the whole bunch of transaction log files (JSON format) to know the state of the DeltaTable.
 
-The delta 
+The delta lake solve the problem with checkpointing. Delta Lake creates a checkpoint file in Parquet format after it creates the 10th commits/transaction).
 
 
 
@@ -121,7 +121,7 @@ The delta
 Reffercnce
 https://docs.delta.io/0.3.0/delta-concurrency.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0NTEzODA5NSwtMzAyMjEzNTY5LC02Nj
+eyJoaXN0b3J5IjpbLTU1MTM0OTQ4OCwtMzAyMjEzNTY5LC02Nj
 c1MTg1MDMsLTE2NzAyODUzNzIsMjA5NTk0NzU3OCwxMjYwMDEy
 MjIzLDEyNTA1NTY4NTAsNjE5ODYyNTkyLC0xNzU3NDIzNDQ2LC
 0xODE3MjE5NCwyMTE0MjE1NTk0LDEwNDY2MjE0LC0xMzA1NTIz
