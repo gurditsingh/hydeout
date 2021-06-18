@@ -76,10 +76,12 @@ Delta Lake provides transaction logs. The transaction log is a collection of ord
  - **Atomicity :** Delta Lake breaks down every action performed by a user into atomic commits. Successful completion of all actions ensures that transaction log record that commit, means A commit is recorded in the transaction log once the action is completed successfully and ensuring its **atomicity**.
  - **Consistency :** Delta Lake provides strong schema checking for DeltaTable . So the **consistency** of a DeltaTable is guaranteed by their strong schema.
  - **Isolation :** Delta Lake takes care of Concurrency of commits is managed to ensure their **isolation**. This is done using optimistic concurrency control.
- - **Durability :** Delta Lake made all the transactions on Delta Lake tables and stored directly to disk as successfully completed, making them  **durable**..
+ - **Durability :** Delta Lake made all the transactions on Delta Lake tables and stored directly to disk as successfully completion make them  **durable**.
+
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MjA1NDI1MiwxMjYwMDEyMjIzLDEyNT
+eyJoaXN0b3J5IjpbMjA5NTk0NzU3OCwxMjYwMDEyMjIzLDEyNT
 A1NTY4NTAsNjE5ODYyNTkyLC0xNzU3NDIzNDQ2LC0xODE3MjE5
 NCwyMTE0MjE1NTk0LDEwNDY2MjE0LC0xMzA1NTIzNTY3LC0xND
 U5OTI3NTc1LC05Mzg1MTA2MDAsMTM2MjM1ODExMiw1MjUyMDEx
