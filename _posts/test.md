@@ -100,6 +100,10 @@ Checkpoint is just an optimization technique that allows to quickly access metad
 
  - Checkpoint writes a checkpoint of the current state of the delta table (Snapshot). That produces a checkpoint metadata with the version. Checkpoint requests the LogStore to overwrite the _last_checkpoint file with the JSON-encoded checkpoint metadata.
  - Checkpoints store all the non-redundant actions in the table’s log up to a certain log record ID, in Parquet format. Some sets of actions are redundant and can be removed.
+ - The result of the checkpointing process is an Parquet file that contains an add record for each object still in the table, remove records for objects that were deleted but need to be
+retained until the retention period has expired, other records such as txn, protocol and changeMetadata.
+
+Let's understand by 
 
 
 
@@ -115,11 +119,11 @@ Checkpoint is just an optimization technique that allows to quickly access metad
 Reffercnce
 https://docs.delta.io/0.3.0/delta-concurrency.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2NzUxODUwMywtMTY3MDI4NTM3MiwyMD
-k1OTQ3NTc4LDEyNjAwMTIyMjMsMTI1MDU1Njg1MCw2MTk4NjI1
-OTIsLTE3NTc0MjM0NDYsLTE4MTcyMTk0LDIxMTQyMTU1OTQsMT
-A0NjYyMTQsLTEzMDU1MjM1NjcsLTE0NTk5Mjc1NzUsLTkzODUx
-MDYwMCwxMzYyMzU4MTEyLDUyNTIwMTE3NywxMjI4Mjc5NjQyLD
-E3OTA2MzUwNTUsMTQwMTM2ODc0MywtMTg3MDczNTk5MywtMTU2
-NDE1ODk3OF19
+eyJoaXN0b3J5IjpbLTMwMjIxMzU2OSwtNjY3NTE4NTAzLC0xNj
+cwMjg1MzcyLDIwOTU5NDc1NzgsMTI2MDAxMjIyMywxMjUwNTU2
+ODUwLDYxOTg2MjU5MiwtMTc1NzQyMzQ0NiwtMTgxNzIxOTQsMj
+ExNDIxNTU5NCwxMDQ2NjIxNCwtMTMwNTUyMzU2NywtMTQ1OTky
+NzU3NSwtOTM4NTEwNjAwLDEzNjIzNTgxMTIsNTI1MjAxMTc3LD
+EyMjgyNzk2NDIsMTc5MDYzNTA1NSwxNDAxMzY4NzQzLC0xODcw
+NzM1OTkzXX0=
 -->
