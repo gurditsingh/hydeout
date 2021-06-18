@@ -108,16 +108,16 @@ In small scale application which has limited transactions on that scenario readi
 
  - The delta lake solve the problem with checkpointing. Delta Lake creates a checkpoint file in Parquet format after it creates the 10th commits.
  - The clients accessing the Delta Lake table they just need to find the last checkpoint without Listing all the objects in the _delta_log directory.
- - Checkpoint writers write their new checkpoint ID in the _delta_log/_last_checkpoint file this will be used to create next checkpoint 
+ - Checkpoint writers write their new checkpoint ID in the _delta_log/_last_checkpoint file this ID will be used to create next checkpointing file.
 
 Reffercnce
 https://docs.delta.io/0.3.0/delta-concurrency.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0MjQ4ODY1NSwtMzAyMjEzNTY5LC02Nj
-c1MTg1MDMsLTE2NzAyODUzNzIsMjA5NTk0NzU3OCwxMjYwMDEy
-MjIzLDEyNTA1NTY4NTAsNjE5ODYyNTkyLC0xNzU3NDIzNDQ2LC
-0xODE3MjE5NCwyMTE0MjE1NTk0LDEwNDY2MjE0LC0xMzA1NTIz
-NTY3LC0xNDU5OTI3NTc1LC05Mzg1MTA2MDAsMTM2MjM1ODExMi
-w1MjUyMDExNzcsMTIyODI3OTY0MiwxNzkwNjM1MDU1LDE0MDEz
-Njg3NDNdfQ==
+eyJoaXN0b3J5IjpbMTI1NTEwODYsLTMwMjIxMzU2OSwtNjY3NT
+E4NTAzLC0xNjcwMjg1MzcyLDIwOTU5NDc1NzgsMTI2MDAxMjIy
+MywxMjUwNTU2ODUwLDYxOTg2MjU5MiwtMTc1NzQyMzQ0NiwtMT
+gxNzIxOTQsMjExNDIxNTU5NCwxMDQ2NjIxNCwtMTMwNTUyMzU2
+NywtMTQ1OTkyNzU3NSwtOTM4NTEwNjAwLDEzNjIzNTgxMTIsNT
+I1MjAxMTc3LDEyMjgyNzk2NDIsMTc5MDYzNTA1NSwxNDAxMzY4
+NzQzXX0=
 -->
