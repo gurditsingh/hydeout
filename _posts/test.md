@@ -80,7 +80,7 @@ Delta Lake provides transaction logs. The transaction log is a collection of ord
 
 
 ## Concurrency Control
-How does Delta Lake deal with multiple concurrent reads and writes. Because Delta Lake is runs on Apache Spark, the expectation is that multiple users concurrently modify a single table. Delta Lake provides ACID transaction guarantees between reads and writes.
+How does Delta Lake deal with multiple concurrent reads and writes. Because Delta Lake is runs on Apache Spark, means that multiple users concurrently modify a single table. Delta Lake provides ACID transaction guarantees between reads and writes.
 
 -   Readers continue to see the consistent snapshot view of the table that the Spark job started with, even when the table is modified during the job.
 -   Multiple writers can simultaneously modify a table and see a consistent snapshot view of the table and there will be a serial order for these writes.
@@ -117,7 +117,7 @@ In small scale application which has limited transactions on that scenario readi
  - Checkpoint writers write their new checkpoint ID in the _delta_log/_last_checkpoint file this ID will be used to create next checkpointing file.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc5MTg5OTY4LDY3MTUyODUxNSwtNjkxOD
+eyJoaXN0b3J5IjpbNzQ3MDU5MDc5LDY3MTUyODUxNSwtNjkxOD
 E3ODQ0LDEyNTUxMDg2LC0zMDIyMTM1NjksLTY2NzUxODUwMywt
 MTY3MDI4NTM3MiwyMDk1OTQ3NTc4LDEyNjAwMTIyMjMsMTI1MD
 U1Njg1MCw2MTk4NjI1OTIsLTE3NTc0MjM0NDYsLTE4MTcyMTk0
