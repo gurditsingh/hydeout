@@ -93,6 +93,8 @@ Delta Lake uses optimistic concurrency control to provide transactional guarante
 2.  **Write**: Stages all the changes by writing new data files.
 3.  **Validate and commit**: Before committing the changes, checks whether the proposed changes conflict with any other changes that may have been concurrently committed since the snapshot that was read. If there are no conflicts, all the staged changes are committed as a new versioned snapshot, and the write operation succeeds. However, if there are conflicts, the write operation fails with a concurrent modification exception rather than corrupting the table as would happen with open source Spark.
 
+[Reference Link](https://docs.delta.io/0.3.0/delta-concurrency.html "Reference Link")
+
 
 ## How to recomputing the state with Checkpointing.
 
@@ -117,11 +119,11 @@ In small scale application which has limited transactions on that scenario readi
 Reffercnce
 https://docs.delta.io/0.3.0/delta-concurrency.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODEyNTk3MDUsLTY5MTgxNzg0NCwxMj
-U1MTA4NiwtMzAyMjEzNTY5LC02Njc1MTg1MDMsLTE2NzAyODUz
-NzIsMjA5NTk0NzU3OCwxMjYwMDEyMjIzLDEyNTA1NTY4NTAsNj
-E5ODYyNTkyLC0xNzU3NDIzNDQ2LC0xODE3MjE5NCwyMTE0MjE1
-NTk0LDEwNDY2MjE0LC0xMzA1NTIzNTY3LC0xNDU5OTI3NTc1LC
-05Mzg1MTA2MDAsMTM2MjM1ODExMiw1MjUyMDExNzcsMTIyODI3
-OTY0Ml19
+eyJoaXN0b3J5IjpbLTUyODUwNjExNiwtNjkxODE3ODQ0LDEyNT
+UxMDg2LC0zMDIyMTM1NjksLTY2NzUxODUwMywtMTY3MDI4NTM3
+MiwyMDk1OTQ3NTc4LDEyNjAwMTIyMjMsMTI1MDU1Njg1MCw2MT
+k4NjI1OTIsLTE3NTc0MjM0NDYsLTE4MTcyMTk0LDIxMTQyMTU1
+OTQsMTA0NjYyMTQsLTEzMDU1MjM1NjcsLTE0NTk5Mjc1NzUsLT
+kzODUxMDYwMCwxMzYyMzU4MTEyLDUyNTIwMTE3NywxMjI4Mjc5
+NjQyXX0=
 -->
