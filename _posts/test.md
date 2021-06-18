@@ -93,7 +93,7 @@ Delta Lake uses optimistic concurrency control to provide transactional guarante
 2.  **Write**: Stages all the changes by writing new data files.
 3.  **Validate and commit**: Before committing the changes, checks whether the proposed changes conflict with any other changes that may have been concurrently committed since the snapshot that was read. If there are no conflicts, all the staged changes are committed as a new versioned snapshot, and the write operation succeeds. However, if there are conflicts, the write operation fails with a concurrent modification exception rather than corrupting the table as would happen with open source Spark.
 
-[Reference Link](https://docs.delta.io/0.3.0/delta-concurrency.html "Reference Link")
+[Reference Link](https://docs.delta.io/0.3.0/index.html "Reference Link")
 
 
 ## How to recomputing the state with Checkpointing.
@@ -116,14 +116,12 @@ In small scale application which has limited transactions on that scenario readi
  - Suppose in DeltaTable have 11 commits then next spark will directly read from the last checkpoint file instead of going back to version 0 (read all the log files to compute the state).
  - Checkpoint writers write their new checkpoint ID in the _delta_log/_last_checkpoint file this ID will be used to create next checkpointing file.
 
-Reffercnce
-https://docs.delta.io/0.3.0/delta-concurrency.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyODUwNjExNiwtNjkxODE3ODQ0LDEyNT
-UxMDg2LC0zMDIyMTM1NjksLTY2NzUxODUwMywtMTY3MDI4NTM3
-MiwyMDk1OTQ3NTc4LDEyNjAwMTIyMjMsMTI1MDU1Njg1MCw2MT
-k4NjI1OTIsLTE3NTc0MjM0NDYsLTE4MTcyMTk0LDIxMTQyMTU1
-OTQsMTA0NjYyMTQsLTEzMDU1MjM1NjcsLTE0NTk5Mjc1NzUsLT
-kzODUxMDYwMCwxMzYyMzU4MTEyLDUyNTIwMTE3NywxMjI4Mjc5
-NjQyXX0=
+eyJoaXN0b3J5IjpbNjcxNTI4NTE1LC02OTE4MTc4NDQsMTI1NT
+EwODYsLTMwMjIxMzU2OSwtNjY3NTE4NTAzLC0xNjcwMjg1Mzcy
+LDIwOTU5NDc1NzgsMTI2MDAxMjIyMywxMjUwNTU2ODUwLDYxOT
+g2MjU5MiwtMTc1NzQyMzQ0NiwtMTgxNzIxOTQsMjExNDIxNTU5
+NCwxMDQ2NjIxNCwtMTMwNTUyMzU2NywtMTQ1OTkyNzU3NSwtOT
+M4NTEwNjAwLDEzNjIzNTgxMTIsNTI1MjAxMTc3LDEyMjgyNzk2
+NDJdfQ==
 -->
