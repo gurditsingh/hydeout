@@ -109,13 +109,13 @@ In small scale application which has limited transactions on that scenario readi
  - The delta lake solve the problem with checkpointing. Delta Lake creates a checkpoint file in Parquet format after it creates the 10th commits. This parquet file is easy for spark to read and compute the state.
  - When recompute the state of the DeltaTable, Spark will read and cache the available JSON files that make up the transaction log. For example, if there have been only four commits to the table Spark will read all four files and cache the results into memory (like cache version 4).
  - The clients accessing the Delta Lake table they just need to find the last checkpoint without Listing all the objects in the _delta_log directory.
- - Suppose in DeltaTable we have 11 commits 
+ - Suppose in DeltaTable have 11 commits then spark will directly read from the last checkpoint file instead of going back to version 0 (or read all the log files to compute the state).
  - Checkpoint writers write their new checkpoint ID in the _delta_log/_last_checkpoint file this ID will be used to create next checkpointing file.
 
 Reffercnce
 https://docs.delta.io/0.3.0/delta-concurrency.html
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4Nzk4NzcyMywxMjU1MTA4NiwtMzAyMj
+eyJoaXN0b3J5IjpbLTkxMzgxNDY1NiwxMjU1MTA4NiwtMzAyMj
 EzNTY5LC02Njc1MTg1MDMsLTE2NzAyODUzNzIsMjA5NTk0NzU3
 OCwxMjYwMDEyMjIzLDEyNTA1NTY4NTAsNjE5ODYyNTkyLC0xNz
 U3NDIzNDQ2LC0xODE3MjE5NCwyMTE0MjE1NTk0LDEwNDY2MjE0
