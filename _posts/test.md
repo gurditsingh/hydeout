@@ -79,13 +79,40 @@ Delta Lake provides transaction logs. The transaction log is a collection of ord
  - **Durability :** Delta Lake made all the transactions on Delta Lake tables and stored directly to disk as successfully completion make them  **durable**.
 
 
+## Concurrency Control
+Delta Lake provides ACID transaction guarantees between reads and writes.
 
+-   Readers continue to see the consistent snapshot view of the table that the Spark job started with, even when the table is modified during the job.
+-   Multiple writers can simultaneously modify a table and see a consistent snapshot view of the table and there will be a serial order for these writes.
+
+### Optimistic concurrency control
+
+Delta Lake uses optimistic concurrency control to provide transactional guarantees between writes. Under this mechanism, writes operate in three stages:
+
+1.  **Read**: Reads (if needed) the latest available version of the table to identify which files need to be modified (that is, rewritten).
+2.  **Write**: Stages all the changes by writing new data files.
+3.  **Validate and commit**: Before committing the changes, checks whether the proposed changes conflict with any other changes that may have been concurrently committed since the snapshot that was read. If there are no conflicts, all the staged changes are committed as a new versioned snapshot, and the write operation succeeds. However, if there are conflicts, the write operation fails with a concurrent modification exception rather than corrupting the table as would happen with open source Spark.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Reffer
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NTk0NzU3OCwxMjYwMDEyMjIzLDEyNT
-A1NTY4NTAsNjE5ODYyNTkyLC0xNzU3NDIzNDQ2LC0xODE3MjE5
-NCwyMTE0MjE1NTk0LDEwNDY2MjE0LC0xMzA1NTIzNTY3LC0xND
-U5OTI3NTc1LC05Mzg1MTA2MDAsMTM2MjM1ODExMiw1MjUyMDEx
-NzcsMTIyODI3OTY0MiwxNzkwNjM1MDU1LDE0MDEzNjg3NDMsLT
-E4NzA3MzU5OTMsLTE1NjQxNTg5NzgsMTkxMzQ0NzczMCwxOTA2
-NDI5MzA2XX0=
+eyJoaXN0b3J5IjpbMTk1NjY4NjM4NSwyMDk1OTQ3NTc4LDEyNj
+AwMTIyMjMsMTI1MDU1Njg1MCw2MTk4NjI1OTIsLTE3NTc0MjM0
+NDYsLTE4MTcyMTk0LDIxMTQyMTU1OTQsMTA0NjYyMTQsLTEzMD
+U1MjM1NjcsLTE0NTk5Mjc1NzUsLTkzODUxMDYwMCwxMzYyMzU4
+MTEyLDUyNTIwMTE3NywxMjI4Mjc5NjQyLDE3OTA2MzUwNTUsMT
+QwMTM2ODc0MywtMTg3MDczNTk5MywtMTU2NDE1ODk3OCwxOTEz
+NDQ3NzMwXX0=
 -->
