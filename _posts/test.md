@@ -126,16 +126,16 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 	**Observations for Parquet format :**
 	
 
-	 - 
+	 - At the starting when we first time load the data into parquet t
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3MDYyNzU0NiwxODk3MTczOTMxLDk5Mj
-k4NDg4OSwtMTE2ODAyNDkwOSwyMTQyMzE3NjcxLC00MjEyNDQy
-NzMsLTE3MjI0Nzk0MjIsLTE1NzExMTU2MjIsMzAxOTgwMTg5LC
-0yMDA0NTE3MzIyLC0xNjQzMjYxNjQzLC0xOTI4MDA3NDg5LDc0
-NzA1OTA3OSw2NzE1Mjg1MTUsLTY5MTgxNzg0NCwxMjU1MTA4Ni
-wtMzAyMjEzNTY5LC02Njc1MTg1MDMsLTE2NzAyODUzNzIsMjA5
-NTk0NzU3OF19
+eyJoaXN0b3J5IjpbMjY4NzU0NTM2LDE4OTcxNzM5MzEsOTkyOT
+g0ODg5LC0xMTY4MDI0OTA5LDIxNDIzMTc2NzEsLTQyMTI0NDI3
+MywtMTcyMjQ3OTQyMiwtMTU3MTExNTYyMiwzMDE5ODAxODksLT
+IwMDQ1MTczMjIsLTE2NDMyNjE2NDMsLTE5MjgwMDc0ODksNzQ3
+MDU5MDc5LDY3MTUyODUxNSwtNjkxODE3ODQ0LDEyNTUxMDg2LC
+0zMDIyMTM1NjksLTY2NzUxODUwMywtMTY3MDI4NTM3MiwyMDk1
+OTQ3NTc4XX0=
 -->
