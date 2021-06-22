@@ -128,17 +128,17 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 
 	 - At the starting when we first time load the data into parquet table/path it has 54 records and two columns.
 	 - After running the streaming job we load more data to the same parquet table/path.
-	 - Streaming job add more columns to the parquet table/path without giving any notification to the user or fail the job due to schema mismatch.
-	 - W 
+	 - Streaming job add more columns to the parquet table/path without giving any notification to the user or not fail the job due to schema mismatch.
+	 - When user reads the data its not consistent and atomic. because when we ran the count query it 
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTU1OTE2MjEsMTc5NzI0NzkxNiwxOD
-k3MTczOTMxLDk5Mjk4NDg4OSwtMTE2ODAyNDkwOSwyMTQyMzE3
-NjcxLC00MjEyNDQyNzMsLTE3MjI0Nzk0MjIsLTE1NzExMTU2Mj
-IsMzAxOTgwMTg5LC0yMDA0NTE3MzIyLC0xNjQzMjYxNjQzLC0x
-OTI4MDA3NDg5LDc0NzA1OTA3OSw2NzE1Mjg1MTUsLTY5MTgxNz
-g0NCwxMjU1MTA4NiwtMzAyMjEzNTY5LC02Njc1MTg1MDMsLTE2
-NzAyODUzNzJdfQ==
+eyJoaXN0b3J5IjpbMTE3ODIzNjUwOSwtMTk5NTU5MTYyMSwxNz
+k3MjQ3OTE2LDE4OTcxNzM5MzEsOTkyOTg0ODg5LC0xMTY4MDI0
+OTA5LDIxNDIzMTc2NzEsLTQyMTI0NDI3MywtMTcyMjQ3OTQyMi
+wtMTU3MTExNTYyMiwzMDE5ODAxODksLTIwMDQ1MTczMjIsLTE2
+NDMyNjE2NDMsLTE5MjgwMDc0ODksNzQ3MDU5MDc5LDY3MTUyOD
+UxNSwtNjkxODE3ODQ0LDEyNTUxMDg2LC0zMDIyMTM1NjksLTY2
+NzUxODUwM119
 -->
