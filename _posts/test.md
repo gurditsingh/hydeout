@@ -97,24 +97,25 @@ def generate_dummy_stream(tablePath:String,checkpointPath:String,streamName:Stri
 generate_dummy_stream(target_path,"/checkpoint_parquet","StreamOfData")
 ```
 
-After generating more data let print the schema again of the parquet table.
+After generating the more data lets print the schema again of the parquet table. if you see in the below result we will get different schema 
 ```scala
 spark.read.format("parquet").load(target_path).printSchema
 
 root
+ |-- timestamp: timestamp (nullable = true)
+ |-- value: long (nullable = true)
  |-- state: string (nullable = true)
- |-- count: integer (nullable = true)
-
+ |-- count: integer (nullable = false)
 ```
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NzM2NTc2LDE4OTcxNzM5MzEsOTkyOT
-g0ODg5LC0xMTY4MDI0OTA5LDIxNDIzMTc2NzEsLTQyMTI0NDI3
-MywtMTcyMjQ3OTQyMiwtMTU3MTExNTYyMiwzMDE5ODAxODksLT
-IwMDQ1MTczMjIsLTE2NDMyNjE2NDMsLTE5MjgwMDc0ODksNzQ3
-MDU5MDc5LDY3MTUyODUxNSwtNjkxODE3ODQ0LDEyNTUxMDg2LC
-0zMDIyMTM1NjksLTY2NzUxODUwMywtMTY3MDI4NTM3MiwyMDk1
-OTQ3NTc4XX0=
+eyJoaXN0b3J5IjpbLTE1Mzg1NjY5ODUsMTg5NzE3MzkzMSw5OT
+I5ODQ4ODksLTExNjgwMjQ5MDksMjE0MjMxNzY3MSwtNDIxMjQ0
+MjczLC0xNzIyNDc5NDIyLC0xNTcxMTE1NjIyLDMwMTk4MDE4OS
+wtMjAwNDUxNzMyMiwtMTY0MzI2MTY0MywtMTkyODAwNzQ4OSw3
+NDcwNTkwNzksNjcxNTI4NTE1LC02OTE4MTc4NDQsMTI1NTEwOD
+YsLTMwMjIxMzU2OSwtNjY3NTE4NTAzLC0xNjcwMjg1MzcyLDIw
+OTU5NDc1NzhdfQ==
 -->
