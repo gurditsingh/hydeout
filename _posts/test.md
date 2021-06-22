@@ -15,14 +15,18 @@ Delta Lake provide a good way to handle the schema changes. Delta lake on spark 
 ## Schema Enforcement
 
 
+
+
+Delta Lake uses schema validation on write, which means that all new writes to a table are checked for compatibility with the target table’s schema at write time. If the schema is not compatible, Delta Lake cancels the transaction altogether (no data is written), and raises an exception to let the user know about the mismatch.
+
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTcwODQwMzcsLTIwMDQ1MTczMjIsLT
-E2NDMyNjE2NDMsLTE5MjgwMDc0ODksNzQ3MDU5MDc5LDY3MTUy
-ODUxNSwtNjkxODE3ODQ0LDEyNTUxMDg2LC0zMDIyMTM1NjksLT
-Y2NzUxODUwMywtMTY3MDI4NTM3MiwyMDk1OTQ3NTc4LDEyNjAw
-MTIyMjMsMTI1MDU1Njg1MCw2MTk4NjI1OTIsLTE3NTc0MjM0ND
-YsLTE4MTcyMTk0LDIxMTQyMTU1OTQsMTA0NjYyMTQsLTEzMDU1
-MjM1NjddfQ==
+eyJoaXN0b3J5IjpbLTc2NTMyNzQ3MSwtMjAwNDUxNzMyMiwtMT
+Y0MzI2MTY0MywtMTkyODAwNzQ4OSw3NDcwNTkwNzksNjcxNTI4
+NTE1LC02OTE4MTc4NDQsMTI1NTEwODYsLTMwMjIxMzU2OSwtNj
+Y3NTE4NTAzLC0xNjcwMjg1MzcyLDIwOTU5NDc1NzgsMTI2MDAx
+MjIyMywxMjUwNTU2ODUwLDYxOTg2MjU5MiwtMTc1NzQyMzQ0Ni
+wtMTgxNzIxOTQsMjExNDIxNTU5NCwxMDQ2NjIxNCwtMTMwNTUy
+MzU2N119
 -->
