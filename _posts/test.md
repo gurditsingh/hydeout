@@ -19,15 +19,18 @@ In Delta Lake the schema enforcement also known as schema validation which in en
  To determine whether the schema is compatible, Delta Lake uses the following there rule:
  
 
+ - Delta Lake check for any addional columns which are not in preset in table schema.
+ - Delta Lake check for data type for each column in table schema.
+ - Delta Lake check for column name 
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAxOTgwMTg5LC0yMDA0NTE3MzIyLC0xNj
-QzMjYxNjQzLC0xOTI4MDA3NDg5LDc0NzA1OTA3OSw2NzE1Mjg1
-MTUsLTY5MTgxNzg0NCwxMjU1MTA4NiwtMzAyMjEzNTY5LC02Nj
-c1MTg1MDMsLTE2NzAyODUzNzIsMjA5NTk0NzU3OCwxMjYwMDEy
-MjIzLDEyNTA1NTY4NTAsNjE5ODYyNTkyLC0xNzU3NDIzNDQ2LC
-0xODE3MjE5NCwyMTE0MjE1NTk0LDEwNDY2MjE0LC0xMzA1NTIz
-NTY3XX0=
+eyJoaXN0b3J5IjpbMTU2NTM5OTcwOCwzMDE5ODAxODksLTIwMD
+Q1MTczMjIsLTE2NDMyNjE2NDMsLTE5MjgwMDc0ODksNzQ3MDU5
+MDc5LDY3MTUyODUxNSwtNjkxODE3ODQ0LDEyNTUxMDg2LC0zMD
+IyMTM1NjksLTY2NzUxODUwMywtMTY3MDI4NTM3MiwyMDk1OTQ3
+NTc4LDEyNjAwMTIyMjMsMTI1MDU1Njg1MCw2MTk4NjI1OTIsLT
+E3NTc0MjM0NDYsLTE4MTcyMTk0LDIxMTQyMTU1OTQsMTA0NjYy
+MTRdfQ==
 -->
