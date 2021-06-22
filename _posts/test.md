@@ -97,7 +97,7 @@ def generate_dummy_stream(tablePath:String,checkpointPath:String,streamName:Stri
 generate_dummy_stream(target_path,"/checkpoint_parquet","StreamOfData")
 ```
 
-After generating the more data lets print the schema again of the parquet table. if you see in the below result we will get different schema as compared to previous state of the table. This happens due to streaming job
+After generating the more data lets print the schema again of the parquet table. if you see in the below result we will get different schema as compared to previous state of the table. This happens due to streaming job because stream job add extra column's to the data.
 ```scala
 spark.read.format("parquet").load(target_path).printSchema
 
@@ -107,15 +107,25 @@ root
  |-- state: string (nullable = true)
  |-- count: integer (nullable = false)
 ```
+Next lets check how many rows are in the table after the streaming job.
+```scala
+spark.sql("select count(*) from parquet_tbl").show()
 
++--------+
+|count(1)|
++--------+
+|      52|
++--------+
+
+```
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MDM0NjUxMiwxODk3MTczOTMxLDk5Mj
-k4NDg4OSwtMTE2ODAyNDkwOSwyMTQyMzE3NjcxLC00MjEyNDQy
-NzMsLTE3MjI0Nzk0MjIsLTE1NzExMTU2MjIsMzAxOTgwMTg5LC
-0yMDA0NTE3MzIyLC0xNjQzMjYxNjQzLC0xOTI4MDA3NDg5LDc0
-NzA1OTA3OSw2NzE1Mjg1MTUsLTY5MTgxNzg0NCwxMjU1MTA4Ni
-wtMzAyMjEzNTY5LC02Njc1MTg1MDMsLTE2NzAyODUzNzIsMjA5
-NTk0NzU3OF19
+eyJoaXN0b3J5IjpbMjcwODQwMzQwLDE4OTcxNzM5MzEsOTkyOT
+g0ODg5LC0xMTY4MDI0OTA5LDIxNDIzMTc2NzEsLTQyMTI0NDI3
+MywtMTcyMjQ3OTQyMiwtMTU3MTExNTYyMiwzMDE5ODAxODksLT
+IwMDQ1MTczMjIsLTE2NDMyNjE2NDMsLTE5MjgwMDc0ODksNzQ3
+MDU5MDc5LDY3MTUyODUxNSwtNjkxODE3ODQ0LDEyNTUxMDg2LC
+0zMDIyMTM1NjksLTY2NzUxODUwMywtMTY3MDI4NTM3MiwyMDk1
+OTQ3NTc4XX0=
 -->
