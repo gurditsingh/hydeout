@@ -16,19 +16,17 @@ Delta Lake provide a good way to handle the schema changes. Delta lake on spark 
 
 In Delta Lake the schema enforcement also known as schema validation which in ensure the data quality in delta lake tables. Delta Lake uses schema validation/enforcement on write. When any new data comes first its checked for data compatibility with with the target table schema at the time of writing. If the schema is not matched with the target table Delta Lake reject the transaction and raise the exception schema mismatch.
 
-
-Schema enforcement, also known as schema validation, is a safeguard in Delta Lake that ensures data quality by rejecting writes to a table that doesn’t match the table’s schema.
-
+ To determine whether a write to a table is compatible, Delta Lake uses the following there rule:
 
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjAxMDc4NCwtMjAwNDUxNzMyMiwtMT
-Y0MzI2MTY0MywtMTkyODAwNzQ4OSw3NDcwNTkwNzksNjcxNTI4
-NTE1LC02OTE4MTc4NDQsMTI1NTEwODYsLTMwMjIxMzU2OSwtNj
-Y3NTE4NTAzLC0xNjcwMjg1MzcyLDIwOTU5NDc1NzgsMTI2MDAx
-MjIyMywxMjUwNTU2ODUwLDYxOTg2MjU5MiwtMTc1NzQyMzQ0Ni
-wtMTgxNzIxOTQsMjExNDIxNTU5NCwxMDQ2NjIxNCwtMTMwNTUy
-MzU2N119
+eyJoaXN0b3J5IjpbLTIwODk4NDY4NDcsLTIwMDQ1MTczMjIsLT
+E2NDMyNjE2NDMsLTE5MjgwMDc0ODksNzQ3MDU5MDc5LDY3MTUy
+ODUxNSwtNjkxODE3ODQ0LDEyNTUxMDg2LC0zMDIyMTM1NjksLT
+Y2NzUxODUwMywtMTY3MDI4NTM3MiwyMDk1OTQ3NTc4LDEyNjAw
+MTIyMjMsMTI1MDU1Njg1MCw2MTk4NjI1OTIsLTE3NTc0MjM0ND
+YsLTE4MTcyMTk0LDIxMTQyMTU1OTQsMTA0NjYyMTQsLTEzMDU1
+MjM1NjddfQ==
 -->
