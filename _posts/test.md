@@ -25,16 +25,18 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 ### Let's Understand the Schema Enforcement by two ways
 
  1. **How Schema Enforcement works with parquet format**
-	 Let first create a new parquet table with the parquet file
+ 
+	 Let first create a new parquet table with the parquet file.
+	 
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyMTI0NDI3MywtMTcyMjQ3OTQyMiwtMT
-U3MTExNTYyMiwzMDE5ODAxODksLTIwMDQ1MTczMjIsLTE2NDMy
-NjE2NDMsLTE5MjgwMDc0ODksNzQ3MDU5MDc5LDY3MTUyODUxNS
-wtNjkxODE3ODQ0LDEyNTUxMDg2LC0zMDIyMTM1NjksLTY2NzUx
-ODUwMywtMTY3MDI4NTM3MiwyMDk1OTQ3NTc4LDEyNjAwMTIyMj
-MsMTI1MDU1Njg1MCw2MTk4NjI1OTIsLTE3NTc0MjM0NDYsLTE4
-MTcyMTk0XX0=
+eyJoaXN0b3J5IjpbMjE0MjMxNzY3MSwtNDIxMjQ0MjczLC0xNz
+IyNDc5NDIyLC0xNTcxMTE1NjIyLDMwMTk4MDE4OSwtMjAwNDUx
+NzMyMiwtMTY0MzI2MTY0MywtMTkyODAwNzQ4OSw3NDcwNTkwNz
+ksNjcxNTI4NTE1LC02OTE4MTc4NDQsMTI1NTEwODYsLTMwMjIx
+MzU2OSwtNjY3NTE4NTAzLC0xNjcwMjg1MzcyLDIwOTU5NDc1Nz
+gsMTI2MDAxMjIyMywxMjUwNTU2ODUwLDYxOTg2MjU5MiwtMTc1
+NzQyMzQ0Nl19
 -->
