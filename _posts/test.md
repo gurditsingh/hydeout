@@ -41,7 +41,6 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 	root
 	 |-- state: string (nullable = true)
 	 |-- count: integer (nullable = true)
-
 	```
 	Next lets check how many rows are in the table. Perform count operation on the parquet table.
 	```scala
@@ -124,10 +123,12 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 	res10: Long = 127
 	```
 
+	**Observations for Parquet format:**
+
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4MzQwODU2MCwxODk3MTczOTMxLDk5Mj
+eyJoaXN0b3J5IjpbLTIwMzg2ODg1OSwxODk3MTczOTMxLDk5Mj
 k4NDg4OSwtMTE2ODAyNDkwOSwyMTQyMzE3NjcxLC00MjEyNDQy
 NzMsLTE3MjI0Nzk0MjIsLTE1NzExMTU2MjIsMzAxOTgwMTg5LC
 0yMDA0NTE3MzIyLC0xNjQzMjYxNjQzLC0xOTI4MDA3NDg5LDc0
