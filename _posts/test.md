@@ -24,7 +24,7 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 
 ### Let's Understand the Schema Enforcement by two ways
 
- 1. **How Schema Enforcement works with parquet format**
+ - **How Schema Enforcement works with parquet format**
  
 	 Let first create a new parquet table with the parquet file.
 	```scala
@@ -123,12 +123,15 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 	res10: Long = 127
 	```
 
-	**Observations for Parquet format:**
+	**Observations for Parquet format :**
+	
+
+	 - 
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzg2ODg1OSwxODk3MTczOTMxLDk5Mj
+eyJoaXN0b3J5IjpbLTU3MDYyNzU0NiwxODk3MTczOTMxLDk5Mj
 k4NDg4OSwtMTE2ODAyNDkwOSwyMTQyMzE3NjcxLC00MjEyNDQy
 NzMsLTE3MjI0Nzk0MjIsLTE1NzExMTU2MjIsMzAxOTgwMTg5LC
 0yMDA0NTE3MzIyLC0xNjQzMjYxNjQzLC0xOTI4MDA3NDg5LDc0
