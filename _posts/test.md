@@ -22,17 +22,18 @@ In Delta Lake the schema enforcement also known as schema validation which in en
  - Delta Lake ensure the  data type for each column with respect to table schema.
  - Delta Lake ensure the column names with respect to table schema.
 
+### Let's Understand the Schema Enforcement by two ways:
 
-
+ - How Schema Enforcement works with parquet format:
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzExMTU2MjIsMzAxOTgwMTg5LC0yMD
-A0NTE3MzIyLC0xNjQzMjYxNjQzLC0xOTI4MDA3NDg5LDc0NzA1
-OTA3OSw2NzE1Mjg1MTUsLTY5MTgxNzg0NCwxMjU1MTA4NiwtMz
-AyMjEzNTY5LC02Njc1MTg1MDMsLTE2NzAyODUzNzIsMjA5NTk0
-NzU3OCwxMjYwMDEyMjIzLDEyNTA1NTY4NTAsNjE5ODYyNTkyLC
-0xNzU3NDIzNDQ2LC0xODE3MjE5NCwyMTE0MjE1NTk0LDEwNDY2
-MjE0XX0=
+eyJoaXN0b3J5IjpbLTc2OTc2NTA1NiwtMTU3MTExNTYyMiwzMD
+E5ODAxODksLTIwMDQ1MTczMjIsLTE2NDMyNjE2NDMsLTE5Mjgw
+MDc0ODksNzQ3MDU5MDc5LDY3MTUyODUxNSwtNjkxODE3ODQ0LD
+EyNTUxMDg2LC0zMDIyMTM1NjksLTY2NzUxODUwMywtMTY3MDI4
+NTM3MiwyMDk1OTQ3NTc4LDEyNjAwMTIyMjMsMTI1MDU1Njg1MC
+w2MTk4NjI1OTIsLTE3NTc0MjM0NDYsLTE4MTcyMTk0LDIxMTQy
+MTU1OTRdfQ==
 -->
