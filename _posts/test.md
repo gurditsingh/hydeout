@@ -126,17 +126,18 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 	**Observations for Parquet format :**
 	
 
-	 - At the starting when we first time load the data into parquet table it has 54 records and two columns.
-	 - After running the streaming job we load more data to the same parquet table/path
+	 - At the starting when we first time load the data into parquet table/path it has 54 records and two columns.
+	 - After running the streaming job we load more data to the same parquet table/path.
+	 - Streaming job add more columns to the parquet table/path without giving any notification to the user. 
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzAzNDMwNjUsMTg5NzE3MzkzMSw5OTI5OD
-Q4ODksLTExNjgwMjQ5MDksMjE0MjMxNzY3MSwtNDIxMjQ0Mjcz
-LC0xNzIyNDc5NDIyLC0xNTcxMTE1NjIyLDMwMTk4MDE4OSwtMj
-AwNDUxNzMyMiwtMTY0MzI2MTY0MywtMTkyODAwNzQ4OSw3NDcw
-NTkwNzksNjcxNTI4NTE1LC02OTE4MTc4NDQsMTI1NTEwODYsLT
-MwMjIxMzU2OSwtNjY3NTE4NTAzLC0xNjcwMjg1MzcyLDIwOTU5
-NDc1NzhdfQ==
+eyJoaXN0b3J5IjpbMTc5NzI0NzkxNiwxODk3MTczOTMxLDk5Mj
+k4NDg4OSwtMTE2ODAyNDkwOSwyMTQyMzE3NjcxLC00MjEyNDQy
+NzMsLTE3MjI0Nzk0MjIsLTE1NzExMTU2MjIsMzAxOTgwMTg5LC
+0yMDA0NTE3MzIyLC0xNjQzMjYxNjQzLC0xOTI4MDA3NDg5LDc0
+NzA1OTA3OSw2NzE1Mjg1MTUsLTY5MTgxNzg0NCwxMjU1MTA4Ni
+wtMzAyMjEzNTY5LC02Njc1MTg1MDMsLTE2NzAyODUzNzIsMjA5
+NTk0NzU3OF19
 -->
