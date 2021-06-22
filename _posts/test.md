@@ -31,104 +31,103 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 	val source_path = "/FileStore/tables/testData/part_00000_67f679a1_1d91_4571_9d54_54ab84497267_c000_snappy.parquet"
 	val target_path ="/FileStore/tables/parquetSchemaEnforcement"
 
-	spark.read.parquet(source_path).write.format("parquet").save(target_path)
-	spark.read.parquet(target_path).createOrReplaceTempView("parquet_tbl")
+		spark.read.parquet(source_path).write.format("parquet").save(target_path)
+		spark.read.parquet(target_path).createOrReplaceTempView("parquet_tbl")
+		```
+	Next print the schema of the parquet table.
+	```scala
+	spark.read.format("parquet").load(target_path).printSchema
+
+	root
+	 |-- state: string (nullable = true)
+	 |-- count: integer (nullable = true)
+
 	```
-Next print the schema of the parquet table.
-```scala
-spark.read.format("parquet").load(target_path).printSchema
+	Next lets check how many rows are in the table. Perform count operation on the parquet table.
+	```scala
+	spark.sql("select count(*) from parquet_tbl").show()
 
-root
- |-- state: string (nullable = true)
- |-- count: integer (nullable = true)
+	+--------+
+	|count(1)|
+	+--------+
+	|      52|
+	+--------+
 
-```
-Next lets check how many rows are in the table. Perform count operation on the parquet table.
-```scala
-spark.sql("select count(*) from parquet_tbl").show()
+	```
+	Next Let start appending some new data to it using Structured Streaming into the parquet table. We will generate a stream of data from with randomly generated states and dummy count.
 
-+--------+
-|count(1)|
-+--------+
-|      52|
-+--------+
+	```scala
+	import org.apache.spark.sql.streaming.{OutputMode, Trigger}
+	import org.apache.spark.sql.types.{DataTypes, StructField, StructType}
+	import org.apache.spark.sql.functions._
+	import scala.util.Random
 
-```
-Next Let start appending some new data to it using Structured Streaming into the parquet table. We will generate a stream of data from with randomly generated states and dummy count.
+	def generate_dummy_stream(tablePath:String,checkpointPath:String,streamName:String)
+	{
+	  val stateGen = () => {
+	    val rand = new Random()
+	    val gen = List("CA", "WA","IA")
+	    gen.apply(rand.nextInt(3))
+	  }
 
-```scala
-import org.apache.spark.sql.streaming.{OutputMode, Trigger}
-import org.apache.spark.sql.types.{DataTypes, StructField, StructType}
-import org.apache.spark.sql.functions._
-import scala.util.Random
+	  def random_dir(): String = {
+	    val r = new Random()
+	    checkpointPath+"chk/chk_pointing_" + r.nextInt(10000)
+	  }
 
-def generate_dummy_stream(tablePath:String,checkpointPath:String,streamName:String)
-{
-  val stateGen = () => {
-    val rand = new Random()
-    val gen = List("CA", "WA","IA")
-    gen.apply(rand.nextInt(3))
-  }
+	  val df = spark.readStream.format("rate").option("rowsPerSecond", 1).load()
 
-  def random_dir(): String = {
-    val r = new Random()
-    checkpointPath+"chk/chk_pointing_" + r.nextInt(10000)
-  }
+	  val state_gen = spark.udf.register("stateGen", stateGen)
 
-  val df = spark.readStream.format("rate").option("rowsPerSecond", 1).load()
-
-  val state_gen = spark.udf.register("stateGen", stateGen)
-
-  val new_df = df.withColumn("state", state_gen())
-    .withColumn("count", lit(1))
+	  val new_df = df.withColumn("state", state_gen())
+	    .withColumn("count", lit(1))
 
 
-  new_df.writeStream
-    .queryName(streamName)
-    .trigger(Trigger.ProcessingTime("5 seconds"))
-    .format("parquet")
-    .option("path", tablePath)
-    .option("checkpointLocation", random_dir())
-    .start()
-}
-```
+	  new_df.writeStream
+	    .queryName(streamName)
+	    .trigger(Trigger.ProcessingTime("5 seconds"))
+	    .format("parquet")
+	    .option("path", tablePath)
+	    .option("checkpointLocation", random_dir())
+	    .start()
+	}
+	```
 
-```scala
-generate_dummy_stream(target_path,"/checkpoint_parquet","StreamOfData")
-```
+	```scala
+	generate_dummy_stream(target_path,"/checkpoint_parquet","StreamOfData")
+	```
 
-After generating the more data lets print the schema again of the parquet table. if you see in the below result we will get different schema as compared to previous state of the table. This happens due to streaming job because stream job add extra column's to the data.
-```scala
-spark.read.format("parquet").load(target_path).printSchema
+	After generating the more data lets print the schema again of the parquet table. if you see in the below result we will get different schema as compared to previous state of the table. This happens due to streaming job because stream job add extra column's to the data.
+	```scala
+	spark.read.format("parquet").load(target_path).printSchema
 
-root
- |-- timestamp: timestamp (nullable = true)
- |-- value: long (nullable = true)
- |-- state: string (nullable = true)
- |-- count: integer (nullable = false)
-```
-Next lets check how many rows are in the table after the streaming job. In the below it shows the same count as compared to previous results.
-```scala
-spark.sql("select count(*) from parquet_tbl").show()
+	root
+	 |-- timestamp: timestamp (nullable = true)
+	 |-- value: long (nullable = true)
+	 |-- state: string (nullable = true)
+	 |-- count: integer (nullable = false)
+	```
+	Next lets check how many rows are in the table after the streaming job. In the below it shows the same count as compared to previous results.
+	```scala
+	spark.sql("select count(*) from parquet_tbl").show()
 
-+--------+
-|count(1)|
-+--------+
-|      52|
-+--------+
+	+--------+
+	|count(1)|
+	+--------+
+	|      52|
+	+--------+
+	```
+	lets check how many rows are in the table after the streaming job through spark API. In the below it shows the different count as compared to above results.
+	```scala
+	spark.read.format("parquet").load(target_path).count()
 
-```
-lets check how many rows are in the table after the streaming job through spark API. In the below it shows the same count as compared to previous results.
-```scala
-spark.read.format("parquet").load(target_path).count()
-
-res10: Long = 127
-```
+	res10: Long = 127
+	```
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3Mjg1NzgwMywxODk3MTczOTMxLDk5Mj
+eyJoaXN0b3J5IjpbMTE4MzQwODU2MCwxODk3MTczOTMxLDk5Mj
 k4NDg4OSwtMTE2ODAyNDkwOSwyMTQyMzE3NjcxLC00MjEyNDQy
 NzMsLTE3MjI0Nzk0MjIsLTE1NzExMTU2MjIsMzAxOTgwMTg5LC
 0yMDA0NTE3MzIyLC0xNjQzMjYxNjQzLC0xOTI4MDA3NDg5LDc0
