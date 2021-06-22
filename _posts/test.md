@@ -7,15 +7,19 @@ Delta Lake provide a good way to handle the schema changes. Delta lake on spark 
 
  - Delta Lake internally maintain the transaction log for all the management and schema is also store on transaction logs (in JSON files under the metadata)
  - Delta Lake facilitates Schema Enforcement to ensure rejecting writes to the table which has mismatch data schema with the table schema.
- - Delta Lake facilitates Scheme Evolution which allow to users to easily change the table schema to accommodate the new data with new schema (either add new column).
+ - Delta Lake facilitates Scheme Evolution which allow to users to easily change the table schema to accommodate the new data with new schema (either add new columns or remove old columns).
+ 
+
+
+
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4MjA2Mjk5NiwtMTY0MzI2MTY0MywtMT
-kyODAwNzQ4OSw3NDcwNTkwNzksNjcxNTI4NTE1LC02OTE4MTc4
-NDQsMTI1NTEwODYsLTMwMjIxMzU2OSwtNjY3NTE4NTAzLC0xNj
-cwMjg1MzcyLDIwOTU5NDc1NzgsMTI2MDAxMjIyMywxMjUwNTU2
-ODUwLDYxOTg2MjU5MiwtMTc1NzQyMzQ0NiwtMTgxNzIxOTQsMj
-ExNDIxNTU5NCwxMDQ2NjIxNCwtMTMwNTUyMzU2NywtMTQ1OTky
-NzU3NV19
+eyJoaXN0b3J5IjpbLTIwMDQ1MTczMjIsLTE2NDMyNjE2NDMsLT
+E5MjgwMDc0ODksNzQ3MDU5MDc5LDY3MTUyODUxNSwtNjkxODE3
+ODQ0LDEyNTUxMDg2LC0zMDIyMTM1NjksLTY2NzUxODUwMywtMT
+Y3MDI4NTM3MiwyMDk1OTQ3NTc4LDEyNjAwMTIyMjMsMTI1MDU1
+Njg1MCw2MTk4NjI1OTIsLTE3NTc0MjM0NDYsLTE4MTcyMTk0LD
+IxMTQyMTU1OTQsMTA0NjYyMTQsLTEzMDU1MjM1NjcsLTE0NTk5
+Mjc1NzVdfQ==
 -->
