@@ -27,16 +27,22 @@ In Delta Lake the schema enforcement also known as schema validation which in en
  1. **How Schema Enforcement works with parquet format**
  
 	 Let first create a new parquet table with the parquet file.
-	 
+	```scala
+	val source_path = "/FileStore/tables/testData/part_00000_67f679a1_1d91_4571_9d54_54ab84497267_c000_snappy.parquet"
+	val target_path ="/FileStore/tables/parquetSchemaEnforcement"
+
+	spark.read.parquet(source_path).write.format("parquet").save(target_path)
+	spark.read.parquet(target_path).createOrReplaceTempView("parquet_tbl")
+	```
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjE0MjMxNzY3MSwtNDIxMjQ0MjczLC0xNz
-IyNDc5NDIyLC0xNTcxMTE1NjIyLDMwMTk4MDE4OSwtMjAwNDUx
-NzMyMiwtMTY0MzI2MTY0MywtMTkyODAwNzQ4OSw3NDcwNTkwNz
-ksNjcxNTI4NTE1LC02OTE4MTc4NDQsMTI1NTEwODYsLTMwMjIx
-MzU2OSwtNjY3NTE4NTAzLC0xNjcwMjg1MzcyLDIwOTU5NDc1Nz
-gsMTI2MDAxMjIyMywxMjUwNTU2ODUwLDYxOTg2MjU5MiwtMTc1
-NzQyMzQ0Nl19
+eyJoaXN0b3J5IjpbNTMyMzU2NTcwLDIxNDIzMTc2NzEsLTQyMT
+I0NDI3MywtMTcyMjQ3OTQyMiwtMTU3MTExNTYyMiwzMDE5ODAx
+ODksLTIwMDQ1MTczMjIsLTE2NDMyNjE2NDMsLTE5MjgwMDc0OD
+ksNzQ3MDU5MDc5LDY3MTUyODUxNSwtNjkxODE3ODQ0LDEyNTUx
+MDg2LC0zMDIyMTM1NjksLTY2NzUxODUwMywtMTY3MDI4NTM3Mi
+wyMDk1OTQ3NTc4LDEyNjAwMTIyMjMsMTI1MDU1Njg1MCw2MTk4
+NjI1OTJdfQ==
 -->
