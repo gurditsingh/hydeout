@@ -24,7 +24,7 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 
 ### Let's Understand the Schema Enforcement by two ways
 
- - **How Schema Enforcement works with parquet format**
+ 1. **How Schema Enforcement works with parquet format**
  
 	 Let first create a new parquet table with the parquet file.
 	```scala
@@ -130,12 +130,12 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 	 - After running the streaming job we load more data to the same parquet table/path.
 	 - Streaming job add more columns to the parquet table/path without giving any notification to the user or not fail the job due to schema mismatch.
 	 - When user reads the data its not consistent and atomic. because when we ran the count query it will give two different results.
-	 - Under the target path parquet table have data with two different schemas. When someone rea
+	 - Under the target path parquet table has data with two different schemas. When someone reads from the target path it will not give you the correct results.
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2ODgwMjYzMCwtMTk5NTU5MTYyMSwxNz
+eyJoaXN0b3J5IjpbMTA0NDM1NzU4OSwtMTk5NTU5MTYyMSwxNz
 k3MjQ3OTE2LDE4OTcxNzM5MzEsOTkyOTg0ODg5LC0xMTY4MDI0
 OTA5LDIxNDIzMTc2NzEsLTQyMTI0NDI3MywtMTcyMjQ3OTQyMi
 wtMTU3MTExNTYyMiwzMDE5ODAxODksLTIwMDQ1MTczMjIsLTE2
