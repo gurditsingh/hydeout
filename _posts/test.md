@@ -37,6 +37,11 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 Next print the schema of the parquet table.
 ```scala
 spark.read.format("parquet").load(target_path).printSchema
+
+root
+ |-- state: string (nullable = true)
+ |-- count: integer (nullable = true)
+
 ```
 Next lets check how many rows are in the table. Perform count operation on the parquet table.
 ```scala
@@ -56,11 +61,11 @@ Next Let start appending some new data to it using Structured Streaming into the
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzODkzODU2LDk5Mjk4NDg4OSwtMTE2OD
-AyNDkwOSwyMTQyMzE3NjcxLC00MjEyNDQyNzMsLTE3MjI0Nzk0
-MjIsLTE1NzExMTU2MjIsMzAxOTgwMTg5LC0yMDA0NTE3MzIyLC
-0xNjQzMjYxNjQzLC0xOTI4MDA3NDg5LDc0NzA1OTA3OSw2NzE1
-Mjg1MTUsLTY5MTgxNzg0NCwxMjU1MTA4NiwtMzAyMjEzNTY5LC
-02Njc1MTg1MDMsLTE2NzAyODUzNzIsMjA5NTk0NzU3OCwxMjYw
-MDEyMjIzXX0=
+eyJoaXN0b3J5IjpbMTg5NzE3MzkzMSw5OTI5ODQ4ODksLTExNj
+gwMjQ5MDksMjE0MjMxNzY3MSwtNDIxMjQ0MjczLC0xNzIyNDc5
+NDIyLC0xNTcxMTE1NjIyLDMwMTk4MDE4OSwtMjAwNDUxNzMyMi
+wtMTY0MzI2MTY0MywtMTkyODAwNzQ4OSw3NDcwNTkwNzksNjcx
+NTI4NTE1LC02OTE4MTc4NDQsMTI1NTEwODYsLTMwMjIxMzU2OS
+wtNjY3NTE4NTAzLC0xNjcwMjg1MzcyLDIwOTU5NDc1NzgsMTI2
+MDAxMjIyM119
 -->
