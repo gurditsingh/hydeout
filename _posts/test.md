@@ -39,6 +39,11 @@ Next lets check how many rows are in the table. Perform count operation on the p
 ```scala
 spark.sql("select count(*) from parquet_tbl").show()
 
++--------+
+|count(1)|
++--------+
+|      52|
++--------+
 
 ```
 
@@ -47,11 +52,11 @@ spark.sql("select count(*) from parquet_tbl").show()
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzc0NDI3Nzc1LDIxNDIzMTc2NzEsLTQyMT
-I0NDI3MywtMTcyMjQ3OTQyMiwtMTU3MTExNTYyMiwzMDE5ODAx
-ODksLTIwMDQ1MTczMjIsLTE2NDMyNjE2NDMsLTE5MjgwMDc0OD
-ksNzQ3MDU5MDc5LDY3MTUyODUxNSwtNjkxODE3ODQ0LDEyNTUx
-MDg2LC0zMDIyMTM1NjksLTY2NzUxODUwMywtMTY3MDI4NTM3Mi
-wyMDk1OTQ3NTc4LDEyNjAwMTIyMjMsMTI1MDU1Njg1MCw2MTk4
-NjI1OTJdfQ==
+eyJoaXN0b3J5IjpbLTExNjgwMjQ5MDksMjE0MjMxNzY3MSwtND
+IxMjQ0MjczLC0xNzIyNDc5NDIyLC0xNTcxMTE1NjIyLDMwMTk4
+MDE4OSwtMjAwNDUxNzMyMiwtMTY0MzI2MTY0MywtMTkyODAwNz
+Q4OSw3NDcwNTkwNzksNjcxNTI4NTE1LC02OTE4MTc4NDQsMTI1
+NTEwODYsLTMwMjIxMzU2OSwtNjY3NTE4NTAzLC0xNjcwMjg1Mz
+cyLDIwOTU5NDc1NzgsMTI2MDAxMjIyMywxMjUwNTU2ODUwLDYx
+OTg2MjU5Ml19
 -->
