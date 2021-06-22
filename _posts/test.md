@@ -56,16 +56,54 @@ spark.sql("select count(*) from parquet_tbl").show()
 ```
 Next Let start appending some new data to it using Structured Streaming into the parquet table. We will generate a stream of data from with randomly generated states and dummy count.
 
+```scala
+import org.apache.spark.sql.streaming.{OutputMode, Trigger}
+import org.apache.spark.sql.types.{DataTypes, StructField, StructType}
+import org.apache.spark.sql.functions._
+import scala.util.Random
+
+def generate_dummy_stream(tablePath:String,checkpointPath:String,streamName:String)
+{
+  val stateGen = () => {
+    val rand = new Random()
+    val gen = List("CA", "WA","IA")
+    gen.apply(rand.nextInt(3))
+  }
+
+  def random_dir(): String = {
+    val r = new Random()
+    checkpointPath+"chk/chk_pointing_" + r.nextInt(10000)
+  }
+
+  val df = spark.readStream.format("rate").option("rowsPerSecond", 1).load()
+
+  val state_gen = spark.udf.register("stateGen", stateGen)
+
+  val new_df = df.withColumn("state", state_gen())
+    .withColumn("count", lit(1))
+
+
+  new_df.writeStream
+    .queryName(streamName)
+    .trigger(Trigger.ProcessingTime("5 seconds"))
+    .format("parquet")
+    .option("path", tablePath)
+    .option("checkpointLocation", random_dir())
+    .start()
+}
+```
+
+
 
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5NzE3MzkzMSw5OTI5ODQ4ODksLTExNj
-gwMjQ5MDksMjE0MjMxNzY3MSwtNDIxMjQ0MjczLC0xNzIyNDc5
-NDIyLC0xNTcxMTE1NjIyLDMwMTk4MDE4OSwtMjAwNDUxNzMyMi
-wtMTY0MzI2MTY0MywtMTkyODAwNzQ4OSw3NDcwNTkwNzksNjcx
-NTI4NTE1LC02OTE4MTc4NDQsMTI1NTEwODYsLTMwMjIxMzU2OS
-wtNjY3NTE4NTAzLC0xNjcwMjg1MzcyLDIwOTU5NDc1NzgsMTI2
-MDAxMjIyM119
+eyJoaXN0b3J5IjpbMjQxNjA0MTIzLDE4OTcxNzM5MzEsOTkyOT
+g0ODg5LC0xMTY4MDI0OTA5LDIxNDIzMTc2NzEsLTQyMTI0NDI3
+MywtMTcyMjQ3OTQyMiwtMTU3MTExNTYyMiwzMDE5ODAxODksLT
+IwMDQ1MTczMjIsLTE2NDMyNjE2NDMsLTE5MjgwMDc0ODksNzQ3
+MDU5MDc5LDY3MTUyODUxNSwtNjkxODE3ODQ0LDEyNTUxMDg2LC
+0zMDIyMTM1NjksLTY2NzUxODUwMywtMTY3MDI4NTM3MiwyMDk1
+OTQ3NTc4XX0=
 -->
