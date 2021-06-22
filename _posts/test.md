@@ -35,16 +35,23 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 	spark.read.parquet(target_path).createOrReplaceTempView("parquet_tbl")
 	```
 
-Next lets check the how many rows in the table. 
+Next lets check how many rows are in the table. Perform count operation on the parquet table.
+```scala
+spark.sql("select count(*) from parquet_tbl").show()
+
+
+```
+
+
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2OTc0NDU4OCwyMTQyMzE3NjcxLC00Mj
-EyNDQyNzMsLTE3MjI0Nzk0MjIsLTE1NzExMTU2MjIsMzAxOTgw
-MTg5LC0yMDA0NTE3MzIyLC0xNjQzMjYxNjQzLC0xOTI4MDA3ND
-g5LDc0NzA1OTA3OSw2NzE1Mjg1MTUsLTY5MTgxNzg0NCwxMjU1
-MTA4NiwtMzAyMjEzNTY5LC02Njc1MTg1MDMsLTE2NzAyODUzNz
-IsMjA5NTk0NzU3OCwxMjYwMDEyMjIzLDEyNTA1NTY4NTAsNjE5
-ODYyNTkyXX0=
+eyJoaXN0b3J5IjpbMzc0NDI3Nzc1LDIxNDIzMTc2NzEsLTQyMT
+I0NDI3MywtMTcyMjQ3OTQyMiwtMTU3MTExNTYyMiwzMDE5ODAx
+ODksLTIwMDQ1MTczMjIsLTE2NDMyNjE2NDMsLTE5MjgwMDc0OD
+ksNzQ3MDU5MDc5LDY3MTUyODUxNSwtNjkxODE3ODQ0LDEyNTUx
+MDg2LC0zMDIyMTM1NjksLTY2NzUxODUwMywtMTY3MDI4NTM3Mi
+wyMDk1OTQ3NTc4LDEyNjAwMTIyMjMsMTI1MDU1Njg1MCw2MTk4
+NjI1OTJdfQ==
 -->
