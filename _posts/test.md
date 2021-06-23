@@ -132,14 +132,16 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 	 - When user reads the data its not consistent and atomic. because when we ran the count query it will give two different results.
 	 - Under the target path parquet table has data with two different schemas. When someone reads from the target path it will not give you the correct results.
 
+2. 
+
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0NDM1NzU4OSwtMTk5NTU5MTYyMSwxNz
-k3MjQ3OTE2LDE4OTcxNzM5MzEsOTkyOTg0ODg5LC0xMTY4MDI0
-OTA5LDIxNDIzMTc2NzEsLTQyMTI0NDI3MywtMTcyMjQ3OTQyMi
-wtMTU3MTExNTYyMiwzMDE5ODAxODksLTIwMDQ1MTczMjIsLTE2
-NDMyNjE2NDMsLTE5MjgwMDc0ODksNzQ3MDU5MDc5LDY3MTUyOD
-UxNSwtNjkxODE3ODQ0LDEyNTUxMDg2LC0zMDIyMTM1NjksLTY2
-NzUxODUwM119
+eyJoaXN0b3J5IjpbODAyNDkyODgxLDEwNDQzNTc1ODksLTE5OT
+U1OTE2MjEsMTc5NzI0NzkxNiwxODk3MTczOTMxLDk5Mjk4NDg4
+OSwtMTE2ODAyNDkwOSwyMTQyMzE3NjcxLC00MjEyNDQyNzMsLT
+E3MjI0Nzk0MjIsLTE1NzExMTU2MjIsMzAxOTgwMTg5LC0yMDA0
+NTE3MzIyLC0xNjQzMjYxNjQzLC0xOTI4MDA3NDg5LDc0NzA1OT
+A3OSw2NzE1Mjg1MTUsLTY5MTgxNzg0NCwxMjU1MTA4NiwtMzAy
+MjEzNTY5XX0=
 -->
