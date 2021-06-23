@@ -132,16 +132,112 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 	 - When user reads the data its not consistent and atomic. because when we ran the count query it will give two different results.
 	 - Under the target path parquet table has data with two different schemas. When someone reads from the target path it will not give you the correct results.
 
-2. 
+2.  **How Schema Enforcement works with Delta format**
 
+	 Let first create a new parquet table with the parquet file.
+	```scala
+	val source_path = "/FileStore/tables/testData/part_00000_67f679a1_1d91_4571_9d54_54ab84497267_c000_snappy.parquet"
+	val target_path ="/FileStore/tables/parquetSchemaEnforcement"
+
+		spark.read.parquet(source_path).write.format("parquet").save(target_path)
+		spark.read.parquet(target_path).createOrReplaceTempView("parquet_tbl")
+		```
+	Next print the schema of the parquet table.
+	```scala
+	spark.read.format("parquet").load(target_path).printSchema
+
+	root
+	 |-- state: string (nullable = true)
+	 |-- count: integer (nullable = true)
+	```
+	Next lets check how many rows are in the table. Perform count operation on the parquet table.
+	```scala
+	spark.sql("select count(*) from parquet_tbl").show()
+
+	+--------+
+	|count(1)|
+	+--------+
+	|      52|
+	+--------+
+
+	```
+	Next Let start appending some new data to it using Structured Streaming into the parquet table. We will generate a stream of data from with randomly generated states and dummy count.
+
+	```scala
+	import org.apache.spark.sql.streaming.{OutputMode, Trigger}
+	import org.apache.spark.sql.types.{DataTypes, StructField, StructType}
+	import org.apache.spark.sql.functions._
+	import scala.util.Random
+
+	def generate_dummy_stream(tablePath:String,checkpointPath:String,streamName:String)
+	{
+	  val stateGen = () => {
+	    val rand = new Random()
+	    val gen = List("CA", "WA","IA")
+	    gen.apply(rand.nextInt(3))
+	  }
+
+	  def random_dir(): String = {
+	    val r = new Random()
+	    checkpointPath+"chk/chk_pointing_" + r.nextInt(10000)
+	  }
+
+	  val df = spark.readStream.format("rate").option("rowsPerSecond", 1).load()
+
+	  val state_gen = spark.udf.register("stateGen", stateGen)
+
+	  val new_df = df.withColumn("state", state_gen())
+	    .withColumn("count", lit(1))
+
+
+	  new_df.writeStream
+	    .queryName(streamName)
+	    .trigger(Trigger.ProcessingTime("5 seconds"))
+	    .format("parquet")
+	    .option("path", tablePath)
+	    .option("checkpointLocation", random_dir())
+	    .start()
+	}
+	```
+
+	```scala
+	generate_dummy_stream(target_path,"/checkpoint_parquet","StreamOfData")
+	```
+
+	After generating the more data lets print the schema again of the parquet table. if you see in the below result we will get different schema as compared to previous state of the table. This happens due to streaming job because stream job add extra column's to the data.
+	```scala
+	spark.read.format("parquet").load(target_path).printSchema
+
+	root
+	 |-- timestamp: timestamp (nullable = true)
+	 |-- value: long (nullable = true)
+	 |-- state: string (nullable = true)
+	 |-- count: integer (nullable = false)
+	```
+	Next lets check how many rows are in the table after the streaming job. In the below it shows the same count as compared to previous results.
+	```scala
+	spark.sql("select count(*) from parquet_tbl").show()
+
+	+--------+
+	|count(1)|
+	+--------+
+	|      52|
+	+--------+
+	```
+	lets check how many rows are in the table after the streaming job through spark API. In the below it shows the different count as compared to above results.
+	```scala
+	spark.read.format("parquet").load(target_path).count()
+
+	res10: Long = 127
+	```
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAyNDkyODgxLDEwNDQzNTc1ODksLTE5OT
-U1OTE2MjEsMTc5NzI0NzkxNiwxODk3MTczOTMxLDk5Mjk4NDg4
-OSwtMTE2ODAyNDkwOSwyMTQyMzE3NjcxLC00MjEyNDQyNzMsLT
-E3MjI0Nzk0MjIsLTE1NzExMTU2MjIsMzAxOTgwMTg5LC0yMDA0
-NTE3MzIyLC0xNjQzMjYxNjQzLC0xOTI4MDA3NDg5LDc0NzA1OT
-A3OSw2NzE1Mjg1MTUsLTY5MTgxNzg0NCwxMjU1MTA4NiwtMzAy
-MjEzNTY5XX0=
+eyJoaXN0b3J5IjpbLTQ0NDg3NTU4MywxMDQ0MzU3NTg5LC0xOT
+k1NTkxNjIxLDE3OTcyNDc5MTYsMTg5NzE3MzkzMSw5OTI5ODQ4
+ODksLTExNjgwMjQ5MDksMjE0MjMxNzY3MSwtNDIxMjQ0MjczLC
+0xNzIyNDc5NDIyLC0xNTcxMTE1NjIyLDMwMTk4MDE4OSwtMjAw
+NDUxNzMyMiwtMTY0MzI2MTY0MywtMTkyODAwNzQ4OSw3NDcwNT
+kwNzksNjcxNTI4NTE1LC02OTE4MTc4NDQsMTI1NTEwODYsLTMw
+MjIxMzU2OV19
 -->
