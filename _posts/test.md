@@ -33,7 +33,7 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 
 		spark.read.parquet(source_path).write.format("parquet").save(target_path)
 		spark.read.parquet(target_path).createOrReplaceTempView("parquet_tbl")
-		```
+	```
 	Next print the schema of the parquet table.
 	```scala
 	spark.read.format("parquet").load(target_path).printSchema
@@ -139,9 +139,10 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 	val source_path = "/FileStore/tables/testData/part_00000_67f679a1_1d91_4571_9d54_54ab84497267_c000_snappy.parquet"
 	val target_path ="/FileStore/tables/deltaSchemaEnforcement"
 
-		spark.read.parquet(source_path).write.format("parquet").save(target_path)
-		spark.read.parquet(target_path).createOrReplaceTempView("parquet_tbl")
-		```
+	spark.read.parquet(source_path).write.format("delta").save(target_path)
+	spark.read.format("delta").load(target_path).createOrReplaceTempView("delta_tbl")
+	```
+		
 	Next print the schema of the parquet table.
 	```scala
 	spark.read.format("parquet").load(target_path).printSchema
@@ -233,11 +234,11 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTA3NjQ0NzUsLTQ0NDg3NTU4MywxMD
-Q0MzU3NTg5LC0xOTk1NTkxNjIxLDE3OTcyNDc5MTYsMTg5NzE3
-MzkzMSw5OTI5ODQ4ODksLTExNjgwMjQ5MDksMjE0MjMxNzY3MS
-wtNDIxMjQ0MjczLC0xNzIyNDc5NDIyLC0xNTcxMTE1NjIyLDMw
-MTk4MDE4OSwtMjAwNDUxNzMyMiwtMTY0MzI2MTY0MywtMTkyOD
-AwNzQ4OSw3NDcwNTkwNzksNjcxNTI4NTE1LC02OTE4MTc4NDQs
-MTI1NTEwODZdfQ==
+eyJoaXN0b3J5IjpbLTEzNTE3MTQwMzEsLTE0OTA3NjQ0NzUsLT
+Q0NDg3NTU4MywxMDQ0MzU3NTg5LC0xOTk1NTkxNjIxLDE3OTcy
+NDc5MTYsMTg5NzE3MzkzMSw5OTI5ODQ4ODksLTExNjgwMjQ5MD
+ksMjE0MjMxNzY3MSwtNDIxMjQ0MjczLC0xNzIyNDc5NDIyLC0x
+NTcxMTE1NjIyLDMwMTk4MDE4OSwtMjAwNDUxNzMyMiwtMTY0Mz
+I2MTY0MywtMTkyODAwNzQ4OSw3NDcwNTkwNzksNjcxNTI4NTE1
+LC02OTE4MTc4NDRdfQ==
 -->
