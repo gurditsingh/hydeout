@@ -204,37 +204,12 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 	```scala
 	generate_dummy_stream(target_path,"/checkpoint_parquet","StreamOfData")
 	```
-
-	After generating the more data lets print the schema again of the parquet table. if you see in the below result we will get different schema as compared to previous state of the table. This happens due to streaming job because stream job add extra column's to the data.
-	```scala
-	spark.read.format("parquet").load(target_path).printSchema
-
-	root
-	 |-- timestamp: timestamp (nullable = true)
-	 |-- value: long (nullable = true)
-	 |-- state: string (nullable = true)
-	 |-- count: integer (nullable = false)
-	```
-	Next lets check how many rows are in the table after the streaming job. In the below it shows the same count as compared to previous results.
-	```scala
-	spark.sql("select count(*) from parquet_tbl").show()
-
-	+--------+
-	|count(1)|
-	+--------+
-	|      52|
-	+--------+
-	```
-	lets check how many rows are in the table after the streaming job through spark API. In the below it shows the different count as compared to above results.
-	```scala
-	spark.read.format("parquet").load(target_path).count()
-
-	res10: Long = 127
-	```
+	After calling the above function delta lake throw an exception   
+`org.apache.spark.sql.AnalysisException: A schema mismatch detected when writing to the Delta table`.
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkwNjI2MzY0NSwtMTQ5MDc2NDQ3NSwtND
+eyJoaXN0b3J5IjpbMTQ2NTc5MDE3MywtMTQ5MDc2NDQ3NSwtND
 Q0ODc1NTgzLDEwNDQzNTc1ODksLTE5OTU1OTE2MjEsMTc5NzI0
 NzkxNiwxODk3MTczOTMxLDk5Mjk4NDg4OSwtMTE2ODAyNDkwOS
 wyMTQyMzE3NjcxLC00MjEyNDQyNzMsLTE3MjI0Nzk0MjIsLTE1
