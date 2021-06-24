@@ -31,8 +31,8 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 	val source_path = "/FileStore/tables/testData/part_00000_67f679a1_1d91_4571_9d54_54ab84497267_c000_snappy.parquet"
 	val target_path ="/FileStore/tables/parquetSchemaEnforcement"
 
-		spark.read.parquet(source_path).write.format("parquet").save(target_path)
-		spark.read.parquet(target_path).createOrReplaceTempView("parquet_tbl")
+	spark.read.parquet(source_path).write.format("parquet").save(target_path)
+	spark.read.parquet(target_path).createOrReplaceTempView("parquet_tbl")
 	```
 	Next print the schema of the parquet table.
 	```scala
@@ -145,7 +145,7 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 		
 	Next print the schema of the parquet table.
 	```scala
-	spark.read.format("parquet").load(target_path).printSchema
+	spark.read.format("delta").load(target_path).printSchema
 
 	root
 	 |-- state: string (nullable = true)
@@ -153,7 +153,7 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 	```
 	Next lets check how many rows are in the table. Perform count operation on the parquet table.
 	```scala
-	spark.sql("select count(*) from parquet_tbl").show()
+	spark.sql("select count(*) from delta_tbl").show()
 
 	+--------+
 	|count(1)|
@@ -162,7 +162,7 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 	+--------+
 
 	```
-	Next Let start appending some new data to it using Structured Streaming into the parquet table. We will generate a stream of data from with randomly generated states and dummy count.
+	Next Let start appending some new data using Structured Streaming into the delta table. We will generate a stream of data from with randomly generated states and dummy count.
 
 	```scala
 	import org.apache.spark.sql.streaming.{OutputMode, Trigger}
@@ -234,11 +234,11 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNTE3MTQwMzEsLTE0OTA3NjQ0NzUsLT
-Q0NDg3NTU4MywxMDQ0MzU3NTg5LC0xOTk1NTkxNjIxLDE3OTcy
-NDc5MTYsMTg5NzE3MzkzMSw5OTI5ODQ4ODksLTExNjgwMjQ5MD
-ksMjE0MjMxNzY3MSwtNDIxMjQ0MjczLC0xNzIyNDc5NDIyLC0x
-NTcxMTE1NjIyLDMwMTk4MDE4OSwtMjAwNDUxNzMyMiwtMTY0Mz
-I2MTY0MywtMTkyODAwNzQ4OSw3NDcwNTkwNzksNjcxNTI4NTE1
-LC02OTE4MTc4NDRdfQ==
+eyJoaXN0b3J5IjpbLTk1NjYzNTkwNywtMTQ5MDc2NDQ3NSwtND
+Q0ODc1NTgzLDEwNDQzNTc1ODksLTE5OTU1OTE2MjEsMTc5NzI0
+NzkxNiwxODk3MTczOTMxLDk5Mjk4NDg4OSwtMTE2ODAyNDkwOS
+wyMTQyMzE3NjcxLC00MjEyNDQyNzMsLTE3MjI0Nzk0MjIsLTE1
+NzExMTU2MjIsMzAxOTgwMTg5LC0yMDA0NTE3MzIyLC0xNjQzMj
+YxNjQzLC0xOTI4MDA3NDg5LDc0NzA1OTA3OSw2NzE1Mjg1MTUs
+LTY5MTgxNzg0NF19
 -->
