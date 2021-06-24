@@ -10,9 +10,9 @@ Delta Lake provide a good way to handle the schema changes. Delta lake on spark 
  - Delta Lake facilitates Scheme Evolution which allow to users to easily change the table schema to accommodate the new data with new schema (either add new columns or remove old columns).
  
 
-# Lets first examine the Schema Enforcement
+# Lets examine the Schema Enforcement and Scheme Evolution
 
-## Schema Enforcement
+## 1. Schema Enforcement
 
 In Delta Lake the schema enforcement also known as schema validation which in ensure the data quality in delta lake tables. Delta Lake uses schema validation/enforcement on write. When any new data comes first its checked for data compatibility with with the target table schema at the time of writing. If the schema is not matched with the target table Delta Lake reject the transaction and raise the exception schema mismatch.
 
@@ -212,13 +212,14 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 	 - While adding more data Delta Lake throw an **schema mismatch exception** because Streaming job try to change the schema and try to add more columns to the Delta table/path. Delta Lake fail the job due to schema mismatch.
 	 - When user reads the data its consistent and atomic. There are no partial files because Delta lake writes the files once the transaction is completed successfully.
 
+## 2. Scheme Evolution
 
 
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTYzODkwOTIsMTM5MDI3MzQwNywtMT
+eyJoaXN0b3J5IjpbLTE4NDA5MTI2NTgsMTM5MDI3MzQwNywtMT
 Q5MDc2NDQ3NSwtNDQ0ODc1NTgzLDEwNDQzNTc1ODksLTE5OTU1
 OTE2MjEsMTc5NzI0NzkxNiwxODk3MTczOTMxLDk5Mjk4NDg4OS
 wtMTE2ODAyNDkwOSwyMTQyMzE3NjcxLC00MjEyNDQyNzMsLTE3
