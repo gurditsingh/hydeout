@@ -212,17 +212,17 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 	 - While adding more data Delta Lake throw an **schema mismatch exception** because Streaming job try to change the schema and try to add more columns to the Delta table/path. Delta Lake fail the job due to schema mismatch.
 	 - When user reads the data its consistent and atomic. There are no partial files because Delta lake writes the files once the transaction is completed successfully.
 
-Schema Enforcement con
+### Schema Enforcement con
 
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM5MDI3MzQwNywtMTQ5MDc2NDQ3NSwtND
-Q0ODc1NTgzLDEwNDQzNTc1ODksLTE5OTU1OTE2MjEsMTc5NzI0
-NzkxNiwxODk3MTczOTMxLDk5Mjk4NDg4OSwtMTE2ODAyNDkwOS
-wyMTQyMzE3NjcxLC00MjEyNDQyNzMsLTE3MjI0Nzk0MjIsLTE1
-NzExMTU2MjIsMzAxOTgwMTg5LC0yMDA0NTE3MzIyLC0xNjQzMj
-YxNjQzLC0xOTI4MDA3NDg5LDc0NzA1OTA3OSw2NzE1Mjg1MTUs
-LTY5MTgxNzg0NF19
+eyJoaXN0b3J5IjpbNzM3MTU3NzIsMTM5MDI3MzQwNywtMTQ5MD
+c2NDQ3NSwtNDQ0ODc1NTgzLDEwNDQzNTc1ODksLTE5OTU1OTE2
+MjEsMTc5NzI0NzkxNiwxODk3MTczOTMxLDk5Mjk4NDg4OSwtMT
+E2ODAyNDkwOSwyMTQyMzE3NjcxLC00MjEyNDQyNzMsLTE3MjI0
+Nzk0MjIsLTE1NzExMTU2MjIsMzAxOTgwMTg5LC0yMDA0NTE3Mz
+IyLC0xNjQzMjYxNjQzLC0xOTI4MDA3NDg5LDc0NzA1OTA3OSw2
+NzE1Mjg1MTVdfQ==
 -->
