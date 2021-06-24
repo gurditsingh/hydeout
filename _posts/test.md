@@ -210,13 +210,13 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 	 - At the starting when we first time load the data into Delta table/path it has 54 records and two columns.
 	 - After running the streaming job we try to load more data to the same Delta table/path.
 	 - While adding more data Delta Lake throw an **schema mismatch exception** because Streaming job try to change the schema and try to add more columns to the Delta table/path. Delta Lake fail the job due to schema mismatch.
-	 - When user reads the data its not consistent and atomic. because when we ran the count query it will give two different results.
+	 - When user reads the data its consistent and atomic. There are no pariatl files all the beacause Delta lake writes the files onetranscation are complete when we ran the count query it will give two different results.
 
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjUwMjAzNTEsLTE0OTA3NjQ0NzUsLT
+eyJoaXN0b3J5IjpbLTE5MzQ5ODA2NjAsLTE0OTA3NjQ0NzUsLT
 Q0NDg3NTU4MywxMDQ0MzU3NTg5LC0xOTk1NTkxNjIxLDE3OTcy
 NDc5MTYsMTg5NzE3MzkzMSw5OTI5ODQ4ODksLTExNjgwMjQ5MD
 ksMjE0MjMxNzY3MSwtNDIxMjQ0MjczLC0xNzIyNDc5NDIyLC0x
