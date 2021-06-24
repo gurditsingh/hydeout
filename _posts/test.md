@@ -3,7 +3,7 @@
 Nowadays the schema of the data is constantly evolving and changing because of business needs. To cater all the business requirements and problems the system should constantly evolving the schema and validate the schema. We need some system which validate and evolve the schema because the data is changing very frequently.
 
 ## Solution
-Delta Lake provide a good way to handle the schema changes. Delta lake on spark store the data on DataFrames and every DataFrame in Spark contains a schema. Delta Lake handle the schema related changes out of the box and provide features like Schema Enforcement and Scheme Evolution.
+Delta Lake provide a good way to handle the schema changes. Delta lake on spark store the data on DataFrames and every DataFrame in Spark contains a schema. Delta Lake handle the schema related changes out of the box and provide features like **Schema Enforcement** and **Scheme Evolution**.
 
  - Delta Lake internally maintain the transaction log for all the management and schema is also store on transaction logs (in JSON files under the metadata)
  - Delta Lake facilitates Schema Enforcement to ensure rejecting writes to the table which has mismatch data schema with the table schema.
@@ -212,17 +212,17 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 	 - While adding more data Delta Lake throw an **schema mismatch exception** because Streaming job try to change the schema and try to add more columns to the Delta table/path. Delta Lake fail the job due to schema mismatch.
 	 - When user reads the data its consistent and atomic. There are no partial files because Delta lake writes the files once the transaction is completed successfully.
 
-### Schema Enforcement con
+
 
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM3MTU3NzIsMTM5MDI3MzQwNywtMTQ5MD
-c2NDQ3NSwtNDQ0ODc1NTgzLDEwNDQzNTc1ODksLTE5OTU1OTE2
-MjEsMTc5NzI0NzkxNiwxODk3MTczOTMxLDk5Mjk4NDg4OSwtMT
-E2ODAyNDkwOSwyMTQyMzE3NjcxLC00MjEyNDQyNzMsLTE3MjI0
-Nzk0MjIsLTE1NzExMTU2MjIsMzAxOTgwMTg5LC0yMDA0NTE3Mz
-IyLC0xNjQzMjYxNjQzLC0xOTI4MDA3NDg5LDc0NzA1OTA3OSw2
-NzE1Mjg1MTVdfQ==
+eyJoaXN0b3J5IjpbLTEyNTYzODkwOTIsMTM5MDI3MzQwNywtMT
+Q5MDc2NDQ3NSwtNDQ0ODc1NTgzLDEwNDQzNTc1ODksLTE5OTU1
+OTE2MjEsMTc5NzI0NzkxNiwxODk3MTczOTMxLDk5Mjk4NDg4OS
+wtMTE2ODAyNDkwOSwyMTQyMzE3NjcxLC00MjEyNDQyNzMsLTE3
+MjI0Nzk0MjIsLTE1NzExMTU2MjIsMzAxOTgwMTg5LC0yMDA0NT
+E3MzIyLC0xNjQzMjYxNjQzLC0xOTI4MDA3NDg5LDc0NzA1OTA3
+OSw2NzE1Mjg1MTVdfQ==
 -->
