@@ -205,18 +205,18 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 	```
 	After calling the above function delta lake throw an exception `org.apache.spark.sql.AnalysisException: A schema mismatch detected when writing to the Delta table`
 
-	**Observations for Parquet format :**
+	**Observations for Delta format :**
 	
-	 - At the starting when we first time load the data into parquet table/path it has 54 records and two columns.
-	 - After running the streaming job we load more data to the same parquet table/path.
-	 - Streaming job add more columns to the parquet table/path without giving any notification to the user or not fail the job due to schema mismatch.
+	 - At the starting when we first time load the data into Delta table/path it has 54 records and two columns.
+	 - After running the streaming job we try to load more data to the same Delta table/path.
+	 - While adding more data Delta Lake throw an schema mismatch exec Streaming job add more columns to the parquet table/path without giving any notification to the user or not fail the job due to schema mismatch.
 	 - When user reads the data its not consistent and atomic. because when we ran the count query it will give two different results.
 
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ3NTM0Nzk2LC0xNDkwNzY0NDc1LC00ND
+eyJoaXN0b3J5IjpbOTczODE4MzEzLC0xNDkwNzY0NDc1LC00ND
 Q4NzU1ODMsMTA0NDM1NzU4OSwtMTk5NTU5MTYyMSwxNzk3MjQ3
 OTE2LDE4OTcxNzM5MzEsOTkyOTg0ODg5LC0xMTY4MDI0OTA5LD
 IxNDIzMTc2NzEsLTQyMTI0NDI3MywtMTcyMjQ3OTQyMiwtMTU3
