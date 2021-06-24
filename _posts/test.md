@@ -53,7 +53,7 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 	+--------+
 
 	```
-	Next Let start appending some new data to it using Structured Streaming into the parquet table. We will generate a stream of data from with randomly generated states and dummy count.
+	Next Let start appending some new data using Structured Streaming into the parquet table. We will generate a stream of data from the randomly generated states and dummy count.
 
 	```scala
 	import org.apache.spark.sql.streaming.{OutputMode, Trigger}
@@ -162,7 +162,7 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 	+--------+
 
 	```
-	Next Let start appending some new data using Structured Streaming into the delta table. We will generate a stream of data from with randomly generated states and dummy count.
+	Next Let start appending some new data using Structured Streaming into the delta table. We will generate a stream of data from the randomly generated states and dummy count.
 
 	```scala
 	import org.apache.spark.sql.streaming.{OutputMode, Trigger}
@@ -234,7 +234,7 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1NjYzNTkwNywtMTQ5MDc2NDQ3NSwtND
+eyJoaXN0b3J5IjpbLTkwNjI2MzY0NSwtMTQ5MDc2NDQ3NSwtND
 Q0ODc1NTgzLDEwNDQzNTc1ODksLTE5OTU1OTE2MjEsMTc5NzI0
 NzkxNiwxODk3MTczOTMxLDk5Mjk4NDg4OSwtMTE2ODAyNDkwOS
 wyMTQyMzE3NjcxLC00MjEyNDQyNzMsLTE3MjI0Nzk0MjIsLTE1
