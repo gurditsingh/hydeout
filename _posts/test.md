@@ -216,16 +216,16 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 Schema evolution is a feature which allow to easily change the schema of Delta table to accommodate new data over the time. This feature automatically adapt the new schema either to include new columns or remove old columns. Mostly schema evolution is used when you are performing an append or overwrite operation on the Delta table.
 
 ### Let's Understand by code
-To fix above code exception (schema mismatch) when user try to add more data to Delta table using Spark Streaming.
+Scheme Evolution is just a option in DeltaTable which means to add the new columns at runtime. To fix above code exception (schema mismatch) when user try to add more data to Delta table using Spark Streaming.
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU3MDk5MjIwLC0xODQwOTEyNjU4LDEzOT
-AyNzM0MDcsLTE0OTA3NjQ0NzUsLTQ0NDg3NTU4MywxMDQ0MzU3
-NTg5LC0xOTk1NTkxNjIxLDE3OTcyNDc5MTYsMTg5NzE3MzkzMS
-w5OTI5ODQ4ODksLTExNjgwMjQ5MDksMjE0MjMxNzY3MSwtNDIx
-MjQ0MjczLC0xNzIyNDc5NDIyLC0xNTcxMTE1NjIyLDMwMTk4MD
-E4OSwtMjAwNDUxNzMyMiwtMTY0MzI2MTY0MywtMTkyODAwNzQ4
-OSw3NDcwNTkwNzldfQ==
+eyJoaXN0b3J5IjpbLTE4ODEzNTgwMzcsODU3MDk5MjIwLC0xOD
+QwOTEyNjU4LDEzOTAyNzM0MDcsLTE0OTA3NjQ0NzUsLTQ0NDg3
+NTU4MywxMDQ0MzU3NTg5LC0xOTk1NTkxNjIxLDE3OTcyNDc5MT
+YsMTg5NzE3MzkzMSw5OTI5ODQ4ODksLTExNjgwMjQ5MDksMjE0
+MjMxNzY3MSwtNDIxMjQ0MjczLC0xNzIyNDc5NDIyLC0xNTcxMT
+E1NjIyLDMwMTk4MDE4OSwtMjAwNDUxNzMyMiwtMTY0MzI2MTY0
+MywtMTkyODAwNzQ4OV19
 -->
