@@ -213,17 +213,18 @@ In Delta Lake the schema enforcement also known as schema validation which in en
 	 - When user reads the data its consistent and atomic. There are no partial files because Delta lake writes the files once the transaction is completed successfully.
 
 ## 2. Scheme Evolution
+Schema evolution is a feature which allow to easily change the schema of Delta table to accommodate new data over the time. 
 Schema evolution is a feature that allows users to easily change a table’s current schema to accommodate data that is changing over time. Most commonly, it’s used when performing an append or overwrite operation, to automatically adapt the schema to include one or more new columns.
 
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0MDczMzYzMiwtMTg0MDkxMjY1OCwxMz
-kwMjczNDA3LC0xNDkwNzY0NDc1LC00NDQ4NzU1ODMsMTA0NDM1
-NzU4OSwtMTk5NTU5MTYyMSwxNzk3MjQ3OTE2LDE4OTcxNzM5Mz
-EsOTkyOTg0ODg5LC0xMTY4MDI0OTA5LDIxNDIzMTc2NzEsLTQy
-MTI0NDI3MywtMTcyMjQ3OTQyMiwtMTU3MTExNTYyMiwzMDE5OD
-AxODksLTIwMDQ1MTczMjIsLTE2NDMyNjE2NDMsLTE5MjgwMDc0
-ODksNzQ3MDU5MDc5XX0=
+eyJoaXN0b3J5IjpbMTA3NjcxNDUwLC0xODQwOTEyNjU4LDEzOT
+AyNzM0MDcsLTE0OTA3NjQ0NzUsLTQ0NDg3NTU4MywxMDQ0MzU3
+NTg5LC0xOTk1NTkxNjIxLDE3OTcyNDc5MTYsMTg5NzE3MzkzMS
+w5OTI5ODQ4ODksLTExNjgwMjQ5MDksMjE0MjMxNzY3MSwtNDIx
+MjQ0MjczLC0xNzIyNDc5NDIyLC0xNTcxMTE1NjIyLDMwMTk4MD
+E4OSwtMjAwNDUxNzMyMiwtMTY0MzI2MTY0MywtMTkyODAwNzQ4
+OSw3NDcwNTkwNzldfQ==
 -->
