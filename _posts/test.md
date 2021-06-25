@@ -259,15 +259,22 @@ just adding `option("mergeSchema", "true")` this option it will solve the proble
 ```scala
 generate_dummy_stream(target_path,"/checkpoint_parquet","StreamOfData")
 ```
+Lets print the schema of the Delta table and see the newly added columns.
+```scala
+spark.read.format("delta").load(target_path).printSchema
 
+root
+ |-- state: string (nullable = true)
+ |-- count: integer (nullable = true)
+```
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MDA1MjcyOTIsLTEyOTA0MjA5NzYsLT
-E4ODEzNTgwMzcsODU3MDk5MjIwLC0xODQwOTEyNjU4LDEzOTAy
-NzM0MDcsLTE0OTA3NjQ0NzUsLTQ0NDg3NTU4MywxMDQ0MzU3NT
-g5LC0xOTk1NTkxNjIxLDE3OTcyNDc5MTYsMTg5NzE3MzkzMSw5
-OTI5ODQ4ODksLTExNjgwMjQ5MDksMjE0MjMxNzY3MSwtNDIxMj
-Q0MjczLC0xNzIyNDc5NDIyLC0xNTcxMTE1NjIyLDMwMTk4MDE4
-OSwtMjAwNDUxNzMyMl19
+eyJoaXN0b3J5IjpbNDQ0MTEwNDk4LC0xODAwNTI3MjkyLC0xMj
+kwNDIwOTc2LC0xODgxMzU4MDM3LDg1NzA5OTIyMCwtMTg0MDkx
+MjY1OCwxMzkwMjczNDA3LC0xNDkwNzY0NDc1LC00NDQ4NzU1OD
+MsMTA0NDM1NzU4OSwtMTk5NTU5MTYyMSwxNzk3MjQ3OTE2LDE4
+OTcxNzM5MzEsOTkyOTg0ODg5LC0xMTY4MDI0OTA5LDIxNDIzMT
+c2NzEsLTQyMTI0NDI3MywtMTcyMjQ3OTQyMiwtMTU3MTExNTYy
+MiwzMDE5ODAxODldfQ==
 -->
