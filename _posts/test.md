@@ -218,16 +218,56 @@ Schema evolution is a feature which allow to easily change the schema of Delta t
 ### Let's Understand by code
 Scheme Evolution is just a option in DeltaTable which means to add the new columns at runtime. Lets try to fix the above code exception (schema mismatch) when user try to add more data with new columns to Delta table using Spark Streaming.
 
+```scala
+import org.apache.spark.sql.streaming.{OutputMode, Trigger}
+import org.apache.spark.sql.types.{DataTypes, StructField, StructType}
+import org.apache.spark.sql.functions._
+import scala.util.Random
 
+def generate_dummy_stream(tablePath:String,checkpointPath:String,streamName:String)
+{
+  val stateGen = () => {
+    val rand = new Random()
+    val gen = List("CA", "WA","IA")
+    gen.apply(rand.nextInt(3))
+  }
+
+  def random_dir(): String = {
+    val r = new Random()
+    checkpointPath+"chk/chk_pointing_" + r.nextInt(10000)
+  }
+
+  val df = spark.readStream.format("rate").option("rowsPerSecond", 1).load()
+
+  val state_gen = spark.udf.register("stateGen", stateGen)
+
+  val new_df = df.withColumn("state", state_gen())
+    .withColumn("count", lit(1))
+
+
+  new_df.writeStream
+    .queryName(streamName)
+    .trigger(Trigger.ProcessingTime("5 seconds"))
+    .format("parquet")
+    .option("path", tablePath)
+    .option("mergeSchema", "true")
+    .option("checkpointLocation", random_dir())
+    .start()
+}
+```
+just adding `option("mergeSchema", "true")` this option it will solve the problem and run the above code without any exception.
+```scala
+generate_dummy_stream(target_path,"/checkpoint_parquet","StreamOfData")
+```
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep3.jpg?raw=true)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTA0MjA5NzYsLTE4ODEzNTgwMzcsOD
-U3MDk5MjIwLC0xODQwOTEyNjU4LDEzOTAyNzM0MDcsLTE0OTA3
-NjQ0NzUsLTQ0NDg3NTU4MywxMDQ0MzU3NTg5LC0xOTk1NTkxNj
-IxLDE3OTcyNDc5MTYsMTg5NzE3MzkzMSw5OTI5ODQ4ODksLTEx
-NjgwMjQ5MDksMjE0MjMxNzY3MSwtNDIxMjQ0MjczLC0xNzIyND
-c5NDIyLC0xNTcxMTE1NjIyLDMwMTk4MDE4OSwtMjAwNDUxNzMy
-MiwtMTY0MzI2MTY0M119
+eyJoaXN0b3J5IjpbLTE4MDA1MjcyOTIsLTEyOTA0MjA5NzYsLT
+E4ODEzNTgwMzcsODU3MDk5MjIwLC0xODQwOTEyNjU4LDEzOTAy
+NzM0MDcsLTE0OTA3NjQ0NzUsLTQ0NDg3NTU4MywxMDQ0MzU3NT
+g5LC0xOTk1NTkxNjIxLDE3OTcyNDc5MTYsMTg5NzE3MzkzMSw5
+OTI5ODQ4ODksLTExNjgwMjQ5MDksMjE0MjMxNzY3MSwtNDIxMj
+Q0MjczLC0xNzIyNDc5NDIyLC0xNTcxMTE1NjIyLDMwMTk4MDE4
+OSwtMjAwNDUxNzMyMl19
 -->
