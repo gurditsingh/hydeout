@@ -291,14 +291,22 @@ root
  |-- count: integer (nullable = true)
 ```
 lets try to change the state column to integer by using overwrite schema.
+```scala
+import org.apache.spark.sql.functions._
+import org.apache.spark.sql.types._
+import org.apache.spark.sql.SaveMode
 
+val temp = spark.range(10).withColumn("state",lit(2)).withColumn("count",lit(1)).select("state","count")
+temp.write.format("delta").option("overwriteSchema", "true").mode(SaveMode.Overwrite).save(target_path)
+```
+Lets print the schema again to same Delta Table/Path.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3Mjc0Nzk5NywtNzY2NDUwMTY0LDg2NT
-U2NzY2Miw1MjMyMTI3NDcsLTE4MDA1MjcyOTIsLTEyOTA0MjA5
-NzYsLTE4ODEzNTgwMzcsODU3MDk5MjIwLC0xODQwOTEyNjU4LD
-EzOTAyNzM0MDcsLTE0OTA3NjQ0NzUsLTQ0NDg3NTU4MywxMDQ0
-MzU3NTg5LC0xOTk1NTkxNjIxLDE3OTcyNDc5MTYsMTg5NzE3Mz
-kzMSw5OTI5ODQ4ODksLTExNjgwMjQ5MDksMjE0MjMxNzY3MSwt
-NDIxMjQ0MjczXX0=
+eyJoaXN0b3J5IjpbNTU4MDEwODgyLC03NjY0NTAxNjQsODY1NT
+Y3NjYyLDUyMzIxMjc0NywtMTgwMDUyNzI5MiwtMTI5MDQyMDk3
+NiwtMTg4MTM1ODAzNyw4NTcwOTkyMjAsLTE4NDA5MTI2NTgsMT
+M5MDI3MzQwNywtMTQ5MDc2NDQ3NSwtNDQ0ODc1NTgzLDEwNDQz
+NTc1ODksLTE5OTU1OTE2MjEsMTc5NzI0NzkxNiwxODk3MTczOT
+MxLDk5Mjk4NDg4OSwtMTE2ODAyNDkwOSwyMTQyMzE3NjcxLC00
+MjEyNDQyNzNdfQ==
 -->
