@@ -282,11 +282,19 @@ The Schema Evolution have two options:
 
 In the overwrite schema option in DeltaTable means to change any name or type of the column at runtime.
 
-In the existing delta table we have two columns one is string and one is integer.
+In the existing delta table we have two columns one is string and another one is integer.
+```scala
+spark.read.format("delta").load(target_path).printSchema
+
+root
+ |-- state: string (nullable = true)
+ |-- count: integer (nullable = true)
+```
+lets try to change the state column to integer by using overwrite schema.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1OTI5MDI4MiwtNzY2NDUwMTY0LDg2NT
+eyJoaXN0b3J5IjpbLTM3Mjc0Nzk5NywtNzY2NDUwMTY0LDg2NT
 U2NzY2Miw1MjMyMTI3NDcsLTE4MDA1MjcyOTIsLTEyOTA0MjA5
 NzYsLTE4ODEzNTgwMzcsODU3MDk5MjIwLC0xODQwOTEyNjU4LD
 EzOTAyNzM0MDcsLTE0OTA3NjQ0NzUsLTQ0NDg3NTU4MywxMDQ0
