@@ -280,10 +280,11 @@ The Schema Evolution have two options:
 
 2. **OverwriteSchema :**
 
-In the overwrite schema option in DeltaTable means to add the new columns at runtime. Lets try to fix the above code exception (schema mismatch) when user try to add more data with new columns to Delta table using Spark Streaming.
+In the overwrite schema option in DeltaTable means to change any name or type of the column at runtime.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxMjIxNDQxNiw4NjU1Njc2NjIsNTIzMj
+eyJoaXN0b3J5IjpbLTc2NjQ1MDE2NCw4NjU1Njc2NjIsNTIzMj
 EyNzQ3LC0xODAwNTI3MjkyLC0xMjkwNDIwOTc2LC0xODgxMzU4
 MDM3LDg1NzA5OTIyMCwtMTg0MDkxMjY1OCwxMzkwMjczNDA3LC
 0xNDkwNzY0NDc1LC00NDQ4NzU1ODMsMTA0NDM1NzU4OSwtMTk5
