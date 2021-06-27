@@ -301,8 +301,15 @@ temp.write.format("delta").option("overwriteSchema", "true").mode(SaveMode.Overw
 ```
 Lets print the schema again to same Delta Table/Path.
 
+```scala
+spark.read.format("delta").load(target_path).printSchema
+
+root
+ |-- state: integer (nullable = true)
+ |-- count: integer (nullable = true)
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTU4MDEwODgyLC03NjY0NTAxNjQsODY1NT
+eyJoaXN0b3J5IjpbNjEyNTc0Nzc5LC03NjY0NTAxNjQsODY1NT
 Y3NjYyLDUyMzIxMjc0NywtMTgwMDUyNzI5MiwtMTI5MDQyMDk3
 NiwtMTg4MTM1ODAzNyw4NTcwOTkyMjAsLTE4NDA5MTI2NTgsMT
 M5MDI3MzQwNywtMTQ5MDc2NDQ3NSwtNDQ0ODc1NTgzLDEwNDQz
