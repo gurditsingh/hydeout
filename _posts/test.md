@@ -218,8 +218,8 @@ Schema evolution is a feature which allow to easily change the schema of Delta t
 
 The Schema Evolution have two options:
 
- - mergeSchema
- - 
+ 1. MergeSchema : In this oper
+ 2. OverwriteSchema
 
 ### Let's Understand it by code
 Scheme Evolution is just a option in DeltaTable which means to add the new columns at runtime. Lets try to fix the above code exception (schema mismatch) when user try to add more data with new columns to Delta table using Spark Streaming.
@@ -278,11 +278,11 @@ root
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwMTI1OTc1OCw4NjU1Njc2NjIsNTIzMj
-EyNzQ3LC0xODAwNTI3MjkyLC0xMjkwNDIwOTc2LC0xODgxMzU4
-MDM3LDg1NzA5OTIyMCwtMTg0MDkxMjY1OCwxMzkwMjczNDA3LC
-0xNDkwNzY0NDc1LC00NDQ4NzU1ODMsMTA0NDM1NzU4OSwtMTk5
-NTU5MTYyMSwxNzk3MjQ3OTE2LDE4OTcxNzM5MzEsOTkyOTg0OD
-g5LC0xMTY4MDI0OTA5LDIxNDIzMTc2NzEsLTQyMTI0NDI3Mywt
-MTcyMjQ3OTQyMl19
+eyJoaXN0b3J5IjpbLTE0Mzc3OTM1MDgsODY1NTY3NjYyLDUyMz
+IxMjc0NywtMTgwMDUyNzI5MiwtMTI5MDQyMDk3NiwtMTg4MTM1
+ODAzNyw4NTcwOTkyMjAsLTE4NDA5MTI2NTgsMTM5MDI3MzQwNy
+wtMTQ5MDc2NDQ3NSwtNDQ0ODc1NTgzLDEwNDQzNTc1ODksLTE5
+OTU1OTE2MjEsMTc5NzI0NzkxNiwxODk3MTczOTMxLDk5Mjk4ND
+g4OSwtMTE2ODAyNDkwOSwyMTQyMzE3NjcxLC00MjEyNDQyNzMs
+LTE3MjI0Nzk0MjJdfQ==
 -->
