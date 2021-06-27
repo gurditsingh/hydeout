@@ -15,7 +15,7 @@ tags:
 
 
 ## Problem
-Nowadays the schema of the data is constantly evolving and changing because of business needs. To cater all the business requirements and problems the system should constantly evolving the schema and validate the schema. We need some system which validate and evolve the schema because the data is changing very frequently.
+Nowadays the schema of the data is constantly evolving and changing because of business needs. To cater all the business requirements and problems the system should constantly evolve and validate the schema. We need a system which validate and evolve the schema because the data is changing very frequently.
 
 ## Solution
 Delta Lake provide a good way to handle the schema changes. Delta lake on spark store the data on DataFrames and every DataFrame in Spark contains a schema. Delta Lake handle the schema related changes out of the box and provide features like **Schema Enforcement** and **Scheme Evolution**.
