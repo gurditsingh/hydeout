@@ -282,13 +282,15 @@ The Schema Evolution have two options:
 
 In the overwrite schema option in DeltaTable means to change any name or type of the column at runtime.
 
+In the existing delta table we have two columns one is string and one is integer.
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2NjQ1MDE2NCw4NjU1Njc2NjIsNTIzMj
-EyNzQ3LC0xODAwNTI3MjkyLC0xMjkwNDIwOTc2LC0xODgxMzU4
-MDM3LDg1NzA5OTIyMCwtMTg0MDkxMjY1OCwxMzkwMjczNDA3LC
-0xNDkwNzY0NDc1LC00NDQ4NzU1ODMsMTA0NDM1NzU4OSwtMTk5
-NTU5MTYyMSwxNzk3MjQ3OTE2LDE4OTcxNzM5MzEsOTkyOTg0OD
-g5LC0xMTY4MDI0OTA5LDIxNDIzMTc2NzEsLTQyMTI0NDI3Mywt
-MTcyMjQ3OTQyMl19
+eyJoaXN0b3J5IjpbLTc1OTI5MDI4MiwtNzY2NDUwMTY0LDg2NT
+U2NzY2Miw1MjMyMTI3NDcsLTE4MDA1MjcyOTIsLTEyOTA0MjA5
+NzYsLTE4ODEzNTgwMzcsODU3MDk5MjIwLC0xODQwOTEyNjU4LD
+EzOTAyNzM0MDcsLTE0OTA3NjQ0NzUsLTQ0NDg3NTU4MywxMDQ0
+MzU3NTg5LC0xOTk1NTkxNjIxLDE3OTcyNDc5MTYsMTg5NzE3Mz
+kzMSw5OTI5ODQ4ODksLTExNjgwMjQ5MDksMjE0MjMxNzY3MSwt
+NDIxMjQ0MjczXX0=
 -->
