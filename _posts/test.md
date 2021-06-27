@@ -218,9 +218,9 @@ Schema evolution is a feature which allow to easily change the schema of Delta t
 
 The Schema Evolution have two options:
 
- 1. **MergeSchema :** In this option in your query, any columns that are present in the DataFrame but not in the target Delta table are automatically added on to the end of the schema. Like adding new column or Upcast the datatypes to up
- 2. OverwriteSchema
-
+ 1. **MergeSchema :** In this option in your query, any columns that are present in the DataFrame but not in the target Delta table are automatically added on to the end of the schema. Like adding new column or Upcast the datatypes to upper type like ShortType to IntType.
+ 2. **OverwriteSchema :** Other than adding or upcasting comes under the overwrite schema
+ 
 ### Let's Understand it by code
 Scheme Evolution is just a option in DeltaTable which means to add the new columns at runtime. Lets try to fix the above code exception (schema mismatch) when user try to add more data with new columns to Delta table using Spark Streaming.
 
@@ -278,11 +278,11 @@ root
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTAyMzMxODkzLDg2NTU2NzY2Miw1MjMyMT
-I3NDcsLTE4MDA1MjcyOTIsLTEyOTA0MjA5NzYsLTE4ODEzNTgw
-MzcsODU3MDk5MjIwLC0xODQwOTEyNjU4LDEzOTAyNzM0MDcsLT
-E0OTA3NjQ0NzUsLTQ0NDg3NTU4MywxMDQ0MzU3NTg5LC0xOTk1
-NTkxNjIxLDE3OTcyNDc5MTYsMTg5NzE3MzkzMSw5OTI5ODQ4OD
-ksLTExNjgwMjQ5MDksMjE0MjMxNzY3MSwtNDIxMjQ0MjczLC0x
-NzIyNDc5NDIyXX0=
+eyJoaXN0b3J5IjpbMTE5ODM4NzE3Niw4NjU1Njc2NjIsNTIzMj
+EyNzQ3LC0xODAwNTI3MjkyLC0xMjkwNDIwOTc2LC0xODgxMzU4
+MDM3LDg1NzA5OTIyMCwtMTg0MDkxMjY1OCwxMzkwMjczNDA3LC
+0xNDkwNzY0NDc1LC00NDQ4NzU1ODMsMTA0NDM1NzU4OSwtMTk5
+NTU5MTYyMSwxNzk3MjQ3OTE2LDE4OTcxNzM5MzEsOTkyOTg0OD
+g5LC0xMTY4MDI0OTA5LDIxNDIzMTc2NzEsLTQyMTI0NDI3Mywt
+MTcyMjQ3OTQyMl19
 -->
