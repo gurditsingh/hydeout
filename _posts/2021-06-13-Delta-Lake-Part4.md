@@ -293,7 +293,7 @@ The Schema Evolution have two options:
 	 |-- value: long (nullable = true)
 	```
 
-2. **OverwriteSchema :**
+2. **OverwriteSchema :** option("overwriteSchema", "true")
 
 	In the overwrite schema option in DeltaTable means to change any name or type of the column at runtime.
 
