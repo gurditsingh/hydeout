@@ -280,40 +280,40 @@ The Schema Evolution have two options:
 
 2. **OverwriteSchema :**
 
-In the overwrite schema option in DeltaTable means to change any name or type of the column at runtime.
+	In the overwrite schema option in DeltaTable means to change any name or type of the column at runtime.
 
-In the existing delta table we have two columns one is string and another one is integer.
-```scala
-spark.read.format("delta").load(target_path).printSchema
+	In the existing delta table we have two columns one is string and another one is integer.
+	```scala
+	spark.read.format("delta").load(target_path).printSchema
 
-root
- |-- state: string (nullable = true)
- |-- count: integer (nullable = true)
-```
-lets try to change the state column to integer by using overwrite schema.
-```scala
-import org.apache.spark.sql.functions._
-import org.apache.spark.sql.types._
-import org.apache.spark.sql.SaveMode
+	root
+	 |-- state: string (nullable = true)
+	 |-- count: integer (nullable = true)
+	```
+	lets try to change the state column to integer by using overwrite schema.
+	```scala
+	import org.apache.spark.sql.functions._
+	import org.apache.spark.sql.types._
+	import org.apache.spark.sql.SaveMode
 
-val temp = spark.range(10).withColumn("state",lit(2)).withColumn("count",lit(1)).select("state","count")
-temp.write.format("delta").option("overwriteSchema", "true").mode(SaveMode.Overwrite).save(target_path)
-```
-Lets print the schema again to same Delta Table/Path.
+	val temp = spark.range(10).withColumn("state",lit(2)).withColumn("count",lit(1)).select("state","count")
+	temp.write.format("delta").option("overwriteSchema", "true").mode(SaveMode.Overwrite).save(target_path)
+	```
+	Lets print the schema again to same Delta Table/Path.
 
-```scala
-spark.read.format("delta").load(target_path).printSchema
+	```scala
+	spark.read.format("delta").load(target_path).printSchema
 
-root
- |-- state: integer (nullable = true)
- |-- count: integer (nullable = true)
-```
+	root
+	 |-- state: integer (nullable = true)
+	 |-- count: integer (nullable = true)
+	```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjEyNTc0Nzc5LC03NjY0NTAxNjQsODY1NT
-Y3NjYyLDUyMzIxMjc0NywtMTgwMDUyNzI5MiwtMTI5MDQyMDk3
-NiwtMTg4MTM1ODAzNyw4NTcwOTkyMjAsLTE4NDA5MTI2NTgsMT
-M5MDI3MzQwNywtMTQ5MDc2NDQ3NSwtNDQ0ODc1NTgzLDEwNDQz
-NTc1ODksLTE5OTU1OTE2MjEsMTc5NzI0NzkxNiwxODk3MTczOT
-MxLDk5Mjk4NDg4OSwtMTE2ODAyNDkwOSwyMTQyMzE3NjcxLC00
-MjEyNDQyNzNdfQ==
+eyJoaXN0b3J5IjpbLTE1NzQ2Mjg2MjEsLTc2NjQ1MDE2NCw4Nj
+U1Njc2NjIsNTIzMjEyNzQ3LC0xODAwNTI3MjkyLC0xMjkwNDIw
+OTc2LC0xODgxMzU4MDM3LDg1NzA5OTIyMCwtMTg0MDkxMjY1OC
+wxMzkwMjczNDA3LC0xNDkwNzY0NDc1LC00NDQ4NzU1ODMsMTA0
+NDM1NzU4OSwtMTk5NTU5MTYyMSwxNzk3MjQ3OTE2LDE4OTcxNz
+M5MzEsOTkyOTg0ODg5LC0xMTY4MDI0OTA5LDIxNDIzMTc2NzEs
+LTQyMTI0NDI3M119
 -->
