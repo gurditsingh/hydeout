@@ -222,68 +222,69 @@ The Schema Evolution have two options:
  2. **OverwriteSchema :** Other than adding or upcasting comes under the overwrite schema option. Like change any column name or change the data type like IntType to StringType.
  
 ### Let's Understand it by code
+ 1. **MergeSchema :**
 
-Scheme Evolution is just a option in DeltaTable which means to add the new columns at runtime. Lets try to fix the above code exception (schema mismatch) when user try to add more data with new columns to Delta table using Spark Streaming.
+	Scheme Evolution is just a option in DeltaTable which means to add the new columns at runtime. Lets try to fix the above code exception (schema mismatch) when user try to add more data with new columns to Delta table using Spark Streaming.
 
-```scala
-import org.apache.spark.sql.streaming.{OutputMode, Trigger}
-import org.apache.spark.sql.types.{DataTypes, StructField, StructType}
-import org.apache.spark.sql.functions._
-import scala.util.Random
+	```scala
+	import org.apache.spark.sql.streaming.{OutputMode, Trigger}
+	import org.apache.spark.sql.types.{DataTypes, StructField, StructType}
+	import org.apache.spark.sql.functions._
+	import scala.util.Random
 
-def generate_dummy_stream(tablePath:String,checkpointPath:String,streamName:String)
-{
-  val stateGen = () => {
-    val rand = new Random()
-    val gen = List("CA", "WA","IA")
-    gen.apply(rand.nextInt(3))
-  }
+	def generate_dummy_stream(tablePath:String,checkpointPath:String,streamName:String)
+	{
+	  val stateGen = () => {
+	    val rand = new Random()
+	    val gen = List("CA", "WA","IA")
+	    gen.apply(rand.nextInt(3))
+	  }
 
-  def random_dir(): String = {
-    val r = new Random()
-    checkpointPath+"chk/chk_pointing_" + r.nextInt(10000)
-  }
+	  def random_dir(): String = {
+	    val r = new Random()
+	    checkpointPath+"chk/chk_pointing_" + r.nextInt(10000)
+	  }
 
-  val df = spark.readStream.format("rate").option("rowsPerSecond", 1).load()
+	  val df = spark.readStream.format("rate").option("rowsPerSecond", 1).load()
 
-  val state_gen = spark.udf.register("stateGen", stateGen)
+	  val state_gen = spark.udf.register("stateGen", stateGen)
 
-  val new_df = df.withColumn("state", state_gen())
-    .withColumn("count", lit(1))
-
-
-  new_df.writeStream
-    .queryName(streamName)
-    .trigger(Trigger.ProcessingTime("5 seconds"))
-    .format("parquet")
-    .option("path", tablePath)
-    .option("mergeSchema", "true")
-    .option("checkpointLocation", random_dir())
-    .start()
-}
-```
-just adding `option("mergeSchema", "true")` this option it will solve the problem and run the above code without any exception.
-```scala
-generate_dummy_stream(target_path,"/checkpoint_parquet","StreamOfData")
-```
-Lets print the schema of the Delta table and see the newly added columns.
-```scala
-spark.read.format("delta").load(target_path).printSchema
-
-root
- |-- state: string (nullable = true)
- |-- count: integer (nullable = true)
- |-- timestamp: timestamp (nullable = true)
- |-- value: long (nullable = true)
-```
+	  val new_df = df.withColumn("state", state_gen())
+	    .withColumn("count", lit(1))
 
 
+	  new_df.writeStream
+	    .queryName(streamName)
+	    .trigger(Trigger.ProcessingTime("5 seconds"))
+	    .format("parquet")
+	    .option("path", tablePath)
+	    .option("mergeSchema", "true")
+	    .option("checkpointLocation", random_dir())
+	    .start()
+	}
+	```
+	just adding `option("mergeSchema", "true")` this option it will solve the problem and run the above code without any exception.
+	```scala
+	generate_dummy_stream(target_path,"/checkpoint_parquet","StreamOfData")
+	```
+	Lets print the schema of the Delta table and see the newly added columns.
+	```scala
+	spark.read.format("delta").load(target_path).printSchema
+
+	root
+	 |-- state: string (nullable = true)
+	 |-- count: integer (nullable = true)
+	 |-- timestamp: timestamp (nullable = true)
+	 |-- value: long (nullable = true)
+	```
+
+2. **OverwriteSchema :**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIyNjE1OTYxLDg2NTU2NzY2Miw1MjMyMT
-I3NDcsLTE4MDA1MjcyOTIsLTEyOTA0MjA5NzYsLTE4ODEzNTgw
-MzcsODU3MDk5MjIwLC0xODQwOTEyNjU4LDEzOTAyNzM0MDcsLT
-E0OTA3NjQ0NzUsLTQ0NDg3NTU4MywxMDQ0MzU3NTg5LC0xOTk1
-NTkxNjIxLDE3OTcyNDc5MTYsMTg5NzE3MzkzMSw5OTI5ODQ4OD
-ksLTExNjgwMjQ5MDksMjE0MjMxNzY3MSwtNDIxMjQ0MjczLC0x
-NzIyNDc5NDIyXX0=
+eyJoaXN0b3J5IjpbMjAyNDI2MTM2NSw4NjU1Njc2NjIsNTIzMj
+EyNzQ3LC0xODAwNTI3MjkyLC0xMjkwNDIwOTc2LC0xODgxMzU4
+MDM3LDg1NzA5OTIyMCwtMTg0MDkxMjY1OCwxMzkwMjczNDA3LC
+0xNDkwNzY0NDc1LC00NDQ4NzU1ODMsMTA0NDM1NzU4OSwtMTk5
+NTU5MTYyMSwxNzk3MjQ3OTE2LDE4OTcxNzM5MzEsOTkyOTg0OD
+g5LC0xMTY4MDI0OTA5LDIxNDIzMTc2NzEsLTQyMTI0NDI3Mywt
+MTcyMjQ3OTQyMl19
 -->
