@@ -218,7 +218,7 @@ Schema evolution is a feature which allow to easily change the schema of Delta t
 
 The Schema Evolution have two options:
 
- 1. MergeSchema : In this oper
+ 1. **MergeSchema :** In this option in your query, any columns that are present in the DataFrame but not in the target Delta table are automatically added on to the end of the schema. Like adding new column or Upcast the datatypes to up
  2. OverwriteSchema
 
 ### Let's Understand it by code
@@ -278,11 +278,11 @@ root
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Mzc3OTM1MDgsODY1NTY3NjYyLDUyMz
-IxMjc0NywtMTgwMDUyNzI5MiwtMTI5MDQyMDk3NiwtMTg4MTM1
-ODAzNyw4NTcwOTkyMjAsLTE4NDA5MTI2NTgsMTM5MDI3MzQwNy
-wtMTQ5MDc2NDQ3NSwtNDQ0ODc1NTgzLDEwNDQzNTc1ODksLTE5
-OTU1OTE2MjEsMTc5NzI0NzkxNiwxODk3MTczOTMxLDk5Mjk4ND
-g4OSwtMTE2ODAyNDkwOSwyMTQyMzE3NjcxLC00MjEyNDQyNzMs
-LTE3MjI0Nzk0MjJdfQ==
+eyJoaXN0b3J5IjpbOTAyMzMxODkzLDg2NTU2NzY2Miw1MjMyMT
+I3NDcsLTE4MDA1MjcyOTIsLTEyOTA0MjA5NzYsLTE4ODEzNTgw
+MzcsODU3MDk5MjIwLC0xODQwOTEyNjU4LDEzOTAyNzM0MDcsLT
+E0OTA3NjQ0NzUsLTQ0NDg3NTU4MywxMDQ0MzU3NTg5LC0xOTk1
+NTkxNjIxLDE3OTcyNDc5MTYsMTg5NzE3MzkzMSw5OTI5ODQ4OD
+ksLTExNjgwMjQ5MDksMjE0MjMxNzY3MSwtNDIxMjQ0MjczLC0x
+NzIyNDc5NDIyXX0=
 -->
