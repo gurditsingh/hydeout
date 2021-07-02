@@ -35,7 +35,7 @@ spark.range(5)
 ```scala
 display(spark.read.json("/FileStore/tables/deltaTimeTravel/_delta_log/00000000000000000001.json").select("add.path").where("add is not null"))
 ```
-The below results shows the files which are added by range in the transaction log (Query `select("add.path").where("add is not null"))`)
+In the append mode sample files are added by the Spark range function. The below results shows the files in the transaction log (Query `select("add.path").where("add is not null"))`)
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep5_tt4.JPG?raw=true)
 
@@ -51,7 +51,7 @@ display(spark.read.json("/FileStore/tables/deltaTimeTravel/_delta_log/0000000000
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2MjczODU4NiwtMTczNTI3MjcyMywtMT
+eyJoaXN0b3J5IjpbLTI0NzM0NjE0OSwtMTczNTI3MjcyMywtMT
 QxMjIxNjEwLDExMTg3MzQ5MSwxOTY2NTE2NzY5LDg1MTM1NzEw
 MiwtMTU1NzgzMTY2OSwtMTIxNTY5NDIxMywtMTQzMTEwMzI4Mi
 wtMTcyMDQzMDM5MiwtMjA4ODc0NjYxMiwtMTU3NDYyODYyMSwt
