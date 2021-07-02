@@ -66,16 +66,43 @@ display(DeltaTable.forPath("/FileStore/tables/deltaTimeTravel").history())
  ### 1. Using with Timestamp
 You can provide the timestamp or date string as an option to the DataFrame reader. User can see the history and select the appropriated version of the Delta table.
 
-First Version of Delta table (Initial load)
+First version of Delta table (Initial load)
 ```scala
 spark.read.format("delta").option("timestampAsOf","2021-07-02T10:26:40.000+0000").load(target_path).count()
 
 res29: Long = 52
 ```
-Second Version of Delta table (Append)
+Second version of Delta table (Append)
+```scala
+spark.read.format("delta").option("timestampAsOf","2021-07-02T10:52:52.000+0000").load(target_path).count()
+
+res29: Long = 57
+```
+Third version of Delta table (Delete)
+```scala
+spark.read.format("delta").option("timestampAsOf","2021-07-02T11:34:35.000+0000").load(target_path).count()
+
+res29: Long = 52
+```
 
 
 
+
+ ### 2. Using with Vers89h
+You can provide the timestamp or date string as an option to the DataFrame reader. User can see the history and select the appropriated version of the Delta table.
+
+First version of Delta table (Initial load)
+```scala
+spark.read.format("delta").option("timestampAsOf","2021-07-02T10:26:40.000+0000").load(target_path).count()
+
+res29: Long = 52
+```
+Second version of Delta table (Append)
+```scala
+spark.read.format("delta").option("timestampAsOf","2021-07-02T10:52:52.000+0000").load(target_path).count()
+
+res29: Long = 57
+```
 Third version of Delta table (Delete)
 ```scala
 spark.read.format("delta").option("timestampAsOf","2021-07-02T11:34:35.000+0000").load(target_path).count()
@@ -83,7 +110,7 @@ spark.read.format("delta").option("timestampAsOf","2021-07-02T11:34:35.000+0000"
 res29: Long = 52
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjg5OTA4OTYxLDE1ODcyOTk5MDIsLTc1OT
+eyJoaXN0b3J5IjpbMjQyOTMzMzgyLDE1ODcyOTk5MDIsLTc1OT
 IzMTc3OCw5NjExNTg2NzQsLTE3MzUyNzI3MjMsLTE0MTIyMTYx
 MCwxMTE4NzM0OTEsMTk2NjUxNjc2OSw4NTEzNTcxMDIsLTE1NT
 c4MzE2NjksLTEyMTU2OTQyMTMsLTE0MzExMDMyODIsLTE3MjA0
