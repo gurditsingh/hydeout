@@ -48,14 +48,14 @@ DeltaTable.forPath("/FileStore/tables/deltaTimeTravel").delete("count == 2")
 ```scala
 display(spark.read.json("/FileStore/tables/deltaTimeTravel/_delta_log/00000000000000000002.json").select("remove.path").where("remove is not null"))
 ```
-
+For the delete query we used DeltaTable API for simple delete the data from the d sample files are added by the Spark range function. The below results shows the files in the transaction log (Query `select("add.path").where("add is not null"))`)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0NzM0NjE0OSwtMTczNTI3MjcyMywtMT
-QxMjIxNjEwLDExMTg3MzQ5MSwxOTY2NTE2NzY5LDg1MTM1NzEw
-MiwtMTU1NzgzMTY2OSwtMTIxNTY5NDIxMywtMTQzMTEwMzI4Mi
-wtMTcyMDQzMDM5MiwtMjA4ODc0NjYxMiwtMTU3NDYyODYyMSwt
-NzY2NDUwMTY0LDg2NTU2NzY2Miw1MjMyMTI3NDcsLTE4MDA1Mj
-cyOTIsLTEyOTA0MjA5NzYsLTE4ODEzNTgwMzcsODU3MDk5MjIw
-LC0xODQwOTEyNjU4XX0=
+eyJoaXN0b3J5IjpbLTE5MzI0Njc5MzYsLTE3MzUyNzI3MjMsLT
+E0MTIyMTYxMCwxMTE4NzM0OTEsMTk2NjUxNjc2OSw4NTEzNTcx
+MDIsLTE1NTc4MzE2NjksLTEyMTU2OTQyMTMsLTE0MzExMDMyOD
+IsLTE3MjA0MzAzOTIsLTIwODg3NDY2MTIsLTE1NzQ2Mjg2MjEs
+LTc2NjQ1MDE2NCw4NjU1Njc2NjIsNTIzMjEyNzQ3LC0xODAwNT
+I3MjkyLC0xMjkwNDIwOTc2LC0xODgxMzU4MDM3LDg1NzA5OTIy
+MCwtMTg0MDkxMjY1OF19
 -->
