@@ -54,15 +54,17 @@ Delta lake cater the problem and provide a solution to go back in time and solve
 
 
 ## Working with Time Travel using 2 approaches
+Every Operation in Delta table 
+When we write our data into a Delta table, every operation is automatically versioned and we can access any version of data. This allows us to travel back to a different version of the current delta table. 
 
  ### 1. Using with Timestamp
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1OTIzMTc3OCw5NjExNTg2NzQsLTE3Mz
-UyNzI3MjMsLTE0MTIyMTYxMCwxMTE4NzM0OTEsMTk2NjUxNjc2
-OSw4NTEzNTcxMDIsLTE1NTc4MzE2NjksLTEyMTU2OTQyMTMsLT
-E0MzExMDMyODIsLTE3MjA0MzAzOTIsLTIwODg3NDY2MTIsLTE1
-NzQ2Mjg2MjEsLTc2NjQ1MDE2NCw4NjU1Njc2NjIsNTIzMjEyNz
-Q3LC0xODAwNTI3MjkyLC0xMjkwNDIwOTc2LC0xODgxMzU4MDM3
-LDg1NzA5OTIyMF19
+eyJoaXN0b3J5IjpbMzg0MzM2NjIxLC03NTkyMzE3NzgsOTYxMT
+U4Njc0LC0xNzM1MjcyNzIzLC0xNDEyMjE2MTAsMTExODczNDkx
+LDE5NjY1MTY3NjksODUxMzU3MTAyLC0xNTU3ODMxNjY5LC0xMj
+E1Njk0MjEzLC0xNDMxMTAzMjgyLC0xNzIwNDMwMzkyLC0yMDg4
+NzQ2NjEyLC0xNTc0NjI4NjIxLC03NjY0NTAxNjQsODY1NTY3Nj
+YyLDUyMzIxMjc0NywtMTgwMDUyNzI5MiwtMTI5MDQyMDk3Niwt
+MTg4MTM1ODAzN119
 -->
