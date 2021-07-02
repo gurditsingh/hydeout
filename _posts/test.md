@@ -124,13 +124,14 @@ You can provide the version number string as an option to the DataFrame reader. 
  - **Governance and Auditing :**  Time Travel offers data quality, standards and metrics by governance. It also offers auditing of records of every change  made to a Delta table. It also offers Optimization, Retention and vacuum of data.
  - **Debug :** By using time travel user can easily debug the data issues. Like troubleshoot the ETL pipeline issues, data quality issues which breaks the data pipeline. By using time travel user can explore all versions of Delta table and find out which version causing the issue.
  - **Rollbacks :** Time travel also makes it easy to do rollbacks. In case of bad data enters into the data lake using external sources. User can easily rollback to a previous version of the Delta table and fix the issue.
- - 
+ - **Reproduce reports & experiments :** 
+Time travel also plays an important role in machine learning and data science. Reproducibility of models and experiments is a key consideration for data scien‐ tists, because they often create 100s of models before they put one into produc‐ tion, and in that time-consuming process would like to go back to earlier models.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwNDYyOTM5NCwtMTM4NzE5Nzk5MywxNT
-g3Mjk5OTAyLC03NTkyMzE3NzgsOTYxMTU4Njc0LC0xNzM1Mjcy
-NzIzLC0xNDEyMjE2MTAsMTExODczNDkxLDE5NjY1MTY3NjksOD
-UxMzU3MTAyLC0xNTU3ODMxNjY5LC0xMjE1Njk0MjEzLC0xNDMx
-MTAzMjgyLC0xNzIwNDMwMzkyLC0yMDg4NzQ2NjEyLC0xNTc0Nj
-I4NjIxLC03NjY0NTAxNjQsODY1NTY3NjYyLDUyMzIxMjc0Nywt
-MTgwMDUyNzI5Ml19
+eyJoaXN0b3J5IjpbMTY0MzMxNjUxLC0xMzg3MTk3OTkzLDE1OD
+cyOTk5MDIsLTc1OTIzMTc3OCw5NjExNTg2NzQsLTE3MzUyNzI3
+MjMsLTE0MTIyMTYxMCwxMTE4NzM0OTEsMTk2NjUxNjc2OSw4NT
+EzNTcxMDIsLTE1NTc4MzE2NjksLTEyMTU2OTQyMTMsLTE0MzEx
+MDMyODIsLTE3MjA0MzAzOTIsLTIwODg3NDY2MTIsLTE1NzQ2Mj
+g2MjEsLTc2NjQ1MDE2NCw4NjU1Njc2NjIsNTIzMjEyNzQ3LC0x
+ODAwNTI3MjkyXX0=
 -->
