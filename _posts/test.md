@@ -97,29 +97,33 @@ You can provide the version number string as an option to the DataFrame reader. 
 
  - First version of Delta table (Initial load)
 
-```scala
-spark.read.format("delta").option("versionAsOf","0").load(target_path).count()
+	```scala
+	spark.read.format("delta").option("versionAsOf","0").load(target_path).count()
 
-res29: Long = 52
-```
-Second version of Delta table (Append)
-```scala
-spark.read.format("delta").option("versionAsOf","1").load(target_path).count()
+	res29: Long = 52
+	```
 
-res29: Long = 57
-```
-Third version of Delta table (Delete)
-```scala
-spark.read.format("delta").option("versionAsOf","2").load(target_path).count()
+ - Second version of Delta table (Append)
 
-res29: Long = 52
-```
+	```scala
+	spark.read.format("delta").option("versionAsOf","1").load(target_path).count()
+
+	res29: Long = 57
+	```
+
+ - Third version of Delta table (Delete)
+
+	```scala
+	spark.read.format("delta").option("versionAsOf","2").load(target_path).count()
+
+	res29: Long = 52
+	```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyMTYxMjI5NywxNTg3Mjk5OTAyLC03NT
-kyMzE3NzgsOTYxMTU4Njc0LC0xNzM1MjcyNzIzLC0xNDEyMjE2
-MTAsMTExODczNDkxLDE5NjY1MTY3NjksODUxMzU3MTAyLC0xNT
-U3ODMxNjY5LC0xMjE1Njk0MjEzLC0xNDMxMTAzMjgyLC0xNzIw
-NDMwMzkyLC0yMDg4NzQ2NjEyLC0xNTc0NjI4NjIxLC03NjY0NT
-AxNjQsODY1NTY3NjYyLDUyMzIxMjc0NywtMTgwMDUyNzI5Miwt
-MTI5MDQyMDk3Nl19
+eyJoaXN0b3J5IjpbLTEzODcxOTc5OTMsMTU4NzI5OTkwMiwtNz
+U5MjMxNzc4LDk2MTE1ODY3NCwtMTczNTI3MjcyMywtMTQxMjIx
+NjEwLDExMTg3MzQ5MSwxOTY2NTE2NzY5LDg1MTM1NzEwMiwtMT
+U1NzgzMTY2OSwtMTIxNTY5NDIxMywtMTQzMTEwMzI4MiwtMTcy
+MDQzMDM5MiwtMjA4ODc0NjYxMiwtMTU3NDYyODYyMSwtNzY2ND
+UwMTY0LDg2NTU2NzY2Miw1MjMyMTI3NDcsLTE4MDA1MjcyOTIs
+LTEyOTA0MjA5NzZdfQ==
 -->
