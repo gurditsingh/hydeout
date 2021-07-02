@@ -122,10 +122,10 @@ You can provide the version number string as an option to the DataFrame reader. 
 ## Time Travel Use Cases
 
  - **Governance and Auditing :**  Time Travel offers data quality, standards and metrics by governance. It also offers auditing of records of every change  made to a Delta table. It also offers Optimization, Retention and vacuum of data.
- - **Debug :** By using time travel user can easily debug the data issues. Like troubleshoot the ETL pipeline issues, data quality issues which breaks the data pipeline. By using time travel 
- o troubleshoot the ETL pipeline or data quality issues, or to fix the accidental broken data pipelines. This is the most common use case for time travel and we will be exploring this use case throughout the book.
+ - **Debug :** By using time travel user can easily debug the data issues. Like troubleshoot the ETL pipeline issues, data quality issues which breaks the data pipeline. By using time travel user can explore all versions of Delta table and find out which version causing the issue.
+ - **Rollbacks :** ime travel also makes it easy to do rollbacks in case of bad writes. Due to a pre‐ vious error, it may be necessary to rollback to a previous version of the table before continuing forward with data processing.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1MzA3ODI4NywtMTM4NzE5Nzk5MywxNT
+eyJoaXN0b3J5IjpbLTU2OTEyMDYzMiwtMTM4NzE5Nzk5MywxNT
 g3Mjk5OTAyLC03NTkyMzE3NzgsOTYxMTU4Njc0LC0xNzM1Mjcy
 NzIzLC0xNDEyMjE2MTAsMTExODczNDkxLDE5NjY1MTY3NjksOD
 UxMzU3MTAyLC0xNTU3ODMxNjY5LC0xMjE1Njk0MjEzLC0xNDMx
