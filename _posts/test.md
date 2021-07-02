@@ -49,13 +49,13 @@ DeltaTable.forPath("/FileStore/tables/deltaTimeTravel").delete("count == 2")
 display(spark.read.json("/FileStore/tables/deltaTimeTravel/_delta_log/00000000000000000002.json").select("remove.path").where("remove is not null"))
 ```
 For the delete query we used DeltaTable API for simple delete the data from the Detla table. The below results shows the deleted files in the transaction log (Query `select("remove.path").where("removeis not null"))`)
-
+![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep5_tt5.JPG?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTYxMTU4Njc0LC0xNzM1MjcyNzIzLC0xND
-EyMjE2MTAsMTExODczNDkxLDE5NjY1MTY3NjksODUxMzU3MTAy
-LC0xNTU3ODMxNjY5LC0xMjE1Njk0MjEzLC0xNDMxMTAzMjgyLC
-0xNzIwNDMwMzkyLC0yMDg4NzQ2NjEyLC0xNTc0NjI4NjIxLC03
-NjY0NTAxNjQsODY1NTY3NjYyLDUyMzIxMjc0NywtMTgwMDUyNz
-I5MiwtMTI5MDQyMDk3NiwtMTg4MTM1ODAzNyw4NTcwOTkyMjAs
-LTE4NDA5MTI2NThdfQ==
+eyJoaXN0b3J5IjpbLTcyOTM5OTkwMyw5NjExNTg2NzQsLTE3Mz
+UyNzI3MjMsLTE0MTIyMTYxMCwxMTE4NzM0OTEsMTk2NjUxNjc2
+OSw4NTEzNTcxMDIsLTE1NTc4MzE2NjksLTEyMTU2OTQyMTMsLT
+E0MzExMDMyODIsLTE3MjA0MzAzOTIsLTIwODg3NDY2MTIsLTE1
+NzQ2Mjg2MjEsLTc2NjQ1MDE2NCw4NjU1Njc2NjIsNTIzMjEyNz
+Q3LC0xODAwNTI3MjkyLC0xMjkwNDIwOTc2LC0xODgxMzU4MDM3
+LDg1NzA5OTIyMF19
 -->
