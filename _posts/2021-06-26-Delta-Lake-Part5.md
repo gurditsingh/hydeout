@@ -34,7 +34,11 @@ Delta lake cater the problem and provide a solution to go back in time and solve
 	spark.read.format("delta").load(target_path)
 	```
 	```scala
-	display(spark.read.json("/FileStore/tables/deltaTimeTravel/_delta_log/00000000000000000000.json").select("add.path").where("add is not null"))
+	display(
+	spark.read.json("/FileStore/tables/deltaTimeTravel/_delta_log/00000000000000000000.json")
+	.select("add.path")
+	.where("add is not null")
+	)
 	```
 	The below results shows the files which are added during the initial load in the transaction log (Query `select("add.path").where("add is not null"))`)
 		![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep5_tt3.JPG?raw=true)
@@ -50,7 +54,11 @@ Delta lake cater the problem and provide a solution to go back in time and solve
 	.write.format("delta").mode("append").save(target_path)
 	```
 	```scala
-	display(spark.read.json("/FileStore/tables/deltaTimeTravel/_delta_log/00000000000000000001.json").select("add.path").where("add is not null"))
+	display(
+	spark.read.json("/FileStore/tables/deltaTimeTravel/_delta_log/00000000000000000001.json")
+	.select("add.path")
+	.where("add is not null")
+	)
 	```
 	In the append mode sample files are added by the Spark range function. The below results shows the files in the transaction log (Query `select("add.path").where("add is not null"))`)
 
@@ -64,9 +72,13 @@ Delta lake cater the problem and provide a solution to go back in time and solve
 	DeltaTable.forPath("/FileStore/tables/deltaTimeTravel").delete("count == 2")
 	```
 	```scala
-	display(spark.read.json("/FileStore/tables/deltaTimeTravel/_delta_log/00000000000000000002.json").select("remove.path").where("remove is not null"))
+	display(
+	spark.read.json("/FileStore/tables/deltaTimeTravel/_delta_log/00000000000000000002.json")
+	.select("remove.path")
+	.where("remove is not null")
+	)
 	```
-	For the delete query we used DeltaTable API for simple delete the data from the Detla table. The below results shows the deleted files in the transaction log (Query `select("remove.path").where("removeis not null"))`)
+	For the delete query we used DeltaTable API for simple delete (it will not physically remove the files, it just marked as deleted in transaction log metadata) the data from the Detla table. The below results shows the deleted files in the transaction log (Query `select("remove.path").where("removeis not null"))`)
 	![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep5_tt5.JPG?raw=true)
 
 
@@ -86,7 +98,9 @@ You can provide the timestamp or date string as an option to the DataFrame reade
  - First version of Delta table (Initial load)
 
 	```scala
-	spark.read.format("delta").option("timestampAsOf","2021-07-02T10:26:40.000+0000").load(target_path).count()
+	spark.read.format("delta")
+	.option("timestampAsOf","2021-07-02T10:26:40.000+0000")
+	.load(target_path).count()
 
 	res29: Long = 52
 	```
@@ -94,7 +108,9 @@ You can provide the timestamp or date string as an option to the DataFrame reade
  - Second version of Delta table (Append)
 
 	```scala
-	spark.read.format("delta").option("timestampAsOf","2021-07-02T10:52:52.000+0000").load(target_path).count()
+	spark.read.format("delta")
+	.option("timestampAsOf","2021-07-02T10:52:52.000+0000")
+	.load(target_path).count()
 
 	res29: Long = 57
 	```
@@ -102,7 +118,9 @@ You can provide the timestamp or date string as an option to the DataFrame reade
  - Third version of Delta table (Delete)
 
 	```scala
-	spark.read.format("delta").option("timestampAsOf","2021-07-02T11:34:35.000+0000").load(target_path).count()
+	spark.read.format("delta")
+	.option("timestampAsOf","2021-07-02T11:34:35.000+0000")
+	.load(target_path).count()
 
 	res29: Long = 52
 	```
@@ -115,7 +133,9 @@ You can provide the version number string as an option to the DataFrame reader. 
  - First version of Delta table (Initial load)
 
 	```scala
-	spark.read.format("delta").option("versionAsOf","0").load(target_path).count()
+	spark.read.format("delta")
+	.option("versionAsOf","0")
+	.load(target_path).count()
 
 	res29: Long = 52
 	```
@@ -123,7 +143,9 @@ You can provide the version number string as an option to the DataFrame reader. 
  - Second version of Delta table (Append)
 
 	```scala
-	spark.read.format("delta").option("versionAsOf","1").load(target_path).count()
+	spark.read.format("delta")
+	.option("versionAsOf","1")
+	.load(target_path).count()
 
 	res29: Long = 57
 	```
@@ -131,7 +153,9 @@ You can provide the version number string as an option to the DataFrame reader. 
  - Third version of Delta table (Delete)
 
 	```scala
-	spark.read.format("delta").option("versionAsOf","2").load(target_path).count()
+	spark.read.format("delta")
+	.option("versionAsOf","2")
+	.load(target_path).count()
 
 	res29: Long = 52
 	```
