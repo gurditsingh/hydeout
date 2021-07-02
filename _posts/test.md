@@ -55,17 +55,22 @@ Delta lake cater the problem and provide a solution to go back in time and solve
 
 ## Working with Time Travel using 2 approaches
 Every Operation in Delta table is automatically versioned and we can access any version of data. This allows to travel back to a different version of the delta table. Lets first see the history of the Delta table.
+```scala
+import io.delta.tables.DeltaTable
+
+display(DeltaTable.forPath("/FileStore/tables/deltaTimeTravel").history())
+```
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep5_tt7.JPG?raw=true)
 
  ### 1. Using with Timestamp
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Njc0MDA0MTksMTU4NzI5OTkwMiwtNz
-U5MjMxNzc4LDk2MTE1ODY3NCwtMTczNTI3MjcyMywtMTQxMjIx
-NjEwLDExMTg3MzQ5MSwxOTY2NTE2NzY5LDg1MTM1NzEwMiwtMT
-U1NzgzMTY2OSwtMTIxNTY5NDIxMywtMTQzMTEwMzI4MiwtMTcy
-MDQzMDM5MiwtMjA4ODc0NjYxMiwtMTU3NDYyODYyMSwtNzY2ND
-UwMTY0LDg2NTU2NzY2Miw1MjMyMTI3NDcsLTE4MDA1MjcyOTIs
-LTEyOTA0MjA5NzZdfQ==
+eyJoaXN0b3J5IjpbMjEyNzU0NzM4NiwxNTg3Mjk5OTAyLC03NT
+kyMzE3NzgsOTYxMTU4Njc0LC0xNzM1MjcyNzIzLC0xNDEyMjE2
+MTAsMTExODczNDkxLDE5NjY1MTY3NjksODUxMzU3MTAyLC0xNT
+U3ODMxNjY5LC0xMjE1Njk0MjEzLC0xNDMxMTAzMjgyLC0xNzIw
+NDMwMzkyLC0yMDg4NzQ2NjEyLC0xNTc0NjI4NjIxLC03NjY0NT
+AxNjQsODY1NTY3NjYyLDUyMzIxMjc0NywtMTgwMDUyNzI5Miwt
+MTI5MDQyMDk3Nl19
 -->
