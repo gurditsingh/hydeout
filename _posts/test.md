@@ -64,9 +64,10 @@ display(DeltaTable.forPath("/FileStore/tables/deltaTimeTravel").history())
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep5_tt7.JPG?raw=true)
 
  ### 1. Using with Timestamp
-You can provide the timestamp or date string as an option to the DataFrame reader. User can see the history and select the appro
+You can provide the timestamp or date string as an option to the DataFrame reader. User can see the history and select the appropriated version of the Delta table.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3MzE1MDYxNCwxNTg3Mjk5OTAyLC03NT
+eyJoaXN0b3J5IjpbMTk0NDEyODgzOSwxNTg3Mjk5OTAyLC03NT
 kyMzE3NzgsOTYxMTU4Njc0LC0xNzM1MjcyNzIzLC0xNDEyMjE2
 MTAsMTExODczNDkxLDE5NjY1MTY3NjksODUxMzU3MTAyLC0xNT
 U3ODMxNjY5LC0xMjE1Njk0MjEzLC0xNDMxMTAzMjgyLC0xNzIw
