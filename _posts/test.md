@@ -53,9 +53,10 @@ Delta lake cater the problem and provide a solution to go back in time and solve
 	![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep5_tt5.JPG?raw=true)
 
 
+## Working with Time Travel
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExMzc1OTA4OCw5NjExNTg2NzQsLTE3Mz
+eyJoaXN0b3J5IjpbMTYyOTQzNDYwOCw5NjExNTg2NzQsLTE3Mz
 UyNzI3MjMsLTE0MTIyMTYxMCwxMTE4NzM0OTEsMTk2NjUxNjc2
 OSw4NTEzNTcxMDIsLTE1NTc4MzE2NjksLTEyMTU2OTQyMTMsLT
 E0MzExMDMyODIsLTE3MjA0MzAzOTIsLTIwODg3NDY2MTIsLTE1
