@@ -16,20 +16,20 @@ Delta lake cater the problem and provide a solution to go back in time and solve
 	spark.read.parquet(source_path).write.format("delta").save(target_path)
 	spark.read.format("delta").load(target_path)
 	```
-```scala
-display(spark.read.json("/FileStore/tables/deltaTimeTravel/_delta_log/00000000000000000000.json").select("add.path").where("add is not null"))
-```
+	```scala
+	display(spark.read.json("/FileStore/tables/deltaTimeTravel/_delta_log/00000000000000000000.json").select("add.path").where("add is not null"))
+	```
 
 	![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep5_tt3.JPG?raw=true)
 
  2. **Append More Data**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIwNzcwMzk4LDExMTg3MzQ5MSwxOTY2NT
-E2NzY5LDg1MTM1NzEwMiwtMTU1NzgzMTY2OSwtMTIxNTY5NDIx
-MywtMTQzMTEwMzI4MiwtMTcyMDQzMDM5MiwtMjA4ODc0NjYxMi
-wtMTU3NDYyODYyMSwtNzY2NDUwMTY0LDg2NTU2NzY2Miw1MjMy
-MTI3NDcsLTE4MDA1MjcyOTIsLTEyOTA0MjA5NzYsLTE4ODEzNT
-gwMzcsODU3MDk5MjIwLC0xODQwOTEyNjU4LDEzOTAyNzM0MDcs
-LTE0OTA3NjQ0NzVdfQ==
+eyJoaXN0b3J5IjpbLTE0MTIyMTYxMCwxMTE4NzM0OTEsMTk2Nj
+UxNjc2OSw4NTEzNTcxMDIsLTE1NTc4MzE2NjksLTEyMTU2OTQy
+MTMsLTE0MzExMDMyODIsLTE3MjA0MzAzOTIsLTIwODg3NDY2MT
+IsLTE1NzQ2Mjg2MjEsLTc2NjQ1MDE2NCw4NjU1Njc2NjIsNTIz
+MjEyNzQ3LC0xODAwNTI3MjkyLC0xMjkwNDIwOTc2LC0xODgxMz
+U4MDM3LDg1NzA5OTIyMCwtMTg0MDkxMjY1OCwxMzkwMjczNDA3
+LC0xNDkwNzY0NDc1XX0=
 -->
