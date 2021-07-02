@@ -35,9 +35,9 @@ spark.range(5)
 ```scala
 display(spark.read.json("/FileStore/tables/deltaTimeTravel/_delta_log/00000000000000000001.json").select("add.path").where("add is not null"))
 ```
-
+![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep5_tt4.JPG?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMzMxMjkwODEsLTE0MTIyMTYxMCwxMT
+eyJoaXN0b3J5IjpbLTE3MzUyNzI3MjMsLTE0MTIyMTYxMCwxMT
 E4NzM0OTEsMTk2NjUxNjc2OSw4NTEzNTcxMDIsLTE1NTc4MzE2
 NjksLTEyMTU2OTQyMTMsLTE0MzExMDMyODIsLTE3MjA0MzAzOT
 IsLTIwODg3NDY2MTIsLTE1NzQ2Mjg2MjEsLTc2NjQ1MDE2NCw4
