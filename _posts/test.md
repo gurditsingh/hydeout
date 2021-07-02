@@ -14,13 +14,15 @@ spark.read.parquet(source_path).write.format("delta").save(target_path)
 spark.read.format("delta").load(target_path)
 ```
 
+![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep5_tt1.JPG?raw=true)
 
+In the initial load Delta
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDcwMDQ0NjcwLDE5NjY1MTY3NjksODUxMz
-U3MTAyLC0xNTU3ODMxNjY5LC0xMjE1Njk0MjEzLC0xNDMxMTAz
-MjgyLC0xNzIwNDMwMzkyLC0yMDg4NzQ2NjEyLC0xNTc0NjI4Nj
-IxLC03NjY0NTAxNjQsODY1NTY3NjYyLDUyMzIxMjc0NywtMTgw
-MDUyNzI5MiwtMTI5MDQyMDk3NiwtMTg4MTM1ODAzNyw4NTcwOT
-kyMjAsLTE4NDA5MTI2NTgsMTM5MDI3MzQwNywtMTQ5MDc2NDQ3
-NSwtNDQ0ODc1NTgzXX0=
+eyJoaXN0b3J5IjpbLTExNzc4NjM0NjEsMTk2NjUxNjc2OSw4NT
+EzNTcxMDIsLTE1NTc4MzE2NjksLTEyMTU2OTQyMTMsLTE0MzEx
+MDMyODIsLTE3MjA0MzAzOTIsLTIwODg3NDY2MTIsLTE1NzQ2Mj
+g2MjEsLTc2NjQ1MDE2NCw4NjU1Njc2NjIsNTIzMjEyNzQ3LC0x
+ODAwNTI3MjkyLC0xMjkwNDIwOTc2LC0xODgxMzU4MDM3LDg1Nz
+A5OTIyMCwtMTg0MDkxMjY1OCwxMzkwMjczNDA3LC0xNDkwNzY0
+NDc1LC00NDQ4NzU1ODNdfQ==
 -->
