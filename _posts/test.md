@@ -121,14 +121,16 @@ You can provide the version number string as an option to the DataFrame reader. 
 
 ## Time Travel Use Cases
 
- - Governes and Auditing :
+ - **Governance and Auditing :**  Time Travel offers 
+ 
+ime travel, offers a verifiable data lineage that is useful for governance, audit and compliance purposes. As the definitive record of every change ever made to a table, you can trace the origin of an inadvertent change or a bug in a pipeline back to the exact action that caused it. If your GDPR pipeline job had a bug that accidentally deleted user information, you can fix the pipeline. Retention and vacuum allows you to act on Data subject requests well within the timeframe.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3MTk1Nzk2OCwtMTM4NzE5Nzk5MywxNT
-g3Mjk5OTAyLC03NTkyMzE3NzgsOTYxMTU4Njc0LC0xNzM1Mjcy
-NzIzLC0xNDEyMjE2MTAsMTExODczNDkxLDE5NjY1MTY3NjksOD
-UxMzU3MTAyLC0xNTU3ODMxNjY5LC0xMjE1Njk0MjEzLC0xNDMx
-MTAzMjgyLC0xNzIwNDMwMzkyLC0yMDg4NzQ2NjEyLC0xNTc0Nj
-I4NjIxLC03NjY0NTAxNjQsODY1NTY3NjYyLDUyMzIxMjc0Nywt
-MTgwMDUyNzI5Ml19
+eyJoaXN0b3J5IjpbLTEzNTI3MDU4MTgsLTEzODcxOTc5OTMsMT
+U4NzI5OTkwMiwtNzU5MjMxNzc4LDk2MTE1ODY3NCwtMTczNTI3
+MjcyMywtMTQxMjIxNjEwLDExMTg3MzQ5MSwxOTY2NTE2NzY5LD
+g1MTM1NzEwMiwtMTU1NzgzMTY2OSwtMTIxNTY5NDIxMywtMTQz
+MTEwMzI4MiwtMTcyMDQzMDM5MiwtMjA4ODc0NjYxMiwtMTU3ND
+YyODYyMSwtNzY2NDUwMTY0LDg2NTU2NzY2Miw1MjMyMTI3NDcs
+LTE4MDA1MjcyOTJdfQ==
 -->
