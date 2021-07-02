@@ -126,13 +126,13 @@ You can provide the version number string as an option to the DataFrame reader. 
  - **Rollbacks :** Time travel also makes it easy to do rollbacks. In case of bad data enters into the data lake using external sources. User can easily rollback to a previous version of the Delta table and fix the issue.
  - **Reproduce reports & experiments :** Time travel also helps to reproduce the experiments. suppose the source data added or modified by upstream pipelines without knowing anyone. These data changes create struggle for data scientist to reproduce their experiments. by using time travel data scientist can reproduce the experiments by different versions.
 
-In time travel 
+Delta lake offers time travel by using that user can move forward and backward in the delta table
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU4Njc1MTc1OSwtNDA0OTAzMjQxLDE2ND
-MzMTY1MSwtMTM4NzE5Nzk5MywxNTg3Mjk5OTAyLC03NTkyMzE3
-NzgsOTYxMTU4Njc0LC0xNzM1MjcyNzIzLC0xNDEyMjE2MTAsMT
-ExODczNDkxLDE5NjY1MTY3NjksODUxMzU3MTAyLC0xNTU3ODMx
-NjY5LC0xMjE1Njk0MjEzLC0xNDMxMTAzMjgyLC0xNzIwNDMwMz
-kyLC0yMDg4NzQ2NjEyLC0xNTc0NjI4NjIxLC03NjY0NTAxNjQs
-ODY1NTY3NjYyXX0=
+eyJoaXN0b3J5IjpbNTczNzM4NDg5LC00MDQ5MDMyNDEsMTY0Mz
+MxNjUxLC0xMzg3MTk3OTkzLDE1ODcyOTk5MDIsLTc1OTIzMTc3
+OCw5NjExNTg2NzQsLTE3MzUyNzI3MjMsLTE0MTIyMTYxMCwxMT
+E4NzM0OTEsMTk2NjUxNjc2OSw4NTEzNTcxMDIsLTE1NTc4MzE2
+NjksLTEyMTU2OTQyMTMsLTE0MzExMDMyODIsLTE3MjA0MzAzOT
+IsLTIwODg3NDY2MTIsLTE1NzQ2Mjg2MjEsLTc2NjQ1MDE2NCw4
+NjU1Njc2NjJdfQ==
 -->
