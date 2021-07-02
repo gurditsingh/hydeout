@@ -63,37 +63,42 @@ display(DeltaTable.forPath("/FileStore/tables/deltaTimeTravel").history())
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep5_tt7.JPG?raw=true)
 
- ### 1. Using with Timestamp
+### 1. Using with Timestamp
 You can provide the timestamp or date string as an option to the DataFrame reader. User can see the history and select the appropriated version of the Delta table.
 
-First version of Delta table (Initial load)
-```scala
-spark.read.format("delta").option("timestampAsOf","2021-07-02T10:26:40.000+0000").load(target_path).count()
+ - First version of Delta table (Initial load)
 
-res29: Long = 52
-```
-Second version of Delta table (Append)
-```scala
-spark.read.format("delta").option("timestampAsOf","2021-07-02T10:52:52.000+0000").load(target_path).count()
+	```scala
+	spark.read.format("delta").option("timestampAsOf","2021-07-02T10:26:40.000+0000").load(target_path).count()
 
-res29: Long = 57
-```
-Third version of Delta table (Delete)
-```scala
-spark.read.format("delta").option("timestampAsOf","2021-07-02T11:34:35.000+0000").load(target_path).count()
+	res29: Long = 52
+	```
 
-res29: Long = 52
-```
+ - Second version of Delta table (Append)
+
+	```scala
+	spark.read.format("delta").option("timestampAsOf","2021-07-02T10:52:52.000+0000").load(target_path).count()
+
+	res29: Long = 57
+	```
+
+ - Third version of Delta table (Delete)
+
+	```scala
+	spark.read.format("delta").option("timestampAsOf","2021-07-02T11:34:35.000+0000").load(target_path).count()
+
+	res29: Long = 52
+	```
 
 
-
-
- ### 2. Using with Version Number
+### 2. Using with Version Number
+ 
 You can provide the version number string as an option to the DataFrame reader. User can see the history and select the appropriated version of the Delta table.
 
-First version of Delta table (Initial load)
+ - First version of Delta table (Initial load)
+
 ```scala
-spark.read.format("delta").option("versionAsOf","1").load(target_path).count()
+spark.read.format("delta").option("versionAsOf","0").load(target_path).count()
 
 res29: Long = 52
 ```
@@ -105,16 +110,16 @@ res29: Long = 57
 ```
 Third version of Delta table (Delete)
 ```scala
-spark.read.format("delta").option("versionAsOf","1").load(target_path).count()
+spark.read.format("delta").option("versionAsOf","2").load(target_path).count()
 
 res29: Long = 52
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjUzODc0OTAzLDE1ODcyOTk5MDIsLTc1OT
-IzMTc3OCw5NjExNTg2NzQsLTE3MzUyNzI3MjMsLTE0MTIyMTYx
-MCwxMTE4NzM0OTEsMTk2NjUxNjc2OSw4NTEzNTcxMDIsLTE1NT
-c4MzE2NjksLTEyMTU2OTQyMTMsLTE0MzExMDMyODIsLTE3MjA0
-MzAzOTIsLTIwODg3NDY2MTIsLTE1NzQ2Mjg2MjEsLTc2NjQ1MD
-E2NCw4NjU1Njc2NjIsNTIzMjEyNzQ3LC0xODAwNTI3MjkyLC0x
-MjkwNDIwOTc2XX0=
+eyJoaXN0b3J5IjpbLTQyMTYxMjI5NywxNTg3Mjk5OTAyLC03NT
+kyMzE3NzgsOTYxMTU4Njc0LC0xNzM1MjcyNzIzLC0xNDEyMjE2
+MTAsMTExODczNDkxLDE5NjY1MTY3NjksODUxMzU3MTAyLC0xNT
+U3ODMxNjY5LC0xMjE1Njk0MjEzLC0xNDMxMTAzMjgyLC0xNzIw
+NDMwMzkyLC0yMDg4NzQ2NjEyLC0xNTc0NjI4NjIxLC03NjY0NT
+AxNjQsODY1NTY3NjYyLDUyMzIxMjc0NywtMTgwMDUyNzI5Miwt
+MTI5MDQyMDk3Nl19
 -->
