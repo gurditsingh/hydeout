@@ -19,7 +19,7 @@ Delta lake cater the problem and provide a solution to go back in time and solve
 	```scala
 	display(spark.read.json("/FileStore/tables/deltaTimeTravel/_delta_log/00000000000000000000.json").select("add.path").where("add is not null"))
 	```
-The below results shows the files which are added during the initial load in the transaction log (Query `select("add.path").where("add is not null"))`).
+The below results shows the files which are added during the initial load in the transaction log (Query `select("add.path").where("add is not null"))`)
 	![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep5_tt3.JPG?raw=true)
 
  2. **Append More Data**
@@ -35,6 +35,8 @@ spark.range(5)
 ```scala
 display(spark.read.json("/FileStore/tables/deltaTimeTravel/_delta_log/00000000000000000001.json").select("add.path").where("add is not null"))
 ```
+The below results shows the files which are added by range in the transaction log (Query `select("add.path").where("add is not null"))`)
+
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep5_tt4.JPG?raw=true)
 
 
@@ -49,7 +51,7 @@ display(spark.read.json("/FileStore/tables/deltaTimeTravel/_delta_log/0000000000
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4MTQwNTk1MywtMTczNTI3MjcyMywtMT
+eyJoaXN0b3J5IjpbLTQ2MjczODU4NiwtMTczNTI3MjcyMywtMT
 QxMjIxNjEwLDExMTg3MzQ5MSwxOTY2NTE2NzY5LDg1MTM1NzEw
 MiwtMTU1NzgzMTY2OSwtMTIxNTY5NDIxMywtMTQzMTEwMzI4Mi
 wtMTcyMDQzMDM5MiwtMjA4ODc0NjYxMiwtMTU3NDYyODYyMSwt
