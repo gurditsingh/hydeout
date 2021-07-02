@@ -32,12 +32,16 @@ spark.range(5)
 .select("state","count")
 .write.format("delta").mode("append").save(target_path)
 ```
+```scala
+display(spark.read.json("/FileStore/tables/deltaTimeTravel/_delta_log/00000000000000000001.json").select("add.path").where("add is not null"))
+```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzIzMzY4MzkxLC0xNDEyMjE2MTAsMTExOD
-czNDkxLDE5NjY1MTY3NjksODUxMzU3MTAyLC0xNTU3ODMxNjY5
-LC0xMjE1Njk0MjEzLC0xNDMxMTAzMjgyLC0xNzIwNDMwMzkyLC
-0yMDg4NzQ2NjEyLC0xNTc0NjI4NjIxLC03NjY0NTAxNjQsODY1
-NTY3NjYyLDUyMzIxMjc0NywtMTgwMDUyNzI5MiwtMTI5MDQyMD
-k3NiwtMTg4MTM1ODAzNyw4NTcwOTkyMjAsLTE4NDA5MTI2NTgs
-MTM5MDI3MzQwN119
+eyJoaXN0b3J5IjpbLTIwMzMxMjkwODEsLTE0MTIyMTYxMCwxMT
+E4NzM0OTEsMTk2NjUxNjc2OSw4NTEzNTcxMDIsLTE1NTc4MzE2
+NjksLTEyMTU2OTQyMTMsLTE0MzExMDMyODIsLTE3MjA0MzAzOT
+IsLTIwODg3NDY2MTIsLTE1NzQ2Mjg2MjEsLTc2NjQ1MDE2NCw4
+NjU1Njc2NjIsNTIzMjEyNzQ3LC0xODAwNTI3MjkyLC0xMjkwND
+IwOTc2LC0xODgxMzU4MDM3LDg1NzA5OTIyMCwtMTg0MDkxMjY1
+OCwxMzkwMjczNDA3XX0=
 -->
