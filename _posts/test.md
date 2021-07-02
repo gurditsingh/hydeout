@@ -19,39 +19,43 @@ Delta lake cater the problem and provide a solution to go back in time and solve
 	```scala
 	display(spark.read.json("/FileStore/tables/deltaTimeTravel/_delta_log/00000000000000000000.json").select("add.path").where("add is not null"))
 	```
-The below results shows the files which are added during the initial load in the transaction log (Query `select("add.path").where("add is not null"))`)
-	![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep5_tt3.JPG?raw=true)
+	The below results shows the files which are added during the initial load in the transaction log (Query `select("add.path").where("add is not null"))`)
+		![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep5_tt3.JPG?raw=true)
 
- 2. **Append More Data**
-```scala
-import org.apache.spark.sql.functions._
+ 2. **Append Data**
+	```scala
+	import org.apache.spark.sql.functions._
 
-spark.range(5)
-.withColumn("state",lit("N/A"))
-.withColumn("count",lit(2))
-.select("state","count")
-.write.format("delta").mode("append").save(target_path)
-```
-```scala
-display(spark.read.json("/FileStore/tables/deltaTimeTravel/_delta_log/00000000000000000001.json").select("add.path").where("add is not null"))
-```
-In the append mode sample files are added by the Spark range function. The below results shows the files in the transaction log (Query `select("add.path").where("add is not null"))`)
+	spark.range(5)
+	.withColumn("state",lit("N/A"))
+	.withColumn("count",lit(2))
+	.select("state","count")
+	.write.format("delta").mode("append").save(target_path)
+	```
+	```scala
+	display(spark.read.json("/FileStore/tables/deltaTimeTravel/_delta_log/00000000000000000001.json").select("add.path").where("add is not null"))
+	```
+	In the append mode sample files are added by the Spark range function. The below results shows the files in the transaction log (Query `select("add.path").where("add is not null"))`)
 
-![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep5_tt4.JPG?raw=true)
+	![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep5_tt4.JPG?raw=true)
+
+ 3. **Delete Data**
+
+	```scala
+	import io.delta.tables.DeltaTable
+
+	DeltaTable.forPath("/FileStore/tables/deltaTimeTravel").delete("count == 2")
+	```
+	```scala
+	display(spark.read.json("/FileStore/tables/deltaTimeTravel/_delta_log/00000000000000000002.json").select("remove.path").where("remove is not null"))
+	```
+	For the delete query we used DeltaTable API for simple delete the data from the Detla table. The below results shows the deleted files in the transaction log (Query `select("remove.path").where("removeis not null"))`)
+	![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep5_tt5.JPG?raw=true)
 
 
-```scala
-import io.delta.tables.DeltaTable
 
-DeltaTable.forPath("/FileStore/tables/deltaTimeTravel").delete("count == 2")
-```
-```scala
-display(spark.read.json("/FileStore/tables/deltaTimeTravel/_delta_log/00000000000000000002.json").select("remove.path").where("remove is not null"))
-```
-For the delete query we used DeltaTable API for simple delete the data from the Detla table. The below results shows the deleted files in the transaction log (Query `select("remove.path").where("removeis not null"))`)
-![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep5_tt5.JPG?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyOTM5OTkwMyw5NjExNTg2NzQsLTE3Mz
+eyJoaXN0b3J5IjpbMjExMzc1OTA4OCw5NjExNTg2NzQsLTE3Mz
 UyNzI3MjMsLTE0MTIyMTYxMCwxMTE4NzM0OTEsMTk2NjUxNjc2
 OSw4NTEzNTcxMDIsLTE1NTc4MzE2NjksLTEyMTU2OTQyMTMsLT
 E0MzExMDMyODIsLTE3MjA0MzAzOTIsLTIwODg3NDY2MTIsLTE1
