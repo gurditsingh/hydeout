@@ -19,7 +19,7 @@ Delta lake cater the problem and provide a solution to go back in time and solve
 	```scala
 	display(spark.read.json("/FileStore/tables/deltaTimeTravel/_delta_log/00000000000000000000.json").select("add.path").where("add is not null"))
 	```
-
+In the below res
 	![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep5_tt3.JPG?raw=true)
 
  2. **Append More Data**
@@ -36,12 +36,24 @@ spark.range(5)
 display(spark.read.json("/FileStore/tables/deltaTimeTravel/_delta_log/00000000000000000001.json").select("add.path").where("add is not null"))
 ```
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep5_tt4.JPG?raw=true)
+
+
+```scala
+import io.delta.tables.DeltaTable
+
+DeltaTable.forPath("/FileStore/tables/deltaTimeTravel").delete("count == 2")
+```
+```scala
+display(spark.read.json("/FileStore/tables/deltaTimeTravel/_delta_log/00000000000000000002.json").select("remove.path").where("remove is not null"))
+```
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzUyNzI3MjMsLTE0MTIyMTYxMCwxMT
-E4NzM0OTEsMTk2NjUxNjc2OSw4NTEzNTcxMDIsLTE1NTc4MzE2
-NjksLTEyMTU2OTQyMTMsLTE0MzExMDMyODIsLTE3MjA0MzAzOT
-IsLTIwODg3NDY2MTIsLTE1NzQ2Mjg2MjEsLTc2NjQ1MDE2NCw4
-NjU1Njc2NjIsNTIzMjEyNzQ3LC0xODAwNTI3MjkyLC0xMjkwND
-IwOTc2LC0xODgxMzU4MDM3LDg1NzA5OTIyMCwtMTg0MDkxMjY1
-OCwxMzkwMjczNDA3XX0=
+eyJoaXN0b3J5IjpbMTE5ODg1MDQ1OSwtMTczNTI3MjcyMywtMT
+QxMjIxNjEwLDExMTg3MzQ5MSwxOTY2NTE2NzY5LDg1MTM1NzEw
+MiwtMTU1NzgzMTY2OSwtMTIxNTY5NDIxMywtMTQzMTEwMzI4Mi
+wtMTcyMDQzMDM5MiwtMjA4ODc0NjYxMiwtMTU3NDYyODYyMSwt
+NzY2NDUwMTY0LDg2NTU2NzY2Miw1MjMyMTI3NDcsLTE4MDA1Mj
+cyOTIsLTEyOTA0MjA5NzYsLTE4ODEzNTgwMzcsODU3MDk5MjIw
+LC0xODQwOTEyNjU4XX0=
 -->
