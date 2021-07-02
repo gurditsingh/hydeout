@@ -17,16 +17,16 @@ Delta lake cater the problem and provide a solution to go back in time and solve
 	spark.read.format("delta").load(target_path)
 	```
 
-	![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep5_tt1.JPG?raw=true)
+	![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep5_tt2.JPG?raw=true)
 
  2. **Append More Data**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExODczNDkxLDE5NjY1MTY3NjksODUxMz
-U3MTAyLC0xNTU3ODMxNjY5LC0xMjE1Njk0MjEzLC0xNDMxMTAz
-MjgyLC0xNzIwNDMwMzkyLC0yMDg4NzQ2NjEyLC0xNTc0NjI4Nj
-IxLC03NjY0NTAxNjQsODY1NTY3NjYyLDUyMzIxMjc0NywtMTgw
-MDUyNzI5MiwtMTI5MDQyMDk3NiwtMTg4MTM1ODAzNyw4NTcwOT
-kyMjAsLTE4NDA5MTI2NTgsMTM5MDI3MzQwNywtMTQ5MDc2NDQ3
-NSwtNDQ0ODc1NTgzXX0=
+eyJoaXN0b3J5IjpbMTg5MzM3MzQyNiwxMTE4NzM0OTEsMTk2Nj
+UxNjc2OSw4NTEzNTcxMDIsLTE1NTc4MzE2NjksLTEyMTU2OTQy
+MTMsLTE0MzExMDMyODIsLTE3MjA0MzAzOTIsLTIwODg3NDY2MT
+IsLTE1NzQ2Mjg2MjEsLTc2NjQ1MDE2NCw4NjU1Njc2NjIsNTIz
+MjEyNzQ3LC0xODAwNTI3MjkyLC0xMjkwNDIwOTc2LC0xODgxMz
+U4MDM3LDg1NzA5OTIyMCwtMTg0MDkxMjY1OCwxMzkwMjczNDA3
+LC0xNDkwNzY0NDc1XX0=
 -->
