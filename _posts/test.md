@@ -124,14 +124,14 @@ You can provide the version number string as an option to the DataFrame reader. 
  - **Governance and Auditing :**  Time Travel offers data quality, standards and metrics by governance. It also offers auditing of records of every change  made to a Delta table. It also offers Optimization, Retention and vacuum of data.
  - **Debug :** By using time travel user can easily debug the data issues. Like troubleshoot the ETL pipeline issues, data quality issues which breaks the data pipeline. By using time travel user can explore all versions of Delta table and find out which version causing the issue.
  - **Rollbacks :** Time travel also makes it easy to do rollbacks. In case of bad data enters into the data lake using external sources. User can easily rollback to a previous version of the Delta table and fix the issue.
- - **Reproduce reports & experiments :** 
+ - **Reproduce reports & experiments :** Time travel also helps to reproduce the experiments. suppose the source data modified by upstream pipelines. Lot of times, they are caught unaware by such upstream data changes and hence struggle to reproduce their experiments.
 Time travel also plays an important role in machine learning and data science. Reproducibility of models and experiments is a key consideration for data scien‐ tists, because they often create 100s of models before they put one into produc‐ tion, and in that time-consuming process would like to go back to earlier models.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0MzMxNjUxLC0xMzg3MTk3OTkzLDE1OD
-cyOTk5MDIsLTc1OTIzMTc3OCw5NjExNTg2NzQsLTE3MzUyNzI3
-MjMsLTE0MTIyMTYxMCwxMTE4NzM0OTEsMTk2NjUxNjc2OSw4NT
-EzNTcxMDIsLTE1NTc4MzE2NjksLTEyMTU2OTQyMTMsLTE0MzEx
-MDMyODIsLTE3MjA0MzAzOTIsLTIwODg3NDY2MTIsLTE1NzQ2Mj
-g2MjEsLTc2NjQ1MDE2NCw4NjU1Njc2NjIsNTIzMjEyNzQ3LC0x
-ODAwNTI3MjkyXX0=
+eyJoaXN0b3J5IjpbMTY2MzA0OTU1MSwxNjQzMzE2NTEsLTEzOD
+cxOTc5OTMsMTU4NzI5OTkwMiwtNzU5MjMxNzc4LDk2MTE1ODY3
+NCwtMTczNTI3MjcyMywtMTQxMjIxNjEwLDExMTg3MzQ5MSwxOT
+Y2NTE2NzY5LDg1MTM1NzEwMiwtMTU1NzgzMTY2OSwtMTIxNTY5
+NDIxMywtMTQzMTEwMzI4MiwtMTcyMDQzMDM5MiwtMjA4ODc0Nj
+YxMiwtMTU3NDYyODYyMSwtNzY2NDUwMTY0LDg2NTU2NzY2Miw1
+MjMyMTI3NDddfQ==
 -->
