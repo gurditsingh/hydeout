@@ -66,15 +66,16 @@ display(DeltaTable.forPath("/FileStore/tables/deltaTimeTravel").history())
  ### 1. Using with Timestamp
 You can provide the timestamp or date string as an option to the DataFrame reader. User can see the history and select the appropriated version of the Delta table.
 
-First Version of Delta table
+First Version of Delta table (Initial load)
 ```scala
 spark.read.format("delta").option("timestampAsOf","2021-07-02T10:26:40.000+0000").load(target_path).count()
 
 res29: Long = 52
 ```
+Second Version of Delta table (Append)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0ODY2NTY3MywxNTg3Mjk5OTAyLC03NT
+eyJoaXN0b3J5IjpbLTIwNjA2NTQ2OCwxNTg3Mjk5OTAyLC03NT
 kyMzE3NzgsOTYxMTU4Njc0LC0xNzM1MjcyNzIzLC0xNDEyMjE2
 MTAsMTExODczNDkxLDE5NjY1MTY3NjksODUxMzU3MTAyLC0xNT
 U3ODMxNjY5LC0xMjE1Njk0MjEzLC0xNDMxMTAzMjgyLC0xNzIw
