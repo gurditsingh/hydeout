@@ -23,13 +23,21 @@ Delta lake cater the problem and provide a solution to go back in time and solve
 	![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep5_tt3.JPG?raw=true)
 
  2. **Append More Data**
+```scala
+import org.apache.spark.sql.functions._
 
+spark.range(5)
+.withColumn("state",lit("N/A"))
+.withColumn("count",lit(2))
+.select("state","count")
+.write.format("delta").mode("append").save(target_path)
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTIyMTYxMCwxMTE4NzM0OTEsMTk2Nj
-UxNjc2OSw4NTEzNTcxMDIsLTE1NTc4MzE2NjksLTEyMTU2OTQy
-MTMsLTE0MzExMDMyODIsLTE3MjA0MzAzOTIsLTIwODg3NDY2MT
-IsLTE1NzQ2Mjg2MjEsLTc2NjQ1MDE2NCw4NjU1Njc2NjIsNTIz
-MjEyNzQ3LC0xODAwNTI3MjkyLC0xMjkwNDIwOTc2LC0xODgxMz
-U4MDM3LDg1NzA5OTIyMCwtMTg0MDkxMjY1OCwxMzkwMjczNDA3
-LC0xNDkwNzY0NDc1XX0=
+eyJoaXN0b3J5IjpbNzIzMzY4MzkxLC0xNDEyMjE2MTAsMTExOD
+czNDkxLDE5NjY1MTY3NjksODUxMzU3MTAyLC0xNTU3ODMxNjY5
+LC0xMjE1Njk0MjEzLC0xNDMxMTAzMjgyLC0xNzIwNDMwMzkyLC
+0yMDg4NzQ2NjEyLC0xNTc0NjI4NjIxLC03NjY0NTAxNjQsODY1
+NTY3NjYyLDUyMzIxMjc0NywtMTgwMDUyNzI5MiwtMTI5MDQyMD
+k3NiwtMTg4MTM1ODAzNyw4NTcwOTkyMjAsLTE4NDA5MTI2NTgs
+MTM5MDI3MzQwN119
 -->
