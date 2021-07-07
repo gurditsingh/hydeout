@@ -9,7 +9,15 @@ Delta Lake solves this issue by enabling data analysts to easily query all the d
 DML refers to "Data Manipulation Language", a subset of SQL statements which deals with data manipulation. A transaction is a sequence of one or more SQL statements that can SELECT, INSERT, UPDATE, DELETE the data.
 
 ## Lets first create a Delta table
+```scala
+val source_path = "/FileStore/tables/testData/part_00000_67f679a1_1d91_4571_9d54_54ab84497267_c000_snappy.parquet"
+val target_path ="/FileStore/tables/deltaTimeTravel"
 
+spark.read.parquet(source_path).write.format("delta").save(target_path)
+spark.read.format("delta").load(target_path)
+```
+
+	
 
 ## Delta Lake : UPDATE
 
@@ -32,11 +40,11 @@ DML refers to "Data Manipulation Language", a subset of SQL statements which dea
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep5_t7.JPG?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNjA3NDA2ODUsMjgwMDczMzMxLDU1ND
-I0OTA1MiwtMTExNDg0Njg4NSw1NzM3Mzg0ODksLTQwNDkwMzI0
-MSwxNjQzMzE2NTEsLTEzODcxOTc5OTMsMTU4NzI5OTkwMiwtNz
-U5MjMxNzc4LDk2MTE1ODY3NCwtMTczNTI3MjcyMywtMTQxMjIx
-NjEwLDExMTg3MzQ5MSwxOTY2NTE2NzY5LDg1MTM1NzEwMiwtMT
-U1NzgzMTY2OSwtMTIxNTY5NDIxMywtMTQzMTEwMzI4MiwtMTcy
-MDQzMDM5Ml19
+eyJoaXN0b3J5IjpbNzAwMjMwOTY4LDI4MDA3MzMzMSw1NTQyND
+kwNTIsLTExMTQ4NDY4ODUsNTczNzM4NDg5LC00MDQ5MDMyNDEs
+MTY0MzMxNjUxLC0xMzg3MTk3OTkzLDE1ODcyOTk5MDIsLTc1OT
+IzMTc3OCw5NjExNTg2NzQsLTE3MzUyNzI3MjMsLTE0MTIyMTYx
+MCwxMTE4NzM0OTEsMTk2NjUxNjc2OSw4NTEzNTcxMDIsLTE1NT
+c4MzE2NjksLTEyMTU2OTQyMTMsLTE0MzExMDMyODIsLTE3MjA0
+MzAzOTJdfQ==
 -->
