@@ -18,34 +18,16 @@ spark.read.parquet(source_path).write.format("delta").save(target_path)
 spark.read.format("delta").load(target_path).createOrReplaceTempView("delta_dml_tbl")
 ```
 
-	
+![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep6_dml1.JPG?raw=true)
+
 
 ## Delta Lake : UPDATE
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep5_t7.JPG?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg3MTMzMDk0NCw3MDAyMzA5NjgsMjgwMD
-czMzMxLDU1NDI0OTA1MiwtMTExNDg0Njg4NSw1NzM3Mzg0ODks
-LTQwNDkwMzI0MSwxNjQzMzE2NTEsLTEzODcxOTc5OTMsMTU4Nz
-I5OTkwMiwtNzU5MjMxNzc4LDk2MTE1ODY3NCwtMTczNTI3Mjcy
-MywtMTQxMjIxNjEwLDExMTg3MzQ5MSwxOTY2NTE2NzY5LDg1MT
-M1NzEwMiwtMTU1NzgzMTY2OSwtMTIxNTY5NDIxMywtMTQzMTEw
-MzI4Ml19
+eyJoaXN0b3J5IjpbMjQzOTQzNDc0LDcwMDIzMDk2OCwyODAwNz
+MzMzEsNTU0MjQ5MDUyLC0xMTE0ODQ2ODg1LDU3MzczODQ4OSwt
+NDA0OTAzMjQxLDE2NDMzMTY1MSwtMTM4NzE5Nzk5MywxNTg3Mj
+k5OTAyLC03NTkyMzE3NzgsOTYxMTU4Njc0LC0xNzM1MjcyNzIz
+LC0xNDEyMjE2MTAsMTExODczNDkxLDE5NjY1MTY3NjksODUxMz
+U3MTAyLC0xNTU3ODMxNjY5LC0xMjE1Njk0MjEzLC0xNDMxMTAz
+MjgyXX0=
 -->
