@@ -10,11 +10,12 @@ DML refers to "Data Manipulation Language", a subset of SQL statements which dea
 
 ## Lets first create a Delta table
 ```scala
-val source_path = "/FileStore/tables/testData/part_00000_67f679a1_1d91_4571_9d54_54ab84497267_c000_snappy.parquet"
-val target_path ="/FileStore/tables/deltaTimeTravel"
+dbutils.fs.rm("/FileStore/tables/deltaDML",true)
+val source_path = "/FileStore/tables/data/test_data_snappy.parquet"
+val target_path ="/FileStore/tables/deltaDML"
 
 spark.read.parquet(source_path).write.format("delta").save(target_path)
-spark.read.format("delta").load(target_path)
+spark.read.format("delta").load(target_path).createOrReplaceTempView("delta_dml_tbl")
 ```
 
 	
@@ -40,11 +41,11 @@ spark.read.format("delta").load(target_path)
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep5_t7.JPG?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzAwMjMwOTY4LDI4MDA3MzMzMSw1NTQyND
-kwNTIsLTExMTQ4NDY4ODUsNTczNzM4NDg5LC00MDQ5MDMyNDEs
-MTY0MzMxNjUxLC0xMzg3MTk3OTkzLDE1ODcyOTk5MDIsLTc1OT
-IzMTc3OCw5NjExNTg2NzQsLTE3MzUyNzI3MjMsLTE0MTIyMTYx
-MCwxMTE4NzM0OTEsMTk2NjUxNjc2OSw4NTEzNTcxMDIsLTE1NT
-c4MzE2NjksLTEyMTU2OTQyMTMsLTE0MzExMDMyODIsLTE3MjA0
-MzAzOTJdfQ==
+eyJoaXN0b3J5IjpbMTg3MTMzMDk0NCw3MDAyMzA5NjgsMjgwMD
+czMzMxLDU1NDI0OTA1MiwtMTExNDg0Njg4NSw1NzM3Mzg0ODks
+LTQwNDkwMzI0MSwxNjQzMzE2NTEsLTEzODcxOTc5OTMsMTU4Nz
+I5OTkwMiwtNzU5MjMxNzc4LDk2MTE1ODY3NCwtMTczNTI3Mjcy
+MywtMTQxMjIxNjEwLDExMTg3MzQ5MSwxOTY2NTE2NzY5LDg1MT
+M1NzEwMiwtMTU1NzgzMTY2OSwtMTIxNTY5NDIxMywtMTQzMTEw
+MzI4Ml19
 -->
