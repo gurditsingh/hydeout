@@ -21,9 +21,11 @@ spark.read.format("delta").load(target_path).createOrReplaceTempView("delta_dml_
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep6_dml1.JPG?raw=true)
 
 
+
+
 ## Delta Lake : UPDATE
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjQzOTQzNDc0LDcwMDIzMDk2OCwyODAwNz
+eyJoaXN0b3J5IjpbMjc5MzIyMzgyLDcwMDIzMDk2OCwyODAwNz
 MzMzEsNTU0MjQ5MDUyLC0xMTE0ODQ2ODg1LDU3MzczODQ4OSwt
 NDA0OTAzMjQxLDE2NDMzMTY1MSwtMTM4NzE5Nzk5MywxNTg3Mj
 k5OTAyLC03NTkyMzE3NzgsOTYxMTU4Njc0LC0xNzM1MjcyNzIz
