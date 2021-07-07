@@ -1,5 +1,6 @@
 ## What is DML Operation
 
+DML refers to "Data Manipulation Language", a subset of SQL statements which deals with data manipulation. A **transaction** is a sequence of one or more SQL statements 
 
 **Data manipulation language (DML) statements** add, change, and delete Oracle Database table data. A **transaction** is a sequence of one or more SQL statements that Oracle Database treats as a unit: either all of the statements are performed, or none of them are.
 
@@ -28,11 +29,11 @@ DML refers to "Data Manipulation Language", a subset of SQL statements that modi
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep5_t7.JPG?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMDIzNjYzMjIsNTU0MjQ5MDUyLC0xMT
-E0ODQ2ODg1LDU3MzczODQ4OSwtNDA0OTAzMjQxLDE2NDMzMTY1
-MSwtMTM4NzE5Nzk5MywxNTg3Mjk5OTAyLC03NTkyMzE3NzgsOT
-YxMTU4Njc0LC0xNzM1MjcyNzIzLC0xNDEyMjE2MTAsMTExODcz
-NDkxLDE5NjY1MTY3NjksODUxMzU3MTAyLC0xNTU3ODMxNjY5LC
-0xMjE1Njk0MjEzLC0xNDMxMTAzMjgyLC0xNzIwNDMwMzkyLC0y
-MDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbMTc0NDAwNzY5Myw1NTQyNDkwNTIsLTExMT
+Q4NDY4ODUsNTczNzM4NDg5LC00MDQ5MDMyNDEsMTY0MzMxNjUx
+LC0xMzg3MTk3OTkzLDE1ODcyOTk5MDIsLTc1OTIzMTc3OCw5Nj
+ExNTg2NzQsLTE3MzUyNzI3MjMsLTE0MTIyMTYxMCwxMTE4NzM0
+OTEsMTk2NjUxNjc2OSw4NTEzNTcxMDIsLTE1NTc4MzE2NjksLT
+EyMTU2OTQyMTMsLTE0MzExMDMyODIsLTE3MjA0MzAzOTIsLTIw
+ODg3NDY2MTJdfQ==
 -->
