@@ -27,13 +27,17 @@ spark.read.format("delta").load(target_path).createOrReplaceTempView("delta_dml_
 ## Delta Lake : UPDATE
 You can use the UPDATE operation to selectively update any rows that match a filtering condition, also known as a predicate. An SQL **UPDATE** statement changes the data of one or more records in a table. Either all the rows can be updated, or a subset may be chosen using a condition.
 
+**Update by SQL query**
+```sql
+UPDATE delta_dml_tbl SET p_count = "550" WHERE p_id = 'p5'
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjY4NjMxMjcsLTExNDUyODk4ODAsMT
-kzMTg4NTQ5OCw1MTY2ODk1MjQsNDA1NjQwMzI1LDcwMDIzMDk2
-OCwyODAwNzMzMzEsNTU0MjQ5MDUyLC0xMTE0ODQ2ODg1LDU3Mz
-czODQ4OSwtNDA0OTAzMjQxLDE2NDMzMTY1MSwtMTM4NzE5Nzk5
-MywxNTg3Mjk5OTAyLC03NTkyMzE3NzgsOTYxMTU4Njc0LC0xNz
-M1MjcyNzIzLC0xNDEyMjE2MTAsMTExODczNDkxLDE5NjY1MTY3
-NjldfQ==
+eyJoaXN0b3J5IjpbLTQ2MDk4ODAzLC0xMTI2ODYzMTI3LC0xMT
+Q1Mjg5ODgwLDE5MzE4ODU0OTgsNTE2Njg5NTI0LDQwNTY0MDMy
+NSw3MDAyMzA5NjgsMjgwMDczMzMxLDU1NDI0OTA1MiwtMTExND
+g0Njg4NSw1NzM3Mzg0ODksLTQwNDkwMzI0MSwxNjQzMzE2NTEs
+LTEzODcxOTc5OTMsMTU4NzI5OTkwMiwtNzU5MjMxNzc4LDk2MT
+E1ODY3NCwtMTczNTI3MjcyMywtMTQxMjIxNjEwLDExMTg3MzQ5
+MV19
 -->
