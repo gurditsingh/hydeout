@@ -32,13 +32,18 @@ You can use the UPDATE operation to selectively update any rows that match a fil
 UPDATE delta_dml_tbl SET p_count = "550" WHERE p_id = 'p5'
 ```
 **Update by Scala programmatically**
+```scala
+import io.delta.tables.DeltaTable
 
+val dt = DeltaTable.forPath(target_path)
+dt.updateExpr("p_id == 'p5'",Map("p_count"->"550"))
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MjA1NTg1NTksLTExMjY4NjMxMjcsLT
-ExNDUyODk4ODAsMTkzMTg4NTQ5OCw1MTY2ODk1MjQsNDA1NjQw
-MzI1LDcwMDIzMDk2OCwyODAwNzMzMzEsNTU0MjQ5MDUyLC0xMT
-E0ODQ2ODg1LDU3MzczODQ4OSwtNDA0OTAzMjQxLDE2NDMzMTY1
-MSwtMTM4NzE5Nzk5MywxNTg3Mjk5OTAyLC03NTkyMzE3NzgsOT
-YxMTU4Njc0LC0xNzM1MjcyNzIzLC0xNDEyMjE2MTAsMTExODcz
-NDkxXX0=
+eyJoaXN0b3J5IjpbLTc3OTc2MzExOSwtMTQyMDU1ODU1OSwtMT
+EyNjg2MzEyNywtMTE0NTI4OTg4MCwxOTMxODg1NDk4LDUxNjY4
+OTUyNCw0MDU2NDAzMjUsNzAwMjMwOTY4LDI4MDA3MzMzMSw1NT
+QyNDkwNTIsLTExMTQ4NDY4ODUsNTczNzM4NDg5LC00MDQ5MDMy
+NDEsMTY0MzMxNjUxLC0xMzg3MTk3OTkzLDE1ODcyOTk5MDIsLT
+c1OTIzMTc3OCw5NjExNTg2NzQsLTE3MzUyNzI3MjMsLTE0MTIy
+MTYxMF19
 -->
