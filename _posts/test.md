@@ -20,7 +20,7 @@ spark.read.format("delta").load(target_path).createOrReplaceTempView("delta_dml_
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep6_dml1.JPG?raw=true)
 
-![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep6_dml3.JPG?raw=true)
+![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep6_dml4.JPG?raw=true)
 
 
 
@@ -29,11 +29,11 @@ You can use the UPDATE operation to selectively update any rows that match a fil
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNDUyODk4ODAsMTkzMTg4NTQ5OCw1MT
-Y2ODk1MjQsNDA1NjQwMzI1LDcwMDIzMDk2OCwyODAwNzMzMzEs
-NTU0MjQ5MDUyLC0xMTE0ODQ2ODg1LDU3MzczODQ4OSwtNDA0OT
-AzMjQxLDE2NDMzMTY1MSwtMTM4NzE5Nzk5MywxNTg3Mjk5OTAy
-LC03NTkyMzE3NzgsOTYxMTU4Njc0LC0xNzM1MjcyNzIzLC0xND
-EyMjE2MTAsMTExODczNDkxLDE5NjY1MTY3NjksODUxMzU3MTAy
-XX0=
+eyJoaXN0b3J5IjpbLTExMjY4NjMxMjcsLTExNDUyODk4ODAsMT
+kzMTg4NTQ5OCw1MTY2ODk1MjQsNDA1NjQwMzI1LDcwMDIzMDk2
+OCwyODAwNzMzMzEsNTU0MjQ5MDUyLC0xMTE0ODQ2ODg1LDU3Mz
+czODQ4OSwtNDA0OTAzMjQxLDE2NDMzMTY1MSwtMTM4NzE5Nzk5
+MywxNTg3Mjk5OTAyLC03NTkyMzE3NzgsOTYxMTU4Njc0LC0xNz
+M1MjcyNzIzLC0xNDEyMjE2MTAsMTExODczNDkxLDE5NjY1MTY3
+NjldfQ==
 -->
