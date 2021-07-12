@@ -98,12 +98,18 @@ dt.vacuum(72)
 
 ## Delta Lake : MERGE
 In Delta Lake the `MERGE` operation allow user to perform upserts. how merge works is it will update the existing records and insert the new records to delta table.
+
+
+
+ - When a source record matches the target record 
+ -   When a record from the source table  **matches a preexisting record**  in the target table, Delta Lake  **updates**  the record.
+ -   When there is  **no such match**, Delta Lake  **inserts**  the new record.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4ODM0OTQwLC0xMDYxNzYyNDA2LC0xMT
-Y5NDEwODUyLC0xNzQ0MDMxOTk5LDEyMjQ3Mjk5ODIsNjQ4NTc3
-MzY2LDY1NDYzMDcsMTAwNDAzNTAxMCwtOTk2NTA5MDg4LC0xNT
-M2NTEwODQ1LC0xNTM2NTEwODQ1LC0xMjM0NDcwMjI3LC0xNDIw
-NTU4NTU5LC0xMTI2ODYzMTI3LC0xMTQ1Mjg5ODgwLDE5MzE4OD
-U0OTgsNTE2Njg5NTI0LDQwNTY0MDMyNSw3MDAyMzA5NjgsMjgw
-MDczMzMxXX0=
+eyJoaXN0b3J5IjpbLTEwODY4OTM5NzMsLTI4ODM0OTQwLC0xMD
+YxNzYyNDA2LC0xMTY5NDEwODUyLC0xNzQ0MDMxOTk5LDEyMjQ3
+Mjk5ODIsNjQ4NTc3MzY2LDY1NDYzMDcsMTAwNDAzNTAxMCwtOT
+k2NTA5MDg4LC0xNTM2NTEwODQ1LC0xNTM2NTEwODQ1LC0xMjM0
+NDcwMjI3LC0xNDIwNTU4NTU5LC0xMTI2ODYzMTI3LC0xMTQ1Mj
+g5ODgwLDE5MzE4ODU0OTgsNTE2Njg5NTI0LDQwNTY0MDMyNSw3
+MDAyMzA5NjhdfQ==
 -->
