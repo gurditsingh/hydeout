@@ -53,14 +53,15 @@ Delta Lake maintains these files under the hood. As above created delta table ha
  - **Second Scan :**
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep6_dml9.jpg?raw=true)
 
- - Now once it finds those files, it selects them and does another scan once again, we still re-write those files.
+ - Now once we find out the files, it selects them and does one more scan on the selected files
+ - So in the second scan we still re-write those files.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM0MjAyMzg0LC0xNTM2NTEwODQ1LC0xNT
-M2NTEwODQ1LC0xMjM0NDcwMjI3LC0xNDIwNTU4NTU5LC0xMTI2
-ODYzMTI3LC0xMTQ1Mjg5ODgwLDE5MzE4ODU0OTgsNTE2Njg5NT
-I0LDQwNTY0MDMyNSw3MDAyMzA5NjgsMjgwMDczMzMxLDU1NDI0
-OTA1MiwtMTExNDg0Njg4NSw1NzM3Mzg0ODksLTQwNDkwMzI0MS
-wxNjQzMzE2NTEsLTEzODcxOTc5OTMsMTU4NzI5OTkwMiwtNzU5
-MjMxNzc4XX0=
+eyJoaXN0b3J5IjpbLTM2MTIwMDIyNSwtMTUzNjUxMDg0NSwtMT
+UzNjUxMDg0NSwtMTIzNDQ3MDIyNywtMTQyMDU1ODU1OSwtMTEy
+Njg2MzEyNywtMTE0NTI4OTg4MCwxOTMxODg1NDk4LDUxNjY4OT
+UyNCw0MDU2NDAzMjUsNzAwMjMwOTY4LDI4MDA3MzMzMSw1NTQy
+NDkwNTIsLTExMTQ4NDY4ODUsNTczNzM4NDg5LC00MDQ5MDMyND
+EsMTY0MzMxNjUxLC0xMzg3MTk3OTkzLDE1ODcyOTk5MDIsLTc1
+OTIzMTc3OF19
 -->
