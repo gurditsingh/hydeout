@@ -54,14 +54,14 @@ Delta Lake maintains these files under the hood. As above created delta table ha
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep6_dml9.jpg?raw=true)
 
  - Now once we find out the files, it selects them and does one more scan on the selected files
- - So in the second scan we still re-write those files.
+ - So in the second scan two files are re-written as completely new files. because we can't change in the existing parquet files and re-write those files.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2MTIwMDIyNSwtMTUzNjUxMDg0NSwtMT
-UzNjUxMDg0NSwtMTIzNDQ3MDIyNywtMTQyMDU1ODU1OSwtMTEy
-Njg2MzEyNywtMTE0NTI4OTg4MCwxOTMxODg1NDk4LDUxNjY4OT
-UyNCw0MDU2NDAzMjUsNzAwMjMwOTY4LDI4MDA3MzMzMSw1NTQy
-NDkwNTIsLTExMTQ4NDY4ODUsNTczNzM4NDg5LC00MDQ5MDMyND
-EsMTY0MzMxNjUxLC0xMzg3MTk3OTkzLDE1ODcyOTk5MDIsLTc1
-OTIzMTc3OF19
+eyJoaXN0b3J5IjpbLTEzNTMzOTI1NTgsLTE1MzY1MTA4NDUsLT
+E1MzY1MTA4NDUsLTEyMzQ0NzAyMjcsLTE0MjA1NTg1NTksLTEx
+MjY4NjMxMjcsLTExNDUyODk4ODAsMTkzMTg4NTQ5OCw1MTY2OD
+k1MjQsNDA1NjQwMzI1LDcwMDIzMDk2OCwyODAwNzMzMzEsNTU0
+MjQ5MDUyLC0xMTE0ODQ2ODg1LDU3MzczODQ4OSwtNDA0OTAzMj
+QxLDE2NDMzMTY1MSwtMTM4NzE5Nzk5MywxNTg3Mjk5OTAyLC03
+NTkyMzE3NzhdfQ==
 -->
