@@ -43,10 +43,11 @@ dt.updateExpr("p_id == 'p5'",Map("p_count"->"550"))
 Delta Lake maintains these files under the hood. As above created delta table has version 0 of the table where it have four files. Now, lets say you run Update. What it will do underneath is that it will use two scans on this data, to update detla table.
 
  1. First Scan :
- it will do a first can to (audio blurs) contain the data that needs to be updated based on the predicate that you've provided.
+ First it will do a scan that contains the data that needs to be updated based on the predicate.
+ 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzM0MTA0MjMsLTE1MzY1MTA4NDUsLT
+eyJoaXN0b3J5IjpbLTEyNjk2NDcxMjUsLTE1MzY1MTA4NDUsLT
 E1MzY1MTA4NDUsLTEyMzQ0NzAyMjcsLTE0MjA1NTg1NTksLTEx
 MjY4NjMxMjcsLTExNDUyODk4ODAsMTkzMTg4NTQ5OCw1MTY2OD
 k1MjQsNDA1NjQwMzI1LDcwMDIzMDk2OCwyODAwNzMzMzEsNTU0
