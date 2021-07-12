@@ -42,7 +42,7 @@ dt.updateExpr("p_id == 'p5'",Map("p_count"->"550"))
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep6_dml11.JPG?raw=true)
 
 ### how update works internally
-Delta Lake maintains these files under the hood. As above created delta table has version 0 of the table where it have four files. Now, lets say you run Update. What it will do underneath is that it will use two scans on this data, to update detla table.
+Delta Lake maintains files under the hood. As above created delta table has version 0 of the table where it have four files. Now, lets say you run Update. What it will do underneath is that it will use two scans on this data, to update detla table.
 
  - **First Scan :**
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep6_dml8.jpg?raw=true)
@@ -75,12 +75,15 @@ val dt = DeltaTable.forPath(target_path)
 dt.delete("p_id == 'p5'")
 ```
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep6_dml12.JPG?raw=true)
+
+### how update works internally
+Delta Lake maintains these files under the hood. As above created delta table has version 0 of the table where it have four files. Now, lets say you run Update. What it will do underneath is that it will use two scans on this data, to update detla table.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3OTA4OTQzMCw2NTQ2MzA3LDEwMDQwMz
-UwMTAsLTk5NjUwOTA4OCwtMTUzNjUxMDg0NSwtMTUzNjUxMDg0
-NSwtMTIzNDQ3MDIyNywtMTQyMDU1ODU1OSwtMTEyNjg2MzEyNy
-wtMTE0NTI4OTg4MCwxOTMxODg1NDk4LDUxNjY4OTUyNCw0MDU2
-NDAzMjUsNzAwMjMwOTY4LDI4MDA3MzMzMSw1NTQyNDkwNTIsLT
-ExMTQ4NDY4ODUsNTczNzM4NDg5LC00MDQ5MDMyNDEsMTY0MzMx
-NjUxXX0=
+eyJoaXN0b3J5IjpbNDM0NjE3NTUxLDY1NDYzMDcsMTAwNDAzNT
+AxMCwtOTk2NTA5MDg4LC0xNTM2NTEwODQ1LC0xNTM2NTEwODQ1
+LC0xMjM0NDcwMjI3LC0xNDIwNTU4NTU5LC0xMTI2ODYzMTI3LC
+0xMTQ1Mjg5ODgwLDE5MzE4ODU0OTgsNTE2Njg5NTI0LDQwNTY0
+MDMyNSw3MDAyMzA5NjgsMjgwMDczMzMxLDU1NDI0OTA1MiwtMT
+ExNDg0Njg4NSw1NzM3Mzg0ODksLTQwNDkwMzI0MSwxNjQzMzE2
+NTFdfQ==
 -->
