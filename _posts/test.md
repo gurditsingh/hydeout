@@ -82,10 +82,19 @@ The Delete works same as Update internally, Delete makes a two scans for search 
 ### Cleaning up old data files
 The old files are not deleted once the delete operation completed. These files marked as “tombstoned” (no longer part of the active table) in the Delta Lake transaction log. If you want to delete the old “tombstoned” files you can use the `VACUUM` command.
 
+1.  no longer part of the active table, and
+2.  older than the retention threshold, which is seven days by default.
 
+**VACUUM command**
+```scala
+import io.delta.tables.DeltaTable
+
+val dt = DeltaTable.forPath(target_path)
+dt.delete("p_id == 'p5'")
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMTU0MzQyNCw2NDg1NzczNjYsNjU0Nj
+eyJoaXN0b3J5IjpbMTIyNDcyOTk4Miw2NDg1NzczNjYsNjU0Nj
 MwNywxMDA0MDM1MDEwLC05OTY1MDkwODgsLTE1MzY1MTA4NDUs
 LTE1MzY1MTA4NDUsLTEyMzQ0NzAyMjcsLTE0MjA1NTg1NTksLT
 ExMjY4NjMxMjcsLTExNDUyODk4ODAsMTkzMTg4NTQ5OCw1MTY2
