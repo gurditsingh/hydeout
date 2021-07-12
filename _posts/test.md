@@ -46,17 +46,18 @@ Delta Lake maintains these files under the hood. As above created delta table ha
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep6_dml8.jpg?raw=true)
 	 - First it will do a scan the files that contains the data that needs to be updated based on the predicate.
 	 - let's say out of four files, two of the files has data that matches the predicate. Delta stores the data as parquet files.
-	 - So now not all the rows in the parquet files may match the data, so there'll be some rows that actually match the predicate, some rows that does not match the predicate,
+	 - So now not all the rows in the parquet files may match the data, so there will be some rows that matches the predicate, some rows that does not match the predicate,
 	 - Delta Lake uses **data skipping** whenever possible to speed up this process.
-	 - As you can see labels green and yellow in the above diagram. Now to identify these files, it uses the predicate and column stats and partition pruning to narrow down what files it needs to actually read.
-	 
- 1. **Second Scan :**
+	 - As you can see labels green and yellow in the above diagram. Now to identify these files, it uses the predicate, column stats and partition pruning to narrow down the serach sa.
+
+ 2. **Second Scan :**
+![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep6_dml8.jpg?raw=true)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3NDkwNDE1NSwtMTUzNjUxMDg0NSwtMT
-UzNjUxMDg0NSwtMTIzNDQ3MDIyNywtMTQyMDU1ODU1OSwtMTEy
-Njg2MzEyNywtMTE0NTI4OTg4MCwxOTMxODg1NDk4LDUxNjY4OT
-UyNCw0MDU2NDAzMjUsNzAwMjMwOTY4LDI4MDA3MzMzMSw1NTQy
-NDkwNTIsLTExMTQ4NDY4ODUsNTczNzM4NDg5LC00MDQ5MDMyND
-EsMTY0MzMxNjUxLC0xMzg3MTk3OTkzLDE1ODcyOTk5MDIsLTc1
-OTIzMTc3OF19
+eyJoaXN0b3J5IjpbLTIxMjAzMjU5MDcsLTE1MzY1MTA4NDUsLT
+E1MzY1MTA4NDUsLTEyMzQ0NzAyMjcsLTE0MjA1NTg1NTksLTEx
+MjY4NjMxMjcsLTExNDUyODk4ODAsMTkzMTg4NTQ5OCw1MTY2OD
+k1MjQsNDA1NjQwMzI1LDcwMDIzMDk2OCwyODAwNzMzMzEsNTU0
+MjQ5MDUyLC0xMTE0ODQ2ODg1LDU3MzczODQ4OSwtNDA0OTAzMj
+QxLDE2NDMzMTY1MSwtMTM4NzE5Nzk5MywxNTg3Mjk5OTAyLC03
+NTkyMzE3NzhdfQ==
 -->
