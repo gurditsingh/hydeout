@@ -100,13 +100,31 @@ dt.vacuum(72)
 In Delta Lake the `MERGE` operation allow user to perform upserts. how merge works is it will update the existing records and insert the new records to delta table.
 
  -   When a record from the source table matches a record in the target table, Delta Lake  **UPDATE**  the record.
- -   When there is no match, Delta Lake INSERTS the new record.
+ -   When there is no match, Delta Lake **INSERTS** the new record.
+
+**Delete by SQL query**
+```sql
+MERGE INTO delta_dml_tbl_tgt
+USING delta_dml_tbl_src
+    ON delta_dml_tbl_src.p_id = delta_dml_tbl_tgt.p_id
+    WHEN MATCHED THEN UPDATE
+        SET delta_dml_tbl_tgt.p_count = delta_dml_tbl_src.p_count
+    WHEN NOT MATCHED THEN 
+        INSERT (p_id, p_count) VALUES (p_id, p_count) 
+```
+**Delete by Scala programmatically**
+```scala
+import io.delta.tables.DeltaTable
+
+val dt = DeltaTable.forPath(target_path)
+dt.delete("p_id == 'p5'")
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MjAwMzQxMDEsLTI4ODM0OTQwLC0xMD
-YxNzYyNDA2LC0xMTY5NDEwODUyLC0xNzQ0MDMxOTk5LDEyMjQ3
-Mjk5ODIsNjQ4NTc3MzY2LDY1NDYzMDcsMTAwNDAzNTAxMCwtOT
-k2NTA5MDg4LC0xNTM2NTEwODQ1LC0xNTM2NTEwODQ1LC0xMjM0
-NDcwMjI3LC0xNDIwNTU4NTU5LC0xMTI2ODYzMTI3LC0xMTQ1Mj
-g5ODgwLDE5MzE4ODU0OTgsNTE2Njg5NTI0LDQwNTY0MDMyNSw3
-MDAyMzA5NjhdfQ==
+eyJoaXN0b3J5IjpbMjEwNTQ1ODI3OSwtMjg4MzQ5NDAsLTEwNj
+E3NjI0MDYsLTExNjk0MTA4NTIsLTE3NDQwMzE5OTksMTIyNDcy
+OTk4Miw2NDg1NzczNjYsNjU0NjMwNywxMDA0MDM1MDEwLC05OT
+Y1MDkwODgsLTE1MzY1MTA4NDUsLTE1MzY1MTA4NDUsLTEyMzQ0
+NzAyMjcsLTE0MjA1NTg1NTksLTExMjY4NjMxMjcsLTExNDUyOD
+k4ODAsMTkzMTg4NTQ5OCw1MTY2ODk1MjQsNDA1NjQwMzI1LDcw
+MDIzMDk2OF19
 -->
