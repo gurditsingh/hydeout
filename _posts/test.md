@@ -90,16 +90,18 @@ The old files are not deleted once the delete operation completed. These files m
 import io.delta.tables.DeltaTable
 
 val dt = DeltaTable.forPath(target_path)
+// retention period, which is 168 hours (7 days) by default
 dt.vacuum()
+// user can change the retention period to 72 hours.
 dt.vacuum(72) 
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgzNjEyMDc1MCwxMjI0NzI5OTgyLDY0OD
-U3NzM2Niw2NTQ2MzA3LDEwMDQwMzUwMTAsLTk5NjUwOTA4OCwt
-MTUzNjUxMDg0NSwtMTUzNjUxMDg0NSwtMTIzNDQ3MDIyNywtMT
-QyMDU1ODU1OSwtMTEyNjg2MzEyNywtMTE0NTI4OTg4MCwxOTMx
-ODg1NDk4LDUxNjY4OTUyNCw0MDU2NDAzMjUsNzAwMjMwOTY4LD
-I4MDA3MzMzMSw1NTQyNDkwNTIsLTExMTQ4NDY4ODUsNTczNzM4
-NDg5XX0=
+eyJoaXN0b3J5IjpbLTE3NDQwMzE5OTksMTIyNDcyOTk4Miw2ND
+g1NzczNjYsNjU0NjMwNywxMDA0MDM1MDEwLC05OTY1MDkwODgs
+LTE1MzY1MTA4NDUsLTE1MzY1MTA4NDUsLTEyMzQ0NzAyMjcsLT
+E0MjA1NTg1NTksLTExMjY4NjMxMjcsLTExNDUyODk4ODAsMTkz
+MTg4NTQ5OCw1MTY2ODk1MjQsNDA1NjQwMzI1LDcwMDIzMDk2OC
+wyODAwNzMzMzEsNTU0MjQ5MDUyLC0xMTE0ODQ2ODg1LDU3Mzcz
+ODQ4OV19
 -->
