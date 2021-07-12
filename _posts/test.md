@@ -97,12 +97,15 @@ dt.vacuum(72)
 ```
 
 ## Delta Lake : MERGE
+
+
+The Delta Lake  `MERGE`  command allows you to perform “upserts”, which are a mix of an  `UPDATE`  and an  `INSERT`. To understand upserts, imagine that you have an existing table (a.k.a. a  _target table_), and a  _source table_  that contains a mix of new records and updates to existing records. Here’s how an upsert works:
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjk0MTA4NTIsLTE3NDQwMzE5OTksMT
-IyNDcyOTk4Miw2NDg1NzczNjYsNjU0NjMwNywxMDA0MDM1MDEw
-LC05OTY1MDkwODgsLTE1MzY1MTA4NDUsLTE1MzY1MTA4NDUsLT
-EyMzQ0NzAyMjcsLTE0MjA1NTg1NTksLTExMjY4NjMxMjcsLTEx
-NDUyODk4ODAsMTkzMTg4NTQ5OCw1MTY2ODk1MjQsNDA1NjQwMz
-I1LDcwMDIzMDk2OCwyODAwNzMzMzEsNTU0MjQ5MDUyLC0xMTE0
-ODQ2ODg1XX0=
+eyJoaXN0b3J5IjpbLTEwNjE3NjI0MDYsLTExNjk0MTA4NTIsLT
+E3NDQwMzE5OTksMTIyNDcyOTk4Miw2NDg1NzczNjYsNjU0NjMw
+NywxMDA0MDM1MDEwLC05OTY1MDkwODgsLTE1MzY1MTA4NDUsLT
+E1MzY1MTA4NDUsLTEyMzQ0NzAyMjcsLTE0MjA1NTg1NTksLTEx
+MjY4NjMxMjcsLTExNDUyODk4ODAsMTkzMTg4NTQ5OCw1MTY2OD
+k1MjQsNDA1NjQwMzI1LDcwMDIzMDk2OCwyODAwNzMzMzEsNTU0
+MjQ5MDUyXX0=
 -->
