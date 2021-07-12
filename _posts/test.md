@@ -77,9 +77,10 @@ dt.delete("p_id == 'p5'")
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep6_dml12.JPG?raw=true)
 
 ### how update works internally
-Delta Lake maintains these files under the hood. As above created delta table has version 0 of the table where it have four files. Now, lets say you run Update. What it will do underneath is that it will use two scans on this data, to update detla table.
+
+`DELETE` works just like `UPDATE` under the hood. Delta Lake makes two scans of the data: the first scan is to identify any data files that contain rows matching the predicate condition. The second scan reads the matching data files into memory, at which point Delta Lake deletes the rows in question before writing out the newly clean data to disk.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM0NjE3NTUxLDY1NDYzMDcsMTAwNDAzNT
+eyJoaXN0b3J5IjpbNjQ4NTc3MzY2LDY1NDYzMDcsMTAwNDAzNT
 AxMCwtOTk2NTA5MDg4LC0xNTM2NTEwODQ1LC0xNTM2NTEwODQ1
 LC0xMjM0NDcwMjI3LC0xNDIwNTU4NTU5LC0xMTI2ODYzMTI3LC
 0xMTQ1Mjg5ODgwLDE5MzE4ODU0OTgsNTE2Njg5NTI0LDQwNTY0
