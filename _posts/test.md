@@ -25,7 +25,7 @@ spark.read.format("delta").load(target_path).createOrReplaceTempView("delta_dml_
 
 
 ## Delta Lake : UPDATE
-You can use the UPDATE operation to selectively update any rows that match a filtering condition, also known as a predicate. An SQL **UPDATE** statement changes the data of one or more records in a table. Either all the rows can be updated, or a subset may be chosen using a condition.
+You can use the `UPDATE` operation to selectively update any rows that match a filtering condition, also known as a predicate. An SQL **UPDATE** statement changes the data of one or more records in a table. Either all the rows can be updated, or a subset may be chosen using a condition.
 
 **Update by SQL query**
 ```sql
@@ -60,13 +60,14 @@ Delta Lake maintains these files under the hood. As above created delta table ha
  - The data in the files that matched actually got updated. And the data that not matched got just copied into these new files.
  - And the files that got replaced (old matched files) are tombstoned, which means we add the information that two new files got added and replaced files will remove in the transaction log.
  
-
+## Delta Lake : DELETE
+You can use the `DELETE` operation to selectively delete rows based upon a predicate. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU0NjMwNywxMDA0MDM1MDEwLC05OTY1MD
-kwODgsLTE1MzY1MTA4NDUsLTE1MzY1MTA4NDUsLTEyMzQ0NzAy
-MjcsLTE0MjA1NTg1NTksLTExMjY4NjMxMjcsLTExNDUyODk4OD
-AsMTkzMTg4NTQ5OCw1MTY2ODk1MjQsNDA1NjQwMzI1LDcwMDIz
-MDk2OCwyODAwNzMzMzEsNTU0MjQ5MDUyLC0xMTE0ODQ2ODg1LD
-U3MzczODQ4OSwtNDA0OTAzMjQxLDE2NDMzMTY1MSwtMTM4NzE5
-Nzk5M119
+eyJoaXN0b3J5IjpbLTE0NTAwOTIyMDcsNjU0NjMwNywxMDA0MD
+M1MDEwLC05OTY1MDkwODgsLTE1MzY1MTA4NDUsLTE1MzY1MTA4
+NDUsLTEyMzQ0NzAyMjcsLTE0MjA1NTg1NTksLTExMjY4NjMxMj
+csLTExNDUyODk4ODAsMTkzMTg4NTQ5OCw1MTY2ODk1MjQsNDA1
+NjQwMzI1LDcwMDIzMDk2OCwyODAwNzMzMzEsNTU0MjQ5MDUyLC
+0xMTE0ODQ2ODg1LDU3MzczODQ4OSwtNDA0OTAzMjQxLDE2NDMz
+MTY1MV19
 -->
