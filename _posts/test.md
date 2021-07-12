@@ -104,11 +104,11 @@ In Delta Lake the `MERGE` operation allow user to perform upserts. how merge wor
 
 **Merge by SQL query**
 ```sql
-MERGE INTO delta_dml_tbl_tgt
+MERGE INTO delta_dml_tbl
 USING delta_dml_tbl_src
-    ON delta_dml_tbl_src.p_id = delta_dml_tbl_tgt.p_id
+    ON delta_dml_tbl_src.p_id = delta_dml_tbl.p_id
     WHEN MATCHED THEN UPDATE
-        SET delta_dml_tbl_tgt.p_count = delta_dml_tbl_src.p_count
+        SET delta_dml_tbl.p_count = delta_dml_tbl_src.p_count
     WHEN NOT MATCHED THEN 
         INSERT (p_id, p_count) VALUES (p_id, p_count) 
 ```
@@ -116,13 +116,14 @@ USING delta_dml_tbl_src
 ```scala
 import io.delta.tables.DeltaTable
 
-val dt = DeltaTable.forPath(target_path_t)
+val dt = DeltaTable.forPath(target_path)
 dt.alias("t")
     .merge(src.alias("s"),"t.p_id = s.p_id")
     .whenMatched().updateAll()
     .whenNotMatched().insertAll()
     .execute()
 ```
+![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep6_dml13.JPG?raw=true)
 
 ### how update works internally
 What happens internally is exact same thing as Update/Delete, there are two scans of the data, one to find the list of match files that needs to be updated, and a second scan to update those files by re-writing them as new files. But in merge needs join between the source and the target to actually find the matches.
@@ -132,11 +133,11 @@ What happens internally is exact same thing as Update/Delete, there are two scan
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mzc5ODI1NzksLTIwMDk4NzgzOTIsLT
-ExMTQ1MjY4MDgsNTEyODE4NDI2LDE0MDEwNjcyMDAsLTI4ODM0
-OTQwLC0xMDYxNzYyNDA2LC0xMTY5NDEwODUyLC0xNzQ0MDMxOT
-k5LDEyMjQ3Mjk5ODIsNjQ4NTc3MzY2LDY1NDYzMDcsMTAwNDAz
-NTAxMCwtOTk2NTA5MDg4LC0xNTM2NTEwODQ1LC0xNTM2NTEwOD
-Q1LC0xMjM0NDcwMjI3LC0xNDIwNTU4NTU5LC0xMTI2ODYzMTI3
-LC0xMTQ1Mjg5ODgwXX0=
+eyJoaXN0b3J5IjpbLTkwNTY5NDc0MiwtMTkzNzk4MjU3OSwtMj
+AwOTg3ODM5MiwtMTExNDUyNjgwOCw1MTI4MTg0MjYsMTQwMTA2
+NzIwMCwtMjg4MzQ5NDAsLTEwNjE3NjI0MDYsLTExNjk0MTA4NT
+IsLTE3NDQwMzE5OTksMTIyNDcyOTk4Miw2NDg1NzczNjYsNjU0
+NjMwNywxMDA0MDM1MDEwLC05OTY1MDkwODgsLTE1MzY1MTA4ND
+UsLTE1MzY1MTA4NDUsLTEyMzQ0NzAyMjcsLTE0MjA1NTg1NTks
+LTExMjY4NjMxMjddfQ==
 -->
