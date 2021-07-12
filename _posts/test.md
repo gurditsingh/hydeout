@@ -116,11 +116,15 @@ USING delta_dml_tbl_src
 ```scala
 import io.delta.tables.DeltaTable
 
-val dt = DeltaTable.forPath(target_path)
-dt.delete("p_id == 'p5'")
+val dt = DeltaTable.forPath(target_path_t)
+dt.alias("t")
+    .merge(src.alias("s"),"t.p_id = s.p_id")
+    .whenMatched().updateExpr(Map("t.p_count"->"s.p_count"))
+    .whenNotMatched().insertAll()
+    .execute()
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNTQ1ODI3OSwtMjg4MzQ5NDAsLTEwNj
+eyJoaXN0b3J5IjpbMTIzODAyNTAxMywtMjg4MzQ5NDAsLTEwNj
 E3NjI0MDYsLTExNjk0MTA4NTIsLTE3NDQwMzE5OTksMTIyNDcy
 OTk4Miw2NDg1NzczNjYsNjU0NjMwNywxMDA0MDM1MDEwLC05OT
 Y1MDkwODgsLTE1MzY1MTA4NDUsLTE1MzY1MTA4NDUsLTEyMzQ0
