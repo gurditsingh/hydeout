@@ -42,16 +42,17 @@ dt.updateExpr("p_id == 'p5'",Map("p_count"->"550"))
 ### how update works internally
 Delta Lake maintains these files under the hood. As above created delta table has version 0 of the table where it have four files. Now, lets say you run Update. What it will do underneath is that it will use two scans on this data, to update detla table.
 
- 1. First Scan :
+ 1. **First Scan :**
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep6_dml8.jpg?raw=true)
 	 - First it will do a scan the files that contains the data that needs to be updated based on the predicate.
 	 - let's say out of four files, two of the files has data that matches the predicate. Delta stores the data as parquet files.
 	 - So now not all the rows in the parquet files may match the data, so there'll be some rows that actually match the predicate, some rows that does not match the predicate,
 	 - Delta Lake uses **data skipping** whenever possible to speed up this process.
-	 - As you can see labels green and yellow in the above diagram. Now to identify these files, it uses the predicate and column stats and partition pruning, all the things that Spark provides it uses that to narrow down what files it needs to actually read, to actually find whether the file contains matches or not.
-
+	 - As you can see labels green and yellow in the above diagram. Now to identify these files, it uses the predicate and column stats and partition pruning to narrow down what files it needs to actually read.
+	 
+ 1. **Second Scan :**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEwNjgxMzQwMSwtMTUzNjUxMDg0NSwtMT
+eyJoaXN0b3J5IjpbLTM3NDkwNDE1NSwtMTUzNjUxMDg0NSwtMT
 UzNjUxMDg0NSwtMTIzNDQ3MDIyNywtMTQyMDU1ODU1OSwtMTEy
 Njg2MzEyNywtMTE0NTI4OTg4MCwxOTMxODg1NDk4LDUxNjY4OT
 UyNCw0MDU2NDAzMjUsNzAwMjMwOTY4LDI4MDA3MzMzMSw1NTQy
