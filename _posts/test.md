@@ -56,14 +56,15 @@ Delta Lake maintains these files under the hood. As above created delta table ha
  - Now once we find out the files, it selects them and does one more scan on the selected files
  - So in the second scan two files are re-written as completely new files. because we can't change in the existing parquet files and re-write those files.
  - The data in the files that matched actually got updated. And the data that not matched got just copied into these new files.
- - And the files that got replaced(old matched) are tombstoned, which means we add the information that two new files got added and  in the transaction log.
+ - And the files that got replaced (old matched files) are tombstoned, which means we add the information that two new files got added and replaced files will remove in the transaction log.
+ 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc4MzExMDk2LC0xNTM2NTEwODQ1LC0xNT
-M2NTEwODQ1LC0xMjM0NDcwMjI3LC0xNDIwNTU4NTU5LC0xMTI2
-ODYzMTI3LC0xMTQ1Mjg5ODgwLDE5MzE4ODU0OTgsNTE2Njg5NT
-I0LDQwNTY0MDMyNSw3MDAyMzA5NjgsMjgwMDczMzMxLDU1NDI0
-OTA1MiwtMTExNDg0Njg4NSw1NzM3Mzg0ODksLTQwNDkwMzI0MS
-wxNjQzMzE2NTEsLTEzODcxOTc5OTMsMTU4NzI5OTkwMiwtNzU5
-MjMxNzc4XX0=
+eyJoaXN0b3J5IjpbLTk5NjUwOTA4OCwtMTUzNjUxMDg0NSwtMT
+UzNjUxMDg0NSwtMTIzNDQ3MDIyNywtMTQyMDU1ODU1OSwtMTEy
+Njg2MzEyNywtMTE0NTI4OTg4MCwxOTMxODg1NDk4LDUxNjY4OT
+UyNCw0MDU2NDAzMjUsNzAwMjMwOTY4LDI4MDA3MzMzMSw1NTQy
+NDkwNTIsLTExMTQ4NDY4ODUsNTczNzM4NDg5LC00MDQ5MDMyND
+EsMTY0MzMxNjUxLC0xMzg3MTk3OTkzLDE1ODcyOTk5MDIsLTc1
+OTIzMTc3OF19
 -->
