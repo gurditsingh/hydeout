@@ -61,13 +61,25 @@ Delta Lake maintains these files under the hood. As above created delta table ha
  - And the files that got replaced (old matched files) are tombstoned, which means we add the information that two new files got added and replaced files will remove in the transaction log.
  
 ## Delta Lake : DELETE
-You can use the `DELETE` operation to selectively delete rows based upon a predicate. 
+You can use the `DELETE` operation to selectively delete rows based upon a predicate. The DELETE command is used to delete existing records from a table either it can be single record or multiple records depending on the condition.
+
+**Update by SQL query**
+```sql
+UPDATE delta_dml_tbl SET p_count = "550" WHERE p_id = 'p5'
+```
+**Update by Scala programmatically**
+```scala
+import io.delta.tables.DeltaTable
+
+val dt = DeltaTable.forPath(target_path)
+dt.updateExpr("p_id == 'p5'",Map("p_count"->"550"))
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTAwOTIyMDcsNjU0NjMwNywxMDA0MD
-M1MDEwLC05OTY1MDkwODgsLTE1MzY1MTA4NDUsLTE1MzY1MTA4
-NDUsLTEyMzQ0NzAyMjcsLTE0MjA1NTg1NTksLTExMjY4NjMxMj
-csLTExNDUyODk4ODAsMTkzMTg4NTQ5OCw1MTY2ODk1MjQsNDA1
-NjQwMzI1LDcwMDIzMDk2OCwyODAwNzMzMzEsNTU0MjQ5MDUyLC
-0xMTE0ODQ2ODg1LDU3MzczODQ4OSwtNDA0OTAzMjQxLDE2NDMz
-MTY1MV19
+eyJoaXN0b3J5IjpbLTE1OTI0ODU3MSw2NTQ2MzA3LDEwMDQwMz
+UwMTAsLTk5NjUwOTA4OCwtMTUzNjUxMDg0NSwtMTUzNjUxMDg0
+NSwtMTIzNDQ3MDIyNywtMTQyMDU1ODU1OSwtMTEyNjg2MzEyNy
+wtMTE0NTI4OTg4MCwxOTMxODg1NDk4LDUxNjY4OTUyNCw0MDU2
+NDAzMjUsNzAwMjMwOTY4LDI4MDA3MzMzMSw1NTQyNDkwNTIsLT
+ExMTQ4NDY4ODUsNTczNzM4NDg5LC00MDQ5MDMyNDEsMTY0MzMx
+NjUxXX0=
 -->
