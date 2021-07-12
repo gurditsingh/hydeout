@@ -79,15 +79,15 @@ dt.delete("p_id == 'p5'")
 ### how update works internally
 The Delete works same as Update internally, Delete makes a two scans for search and delete. The first scan find out the data files that match the data with respect to predicate. The second scan read the matching files and write the new files which does not contain the rows with matched the predicate.
 
-The old files are not deleted once the del
+The old files are not deleted once the delete operation completed. These files marked as “tombstoned” (no longer part of the active table) in the Delta Lake transaction log. If you want to delete the old 
 
 After Delta Lake completes a `DELETE` operation successfully, the old data files are not deleted — they’re still retained on disk, but recorded as “tombstoned” (no longer part of the active table) in the Delta Lake transaction log. Remember, those old files aren’t deleted immediately because you might still need them to time travel back to an earlier version of the table. If you want to delete files older than a certain time period, you can use the `VACUUM` command.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY3Nzc3OTA1LDY0ODU3NzM2Niw2NTQ2Mz
-A3LDEwMDQwMzUwMTAsLTk5NjUwOTA4OCwtMTUzNjUxMDg0NSwt
-MTUzNjUxMDg0NSwtMTIzNDQ3MDIyNywtMTQyMDU1ODU1OSwtMT
-EyNjg2MzEyNywtMTE0NTI4OTg4MCwxOTMxODg1NDk4LDUxNjY4
-OTUyNCw0MDU2NDAzMjUsNzAwMjMwOTY4LDI4MDA3MzMzMSw1NT
-QyNDkwNTIsLTExMTQ4NDY4ODUsNTczNzM4NDg5LC00MDQ5MDMy
-NDFdfQ==
+eyJoaXN0b3J5IjpbLTQ4ODE5OTQ5NCw2NDg1NzczNjYsNjU0Nj
+MwNywxMDA0MDM1MDEwLC05OTY1MDkwODgsLTE1MzY1MTA4NDUs
+LTE1MzY1MTA4NDUsLTEyMzQ0NzAyMjcsLTE0MjA1NTg1NTksLT
+ExMjY4NjMxMjcsLTExNDUyODk4ODAsMTkzMTg4NTQ5OCw1MTY2
+ODk1MjQsNDA1NjQwMzI1LDcwMDIzMDk2OCwyODAwNzMzMzEsNT
+U0MjQ5MDUyLC0xMTE0ODQ2ODg1LDU3MzczODQ4OSwtNDA0OTAz
+MjQxXX0=
 -->
