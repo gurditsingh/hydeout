@@ -90,15 +90,16 @@ The old files are not deleted once the delete operation completed. These files m
 import io.delta.tables.DeltaTable
 
 val dt = DeltaTable.forPath(target_path)
-dt.delete("p_id == 'p5'")
+dt.vacuum()
+dt.vacuum(72) 
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIyNDcyOTk4Miw2NDg1NzczNjYsNjU0Nj
-MwNywxMDA0MDM1MDEwLC05OTY1MDkwODgsLTE1MzY1MTA4NDUs
-LTE1MzY1MTA4NDUsLTEyMzQ0NzAyMjcsLTE0MjA1NTg1NTksLT
-ExMjY4NjMxMjcsLTExNDUyODk4ODAsMTkzMTg4NTQ5OCw1MTY2
-ODk1MjQsNDA1NjQwMzI1LDcwMDIzMDk2OCwyODAwNzMzMzEsNT
-U0MjQ5MDUyLC0xMTE0ODQ2ODg1LDU3MzczODQ4OSwtNDA0OTAz
-MjQxXX0=
+eyJoaXN0b3J5IjpbLTgzNjEyMDc1MCwxMjI0NzI5OTgyLDY0OD
+U3NzM2Niw2NTQ2MzA3LDEwMDQwMzUwMTAsLTk5NjUwOTA4OCwt
+MTUzNjUxMDg0NSwtMTUzNjUxMDg0NSwtMTIzNDQ3MDIyNywtMT
+QyMDU1ODU1OSwtMTEyNjg2MzEyNywtMTE0NTI4OTg4MCwxOTMx
+ODg1NDk4LDUxNjY4OTUyNCw0MDU2NDAzMjUsNzAwMjMwOTY4LD
+I4MDA3MzMzMSw1NTQyNDkwNTIsLTExMTQ4NDY4ODUsNTczNzM4
+NDg5XX0=
 -->
