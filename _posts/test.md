@@ -48,10 +48,10 @@ Delta Lake maintains these files under the hood. As above created delta table ha
 	 - let's say out of four files, two of the files has data that matches the predicate. Delta stores the data as parquet files.
 	 - So now not all the rows in the parquet files may match the data, so there'll be some rows that actually match the predicate, some rows that does not match the predicate,
 	 - Delta Lake uses **data skipping** whenever possible to speed up this process.
-	 - As you can see above diagram marked here as green and red. Now to identify these files, it uses the predicate and column stats and partitions et cetera partition pruning, all the things that Spark provides it uses that to narrow down what files it needs to actually read, to actually find whether the file contains matches or not.
+	 - As you can see labels green and yellow in the above diagram. Now to identify these files, it uses the predicate and column stats and partition pruning, all the things that Spark provides it uses that to narrow down what files it needs to actually read, to actually find whether the file contains matches or not.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3MzY1MDY4OSwtMTUzNjUxMDg0NSwtMT
+eyJoaXN0b3J5IjpbMjEwNjgxMzQwMSwtMTUzNjUxMDg0NSwtMT
 UzNjUxMDg0NSwtMTIzNDQ3MDIyNywtMTQyMDU1ODU1OSwtMTEy
 Njg2MzEyNywtMTE0NTI4OTg4MCwxOTMxODg1NDk4LDUxNjY4OT
 UyNCw0MDU2NDAzMjUsNzAwMjMwOTY4LDI4MDA3MzMzMSw1NTQy
