@@ -43,18 +43,18 @@ dt.updateExpr("p_id == 'p5'",Map("p_count"->"550"))
 Delta Lake maintains these files under the hood. As above created delta table has version 0 of the table where it have four files. Now, lets say you run Update. What it will do underneath is that it will use two scans on this data, to update detla table.
 
  1. First Scan :
-
+![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep6_dml.JPG?raw=true)
 	 - First it will do a scan the files that contains the data that needs to be updated based on the predicate.
-	 - let's say out of these four files, two of the files has data that matches the predicate.
+	 - let's say out of four files, two of the files has data that matches the predicate. Delta stores the data as parquet files.
 	 - So now not all the rows in the parquet files may match the data, so there'll be some rows that actually match the predicate, some rows that does not match the predicate,
-	 - Delta Lake uses data skipping whenever possible to speed up this process.
+	 - Delta Lake uses **data skipping** whenever possible to speed up this process.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4NTUwNDMzNSwtMTUzNjUxMDg0NSwtMT
-UzNjUxMDg0NSwtMTIzNDQ3MDIyNywtMTQyMDU1ODU1OSwtMTEy
-Njg2MzEyNywtMTE0NTI4OTg4MCwxOTMxODg1NDk4LDUxNjY4OT
-UyNCw0MDU2NDAzMjUsNzAwMjMwOTY4LDI4MDA3MzMzMSw1NTQy
-NDkwNTIsLTExMTQ4NDY4ODUsNTczNzM4NDg5LC00MDQ5MDMyND
-EsMTY0MzMxNjUxLC0xMzg3MTk3OTkzLDE1ODcyOTk5MDIsLTc1
-OTIzMTc3OF19
+eyJoaXN0b3J5IjpbNzc0NDE2ODAyLC0xNTM2NTEwODQ1LC0xNT
+M2NTEwODQ1LC0xMjM0NDcwMjI3LC0xNDIwNTU4NTU5LC0xMTI2
+ODYzMTI3LC0xMTQ1Mjg5ODgwLDE5MzE4ODU0OTgsNTE2Njg5NT
+I0LDQwNTY0MDMyNSw3MDAyMzA5NjgsMjgwMDczMzMxLDU1NDI0
+OTA1MiwtMTExNDg0Njg4NSw1NzM3Mzg0ODksLTQwNDkwMzI0MS
+wxNjQzMzE2NTEsLTEzODcxOTc5OTMsMTU4NzI5OTkwMiwtNzU5
+MjMxNzc4XX0=
 -->
