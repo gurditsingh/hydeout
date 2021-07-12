@@ -47,7 +47,7 @@ Delta Lake maintains these files under the hood. As above created delta table ha
 	 - First it will do a scan the files that contains the data that needs to be updated based on the predicate.
 	 - let's say out of four files, two of the files has data that matches the predicate. Delta stores the data as parquet files.
 	 - So now not all the rows in the parquet files may match the data, so there will be some rows that matches the predicate, some rows that does not match the predicate,
-	 - Delta Lake uses **data skipping** whenever possible to speed up this process.
+	 - Delta Lake uses **data skipping, Z-ordring ** whenever possible to speed up this process.
 	 - As you can see labels green and yellow in the above diagram. Now to identify these files, it uses the predicate, column stats and partition pruning to narrow down the search space.
 
  - **Second Scan :**
@@ -60,11 +60,11 @@ Delta Lake maintains these files under the hood. As above created delta table ha
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5NjUwOTA4OCwtMTUzNjUxMDg0NSwtMT
-UzNjUxMDg0NSwtMTIzNDQ3MDIyNywtMTQyMDU1ODU1OSwtMTEy
-Njg2MzEyNywtMTE0NTI4OTg4MCwxOTMxODg1NDk4LDUxNjY4OT
-UyNCw0MDU2NDAzMjUsNzAwMjMwOTY4LDI4MDA3MzMzMSw1NTQy
-NDkwNTIsLTExMTQ4NDY4ODUsNTczNzM4NDg5LC00MDQ5MDMyND
-EsMTY0MzMxNjUxLC0xMzg3MTk3OTkzLDE1ODcyOTk5MDIsLTc1
-OTIzMTc3OF19
+eyJoaXN0b3J5IjpbLTQyNTgzODQ0MiwtOTk2NTA5MDg4LC0xNT
+M2NTEwODQ1LC0xNTM2NTEwODQ1LC0xMjM0NDcwMjI3LC0xNDIw
+NTU4NTU5LC0xMTI2ODYzMTI3LC0xMTQ1Mjg5ODgwLDE5MzE4OD
+U0OTgsNTE2Njg5NTI0LDQwNTY0MDMyNSw3MDAyMzA5NjgsMjgw
+MDczMzMxLDU1NDI0OTA1MiwtMTExNDg0Njg4NSw1NzM3Mzg0OD
+ksLTQwNDkwMzI0MSwxNjQzMzE2NTEsLTEzODcxOTc5OTMsMTU4
+NzI5OTkwMl19
 -->
