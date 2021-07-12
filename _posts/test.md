@@ -77,14 +77,14 @@ dt.delete("p_id == 'p5'")
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep6_dml12.JPG?raw=true)
 
 ### how update works internally
-
+The Delete works same as Update internally, Delete makes a two scans for search and delete. The first scan find out the data files that 
 `DELETE` works just like `UPDATE` under the hood. Delta Lake makes two scans of the data: the first scan is to identify any data files that contain rows matching the predicate condition. The second scan reads the matching data files into memory, at which point Delta Lake deletes the rows in question before writing out the newly clean data to disk.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ4NTc3MzY2LDY1NDYzMDcsMTAwNDAzNT
-AxMCwtOTk2NTA5MDg4LC0xNTM2NTEwODQ1LC0xNTM2NTEwODQ1
-LC0xMjM0NDcwMjI3LC0xNDIwNTU4NTU5LC0xMTI2ODYzMTI3LC
-0xMTQ1Mjg5ODgwLDE5MzE4ODU0OTgsNTE2Njg5NTI0LDQwNTY0
-MDMyNSw3MDAyMzA5NjgsMjgwMDczMzMxLDU1NDI0OTA1MiwtMT
-ExNDg0Njg4NSw1NzM3Mzg0ODksLTQwNDkwMzI0MSwxNjQzMzE2
-NTFdfQ==
+eyJoaXN0b3J5IjpbLTE5MjgxOTIyNzcsNjQ4NTc3MzY2LDY1ND
+YzMDcsMTAwNDAzNTAxMCwtOTk2NTA5MDg4LC0xNTM2NTEwODQ1
+LC0xNTM2NTEwODQ1LC0xMjM0NDcwMjI3LC0xNDIwNTU4NTU5LC
+0xMTI2ODYzMTI3LC0xMTQ1Mjg5ODgwLDE5MzE4ODU0OTgsNTE2
+Njg5NTI0LDQwNTY0MDMyNSw3MDAyMzA5NjgsMjgwMDczMzMxLD
+U1NDI0OTA1MiwtMTExNDg0Njg4NSw1NzM3Mzg0ODksLTQwNDkw
+MzI0MV19
 -->
