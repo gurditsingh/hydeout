@@ -125,13 +125,13 @@ dt.alias("t")
 ```
 
 ### how update works internally
-What happens internally is exact same thing as Update/Delete, there are two scans of the data, one to find the list of match files that has matches and therefore needs to be updated, and a second part to update those files by re-writing them as new files. But the interesting bit is that now unlike Update and Delete, here, in both case, you have to do a join between the source and the target to actually find the matches.
+What happens internally is exact same thing as Update/Delete, there are two scans of the data, one to find the list of match files that needs to be updated, and a second scan to update those files by re-writing them as new files. But in merge needs join between the source and the target to actually find the matches.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NjE0NzYyOCwtMTExNDUyNjgwOCw1MT
-I4MTg0MjYsMTQwMTA2NzIwMCwtMjg4MzQ5NDAsLTEwNjE3NjI0
-MDYsLTExNjk0MTA4NTIsLTE3NDQwMzE5OTksMTIyNDcyOTk4Mi
-w2NDg1NzczNjYsNjU0NjMwNywxMDA0MDM1MDEwLC05OTY1MDkw
-ODgsLTE1MzY1MTA4NDUsLTE1MzY1MTA4NDUsLTEyMzQ0NzAyMj
-csLTE0MjA1NTg1NTksLTExMjY4NjMxMjcsLTExNDUyODk4ODAs
-MTkzMTg4NTQ5OF19
+eyJoaXN0b3J5IjpbLTIwMDk4NzgzOTIsLTExMTQ1MjY4MDgsNT
+EyODE4NDI2LDE0MDEwNjcyMDAsLTI4ODM0OTQwLC0xMDYxNzYy
+NDA2LC0xMTY5NDEwODUyLC0xNzQ0MDMxOTk5LDEyMjQ3Mjk5OD
+IsNjQ4NTc3MzY2LDY1NDYzMDcsMTAwNDAzNTAxMCwtOTk2NTA5
+MDg4LC0xNTM2NTEwODQ1LC0xNTM2NTEwODQ1LC0xMjM0NDcwMj
+I3LC0xNDIwNTU4NTU5LC0xMTI2ODYzMTI3LC0xMTQ1Mjg5ODgw
+LDE5MzE4ODU0OThdfQ==
 -->
