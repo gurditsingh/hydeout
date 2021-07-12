@@ -20,7 +20,7 @@ spark.read.format("delta").load(target_path).createOrReplaceTempView("delta_dml_
 
 ![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep6_dml1.JPG?raw=true)
 
-![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep6_dml4.JPG?raw=true)
+![Delta lake](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep6_dml10.JPG?raw=true)
 
 
 
@@ -60,11 +60,11 @@ Delta Lake maintains these files under the hood. As above created delta table ha
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNDAzNTAxMCwtOTk2NTA5MDg4LC0xNT
-M2NTEwODQ1LC0xNTM2NTEwODQ1LC0xMjM0NDcwMjI3LC0xNDIw
-NTU4NTU5LC0xMTI2ODYzMTI3LC0xMTQ1Mjg5ODgwLDE5MzE4OD
-U0OTgsNTE2Njg5NTI0LDQwNTY0MDMyNSw3MDAyMzA5NjgsMjgw
-MDczMzMxLDU1NDI0OTA1MiwtMTExNDg0Njg4NSw1NzM3Mzg0OD
-ksLTQwNDkwMzI0MSwxNjQzMzE2NTEsLTEzODcxOTc5OTMsMTU4
-NzI5OTkwMl19
+eyJoaXN0b3J5IjpbLTEyNTcxNjA4NTcsMTAwNDAzNTAxMCwtOT
+k2NTA5MDg4LC0xNTM2NTEwODQ1LC0xNTM2NTEwODQ1LC0xMjM0
+NDcwMjI3LC0xNDIwNTU4NTU5LC0xMTI2ODYzMTI3LC0xMTQ1Mj
+g5ODgwLDE5MzE4ODU0OTgsNTE2Njg5NTI0LDQwNTY0MDMyNSw3
+MDAyMzA5NjgsMjgwMDczMzMxLDU1NDI0OTA1MiwtMTExNDg0Nj
+g4NSw1NzM3Mzg0ODksLTQwNDkwMzI0MSwxNjQzMzE2NTEsLTEz
+ODcxOTc5OTNdfQ==
 -->
