@@ -127,17 +127,17 @@ dt.alias("t")
 ### how update works internally
 What happens internally is exact same thing as Update/Delete, there are two scans of the data, one to find the list of match files that needs to be updated, and a second scan to update those files by re-writing them as new files. But in merge needs join between the source and the target to actually find the matches.
 
- - The first kind is in the inner join between the target and source. The inner join find out all the matched files.
- - 
+ - In the first scan is the inner join between the target and source. The inner join find out all the matched files.
+ - The second one is an outer join between only the selected files in target and the source
 
 Perform an inner join between the target table and source table to select all files that have matches.
 Perform an outer join between the selected files in the target and source tables and write out the updated/deleted/inserted data.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwMjAzMjIwNCwtMjAwOTg3ODM5MiwtMT
-ExNDUyNjgwOCw1MTI4MTg0MjYsMTQwMTA2NzIwMCwtMjg4MzQ5
-NDAsLTEwNjE3NjI0MDYsLTExNjk0MTA4NTIsLTE3NDQwMzE5OT
-ksMTIyNDcyOTk4Miw2NDg1NzczNjYsNjU0NjMwNywxMDA0MDM1
-MDEwLC05OTY1MDkwODgsLTE1MzY1MTA4NDUsLTE1MzY1MTA4ND
-UsLTEyMzQ0NzAyMjcsLTE0MjA1NTg1NTksLTExMjY4NjMxMjcs
-LTExNDUyODk4ODBdfQ==
+eyJoaXN0b3J5IjpbNTU5OTAyMjMyLC0yMDA5ODc4MzkyLC0xMT
+E0NTI2ODA4LDUxMjgxODQyNiwxNDAxMDY3MjAwLC0yODgzNDk0
+MCwtMTA2MTc2MjQwNiwtMTE2OTQxMDg1MiwtMTc0NDAzMTk5OS
+wxMjI0NzI5OTgyLDY0ODU3NzM2Niw2NTQ2MzA3LDEwMDQwMzUw
+MTAsLTk5NjUwOTA4OCwtMTUzNjUxMDg0NSwtMTUzNjUxMDg0NS
+wtMTIzNDQ3MDIyNywtMTQyMDU1ODU1OSwtMTEyNjg2MzEyNywt
+MTE0NTI4OTg4MF19
 -->
