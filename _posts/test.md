@@ -63,19 +63,19 @@ Delta Lake maintains these files under the hood. As above created delta table ha
 ## Delta Lake : DELETE
 You can use the `DELETE` operation to selectively delete rows based upon a predicate. The DELETE command is used to delete existing records from a table either it can be single record or multiple records depending on the condition.
 
-**Update by SQL query**
+**Delete by SQL query**
 ```sql
 DELETE FROM delta_dml_tbl WHERE p_id = 'p5'
 ```
-**Update by Scala programmatically**
+**Delete by Scala programmatically**
 ```scala
 import io.delta.tables.DeltaTable
 
 val dt = DeltaTable.forPath(target_path)
-dt.updateExpr("p_id == 'p5'",Map("p_count"->"550"))
+dt.delete("p_id == 'p5'")
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzEwNTU1ODQsNjU0NjMwNywxMDA0MD
+eyJoaXN0b3J5IjpbLTE1MTA4MzY4OTcsNjU0NjMwNywxMDA0MD
 M1MDEwLC05OTY1MDkwODgsLTE1MzY1MTA4NDUsLTE1MzY1MTA4
 NDUsLTEyMzQ0NzAyMjcsLTE0MjA1NTg1NTksLTExMjY4NjMxMj
 csLTExNDUyODk4ODAsMTkzMTg4NTQ5OCw1MTY2ODk1MjQsNDA1
