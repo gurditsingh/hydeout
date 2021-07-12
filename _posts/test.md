@@ -40,13 +40,13 @@ dt.updateExpr("p_id == 'p5'",Map("p_count"->"550"))
 ```
 
 ### how update works internally
-
+Delta Lake maintains these files under the hood. As above created delta table Let's say you have the version 12 of the table where you have four files. Now, let's say you run Update. What it will do underneath is that it will use two scans on this data, to update them.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzY1MTA4NDUsLTE1MzY1MTA4NDUsLT
-EyMzQ0NzAyMjcsLTE0MjA1NTg1NTksLTExMjY4NjMxMjcsLTEx
-NDUyODk4ODAsMTkzMTg4NTQ5OCw1MTY2ODk1MjQsNDA1NjQwMz
-I1LDcwMDIzMDk2OCwyODAwNzMzMzEsNTU0MjQ5MDUyLC0xMTE0
-ODQ2ODg1LDU3MzczODQ4OSwtNDA0OTAzMjQxLDE2NDMzMTY1MS
-wtMTM4NzE5Nzk5MywxNTg3Mjk5OTAyLC03NTkyMzE3NzgsOTYx
-MTU4Njc0XX0=
+eyJoaXN0b3J5IjpbLTIxNDMwNDQxNDcsLTE1MzY1MTA4NDUsLT
+E1MzY1MTA4NDUsLTEyMzQ0NzAyMjcsLTE0MjA1NTg1NTksLTEx
+MjY4NjMxMjcsLTExNDUyODk4ODAsMTkzMTg4NTQ5OCw1MTY2OD
+k1MjQsNDA1NjQwMzI1LDcwMDIzMDk2OCwyODAwNzMzMzEsNTU0
+MjQ5MDUyLC0xMTE0ODQ2ODg1LDU3MzczODQ4OSwtNDA0OTAzMj
+QxLDE2NDMzMTY1MSwtMTM4NzE5Nzk5MywxNTg3Mjk5OTAyLC03
+NTkyMzE3NzhdfQ==
 -->
