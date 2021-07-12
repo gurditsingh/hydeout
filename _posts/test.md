@@ -125,12 +125,13 @@ dt.alias("t")
 ```
 
 ### how update works internally
+What happens internally is exact same thing as Update/Delete, there are two scans of the data, one to find the list of match files that has matches and therefore needs to be updated, and a second part to update those files by re-writing them as new files. But the interesting bit is that now unlike Update and Delete, here, in both case, you have to do a join between the source and the target to actually find the matches.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMTQ1MjY4MDgsNTEyODE4NDI2LDE0MD
-EwNjcyMDAsLTI4ODM0OTQwLC0xMDYxNzYyNDA2LC0xMTY5NDEw
-ODUyLC0xNzQ0MDMxOTk5LDEyMjQ3Mjk5ODIsNjQ4NTc3MzY2LD
-Y1NDYzMDcsMTAwNDAzNTAxMCwtOTk2NTA5MDg4LC0xNTM2NTEw
-ODQ1LC0xNTM2NTEwODQ1LC0xMjM0NDcwMjI3LC0xNDIwNTU4NT
-U5LC0xMTI2ODYzMTI3LC0xMTQ1Mjg5ODgwLDE5MzE4ODU0OTgs
-NTE2Njg5NTI0XX0=
+eyJoaXN0b3J5IjpbMTE1NjE0NzYyOCwtMTExNDUyNjgwOCw1MT
+I4MTg0MjYsMTQwMTA2NzIwMCwtMjg4MzQ5NDAsLTEwNjE3NjI0
+MDYsLTExNjk0MTA4NTIsLTE3NDQwMzE5OTksMTIyNDcyOTk4Mi
+w2NDg1NzczNjYsNjU0NjMwNywxMDA0MDM1MDEwLC05OTY1MDkw
+ODgsLTE1MzY1MTA4NDUsLTE1MzY1MTA4NDUsLTEyMzQ0NzAyMj
+csLTE0MjA1NTg1NTksLTExMjY4NjMxMjcsLTExNDUyODk4ODAs
+MTkzMTg4NTQ5OF19
 -->
