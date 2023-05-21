@@ -21,7 +21,7 @@ Data platforms have evolved over time to meet the needs of businesses. In the ea
 
 In recent years, there has been a move towards decentralized data platforms. Decentralized data platforms are built around the idea of data ownership and control. Each team or business unit owns its own data, and it is responsible for managing and governing that data. This approach has a number of advantages. It is more agile and adaptable, and it can be more cost-effective.
 
-> Before diving in the details of the Data Mesh, let’s review how the information industry came to this situation.
+> Before diving in the details of the decentralized data platform, let’s review how the information industry came to this situation.
 
 ## Data Management Architecture
 Data management architecture is a critical component of any organization's data strategy. It defines how data is collected, stored, managed, and used throughout the organization. A good data management architecture can help organizations to:
