@@ -61,7 +61,7 @@ All generations of data platforms carry a number of architectural failure modes 
 #### 1. Centralized and monolithic
 While over the last decade we have successfully applied domain driven design and bounded context to our operational systems, we have largely disregarded the domain concepts in a data platform. We have moved away from domain oriented data ownership to a centralized domain agnostic data ownership.
 
-![monolithic](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/dl_ep6_dml1.JPG?raw=true)
+![monolithic](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/data_mesh_1.jpg?raw=true)
 
 
 Domain-driven design is a software development approach that focuses on the domain of the problem being solved. By understanding the domain, developers can create software that is more intuitive and easier to use. Bounded context is a technique used in domain-driven design to divide the domain into smaller, manageable pieces. This can help to improve the scalability and maintainability of the software.
@@ -85,7 +85,7 @@ The decomposition of a centralized data platform into these mechanical functions
 
 Data platform architectures have evolved over time, and the current generation of architectures are based on the idea of decomposing the platform into a pipeline of data processing stages.
 
-![pipeline](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/data_mesh_2.jpg)
+![pipeline](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/data_mesh_2.jpg?raw=true)
 
 The decomposition model has a number of benefits, but it also has some limitations. One of the limitations is that it can slow the delivery of features. This is because each stage of the pipeline is responsible for a specific task, and there can be a lot of communication and coordination between the different stages. This can lead to delays in the overall delivery of the feature.
 
@@ -94,7 +94,7 @@ Another limitation of the decomposition model is that it can lead to high coupli
 #### 3. Siloed and hyper-specialized ownership
 Siloed and hyper-specialized ownership refers to the practice of assigning specific data domains or components of the data platform to individual teams or individuals with specialized expertise. Each team or individual takes ownership and responsibility for their assigned area, ensuring focused attention and deep knowledge in that particular domain.
 
-![siloed](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/data_mesh_3.jpg)
+![siloed](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/data_mesh_3.jpg?raw=true)
 
 Siloed ownership can sometimes result in challenges related to data integration. It requires coordination and collaboration between different teams or individuals to ensure seamless integration and consistency across data domains. Proper data governance practices and communication channels are essential to mitigate these challenges.
 
@@ -110,4 +110,4 @@ Data mesh is a data platform architecture that allows end-users to easily access
 
 The next enterprise data platform architecture is in the convergence of _Distributed Domain Driven Architecture_, _Self-serve Platform Design_, and _Product Thinking_ with _Data_.
 
-![mesh](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/data_mesh_4.jpg)
+![mesh](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/data_mesh_4.jpg?raw=true)
