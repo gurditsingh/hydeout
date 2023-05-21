@@ -61,7 +61,7 @@ All generations of data platforms carry a number of architectural failure modes 
 #### 1. Centralized and monolithic
 While over the last decade we have successfully applied domain driven design and bounded context to our operational systems, we have largely disregarded the domain concepts in a data platform. We have moved away from domain oriented data ownership to a centralized domain agnostic data ownership.
 
-![monolithic](https://github.com/gurditsingh/blog/blob/gh-pages/_screenshots/synapse-unified-platform.png?raw=true)
+![monolithic](https://github.com/gurditsingh/blog/blob/047ee7fa80b67ed23bb314771cb3ad86687f6580/_screenshots/data_mesh_1.jpg)
 
 
 Domain-driven design is a software development approach that focuses on the domain of the problem being solved. By understanding the domain, developers can create software that is more intuitive and easier to use. Bounded context is a technique used in domain-driven design to divide the domain into smaller, manageable pieces. This can help to improve the scalability and maintainability of the software.
