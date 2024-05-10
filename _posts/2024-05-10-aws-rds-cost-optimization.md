@@ -4,14 +4,14 @@ layout: post
 excerpt: "Explore effective strategies and essential tools to streamline your AWS RDS spending"
 last_modified_at: 2024-04-21T10:02:01-05:00
 tags:
-  - Data Lakes
-  - Data Warehouse
-  - Data Platforms
-  - AWS
+  - AWS RDS
+  - Cost
+  - AWS Trusted
+  - AWS Trusted 
   - Data Architecture
   - Centralized Data
-  - Snowflake
-  - Apache Iceberg
+  - AWS Backup
+  - AWS Cloudwatch
 ---
 
 # Optimizing AWS RDS Costs: Tools and Strategies 
