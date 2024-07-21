@@ -15,7 +15,7 @@ tags:
 ---
 
 # Data Processing Needs
-In today's data-driven landscape, organizations face diverse data processing needs that demand flexible solutions. For smaller datasets requiring efficient, in-memory processing and quick query execution, DuckDB emerges as a robust choice. Meanwhile, for handling large-scale data operations with scalability and distributed computing capabilities, Spark provides a powerful solution.
+In today's data-driven landscape, organizations face diverse data processing needs that demand flexible solutions. For smaller datasets requiring efficient, in-memory processing and quick query execution, Python Pandas or DuckDB emerges as a robust choice. Meanwhile, for handling large-scale data operations with scalability and distributed computing capabilities, Spark provides a powerful solution.
 
 # Seamless Integration: Fugue
 Fugue bridges these tools seamlessly, enabling organizations to optimize their data processing workflows. Fugue's abstraction layer allows data professionals to switch between DuckDB and Spark without needing to rewrite code, ensuring that they can effectively manage data of varying scales and complexities with ease.
